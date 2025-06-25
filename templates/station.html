@@ -1586,12 +1586,13 @@
         };
         
         model3dImage.onload = function() {
-            console.log(`✅ Imagen 3D cargada correctamente: ${imgPath}`);
+            console.log(`✅ Imagen 3D cargada correctamente: ${model3dImage.src}`);
             model3dImage.style.display = 'block';
             model3dSection.style.display = 'grid';
         };
         
         // Cargar imagen
+        console.log(`🚀 Intentando cargar imagen: ${imgPath}`);
         model3dImage.src = imgPath;
         
         // Click para ampliar
@@ -1601,6 +1602,31 @@
         
         console.log(`🏗️ Iniciando carga de imagen 3D: ${imgPath}`);
     }
+
+    // Función de test para debugging
+    function testModel3D() {
+        console.log('🧪 Test de imagen 3D ejecutado');
+        const model3dSection = document.getElementById('model3dSection');
+        const model3dImage = document.getElementById('model3dImage');
+        
+        if (model3dSection && model3dImage) {
+            console.log('✅ Elementos encontrados, probando con imagen de prueba');
+            model3dImage.src = '/static/model_3D/linea_3/callao.png';
+            model3dImage.onload = function() {
+                console.log('✅ Imagen de prueba cargada');
+                model3dImage.style.display = 'block';
+                model3dSection.style.display = 'grid';
+            };
+            model3dImage.onerror = function() {
+                console.error('❌ Error cargando imagen de prueba');
+            };
+        } else {
+            console.error('❌ No se encontraron elementos DOM');
+        }
+    }
+
+    // Ejecutar test después de un delay
+    setTimeout(testModel3D, 3000);
 
     // Modal para imagen 3D
     function showModalImage(imgPath, caption) {
@@ -1741,16 +1767,24 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
+        console.log('🚀 DOMContentLoaded ejecutado');
         const params = getStationParamsFromUrl();
+        console.log('📍 Parámetros de URL:', params);
+        
         if (params && params.lineNumber && params.stationId) {
+            console.log(`🔍 Cargando estación línea ${params.lineNumber}, ID ${params.stationId}`);
             // Usar una sola llamada a la API moderna que devuelve todos los datos
             fetch(`/api/station/${params.lineNumber}/${params.stationId}`)
                 .then(res => res.json())
                 .then(data => {
-                    if (data.error) return;
+                    if (data.error) {
+                        console.error('❌ Error en API:', data.error);
+                        return;
+                    }
                     console.log('📊 Datos recibidos de la API de estación:', data);
                     
                     const stationData = data.data.static;
+                    console.log('🏗️ Datos estáticos de la estación:', stationData);
                     
                     // 1. Renderizar tira de paradas y selector de línea
                     renderParadasCercanas(
@@ -1771,19 +1805,28 @@
                     loadConnections(stationData.id_fijo);  // Usar ID en lugar de nombre
                     loadElevatorsStatus(stationData.id_fijo);  // Usar ID en lugar de nombre
                     searchStationWithNinjaScrap(stationData.name);
+                    
+                    // 4. IMAGEN 3D - con debugging extenso
+                    console.log('🖼️ Llamando a showModel3D con:', {
+                        lineas: [String(stationData.line)],
+                        nombre: stationData.name
+                    });
                     showModel3D([String(stationData.line)], stationData.name);
                     
-                    // 4. Establecer el nombre en el input para que loadModernTrains lo encuentre
+                    // 5. Establecer el nombre en el input para que loadModernTrains lo encuentre
                     const searchInput = document.getElementById('stationSearchInput');
                     if (searchInput) {
                         searchInput.value = stationData.name;
                     }
                     
-                    // 5. Actualizar datos para favoritos
+                    // 6. Actualizar datos para favoritos
                     updateCurrentStationData(stationData.name, stationData.id_fijo, String(stationData.line));
                     
                     console.log('🚄 Cargando trenes con:', { nombre: stationData.name, stationId: params.stationId });
                     loadModernTrains(stationData.name, 'modernTrainsContainer');
+                })
+                .catch(error => {
+                    console.error('❌ Error cargando datos de estación:', error);
                 });
         } else if (params && params.stationId) {
             // Solo la API antigua (como antes)
