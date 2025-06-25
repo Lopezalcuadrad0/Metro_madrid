@@ -81,6 +81,32 @@
             border-color: #FFD700;
             filter: drop-shadow(0 0 8px #FFD700);
         }
+
+        /* ─── Escritorio ───────────────────────────── */
+        .station-marker{
+            left: 37px;            /* ↓ pon aquí el valor que necesites */
+            transform: translateX(-210%) translateY(-50%);
+        }
+        .station-marker{
+            left: 37px;            /* ↓ pon aquí el valor que necesites */
+            transform: translateX(-210%) translateY(-50%);
+        }
+
+        /* ─── Tablet (≤ 768 px) ─────────────────────── */
+        @media (max-width: 768px){
+            .station-marker{
+                left: 30px;      /* ajústalo igual que arriba        */
+                transform: translateX(-210%) translateY(-50%);
+            }
+        }
+
+        /* ─── Móvil (≤ 480 px) ─────────────────────── */
+        @media (max-width: 480px){
+            .station-marker{
+                left: 25px;        /* y aquí para pantallas pequeñas   */
+                transform: translateX(-70%) translateY(-50%);
+            }
+        }
     </style>
 </head>
 <body>
