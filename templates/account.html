@@ -125,48 +125,100 @@
         transform: scale(1.1);
     }
     
-    .favorite-station-card {
+    .favorite-station-card-group {
         background: white;
         border: 1px solid #dee2e6;
         border-radius: 10px;
         padding: 1rem;
         position: relative;
-        cursor: pointer;
         transition: all 0.3s ease;
-        text-decoration: none;
-        display: block;
         border-left: 4px solid;
     }
     
-    .favorite-station-card:hover {
+    .favorite-station-card-group:hover {
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-        text-decoration: none;
-        color: inherit;
     }
     
-    .station-info {
+    .station-group-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 0.8rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
     
     .station-name {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #333;
         margin: 0;
+        flex: 1;
     }
     
-    .station-line {
-        font-size: 0.9rem;
-        margin: 0.3rem 0;
+    .lines-count-badge {
+        background: #e3f2fd;
+        color: #1976d2;
+        padding: 0.2rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid #bbdefb;
     }
     
     .station-added {
         font-size: 0.8rem;
         color: #666;
         margin: 0;
+        width: 100%;
+    }
+    
+    .station-lines-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .station-line-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        background: #f8f9fa;
+        border-radius: 6px;
+        border: 1px solid #e9ecef;
+    }
+    
+    .line-link {
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 0.95rem;
+        flex: 1;
+    }
+    
+    .line-link:hover {
+        text-decoration: underline;
+    }
+    
+    .remove-favorite-line {
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .remove-favorite-line:hover {
+        background: #ff4444;
+        color: white;
+        transform: scale(1.1);
     }
     
     .empty-favorites {
@@ -289,21 +341,31 @@
         {% if favorite_stations %}
         <div class="favorites-grid">
             {% for station in favorite_stations %}
-            <a href="/station/{{ station.line_id }}/{{ station.station_id }}" class="favorite-station-card" 
-               style="border-left-color: {{ station.line_color }};">
-                <button class="remove-favorite" 
-                        onclick="event.preventDefault(); removeFavoriteStation('{{ station.station_id }}', '{{ station.line_id }}');" 
-                        title="Eliminar de favoritos">
-                    ❌
-                </button>
-                <div class="station-info">
-                    <div>
-                        <h4 class="station-name">{{ station.station_name }}</h4>
-                        <p class="station-line" style="color: {{ station.line_color }};">{{ station.line_name }}</p>
-                        <p class="station-added">Añadida: {{ station.added_at.split('T')[0] if station.added_at else 'Fecha no disponible' }}</p>
-                    </div>
+            <div class="favorite-station-card-group" style="border-left-color: {{ station.line_color }};">
+                <div class="station-group-header">
+                    <h4 class="station-name">{{ station.station_name }}</h4>
+                    {% if station.lines_count > 1 %}
+                        <span class="lines-count-badge">{{ station.lines_count }} líneas</span>
+                    {% endif %}
+                    <p class="station-added">Añadida: {{ station.added_at.split('T')[0] if station.added_at else 'Fecha no disponible' }}</p>
                 </div>
-            </a>
+                
+                <div class="station-lines-list">
+                    {% for line_data in station.all_lines %}
+                        <div class="station-line-item">
+                            <a href="/station/{{ line_data.line_id }}/{{ line_data.station_id }}" 
+                               class="line-link" style="color: {{ line_data.line_color }};">
+                                {{ line_data.line_name }}
+                            </a>
+                            <button class="remove-favorite-line" 
+                                    onclick="removeFavoriteStation('{{ line_data.station_id }}', '{{ line_data.line_id }}');" 
+                                    title="Eliminar {{ line_data.line_name }} de favoritos">
+                                ❌
+                            </button>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
             {% endfor %}
         </div>
         {% else %}

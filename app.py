@@ -5916,7 +5916,7 @@ def get_user_favorite_lines(user_id):
         return []
 
 def get_user_favorite_stations(user_id):
-    """Obtiene las estaciones favoritas de un usuario"""
+    """Obtiene las estaciones favoritas de un usuario agrupadas por nombre"""
     try:
         conn = sqlite3.connect('db/estaciones_fijas_v2.db')
         cursor = conn.cursor()
@@ -5925,22 +5925,53 @@ def get_user_favorite_stations(user_id):
             SELECT fs.station_id, fs.line_id, fs.station_name, fs.created_at
             FROM favorite_stations fs
             WHERE fs.user_id = ?
-            ORDER BY fs.created_at DESC
+            ORDER BY fs.station_name, fs.created_at DESC
         """, (user_id,))
         
-        favorite_stations = []
+        # Agrupar estaciones por nombre
+        stations_by_name = {}
         for row in cursor.fetchall():
-            line_id = row[1]
+            station_id, line_id, station_name, created_at = row
             line_config = LINEAS_CONFIG.get(line_id, {'name': f'Línea {line_id}', 'color': '#666'})
             
-            favorite_stations.append({
-                'station_id': row[0],
+            station_data = {
+                'station_id': station_id,
                 'line_id': line_id,
-                'station_name': row[2],
                 'line_name': line_config['name'],
                 'line_color': line_config['color'],
-                'added_at': row[3]
+                'added_at': created_at
+            }
+            
+            if station_name not in stations_by_name:
+                stations_by_name[station_name] = {
+                    'station_name': station_name,
+                    'lines': [],
+                    'first_added': created_at
+                }
+            
+            stations_by_name[station_name]['lines'].append(station_data)
+            # Mantener la fecha más antigua
+            if created_at < stations_by_name[station_name]['first_added']:
+                stations_by_name[station_name]['first_added'] = created_at
+        
+        # Convertir a lista ordenada por fecha
+        favorite_stations = []
+        for station_name, station_group in stations_by_name.items():
+            # Para retrocompatibilidad, incluir datos de la primera línea
+            primary_line = station_group['lines'][0]
+            favorite_stations.append({
+                'station_name': station_name,
+                'station_id': primary_line['station_id'],
+                'line_id': primary_line['line_id'],
+                'line_name': primary_line['line_name'],
+                'line_color': primary_line['line_color'],
+                'added_at': station_group['first_added'],
+                'all_lines': station_group['lines'],  # Todas las líneas para esta estación
+                'lines_count': len(station_group['lines'])
             })
+        
+        # Ordenar por fecha de primera adición
+        favorite_stations.sort(key=lambda x: x['added_at'], reverse=True)
         
         conn.close()
         return favorite_stations
@@ -6112,6 +6143,28 @@ def check_favorite_station(station_id, line_id):
         return jsonify({'is_favorite': is_favorite})
     except Exception as e:
         return jsonify({'error': f'Error verificando favorito: {str(e)}'}), 500
+
+@app.route('/api/favorites/stations/by-name/<station_name>', methods=['DELETE'])
+@login_required
+def remove_favorite_station_by_name(station_name):
+    """Elimina todas las líneas de una estación de favoritos por nombre"""
+    try:
+        conn = sqlite3.connect('db/estaciones_fijas_v2.db')
+        cursor = conn.cursor()
+        
+        cursor.execute("DELETE FROM favorite_stations WHERE user_id = ? AND station_name = ?", 
+                      (current_user.id, station_name))
+        
+        if cursor.rowcount == 0:
+            conn.close()
+            return jsonify({'error': 'La estación no estaba en favoritos'}), 404
+        
+        conn.commit()
+        conn.close()
+        
+        return jsonify({'message': f'Todas las líneas de {station_name} eliminadas de favoritos', 'success': True})
+    except Exception as e:
+        return jsonify({'error': f'Error eliminando estación de favoritos: {str(e)}'}), 500
 
 @app.route('/api/stations/nearby', methods=['POST'])
 def get_nearby_stations():
