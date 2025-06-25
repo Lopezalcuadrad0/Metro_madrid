@@ -1,0 +1,327 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre Mí - Metro de Madrid{% endblock %}
+
+{% block content %}
+<style>
+    .about-me-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .about-me-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .about-me-hero p {
+        font-size: 1.3rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .developer-section {
+        padding: 4rem 0;
+        background: var(--bg-primary);
+    }
+    
+    .developer-card {
+        background: var(--bg-secondary);
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        margin-bottom: 3rem;
+    }
+    
+    .developer-header {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .developer-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .developer-info h2 {
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .developer-info .title {
+        color: var(--text-secondary);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .developer-info .location {
+        color: var(--text-secondary);
+        font-size: 1rem;
+    }
+    
+    .skills-section {
+        margin: 2rem 0;
+    }
+    
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .skill-item {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .skill-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .skill-item h4 {
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+    }
+    
+    .skill-item p {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    
+    .project-highlights {
+        background: var(--bg-secondary);
+        border-radius: 20px;
+        padding: 3rem;
+        margin: 3rem 0;
+    }
+    
+    .project-highlights h3 {
+        color: var(--text-primary);
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .highlight-item {
+        background: var(--bg-primary);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #667eea;
+    }
+    
+    .highlight-item h4 {
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
+    
+    .highlight-item p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+    
+    .contact-section {
+        text-align: center;
+        padding: 3rem 0;
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+        border-radius: 20px;
+        margin: 3rem 0;
+    }
+    
+    .contact-section h3 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+    
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .contact-link {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    .contact-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+        color: white;
+        text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+        .developer-header {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .about-me-hero h1 {
+            font-size: 2rem;
+        }
+        
+        .developer-info h2 {
+            font-size: 2rem;
+        }
+        
+        .contact-links {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="about-me-hero">
+    <div class="container">
+        <h1>👨‍💻 Sobre Mí</h1>
+        <p>Desarrollador apasionado por la tecnología y el transporte público</p>
+    </div>
+</section>
+
+<!-- Developer Section -->
+<section class="developer-section">
+    <div class="container">
+        <div class="developer-card">
+            <div class="developer-header">
+                <div class="developer-avatar">
+                    GL
+                </div>
+                <div class="developer-info">
+                    <h2>Guillermo López</h2>
+                    <div class="title">Desarrollador Full Stack & Entusiasta del Metro</div>
+                    <div class="location">📍 Madrid, España</div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>🎯 Mi Historia</h3>
+                    <p>Soy un desarrollador apasionado por la tecnología y el transporte público. Mi interés por el Metro de Madrid comenzó como usuario diario y evolucionó hacia un proyecto de desarrollo que combina mis habilidades técnicas con mi fascinación por la infraestructura de transporte.</p>
+                    
+                    <p>Este proyecto nació de la idea de crear una aplicación web completa que no solo mostrara información estática del metro, sino que también proporcionara datos en tiempo real, mapas interactivos y una experiencia de usuario moderna y accesible.</p>
+                    
+                    <h3>🚀 Metodología de Desarrollo</h3>
+                    <p>Este proyecto fue desarrollado completamente usando <strong>Cursor</strong>, el mejor IDE del mundo, que me permitió aprovechar la inteligencia artificial avanzada para acelerar el desarrollo y crear código de alta calidad. La combinación de herramientas modernas y metodologías ágiles resultó en una aplicación robusta y escalable.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="skills-section">
+                        <h3>🛠️ Tecnologías</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <h4>Python</h4>
+                                <p>Flask, Web Scraping, APIs</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>JavaScript</h4>
+                                <p>Frontend, Mapas, Tiempo Real</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>SQLite</h4>
+                                <p>Bases de Datos, GTFS</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>HTML/CSS</h4>
+                                <p>Diseño Responsive, UI/UX</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Git</h4>
+                                <p>Control de Versiones</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Cursor</h4>
+                                <p>IA, Desarrollo Rápido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-highlights">
+            <h3>🌟 Destacados del Proyecto</h3>
+            
+            <div class="highlight-item">
+                <h4>🗺️ Mapa Interactivo Completo</h4>
+                <p>Desarrollo de un mapa interactivo que muestra todas las líneas del Metro de Madrid con estaciones, correspondencias y funcionalidades avanzadas de navegación.</p>
+            </div>
+            
+            <div class="highlight-item">
+                <h4>⏰ Datos en Tiempo Real</h4>
+                <p>Implementación de scrapers inteligentes que obtienen información actualizada sobre próximos trenes, estado de líneas y servicios de estaciones.</p>
+            </div>
+            
+            <div class="highlight-item">
+                <h4>🏗️ Modelos 3D de Estaciones</h4>
+                <p>Integración de modelos 3D de estaciones para proporcionar una experiencia visual única y educativa sobre la arquitectura del metro.</p>
+            </div>
+            
+            <div class="highlight-item">
+                <h4>📱 Diseño Responsive</h4>
+                <p>Desarrollo de una interfaz completamente responsive que funciona perfectamente en dispositivos móviles, tablets y ordenadores.</p>
+            </div>
+            
+            <div class="highlight-item">
+                <h4>🤖 Inteligencia Artificial</h4>
+                <p>Uso avanzado de Cursor y herramientas de IA para acelerar el desarrollo y crear código de alta calidad de forma eficiente.</p>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h3>📞 ¿Quieres Contactar?</h3>
+            <p>Si tienes preguntas sobre el proyecto, sugerencias de mejora o simplemente quieres charlar sobre tecnología y transporte público, no dudes en contactarme.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:guillermo.lop2001@gmail.com" class="contact-link">📧 Email</a>
+                <a href="https://github.com/lopezalcuadrado" class="contact-link" target="_blank">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/in/guillermo-l%C3%B3pez-l%C3%B3pez-6684a8170/" class="contact-link" target="_blank">💼 LinkedIn</a>
+                <a href="https://instagram.com/MELLAMOGUILLE" class="contact-link" target="_blank">📸 Instagram</a>
+                <a href="/about_us" class="contact-link">🏢 Sobre el Proyecto</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="text-center mt-5">
+    <hr>
+    <p class="text-muted">© 2024 Guillermo López - Desarrollado con ❤️ y Cursor</p>
+    <div class="mt-3">
+        <a href="/" class="btn btn-primary me-2">🏠 Inicio</a>
+        <a href="/about_us" class="btn btn-secondary me-2">🏢 Sobre Nosotros</a>
+        <a href="/map" class="btn btn-success">🗺️ Mapa</a>
+    </div>
+</div>
+{% endblock %} 

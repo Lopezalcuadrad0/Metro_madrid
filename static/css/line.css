@@ -1,0 +1,674 @@
+:root {
+    --primary-blue: #0055a4;
+    --light-gray: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-dark: #343a40;
+    --text-light: #6c757d;
+    --line-color: #868e96; /* Default line color */
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* El color de fondo ahora es dinámico, se elimina el estático */
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding-top: 44px; /* Altura del header fijo */
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start; /* Alinear arriba */
+    background-color: var(--bg-primary);
+    min-height: calc(100vh - 44px); /* Ajustado para el header */
+    margin-top: 44px; /* Margen para el header fijo */
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 350px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid var(--border-color);
+    flex-shrink: 0;
+    
+    /* Para que se quede fijo */
+    position: sticky;
+    top: 44px; /* Ajustado para el header fijo */
+    height: calc(100vh - 44px); /* Altura ajustada */
+    overflow-y: auto; /* Scroll si el contenido es muy largo */
+    box-sizing: border-box; /* Para que el padding no desborde la altura */
+}
+
+/* Tema oscuro para sidebar */
+[data-theme="dark"] .sidebar {
+    background: #2d2d2d;
+}
+
+[data-theme="nocturno"] .sidebar {
+    background: #2d2d2d;
+}
+
+.line-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.line-symbol {
+    width: 70px;
+    height: 70px;
+    background-color: var(--line-color);
+    color: var(--line-text-color, #fff);
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.line-logo-main {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    /* Eliminamos los filtros problemáticos */
+}
+
+/* Casos especiales para logos que necesitan color específico */
+.line-symbol[style*="#FFDF00"] .line-logo-main {
+    /* Línea 3 (amarilla) - mantener color original */
+}
+
+.line-symbol[style*="#FFFFFF"] .line-logo-main {
+    /* Ramal (blanco) - mantener color original */
+}
+
+.line-title h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: var(--text-primary);
+}
+
+.line-title p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.other-lines {
+    margin-top: auto; /* Pushes to the bottom */
+}
+
+.other-lines h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.line-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+}
+
+.line-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: var(--transition);
+}
+.line-icon:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+.line-icon.active {
+    box-shadow: 0 0 0 4px var(--bg-primary), 0 0 0 7px var(--primary-blue);
+    transform: scale(1.1);
+}
+
+.line-icon span {
+    display: block;
+}
+
+/* --- Content --- */
+.content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 20px 40px;
+    min-height: calc(100vh - 44px); /* Altura ajustada */
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/* Tema oscuro para content */
+[data-theme="dark"] .content {
+    background-color: #1a1a1a;
+}
+
+[data-theme="nocturno"] .content {
+    background-color: #1a1a1a;
+}
+
+.station-list-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.line-track {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    bottom: 25px;
+    width: 5px;
+    background-color: var(--line-color);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.station-list {
+    padding: 0;
+    margin: 0;
+}
+
+.station-entry {
+    position: relative;
+    z-index: 2;
+    list-style: none;
+    margin-bottom: 5px; /* Tighter list */
+}
+
+.station-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px 12px 55px; /* Left padding for marker */
+    border-radius: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.station-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.station-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    flex-shrink: 0;
+}
+
+.station-item:hover {
+    background-color: #f1f3f5;
+    transform: translateX(5px);
+}
+
+/* Tema oscuro para hover de estaciones */
+[data-theme="dark"] .station-item:hover {
+    background-color: #404040;
+}
+
+[data-theme="nocturno"] .station-item:hover {
+    background-color: #404040;
+}
+
+.station-marker {
+    position: absolute;
+    left: 22.5px; /* Centrado en el raíl de 5px que empieza en 20px */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ancho del tick */
+    height: 5px; /* Grosor del tick, igual que el raíl */
+    background-color: var(--line-color);
+    /* Se eliminan bordes y sombras para el estilo base (tick) */
+}
+
+/* Marker sizes and styles */
+.station-entry .station-marker {
+    /* Este selector ya no es necesario para el tamaño, se controla en la base */
+}
+
+.station-entry.interchange .station-marker,
+.station-entry.terminus .station-marker {
+    /* Re-estilar como círculos para correspondencias y terminales */
+    transform: translate(-50%, -50%); /* Centrado completo */
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid var(--line-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    width: 18px;
+    height: 18px;
+    z-index: 2; /* Asegurar que esté por encima del raíl */
+}
+
+.station-entry.terminus .station-marker {
+    background-color: var(--line-color);
+}
+
+.station-entry.terminus .station-name,
+.station-entry.interchange .station-name {
+    font-weight: 600;
+}
+
+.station-correspondencias {
+    display: flex;
+    gap: 6px;
+    margin-left: auto; /* Empuja las correspondencias a la derecha */
+    align-items: center;
+}
+
+.line-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%; /* Hacer círculos perfectos */
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+
+
+/* Estilos especiales para líneas con fondo claro */
+.line-badge[style*="#FFDF00"] { /* Línea 3 - Amarilla */
+    color: #000 !important;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.line-badge[style*="#FFFFFF"] { /* Ramal - Blanca */
+    color: #0055a4 !important;
+    border-color: #0055a4;
+    background-color: #FFFFFF !important;
+}
+
+.line-badge[style*="#999999"] { /* Línea 6 - Gris */
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* Efecto de brillo para líneas con colores oscuros */
+.line-badge[style*="#990066"], /* Línea 9 */
+.line-badge[style*="#000099"], /* Línea 10 */
+.line-badge[style*="#006600"], /* Línea 11 */
+.line-badge[style*="#824100"] { /* Línea 4 */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.station-correspondencias img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.line-status-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Tema oscuro para status sidebar */
+[data-theme="dark"] .line-status-sidebar {
+    background-color: #404040;
+}
+
+[data-theme="nocturno"] .line-status-sidebar {
+    background-color: #404040;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.status-indicator.success {
+    background-color: #28a745;
+}
+.status-indicator.danger {
+    background-color: #dc3545;
+}
+.status-indicator.warning {
+    background-color: #ffc107;
+}
+.status-indicator.unknown {
+    background-color: #adb5bd;
+}
+
+.status-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.status-text-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+.status-text-link:hover {
+    opacity: 0.8;
+}
+
+.status-text-link .status-text {
+    margin-left: 8px;
+}
+
+.station-item.active {
+    background-color: #f0f0f0;
+}
+
+.station-details {
+    display: none;
+    padding: 15px 20px 15px 65px; /* Alineado con el nombre de la estación */
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    animation: slide-down 0.3s ease-out;
+}
+
+/* Tema oscuro para station details */
+[data-theme="dark"] .station-details {
+    background-color: #2d2d2d;
+    border-top-color: #404040;
+}
+
+[data-theme="nocturno"] .station-details {
+    background-color: #2d2d2d;
+    border-top-color: #404040;
+}
+
+.station-details.expanded {
+    display: block;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loader, .error-message {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.error-message {
+    color: #dc3545;
+}
+
+.train-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.train-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 10px;
+}
+
+.train-details-header h4 {
+    margin: 0;
+    color: #343a40;
+    font-size: 1.1em;
+}
+
+.more-info-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+.more-info-link:hover {
+    text-decoration: underline;
+}
+
+.train-details-wrapper {
+    border-left: 4px solid transparent; /* La base para el gradiente o color. */
+    padding-left: 35px; /* Espacio entre la línea y el contenido (55px de alineación - 20px de la línea) */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: -45px; /* Mueve el bloque a la izquierda para alinear el borde (20px - 65px de padding padre) */
+}
+
+.train-line-group {
+    /* Ya no necesita borde ni padding individual */
+}
+
+.train-line-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.train-line-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.train-direction {
+    margin-bottom: 8px;
+}
+
+.destination {
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.time-badge {
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        height: auto;
+    }
+    .content {
+        padding: 20px;
+    }
+}
+
+/* Eliminar la regla conflictiva del header */
+/* .main-header {
+    ...
+} */
+
+/* Eliminar también las reglas relacionadas que pueden causar conflictos */
+/* .header-content {
+    ...
+} */
+
+/* .logo-section {
+    ...
+} */
+
+/* .metro-logo {
+    ...
+} */
+
+/* .header-text h1 {
+    ...
+} */
+
+/* .header-text h2 {
+    ...
+} */
+
+/* .header-text p {
+    ...
+} */
+
+/* .header-stats {
+    ...
+} */
+
+/* .stat-item {
+    ...
+} */
+
+/* .stat-number {
+    ...
+} */
+
+/* .stat-label {
+    ...
+} */
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+}
+
+.loading-text {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.train-summary {
+    color: #28a745;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.no-trains-text {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Estilos para los botones de acción de estación */
+.station-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-refresh-times,
+.btn-more-info {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
+}
+
+.btn-refresh-times {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-refresh-times:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-more-info {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-more-info:hover {
+    background-color: #545b62;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.loading-message {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-style: italic;
+} 

@@ -1,0 +1,15 @@
+# Flask y dependencias básicas
+Flask
+pandas
+requests
+beautifulsoup4
+lxml
+
+# Base de datos
+SQLAlchemy
+
+# Extensiones para gestión de usuarios
+Flask-Login
+Flask-Bcrypt
+Flask-WTF
+email-validator 

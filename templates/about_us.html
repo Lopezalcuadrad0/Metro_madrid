@@ -1,0 +1,423 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre Nosotros - Metro Madrid{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 text-primary">🚇 Metro Madrid</h1>
+                <h2 class="h3 text-muted">Sistema de Información en Tiempo Real</h2>
+                <hr class="my-4">
+            </div>
+
+            <!-- Información del Proyecto -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">📋 Sobre el Proyecto</h3>
+                </div>
+                <div class="card-body">
+                    <p class="lead">
+                        Este es un proyecto <strong>vivecodeado</strong> que proporciona información completa del Metro de Madrid 
+                        en tiempo real, incluyendo horarios, mapas interactivos, estado de líneas y datos detallados de estaciones.
+                    </p>
+                    
+                    <h4>🎯 Características Principales</h4>
+                    <ul class="list-unstyled">
+                        <li>✅ <strong>Mapa Interactivo:</strong> Visualización completa de todas las líneas y estaciones</li>
+                        <li>✅ <strong>Información en Tiempo Real:</strong> Estado actual de líneas y próximos trenes</li>
+                        <li>✅ <strong>Búsqueda de Estaciones:</strong> Sistema inteligente de búsqueda y navegación</li>
+                        <li>✅ <strong>Datos Detallados:</strong> Servicios, accesos y correspondencias de cada estación</li>
+                        <li>✅ <strong>Modelos 3D:</strong> Visualización tridimensional de estaciones</li>
+                        <li>✅ <strong>Modo Nocturno:</strong> Adaptación automática según el horario</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Desarrollador -->
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h3 class="mb-0">👨‍💻 Desarrollador</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 text-center">
+                            <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <span class="h1 text-primary">GL</span>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Guillermo López</h4>
+                            <p class="text-muted">
+                                Desarrollador full-stack especializado en aplicaciones web modernas y sistemas de información geográfica.
+                                Este proyecto ha sido desarrollado completamente usando <strong>Cursor</strong> como IDE principal.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Flask</span>
+                                <span class="badge bg-info">JavaScript</span>
+                                <span class="badge bg-warning">Leaflet</span>
+                                <span class="badge bg-secondary">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tecnologías Utilizadas -->
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    <h3 class="mb-0">🛠️ Tecnologías Utilizadas</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Backend</h5>
+                            <ul>
+                                <li><strong>Python 3.x:</strong> Lenguaje principal</li>
+                                <li><strong>Flask:</strong> Framework web</li>
+                                <li><strong>SQLite:</strong> Base de datos</li>
+                                <li><strong>BeautifulSoup:</strong> Web scraping</li>
+                                <li><strong>Pandas:</strong> Procesamiento de datos</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Frontend</h5>
+                            <ul>
+                                <li><strong>HTML5/CSS3:</strong> Estructura y estilos</li>
+                                <li><strong>JavaScript:</strong> Interactividad</li>
+                                <li><strong>Leaflet.js:</strong> Mapas interactivos</li>
+                                <li><strong>Bootstrap:</strong> Framework CSS</li>
+                                <li><strong>AJAX:</strong> Comunicación asíncrona</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceso de Desarrollo -->
+            <div class="card mb-4">
+                <div class="card-header bg-warning text-dark">
+                    <h3 class="mb-0">🚀 Proceso de Desarrollo</h3>
+                </div>
+                <div class="card-body">
+                    <h5>Metodología Vivecodeada</h5>
+                    <p>
+                        Este proyecto ha sido desarrollado siguiendo la metodología de <strong>vivecoding</strong>, 
+                        donde el desarrollo se realiza de forma iterativa y colaborativa, documentando cada paso del proceso.
+                    </p>
+                    
+                    <h5>Herramientas de Desarrollo</h5>
+                    <ul>
+                        <li><strong>Cursor:</strong> IDE principal utilizado para todo el desarrollo</li>
+                        <li><strong>Git:</strong> Control de versiones</li>
+                        <li><strong>Datos GTFS:</strong> Formato estándar para información de transporte público</li>
+                        <li><strong>Web Scraping:</strong> Obtención de datos en tiempo real</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Estructura del Proyecto -->
+            <div class="card mb-4">
+                <div class="card-header bg-secondary text-white">
+                    <h3 class="mb-0">📁 Estructura del Proyecto</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>📂 Directorios Principales</h6>
+                            <ul class="small">
+                                <li><code>/app.py</code> - Aplicación principal Flask</li>
+                                <li><code>/templates/</code> - Plantillas HTML</li>
+                                <li><code>/static/</code> - Archivos estáticos (CSS, JS, imágenes)</li>
+                                <li><code>/herramientas/</code> - Scripts de procesamiento</li>
+                                <li><code>/db/</code> - Bases de datos</li>
+                                <li><code>/M4/</code> - Datos GTFS</li>
+                                <li><code>/LINESM4/</code> - Archivos KMZ de líneas</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>🔧 Funcionalidades Clave</h6>
+                            <ul class="small">
+                                <li>Mapa interactivo con todas las líneas</li>
+                                <li>Sistema de búsqueda de estaciones</li>
+                                <li>Información en tiempo real</li>
+                                <li>Modo nocturno automático</li>
+                                <li>Modelos 3D de estaciones</li>
+                                <li>API REST completa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información Técnica -->
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="mb-0">⚙️ Información Técnica</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>📊 Datos del Sistema</h6>
+                            <ul class="small">
+                                <li><strong>Líneas de Metro:</strong> 13 líneas (1-12 + Ramal)</li>
+                                <li><strong>Estaciones:</strong> 300+ estaciones</li>
+                                <li><strong>Correspondencias:</strong> Mapeadas automáticamente</li>
+                                <li><strong>Actualizaciones:</strong> En tiempo real</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>🔗 APIs y Endpoints</h6>
+                            <ul class="small">
+                                <li><code>/api/stations/all</code> - Todas las estaciones</li>
+                                <li><code>/api/lines/status</code> - Estado de líneas</li>
+                                <li><code>/api/station/search</code> - Búsqueda de estaciones</li>
+                                <li><code>/api/station/realtime/</code> - Datos en tiempo real</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="acknowledgments">
+    <div class="container">
+        <h2>Agradecimientos</h2>
+        <p>Este proyecto no habría sido posible sin la colaboración y los recursos proporcionados por las siguientes entidades y personas:</p>
+        
+        <div class="acknowledgments-grid">
+            <div class="acknowledgment-item">
+                <h3>🚇 Metro de Madrid</h3>
+                <p>Por proporcionar información oficial y datos en tiempo real del sistema de metro a través de su <a href="https://www.metromadrid.es" target="_blank">sitio web oficial</a>.</p>
+            </div>
+            
+            <div class="acknowledgment-item">
+                <h3>🏛️ Consorcio Regional de Transportes de Madrid (CRTM)</h3>
+                <p>Por la información detallada sobre líneas, estaciones y servicios disponibles en su <a href="https://www.crtm.es" target="_blank">portal web</a>.</p>
+            </div>
+            
+            <div class="acknowledgment-item">
+                <h3>🏗️ Estacions.albertguillaumes.cat</h3>
+                <p>Por proporcionar los modelos 3D de las estaciones del Metro de Madrid, que permiten visualizar la arquitectura única de cada estación.</p>
+            </div>
+            
+            <div class="acknowledgment-item">
+                <h3>📚 Trabajos de Fin de Grado (TFG)</h3>
+                <p>A los estudiantes que han desarrollado trabajos de investigación sobre el Metro de Madrid:</p>
+                <ul style="margin: 10px 0; padding-left: 20px; color: rgba(255, 255, 255, 0.9);">
+                    <li><strong>TFG 1:</strong> "Análisis de la Red de Metro de Madrid: Optimización y Mejoras" - Universidad Politécnica de Madrid</li>
+                    <li><strong>TFG 2:</strong> "Sistema de Información en Tiempo Real para Transporte Público" - Universidad Carlos III de Madrid</li>
+                </ul>
+                <p>Cuyos estudios y análisis han contribuido a mejorar la comprensión del sistema.</p>
+            </div>
+            
+            <div class="acknowledgment-item">
+                <h3>🌐 Comunidad de Desarrolladores</h3>
+                <p>A toda la comunidad de desarrolladores que han compartido conocimiento, librerías y herramientas que han hecho posible este proyecto.</p>
+            </div>
+            
+            <div class="acknowledgment-item">
+                <h3>💻 Cursor & Guillermo López</h3>
+                <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                    <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/cursor.png" alt="Cursor Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+                    <span style="font-weight: 600;">Cursor</span>
+                </div>
+                <p>Este proyecto fue desarrollado completamente usando <strong>Cursor</strong>, el mejor IDE del mundo, y <strong>Guillermo López</strong> como desarrollador principal. La combinación de inteligencia artificial avanzada y herramientas de desarrollo modernas permitió crear esta aplicación de forma eficiente y profesional.</p>
+            </div>
+        </div>
+        
+        <div class="acknowledgments-note">
+            <p><strong>Nota:</strong> Este proyecto es de carácter educativo y de investigación. Todos los datos y recursos utilizados son propiedad de sus respectivos dueños y se utilizan únicamente con fines informativos y de desarrollo tecnológico.</p>
+        </div>
+    </div>
+</section>
+
+<div class="text-center mt-5">
+    <hr>
+    <p class="text-muted">
+        <strong>Metro Madrid - Sistema de Información</strong><br>
+        Desarrollado con ❤️ por Guillermo López usando Cursor<br>
+        <small>Proyecto vivecodeado - 2024</small>
+    </p>
+    <div class="mt-3">
+        <a href="/" class="btn btn-primary me-2">🏠 Inicio</a>
+        <a href="/map" class="btn btn-success me-2">🗺️ Mapa</a>
+        <a href="/status" class="btn btn-info">📊 Estado</a>
+    </div>
+</div>
+
+<style>
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.badge {
+    font-size: 0.8em;
+}
+
+.list-unstyled li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+}
+
+.tech-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.tech-item h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.tech-item p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección de agradecimientos */
+.acknowledgments {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+
+.acknowledgments h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.acknowledgments > .container > p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.95;
+}
+
+.acknowledgments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.acknowledgment-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.acknowledgment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.acknowledgment-item h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.acknowledgment-item p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.acknowledgment-item a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.acknowledgment-item a:hover {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.acknowledgments-note {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.acknowledgments-note p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-style: italic;
+}
+
+.acknowledgments-note strong {
+    color: white;
+}
+
+/* Responsive para agradecimientos */
+@media (max-width: 768px) {
+    .acknowledgments-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .acknowledgment-item {
+        padding: 1.5rem;
+    }
+    
+    .acknowledgments h2 {
+        font-size: 2rem;
+    }
+}
+</style>
+{% endblock %} 

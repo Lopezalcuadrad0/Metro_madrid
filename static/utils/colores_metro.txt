@@ -1,0 +1,14 @@
+🚇 Colores oficiales de las líneas
+Línea	Color oficial (hex)	Color aproximado (nombre)
+1	#0065FE	Azul claro
+2	#FF0000	Rojo
+3	#FFDF00	Amarillo
+4	#824100	Marrón
+5	#339900	Verde
+6	#999999	Gris (Circular)
+7	#FF6600	Naranja
+8	#FF75FF	Rosa
+9	#990066	Rosa fuerte
+10	#000099	Azul oscuro
+11	#006600	Verde oscuro
+12	#a49a00	Amarillo verdoso (Metrosur)

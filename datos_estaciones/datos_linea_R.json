@@ -1,0 +1,96 @@
+{
+  "Ópera": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ópera",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Campomanes",
+        "direccion": "Plaza de Isabel II, 5"
+      },
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Arenal",
+        "direccion": "Plaza de Isabel II, 1 (Esq. Arenal)"
+      },
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Isabel II, 8"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Espacio histórico de Metro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Príncipe Pío": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Príncipe Pío",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Renfe",
+        "direccion": "Puertas mamparas en nivel -1 a la izda de los torniquetes"
+      },
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Ascensor",
+        "direccion": "Pº de la Florida, 2"
+      },
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Intercambiador",
+        "direccion": "Pº de la Florida, 2"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Renfe",
+        "direccion": "Limites Metro/Renfe en el vestibulo mixto"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

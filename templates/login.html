@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} - Metro de Madrid{% endblock %}
+
+{% block content %}
+<style>
+    .auth-container {
+        max-width: 500px;
+        margin: 5rem auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-left: 5px solid #39B54A;
+    }
+    .auth-container h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ced4da;
+    }
+    .form-control:focus {
+        border-color: #39B54A;
+        box-shadow: 0 0 0 0.2rem rgba(57, 181, 74, 0.25);
+    }
+    .btn-auth {
+        background: linear-gradient(135deg, #006400, #39B54A);
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: transform 0.2s;
+    }
+    .btn-auth:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(57, 181, 74, 0.3);
+    }
+    .auth-switch-link {
+        display: block;
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #6c757d;
+    }
+    .is-invalid {
+        border-color: #dc3545;
+    }
+    .invalid-feedback {
+        color: #dc3545;
+        font-size: 0.875em;
+        margin-top: 0.25rem;
+    }
+    .form-check {
+        margin-bottom: 1.5rem;
+    }
+</style>
+
+<div class="auth-container">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <h2>Iniciar Sesión</h2>
+        
+        <div class="form-group">
+            {{ form.email.label(class="form-control-label") }}
+            {% if form.email.errors %}
+                {{ form.email(class="form-control is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.email(class="form-control") }}
+            {% endif %}
+        </div>
+        
+        <div class="form-group">
+            {{ form.password.label(class="form-control-label") }}
+            {% if form.password.errors %}
+                {{ form.password(class="form-control is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.password(class="form-control") }}
+            {% endif %}
+        </div>
+
+        <div class="form-check">
+            {{ form.remember(class="form-check-input") }}
+            {{ form.remember.label(class="form-check-label") }}
+        </div>
+
+        <div class="form-group">
+            {{ form.submit(class="btn btn-auth") }}
+        </div>
+    </form>
+    <div class="auth-switch-link">
+        ¿No tienes una cuenta? <a href="{{ url_for('register') }}">Regístrate</a>
+    </div>
+</div>
+{% endblock %} 

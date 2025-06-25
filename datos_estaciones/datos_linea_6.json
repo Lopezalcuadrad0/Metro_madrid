@@ -1,0 +1,817 @@
+{
+  "Laguna": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Laguna",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Carpetana": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Carpetana",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Opañel": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Opañel",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Plaza Elíptica": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza Elíptica",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Marcelo Usera",
+        "nombre": "Marcelo Usera, pares",
+        "direccion": "Marcelo Usera, 170"
+      },
+      {
+        "vestibulo": "Marcelo Usera",
+        "nombre": "Marcelo Usera Ascensor",
+        "direccion": "Plaza Elíptica, esq. Marcelo Usera con Paseo de Santa María de la Cabeza"
+      },
+      {
+        "vestibulo": "Marcelo Usera",
+        "nombre": "Marcelo Usera, impares",
+        "direccion": "Plaza Elíptica, 2 esq. Marcelo Usera"
+      },
+      {
+        "vestibulo": "Princesa Juana de Austria",
+        "nombre": "Intercambiador",
+        "direccion": "Avda. Princesa Juana de Austria"
+      },
+      {
+        "vestibulo": "Vía Lusitana",
+        "nombre": "Plaza Elíptica Ascensor. Acceso a línea 11",
+        "direccion": "Plaza Eliptica esq. Avda. Oporto, 2"
+      },
+      {
+        "vestibulo": "Vía Lusitana",
+        "nombre": "Plaza Eíptica",
+        "direccion": "Plaza Elíptica esq. A. Leyva 88, 90, 92"
+      },
+      {
+        "vestibulo": "Vía Lusitana",
+        "nombre": "Avda. Oporto, pares",
+        "direccion": "Avda. Oporto, 2"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses de largo recorrido",
+        "icono": "autobuses-de-largo-recorrido"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Usera": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Usera",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [
+      {
+        "tipo": "Autobuses de largo recorrido",
+        "icono": "autobuses-de-largo-recorrido"
+      }
+    ],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Legazpi": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Legazpi",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Arganzuela – Planetario": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Arganzuela – Planetario",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Méndez Álvaro": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Méndez Álvaro",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pacífico": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pacífico",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Doctor Esquerdo",
+        "nombre": "Doctor Esquerdo, impares",
+        "direccion": "Doctor Esquerdo, 219 (Semiesq. Avda. Ciudad de Barcelona)"
+      },
+      {
+        "vestibulo": "Doctor Esquerdo",
+        "nombre": "Doctor Esquerdo, pares",
+        "direccion": "Doctor Esquerdo, 186 (Semiesq. Avda. Ciudad de Barcelona)"
+      },
+      {
+        "vestibulo": "Dr. Esquerdo - Línea 6 - Ascensor",
+        "nombre": "Ascensor",
+        "direccion": "C/ Doctor Esquerdo, 219"
+      },
+      {
+        "vestibulo": "Sánchez Barcáiztegui",
+        "nombre": "Sánchez Barcáiztegui",
+        "direccion": "Sánchez Barcáiztegui, 1"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Espacio histórico de Metro",
+      "Tiendas",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Conde de Casal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Conde de Casal",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sainz de Baranda": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sainz de Baranda",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "O'Donnell": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "O'Donnell",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Manuel Becerra",
+        "nombre": "Doctor Esquerdo",
+        "direccion": "Pza. Manuel Becerra, 20 (Alcalá/Dr. Esquerdo)"
+      },
+      {
+        "vestibulo": "Manuel Becerra",
+        "nombre": "D. Ramón de la Cruz",
+        "direccion": "Pza. Manuel Becerra, 4 (Fco. Silvela/R. Cruz)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Manuel Becerra": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Manuel Becerra",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Manuel Becerra",
+        "nombre": "Doctor Esquerdo",
+        "direccion": "Pza. Manuel Becerra, 20 (Alcalá/Dr. Esquerdo)"
+      },
+      {
+        "vestibulo": "Manuel Becerra",
+        "nombre": "D. Ramón de la Cruz",
+        "direccion": "Pza. Manuel Becerra, 4 (Fco. Silvela/R. Cruz)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Diego de León": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Diego de León",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Alcántara (Línea 5)",
+        "direccion": "Francisco Silvela, 47 (esq. Alcántara)"
+      },
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Francisco Silvela, pares",
+        "direccion": "Francisco Silvela, 34 (esquina Azcona)"
+      },
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Francisco Silvela, pares (Línea 5)",
+        "direccion": "Francisco Silvela, 40 (esquina Eraso)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, impares",
+        "direccion": "Francisco Silvela, 61 (rampa esquina Diego de León)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, pares (línea 4)",
+        "direccion": "Francisco Silvela, 54 (rampa)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Diego de León (línea 4)",
+        "direccion": "Diego de León, 69"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, pares",
+        "direccion": "Francisco Silvela, 56"
+      },
+      {
+        "vestibulo": "Juan Bravo",
+        "nombre": "Juan Bravo/Alcántara",
+        "direccion": "Juan Bravo bulevar, altura 69"
+      },
+      {
+        "vestibulo": "Juan Bravo",
+        "nombre": "Juan Bravo-Conde Peñalver",
+        "direccion": "Juan Bravo bulevar, altura 52-55"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de América": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de América",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Avenida de América",
+        "nombre": "Intercambiador",
+        "direccion": "Avenida de América frente al nº 7"
+      },
+      {
+        "vestibulo": "Avenida de América",
+        "nombre": "Av. América, pares",
+        "direccion": "Av. América, 4"
+      },
+      {
+        "vestibulo": "Francisco Silvela",
+        "nombre": "Pedro Valdivia",
+        "direccion": "Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "República Argentina": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "República Argentina",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Nuevos Ministerios": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Nuevos Ministerios",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Cuatro Caminos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Cuatro Caminos",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Central",
+        "nombre": "Ascensor exterior",
+        "direccion": "Santa Engracia (semiesquina Bravo Murillo)"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Reina Victoria, pares",
+        "direccion": "Avda. Reina Victoria, 2"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Bravo Murillo",
+        "direccion": "Bravo Murillo, 101 (esq. Gta. Cuatro Caminos)"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Santa Engracia",
+        "direccion": "Santa Engracia, 168"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Reina Victoria, impares",
+        "direccion": "Gta. Cuatro Caminos (esq. Reina Victoria, 1)"
+      },
+      {
+        "vestibulo": "Maudes",
+        "nombre": "Maudes",
+        "direccion": "Maudes, 8"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Guzmán el Bueno": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Guzmán el Bueno",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "General Rodrigo",
+        "nombre": "Av. Reina Victoria, impares - Guzmán el Bueno",
+        "direccion": "Reina Victoria s/n"
+      },
+      {
+        "vestibulo": "General Rodrigo",
+        "nombre": "General Rodrigo",
+        "direccion": "Maestro Ángel Llorca, 17 (R. Victoria-Hacienda)"
+      },
+      {
+        "vestibulo": "General Rodrigo",
+        "nombre": "Ascensor",
+        "direccion": "Reina Victoria, s/n"
+      },
+      {
+        "vestibulo": "Reina Victoria",
+        "nombre": "Reina Victoria, pares",
+        "direccion": "Reina Victoria, 30"
+      },
+      {
+        "vestibulo": "Reina Victoria",
+        "nombre": "Los Vascos",
+        "direccion": "Reina Victoria, 32 (Esq. Los Vascos)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Vicente Aleixandre": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Vicente Aleixandre",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ciudad Universitaria": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ciudad Universitaria",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Moncloa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Moncloa",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Arcipreste de Hita",
+        "nombre": "Arcipreste de Hita",
+        "direccion": "Arcipreste de Hita 1 y 3"
+      },
+      {
+        "vestibulo": "Arcipreste de Hita",
+        "nombre": "Intercambiador E. del Aire",
+        "direccion": "Intercambiador E. del Aire"
+      },
+      {
+        "vestibulo": "Cuartel General del Ejercito del Aire",
+        "nombre": "Intercambiador",
+        "direccion": "En vestibulo mixto Metro-Intercambiador (nivel-2) a la altura puerta corredera intercambiador"
+      },
+      {
+        "vestibulo": "Cuartel General del Ejercito del Aire",
+        "nombre": "Princesa",
+        "direccion": "Altura Princesa, 96 (Junta municipal)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP",
+      "Tiendas"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Argüelles": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Argüelles",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Princesa",
+        "direccion": "Princesa, 56 (Esq. A. Aguilera)"
+      },
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Ascensor",
+        "direccion": "Alberto Aguilera, pares"
+      },
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Alberto Aguilera",
+        "direccion": "Alberto Aguilera, 70 (Esq. Gaztambide)"
+      },
+      {
+        "vestibulo": "Altamirano",
+        "nombre": "Altamirano (Esq. Altamirano)",
+        "direccion": "Princesa, 65"
+      },
+      {
+        "vestibulo": "Guzmán el Bueno",
+        "nombre": "Guzmán el Bueno - Ascensor",
+        "direccion": "C/ Alberto Aguilera, 62"
+      },
+      {
+        "vestibulo": "Guzmán el Bueno",
+        "nombre": "Guzmán el Bueno",
+        "direccion": "Alberto Aguilera, 62 (A. Mellado - G. Bueno)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Príncipe Pío": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Príncipe Pío",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Renfe",
+        "direccion": "Puertas mamparas en nivel -1 a la izda de los torniquetes"
+      },
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Ascensor",
+        "direccion": "Pº de la Florida, 2"
+      },
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Intercambiador",
+        "direccion": "Pº de la Florida, 2"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Renfe",
+        "direccion": "Limites Metro/Renfe en el vestibulo mixto"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Puerta del Ángel": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puerta del Ángel",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alto de Extremadura": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alto de Extremadura",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Lucero": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Lucero",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

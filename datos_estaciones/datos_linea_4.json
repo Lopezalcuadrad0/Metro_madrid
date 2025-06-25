@@ -1,0 +1,661 @@
+{
+  "Argüelles": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Argüelles",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Princesa",
+        "direccion": "Princesa, 56 (Esq. A. Aguilera)"
+      },
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Ascensor",
+        "direccion": "Alberto Aguilera, pares"
+      },
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Alberto Aguilera",
+        "direccion": "Alberto Aguilera, 70 (Esq. Gaztambide)"
+      },
+      {
+        "vestibulo": "Altamirano",
+        "nombre": "Altamirano (Esq. Altamirano)",
+        "direccion": "Princesa, 65"
+      },
+      {
+        "vestibulo": "Guzmán el Bueno",
+        "nombre": "Guzmán el Bueno - Ascensor",
+        "direccion": "C/ Alberto Aguilera, 62"
+      },
+      {
+        "vestibulo": "Guzmán el Bueno",
+        "nombre": "Guzmán el Bueno",
+        "direccion": "Alberto Aguilera, 62 (A. Mellado - G. Bueno)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Bernardo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Bernardo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Alberto Aguilera",
+        "direccion": "Gta. Ruiz Jiménez, 2 (S.Bernardo - A. Aguilera)"
+      },
+      {
+        "vestibulo": "Carranza",
+        "nombre": "Carranza",
+        "direccion": "Gta. Ruiz Jiménez, 5 (Esq. Carranza)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Bilbao": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Bilbao",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alonso Martínez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alonso Martínez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Colón": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Colón",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Serrano": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Serrano",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Velázquez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Velázquez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Goya": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Goya",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Conde de Peñalver",
+        "nombre": "Conde de Peñalver, pares",
+        "direccion": "Conde de Peñalver, 2 (Esq. con Alcalá)"
+      },
+      {
+        "vestibulo": "Conde de Peñalver",
+        "nombre": "Ascensores 4 y 5",
+        "direccion": "C/ Goya, 87"
+      },
+      {
+        "vestibulo": "Conde de Peñalver",
+        "nombre": "Conde de Peñalver, impares",
+        "direccion": "Goya, 89 (Esq. C/Peñalver , 1)"
+      },
+      {
+        "vestibulo": "Felipe II",
+        "nombre": "Felipe II, impares",
+        "direccion": "Avda. Felipe II, 1 (Esq. con c/ Narváez)"
+      },
+      {
+        "vestibulo": "Felipe II",
+        "nombre": "Ascensores 2 y 3. Acceso a línea 2 dirección Cuatro Caminos",
+        "direccion": "Avda. Felipe II, 1 (Esq. con c/ Alcalá)"
+      },
+      {
+        "vestibulo": "Felipe II",
+        "nombre": "Felipe II, pares",
+        "direccion": "Avda. Felipe II, 12 (Esq. con C/ Narváez)"
+      },
+      {
+        "vestibulo": "General Díaz Porlier",
+        "nombre": "General Díaz Porlier",
+        "direccion": "Goya, 62 (Esq. Gnral Díaz Porlier)"
+      },
+      {
+        "vestibulo": "General Díaz Porlier",
+        "nombre": "Ascensor 1. Acceso a línea 2 dirección Las Rosas y línea 4 dirección Argüelles",
+        "direccion": "General Díaz Porlier, 3"
+      },
+      {
+        "vestibulo": "General Díaz Porlier",
+        "nombre": "Centro Comercial",
+        "direccion": "Nivel -2 Centro Comercial"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Lista": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Lista",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Diego de León": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Diego de León",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Alcántara (Línea 5)",
+        "direccion": "Francisco Silvela, 47 (esq. Alcántara)"
+      },
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Francisco Silvela, pares",
+        "direccion": "Francisco Silvela, 34 (esquina Azcona)"
+      },
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Francisco Silvela, pares (Línea 5)",
+        "direccion": "Francisco Silvela, 40 (esquina Eraso)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, impares",
+        "direccion": "Francisco Silvela, 61 (rampa esquina Diego de León)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, pares (línea 4)",
+        "direccion": "Francisco Silvela, 54 (rampa)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Diego de León (línea 4)",
+        "direccion": "Diego de León, 69"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, pares",
+        "direccion": "Francisco Silvela, 56"
+      },
+      {
+        "vestibulo": "Juan Bravo",
+        "nombre": "Juan Bravo/Alcántara",
+        "direccion": "Juan Bravo bulevar, altura 69"
+      },
+      {
+        "vestibulo": "Juan Bravo",
+        "nombre": "Juan Bravo-Conde Peñalver",
+        "direccion": "Juan Bravo bulevar, altura 52-55"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de América": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de América",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Avenida de América",
+        "nombre": "Intercambiador",
+        "direccion": "Avenida de América frente al nº 7"
+      },
+      {
+        "vestibulo": "Avenida de América",
+        "nombre": "Av. América, pares",
+        "direccion": "Av. América, 4"
+      },
+      {
+        "vestibulo": "Francisco Silvela",
+        "nombre": "Pedro Valdivia",
+        "direccion": "Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Prosperidad": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Prosperidad",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alfonso XIII": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alfonso XIII",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de la Paz": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de la Paz",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Arturo Soria": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Arturo Soria",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Arturo Soria",
+        "nombre": "José Silva, impares",
+        "direccion": "José Silva, 1 (Esq. A. Soria , 157)"
+      },
+      {
+        "vestibulo": "Arturo Soria",
+        "nombre": "Arturo Soria",
+        "direccion": "Arturo Soria, 172 (Semiesq. Ulises)"
+      },
+      {
+        "vestibulo": "Arturo Soria",
+        "nombre": "Ulises",
+        "direccion": "Ulises, 1"
+      },
+      {
+        "vestibulo": "Ulises",
+        "nombre": "Ulises, impares",
+        "direccion": "Ulises, 5-7 (Esq. Asura/A. Soria, 172)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Esperanza": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Esperanza",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Canillas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Canillas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Mar de Cristal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Mar de Cristal",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Mar Adriático",
+        "direccion": "Mar Adriático (Esq. Ayacucho)"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Ascensor",
+        "direccion": "Emigrantes (Esq. Arequipa)"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Gta. Mar de Cristal",
+        "direccion": "Centro Comercial"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Arequipa",
+        "direccion": "Emigrantes (Esq. Arequipa)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Lorenzo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Lorenzo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Parque de Santa María": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Parque de Santa María",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Hortaleza": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hortaleza",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Hortaleza",
+        "nombre": "Capitán Cortés",
+        "direccion": "C/ Manuel Chaves Nogales, 4"
+      },
+      {
+        "vestibulo": "Hortaleza",
+        "nombre": "Costa del Sol",
+        "direccion": "C/ Costa del Sol s/n, junto al 20 D, (esta a nivel de calle)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Manoteras": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Manoteras",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Manoteras",
+        "nombre": "Ascensor",
+        "direccion": "C/ Vélez Rubio esquina C/ Bacares 11"
+      },
+      {
+        "vestibulo": "Manoteras",
+        "nombre": "Vélez Rubio",
+        "direccion": "C/ Vélez Rubio esquina C/ Bacares 11"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pinar de Chamartín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pinar de Chamartín",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Pinar de Chamartín",
+        "nombre": "Ascensor",
+        "direccion": "C/ Arturo Soria, 330"
+      },
+      {
+        "vestibulo": "Pinar de Chamartín",
+        "nombre": "Arturo Soria",
+        "direccion": "C/ Arturo Soria, 330"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

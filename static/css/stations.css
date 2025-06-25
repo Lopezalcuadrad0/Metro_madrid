@@ -1,0 +1,141 @@
+/* Tira de estaciones y circulitos mejorada */
+.station-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 0;
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+/* Estilo especial para líneas circulares */
+.station-strip.circular {
+  position: relative;
+  padding: 0 40px;
+}
+
+.station-strip.circular::before,
+.station-strip.circular::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--line-color, #1976d2);
+  border-radius: 50%;
+  background: var(--line-color, #1976d2);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.station-strip.circular::before {
+  left: 8px;
+  box-shadow: -8px 0 0 -3px var(--line-color, #1976d2);
+}
+
+.station-strip.circular::after {
+  right: 8px;
+  box-shadow: 8px 0 0 -3px var(--line-color, #1976d2);
+}
+
+.station-strip .station-connector {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  right: 32px;
+  height: 6px;
+  background: var(--line-color, #1976d2);
+  z-index: 0;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+
+/* Conector especial para líneas circulares */
+.station-strip.circular .station-connector {
+  left: 28px;
+  right: 28px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--line-color, #1976d2) 8%, 
+    var(--line-color, #1976d2) 92%, 
+    transparent 100%);
+}
+
+.station-strip .station-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--line-color, #1976d2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin: 0 18px;
+}
+
+.station-strip .station-dot.active {
+  background: #fff;
+  color: var(--line-color, #1976d2);
+  border: 5px solid var(--line-color, #1976d2);
+  box-shadow: 0 4px 16px #1976d288;
+}
+
+.station-strip .station-dot-label {
+  display: block;
+  font-size: 0.95em;
+  max-width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.station-strip .station-dot:hover::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.line-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 18px 0 0 0;
+}
+.line-selector .line-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 8px #0001;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+  opacity: 0.7;
+}
+.line-selector .line-icon.selected {
+  border: 3px solid var(--line-color, #1976d2);
+  box-shadow: 0 4px 16px #1976d288;
+  opacity: 1;
+} 

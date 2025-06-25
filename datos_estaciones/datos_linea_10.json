@@ -1,0 +1,952 @@
+{
+  "Hospital Infanta Sofía": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hospital Infanta Sofía",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Hospital Infanta Sofía",
+        "nombre": "Ascensor",
+        "direccion": "Avenida de Europa s/n SAN SEBASTIÁN DE LOS REYES"
+      },
+      {
+        "vestibulo": "Hospital Infanta Sofía",
+        "nombre": "Poeta Rafael Morales",
+        "direccion": "C/ Poeta Rafael Morales s/n SAN SEBASTIÁN DE LOS REYES"
+      },
+      {
+        "vestibulo": "Hospital Infanta Sofía",
+        "nombre": "Hospital Infanta Sofía",
+        "direccion": "Avenida de Europa s/n SAN SEBASTIÁN DE LOS REYES"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Reyes Católicos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Reyes Católicos",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Reyes Católicos",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Plaza de Toros, frente nº7 SAN SEBASTIÁN DE LOS REYES"
+      },
+      {
+        "vestibulo": "Reyes Católicos",
+        "nombre": "Avda. Plaza de Toros",
+        "direccion": "Avda. Plaza de Toros, frente nº7 SAN SEBASTIÁN DE LOS REYES"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Baunatal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Baunatal",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Baunatal",
+        "nombre": "Avda. Lomas del Rey",
+        "direccion": "Avda. Lomas del Rey nº1, esquina Avda de la Independencia SAN SEBASTIÁN DE LOS REYES"
+      },
+      {
+        "vestibulo": "Baunatal",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Lomas del Rey nº1, esquina Avda de la Independencia SAN SEBASTIÁN DE LOS REYES"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Manuel de Falla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Manuel de Falla",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Manuel de Falla",
+        "nombre": "Ascensor",
+        "direccion": "C/ Manuel de Falla, frente al nº32 ALCOBENDAS"
+      },
+      {
+        "vestibulo": "Manuel de Falla",
+        "nombre": "Manuel de Falla",
+        "direccion": "C/ Manuel de Falla, frente al nº32 ALCOBENDAS"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Marqués de la Valdavia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Marqués de la Valdavia",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Marqués de la Valdivia",
+        "nombre": "Ascensor",
+        "direccion": "C/ Marqués de la Valdavia nº21 ALCOBENDAS"
+      },
+      {
+        "vestibulo": "Marqués de la Valdivia",
+        "nombre": "Marqués de la Valdivia",
+        "direccion": "C/ Marqués de la Valdavia nº21 ALCOBENDAS"
+      },
+      {
+        "vestibulo": "Paseo de la Chopera",
+        "nombre": "Paseo de la Chopera",
+        "direccion": "Paseo de la Chopera nº48, en el parque de Cataluña ALCOBENDAS"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Moraleja": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Moraleja",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "La Moraleja",
+        "nombre": "Avda. Bruselas",
+        "direccion": "Avda. Bruselas nº14 ALCOBENDAS"
+      },
+      {
+        "vestibulo": "La Moraleja",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Bruselas nº14 ALCOBENDAS"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Granja": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Granja",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "La Granja",
+        "nombre": "Ascensor",
+        "direccion": "C/ Sepúlveda 3, esquina C/ La Granja ALCOBENDAS"
+      },
+      {
+        "vestibulo": "La Granja",
+        "nombre": "La Granja",
+        "direccion": "C/ Sepúlveda 3, esquina C/ La Granja ALCOBENDAS"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ronda de la Comunicación": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ronda de la Comunicación",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Las Tablas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Las Tablas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Montecarmelo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Montecarmelo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Tres Olivos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Tres Olivos",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Fuencarral": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Fuencarral",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Begoña": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Begoña",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Chamartín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Chamartín",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "ADIF - Cercanías y Larga Distancia",
+        "nombre": "ADIF - Cercanías y Larga Distancia",
+        "direccion": "Corredor andenes ADIF"
+      },
+      {
+        "vestibulo": "Chamartín",
+        "nombre": "RENFE",
+        "direccion": "Corredor andenes RENFE"
+      },
+      {
+        "vestibulo": "Chamartín",
+        "nombre": "Ascensor",
+        "direccion": "Agustín de Foxa, s/n"
+      },
+      {
+        "vestibulo": "Chamartín",
+        "nombre": "Chamartín",
+        "direccion": "Vestíbulo Cercanías Renfe"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Espacio histórico de Metro",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Plaza de Castilla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza de Castilla",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Avenida de Asturias",
+        "nombre": "Intercambiador",
+        "direccion": "Límite Intercambiador/Metro"
+      },
+      {
+        "vestibulo": "Bravo Murillo",
+        "nombre": "Bravo Murillo",
+        "direccion": "Bravo Murillo, 377"
+      },
+      {
+        "vestibulo": "Castellana",
+        "nombre": "Castellana",
+        "direccion": "Fr. Dep. Canal Isabel II"
+      },
+      {
+        "vestibulo": "Castellana",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Castilla esq. Paseo Castellana pares - acera del Canal de Isabel II"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Ascensor",
+        "direccion": "Paseo de la Castellana, bulevar central"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Plaza de Castilla",
+        "direccion": "Pº. Castellana bulevar central"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Intercambiador Superficie",
+        "direccion": "Intercambiador Superficie"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Intercambiador Subterraneo",
+        "direccion": "Interconexión con Intercambiador subterráneo"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Castellana, impares",
+        "direccion": "Pº Castellana, 189 (junto a torres)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tienda de Metro",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Atención al cliente",
+      "Oficina de gestión TTP",
+      "Oficina Objetos Perdidos",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Cuzco": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Cuzco",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Cuzco",
+        "nombre": "Paseo Castellana, pares",
+        "direccion": "Pº Castellana, bul.cen.162"
+      },
+      {
+        "vestibulo": "Cuzco",
+        "nombre": "Paseo Castellana, impares",
+        "direccion": "Pº Castellana, bul.cen.125"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Santiago Bernabéu": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Santiago Bernabéu",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Plaza de Lima",
+        "nombre": "Pza. Lima. Acceso cerrado por obras de modernización",
+        "direccion": "Pº Castellana, 136 (bulevar central)"
+      },
+      {
+        "vestibulo": "Santiago Bernabéu",
+        "nombre": "Paseo Castellana, pares",
+        "direccion": "Pº Castellana bulevar central frente estadio Santiago Bernabeu"
+      },
+      {
+        "vestibulo": "Santiago Bernabéu",
+        "nombre": "Paseo Castellana, impares",
+        "direccion": "Pº Castellana bulevar central, 103"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Nuevos Ministerios": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Nuevos Ministerios",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Gregorio Marañón": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Gregorio Marañón",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alonso Martínez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alonso Martínez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Tribunal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Tribunal",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Plaza de España": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza de España",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Conde de Toreno",
+        "nombre": "Ascensor. Acceso a línea 10",
+        "direccion": "Pza. Conde de Toreno"
+      },
+      {
+        "vestibulo": "Conde de Toreno",
+        "nombre": "Ascensor. Acceso a línea 10",
+        "direccion": "Pza. Conde de Toreno"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 80"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Leganitos",
+        "direccion": "Gran Vía, 73"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Reyes",
+        "direccion": "Reyes, 1"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Princesa",
+        "direccion": "Princesa, 2"
+      },
+      {
+        "vestibulo": "Plaza de España",
+        "nombre": "Plaza de España",
+        "direccion": "Plaza de España,18"
+      },
+      {
+        "vestibulo": "Plaza de España",
+        "nombre": "Ascensor. Acceso a línea 3",
+        "direccion": "Plaza de España, 18"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Príncipe Pío": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Príncipe Pío",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Renfe",
+        "direccion": "Puertas mamparas en nivel -1 a la izda de los torniquetes"
+      },
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Ascensor",
+        "direccion": "Pº de la Florida, 2"
+      },
+      {
+        "vestibulo": "Paseo de la Florida",
+        "nombre": "Intercambiador",
+        "direccion": "Pº de la Florida, 2"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Renfe",
+        "direccion": "Limites Metro/Renfe en el vestibulo mixto"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Lago": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Lago",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Lago",
+        "nombre": "El Lago",
+        "direccion": "Puerta del Ángel (piscina municipal Casa de Campo)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Batán": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Batán",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Casa de Campo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Casa de Campo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Colonia Jardín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Colonia Jardín",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Arenas de San Pedro",
+        "nombre": "Arenas de San Pedro",
+        "direccion": "esq. Ctra. Carabanchel-Aravaca, 56"
+      },
+      {
+        "vestibulo": "Fuentesaúco",
+        "nombre": "Ascensor",
+        "direccion": "esq. Ctra. Carabanchel-Aravaca, 56"
+      },
+      {
+        "vestibulo": "Fuentesaúco",
+        "nombre": "Sedano",
+        "direccion": "Fuentesaúco, 44"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Parking disuasorio gratuito"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Aviación Española": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Aviación Española",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Cuatro Vientos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Cuatro Vientos",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Joaquín Vilumbrales": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Joaquín Vilumbrales",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Joaquín Vilumbrales",
+        "nombre": "Ascensor",
+        "direccion": "Avenida de la Libertad, 29 (esquina c/ Carballino) ALCORCÓN"
+      },
+      {
+        "vestibulo": "Joaquín Vilumbrales",
+        "nombre": "Avenida de la Libertad, impares",
+        "direccion": "Avenida de la Libertad, 29 (esquina c/ Carballino) ALCORCÓN"
+      },
+      {
+        "vestibulo": "Joaquín Vilumbrales",
+        "nombre": "Avenida de la Libertad, pares",
+        "direccion": "Avenida de la Libertad, s/n (semiesquina c/ Parque Ordesa) ALCORCÓN"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Puerta del Sur": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puerta del Sur",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Alcalde Joaquín Vilumbrales",
+        "nombre": "Ascensor",
+        "direccion": "Avenida de la Libertad ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcalde Joaquín Vilumbrales",
+        "nombre": "Avenida de la Libertad, pares",
+        "direccion": "Avenida de la Libertad esquina a Avda. de Leganés ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcalde Joaquín Vilumbrales",
+        "nombre": "Avenida de la Libertad, impares",
+        "direccion": "Avenida de la Libertad del 1 al 9 ALCORCÓN"
+      },
+      {
+        "vestibulo": "Olímpico Francisco Fernández Ochoa",
+        "nombre": "Olímpico Francisco Fernández Ochoa",
+        "direccion": "Olímpico Fernández Ochoa, esquina a Avda. de Leganés ALCORCÓN"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Estacionamiento de bicicletas",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

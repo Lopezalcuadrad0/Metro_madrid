@@ -1,0 +1,1700 @@
+{
+  "1_153": {
+    "line_number": "1",
+    "station_id": "153",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-153",
+    "station_name": "Pinar de Chamartín"
+  },
+  "1_152": {
+    "line_number": "1",
+    "station_id": "152",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-152",
+    "station_name": "Bambú"
+  },
+  "1_151": {
+    "line_number": "1",
+    "station_id": "151",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-151",
+    "station_name": "Chamartín"
+  },
+  "1_101": {
+    "line_number": "1",
+    "station_id": "101",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-101",
+    "station_name": "Plaza de Castilla"
+  },
+  "1_150": {
+    "line_number": "1",
+    "station_id": "150",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-150",
+    "station_name": "Valdeacederas"
+  },
+  "1_149": {
+    "line_number": "1",
+    "station_id": "149",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-149",
+    "station_name": "Tetuán"
+  },
+  "1_148": {
+    "line_number": "1",
+    "station_id": "148",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-148",
+    "station_name": "Estrecho"
+  },
+  "1_147": {
+    "line_number": "1",
+    "station_id": "147",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-147",
+    "station_name": "Alvarado"
+  },
+  "1_109": {
+    "line_number": "1",
+    "station_id": "109",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-109",
+    "station_name": "Cuatro Caminos"
+  },
+  "1_110": {
+    "line_number": "1",
+    "station_id": "110",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-110",
+    "station_name": "Ríos Rosas"
+  },
+  "1_111": {
+    "line_number": "1",
+    "station_id": "111",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-111",
+    "station_name": "Gran Vía"
+  },
+  "1_113": {
+    "line_number": "1",
+    "station_id": "113",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-113",
+    "station_name": "Bilbao"
+  },
+  "1_114": {
+    "line_number": "1",
+    "station_id": "114",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-114",
+    "station_name": "Tribunal"
+  },
+  "1_115": {
+    "line_number": "1",
+    "station_id": "115",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-115",
+    "station_name": "Sol"
+  },
+  "1_116": {
+    "line_number": "1",
+    "station_id": "116",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-116",
+    "station_name": "Tirso de Molina"
+  },
+  "1_117": {
+    "line_number": "1",
+    "station_id": "117",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-117",
+    "station_name": "Antón Martín"
+  },
+  "1_118": {
+    "line_number": "1",
+    "station_id": "118",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-118",
+    "station_name": "Estación del Arte"
+  },
+  "1_119": {
+    "line_number": "1",
+    "station_id": "119",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-119",
+    "station_name": "Menéndez Pelayo"
+  },
+  "1_120": {
+    "line_number": "1",
+    "station_id": "120",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-120",
+    "station_name": "Pacífico"
+  },
+  "1_121": {
+    "line_number": "1",
+    "station_id": "121",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-121",
+    "station_name": "Puente de Vallecas"
+  },
+  "1_122": {
+    "line_number": "1",
+    "station_id": "122",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-122",
+    "station_name": "Nueva Numancia"
+  },
+  "1_123": {
+    "line_number": "1",
+    "station_id": "123",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-123",
+    "station_name": "Portazgo"
+  },
+  "1_124": {
+    "line_number": "1",
+    "station_id": "124",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-124",
+    "station_name": "Buenos Aires"
+  },
+  "1_125": {
+    "line_number": "1",
+    "station_id": "125",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-125",
+    "station_name": "Alto del Arenal"
+  },
+  "1_126": {
+    "line_number": "1",
+    "station_id": "126",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-126",
+    "station_name": "Miguel Hernández"
+  },
+  "1_127": {
+    "line_number": "1",
+    "station_id": "127",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-127",
+    "station_name": "Sierra de Guadalupe"
+  },
+  "1_128": {
+    "line_number": "1",
+    "station_id": "128",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-128",
+    "station_name": "Villa de Vallecas"
+  },
+  "1_129": {
+    "line_number": "1",
+    "station_id": "129",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-129",
+    "station_name": "Congosto"
+  },
+  "1_130": {
+    "line_number": "1",
+    "station_id": "130",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-130",
+    "station_name": "Valdecarros"
+  },
+  "1_131": {
+    "line_number": "1",
+    "station_id": "131",
+    "url": "https://www.metromadrid.es/es/linea/linea-1#estacion-131",
+    "station_name": "Las Suertes"
+  },
+  " 2_220": {
+    "line_number": " 2",
+    "station_id": "220",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-220",
+    "station_name": "Las Rosas"
+  },
+  "2_219": {
+    "line_number": "2",
+    "station_id": "219",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-219",
+    "station_name": "Avenida de Guadalajara"
+  },
+  "2_218": {
+    "line_number": "2",
+    "station_id": "218",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-218",
+    "station_name": "Alsacia"
+  },
+  "2_217": {
+    "line_number": "2",
+    "station_id": "217",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-217",
+    "station_name": "La Almudena"
+  },
+  "2_216": {
+    "line_number": "2",
+    "station_id": "216",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-216",
+    "station_name": "La Elipa"
+  },
+  "2_213": {
+    "line_number": "2",
+    "station_id": "213",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-213",
+    "station_name": "Ventas"
+  },
+  "2_212": {
+    "line_number": "2",
+    "station_id": "212",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-212",
+    "station_name": "Manuel Becerra"
+  },
+  "2_211": {
+    "line_number": "2",
+    "station_id": "211",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-211",
+    "station_name": "Goya"
+  },
+  "2_209": {
+    "line_number": "2",
+    "station_id": "209",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-209",
+    "station_name": "Príncipe de Vergara"
+  },
+  "2_207": {
+    "line_number": "2",
+    "station_id": "207",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-207",
+    "station_name": "Retiro"
+  },
+  "2_206": {
+    "line_number": "2",
+    "station_id": "206",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-206",
+    "station_name": "Banco de España"
+  },
+  "2_205": {
+    "line_number": "2",
+    "station_id": "205",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-205",
+    "station_name": "Sevilla"
+  },
+  "2_115": {
+    "line_number": "2",
+    "station_id": "115",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-115",
+    "station_name": "Sol"
+  },
+  "2_208": {
+    "line_number": "2",
+    "station_id": "208",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-208",
+    "station_name": "Ópera"
+  },
+  "2_203": {
+    "line_number": "2",
+    "station_id": "203",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-203",
+    "station_name": "Santo Domingo"
+  },
+  "2_202": {
+    "line_number": "2",
+    "station_id": "202",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-202",
+    "station_name": "Noviciado"
+  },
+  "2_201": {
+    "line_number": "2",
+    "station_id": "201",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-201",
+    "station_name": "San Bernardo"
+  },
+  "2_210": {
+    "line_number": "2",
+    "station_id": "210",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-210",
+    "station_name": "Quevedo"
+  },
+  "2_214": {
+    "line_number": "2",
+    "station_id": "214",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-214",
+    "station_name": "Canal"
+  },
+  "2_220": {
+    "line_number": "2",
+    "station_id": "220",
+    "url": "https://www.metromadrid.es/es/linea/linea-2#estacion-220",
+    "station_name": "Cuatro Caminos"
+  },
+  " 3_307": {
+    "line_number": " 3",
+    "station_id": "307",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-307",
+    "station_name": "Villaverde Alto"
+  },
+  "3_306": {
+    "line_number": "3",
+    "station_id": "306",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-306",
+    "station_name": "San Cristóbal"
+  },
+  "3_305": {
+    "line_number": "3",
+    "station_id": "305",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-305",
+    "station_name": "Villaverde Bajo Cruce"
+  },
+  "3_304": {
+    "line_number": "3",
+    "station_id": "304",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-304",
+    "station_name": "Ciudad de los Ángeles"
+  },
+  "3_303": {
+    "line_number": "3",
+    "station_id": "303",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-303",
+    "station_name": "San Fermín – Orcasur"
+  },
+  "3_302": {
+    "line_number": "3",
+    "station_id": "302",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-302",
+    "station_name": "Hospital 12 de Octubre"
+  },
+  "3_301": {
+    "line_number": "3",
+    "station_id": "301",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-301",
+    "station_name": "Almendrales"
+  },
+  "3_317": {
+    "line_number": "3",
+    "station_id": "317",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-317",
+    "station_name": "Legazpi"
+  },
+  "3_104": {
+    "line_number": "3",
+    "station_id": "104",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-104",
+    "station_name": "Delicias"
+  },
+  "3_312": {
+    "line_number": "3",
+    "station_id": "312",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-312",
+    "station_name": "Palos de la Frontera"
+  },
+  "3_313": {
+    "line_number": "3",
+    "station_id": "313",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-313",
+    "station_name": "Embajadores"
+  },
+  "3_109": {
+    "line_number": "3",
+    "station_id": "109",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-109",
+    "station_name": "Lavapiés"
+  },
+  "3_115": {
+    "line_number": "3",
+    "station_id": "115",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-115",
+    "station_name": "Sol"
+  },
+  "3_311": {
+    "line_number": "3",
+    "station_id": "311",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-311",
+    "station_name": "Callao"
+  },
+  "3_308": {
+    "line_number": "3",
+    "station_id": "308",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-308",
+    "station_name": "Plaza de España"
+  },
+  "3_307": {
+    "line_number": "3",
+    "station_id": "307",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-307",
+    "station_name": "Ventura Rodríguez"
+  },
+  "3_401": {
+    "line_number": "3",
+    "station_id": "401",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-401",
+    "station_name": "Argüelles"
+  },
+  "3_626": {
+    "line_number": "3",
+    "station_id": "626",
+    "url": "https://www.metromadrid.es/es/linea/linea-3#estacion-626",
+    "station_name": "Moncloa"
+  },
+  " 4_428": {
+    "line_number": " 4",
+    "station_id": "428",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-428",
+    "station_name": "Argüelles"
+  },
+  "4_214": {
+    "line_number": "4",
+    "station_id": "214",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-214",
+    "station_name": "San Bernardo"
+  },
+  "4_113": {
+    "line_number": "4",
+    "station_id": "113",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-113",
+    "station_name": "Bilbao"
+  },
+  "4_404": {
+    "line_number": "4",
+    "station_id": "404",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-404",
+    "station_name": "Alonso Martínez"
+  },
+  "4_403": {
+    "line_number": "4",
+    "station_id": "403",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-403",
+    "station_name": "Colón"
+  },
+  "4_402": {
+    "line_number": "4",
+    "station_id": "402",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-402",
+    "station_name": "Serrano"
+  },
+  "4_401": {
+    "line_number": "4",
+    "station_id": "401",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-401",
+    "station_name": "Velázquez"
+  },
+  "4_211": {
+    "line_number": "4",
+    "station_id": "211",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-211",
+    "station_name": "Goya"
+  },
+  "4_406": {
+    "line_number": "4",
+    "station_id": "406",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-406",
+    "station_name": "Lista"
+  },
+  "4_410": {
+    "line_number": "4",
+    "station_id": "410",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-410",
+    "station_name": "Diego de León"
+  },
+  "4_411": {
+    "line_number": "4",
+    "station_id": "411",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-411",
+    "station_name": "Avenida de América"
+  },
+  "4_408": {
+    "line_number": "4",
+    "station_id": "408",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-408",
+    "station_name": "Prosperidad"
+  },
+  "4_409": {
+    "line_number": "4",
+    "station_id": "409",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-409",
+    "station_name": "Alfonso XIII"
+  },
+  "4_412": {
+    "line_number": "4",
+    "station_id": "412",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-412",
+    "station_name": "Avenida de la Paz"
+  },
+  "4_413": {
+    "line_number": "4",
+    "station_id": "413",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-413",
+    "station_name": "Arturo Soria"
+  },
+  "4_414": {
+    "line_number": "4",
+    "station_id": "414",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-414",
+    "station_name": "Esperanza"
+  },
+  "4_415": {
+    "line_number": "4",
+    "station_id": "415",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-415",
+    "station_name": "Canillas"
+  },
+  "4_418": {
+    "line_number": "4",
+    "station_id": "418",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-418",
+    "station_name": "Mar de Cristal"
+  },
+  "4_416": {
+    "line_number": "4",
+    "station_id": "416",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-416",
+    "station_name": "San Lorenzo"
+  },
+  "4_417": {
+    "line_number": "4",
+    "station_id": "417",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-417",
+    "station_name": "Parque de Santa María"
+  },
+  "4_419": {
+    "line_number": "4",
+    "station_id": "419",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-419",
+    "station_name": "Hortaleza"
+  },
+  "4_420": {
+    "line_number": "4",
+    "station_id": "420",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-420",
+    "station_name": "Manoteras"
+  },
+  "4_153": {
+    "line_number": "4",
+    "station_id": "153",
+    "url": "https://www.metromadrid.es/es/linea/linea-4#estacion-153",
+    "station_name": "Pinar de Chamartín"
+  },
+  " 5_521": {
+    "line_number": " 5",
+    "station_id": "521",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-521",
+    "station_name": "Alameda de Osuna"
+  },
+  "5_520": {
+    "line_number": "5",
+    "station_id": "520",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-520",
+    "station_name": "El Capricho"
+  },
+  "5_519": {
+    "line_number": "5",
+    "station_id": "519",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-519",
+    "station_name": "Canillejas"
+  },
+  "5_518": {
+    "line_number": "5",
+    "station_id": "518",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-518",
+    "station_name": "Torre Arias"
+  },
+  "5_517": {
+    "line_number": "5",
+    "station_id": "517",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-517",
+    "station_name": "Suanzes"
+  },
+  "5_516": {
+    "line_number": "5",
+    "station_id": "516",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-516",
+    "station_name": "Ciudad Lineal"
+  },
+  "5_505": {
+    "line_number": "5",
+    "station_id": "505",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-505 (sic)",
+    "station_name": "La Latina"
+  },
+  "5_514": {
+    "line_number": "5",
+    "station_id": "514",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-514",
+    "station_name": "Quintana"
+  },
+  "5_513": {
+    "line_number": "5",
+    "station_id": "513",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-513",
+    "station_name": "El Carmen"
+  },
+  "5_213": {
+    "line_number": "5",
+    "station_id": "213",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-213",
+    "station_name": "Ventas"
+  },
+  "5_409": {
+    "line_number": "5",
+    "station_id": "409",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-409",
+    "station_name": "Diego de León"
+  },
+  "5_510": {
+    "line_number": "5",
+    "station_id": "510",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-510 (sic)",
+    "station_name": "Pirámides"
+  },
+  "5_507": {
+    "line_number": "5",
+    "station_id": "507",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-507",
+    "station_name": "Rubén Darío"
+  },
+  "5_408": {
+    "line_number": "5",
+    "station_id": "408",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-408",
+    "station_name": "Alonso Martínez"
+  },
+  "5_506": {
+    "line_number": "5",
+    "station_id": "506",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-506",
+    "station_name": "Chueca"
+  },
+  "5_115": {
+    "line_number": "5",
+    "station_id": "115",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-115",
+    "station_name": "Gran Vía"
+  },
+  "5_310": {
+    "line_number": "5",
+    "station_id": "310",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-310",
+    "station_name": "Callao"
+  },
+  "5_208": {
+    "line_number": "5",
+    "station_id": "208",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-208",
+    "station_name": "Ópera"
+  },
+  "5_502": {
+    "line_number": "5",
+    "station_id": "502",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-502",
+    "station_name": "Puerta de Toledo"
+  },
+  "5_501": {
+    "line_number": "5",
+    "station_id": "501",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-501",
+    "station_name": "Acacias"
+  },
+  "5_512": {
+    "line_number": "5",
+    "station_id": "512",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-512",
+    "station_name": "Marqués de Vadillo"
+  },
+  "5_511": {
+    "line_number": "5",
+    "station_id": "511",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-511",
+    "station_name": "Urgel"
+  },
+  "5_529": {
+    "line_number": "5",
+    "station_id": "529",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-529",
+    "station_name": "Oporto"
+  },
+  "5_528": {
+    "line_number": "5",
+    "station_id": "528",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-528",
+    "station_name": "Vista Alegre"
+  },
+  "5_527": {
+    "line_number": "5",
+    "station_id": "527",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-527",
+    "station_name": "Carabanchel"
+  },
+  "5_526": {
+    "line_number": "5",
+    "station_id": "526",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-526",
+    "station_name": "Eugenia de Montijo"
+  },
+  "5_525": {
+    "line_number": "5",
+    "station_id": "525",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-525",
+    "station_name": "Aluche"
+  },
+  "5_524": {
+    "line_number": "5",
+    "station_id": "524",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-524",
+    "station_name": "Empalme"
+  },
+  "5_523": {
+    "line_number": "5",
+    "station_id": "523",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-523",
+    "station_name": "Campamento"
+  },
+  "5_530": {
+    "line_number": "5",
+    "station_id": "530",
+    "url": "https://www.metromadrid.es/es/linea/linea-5#estacion-530",
+    "station_name": "Casa de Campo"
+  },
+  " 6_615": {
+    "line_number": " 6",
+    "station_id": "615",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-615",
+    "station_name": "Laguna"
+  },
+  "6_614": {
+    "line_number": "6",
+    "station_id": "614",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-614",
+    "station_name": "Carpetana"
+  },
+  "6_529": {
+    "line_number": "6",
+    "station_id": "529",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-529",
+    "station_name": "Oporto"
+  },
+  "6_616": {
+    "line_number": "6",
+    "station_id": "616",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-616",
+    "station_name": "Opañel"
+  },
+  "6_617": {
+    "line_number": "6",
+    "station_id": "617",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-617",
+    "station_name": "Plaza Elíptica"
+  },
+  "6_619": {
+    "line_number": "6",
+    "station_id": "619",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-619",
+    "station_name": "Usera"
+  },
+  "6_315": {
+    "line_number": "6",
+    "station_id": "315",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-315",
+    "station_name": "Legazpi"
+  },
+  "6_623": {
+    "line_number": "6",
+    "station_id": "623",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-623",
+    "station_name": "Puerta del Ángel"
+  },
+  "6_622": {
+    "line_number": "6",
+    "station_id": "622",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-622",
+    "station_name": "Méndez Álvaro"
+  },
+  "6_120": {
+    "line_number": "6",
+    "station_id": "120",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-120",
+    "station_name": "Pacífico"
+  },
+  "6_624": {
+    "line_number": "6",
+    "station_id": "624",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-624",
+    "station_name": "Conde de Casal"
+  },
+  "6_613": {
+    "line_number": "6",
+    "station_id": "613",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-613",
+    "station_name": "Sainz de Baranda"
+  },
+  "6_611": {
+    "line_number": "6",
+    "station_id": "611",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-611",
+    "station_name": "O’Donnell"
+  },
+  "6_212": {
+    "line_number": "6",
+    "station_id": "212",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-212",
+    "station_name": "Manuel Becerra"
+  },
+  "6_410": {
+    "line_number": "6",
+    "station_id": "410",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-410",
+    "station_name": "Diego de León"
+  },
+  "6_411": {
+    "line_number": "6",
+    "station_id": "411",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-411",
+    "station_name": "Avenida de América"
+  },
+  "6_607": {
+    "line_number": "6",
+    "station_id": "607",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-607",
+    "station_name": "República Argentina"
+  },
+  "6_618": {
+    "line_number": "6",
+    "station_id": "618",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-618",
+    "station_name": "Nuevos Ministerios"
+  },
+  "6_110": {
+    "line_number": "6",
+    "station_id": "110",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-110",
+    "station_name": "Cuatro Caminos"
+  },
+  "6_620": {
+    "line_number": "6",
+    "station_id": "620",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-620",
+    "station_name": "Guzmán el Bueno"
+  },
+  "6_621": {
+    "line_number": "6",
+    "station_id": "621",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-621",
+    "station_name": "Vicente Aleixandre"
+  },
+  "6_626": {
+    "line_number": "6",
+    "station_id": "626",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-626",
+    "station_name": "Moncloa"
+  },
+  "6_428": {
+    "line_number": "6",
+    "station_id": "428",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-428",
+    "station_name": "Argüelles"
+  },
+  "6_625": {
+    "line_number": "6",
+    "station_id": "625",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-625",
+    "station_name": "Príncipe Pío"
+  },
+  "6_627": {
+    "line_number": "6",
+    "station_id": "627",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-627",
+    "station_name": "Alto de Extremadura"
+  },
+  "6_628": {
+    "line_number": "6",
+    "station_id": "628",
+    "url": "https://www.metromadrid.es/es/linea/linea-6#estacion-628",
+    "station_name": "Lucero"
+  },
+  " 7_760": {
+    "line_number": " 7",
+    "station_id": "760",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-760",
+    "station_name": "Hospital del Henares"
+  },
+  "7_759": {
+    "line_number": "7",
+    "station_id": "759",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-759",
+    "station_name": "Henares"
+  },
+  "7_758": {
+    "line_number": "7",
+    "station_id": "758",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-758",
+    "station_name": "Jarama"
+  },
+  "7_757": {
+    "line_number": "7",
+    "station_id": "757",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-757",
+    "station_name": "San Fernando"
+  },
+  "7_756": {
+    "line_number": "7",
+    "station_id": "756",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-756",
+    "station_name": "La Rambla"
+  },
+  "7_755": {
+    "line_number": "7",
+    "station_id": "755",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-755",
+    "station_name": "Coslada Central"
+  },
+  "7_754": {
+    "line_number": "7",
+    "station_id": "754",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-754",
+    "station_name": "Barrio del Puerto"
+  },
+  "7_751": {
+    "line_number": "7",
+    "station_id": "751",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-751",
+    "station_name": "Estadio Metropolitano"
+  },
+  "7_701": {
+    "line_number": "7",
+    "station_id": "701",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-701",
+    "station_name": "Las Musas"
+  },
+  "7_702": {
+    "line_number": "7",
+    "station_id": "702",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-702",
+    "station_name": "San Blas"
+  },
+  "7_703": {
+    "line_number": "7",
+    "station_id": "703",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-703",
+    "station_name": "Simancas"
+  },
+  "7_704": {
+    "line_number": "7",
+    "station_id": "704",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-704",
+    "station_name": "García Noblejas"
+  },
+  "7_705": {
+    "line_number": "7",
+    "station_id": "705",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-705",
+    "station_name": "Ascao"
+  },
+  "7_505": {
+    "line_number": "7",
+    "station_id": "505",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-505",
+    "station_name": "Pueblo Nuevo"
+  },
+  "7_707": {
+    "line_number": "7",
+    "station_id": "707",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-707",
+    "station_name": "Barrio de la Concepción"
+  },
+  "7_708": {
+    "line_number": "7",
+    "station_id": "708",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-708",
+    "station_name": "Parque de las Avenidas"
+  },
+  "7_709": {
+    "line_number": "7",
+    "station_id": "709",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-709",
+    "station_name": "Cartagena"
+  },
+  "7_411": {
+    "line_number": "7",
+    "station_id": "411",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-411",
+    "station_name": "Avenida de América"
+  },
+  "7_711": {
+    "line_number": "7",
+    "station_id": "711",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-711",
+    "station_name": "Gregorio Marañón"
+  },
+  "7_712": {
+    "line_number": "7",
+    "station_id": "712",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-712",
+    "station_name": "Alonso Cano"
+  },
+  "7_214": {
+    "line_number": "7",
+    "station_id": "214",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-214",
+    "station_name": "Canal"
+  },
+  "7_714": {
+    "line_number": "7",
+    "station_id": "714",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-714",
+    "station_name": "Islas Filipinas"
+  },
+  "7_620": {
+    "line_number": "7",
+    "station_id": "620",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-620",
+    "station_name": "Guzmán el Bueno"
+  },
+  "7_716": {
+    "line_number": "7",
+    "station_id": "716",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-716",
+    "station_name": "Francos Rodríguez"
+  },
+  "7_717": {
+    "line_number": "7",
+    "station_id": "717",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-717",
+    "station_name": "Valdezarza"
+  },
+  "7_718": {
+    "line_number": "7",
+    "station_id": "718",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-718",
+    "station_name": "Antonio Machado"
+  },
+  "7_719": {
+    "line_number": "7",
+    "station_id": "719",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-719",
+    "station_name": "Peñagrande"
+  },
+  "7_720": {
+    "line_number": "7",
+    "station_id": "720",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-720",
+    "station_name": "Avenida de la Ilustración"
+  },
+  "7_721": {
+    "line_number": "7",
+    "station_id": "721",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-721",
+    "station_name": "Lacoma"
+  },
+  "7_722": {
+    "line_number": "7",
+    "station_id": "722",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-722",
+    "station_name": "Arroyofresno"
+  },
+  "7_723": {
+    "line_number": "7",
+    "station_id": "723",
+    "url": "https://www.metromadrid.es/es/linea/linea-7#estacion-723",
+    "station_name": "Pitis"
+  },
+  " 8_618": {
+    "line_number": " 8",
+    "station_id": "618",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-618",
+    "station_name": "Nuevos Ministerios"
+  },
+  "8_802": {
+    "line_number": "8",
+    "station_id": "802",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-802",
+    "station_name": "Colombia"
+  },
+  "8_803": {
+    "line_number": "8",
+    "station_id": "803",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-803",
+    "station_name": "Pinar del Rey"
+  },
+  "8_418": {
+    "line_number": "8",
+    "station_id": "418",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-418",
+    "station_name": "Mar de Cristal"
+  },
+  "8_805": {
+    "line_number": "8",
+    "station_id": "805",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-805",
+    "station_name": "Feria de Madrid"
+  },
+  "8_806": {
+    "line_number": "8",
+    "station_id": "806",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-806",
+    "station_name": "Aeropuerto T1-T2-T3"
+  },
+  "8_807": {
+    "line_number": "8",
+    "station_id": "807",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-807",
+    "station_name": "Barajas"
+  },
+  "8_808": {
+    "line_number": "8",
+    "station_id": "808",
+    "url": "https://www.metromadrid.es/es/linea/linea-8#estacion-808 ",
+    "station_name": "Aeropuerto T4"
+  },
+  "9_952": {
+    "line_number": "9",
+    "station_id": "952",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-952",
+    "station_name": "Paco de Lucía"
+  },
+  "9_951": {
+    "line_number": "9",
+    "station_id": "951",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-951",
+    "station_name": "Mirasierra"
+  },
+  "9_901": {
+    "line_number": "9",
+    "station_id": "901",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-901",
+    "station_name": "Herrera Oria"
+  },
+  "9_902": {
+    "line_number": "9",
+    "station_id": "902",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-902",
+    "station_name": "Barrio del Pilar"
+  },
+  "9_903": {
+    "line_number": "9",
+    "station_id": "903",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-903",
+    "station_name": "Ventilla"
+  },
+  "9_101": {
+    "line_number": "9",
+    "station_id": "101",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-101",
+    "station_name": "Plaza de Castilla"
+  },
+  "9_905": {
+    "line_number": "9",
+    "station_id": "905",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-905",
+    "station_name": "Duque de Pastrana"
+  },
+  "9_906": {
+    "line_number": "9",
+    "station_id": "906",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-906",
+    "station_name": "Pío XII"
+  },
+  "9_802": {
+    "line_number": "9",
+    "station_id": "802",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-802",
+    "station_name": "Colombia"
+  },
+  "9_908": {
+    "line_number": "9",
+    "station_id": "908",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-908",
+    "station_name": "Concha Espina"
+  },
+  "9_909": {
+    "line_number": "9",
+    "station_id": "909",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-909",
+    "station_name": "Cruz del Rayo"
+  },
+  "9_411": {
+    "line_number": "9",
+    "station_id": "411",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-411",
+    "station_name": "Avenida de América"
+  },
+  "9_510": {
+    "line_number": "9",
+    "station_id": "510",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-510",
+    "station_name": "Núñez de Balboa"
+  },
+  "9_204": {
+    "line_number": "9",
+    "station_id": "204",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-204",
+    "station_name": "Príncipe de Vergara"
+  },
+  "9_913": {
+    "line_number": "9",
+    "station_id": "913",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-913",
+    "station_name": "Ibiza"
+  },
+  "9_612": {
+    "line_number": "9",
+    "station_id": "612",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-612",
+    "station_name": "Sainz de Baranda"
+  },
+  "9_915": {
+    "line_number": "9",
+    "station_id": "915",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-915",
+    "station_name": "Estrella"
+  },
+  "9_916": {
+    "line_number": "9",
+    "station_id": "916",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-916",
+    "station_name": "Vinateros"
+  },
+  "9_917": {
+    "line_number": "9",
+    "station_id": "917",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-917",
+    "station_name": "Artilleros"
+  },
+  "9_918": {
+    "line_number": "9",
+    "station_id": "918",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-918",
+    "station_name": "Pavones"
+  },
+  "9_919": {
+    "line_number": "9",
+    "station_id": "919",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-919",
+    "station_name": "Valdebernardo"
+  },
+  "9_920": {
+    "line_number": "9",
+    "station_id": "920",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-920",
+    "station_name": "Vicálvaro"
+  },
+  "9_921": {
+    "line_number": "9",
+    "station_id": "921",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-921",
+    "station_name": "San Cipriano"
+  },
+  "9_922": {
+    "line_number": "9",
+    "station_id": "922",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-922",
+    "station_name": "Puerta de Arganda"
+  },
+  "9_923": {
+    "line_number": "9",
+    "station_id": "923",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-923",
+    "station_name": "Rivas Urbanizaciones"
+  },
+  "9_924": {
+    "line_number": "9",
+    "station_id": "924",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-924",
+    "station_name": "Rivas Futura"
+  },
+  "9_925": {
+    "line_number": "9",
+    "station_id": "925",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-925",
+    "station_name": "Rivas Vaciamadrid"
+  },
+  "9_926": {
+    "line_number": "9",
+    "station_id": "926",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-926",
+    "station_name": "La Poveda"
+  },
+  "9_927": {
+    "line_number": "9",
+    "station_id": "927",
+    "url": "https://www.metromadrid.es/es/linea/linea-9#estacion-927",
+    "station_name": "Arganda del Rey"
+  },
+  " 10_1061": {
+    "line_number": " 10",
+    "station_id": "1061",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1061",
+    "station_name": "Hospital Infanta Sofía"
+  },
+  "10_1060": {
+    "line_number": "10",
+    "station_id": "1060",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1060",
+    "station_name": "Reyes Católicos"
+  },
+  "10_1059": {
+    "line_number": "10",
+    "station_id": "1059",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1059",
+    "station_name": "Baunatal"
+  },
+  "10_1058": {
+    "line_number": "10",
+    "station_id": "1058",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1058",
+    "station_name": "Manuel de Falla"
+  },
+  "10_1057": {
+    "line_number": "10",
+    "station_id": "1057",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1057",
+    "station_name": "Marqués de la Valdavia"
+  },
+  "10_1056": {
+    "line_number": "10",
+    "station_id": "1056",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1056",
+    "station_name": "La Moraleja"
+  },
+  "10_1055": {
+    "line_number": "10",
+    "station_id": "1055",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1055",
+    "station_name": "La Granja"
+  },
+  "10_1054": {
+    "line_number": "10",
+    "station_id": "1054",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1054",
+    "station_name": "Ronda de la Comunicación"
+  },
+  "10_1053": {
+    "line_number": "10",
+    "station_id": "1053",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1053",
+    "station_name": "Las Tablas"
+  },
+  "10_1052": {
+    "line_number": "10",
+    "station_id": "1052",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1052",
+    "station_name": "Montecarmelo"
+  },
+  "10_1051": {
+    "line_number": "10",
+    "station_id": "1051",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1051",
+    "station_name": "Tres Olivos"
+  },
+  "10_1001": {
+    "line_number": "10",
+    "station_id": "1001",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1001",
+    "station_name": "Fuencarral"
+  },
+  "10_1002": {
+    "line_number": "10",
+    "station_id": "1002",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1002",
+    "station_name": "Begoña"
+  },
+  "10_151": {
+    "line_number": "10",
+    "station_id": "151",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-151",
+    "station_name": "Chamartín"
+  },
+  "10_101": {
+    "line_number": "10",
+    "station_id": "101",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-101",
+    "station_name": "Plaza de Castilla"
+  },
+  "10_1005": {
+    "line_number": "10",
+    "station_id": "1005",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1005",
+    "station_name": "Cuzco"
+  },
+  "10_1006": {
+    "line_number": "10",
+    "station_id": "1006",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1006",
+    "station_name": "Santiago Bernabéu"
+  },
+  "10_618": {
+    "line_number": "10",
+    "station_id": "618",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-618",
+    "station_name": "Nuevos Ministerios"
+  },
+  "10_711": {
+    "line_number": "10",
+    "station_id": "711",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-711",
+    "station_name": "Gregorio Marañón"
+  },
+  "10_404": {
+    "line_number": "10",
+    "station_id": "404",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-404",
+    "station_name": "Alonso Martínez"
+  },
+  "10_110": {
+    "line_number": "10",
+    "station_id": "110",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-110",
+    "station_name": "Tribunal"
+  },
+  "10_308": {
+    "line_number": "10",
+    "station_id": "308",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-308",
+    "station_name": "Plaza de España"
+  },
+  "10_625": {
+    "line_number": "10",
+    "station_id": "625",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-625",
+    "station_name": "Príncipe Pío"
+  },
+  "10_1013": {
+    "line_number": "10",
+    "station_id": "1013",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1013",
+    "station_name": "Lago"
+  },
+  "10_1014": {
+    "line_number": "10",
+    "station_id": "1014",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1014",
+    "station_name": "Batán"
+  },
+  "10_530": {
+    "line_number": "10",
+    "station_id": "530",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-530",
+    "station_name": "Casa de Campo"
+  },
+  "10_1016": {
+    "line_number": "10",
+    "station_id": "1016",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1016",
+    "station_name": "Colonia Jardín"
+  },
+  "10_1018": {
+    "line_number": "10",
+    "station_id": "1018",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1018",
+    "station_name": "Aviación Española"
+  },
+  "10_1019": {
+    "line_number": "10",
+    "station_id": "1019",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1019",
+    "station_name": "Cuatro Vientos"
+  },
+  "10_1020": {
+    "line_number": "10",
+    "station_id": "1020",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1020",
+    "station_name": "Joaquín Vilumbrales"
+  },
+  "10_1021": {
+    "line_number": "10",
+    "station_id": "1021",
+    "url": "https://www.metromadrid.es/es/linea/linea-10#estacion-1021",
+    "station_name": "Puerta del Sur"
+  },
+  "11_605": {
+    "line_number": "11",
+    "station_id": "605",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-605",
+    "station_name": "Plaza Elíptica"
+  },
+  "11_1102": {
+    "line_number": "11",
+    "station_id": "1102",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-1102",
+    "station_name": "Abrantes"
+  },
+  "11_1103": {
+    "line_number": "11",
+    "station_id": "1103",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-1103",
+    "station_name": "Pan Bendito"
+  },
+  "11_1104": {
+    "line_number": "11",
+    "station_id": "1104",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-1104",
+    "station_name": "San Francisco"
+  },
+  "11_1105": {
+    "line_number": "11",
+    "station_id": "1105",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-1105",
+    "station_name": "Carabanchel Alto"
+  },
+  "11_1106": {
+    "line_number": "11",
+    "station_id": "1106",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-1106",
+    "station_name": "La Peseta"
+  },
+  "11_1107": {
+    "line_number": "11",
+    "station_id": "1107",
+    "url": "https://www.metromadrid.es/es/linea/linea-11#estacion-1107",
+    "station_name": "La Fortuna"
+  },
+  "12_1201": {
+    "line_number": "12",
+    "station_id": "1201",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1201",
+    "station_name": "Puerta del Sur"
+  },
+  "12_1202": {
+    "line_number": "12",
+    "station_id": "1202",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1202",
+    "station_name": "Parque Lisboa"
+  },
+  "12_1203": {
+    "line_number": "12",
+    "station_id": "1203",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1203",
+    "station_name": "Alcorcón Central"
+  },
+  "12_1204": {
+    "line_number": "12",
+    "station_id": "1204",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1204",
+    "station_name": "Parque Oeste"
+  },
+  "12_1205": {
+    "line_number": "12",
+    "station_id": "1205",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1205",
+    "station_name": "Universidad Rey Juan Carlos"
+  },
+  "12_1206": {
+    "line_number": "12",
+    "station_id": "1206",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1206",
+    "station_name": "Móstoles Central"
+  },
+  "12_1207": {
+    "line_number": "12",
+    "station_id": "1207",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1207",
+    "station_name": "Pradillo"
+  },
+  "12_1208": {
+    "line_number": "12",
+    "station_id": "1208",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1208",
+    "station_name": "Hospital de Móstoles"
+  },
+  "12_1209": {
+    "line_number": "12",
+    "station_id": "1209",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1209",
+    "station_name": "Manuela Malasaña"
+  },
+  "12_1210": {
+    "line_number": "12",
+    "station_id": "1210",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1210",
+    "station_name": "Loranca"
+  },
+  "12_1211": {
+    "line_number": "12",
+    "station_id": "1211",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1211",
+    "station_name": "Parque Europa"
+  },
+  "12_1212": {
+    "line_number": "12",
+    "station_id": "1212",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1212",
+    "station_name": "Hospital de Fuenlabrada"
+  },
+  "12_1214": {
+    "line_number": "12",
+    "station_id": "1214",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1214",
+    "station_name": "Fuenlabrada Central"
+  },
+  "12_1215": {
+    "line_number": "12",
+    "station_id": "1215",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1215",
+    "station_name": "Parque de los Estados"
+  },
+  "12_1217": {
+    "line_number": "12",
+    "station_id": "1217",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1217",
+    "station_name": "Arroyo Culebro"
+  },
+  "12_1218": {
+    "line_number": "12",
+    "station_id": "1218",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1218",
+    "station_name": "Conservatorio"
+  },
+  "12_1219": {
+    "line_number": "12",
+    "station_id": "1219",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1219",
+    "station_name": "Alonso de Mendoza"
+  },
+  "12_1220": {
+    "line_number": "12",
+    "station_id": "1220",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1220",
+    "station_name": "Getafe Central"
+  },
+  "12_1221": {
+    "line_number": "12",
+    "station_id": "1221",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1221",
+    "station_name": "Juan de la Cierva"
+  },
+  "12_1222": {
+    "line_number": "12",
+    "station_id": "1222",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1222",
+    "station_name": "El Casar"
+  },
+  "12_1223": {
+    "line_number": "12",
+    "station_id": "1223",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1223",
+    "station_name": "Los Espartales"
+  },
+  "12_1224": {
+    "line_number": "12",
+    "station_id": "1224",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1224",
+    "station_name": "El Bercial"
+  },
+  "12_1225": {
+    "line_number": "12",
+    "station_id": "1225",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1225",
+    "station_name": "El Carrascal"
+  },
+  "12_1226": {
+    "line_number": "12",
+    "station_id": "1226",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1226",
+    "station_name": "Julián Besteiro"
+  },
+  "12_1227": {
+    "line_number": "12",
+    "station_id": "1227",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1227",
+    "station_name": "Casa del Reloj"
+  },
+  "12_1228": {
+    "line_number": "12",
+    "station_id": "1228",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1228",
+    "station_name": "Hospital Severo Ochoa"
+  },
+  "12_1229": {
+    "line_number": "12",
+    "station_id": "1229",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1229",
+    "station_name": "Leganés Central"
+  },
+  "12_1230": {
+    "line_number": "12",
+    "station_id": "1230",
+    "url": "https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1230",
+    "station_name": "San Nicasio"
+  },
+  "Ramal_209": {
+    "line_number": "Ramal",
+    "station_id": "209",
+    "url": "https://www.metromadrid.es/es/linea/ramal#estacion-209",
+    "station_name": "Ópera"
+  },
+  "Ramal_625": {
+    "line_number": "Ramal",
+    "station_id": "625",
+    "url": "https://www.metromadrid.es/es/linea/ramal#estacion-625",
+    "station_name": "Príncipe Pío"
+  }
+}

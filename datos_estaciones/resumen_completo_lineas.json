@@ -1,0 +1,106 @@
+{
+  "1": {
+    "total_estaciones": 33,
+    "total_accesos": 96,
+    "total_conexiones": 14,
+    "total_servicios": 127,
+    "estaciones_accesibles": 26,
+    "estaciones_con_problemas": 0
+  },
+  "10": {
+    "total_estaciones": 31,
+    "total_accesos": 57,
+    "total_conexiones": 5,
+    "total_servicios": 110,
+    "estaciones_accesibles": 29,
+    "estaciones_con_problemas": 0
+  },
+  "11": {
+    "total_estaciones": 7,
+    "total_accesos": 13,
+    "total_conexiones": 1,
+    "total_servicios": 26,
+    "estaciones_accesibles": 7,
+    "estaciones_con_problemas": 0
+  },
+  "12": {
+    "total_estaciones": 28,
+    "total_accesos": 78,
+    "total_conexiones": 25,
+    "total_servicios": 194,
+    "estaciones_accesibles": 28,
+    "estaciones_con_problemas": 0
+  },
+  "2": {
+    "total_estaciones": 20,
+    "total_accesos": 65,
+    "total_conexiones": 3,
+    "total_servicios": 78,
+    "estaciones_accesibles": 20,
+    "estaciones_con_problemas": 0
+  },
+  "3": {
+    "total_estaciones": 18,
+    "total_accesos": 46,
+    "total_conexiones": 5,
+    "total_servicios": 57,
+    "estaciones_accesibles": 16,
+    "estaciones_con_problemas": 0
+  },
+  "4": {
+    "total_estaciones": 23,
+    "total_accesos": 43,
+    "total_conexiones": 2,
+    "total_servicios": 46,
+    "estaciones_accesibles": 11,
+    "estaciones_con_problemas": 0
+  },
+  "5": {
+    "total_estaciones": 32,
+    "total_accesos": 37,
+    "total_conexiones": 3,
+    "total_servicios": 45,
+    "estaciones_accesibles": 12,
+    "estaciones_con_problemas": 0
+  },
+  "6": {
+    "total_estaciones": 27,
+    "total_accesos": 52,
+    "total_conexiones": 8,
+    "total_servicios": 65,
+    "estaciones_accesibles": 16,
+    "estaciones_con_problemas": 0
+  },
+  "7": {
+    "total_estaciones": 40,
+    "total_accesos": 15,
+    "total_conexiones": 6,
+    "total_servicios": 45,
+    "estaciones_accesibles": 10,
+    "estaciones_con_problemas": 0
+  },
+  "8": {
+    "total_estaciones": 27,
+    "total_accesos": 33,
+    "total_conexiones": 2,
+    "total_servicios": 46,
+    "estaciones_accesibles": 8,
+    "estaciones_con_problemas": 0
+  },
+  "9": {
+    "total_estaciones": 29,
+    "total_accesos": 56,
+    "total_conexiones": 10,
+    "total_servicios": 105,
+    "estaciones_accesibles": 19,
+    "estaciones_con_problemas": 0
+  },
+  "R": {
+    "total_estaciones": 2,
+    "total_accesos": 7,
+    "total_conexiones": 2,
+    "total_servicios": 13,
+    "estaciones_accesibles": 2,
+    "estaciones_con_problemas": 0
+  }
+}

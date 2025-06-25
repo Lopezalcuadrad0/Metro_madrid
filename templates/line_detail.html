@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea {{ line_info.name }} - Metro de Madrid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/line.css') }}">
+    <link rel="icon" type="image/png" href="/static/logos/Logomarca_azul.png">
+
+    <!-- Estilo de Fondo Dinámico -->
+    <style>
+        body {
+            background: linear-gradient(135deg, {{ line_info.color }} 0%, {{ line_info.color_secondary }} 100%);
+            transition: background 0.5s ease-out;
+        }
+        .interchange-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border: 3px solid #333;
+            border-radius: 50%;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .favorite-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ccc;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+            color: #333;
+            opacity: 1;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .favorite-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+            opacity: 1;
+            border-color: #FFD700;
+        }
+        .favorite-btn.active {
+            color: #FFD700;
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #FFD700;
+            opacity: 1;
+            filter: drop-shadow(0 0 8px #FFD700) drop-shadow(0 0 16px #FFD700);
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 8px #FFD700) drop-shadow(0 0 16px #FFD700); }
+            50% { filter: drop-shadow(0 0 12px #FFD700) drop-shadow(0 0 24px #FFD700); }
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+
+<div class="main-container" style="--line-color: {{ line_info.color }};">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+    <div class="line-header">
+            <div class="line-symbol" style="background-color: var(--line-color);">
+                {% if line_info.linea == 'Ramal' or line_info.linea == 'R' %}
+                    <img src="/static/logos/lineas/ramal.svg" alt="Ramal" class="line-logo-main">
+                {% elif line_info.linea == '6' %}
+                    <img src="/static/logos/lineas/linea-6-circular.svg" alt="Línea 6" class="line-logo-main">
+                {% elif line_info.linea == '12' %}
+                    <img src="/static/logos/lineas/linea-12-metrosur.svg" alt="Línea 12" class="line-logo-main">
+                {% else %}
+                    <img src="/static/logos/lineas/linea-{{ line_info.linea }}.svg" alt="Línea {{ line_info.linea }}" class="line-logo-main">
+                {% endif %}
+            </div>
+            <div class="line-title">
+                <h1>{{ line_info.name }}</h1>
+                <p>Línea {{ line_info.linea }}</p>
+                <button id="favoriteLineBtn" class="favorite-btn" onclick="toggleFavoriteLine()" title="Añadir a favoritos">
+                    ⭐
+                </button>
+            </div>
+        </div>
+        <!-- Estado de la línea (opcional) -->
+        <div class="line-status-sidebar">
+            {% if line_info.status %}
+                {% if 'interrumpida' in line_info.status.estado %}
+                    <span class="status-indicator danger"></span>
+                {% elif 'Normal' in line_info.status.estado or 'normal' in line_info.status.estado %}
+                    <span class="status-indicator success"></span>
+                {% else %}
+                    <span class="status-indicator unknown"></span>
+                {% endif %}
+                <a href="/status" class="status-text-link">
+                    <span class="status-text">{{ line_info.status.estado }}</span>
+                </a>
+            {% else %}
+                <span class="status-indicator unknown"></span>
+                <a href="/status" class="status-text-link">
+                    <span class="status-text">Estado no disponible</span>
+                </a>
+            {% endif %}
+    </div>
+        <div class="other-lines">
+            <h2>Otras líneas</h2>
+                <div class="line-grid">
+                {% if other_lines %}
+                    {% for line in other_lines %}
+                        <a href="{{ url_for('line_detail', line_id=line.id) }}" 
+                           class="line-icon" 
+                           data-line-id="{{ line.name }}">
+                            <span>{{ line.name.replace('Línea ', '').replace('Ramal', 'R') }}</span>
+                        </a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Otras líneas -->
+        
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="content">
+        <div class="station-list-container">
+            <div class="line-track"></div>
+            <ul class="station-list">
+                <li style="color: red; font-weight: bold;">🔄 Cargando estaciones...</li>
+            </ul>
+        </div>
+    </main>
+    </div>
+
+    <script>
+    let isUserLoggedIn = {{ 'true' if current_user.is_authenticated else 'false' }};
+    const currentLineId = "{{ line_info.id }}";
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Cambiar el color del header al color de la línea actual
+        const lineColor = "{{ line_info.color }}";
+        if (typeof setHeaderLineColor === 'function') {
+            setHeaderLineColor(lineColor);
+        }
+        
+        // Cargar estado de favorito (el login es obligatorio)
+        loadFavoriteStatus();
+        
+        const lineId = "{{ line_info.id }}";
+        const stationList = document.querySelector('.station-list');
+        
+        if (stationList) {
+            fetch(`/api/lines/${lineId}/stations`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.stations && data.stations.length > 0) {
+                        stationList.innerHTML = ''; // Limpiar
+                        data.stations.forEach(station => {
+                            const li = document.createElement('li');
+                            li.className = 'station-entry';
+                            if (station.is_terminus) {
+                                li.classList.add('terminus');
+                            }
+                            if (station.correspondencias && station.correspondencias.length > 0) {
+                                li.classList.add('interchange');
+                            }
+
+                            let correspondenciasHTML = '';
+                            if (station.correspondencias && station.correspondencias.length > 0) {
+                                correspondenciasHTML += '<div class="station-correspondencias">';
+                                station.correspondencias.forEach(corr => {
+                                    const color = getLineColor(corr);
+                                    correspondenciasHTML += `<span class="line-badge" style="background-color:${color};">${corr}</span>`;
+                                });
+                                correspondenciasHTML += '</div>';
+                            }
+                            
+                            li.innerHTML = `
+                                <div class="station-item" data-station-name="${station.name}" data-station-id="${station.id_fijo}">
+                                    <div class="station-marker"></div>
+                                    <div class="station-info">
+                                        <span class="station-name">${station.name}</span>
+                                        <div class="station-actions" style="display: none;">
+                                            <button class="btn-refresh-times" onclick="event.stopPropagation(); refreshTrainTimes('${station.id_fijo}', '${station.name}')">
+                                                🔄 Recargar tiempos
+                                            </button>
+                                            <a href="/station/${lineId}/${encodeURIComponent(station.id_fijo)}" class="btn-more-info" onclick="event.stopPropagation();">
+                                                ℹ️ Más info
+                                            </a>
+                                        </div>
+                                    </div>
+                                    ${correspondenciasHTML}
+                                </div>
+                                <div class="station-details" id="details-${station.id_fijo}"></div>
+                            `;
+                            stationList.appendChild(li);
+                        });
+                    } else {
+                        stationList.innerHTML = '<li>No se encontraron estaciones.</li>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching stations:', error);
+                    stationList.innerHTML = '<li>Error al cargar las estaciones.</li>';
+                });
+        }
+    });
+
+    async function loadFavoriteStatus() {
+        try {
+            const response = await fetch(`/api/favorites/check/line/${currentLineId}`);
+            const data = await response.json();
+            
+            const btn = document.getElementById('favoriteLineBtn');
+            if (btn) {
+                if (data.is_favorite) {
+                    btn.classList.add('active');
+                    btn.title = 'Eliminar de favoritos';
+                } else {
+                    btn.classList.remove('active');
+                    btn.title = 'Añadir a favoritos';
+                }
+            }
+        } catch (error) {
+            console.error('Error checking favorite status:', error);
+        }
+    }
+
+    async function toggleFavoriteLine() {
+        const btn = document.getElementById('favoriteLineBtn');
+        if (!btn) return;
+        
+        const isCurrentlyFavorite = btn.classList.contains('active');
+        
+        try {
+            const method = isCurrentlyFavorite ? 'DELETE' : 'POST';
+            const url = `/api/favorites/lines/${currentLineId}`;
+            
+            const response = await fetch(url, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok) {
+                if (isCurrentlyFavorite) {
+                    btn.classList.remove('active');
+                    btn.title = 'Añadir a favoritos';
+                } else {
+                    btn.classList.add('active');
+                    btn.title = 'Eliminar de favoritos';
+                }
+                
+                if (window.reloadFavoritesCounter) {
+                    window.reloadFavoritesCounter();
+                }
+            }
+        } catch (error) {
+            console.error('Network error:', error);
+        }
+    }
+
+    function getLineColor(lineId) {
+        const colors = {
+            '1': '#00AEEF', '2': '#FF0000', '3': '#FFDF00', '4': '#824100',
+            '5': '#339900', '6': '#999999', '7': '#FF6600', '8': '#FF69B4',
+            '9': '#990066', '10': '#000099', '11': '#006600', '12': '#999933',
+            'R': '#FFFFFF', 'Ramal': '#FFFFFF'
+        };
+        return colors[lineId] || '#868e96';
+    }
+
+    // Añadir colores dinámicos a los iconos de otras líneas
+    document.querySelectorAll('.line-icon').forEach(icon => {
+        const lineIdRaw = icon.dataset.lineId;
+        
+        let lineId = lineIdRaw.replace('Línea ', '');
+        if (lineIdRaw === 'Ramal') {
+            lineId = 'R';
+        }
+
+        const colors = {
+            '1': '#00AEEF', '2': '#FF0000', '3': '#FFDF00', '4': '#824100',
+            '5': '#339900', '6': '#999999', '7': '#FF6600', '8': '#FF75FF',
+            '9': '#990066', '10': '#000099', '11': '#006600', '12': '#999933',
+            'R': '#FFFFFF', 'Ramal': '#FFFFFF'
+        };
+        const textColors = {
+            'R': '#0055a4', 'Ramal': '#0055a4', '3': '#000000'
+        };
+        const bgColor = colors[lineId] || '#868e96';
+        const textColor = textColors[lineId] || '#FFFFFF';
+        
+        icon.style.backgroundColor = bgColor;
+        icon.style.color = textColor;
+        if (lineId === 'R') {
+            icon.style.border = `2px solid ${textColors[lineId]}`;
+        }
+    });
+
+    // Event listener para mostrar/ocultar detalles de trenes
+    document.querySelector('.station-list').addEventListener('click', function(e) {
+        const stationItem = e.target.closest('.station-item');
+        if (stationItem) {
+            toggleStationTrains(stationItem);
+        }
+    });
+
+    // Actualizar estado de la línea después de 1 segundo
+    setTimeout(async function() {
+        const currentLineId = "{{ line_info.id }}";
+        console.log('🔄 Intentando actualizar estado de línea:', currentLineId);
+        
+        try {
+            // Verificar status global primero
+            const globalResponse = await fetch('/api/lines/global-status');
+            const globalData = await globalResponse.json();
+            
+            if (globalData.activo) {
+                // Si el status global está activo, mostrar estado nocturno
+                const statusContainer = document.querySelector('.line-status-sidebar');
+                statusContainer.innerHTML = `
+                    <span class="status-indicator unknown"></span>
+                    <a href="/status" class="status-text-link">
+                        <span class="status-text">🌙 Horario Nocturno - Metro Cerrado</span>
+                    </a>
+                `;
+                
+                // Agregar banner informativo en el contenido principal
+                const mainContent = document.querySelector('.content');
+                if (!document.querySelector('.nocturno-banner')) {
+                    const banner = document.createElement('div');
+                    banner.className = 'nocturno-banner';
+                    banner.style.cssText = `
+                        background: #2c3e50;
+                        color: white;
+                        padding: 20px;
+                        border-radius: 8px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                    `;
+                    banner.innerHTML = `
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.4em;">🌙 Estado Nocturno Activo</h3>
+                        <p style="margin: 0; color: #bdc3c7;">Metro cerrado de 2:30 AM a 6:00 AM</p>
+                    `;
+                    mainContent.insertBefore(banner, mainContent.firstChild);
+                }
+                return;
+            }
+            
+            const response = await fetch(`/api/lines/${currentLineId}/status`);
+            console.log('📡 Respuesta del servidor:', response.status, response.statusText);
+            
+            if (!response.ok) {
+                console.log('❌ Error en la respuesta:', response.status);
+                return;
+            }
+            
+            const data = await response.json();
+            console.log('📊 Datos recibidos:', data);
+            
+            if (data && data.estado) {
+                const statusContainer = document.querySelector('.line-status-sidebar');
+                let statusClass = 'unknown';
+                let statusText = data.estado;
+                
+                if (statusText.includes('interrumpida')) {
+                    statusClass = 'danger';
+                } else if (statusText.includes('Normal') || statusText.includes('normal')) {
+                    statusClass = 'success';
+                }
+                
+                console.log('✅ Actualizando estado a:', statusText, 'con clase:', statusClass);
+                
+                statusContainer.innerHTML = `
+                    <span class="status-indicator ${statusClass}"></span>
+                    <a href="/status" class="status-text-link">
+                        <span class="status-text">${statusText}</span>
+                    </a>
+                `;
+            } else {
+                console.log('⚠️ No hay datos de estado en la respuesta');
+            }
+        } catch (error) {
+            console.log('❌ Error al actualizar estado de la línea:', error);
+        }
+    }, 1000);
+
+    async function toggleStationTrains(stationItem) {
+        const stationId = stationItem.dataset.stationId;
+        const stationName = stationItem.dataset.stationName;
+        const detailsContainer = document.getElementById(`details-${stationId}`);
+        const stationActions = stationItem.querySelector('.station-actions');
+        const stationNameSpan = stationItem.querySelector('.station-name');
+
+        // Toggle del actual (sin cerrar otras estaciones)
+        const isExpanded = detailsContainer.classList.toggle('expanded');
+        stationItem.classList.toggle('active', isExpanded);
+
+        if (!isExpanded) {
+            // Colapsar: ocultar botones y restaurar nombre
+            detailsContainer.innerHTML = '';
+            stationActions.style.display = 'none';
+            stationNameSpan.textContent = stationName;
+            return;
+        }
+
+        // Expandir: mostrar botones
+        stationActions.style.display = 'flex';
+
+        // Cargar datos iniciales
+        await loadTrainTimes(stationId, stationName, detailsContainer);
+    }
+
+    async function refreshTrainTimes(stationId, stationName) {
+        const detailsContainer = document.getElementById(`details-${stationId}`);
+        await loadTrainTimes(stationId, stationName, detailsContainer);
+    }
+
+    async function loadTrainTimes(stationId, stationName, detailsContainer) {
+        // Mostrar loading en el contenedor de detalles
+        detailsContainer.innerHTML = '<div class="loading-message">Cargando tiempos de trenes...</div>';
+
+        try {
+            const response = await fetch(`/api/station/raw-trains/${encodeURIComponent(stationName)}`);
+            const data = await response.json();
+
+            if (data.success && data.trains_data.lineas.length > 0) {
+                // Mostrar detalles completos en el panel
+                detailsContainer.innerHTML = renderTrainDetails(data.trains_data, stationName);
+            } else {
+                const statusResponse = await fetch(`/api/station/closed-status/${encodeURIComponent(stationName)}`);
+                const statusData = await statusResponse.json();
+                if (statusData.cerrada) {
+                    detailsContainer.innerHTML = `<div class="error-message">Estación cerrada: ${statusData.motivo}</div>`;
+                } else {
+                    detailsContainer.innerHTML = '<div class="error-message">No hay trenes programados en este momento.</div>';
+                }
+            }
+        } catch (error) {
+            console.error('Error fetching train times:', error);
+            detailsContainer.innerHTML = '<div class="error-message">No se pudo cargar la información de trenes.</div>';
+        }
+    }
+
+    function generateTrainSummary(trainsData) {
+        if (!trainsData.lineas || trainsData.lineas.length === 0) {
+            return '';
+        }
+
+        const summaries = [];
+        trainsData.lineas.forEach(linea => {
+            if (linea.direcciones && linea.direcciones.length > 0) {
+                const firstDirection = linea.direcciones[0];
+                if (firstDirection.tiempos && firstDirection.tiempos.length > 0) {
+                    const nextTrain = firstDirection.tiempos[0];
+                    summaries.push(`L${linea.numero}: ${nextTrain}min`);
+                }
+            }
+        });
+
+        return summaries.join(', ');
+    }
+
+    function renderTrainDetails(trainsData, stationName) {
+        // Collect all line colors to create the gradient for the border
+        const lineColors = trainsData.lineas.map(linea => getLineColor(linea.numero));
+        let borderStyle = '';
+        if (lineColors.length > 1) {
+            // Crear bloques individuales para cada línea
+            const gradientColors = [];
+            const numLines = lineColors.length;
+            
+            lineColors.forEach((color, index) => {
+                // Para cada línea, crear un bloque de color
+                // Si es la primera línea, empezar con su color
+                if (index === 0) {
+                    gradientColors.push(color);
+                }
+                
+                // Añadir el color de la línea actual
+                gradientColors.push(color);
+                
+                // Si no es la última línea, añadir el color de la siguiente
+                if (index < numLines - 1) {
+                    gradientColors.push(lineColors[index + 1]);
+                }
+            });
+            
+            const gradient = `linear-gradient(to bottom, ${gradientColors.join(', ')})`;
+            borderStyle = `border-left: 4px solid; border-image: ${gradient} 1;`;
+        } else if (lineColors.length === 1) {
+            borderStyle = `border-left: 4px solid ${lineColors[0]};`;
+        }
+
+        let html = '<div class="train-details-content">';
+
+        // The wrapper now contains ALL the details, including the header,
+        // so we can move it as a single block.
+        html += `<div class="train-details-wrapper" style="${borderStyle}">`;
+
+        // Header con información de la estación
+        html += `
+            <div class="train-details-header">
+                <h4>🚇 ${stationName}</h4>
+                <a href="/station/${encodeURIComponent(stationName)}" class="more-info-link">Ver más detalles</a>
+            </div>
+        `;
+
+        // 2. Add each line's information with times
+        trainsData.lineas.forEach(linea => {
+            html += `<div class="train-line-group">`;
+            
+            // Determinar el logo correcto
+            let logoPath = '';
+            if (linea.numero === 'Ramal') {
+                logoPath = '/static/logos/lineas/ramal.svg';
+            } else if (linea.numero === '6') {
+                logoPath = '/static/logos/lineas/linea-6-circular.svg';
+            } else if (linea.numero === '12') {
+                logoPath = '/static/logos/lineas/linea-12-metrosur.svg';
+            } else {
+                logoPath = `/static/logos/lineas/linea-${linea.numero}.svg`;
+            }
+            
+            html += `
+                <div class="train-line-header">
+                    <img src="${logoPath}" alt="Línea ${linea.numero}" class="train-line-logo">
+                    <strong>Línea ${linea.numero}</strong>
+                </div>
+            `;
+
+            // Añadir direcciones y tiempos
+            if (linea.direcciones && linea.direcciones.length > 0) {
+                linea.direcciones.forEach(direccion => {
+                    html += `<div class="train-direction">`;
+                    html += `<div class="destination">🎯 Dirección: ${direccion.destino}</div>`;
+                    
+                    if (direccion.tiempos && direccion.tiempos.length > 0) {
+                        html += `<div class="times">`;
+                        direccion.tiempos.forEach(tiempo => {
+                            html += `<span class="time-badge">${tiempo} min</span>`;
+                        });
+                        html += `</div>`;
+                    } else {
+                        html += `<div class="times"><span class="time-badge no-trains">Sin trenes</span></div>`;
+                    }
+                    html += `</div>`;
+                });
+            } else {
+                html += `<div class="train-direction">`;
+                html += `<div class="destination">No hay información de trenes disponible</div>`;
+                html += `</div>`;
+            }
+
+            html += `</div>`;
+        });
+
+        html += '</div>';
+        html += '</div>';
+        return html;
+    }
+    </script>
+</body>
+</html> 

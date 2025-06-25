@@ -1,0 +1,292 @@
+id_fijo,nombre,linea,correspondencias
+153,Pinar de Chamartín,1,"[""4""]"
+152,Bambú,1,[]
+151,Chamartín,1,"[""10""]"
+101,Plaza de Castilla,1,"[""10"", ""9""]"
+102,Valdeacederas,1,[]
+103,Tetuán,1,[]
+104,Estrecho,1,[]
+105,Alvarado,1,[]
+106,Cuatro Caminos,1,"[""2"", ""6""]"
+107,Ríos Rosas,1,[]
+108,Iglesia,1,[]
+109,Bilbao,1,"[""4""]"
+110,Tribunal,1,"[""10""]"
+111,Gran Vía,1,"[""5""]"
+112,Sol,1,"[""2"", ""3""]"
+113,Tirso de Molina,1,[]
+114,Antón Martín,1,[]
+115,Estación del Arte,1,[]
+116,Atocha,1,[]
+117,Menéndez Pelayo,1,[]
+118,Pacífico,1,"[""6""]"
+119,Puente de Vallecas,1,[]
+120,Nueva Numancia,1,[]
+121,Portazgo,1,[]
+123,Alto del Arenal,1,[]
+122,Buenos Aires,1,[]
+124,Miguel Hernández,1,[]
+125,Sierra de Guadalupe,1,[]
+126,Villa de Vallecas,1,[]
+127,Congosto,1,[]
+128,La Gavia,1,[]
+129,Las Suertes,1,[]
+130,Valdecarros,1,[]
+1061,Hospital Infanta Sofía,10,[]
+1060,Reyes Católicos,10,[]
+1059,Baunatal,10,[]
+1058,Manuel de Falla,10,[]
+1057,Marqués de la Valdavia,10,[]
+1056,La Moraleja,10,[]
+1055,La Granja,10,[]
+1054,Ronda de la Comunicación,10,[]
+1053,Las Tablas,10,[]
+1052,Montecarmelo,10,[]
+1051,Tres Olivos,10,[]
+1001,Fuencarral,10,[]
+1002,Begoña,10,[]
+151,Chamartín,10,"[""1""]"
+101,Plaza de Castilla,10,"[""1"", ""9""]"
+1005,Cuzco,10,[]
+1006,Santiago Bernabéu,10,[]
+618,Nuevos Ministerios,10,"[""6"", ""8""]"
+711,Gregorio Marañón,10,"[""7""]"
+404,Alonso Martínez,10,"[""4"", ""5""]"
+110,Tribunal,10,"[""1""]"
+308,Plaza de España,10,"[""3""]"
+625,Príncipe Pío,10,"[""6"", ""Ramal""]"
+1013,Lago,10,[]
+1014,Batán,10,[]
+530,Casa de Campo,10,"[""5""]"
+1016,Colonia Jardín,10,[]
+1018,Aviación Española,10,[]
+1019,Cuatro Vientos,10,[]
+1020,Joaquín Vilumbrales,10,[]
+1021,Puerta del Sur,10,"[""12""]"
+605,Plaza Elíptica,11,"[""6""]"
+1102,Abrantes,11,[]
+1103,Pan Bendito,11,[]
+1104,San Francisco,11,[]
+1105,Carabanchel Alto,11,[]
+1106,La Peseta,11,[]
+1107,La Fortuna,11,[]
+1201,Puerta del Sur,12,"[""10""]"
+1202,Parque Lisboa,12,[]
+1203,Alcorcón Central,12,[]
+1204,Parque Oeste,12,[]
+1205,Universidad Rey Juan Carlos,12,[]
+1206,Móstoles Central,12,[]
+1207,Pradillo,12,[]
+1208,Hospital de Móstoles,12,[]
+1209,Manuela Malasaña,12,[]
+1210,Loranca,12,[]
+1211,Parque Europa,12,[]
+1212,Hospital de Fuenlabrada,12,[]
+1214,Fuenlabrada Central,12,[]
+1215,Parque de los Estados,12,[]
+1217,Arroyo Culebro,12,[]
+1218,Conservatorio,12,[]
+1219,Alonso de Mendoza,12,[]
+1220,Getafe Central,12,[]
+1221,Juan de la Cierva,12,[]
+358,El Casar,12,"[""3""]"
+1223,Los Espartales,12,[]
+1224,El Bercial,12,[]
+1225,El Carrascal,12,[]
+1226,Julián Besteiro,12,[]
+1227,Casa del Reloj,12,[]
+1228,Hospital Severo Ochoa,12,[]
+1229,Leganés Central,12,[]
+1230,San Nicasio,12,[]
+255,Las Rosas,2,[]
+254,Avenida de Guadalajara,2,[]
+253,Alsacia,2,[]
+252,La Almudena,2,[]
+251,La Elipa,2,[]
+201,Ventas,2,"[""5""]"
+202,Manuel Becerra,2,"[""6""]"
+203,Goya,2,"[""4""]"
+204,Príncipe de Vergara,2,"[""9""]"
+205,Retiro,2,[]
+206,Banco de España,2,[]
+207,Sevilla,2,[]
+112,Sol,2,"[""1"", ""3""]"
+209,Ópera,2,"[""5"", ""Ramal""]"
+210,Santo Domingo,2,[]
+211,Noviciado,2,[]
+212,San Bernardo,2,"[""4""]"
+213,Quevedo,2,[]
+214,Canal,2,"[""7""]"
+106,Cuatro Caminos,2,"[""1"", ""6""]"
+358,El Casar,3,"[""12""]"
+357,Villaverde Alto,3,[]
+356,San Cristóbal,3,[]
+355,Villaverde Bajo Cruce,3,[]
+354,Ciudad de los Ángeles,3,[]
+353,San Fermín – Orcasur,3,[]
+352,Hospital 12 de Octubre,3,[]
+351,Almendrales,3,[]
+301,Legazpi,3,"[""6""]"
+302,Delicias,3,[]
+303,Palos de la Frontera,3,[]
+304,Embajadores,3,[]
+305,Lavapiés,3,[]
+112,Sol,3,"[""1"", ""2""]"
+307,Callao,3,"[""5""]"
+308,Plaza de España,3,"[""10""]"
+309,Ventura Rodríguez,3,[]
+310,Argüelles,3,"[""4"", ""6""]"
+311,Moncloa,3,"[""6""]"
+310,Argüelles,4,"[""3"", ""6""]"
+212,San Bernardo,4,"[""2""]"
+113,Bilbao,4,"[""1""]"
+404,Alonso Martínez,4,"[""10"", ""5""]"
+405,Colón,4,[]
+406,Serrano,4,[]
+407,Velázquez,4,[]
+203,Goya,4,"[""2""]"
+409,Lista,4,[]
+410,Diego de León,4,"[""5"", ""6""]"
+411,Avenida de América,4,"[""6"", ""7"", ""9""]"
+412,Prosperidad,4,[]
+413,Alfonso XIII,4,[]
+414,Avenida de la Paz,4,[]
+415,Arturo Soria,4,[]
+416,Esperanza,4,[]
+417,Canillas,4,[]
+418,Mar de Cristal,4,"[""8""]"
+419,San Lorenzo,4,[]
+420,Parque de Santa María,4,[]
+421,Hortaleza,4,[]
+422,Manoteras,4,[]
+153,Pinar de Chamartín,4,"[""1""]"
+552,Alameda de Osuna,5,[]
+551,El Capricho,5,[]
+501,Canillejas,5,[]
+502,Torre Arias,5,[]
+503,Suanzes,5,[]
+504,Ciudad Lineal,5,[]
+505,Pueblo Nuevo,5,"[""7""]"
+506,Quintana,5,[]
+507,El Carmen,5,[]
+201,Ventas,5,"[""2""]"
+410,Diego de León,5,"[""4"", ""6""]"
+510,Núñez de Balboa,5,"[""9""]"
+511,Rubén Darío,5,[]
+404,Alonso Martínez,5,"[""10"", ""4""]"
+513,Chueca,5,[]
+111,Gran Vía,5,"[""1""]"
+307,Callao,5,"[""3""]"
+216,Ópera,5,"[""2"", ""Ramal""]"
+517,La Latina,5,[]
+518,Puerta de Toledo,5,[]
+519,Acacias,5,[]
+520,Pirámides,5,[]
+521,Marqués de Vadillo,5,[]
+522,Urgel,5,[]
+523,Oporto,5,"[""6""]"
+524,Vista Alegre,5,[]
+525,Carabanchel,5,[]
+526,Eugenia de Montijo,5,[]
+527,Aluche,5,[]
+528,Empalme,5,[]
+529,Campamento,5,[]
+530,Casa de Campo,5,"[""10""]"
+601,Laguna,6,[]
+602,Carpetana,6,[]
+523,Oporto,6,"[""5""]"
+604,Opañel,6,[]
+605,Plaza Elíptica,6,"[""11""]"
+606,Usera,6,[]
+301,Legazpi,6,"[""3""]"
+608,Arganzuela – Planetario,6,[]
+609,Méndez Álvaro,6,[]
+118,Pacífico,6,"[""1""]"
+611,Conde de Casal,6,[]
+612,Sainz de Baranda,6,"[""9""]"
+613,O’Donnell,6,[]
+202,Manuel Becerra,6,"[""2""]"
+410,Diego de León,6,"[""4"", ""5""]"
+411,Avenida de América,6,"[""4"", ""7"", ""9""]"
+617,República Argentina,6,[]
+618,Nuevos Ministerios,6,"[""10"", ""8""]"
+106,Cuatro Caminos,6,"[""1"", ""2""]"
+620,Guzmán el Bueno,6,"[""7""]"
+621,Vicente Aleixandre,6,[]
+622,Ciudad Universitaria,6,[]
+311,Moncloa,6,"[""3""]"
+310,Argüelles,6,"[""3"", ""4""]"
+625,Príncipe Pío,6,"[""10"", ""Ramal""]"
+623,Puerta del Ángel,6,[]
+626,Alto de Extremadura,6,[]
+628,Lucero,6,[]
+760,Hospital del Henares,7,[]
+759,Henares,7,[]
+758,Jarama,7,[]
+757,San Fernando,7,[]
+756,La Rambla,7,[]
+755,Coslada Central,7,[]
+754,Barrio del Puerto,7,[]
+751,Estadio Metropolitano,7,[]
+701,Las Musas,7,[]
+702,San Blas,7,[]
+703,Simancas,7,[]
+704,García Noblejas,7,[]
+705,Ascao,7,[]
+505,Pueblo Nuevo,7,"[""5""]"
+707,Barrio de la Concepción,7,[]
+708,Parque de las Avenidas,7,[]
+709,Cartagena,7,[]
+411,Avenida de América,7,"[""4"", ""6"", ""9""]"
+711,Gregorio Marañón,7,"[""10""]"
+712,Alonso Cano,7,[]
+214,Canal,7,"[""2""]"
+714,Islas Filipinas,7,[]
+620,Guzmán el Bueno,7,"[""6""]"
+716,Francos Rodríguez,7,[]
+717,Valdezarza,7,[]
+718,Antonio Machado,7,[]
+719,Peñagrande,7,[]
+720,Avenida de la Ilustración,7,[]
+721,Lacoma,7,[]
+722,Arroyofresno,7,[]
+723,Pitis,7,[]
+618,Nuevos Ministerios,8,"[""10"", ""6""]"
+802,Colombia,8,"[""9""]"
+803,Pinar del Rey,8,[]
+418,Mar de Cristal,8,"[""4""]"
+805,Feria de Madrid,8,[]
+806,Aeropuerto T1-T2-T3,8,[]
+807,Barajas,8,[]
+808,Aeropuerto T4,8,[]
+952,Paco de Lucía,9,[]
+951,Mirasierra,9,[]
+901,Herrera Oria,9,[]
+902,Barrio del Pilar,9,[]
+903,Ventilla,9,[]
+101,Plaza de Castilla,9,"[""1"", ""10""]"
+905,Duque de Pastrana,9,[]
+906,Pío XII,9,[]
+802,Colombia,9,"[""8""]"
+908,Concha Espina,9,[]
+909,Cruz del Rayo,9,[]
+411,Avenida de América,9,"[""4"", ""6"", ""7""]"
+510,Núñez de Balboa,9,"[""5""]"
+204,Príncipe de Vergara,9,"[""2""]"
+913,Ibiza,9,[]
+612,Sainz de Baranda,9,"[""6""]"
+915,Estrella,9,[]
+916,Vinateros,9,[]
+917,Artilleros,9,[]
+918,Pavones,9,[]
+919,Valdebernardo,9,[]
+920,Vicálvaro,9,[]
+921,San Cipriano,9,[]
+922,Puerta de Arganda,9,[]
+924,Rivas Urbanizaciones,9,[]
+925,Rivas Futura,9,[]
+926,Rivas Vaciamadrid,9,[]
+927,La Poveda,9,[]
+928,Arganda del Rey,9,[]
+209,Ópera,Ramal,"[""2"", ""5""]"
+625,Príncipe Pío,Ramal,"[""10"", ""6""]"

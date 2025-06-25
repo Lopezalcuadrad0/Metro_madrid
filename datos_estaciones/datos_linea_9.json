@@ -1,0 +1,941 @@
+{
+  "Arganda del Rey": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Arganda del Rey",
+    "zona_tarifaria": "B3",
+    "accesos": [
+      {
+        "vestibulo": "Arganda del Rey",
+        "nombre": "Pº de la Estación",
+        "direccion": "Pº de la Estación, 37 ARGANDA DEL REY"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Poveda": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Poveda",
+    "zona_tarifaria": "B3",
+    "accesos": [
+      {
+        "vestibulo": "La Poveda",
+        "nombre": "Ctra. Campo Real",
+        "direccion": "Ctra. Campo Real (M-300) Km. 2 ARGANDA DEL REY"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Rivas Vaciamadrid": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Rivas Vaciamadrid",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Rivas Vaciamadrid",
+        "nombre": "Wenceslao García",
+        "direccion": "Wenceslao García, s/n RIVAS VACIAMADRID"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Rivas Futura": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Rivas Futura",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Rivas Futura",
+        "nombre": "Ascensor",
+        "direccion": "nivel parking RIVAS VACIAMADRID"
+      },
+      {
+        "vestibulo": "Rivas Futura",
+        "nombre": "Concepción Arenal",
+        "direccion": "C/ Concepción Arenal esquina Avenida Aurelio Álvarez RIVAS VACIAMADRID"
+      },
+      {
+        "vestibulo": "Rivas Futura",
+        "nombre": "Marie Curie",
+        "direccion": "C/ Marie Curie esquina C/ Concepción Arenal RIVAS VACIAMADRID"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Rivas Urbanizaciones": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Rivas Urbanizaciones",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Rivas Urbanizaciones",
+        "nombre": "Paseo del Ferrocarril",
+        "direccion": "Paseo del Ferrocarril, 9 RIVAS VACIAMADRID"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Puerta de Arganda": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puerta de Arganda",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Cipriano": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Cipriano",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Vicálvaro": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Vicálvaro",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Valdebernardo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Valdebernardo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pavones": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pavones",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Pavones",
+        "nombre": "Ascensor",
+        "direccion": "Hacienda de Pavones, 340"
+      },
+      {
+        "vestibulo": "Pavones",
+        "nombre": "Terminal de Autobuses",
+        "direccion": "Hacienda de Pavones, s/n (pares frente al nº 215)"
+      },
+      {
+        "vestibulo": "Pavones",
+        "nombre": "Hacienda de Pavones, impares",
+        "direccion": "Hacienda de Pavones, 215"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Artilleros": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Artilleros",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Vinateros": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Vinateros",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Arroyo Belincoso",
+        "nombre": "Arroyo Belincoso",
+        "direccion": "Arroyo Belincoso, 36"
+      },
+      {
+        "vestibulo": "Arroyo Belincoso",
+        "nombre": "Vinateros, pares",
+        "direccion": "Vinateros, 70"
+      },
+      {
+        "vestibulo": "Vinateros",
+        "nombre": "Corregidor José de Pasamonte",
+        "direccion": "Vinateros, 104"
+      },
+      {
+        "vestibulo": "Vinateros",
+        "nombre": "Vinateros, impares",
+        "direccion": "Vinateros, 75"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Estrella": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Estrella",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Estrella",
+        "nombre": "Estrella Polar",
+        "direccion": "Sirio, 34"
+      },
+      {
+        "vestibulo": "Moratalaz",
+        "nombre": "Camino de los Vinateros, impares",
+        "direccion": "Camino de los Vinateros, 1"
+      },
+      {
+        "vestibulo": "Moratalaz",
+        "nombre": "Camino de los Vinateros, pares",
+        "direccion": "Camino de Vinateros, 10"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sainz de Baranda": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sainz de Baranda",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ibiza": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ibiza",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Príncipe de Vergara": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Príncipe de Vergara",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Príncipe de Vergara",
+        "nombre": "Alcalá",
+        "direccion": "Alcalá, 123 (Esq. Ppe. Vergara)"
+      },
+      {
+        "vestibulo": "Príncipe de Vergara-Ascensor",
+        "nombre": "Ascensor 1",
+        "direccion": "Príncipe de Vergara, 7"
+      },
+      {
+        "vestibulo": "Príncipe de Vergara-Ascensor",
+        "nombre": "Ascensor 2",
+        "direccion": "Príncipe de Vergara, 5"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Núñez de Balboa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Núñez de Balboa",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de América": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de América",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Avenida de América",
+        "nombre": "Intercambiador",
+        "direccion": "Avenida de América frente al nº 7"
+      },
+      {
+        "vestibulo": "Avenida de América",
+        "nombre": "Av. América, pares",
+        "direccion": "Av. América, 4"
+      },
+      {
+        "vestibulo": "Francisco Silvela",
+        "nombre": "Pedro Valdivia",
+        "direccion": "Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Cruz del Rayo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Cruz del Rayo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Principe Vergara",
+        "nombre": "Principe Vergara, impares",
+        "direccion": "Principe Vergara, 133"
+      },
+      {
+        "vestibulo": "Principe Vergara",
+        "nombre": "Principe Vergara, pares",
+        "direccion": "Principe Vergara, 128"
+      },
+      {
+        "vestibulo": "Sánchez Pacheco",
+        "nombre": "Principe Vergara, impares",
+        "direccion": "Principe Vergara, 181"
+      },
+      {
+        "vestibulo": "Sánchez Pacheco",
+        "nombre": "Principe Vergara, pares",
+        "direccion": "Principe Vergara (esq. Sánchez Pacheco)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Concha Espina": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Concha Espina",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Plaza de Cataluña",
+        "nombre": "Plaza de Cataluña",
+        "direccion": "Príncipe de Vergara, 204 (Pza. Cataluña)"
+      },
+      {
+        "vestibulo": "Príncipe de Vergara",
+        "nombre": "Príncipe de Vergara",
+        "direccion": "Príncipe de Vergara, 246 (P.Autom. G. Civil)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Colombia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Colombia",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, pares - Colombia",
+        "direccion": "Principe Vergara, 260"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Ascensor",
+        "direccion": "Colombia, 3"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, impares - Pza. Rep. Dominicana",
+        "direccion": "Principe Vergara, 273"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, pares - Pza. Rep. Dominicana",
+        "direccion": "Principe Vergara, 266"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, impares - Colombia",
+        "direccion": "Principe Vergara, 261"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pío XII": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pío XII",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Duque de Pastrana": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Duque de Pastrana",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Duque de Pastrana",
+        "nombre": "Mateo Inurria",
+        "direccion": "Mateo Inurria, 36 (Esq. Pº de la Habana)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Plaza de Castilla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza de Castilla",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Avenida de Asturias",
+        "nombre": "Intercambiador",
+        "direccion": "Límite Intercambiador/Metro"
+      },
+      {
+        "vestibulo": "Bravo Murillo",
+        "nombre": "Bravo Murillo",
+        "direccion": "Bravo Murillo, 377"
+      },
+      {
+        "vestibulo": "Castellana",
+        "nombre": "Castellana",
+        "direccion": "Fr. Dep. Canal Isabel II"
+      },
+      {
+        "vestibulo": "Castellana",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Castilla esq. Paseo Castellana pares - acera del Canal de Isabel II"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Ascensor",
+        "direccion": "Paseo de la Castellana, bulevar central"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Plaza de Castilla",
+        "direccion": "Pº. Castellana bulevar central"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Intercambiador Superficie",
+        "direccion": "Intercambiador Superficie"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Intercambiador Subterraneo",
+        "direccion": "Interconexión con Intercambiador subterráneo"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Castellana, impares",
+        "direccion": "Pº Castellana, 189 (junto a torres)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tienda de Metro",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Atención al cliente",
+      "Oficina de gestión TTP",
+      "Oficina Objetos Perdidos",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ventilla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ventilla",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Ventilla",
+        "nombre": "Avda. Asturias, impares",
+        "direccion": "Avda. Asturias, impares"
+      },
+      {
+        "vestibulo": "Ventilla",
+        "nombre": "Avda. Asturias, pares",
+        "direccion": "Avda. Asturias, pares"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Barrio del Pilar": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Barrio del Pilar",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Melchor Fernández Almagro",
+        "nombre": "Melchor Fernández Almagro",
+        "direccion": "Ginzo de Limia, 11"
+      },
+      {
+        "vestibulo": "Melchor Fernández Almagro",
+        "nombre": "Ginzo de Limia, pares",
+        "direccion": "Ginzo de Limia, 2"
+      },
+      {
+        "vestibulo": "Plaza Mondáriz",
+        "nombre": "Ginzo de Limia, pares",
+        "direccion": "Ginzo de Limia, 38"
+      },
+      {
+        "vestibulo": "Plaza Mondáriz",
+        "nombre": "Ginzo de Limia, impares",
+        "direccion": "Ginzo de Limia, 29 (Próx. C.Comercial)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Herrera Oria": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Herrera Oria",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Fermín Caballero",
+        "nombre": "Ginzo de Limia",
+        "direccion": "Ginzo de Limia (Semiesq F. Caballero)"
+      },
+      {
+        "vestibulo": "Herrera Oria",
+        "nombre": "Cardenal Herrera Oria",
+        "direccion": "Ginzo de Limia (Semiesq H. Oria)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tiendas"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Mirasierra": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Mirasierra",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mirasierra",
+        "nombre": "Mirasierra",
+        "direccion": "C/ Ventisquero de la Condesa, 28"
+      },
+      {
+        "vestibulo": "Mirasierra",
+        "nombre": "Ascensor",
+        "direccion": "C/ Ventisquero de la Condesa, 28 esquina C/ Mirador de la Reina, 54"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Paco de Lucía": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Paco de Lucía",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Costa BRava",
+        "nombre": "Costa Brava",
+        "direccion": "C/ Costa Brava, 18"
+      },
+      {
+        "vestibulo": "Costa BRava",
+        "nombre": "Ascensor",
+        "direccion": "C/ Costa Brava, 18"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

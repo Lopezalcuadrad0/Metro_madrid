@@ -1,0 +1,218 @@
+{
+  "Plaza Elíptica": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza Elíptica",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Marcelo Usera",
+        "nombre": "Marcelo Usera, pares",
+        "direccion": "Marcelo Usera, 170"
+      },
+      {
+        "vestibulo": "Marcelo Usera",
+        "nombre": "Marcelo Usera Ascensor",
+        "direccion": "Plaza Elíptica, esq. Marcelo Usera con Paseo de Santa María de la Cabeza"
+      },
+      {
+        "vestibulo": "Marcelo Usera",
+        "nombre": "Marcelo Usera, impares",
+        "direccion": "Plaza Elíptica, 2 esq. Marcelo Usera"
+      },
+      {
+        "vestibulo": "Princesa Juana de Austria",
+        "nombre": "Intercambiador",
+        "direccion": "Avda. Princesa Juana de Austria"
+      },
+      {
+        "vestibulo": "Vía Lusitana",
+        "nombre": "Plaza Elíptica Ascensor. Acceso a línea 11",
+        "direccion": "Plaza Eliptica esq. Avda. Oporto, 2"
+      },
+      {
+        "vestibulo": "Vía Lusitana",
+        "nombre": "Plaza Eíptica",
+        "direccion": "Plaza Elíptica esq. A. Leyva 88, 90, 92"
+      },
+      {
+        "vestibulo": "Vía Lusitana",
+        "nombre": "Avda. Oporto, pares",
+        "direccion": "Avda. Oporto, 2"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses de largo recorrido",
+        "icono": "autobuses-de-largo-recorrido"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Abrantes": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Abrantes",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pan Bendito": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pan Bendito",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Francisco": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Francisco",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Carabanchel Alto": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Carabanchel Alto",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Carabanchel Alto",
+        "nombre": "Avenida Carabanchel Alto",
+        "direccion": "Avda. Carabanchel Alto, 15"
+      },
+      {
+        "vestibulo": "Carabanchel Alto",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Carabanchel Alto, 15"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Peseta": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Peseta",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "La Peseta",
+        "nombre": "Avda. La Peseta",
+        "direccion": "Avda. La Peseta, 61"
+      },
+      {
+        "vestibulo": "La Peseta",
+        "nombre": "Ascensor",
+        "direccion": "Dentro del templete del acceso Avda. La Peseta, 61"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Estacionamiento de bicicletas",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Fortuna": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Fortuna",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "La Fortuna",
+        "nombre": "San José",
+        "direccion": "C/ San José, 40"
+      },
+      {
+        "vestibulo": "La Fortuna",
+        "nombre": "Ascensor",
+        "direccion": "C/ San José, 44, semiesquina C/ Del Carmen"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

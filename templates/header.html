@@ -1,0 +1,356 @@
+<!-- Cabecera Metro de Madrid - Reutilizable -->
+<style>
+    /* Estilos de la cabecera Metro de Madrid */
+    :root {
+        --metro-main: #0065FE;
+        --metro-rojo: #d7192d;
+        --metro-azul-oscuro: #003366;
+    }
+
+    /* Variables CSS para temas */
+    :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8f9fa;
+        --text-primary: #212529;
+        --text-secondary: #6c757d;
+        --border-color: #dee2e6;
+        --shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    [data-theme="dark"] {
+        --bg-primary: #1a1a1a;
+        --bg-secondary: #2d2d2d;
+        --text-primary: #ffffff;
+        --text-secondary: #b0b0b0;
+        --border-color: #404040;
+        --shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    [data-theme="nocturno"] {
+        --bg-primary: #0a0a0a;
+        --bg-secondary: #1a1a1a;
+        --text-primary: #ffffff;
+        --text-secondary: #888888;
+        --border-color: #333333;
+        --shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: var(--bg-primary);
+        box-shadow: var(--shadow);
+        padding: 0;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .header-line-color {
+        height: 4px;
+        background-color: #868e96;
+        width: 100%;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        height: 44px;
+        background-color: var(--metro-azul-oscuro);
+        box-sizing: border-box;
+    }
+    
+    .main-logo img {
+        height: 25px;
+        display: block;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .nav-links li {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid transparent;
+        transition: color 0.2s, border-color 0.2s;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        color: var(--metro-rojo);
+        border-bottom-color: var(--metro-rojo);
+    }
+
+    .nav-extra {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        gap: 15px;
+    }
+
+    .nav-extra a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Selector de temas */
+    .theme-selector {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .theme-btn {
+        background: none;
+        border: none;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        opacity: 0.7;
+    }
+
+    .theme-btn:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .theme-btn.active {
+        background: rgba(255, 255, 255, 0.2);
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    .search-btn {
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .header-container {
+        display: flex;
+        position: sticky;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Estilos para el contenedor de notificaciones */
+    #notifications-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10000;
+        max-width: 400px;
+    }
+    
+    /* Información de cache en el header */
+    .cache-info {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 8px 12px;
+        margin: 10px 0;
+        font-size: 12px;
+        color: var(--text-secondary);
+    }
+    
+    .cache-info strong {
+        color: var(--text-primary);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .main-nav {
+            padding: 0 20px;
+        }
+        
+        .nav-links li a {
+            padding: 0 8px;
+            font-size: 12px;
+        }
+
+        .theme-selector {
+            gap: 3px;
+            padding: 3px;
+        }
+
+        .theme-btn {
+            padding: 4px 8px;
+            font-size: 10px;
+        }
+    }
+</style>
+
+<header class="main-header">
+    <div class="header-line-color"></div>
+    <nav class="main-nav">
+        <div class="header-container">
+            <a href="/" class="main-logo">
+                <img src="{{ url_for('static', filename='logos/Logomarca_azul.png') }}" 
+                     alt="Metro de Madrid Logo" 
+                     loading="eager"
+                     fetchpriority="high">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/" class="{{ 'active' if request.endpoint == 'index' else '' }}">Dashboard</a></li>
+                <li><a href="/map" class="{{ 'active' if request.endpoint == 'map_view' else '' }}">Mapa Red Metro</a></li>
+                <li><a href="/station" class="{{ 'active' if request.endpoint == 'station_page' else '' }}">Estación</a></li>
+                <li><a href="/status" class="{{ 'active' if request.endpoint == 'status' else '' }}">Estado de la Red</a></li>
+                <li><a href="/line/1" class="{{ 'active' if request.endpoint == 'line_detail' else '' }}">Líneas</a></li>  
+                <li><a href="/about_us" class="{{ 'active' if request.endpoint == 'about_THIS' else '' }}">El Proyecto</a></li>
+                <li><a href="/about_me" class="{{ 'active' if request.endpoint == 'about_ME' else '' }}">GL</a></li>
+
+                {% if current_user.is_authenticated %}
+                    <li>
+                        <a href="{{ url_for('account') }}" id="accountLink">
+                            👤 Mi Cuenta
+                            <span id="favoritesCounter" class="favorites-counter" style="
+                                background: #ffc107; 
+                                color: #000; 
+                                padding: 2px 6px; 
+                                border-radius: 50%; 
+                                font-size: 10px; 
+                                font-weight: bold; 
+                                margin-left: 5px; 
+                                display: none;
+                            ">0</span>
+                        </a>
+                    </li>
+                    <li><a href="{{ url_for('logout') }}">🔒 Cerrar Sesión</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('login') }}">🔑 Iniciar Sesión</a></li>
+                    <li><a href="{{ url_for('register') }}">📝 Registrarse</a></li>
+                {% endif %}
+            </ul>
+            <div class="nav-extra">
+                <div class="theme-selector">
+                    <button class="theme-btn" data-theme="light">☀️</button>
+                    <button class="theme-btn" data-theme="dark">🌙</button>
+                </div>
+                <span>ES</span>&nbsp;|&nbsp;<a href="#">EN</a>
+                <button class="search-btn" onclick="toggleSearch()">🔍</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Contenedor de notificaciones -->
+<div id="notifications-container"></div>
+
+<script>
+function toggleSearch() {
+    console.log('Búsqueda activada');
+}
+
+// Función para cambiar el color de la línea en el header
+function setHeaderLineColor(color) {
+    const headerLineColor = document.querySelector('.header-line-color');
+    if (headerLineColor) {
+        headerLineColor.style.backgroundColor = color;
+    }
+}
+
+// Función para resetear el color de la línea al gris por defecto
+function resetHeaderLineColor() {
+    setHeaderLineColor('#868e96');
+}
+
+// Sistema de temas
+document.addEventListener('DOMContentLoaded', function() {
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    const html = document.documentElement;
+    
+    // Inicializar tema
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateActiveButton(savedTheme);
+
+    // Event listeners para botones de tema
+    themeButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const theme = this.dataset.theme;
+            html.setAttribute('data-theme', theme);
+            updateActiveButton(theme);
+            localStorage.setItem('theme', theme);
+        });
+    });
+
+    function updateActiveButton(theme) {
+        themeButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.theme === theme);
+        });
+    }
+    
+    // Cargar contador de favoritos si el usuario está logueado
+    {% if current_user.is_authenticated %}
+    loadFavoritesCounter();
+    {% endif %}
+});
+
+{% if current_user.is_authenticated %}
+// Función para cargar el contador de favoritos
+async function loadFavoritesCounter() {
+    try {
+        const [linesResponse, stationsResponse] = await Promise.all([
+            fetch('/api/favorites/lines'),
+            fetch('/api/favorites/stations')
+        ]);
+        
+        if (linesResponse.ok && stationsResponse.ok) {
+            const linesData = await linesResponse.json();
+            const stationsData = await stationsResponse.json();
+            
+            const totalFavorites = (linesData.total || 0) + (stationsData.total || 0);
+            updateFavoritesCounter(totalFavorites);
+        }
+    } catch (error) {
+        console.error('Error loading favorites counter:', error);
+    }
+}
+
+// Función para actualizar el contador en el header
+function updateFavoritesCounter(count) {
+    const counter = document.getElementById('favoritesCounter');
+    if (counter) {
+        counter.textContent = count;
+        counter.style.display = count > 0 ? 'inline' : 'none';
+    }
+}
+
+// Función global para recargar el contador (llamada desde otras páginas)
+window.reloadFavoritesCounter = loadFavoritesCounter;
+{% endif %}
+</script>

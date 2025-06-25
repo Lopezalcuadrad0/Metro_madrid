@@ -1,0 +1,778 @@
+{
+  "Las Rosas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Las Rosas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Las Rosas",
+        "nombre": "Ascensor",
+        "direccion": "Paseo de Ginebra, 35"
+      },
+      {
+        "vestibulo": "Las Rosas",
+        "nombre": "Paseo de Ginebra",
+        "direccion": "Paseo de Ginebra esquina C/ Suecia"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de Guadalajara": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de Guadalajara",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alsacia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alsacia",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alsacia",
+        "nombre": "Intercambiador",
+        "direccion": "Plaza Alsacia s/n"
+      },
+      {
+        "vestibulo": "Alsacia",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Alsacia s/n"
+      },
+      {
+        "vestibulo": "Alsacia",
+        "nombre": "Avenida de Guadalajara",
+        "direccion": "frente a Hermanos García Noblejas, 133"
+      },
+      {
+        "vestibulo": "Alsacia",
+        "nombre": "Ascensor",
+        "direccion": "frente a Hermanos García Noblejas, 133"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Almudena": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Almudena",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "La Almudena",
+        "nombre": "Ascensor",
+        "direccion": "C/ Arriaga esquina C/ Francisco Largo Caballero"
+      },
+      {
+        "vestibulo": "La Almudena",
+        "nombre": "Arriaga",
+        "direccion": "C/ Arriaga, 75"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Elipa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Elipa",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "La Elipa",
+        "nombre": "Avda. Marqués de Corbera",
+        "direccion": "Avda. Marqués de Corbera, 56"
+      },
+      {
+        "vestibulo": "La Elipa",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Marqués de Corbera, 58"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ventas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ventas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Ventas",
+        "nombre": "Plaza de Toros",
+        "direccion": "Alcalá, 233 (Frente a Pza. de Toros)"
+      },
+      {
+        "vestibulo": "Ventas",
+        "nombre": "Plaza de Toros",
+        "direccion": "Alcalá, 233 (Frente a Pza. de Toros)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Manuel Becerra": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Manuel Becerra",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Manuel Becerra",
+        "nombre": "Doctor Esquerdo",
+        "direccion": "Pza. Manuel Becerra, 20 (Alcalá/Dr. Esquerdo)"
+      },
+      {
+        "vestibulo": "Manuel Becerra",
+        "nombre": "D. Ramón de la Cruz",
+        "direccion": "Pza. Manuel Becerra, 4 (Fco. Silvela/R. Cruz)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Goya": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Goya",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Conde de Peñalver",
+        "nombre": "Conde de Peñalver, pares",
+        "direccion": "Conde de Peñalver, 2 (Esq. con Alcalá)"
+      },
+      {
+        "vestibulo": "Conde de Peñalver",
+        "nombre": "Ascensores 4 y 5",
+        "direccion": "C/ Goya, 87"
+      },
+      {
+        "vestibulo": "Conde de Peñalver",
+        "nombre": "Conde de Peñalver, impares",
+        "direccion": "Goya, 89 (Esq. C/Peñalver , 1)"
+      },
+      {
+        "vestibulo": "Felipe II",
+        "nombre": "Felipe II, impares",
+        "direccion": "Avda. Felipe II, 1 (Esq. con c/ Narváez)"
+      },
+      {
+        "vestibulo": "Felipe II",
+        "nombre": "Ascensores 2 y 3. Acceso a línea 2 dirección Cuatro Caminos",
+        "direccion": "Avda. Felipe II, 1 (Esq. con c/ Alcalá)"
+      },
+      {
+        "vestibulo": "Felipe II",
+        "nombre": "Felipe II, pares",
+        "direccion": "Avda. Felipe II, 12 (Esq. con C/ Narváez)"
+      },
+      {
+        "vestibulo": "General Díaz Porlier",
+        "nombre": "General Díaz Porlier",
+        "direccion": "Goya, 62 (Esq. Gnral Díaz Porlier)"
+      },
+      {
+        "vestibulo": "General Díaz Porlier",
+        "nombre": "Ascensor 1. Acceso a línea 2 dirección Las Rosas y línea 4 dirección Argüelles",
+        "direccion": "General Díaz Porlier, 3"
+      },
+      {
+        "vestibulo": "General Díaz Porlier",
+        "nombre": "Centro Comercial",
+        "direccion": "Nivel -2 Centro Comercial"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Príncipe de Vergara": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Príncipe de Vergara",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Príncipe de Vergara",
+        "nombre": "Alcalá",
+        "direccion": "Alcalá, 123 (Esq. Ppe. Vergara)"
+      },
+      {
+        "vestibulo": "Príncipe de Vergara-Ascensor",
+        "nombre": "Ascensor 1",
+        "direccion": "Príncipe de Vergara, 7"
+      },
+      {
+        "vestibulo": "Príncipe de Vergara-Ascensor",
+        "nombre": "Ascensor 2",
+        "direccion": "Príncipe de Vergara, 5"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Retiro": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Retiro",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Claudio Coello",
+        "nombre": "Claudio Coello",
+        "direccion": "Alcalá, 75 (esq. Claudio Coello)"
+      },
+      {
+        "vestibulo": "Lagasca",
+        "nombre": "Rampa",
+        "direccion": "Lagasca, 4."
+      },
+      {
+        "vestibulo": "Lagasca",
+        "nombre": "Lagasca",
+        "direccion": "Lagasca, 4"
+      },
+      {
+        "vestibulo": "Lagasca",
+        "nombre": "Retiro",
+        "direccion": "Parque del Retiro"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Banco de España": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Banco de España",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Barquillo",
+        "nombre": "Barquillo",
+        "direccion": "Alcalá, 47 (Esq. Barquillo)"
+      },
+      {
+        "vestibulo": "Barquillo",
+        "nombre": "Marqués de Cubas",
+        "direccion": "Alcalá, 46 (Esq. M. Cubas)"
+      },
+      {
+        "vestibulo": "Cibeles",
+        "nombre": "Palacio de Buenavista",
+        "direccion": "Alcalá, 51"
+      },
+      {
+        "vestibulo": "Cibeles",
+        "nombre": "Banco de España",
+        "direccion": "Alcalá, 48 (Esq. Pº. del Prado)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sevilla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sevilla",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Sevilla",
+        "nombre": "Alcalá",
+        "direccion": "Alcalá, 23"
+      },
+      {
+        "vestibulo": "Sevilla",
+        "nombre": "Ascensor",
+        "direccion": "Alcalá, 21"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sol": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sol",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mayor",
+        "nombre": "Ascensor",
+        "direccion": "Puerta del Sol"
+      },
+      {
+        "vestibulo": "Mayor",
+        "nombre": "Mayor",
+        "direccion": "Pta. del Sol, s/n (esq. Mayor y Arenal)"
+      },
+      {
+        "vestibulo": "Preciados",
+        "nombre": "Centro Comercial",
+        "direccion": "Acceso directo al centro comercial"
+      },
+      {
+        "vestibulo": "Preciados",
+        "nombre": "Preciados",
+        "direccion": "Preciados, 3"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Alcalá",
+        "direccion": "Puerta del Sol, 13"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Carmen",
+        "direccion": "Puerta del Sol, 12"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "RENFE",
+        "direccion": "Cúpula de RENFE y Ascensor"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Carretas",
+        "direccion": "Pta. del Sol, 7 (semiesq. Carretas)"
+      },
+      {
+        "vestibulo": "RENFE",
+        "nombre": "RENFE",
+        "direccion": "Intercambiador Nivel -1"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tienda de Metro",
+      "Quioscos ONCE",
+      "Atención al cliente",
+      "Oficina de gestión TTP",
+      "Tiendas"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ópera": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ópera",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Campomanes",
+        "direccion": "Plaza de Isabel II, 5"
+      },
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Arenal",
+        "direccion": "Plaza de Isabel II, 1 (Esq. Arenal)"
+      },
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Isabel II, 8"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Espacio histórico de Metro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Santo Domingo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Santo Domingo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Gran Vía",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 51 (esq. San Bernardo)"
+      },
+      {
+        "vestibulo": "Santo Domingo",
+        "nombre": "Santo Domingo",
+        "direccion": "Pza. Santo Domingo, 6"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Noviciado": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Noviciado",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Ministerio de Justicia",
+        "nombre": "Ministerio de Justicia",
+        "direccion": "San Bernardo, 45 (Junto al Mº de Justicia)"
+      },
+      {
+        "vestibulo": "Noviciado",
+        "nombre": "Noviciado",
+        "direccion": "San Bernardo, 51 (Esq. C/Noviciado)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Bernardo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Bernardo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Alberto Aguilera",
+        "direccion": "Gta. Ruiz Jiménez, 2 (S.Bernardo - A. Aguilera)"
+      },
+      {
+        "vestibulo": "Carranza",
+        "nombre": "Carranza",
+        "direccion": "Gta. Ruiz Jiménez, 5 (Esq. Carranza)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Quevedo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Quevedo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Quevedo",
+        "nombre": "Fuencarral",
+        "direccion": "Gta. Quevedo, 1 (S.Bernardo - Fuencarral)"
+      },
+      {
+        "vestibulo": "Quevedo",
+        "nombre": "Arapiles",
+        "direccion": "Gta. Quevedo, 2 (Esq. Arapiles)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Canal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Canal",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Canal",
+        "nombre": "Ascensor",
+        "direccion": "Bravo Murillo, impares"
+      },
+      {
+        "vestibulo": "Canal",
+        "nombre": "Bravo Murillo, impares",
+        "direccion": "Bravo Murillo, 47"
+      },
+      {
+        "vestibulo": "Canal",
+        "nombre": "Bravo Murillo, pares",
+        "direccion": "Bravo Murillo, 40"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Cuatro Caminos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Cuatro Caminos",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Central",
+        "nombre": "Ascensor exterior",
+        "direccion": "Santa Engracia (semiesquina Bravo Murillo)"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Reina Victoria, pares",
+        "direccion": "Avda. Reina Victoria, 2"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Bravo Murillo",
+        "direccion": "Bravo Murillo, 101 (esq. Gta. Cuatro Caminos)"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Santa Engracia",
+        "direccion": "Santa Engracia, 168"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Reina Victoria, impares",
+        "direccion": "Gta. Cuatro Caminos (esq. Reina Victoria, 1)"
+      },
+      {
+        "vestibulo": "Maudes",
+        "nombre": "Maudes",
+        "direccion": "Maudes, 8"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

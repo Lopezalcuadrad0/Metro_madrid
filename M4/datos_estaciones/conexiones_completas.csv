@@ -1,0 +1,292 @@
+id_estacion,linea,nombre_estacion,id_modal,url,zona,accesible
+153,1,Pinar de Chamartín,581.0,https://www.metromadrid.es/es/linea/linea-1#estacion-153,A,False
+152,1,Bambú,438.0,https://www.metromadrid.es/es/linea/linea-1#estacion-152,A,False
+151,1,Chamartín,461.0,https://www.metromadrid.es/es/linea/linea-1#estacion-151,A,False
+101,1,Plaza de Castilla,586.0,https://www.metromadrid.es/es/linea/linea-1#estacion-101,A,False
+102,1,Valdeacederas,637.0,https://www.metromadrid.es/es/linea/linea-1#estacion-102,A,False
+103,1,Tetuán,629.0,https://www.metromadrid.es/es/linea/linea-1#estacion-103,A,False
+104,1,Estrecho,490.0,https://www.metromadrid.es/es/linea/linea-1#estacion-104,A,False
+105,1,Alvarado,418.0,https://www.metromadrid.es/es/linea/linea-1#estacion-105,A,False
+106,1,Cuatro Caminos,475.0,https://www.metromadrid.es/es/linea/linea-1#estacion-106,A,False
+107,1,Ríos Rosas,605.0,https://www.metromadrid.es/es/linea/linea-1#estacion-107,A,False
+108,1,Iglesia,514.0,https://www.metromadrid.es/es/linea/linea-1#estacion-108,A,False
+109,1,Bilbao,447.0,https://www.metromadrid.es/es/linea/linea-1#estacion-109,A,False
+110,1,Tribunal,633.0,https://www.metromadrid.es/es/linea/linea-1#estacion-110,A,False
+111,1,Gran Vía,501.0,https://www.metromadrid.es/es/linea/linea-1#estacion-111,A,False
+112,1,Sol,627.0,https://www.metromadrid.es/es/linea/linea-1#estacion-112,A,False
+113,1,Tirso de Molina,630.0,https://www.metromadrid.es/es/linea/linea-1#estacion-113,A,False
+114,1,Antón Martín,420.0,https://www.metromadrid.es/es/linea/linea-1#estacion-114,A,False
+115,1,Estación del Arte,431.0,https://www.metromadrid.es/es/linea/linea-1#estacion-115,A,False
+116,1,Atocha,432.0,https://www.metromadrid.es/es/linea/linea-1#estacion-116,A,False
+117,1,Menéndez Pelayo,553.0,https://www.metromadrid.es/es/linea/linea-1#estacion-117,A,False
+118,1,Pacífico,568.0,https://www.metromadrid.es/es/linea/linea-1#estacion-118,A,False
+119,1,Puente de Vallecas,595.0,https://www.metromadrid.es/es/linea/linea-1#estacion-119,A,False
+120,1,Nueva Numancia,561.0,https://www.metromadrid.es/es/linea/linea-1#estacion-120,A,False
+121,1,Portazgo,589.0,https://www.metromadrid.es/es/linea/linea-1#estacion-121,A,False
+123,1,Alto del Arenal,416.0,https://www.metromadrid.es/es/linea/linea-1#estacion-123,A,False
+122,1,Buenos Aires,449.0,https://www.metromadrid.es/es/linea/linea-1#estacion-122,A,False
+124,1,Miguel Hernández,555.0,https://www.metromadrid.es/es/linea/linea-1#estacion-124,A,False
+125,1,Sierra de Guadalupe,625.0,https://www.metromadrid.es/es/linea/linea-1#estacion-125,A,False
+126,1,Villa de Vallecas,646.0,https://www.metromadrid.es/es/linea/linea-1#estacion-126,A,False
+127,1,Congosto,471.0,https://www.metromadrid.es/es/linea/linea-1#estacion-127,A,False
+128,1,La Gavia,523.0,https://www.metromadrid.es/es/linea/linea-1#estacion-128,A,False
+129,1,Las Suertes,535.0,https://www.metromadrid.es/es/linea/linea-1#estacion-129,A,False
+130,1,Valdecarros,639.0,https://www.metromadrid.es/es/linea/linea-1#estacion-130,A,False
+1061,10,Hospital Infanta Sofía,,https://www.metromadrid.es/es/linea/linea-10#estacion-1061,A,False
+1060,10,Reyes Católicos,604.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1060,A,False
+1059,10,Baunatal,445.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1059,A,False
+1058,10,Manuel de Falla,546.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1058,A,False
+1057,10,Marqués de la Valdavia,550.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1057,A,False
+1056,10,La Moraleja,526.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1056,A,False
+1055,10,La Granja,524.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1055,A,False
+1054,10,Ronda de la Comunicación,609.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1054,A,False
+1053,10,Las Tablas,536.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1053,A,False
+1052,10,Montecarmelo,558.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1052,A,False
+1051,10,Tres Olivos,632.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1051,A,False
+1001,10,Fuencarral,495.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1001,A,False
+1002,10,Begoña,446.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1002,A,False
+151,10,Chamartín,461.0,https://www.metromadrid.es/es/linea/linea-10#estacion-151,A,False
+101,10,Plaza de Castilla,586.0,https://www.metromadrid.es/es/linea/linea-10#estacion-101,A,False
+1005,10,Cuzco,477.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1005,A,False
+1006,10,Santiago Bernabéu,621.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1006,A,False
+618,10,Nuevos Ministerios,562.0,https://www.metromadrid.es/es/linea/linea-10#estacion-618,A,False
+711,10,Gregorio Marañón,502.0,https://www.metromadrid.es/es/linea/linea-10#estacion-711,A,False
+404,10,Alonso Martínez,413.0,https://www.metromadrid.es/es/linea/linea-10#estacion-404,A,False
+110,10,Tribunal,633.0,https://www.metromadrid.es/es/linea/linea-10#estacion-110,A,False
+308,10,Plaza de España,587.0,https://www.metromadrid.es/es/linea/linea-10#estacion-308,A,False
+625,10,Príncipe Pío,592.0,https://www.metromadrid.es/es/linea/linea-10#estacion-625,A,False
+1013,10,Lago,531.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1013,A,False
+1014,10,Batán,444.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1014,A,False
+530,10,Casa de Campo,459.0,https://www.metromadrid.es/es/linea/linea-10#estacion-530,A,False
+1016,10,Colonia Jardín,468.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1016,A,False
+1018,10,Aviación Española,437.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1018,A,False
+1019,10,Cuatro Vientos,476.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1019,A,False
+1020,10,Joaquín Vilumbrales,517.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1020,A,False
+1021,10,Puerta del Sur,599.0,https://www.metromadrid.es/es/linea/linea-10#estacion-1021,A,False
+605,11,Plaza Elíptica,588.0,https://www.metromadrid.es/es/linea/linea-11#estacion-605,A,False
+1102,11,Abrantes,403.0,https://www.metromadrid.es/es/linea/linea-11#estacion-1102,A,False
+1103,11,Pan Bendito,572.0,https://www.metromadrid.es/es/linea/linea-11#estacion-1103,A,False
+1104,11,San Francisco,618.0,https://www.metromadrid.es/es/linea/linea-11#estacion-1104,A,False
+1105,11,Carabanchel Alto,456.0,https://www.metromadrid.es/es/linea/linea-11#estacion-1105,A,False
+1106,11,La Peseta,527.0,https://www.metromadrid.es/es/linea/linea-11#estacion-1106,A,False
+1107,11,La Fortuna,522.0,https://www.metromadrid.es/es/linea/linea-11#estacion-1107,A,False
+1201,12,Puerta del Sur,599.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1201,A,False
+1202,12,Parque Lisboa,574.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1202,A,False
+1203,12,Alcorcón Central,408.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1203,A,False
+1204,12,Parque Oeste,578.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1204,A,False
+1205,12,Universidad Rey Juan Carlos,634.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1205,A,False
+1206,12,Móstoles Central,559.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1206,A,False
+1207,12,Pradillo,590.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1207,A,False
+1208,12,Hospital de Móstoles,508.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1208,A,False
+1209,12,Manuela Malasaña,547.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1209,A,False
+1210,12,Loranca,541.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1210,A,False
+1211,12,Parque Europa,577.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1211,A,False
+1212,12,Hospital de Fuenlabrada,507.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1212,A,False
+1214,12,Fuenlabrada Central,496.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1214,A,False
+1215,12,Parque de los Estados,575.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1215,A,False
+1217,12,Arroyo Culebro,426.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1217,A,False
+1218,12,Conservatorio,472.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1218,A,False
+1219,12,Alonso de Mendoza,412.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1219,A,False
+1220,12,Getafe Central,499.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1220,A,False
+1221,12,Juan de la Cierva,518.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1221,A,False
+358,12,El Casar,485.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-358,A,False
+1223,12,Los Espartales,542.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1223,A,False
+1224,12,El Bercial,481.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1224,A,False
+1225,12,El Carrascal,484.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1225,A,False
+1226,12,Julián Besteiro,519.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1226,A,False
+1227,12,Casa del Reloj,460.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1227,A,False
+1228,12,Hospital Severo Ochoa,511.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1228,A,False
+1229,12,Leganés Central,538.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1229,A,False
+1230,12,San Nicasio,620.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-1230,A,False
+255,2,Las Rosas,534.0,https://www.metromadrid.es/es/linea/linea-2#estacion-255,A,False
+254,2,Avenida de Guadalajara,434.0,https://www.metromadrid.es/es/linea/linea-2#estacion-254,A,False
+253,2,Alsacia,414.0,https://www.metromadrid.es/es/linea/linea-2#estacion-253,A,False
+252,2,La Almudena,520.0,https://www.metromadrid.es/es/linea/linea-2#estacion-252,A,False
+251,2,La Elipa,521.0,https://www.metromadrid.es/es/linea/linea-2#estacion-251,A,False
+201,2,Ventas,642.0,https://www.metromadrid.es/es/linea/linea-2#estacion-201,A,False
+202,2,Manuel Becerra,545.0,https://www.metromadrid.es/es/linea/linea-2#estacion-202,A,False
+203,2,Goya,500.0,https://www.metromadrid.es/es/linea/linea-2#estacion-203,A,False
+204,2,Príncipe de Vergara,591.0,https://www.metromadrid.es/es/linea/linea-2#estacion-204,A,False
+205,2,Retiro,603.0,https://www.metromadrid.es/es/linea/linea-2#estacion-205,A,False
+206,2,Banco de España,439.0,https://www.metromadrid.es/es/linea/linea-2#estacion-206,A,False
+207,2,Sevilla,624.0,https://www.metromadrid.es/es/linea/linea-2#estacion-207,A,False
+112,2,Sol,627.0,https://www.metromadrid.es/es/linea/linea-2#estacion-112,A,False
+209,2,Ópera,566.0,https://www.metromadrid.es/es/linea/linea-2#estacion-209,A,False
+210,2,Santo Domingo,622.0,https://www.metromadrid.es/es/linea/linea-2#estacion-210,A,False
+211,2,Noviciado,560.0,https://www.metromadrid.es/es/linea/linea-2#estacion-211,A,False
+212,2,San Bernardo,612.0,https://www.metromadrid.es/es/linea/linea-2#estacion-212,A,False
+213,2,Quevedo,600.0,https://www.metromadrid.es/es/linea/linea-2#estacion-213,A,False
+214,2,Canal,452.0,https://www.metromadrid.es/es/linea/linea-2#estacion-214,A,False
+106,2,Cuatro Caminos,475.0,https://www.metromadrid.es/es/linea/linea-2#estacion-106,A,False
+358,3,El Casar,485.0,https://www.metromadrid.es/es/linea/linea-12-metrosur#estacion-358,A,False
+357,3,Villaverde Alto,647.0,https://www.metromadrid.es/es/linea/linea-3#estacion-357,A,False
+356,3,San Cristóbal,615.0,https://www.metromadrid.es/es/linea/linea-3#estacion-356,A,False
+355,3,Villaverde Bajo Cruce,648.0,https://www.metromadrid.es/es/linea/linea-3#estacion-355,A,False
+354,3,Ciudad de los Ángeles,463.0,https://www.metromadrid.es/es/linea/linea-3#estacion-354,A,False
+353,3,San Fermín – Orcasur,616.0,https://www.metromadrid.es/es/linea/linea-3#estacion-353,A,False
+352,3,Hospital 12 de Octubre,512.0,https://www.metromadrid.es/es/linea/linea-3#estacion-352,A,False
+351,3,Almendrales,410.0,https://www.metromadrid.es/es/linea/linea-3#estacion-351,A,False
+301,3,Legazpi,539.0,https://www.metromadrid.es/es/linea/linea-3#estacion-301,A,False
+302,3,Delicias,478.0,https://www.metromadrid.es/es/linea/linea-3#estacion-302,A,False
+303,3,Palos de la Frontera,571.0,https://www.metromadrid.es/es/linea/linea-3#estacion-303,A,False
+304,3,Embajadores,486.0,https://www.metromadrid.es/es/linea/linea-3#estacion-304,A,False
+305,3,Lavapiés,537.0,https://www.metromadrid.es/es/linea/linea-3#estacion-305,A,False
+112,3,Sol,627.0,https://www.metromadrid.es/es/linea/linea-3#estacion-112,A,False
+307,3,Callao,450,https://www.metromadrid.es/es/linea/linea-3#estacion-307,A,False
+308,3,Plaza de España,587.0,https://www.metromadrid.es/es/linea/linea-3#estacion-308,A,False
+309,3,Ventura Rodríguez,644.0,https://www.metromadrid.es/es/linea/linea-3#estacion-309,A,False
+310,3,Argüelles,425.0,https://www.metromadrid.es/es/linea/linea-3#estacion-310,A,False
+311,3,Moncloa,557.0,https://www.metromadrid.es/es/linea/linea-3#estacion-311,A,False
+310,4,Argüelles,425.0,https://www.metromadrid.es/es/linea/linea-4#estacion-310,A,False
+212,4,San Bernardo,612.0,https://www.metromadrid.es/es/linea/linea-4#estacion-212,A,False
+113,4,Bilbao,447.0,https://www.metromadrid.es/es/linea/linea-4#estacion-113,A,False
+404,4,Alonso Martínez,413.0,https://www.metromadrid.es/es/linea/linea-4#estacion-404,A,False
+405,4,Colón,467.0,https://www.metromadrid.es/es/linea/linea-4#estacion-405,A,False
+406,4,Serrano,623.0,https://www.metromadrid.es/es/linea/linea-4#estacion-406,A,False
+407,4,Velázquez,641.0,https://www.metromadrid.es/es/linea/linea-4#estacion-407,A,False
+203,4,Goya,500.0,https://www.metromadrid.es/es/linea/linea-4#estacion-203,A,False
+409,4,Lista,540.0,https://www.metromadrid.es/es/linea/linea-4#estacion-409,A,False
+410,4,Diego de León,479.0,https://www.metromadrid.es/es/linea/linea-4#estacion-410,A,False
+411,4,Avenida de América,433.0,https://www.metromadrid.es/es/linea/linea-4#estacion-411,A,False
+412,4,Prosperidad,593.0,https://www.metromadrid.es/es/linea/linea-4#estacion-412,A,False
+413,4,Alfonso XIII,409.0,https://www.metromadrid.es/es/linea/linea-4#estacion-413,A,False
+414,4,Avenida de la Paz,436.0,https://www.metromadrid.es/es/linea/linea-4#estacion-414,A,False
+415,4,Arturo Soria,429.0,https://www.metromadrid.es/es/linea/linea-4#estacion-415,A,False
+416,4,Esperanza,488.0,https://www.metromadrid.es/es/linea/linea-4#estacion-416,A,False
+417,4,Canillas,453.0,https://www.metromadrid.es/es/linea/linea-4#estacion-417,A,False
+418,4,Mar de Cristal,548.0,https://www.metromadrid.es/es/linea/linea-4#estacion-418,A,False
+419,4,San Lorenzo,619.0,https://www.metromadrid.es/es/linea/linea-4#estacion-419,A,False
+420,4,Parque de Santa María,576.0,https://www.metromadrid.es/es/linea/linea-4#estacion-420,A,False
+421,4,Hortaleza,506.0,https://www.metromadrid.es/es/linea/linea-4#estacion-421,A,False
+422,4,Manoteras,544.0,https://www.metromadrid.es/es/linea/linea-4#estacion-422,A,False
+153,4,Pinar de Chamartín,581.0,https://www.metromadrid.es/es/linea/linea-4#estacion-153,A,False
+552,5,Alameda de Osuna,407.0,https://www.metromadrid.es/es/linea/linea-5#estacion-552,A,False
+551,5,El Capricho,482.0,https://www.metromadrid.es/es/linea/linea-5#estacion-551,A,False
+501,5,Canillejas,454.0,https://www.metromadrid.es/es/linea/linea-5#estacion-501,A,False
+502,5,Torre Arias,631.0,https://www.metromadrid.es/es/linea/linea-5#estacion-502,A,False
+503,5,Suanzes,628.0,https://www.metromadrid.es/es/linea/linea-5#estacion-503,A,False
+504,5,Ciudad Lineal,464.0,https://www.metromadrid.es/es/linea/linea-5#estacion-504,A,False
+505,5,Pueblo Nuevo,594.0,https://www.metromadrid.es/es/linea/linea-5#estacion-505,A,False
+506,5,Quintana,601.0,https://www.metromadrid.es/es/linea/linea-5#estacion-506,A,False
+507,5,El Carmen,483.0,https://www.metromadrid.es/es/linea/linea-5#estacion-507,A,False
+201,5,Ventas,642.0,https://www.metromadrid.es/es/linea/linea-5#estacion-201,A,False
+410,5,Diego de León,479.0,https://www.metromadrid.es/es/linea/linea-5#estacion-410,A,False
+510,5,Núñez de Balboa,563.0,https://www.metromadrid.es/es/linea/linea-5#estacion-510,A,False
+511,5,Rubén Darío,610.0,https://www.metromadrid.es/es/linea/linea-5#estacion-511,A,False
+404,5,Alonso Martínez,413.0,https://www.metromadrid.es/es/linea/linea-5#estacion-404,A,False
+513,5,Chueca,462.0,https://www.metromadrid.es/es/linea/linea-5#estacion-513,A,False
+111,5,Gran Vía,501.0,https://www.metromadrid.es/es/linea/linea-5#estacion-111,A,False
+307,5,Callao,450.0,https://www.metromadrid.es/es/linea/linea-5#estacion-307,A,False
+216,5,Ópera,566.0,https://www.metromadrid.es/es/linea/linea-5#estacion-216,A,False
+517,5,La Latina,525.0,https://www.metromadrid.es/es/linea/linea-5#estacion-517 (sic),A,False
+518,5,Puerta de Toledo,597.0,https://www.metromadrid.es/es/linea/linea-5#estacion-518,A,False
+519,5,Acacias,404.0,https://www.metromadrid.es/es/linea/linea-5#estacion-519,A,False
+520,5,Pirámides,584.0,https://www.metromadrid.es/es/linea/linea-5#estacion-520 (sic),A,False
+521,5,Marqués de Vadillo,551.0,https://www.metromadrid.es/es/linea/linea-5#estacion-521,A,False
+522,5,Urgel,635.0,https://www.metromadrid.es/es/linea/linea-5#estacion-522,A,False
+523,5,Oporto,567.0,https://www.metromadrid.es/es/linea/linea-5#estacion-523,A,False
+524,5,Vista Alegre,651.0,https://www.metromadrid.es/es/linea/linea-5#estacion-524,A,False
+525,5,Carabanchel,455.0,https://www.metromadrid.es/es/linea/linea-5#estacion-525,A,False
+526,5,Eugenia de Montijo,492.0,https://www.metromadrid.es/es/linea/linea-5#estacion-526,A,False
+527,5,Aluche,417.0,https://www.metromadrid.es/es/linea/linea-5#estacion-527,A,False
+528,5,Empalme,487.0,https://www.metromadrid.es/es/linea/linea-5#estacion-528,A,False
+529,5,Campamento,451.0,https://www.metromadrid.es/es/linea/linea-5#estacion-529,A,False
+530,5,Casa de Campo,459.0,https://www.metromadrid.es/es/linea/linea-5#estacion-530,A,False
+601,6,Laguna,,https://www.metromadrid.es/es/linea/linea-6#estacion-601,A,False
+602,6,Carpetana,,https://www.metromadrid.es/es/linea/linea-6#estacion-602,A,False
+523,6,Oporto,567.0,https://www.metromadrid.es/es/linea/linea-6#estacion-523,A,False
+604,6,Opañel,,https://www.metromadrid.es/es/linea/linea-6#estacion-604,A,False
+605,6,Plaza Elíptica,588.0,https://www.metromadrid.es/es/linea/linea-6#estacion-605,A,False
+606,6,Usera,,https://www.metromadrid.es/es/linea/linea-6#estacion-606,A,False
+301,6,Legazpi,539.0,https://www.metromadrid.es/es/linea/linea-6#estacion-301,A,False
+608,6,Arganzuela – Planetario,,https://www.metromadrid.es/es/linea/linea-6#estacion-608,A,False
+609,6,Méndez Álvaro,552.0,https://www.metromadrid.es/es/linea/linea-6#estacion-609,A,False
+118,6,Pacífico,568.0,https://www.metromadrid.es/es/linea/linea-6#estacion-118,A,False
+611,6,Conde de Casal,470.0,https://www.metromadrid.es/es/linea/linea-6#estacion-611,A,False
+612,6,Sainz de Baranda,611.0,https://www.metromadrid.es/es/linea/linea-6#estacion-612,A,False
+613,6,O’Donnell,564.0,https://www.metromadrid.es/es/linea/linea-6#estacion-613,A,False
+202,6,Manuel Becerra,545.0,https://www.metromadrid.es/es/linea/linea-6#estacion-202,A,False
+410,6,Diego de León,479.0,https://www.metromadrid.es/es/linea/linea-6#estacion-410,A,False
+411,6,Avenida de América,433.0,https://www.metromadrid.es/es/linea/linea-6#estacion-411,A,False
+617,6,República Argentina,602.0,https://www.metromadrid.es/es/linea/linea-6#estacion-617,A,False
+618,6,Nuevos Ministerios,562.0,https://www.metromadrid.es/es/linea/linea-6#estacion-618,A,False
+106,6,Cuatro Caminos,475.0,https://www.metromadrid.es/es/linea/linea-6#estacion-106,A,False
+620,6,Guzmán el Bueno,503.0,https://www.metromadrid.es/es/linea/linea-6#estacion-620,A,False
+621,6,Vicente Aleixandre,554.0,https://www.metromadrid.es/es/linea/linea-6#estacion-621,A,False
+622,6,Ciudad Universitaria,465.0,https://www.metromadrid.es/es/linea/linea-6#estacion-622,A,False
+311,6,Moncloa,557.0,https://www.metromadrid.es/es/linea/linea-6#estacion-311,A,False
+310,6,Argüelles,425.0,https://www.metromadrid.es/es/linea/linea-6#estacion-310,A,False
+625,6,Príncipe Pío,592.0,https://www.metromadrid.es/es/linea/linea-6#estacion-625,A,False
+623,6,Puerta del Ángel,,https://www.metromadrid.es/es/linea/linea-6#estacion-623,A,False
+626,6,Alto de Extremadura,,https://www.metromadrid.es/es/linea/linea-6#estacion-626,A,False
+628,6,Lucero,,https://www.metromadrid.es/es/linea/linea-6#estacion-628,A,False
+760,7,Hospital del Henares,,https://www.metromadrid.es/es/linea/linea-7#estacion-760,A,False
+759,7,Henares,,https://www.metromadrid.es/es/linea/linea-7#estacion-759,A,False
+758,7,Jarama,,https://www.metromadrid.es/es/linea/linea-7#estacion-758,A,False
+757,7,San Fernando,,https://www.metromadrid.es/es/linea/linea-7#estacion-757,A,False
+756,7,La Rambla,,https://www.metromadrid.es/es/linea/linea-7#estacion-756,A,False
+755,7,Coslada Central,,https://www.metromadrid.es/es/linea/linea-7#estacion-755,A,False
+754,7,Barrio del Puerto,443.0,https://www.metromadrid.es/es/linea/linea-7#estacion-754,A,False
+751,7,Estadio Metropolitano,489.0,https://www.metromadrid.es/es/linea/linea-7#estacion-751,A,False
+701,7,Las Musas,533.0,https://www.metromadrid.es/es/linea/linea-7#estacion-701,A,False
+702,7,San Blas,613.0,https://www.metromadrid.es/es/linea/linea-7#estacion-702,A,False
+703,7,Simancas,626.0,https://www.metromadrid.es/es/linea/linea-7#estacion-703,A,False
+704,7,García Noblejas,498.0,https://www.metromadrid.es/es/linea/linea-7#estacion-704,A,False
+705,7,Ascao,430.0,https://www.metromadrid.es/es/linea/linea-7#estacion-705,A,False
+505,7,Pueblo Nuevo,594.0,https://www.metromadrid.es/es/linea/linea-7#estacion-505,A,False
+707,7,Barrio de la Concepción,441.0,https://www.metromadrid.es/es/linea/linea-7#estacion-707,A,False
+708,7,Parque de las Avenidas,573.0,https://www.metromadrid.es/es/linea/linea-7#estacion-708,A,False
+709,7,Cartagena,458.0,https://www.metromadrid.es/es/linea/linea-7#estacion-709,A,False
+411,7,Avenida de América,433.0,https://www.metromadrid.es/es/linea/linea-7#estacion-411,A,False
+711,7,Gregorio Marañón,502.0,https://www.metromadrid.es/es/linea/linea-7#estacion-711,A,False
+712,7,Alonso Cano,411.0,https://www.metromadrid.es/es/linea/linea-7#estacion-712,A,False
+214,7,Canal,452.0,https://www.metromadrid.es/es/linea/linea-7#estacion-214,A,False
+714,7,Islas Filipinas,515.0,https://www.metromadrid.es/es/linea/linea-7#estacion-714,A,False
+620,7,Guzmán el Bueno,503.0,https://www.metromadrid.es/es/linea/linea-7#estacion-620,A,False
+716,7,Francos Rodríguez,494.0,https://www.metromadrid.es/es/linea/linea-7#estacion-716,A,False
+717,7,Valdezarza,640.0,https://www.metromadrid.es/es/linea/linea-7#estacion-717,A,False
+718,7,Antonio Machado,421.0,https://www.metromadrid.es/es/linea/linea-7#estacion-718,A,False
+719,7,Peñagrande,580.0,https://www.metromadrid.es/es/linea/linea-7#estacion-719,A,False
+720,7,Avenida de la Ilustración,435.0,https://www.metromadrid.es/es/linea/linea-7#estacion-720,A,False
+721,7,Lacoma,530.0,https://www.metromadrid.es/es/linea/linea-7#estacion-721,A,False
+722,7,Arroyofresno,,https://www.metromadrid.es/es/linea/linea-7#estacion-722,A,False
+723,7,Pitis,585.0,https://www.metromadrid.es/es/linea/linea-7#estacion-723,A,False
+618,8,Nuevos Ministerios,562.0,https://www.metromadrid.es/es/linea/linea-8#estacion-618,A,False
+802,8,Colombia,466.0,https://www.metromadrid.es/es/linea/linea-8#estacion-802,A,False
+803,8,Pinar del Rey,582.0,https://www.metromadrid.es/es/linea/linea-8#estacion-803,A,False
+418,8,Mar de Cristal,548.0,https://www.metromadrid.es/es/linea/linea-8#estacion-418,A,False
+805,8,Feria de Madrid,493.0,https://www.metromadrid.es/es/linea/linea-8#estacion-805,A,False
+806,8,Aeropuerto T1-T2-T3,405.0,https://www.metromadrid.es/es/linea/linea-8#estacion-806,A,False
+807,8,Barajas,440.0,https://www.metromadrid.es/es/linea/linea-8#estacion-807,A,False
+808,8,Aeropuerto T4,406.0,https://www.metromadrid.es/es/linea/linea-8#estacion-808 ,A,False
+952,9,Paco de Lucía,569.0,https://www.metromadrid.es/es/linea/linea-9#estacion-952,A,False
+951,9,Mirasierra,556.0,https://www.metromadrid.es/es/linea/linea-9#estacion-951,A,False
+901,9,Herrera Oria,505.0,https://www.metromadrid.es/es/linea/linea-9#estacion-901,A,False
+902,9,Barrio del Pilar,442.0,https://www.metromadrid.es/es/linea/linea-9#estacion-902,A,False
+903,9,Ventilla,643.0,https://www.metromadrid.es/es/linea/linea-9#estacion-903,A,False
+101,9,Plaza de Castilla,586.0,https://www.metromadrid.es/es/linea/linea-9#estacion-101,A,False
+905,9,Duque de Pastrana,480.0,https://www.metromadrid.es/es/linea/linea-9#estacion-905,A,False
+906,9,Pío XII,583.0,https://www.metromadrid.es/es/linea/linea-9#estacion-906,A,False
+802,9,Colombia,466.0,https://www.metromadrid.es/es/linea/linea-9#estacion-802,A,False
+908,9,Concha Espina,469.0,https://www.metromadrid.es/es/linea/linea-9#estacion-908,A,False
+909,9,Cruz del Rayo,474.0,https://www.metromadrid.es/es/linea/linea-9#estacion-909,A,False
+411,9,Avenida de América,433.0,https://www.metromadrid.es/es/linea/linea-9#estacion-411,A,False
+510,9,Núñez de Balboa,563.0,https://www.metromadrid.es/es/linea/linea-9#estacion-510,A,False
+204,9,Príncipe de Vergara,591.0,https://www.metromadrid.es/es/linea/linea-9#estacion-204,A,False
+913,9,Ibiza,513.0,https://www.metromadrid.es/es/linea/linea-9#estacion-913,A,False
+612,9,Sainz de Baranda,611.0,https://www.metromadrid.es/es/linea/linea-9#estacion-612,A,False
+915,9,Estrella,491.0,https://www.metromadrid.es/es/linea/linea-9#estacion-915,A,False
+916,9,Vinateros,649.0,https://www.metromadrid.es/es/linea/linea-9#estacion-916,A,False
+917,9,Artilleros,428.0,https://www.metromadrid.es/es/linea/linea-9#estacion-917,A,False
+918,9,Pavones,579.0,https://www.metromadrid.es/es/linea/linea-9#estacion-918,A,False
+919,9,Valdebernardo,638.0,https://www.metromadrid.es/es/linea/linea-9#estacion-919,A,False
+920,9,Vicálvaro,645.0,https://www.metromadrid.es/es/linea/linea-9#estacion-920,A,False
+921,9,San Cipriano,614.0,https://www.metromadrid.es/es/linea/linea-9#estacion-921,A,False
+922,9,Puerta de Arganda,596.0,https://www.metromadrid.es/es/linea/linea-9#estacion-922,A,False
+924,9,Rivas Urbanizaciones,607.0,https://www.metromadrid.es/es/linea/linea-9#estacion-924,A,False
+925,9,Rivas Futura,606.0,https://www.metromadrid.es/es/linea/linea-9#estacion-925,A,False
+926,9,Rivas Vaciamadrid,608.0,https://www.metromadrid.es/es/linea/linea-9#estacion-926,A,False
+927,9,La Poveda,528.0,https://www.metromadrid.es/es/linea/linea-9#estacion-927,A,False
+928,9,Arganda del Rey,423.0,https://www.metromadrid.es/es/linea/linea-9#estacion-928,A,False
+209,Ramal,Ópera,566.0,https://www.metromadrid.es/es/linea/ramal#estacion-209,A,False
+625,Ramal,Príncipe Pío,592.0,https://www.metromadrid.es/es/linea/ramal#estacion-625,A,False

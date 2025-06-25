@@ -1,0 +1,706 @@
+{
+  "Hospital del Henares": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hospital del Henares",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Hospital del Henares",
+        "nombre": "Hospital del Henares",
+        "direccion": "Camino Labor, s/n (frente al hospital) COSLADA"
+      },
+      {
+        "vestibulo": "Hospital del Henares",
+        "nombre": "Ascensor",
+        "direccion": "Camino Labor, s/n (frente al hospital) COSLADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Henares": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Henares",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Hospital del Henares",
+        "nombre": "Hospital del Henares",
+        "direccion": "Camino Labor, s/n (frente al hospital) COSLADA"
+      },
+      {
+        "vestibulo": "Hospital del Henares",
+        "nombre": "Ascensor",
+        "direccion": "Camino Labor, s/n (frente al hospital) COSLADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Jarama": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Jarama",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Jarama",
+        "nombre": "Plaza Guernica",
+        "direccion": "Plaza Guernica, esquina Avda. San Sebastián SAN FERNANDO DE HENARES"
+      },
+      {
+        "vestibulo": "Jarama",
+        "nombre": "Ascensor",
+        "direccion": "Plaza Guernica, esquina Avda. San Sebastián SAN FERNANDO DE HENARES"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Fernando": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Fernando",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "San Fernando",
+        "nombre": "Ascensor",
+        "direccion": "Plaza Echebeste s/n frente a C/ Gonzalo de Córdoba, 33 SAN FERNANDO DE HENARES"
+      },
+      {
+        "vestibulo": "San Fernando",
+        "nombre": "Gonzalo de Córdoba",
+        "direccion": "Plaza Echebeste s/n frente a C/ Gonzalo de Córdoba, 33 SAN FERNANDO DE HENARES"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Rambla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Rambla",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "La Rambla",
+        "nombre": "Ascensor",
+        "direccion": "C/ Honduras s/n semiesquina a C/ Méjico COSLADA"
+      },
+      {
+        "vestibulo": "La Rambla",
+        "nombre": "Honduras",
+        "direccion": "C/ Honduras s/n semiesquina a C/ Méjico COSLADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Coslada Central": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Coslada Central",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Coslada Central",
+        "nombre": "Renfe",
+        "direccion": "Correspondencia con Renfe COSLADA"
+      },
+      {
+        "vestibulo": "Coslada Central",
+        "nombre": "Doctor Fleming",
+        "direccion": "C/ Doctor Fleming s/n en el parque Doctor Fleming COSLADA"
+      },
+      {
+        "vestibulo": "Coslada Central",
+        "nombre": "Ascensor",
+        "direccion": "C/ Doctor Fleming s/n en el parque Doctor Fleming COSLADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Oficina de gestión TTP",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Barrio del Puerto": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Barrio del Puerto",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Barrio del Puerto",
+        "nombre": "Avda. España",
+        "direccion": "Avda. España s/n junto al parque Avenida España COSLADA"
+      },
+      {
+        "vestibulo": "Barrio del Puerto",
+        "nombre": "Ascensor",
+        "direccion": "Avda. España s/n junto al parque Avenida España COSLADA"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Estadio Metropolitano": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Estadio Metropolitano",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Las Musas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Las Musas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Blas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Blas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Simancas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Simancas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "García Noblejas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "García Noblejas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ascao": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ascao",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pueblo Nuevo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pueblo Nuevo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Barrio de la Concepción": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Barrio de la Concepción",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Quintana": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Quintana",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "El Carmen": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "El Carmen",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ventas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ventas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Diego de León": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Diego de León",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Núñez de Balboa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Núñez de Balboa",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Rubén Darío": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Rubén Darío",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alonso Martínez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alonso Martínez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Chueca": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Chueca",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Gran Vía": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Gran Vía",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Callao": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Callao",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ópera": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ópera",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Latina": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Latina",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Puerta de Toledo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puerta de Toledo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Acacias": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Acacias",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pirámides": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pirámides",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Marqués de Vadillo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Marqués de Vadillo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Urgel": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Urgel",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Oporto": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Oporto",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Vista Alegre": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Vista Alegre",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Carabanchel": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Carabanchel",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Eugenia de Montijo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Eugenia de Montijo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Aluche": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Aluche",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Empalme": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Empalme",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Campamento": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Campamento",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Casa de Campo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Casa de Campo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

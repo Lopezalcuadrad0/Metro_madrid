@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios por Estación - Metro de Madrid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --metro-blue: #0055a4;
+            --metro-light-blue: #0078d4;
+            --metro-gray: #f8f9fa;
+            --metro-dark-gray: #6c757d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--metro-gray);
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-content {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        .schedules-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            color: var(--metro-blue);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .search-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            border: 2px solid var(--metro-gray);
+            border-radius: 25px;
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--metro-blue);
+            box-shadow: 0 0 0 3px rgba(0,85,164,0.1);
+        }
+
+        .search-results {
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid var(--metro-gray);
+            border-radius: 10px;
+            background: white;
+        }
+
+        .search-result-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--metro-gray);
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .search-result-item:hover {
+            background-color: var(--metro-gray);
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .station-name {
+            font-weight: 600;
+            color: var(--metro-blue);
+            margin-bottom: 5px;
+        }
+
+        .station-lines {
+            font-size: 0.9rem;
+            color: var(--metro-dark-gray);
+        }
+
+        .schedules-display {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+
+        .no-station-selected {
+            text-align: center;
+            color: var(--metro-dark-gray);
+            font-size: 1.2rem;
+            padding: 60px 20px;
+        }
+
+        .no-station-selected i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--metro-blue);
+        }
+
+        .station-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--metro-gray);
+        }
+
+        .station-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--metro-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            margin-right: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .station-info h2 {
+            margin: 0;
+            color: var(--metro-blue);
+            font-size: 2rem;
+        }
+
+        .station-info p {
+            margin: 5px 0 0 0;
+            color: var(--metro-dark-gray);
+            font-size: 1.1rem;
+        }
+
+        .line-schedules {
+            margin-top: 25px;
+        }
+
+        .line-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: var(--metro-gray);
+            border-radius: 10px;
+        }
+
+        .line-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            margin-right: 15px;
+        }
+
+        .line-info h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: var(--metro-blue);
+        }
+
+        .departures-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .departures-table th {
+            background: var(--metro-blue);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .departures-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--metro-gray);
+        }
+
+        .departures-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .time-cell {
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            color: var(--metro-blue);
+        }
+
+        .direction-cell {
+            font-weight: 500;
+            color: var(--metro-dark-gray);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--metro-dark-gray);
+        }
+
+        .loading i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--metro-blue);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #dc3545;
+        }
+
+        .error-message i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                margin-top: 100px;
+                padding: 15px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .station-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .station-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="main-content">
+        <div class="schedules-container">
+            <h1 class="page-title">
+                <i class="fas fa-search"></i>
+                Horarios por Estación
+            </h1>
+
+            <div class="search-section">
+                <h3 class="text-center mb-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Busca una estación para ver sus horarios
+                </h3>
+                <div class="input-group">
+                    <input type="text" 
+                           class="form-control search-input" 
+                           id="stationSearch" 
+                           placeholder="Escribe el nombre de la estación...">
+                    <button class="btn btn-primary" type="button" onclick="searchStations()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-results" id="searchResults" style="display: none;">
+                    <!-- Los resultados se cargarán dinámicamente -->
+                </div>
+            </div>
+
+            <div class="schedules-display" id="schedulesDisplay">
+                <div class="no-station-selected">
+                    <i class="fas fa-arrow-up"></i>
+                    <p>Busca una estación para ver sus horarios en tiempo real</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Datos de las líneas con sus colores
+        const lineColors = {
+            'L1': '#0055a4', 'L2': '#d52b1e', 'L3': '#ffd100', 'L4': '#8e479c',
+            'L5': '#8dc63f', 'L6': '#d52b1e', 'L7': '#ffd100', 'L8': '#ffd100',
+            'L9': '#8e479c', 'L10': '#0055a4', 'L11': '#8dc63f', 'L12': '#8e479c',
+            'R': '#ffd100', 'ML1': '#ffd100', 'ML2': '#ffd100', 'ML3': '#ffd100'
+        };
+
+        let allStations = [];
+        let currentStation = null;
+
+        // Cargar todas las estaciones al iniciar
+        async function loadAllStations() {
+            try {
+                const response = await fetch('/api/ids');
+                const data = await response.json();
+                
+                allStations = Object.entries(data).map(([id, info]) => ({
+                    id: id,
+                    name: info.name,
+                    lines: info.lines
+                }));
+            } catch (error) {
+                console.error('Error cargando estaciones:', error);
+            }
+        }
+
+        // Buscar estaciones
+        function searchStations() {
+            const searchTerm = document.getElementById('stationSearch').value.toLowerCase();
+            const resultsContainer = document.getElementById('searchResults');
+            
+            if (searchTerm.length < 2) {
+                resultsContainer.style.display = 'none';
+                return;
+            }
+
+            // Verificar que allStations sea un array
+            if (!Array.isArray(allStations)) {
+                console.error('allStations no es un array:', allStations);
+                resultsContainer.innerHTML = '<div class="search-result-item">Error: No se pudieron cargar las estaciones</div>';
+                resultsContainer.style.display = 'block';
+                return;
+            }
+
+            const filteredStations = allStations.filter(station => 
+                station.name.toLowerCase().includes(searchTerm)
+            ).slice(0, 10); // Limitar a 10 resultados
+
+            if (filteredStations.length === 0) {
+                resultsContainer.innerHTML = '<div class="search-result-item">No se encontraron estaciones</div>';
+            } else {
+                resultsContainer.innerHTML = filteredStations.map(station => `
+                    <div class="search-result-item" onclick="selectStation('${station.id}', '${station.name}')">
+                        <div class="station-name">${station.name}</div>
+                        <div class="station-lines">Líneas: ${station.lines.join(', ')}</div>
+                    </div>
+                `).join('');
+            }
+            
+            resultsContainer.style.display = 'block';
+        }
+
+        // Seleccionar estación
+        async function selectStation(stationId, stationName) {
+            currentStation = { id: stationId, name: stationName };
+            
+            // Ocultar resultados de búsqueda
+            document.getElementById('searchResults').style.display = 'none';
+            document.getElementById('stationSearch').value = stationName;
+            
+            // Cargar horarios
+            await loadStationSchedules(stationId);
+        }
+
+        // Cargar horarios de una estación
+        async function loadStationSchedules(stationId) {
+            const display = document.getElementById('schedulesDisplay');
+            display.innerHTML = `
+                <div class="loading">
+                    <i class="fas fa-spinner"></i>
+                    <p>Cargando horarios...</p>
+                </div>
+            `;
+
+            try {
+                const response = await fetch(`/api/schedules/station/${stationId}`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    displayStationSchedules(data);
+                } else {
+                    throw new Error(data.error || 'Error al cargar horarios');
+                }
+            } catch (error) {
+                display.innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Error al cargar los horarios: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Mostrar horarios de la estación
+        function displayStationSchedules(data) {
+            const display = document.getElementById('schedulesDisplay');
+            const lines = Object.keys(data.schedules);
+
+            if (lines.length === 0) {
+                display.innerHTML = `
+                    <div class="no-station-selected">
+                        <i class="fas fa-info-circle"></i>
+                        <p>No hay horarios disponibles para esta estación</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Crear header de la estación
+            let html = `
+                <div class="station-header">
+                    <div class="station-icon">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <div class="station-info">
+                        <h2>${data.stop_name}</h2>
+                        <p>Horarios en tiempo real</p>
+                    </div>
+                </div>
+            `;
+
+            // Mostrar horarios por línea
+            html += '<div class="line-schedules">';
+            lines.forEach(lineName => {
+                const lineData = data.schedules[lineName];
+                const lineColor = lineColors[lineName] || '#6c757d';
+                
+                html += `
+                    <div class="line-header">
+                        <div class="line-circle" style="background-color: ${lineColor}">
+                            ${lineName}
+                        </div>
+                        <div class="line-info">
+                            <h3>Línea ${lineName}</h3>
+                        </div>
+                    </div>
+                `;
+
+                if (lineData.departures && lineData.departures.length > 0) {
+                    html += `
+                        <div class="table-responsive">
+                            <table class="departures-table">
+                                <thead>
+                                    <tr>
+                                        <th>Hora</th>
+                                        <th>Dirección</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                    `;
+
+                    // Mostrar solo los próximos 10 horarios
+                    const nextDepartures = lineData.departures.slice(0, 10);
+                    nextDepartures.forEach(departure => {
+                        html += `
+                            <tr>
+                                <td class="time-cell">${departure.departure_time}</td>
+                                <td class="direction-cell">${departure.direction}</td>
+                            </tr>
+                        `;
+                    });
+
+                    html += '</tbody></table></div>';
+
+                    if (lineData.departures.length > 10) {
+                        html += `<p class="text-center text-muted mt-2">
+                            <i class="fas fa-info-circle"></i>
+                            Mostrando 10 de ${lineData.departures.length} horarios disponibles
+                        </p>`;
+                    }
+                } else {
+                    html += '<p class="text-center text-muted">No hay horarios disponibles para esta línea</p>';
+                }
+            });
+            html += '</div>';
+
+            display.innerHTML = html;
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAllStations();
+            
+            // Búsqueda en tiempo real
+            document.getElementById('stationSearch').addEventListener('input', function() {
+                if (this.value.length >= 2) {
+                    searchStations();
+                } else {
+                    document.getElementById('searchResults').style.display = 'none';
+                }
+            });
+
+            // Cerrar resultados al hacer clic fuera
+            document.addEventListener('click', function(e) {
+                const searchResults = document.getElementById('searchResults');
+                const searchInput = document.getElementById('stationSearch');
+                
+                if (!searchResults.contains(e.target) && !searchInput.contains(e.target)) {
+                    searchResults.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

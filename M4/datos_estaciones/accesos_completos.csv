@@ -1,0 +1,1013 @@
+id_estacion,linea,nombre_estacion,vestibulo,nombre_acceso,direccion
+153,1,Pinar de Chamartín,Pinar de Chamartín,Ascensor,"C/ Arturo Soria, 330"
+153,1,Pinar de Chamartín,Pinar de Chamartín,Arturo Soria,"C/ Arturo Soria, 330"
+152,1,Bambú,Bambú,Ascensor,"C/ Bambú, frente al nº 14"
+152,1,Bambú,Bambú,Bambú,"C/ Bambú, frente al nº 14"
+151,1,Chamartín,ADIF - Cercanías y Larga Distancia,ADIF - Cercanías y Larga Distancia,Corredor andenes ADIF
+151,1,Chamartín,Chamartín,RENFE,Corredor andenes RENFE
+151,1,Chamartín,Chamartín,Ascensor,"Agustín de Foxa, s/n"
+151,1,Chamartín,Chamartín,Chamartín,Vestíbulo Cercanías Renfe
+101,1,Plaza de Castilla,Avenida de Asturias,Intercambiador,Límite Intercambiador/Metro
+101,1,Plaza de Castilla,Bravo Murillo,Bravo Murillo,"Bravo Murillo, 377"
+101,1,Plaza de Castilla,Castellana,Castellana,Fr. Dep. Canal Isabel II
+101,1,Plaza de Castilla,Castellana,Ascensor,Plaza de Castilla esq. Paseo Castellana pares - acera del Canal de Isabel II
+101,1,Plaza de Castilla,Plaza de Castilla,Ascensor,"Paseo de la Castellana, bulevar central"
+101,1,Plaza de Castilla,Plaza de Castilla,Plaza de Castilla,Pº. Castellana bulevar central
+101,1,Plaza de Castilla,Plaza de Castilla,Intercambiador Superficie,Intercambiador Superficie
+101,1,Plaza de Castilla,Plaza de Castilla,Intercambiador Subterraneo,Interconexión con Intercambiador subterráneo
+101,1,Plaza de Castilla,Plaza de Castilla,"Castellana, impares","Pº Castellana, 189 (junto a torres)"
+102,1,Valdeacederas,Aníbal,Aníbal,"Bravo Murillo, 350"
+102,1,Valdeacederas,Capitán Blanco Argibay,Capitán Blanco Argibay,"Bravo Murillo, 324"
+103,1,Tetuán,Algodonales,Algodonales,"Bravo Murillo, 269"
+103,1,Tetuán,General Margallo,General Margallo,"General Margallo, 2 (esq. Bravo Murillo)"
+104,1,Estrecho,Fulgencio de Miguel,Fulgencio de Miguel,"Bravo Murillo, 205"
+104,1,Estrecho,Fulgencio de Miguel,Manuel Luna,"Bravo Murillo, 194"
+104,1,Estrecho,Juan de Olías,Juan de Olías,"Bravo Murillo, 172"
+104,1,Estrecho,Juan de Olías,Navarra,"Bravo Murillo, 181"
+105,1,Alvarado,Alvarado,"Bravo Murillo, pares","Bravo Murillo, 136"
+105,1,Alvarado,Alvarado,"Bravo Murillo, impares","Bravo Murillo, 135"
+106,1,Cuatro Caminos,Central,Ascensor exterior,Santa Engracia (semiesquina Bravo Murillo)
+106,1,Cuatro Caminos,Central,"Reina Victoria, pares","Avda. Reina Victoria, 2"
+106,1,Cuatro Caminos,Central,Bravo Murillo,"Bravo Murillo, 101 (esq. Gta. Cuatro Caminos)"
+106,1,Cuatro Caminos,Central,Santa Engracia,"Santa Engracia, 168"
+106,1,Cuatro Caminos,Central,"Reina Victoria, impares","Gta. Cuatro Caminos (esq. Reina Victoria, 1)"
+106,1,Cuatro Caminos,Maudes,Maudes,"Maudes, 8"
+107,1,Ríos Rosas,Bretón de los Herreros,Santa Engracia-Plaza Descubridor Diego de Ordás,"Santa Engracia, 127"
+107,1,Ríos Rosas,Ríos Rosas,"Ríos Rosas, impares","Ríos Rosas, 19"
+107,1,Ríos Rosas,Ríos Rosas,"Ríos Rosas, pares","Ríos Rosas, 22"
+108,1,Iglesia,Eloy Gonzalo,"Eloy Gonzalo, impares","Eloy Gonzalo, 35"
+108,1,Iglesia,Eloy Gonzalo,Ascensor. Acceso a línea 1 dirección Pinar de Chamartín,"Glorieta Pintor Sorolla, 1"
+108,1,Iglesia,Eloy Gonzalo,"Eloy Gonzalo, pares","Eloy Gonzalo, 38"
+108,1,Iglesia,Martínez Campos,Ascensor. Acceso a línea 1 dirección Valdecarros,"General Martínez Campos, 1 (esq C/ Santa Engracia)"
+108,1,Iglesia,Martínez Campos,Santa Engracia,"Santa Engracia, 58"
+108,1,Iglesia,Martínez Campos,General Martínez Campos,"General Martínez Campos, 1"
+108,1,Iglesia,Sagunto,Sagunto,"Santa Engracia, 61"
+109,1,Bilbao,Central,Manuela Malasaña (Malasaña/Fuencarral),"Gta. Bilbao, 7"
+109,1,Bilbao,Central,Fuencarral,"Gta. Bilbao, 5 (semiesq. Fuencarral)"
+109,1,Bilbao,Central,Luchana Ascensor,"Glorieta de Bilbao, 6"
+109,1,Bilbao,Luchana,Trafalgar,"Luchana, 23"
+109,1,Bilbao,Luchana,Francisco de Rojas,"Luchana, 22 (esq. Fco. de Rojas)"
+109,1,Bilbao,Luchana,"Luchana, impares","Luchana, 21 (esq. Trafalgar pares)"
+110,1,Tribunal,Barceló,Fuencarral,"Fuencarral, 78"
+110,1,Tribunal,Barceló,Barceló-Ascensor,"Barceló, 2"
+110,1,Tribunal,Fuencarral,Tribunal de Cuentas,"Fuencarral, 81"
+111,1,Gran Vía,Antonio Palacios,Fuencarral,"Gran Vía, 28"
+111,1,Gran Vía,Antonio Palacios,Montera-Ascensor,"Montera, 47"
+111,1,Gran Vía,Antonio Palacios,Montera,"Montera, 48"
+111,1,Gran Vía,Antonio Palacios,Gran Vía,"Gran Vía, 25"
+111,1,Gran Vía,Renfe,Calle -Nivel -4,Escaleras nivel -4
+111,1,Gran Vía,Renfe,Montera-Ascensor nivel - 4,"Montera, 47"
+111,1,Gran Vía,Renfe,Cercanías,Límite Metro/Renfe en nivel - 4
+112,1,Sol,Mayor,Ascensor,Puerta del Sol
+112,1,Sol,Mayor,Mayor,"Pta. del Sol, s/n (esq. Mayor y Arenal)"
+112,1,Sol,Preciados,Centro Comercial,Acceso directo al centro comercial
+112,1,Sol,Preciados,Preciados,"Preciados, 3"
+112,1,Sol,Puerta del Sol,Alcalá,"Puerta del Sol, 13"
+112,1,Sol,Puerta del Sol,Carmen,"Puerta del Sol, 12"
+112,1,Sol,Puerta del Sol,RENFE,Cúpula de RENFE y Ascensor
+112,1,Sol,Puerta del Sol,Carretas,"Pta. del Sol, 7 (semiesq. Carretas)"
+112,1,Sol,RENFE,RENFE,Intercambiador Nivel -1
+113,1,Tirso de Molina,Conde de Romanones,Conde de Romanones,"Pza. Tirso de Molina, 14"
+113,1,Tirso de Molina,Magdalena,Magdalena,"Pza. Tirso de Molina, 1"
+114,1,Antón Martín,Antón Martín,Amor de Dios,"Amor de Dios, 14 (Esq. Atocha , 73)"
+114,1,Antón Martín,Antón Martín,Magdalena,"Atocha, 48"
+114,1,Antón Martín,Atocha,"Atocha, pares","Atocha, 76"
+114,1,Antón Martín,Atocha,"Atocha, impares","Atocha, 83"
+115,1,Estación del Arte,Atocha,Plaza del Emperador Carlos V,"Gta. Carlos V, 11"
+115,1,Estación del Arte,Ministerio de Agricultura,Ministerio,"Pº Infanta Isabel, 1"
+116,1,Atocha,Alfonso XII,Paseo Infanta Isabel,"Pº Infanta Isabel, 15"
+116,1,Atocha,Alfonso XII,Alfonso XII,"Pº Infanta Isabel, impares / Esq. Alfonso XII, pares"
+116,1,Atocha,Alfonso XII,Renfe,Vestíbulo Renfe
+116,1,Atocha,Alfonso XII,Ascensor,Pº Infanta Isabel impares
+116,1,Atocha,Renfe,Renfe,Renfe Cercanías
+117,1,Menéndez Pelayo,Comercio,Comercio,"C. Comercio, 2"
+117,1,Menéndez Pelayo,Comercio,Comercio-Ascensor. Acceso a línea 1 dirección Pinar de Chamartín,"C. Comercio, 2"
+117,1,Menéndez Pelayo,Gutenberg,Gutenberg,"Gutenberg, 4"
+117,1,Menéndez Pelayo,Menéndez Pelayo,"Menéndez Pelayo, impares","Avda. Menéndez Pelayo, 123"
+117,1,Menéndez Pelayo,Menéndez Pelayo,Menéndez Pelayo-Ascensor. Acceso a línea 1 dirección Valdecarros.,"Avda. Menéndez Pelayo, 123"
+117,1,Menéndez Pelayo,Menéndez Pelayo,"Menéndez Pelayo, pares","Avda. Menéndez Pelayo, 44"
+118,1,Pacífico,Doctor Esquerdo,"Doctor Esquerdo, impares","Doctor Esquerdo, 219 (Semiesq. Avda. Ciudad de Barcelona)"
+118,1,Pacífico,Doctor Esquerdo,"Doctor Esquerdo, pares","Doctor Esquerdo, 186 (Semiesq. Avda. Ciudad de Barcelona)"
+118,1,Pacífico,Dr. Esquerdo - Línea 6 - Ascensor,Ascensor,"C/ Doctor Esquerdo, 219"
+118,1,Pacífico,Sánchez Barcáiztegui,Sánchez Barcáiztegui,"Sánchez Barcáiztegui, 1"
+119,1,Puente de Vallecas,Albufera,"Albufera, impares","Avda. Albufera, 9"
+119,1,Puente de Vallecas,Albufera,"Albufera, pares","Avda. Albufera, 14"
+119,1,Puente de Vallecas,Peña Prieta,Peña Prieta,"Peña Prieta, 2"
+120,1,Nueva Numancia,Norte,"Avda. Albufera, pares","Avda. Albufera, 54"
+120,1,Nueva Numancia,Norte,"Avda. Albufera, impares","Avda. Albufera, 47"
+120,1,Nueva Numancia,Sur,"Avda. Albufera, pares","Avda. Albufera, 76"
+120,1,Nueva Numancia,Sur,"Avda. Albufera, impares","Avda. Albufera, 69"
+121,1,Portazgo,Albufera,"Albufera, pares","Avda. Albufera, 108 (Esq. Sierra del Cadi)"
+121,1,Portazgo,Albufera,Rogelio Folgueras,"Avda. Albufera, 117 (Esq. R. Folgueras)"
+121,1,Portazgo,Josefa Díaz/Ascensor,Ascensor 1. Acceso a línea 1 dirección Valdecarros,"Avenida Albufera, 125"
+121,1,Portazgo,Palomeras,Teniente Muñoz Díaz,"Avda. Albufera, 130"
+121,1,Portazgo,Palomeras,"Albufera, impares","Avda. Albufera, 145 (Esq. D. Folgueras)"
+121,1,Portazgo,Payaso Fofó/Ascensor,Ascensor 2. Acceso a línea 1 dirección Pinar de Chamartín,"Avenida Albufera, 112"
+123,1,Alto del Arenal,Buenos Aires,Pío Felipe,"Avda. Albufera, 179 (Esq. Pio Felipe)"
+123,1,Alto del Arenal,Buenos Aires,Buenos Aires,"Avda. Albufera, 140 (Esq. Buenos Aires)"
+122,1,Buenos Aires,Alto Arenal,"Albufera, pares","Avda. Albufera, 248"
+122,1,Buenos Aires,Alto Arenal,Ascensor,"Avda. Albufera, 246"
+122,1,Buenos Aires,Alto Arenal,"Albufera, impares","Santillana del Mar, 19 (Esq. Avda. Albufera)"
+124,1,Miguel Hernández,Miguel Hernández,Rafael Alberti-Ambulatorio,"Avda. Albufera, 285 (Esq. Rafael Alberti)"
+124,1,Miguel Hernández,Miguel Hernández,"Albufera, pares","Avda. Albufera, 290"
+124,1,Miguel Hernández,Miguel Hernández,Aparcamiento,"Pasarela (Cañon Albufera, pares)"
+124,1,Miguel Hernández,Miguel Hernández,Ascensor,"Avda. Albufera, 285"
+124,1,Miguel Hernández,Miguel Hernández,Aparcamiento-nivel vestíbulo,Vestíbulo Miguel Hernández
+125,1,Sierra de Guadalupe,Renfe,Avenida de la Democracia,"Avda. de la Democracia, 1"
+125,1,Sierra de Guadalupe,Renfe,Sierra de Guadalupe,Estación de Renfe
+125,1,Sierra de Guadalupe,Renfe,Ascensor,"Avda. de la Democracia, 3"
+125,1,Sierra de Guadalupe,Renfe,Renfe,Vestíbulo Renfe
+125,1,Sierra de Guadalupe,Universidad,Avda. de la Democracia-Arboleda,"Avda. de la Democracia, 4"
+126,1,Villa de Vallecas,Villa de Vallecas,Sierra Vieja,"Pza. Sierra de Gador, 10 (Esq. Sierra Vieja)"
+126,1,Villa de Vallecas,Villa de Vallecas,Ascensor,"Pº. Federico García Lorca, 1"
+126,1,Villa de Vallecas,Villa de Vallecas,Pº. Federico García Lorca,"Pº. Federico García Lorca, 3"
+127,1,Congosto,Congosto,Plaza de Congosto,"Congosto, 33"
+127,1,Congosto,Congosto,Ascensor,"Congosto, 50"
+127,1,Congosto,Congosto,Congosto,"Congosto, 35"
+128,1,La Gavia,La Gavia,Avda. Ensanche de Vallecas,"Avda. Ensan. de Vallecas esq C/ Alto de la Sartenilla, 2"
+128,1,La Gavia,La Gavia,Ascensor,"Avda. Ensan. de Vallecas esq C/ Alto de la Sartenilla, 2"
+129,1,Las Suertes,Las Suertes,Cañada del Santísimo,"C/ Cañada del Santísimo esquina Avda. Ensanche de Vallecas, 80"
+129,1,Las Suertes,Las Suertes,Ascensor,"C/ Cañada del Santísimo esquina Avda. Ensanche de Vallecas, 80"
+130,1,Valdecarros,Valdecarros,Avda. Ensanche de Vallecas,Avda. Ensanche de Vallecas 120A esq. Avda. Gran Vía del Sureste
+130,1,Valdecarros,Valdecarros,Ascensor,Avda. Ensanche de Vallecas 120A esq. Avda. Gran Vía del Sureste
+1061,10,Hospital Infanta Sofía,Hospital Infanta Sofía,Ascensor,Avenida de Europa s/n SAN SEBASTIÁN DE LOS REYES
+1061,10,Hospital Infanta Sofía,Hospital Infanta Sofía,Poeta Rafael Morales,C/ Poeta Rafael Morales s/n SAN SEBASTIÁN DE LOS REYES
+1061,10,Hospital Infanta Sofía,Hospital Infanta Sofía,Hospital Infanta Sofía,Avenida de Europa s/n SAN SEBASTIÁN DE LOS REYES
+1060,10,Reyes Católicos,Reyes Católicos,Ascensor,"Avda. Plaza de Toros, frente nº7 SAN SEBASTIÁN DE LOS REYES"
+1060,10,Reyes Católicos,Reyes Católicos,Avda. Plaza de Toros,"Avda. Plaza de Toros, frente nº7 SAN SEBASTIÁN DE LOS REYES"
+1059,10,Baunatal,Baunatal,Avda. Lomas del Rey,"Avda. Lomas del Rey nº1, esquina Avda de la Independencia SAN SEBASTIÁN DE LOS REYES"
+1059,10,Baunatal,Baunatal,Ascensor,"Avda. Lomas del Rey nº1, esquina Avda de la Independencia SAN SEBASTIÁN DE LOS REYES"
+1058,10,Manuel de Falla,Manuel de Falla,Ascensor,"C/ Manuel de Falla, frente al nº32 ALCOBENDAS"
+1058,10,Manuel de Falla,Manuel de Falla,Manuel de Falla,"C/ Manuel de Falla, frente al nº32 ALCOBENDAS"
+1057,10,Marqués de la Valdavia,Marqués de la Valdivia,Ascensor,C/ Marqués de la Valdavia nº21 ALCOBENDAS
+1057,10,Marqués de la Valdavia,Marqués de la Valdivia,Marqués de la Valdivia,C/ Marqués de la Valdavia nº21 ALCOBENDAS
+1057,10,Marqués de la Valdavia,Paseo de la Chopera,Paseo de la Chopera,"Paseo de la Chopera nº48, en el parque de Cataluña ALCOBENDAS"
+1056,10,La Moraleja,La Moraleja,Avda. Bruselas,Avda. Bruselas nº14 ALCOBENDAS
+1056,10,La Moraleja,La Moraleja,Ascensor,Avda. Bruselas nº14 ALCOBENDAS
+1055,10,La Granja,La Granja,Ascensor,"C/ Sepúlveda 3, esquina C/ La Granja ALCOBENDAS"
+1055,10,La Granja,La Granja,La Granja,"C/ Sepúlveda 3, esquina C/ La Granja ALCOBENDAS"
+1054,10,Ronda de la Comunicación,Ronda de la Comunicación,Maestro Mateo,C/ Maestro Mateo s/n
+1054,10,Ronda de la Comunicación,Ronda de la Comunicación,Ascensor,C/ Maestro Mateo s/n
+1053,10,Las Tablas,Las Tablas,Palas de Rey,"Frente a C/ Palas de Rey, 38 (aprox: entre 30 y 48)"
+1053,10,Las Tablas,Las Tablas,Arturo Soria,"Frente a C/ Palas de Rey, 38 (aprox: entre 30 y 48)"
+1053,10,Las Tablas,Las Tablas,Ascensor,"Frente a C/ Palas de Rey, 38 (aprox: entre 30 y 48)"
+1052,10,Montecarmelo,Montecarmelo,Ascensor,
+1052,10,Montecarmelo,Montecarmelo,Avda. Monasterio de Silos,"Avda. Monasterio de Silos, 63"
+1051,10,Tres Olivos,Tres Olivos,Retablo de Melisendra,"C/ Retablo de Melisendra, 1"
+1001,10,Fuencarral,Fuencarral,Barrio Santa Ana,"Molinos del Rey, 4"
+1002,10,Begoña,Begoña,San Modesto,"San Modesto, 10"
+1002,10,Begoña,Begoña-Ascensor,Begoña - Ascensor,"Parque de Begoña (C. San Modesto, 4)"
+1002,10,Begoña,Begoña-Ascensor,La Paz - Ascensor 2,"Hospital Universitario La Paz (Pº Castellana, 261)"
+1002,10,Begoña,Begoña-Ascensor,La Paz - Ascensor 1,"Hospital Universitario La Paz (Pº Castellana, 261)"
+1002,10,Begoña,La Paz,Hospital Universitario La Paz,"Hospital Universitario La Paz (Pº Castellana, 261 esq. C. Arzobispo Morcillo)"
+151,10,Chamartín,ADIF - Cercanías y Larga Distancia,ADIF - Cercanías y Larga Distancia,Corredor andenes ADIF
+151,10,Chamartín,Chamartín,RENFE,Corredor andenes RENFE
+151,10,Chamartín,Chamartín,Ascensor,"Agustín de Foxa, s/n"
+151,10,Chamartín,Chamartín,Chamartín,Vestíbulo Cercanías Renfe
+101,10,Plaza de Castilla,Avenida de Asturias,Intercambiador,Límite Intercambiador/Metro
+101,10,Plaza de Castilla,Bravo Murillo,Bravo Murillo,"Bravo Murillo, 377"
+101,10,Plaza de Castilla,Castellana,Castellana,Fr. Dep. Canal Isabel II
+101,10,Plaza de Castilla,Castellana,Ascensor,Plaza de Castilla esq. Paseo Castellana pares - acera del Canal de Isabel II
+101,10,Plaza de Castilla,Plaza de Castilla,Ascensor,"Paseo de la Castellana, bulevar central"
+101,10,Plaza de Castilla,Plaza de Castilla,Plaza de Castilla,Pº. Castellana bulevar central
+101,10,Plaza de Castilla,Plaza de Castilla,Intercambiador Superficie,Intercambiador Superficie
+101,10,Plaza de Castilla,Plaza de Castilla,Intercambiador Subterraneo,Interconexión con Intercambiador subterráneo
+101,10,Plaza de Castilla,Plaza de Castilla,"Castellana, impares","Pº Castellana, 189 (junto a torres)"
+1005,10,Cuzco,Cuzco,"Paseo Castellana, pares","Pº Castellana, bul.cen.162"
+1005,10,Cuzco,Cuzco,"Paseo Castellana, impares","Pº Castellana, bul.cen.125"
+1006,10,Santiago Bernabéu,Plaza de Lima,Pza. Lima. Acceso cerrado por obras de modernización,"Pº Castellana, 136 (bulevar central)"
+1006,10,Santiago Bernabéu,Santiago Bernabéu,"Paseo Castellana, pares",Pº Castellana bulevar central frente estadio Santiago Bernabeu
+1006,10,Santiago Bernabéu,Santiago Bernabéu,"Paseo Castellana, impares","Pº Castellana bulevar central, 103"
+618,10,Nuevos Ministerios,Azca-Renfe,Azca-Cercanías-Ascensor 1,Entrada Corte Inglés
+618,10,Nuevos Ministerios,Azca-Renfe,Centro Comercial,Entrada Corte Inglés
+618,10,Nuevos Ministerios,Azca-Renfe,Azca-Cercanías-Ascensor 2,Entrada Corte Inglés
+618,10,Nuevos Ministerios,Orense,Orense,"Orense, 2"
+618,10,Nuevos Ministerios,Orense,Agustín de Bethancourt,"Agustín de Bethancourt, 25"
+618,10,Nuevos Ministerios,Paseo de la Castellana,Renfe - Arcadas,"Nivel -1, limite entre Metro y los accesos de Renfe"
+618,10,Nuevos Ministerios,Paseo de la Castellana,Renfe - Raimundo Fernández Villaverde,"Nivel -1, limite entre Metro y los accesos de Renfe"
+618,10,Nuevos Ministerios,Paseo de la Castellana,Ascensor nº 5,"Pº de la Castellana, 67 en el bulevar"
+618,10,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, impares (bulevar)","Pº de la Castellana, 67 en el bulevar"
+618,10,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, pares","Pº de la Castellana,110. Esq. Joaquín Costa"
+618,10,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, impares",Pº de la Castellana esq. Raimundo Fdez. Villaverde
+618,10,Nuevos Ministerios,Paseo de la Castellana,Ascensor nº 6,"Pº de la Castellana, 100"
+618,10,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, pares","Pº de la Castellana, 100"
+618,10,Nuevos Ministerios,RENFE-Distribuidor,RENFE Cercanías,Nivel -2
+711,10,Gregorio Marañón,Gregorio Marañón,Miguel Ángel,"Miguel Ángel, 33"
+711,10,Gregorio Marañón,Gregorio Marañón,Ascensor,José Abascal (esq. Castellana)
+711,10,Gregorio Marañón,Gregorio Marañón,José Abascal,José Abascal (esq. Castellana)
+404,10,Alonso Martínez,Hermanos Álvarez Quintero,Hermanos Álvarez Quintero,"Sagasta, 30 (Esq. Álvarez Quintero)"
+404,10,Alonso Martínez,Santa Bárbara,Santa Bárbara,"Pza. Santa Bárbara, 5"
+404,10,Alonso Martínez,Santa Bárbara,Santa Engracia,"Pza. Alonso Martínez, 4 (Sta. Engracia, 4 - Almagro)"
+404,10,Alonso Martínez,Santa Bárbara,"Génova, pares","Génova, 2 (Esq. Pza. A. Martínez)"
+110,10,Tribunal,Barceló,Fuencarral,"Fuencarral, 78"
+110,10,Tribunal,Barceló,Barceló-Ascensor,"Barceló, 2"
+110,10,Tribunal,Fuencarral,Tribunal de Cuentas,"Fuencarral, 81"
+308,10,Plaza de España,Conde de Toreno,Ascensor. Acceso a línea 10,Pza. Conde de Toreno
+308,10,Plaza de España,Conde de Toreno,Ascensor. Acceso a línea 10,Pza. Conde de Toreno
+308,10,Plaza de España,Leganitos,Gran Vía,"Gran Vía, 80"
+308,10,Plaza de España,Leganitos,Leganitos,"Gran Vía, 73"
+308,10,Plaza de España,Leganitos,Reyes,"Reyes, 1"
+308,10,Plaza de España,Leganitos,Princesa,"Princesa, 2"
+308,10,Plaza de España,Plaza de España,Plaza de España,"Plaza de España,18"
+308,10,Plaza de España,Plaza de España,Ascensor. Acceso a línea 3,"Plaza de España, 18"
+625,10,Príncipe Pío,Paseo de la Florida,Renfe,Puertas mamparas en nivel -1 a la izda de los torniquetes
+625,10,Príncipe Pío,Paseo de la Florida,Ascensor,"Pº de la Florida, 2"
+625,10,Príncipe Pío,Paseo de la Florida,Intercambiador,"Pº de la Florida, 2"
+625,10,Príncipe Pío,Renfe,Renfe,Limites Metro/Renfe en el vestibulo mixto
+1013,10,Lago,Lago,El Lago,Puerta del Ángel (piscina municipal Casa de Campo)
+1014,10,Batán,Venta del Batán,Venta del Batán,Parque de Atracciones (Casa de Campo)
+1014,10,Batán,Villamanín,Villamanin,"Villamanin, 27"
+530,10,Casa de Campo,Casa de Campo,Ascensor,Camino de Campamento s/n (esq. Paseo de la Puerta del Batán)
+530,10,Casa de Campo,Casa de Campo,Camino de Campamento s/n,Camino de Campamento s/n (esq. Paseo de la Puerta del Batán)
+1016,10,Colonia Jardín,Arenas de San Pedro,Arenas de San Pedro,"esq. Ctra. Carabanchel-Aravaca, 56"
+1016,10,Colonia Jardín,Fuentesaúco,Ascensor,"esq. Ctra. Carabanchel-Aravaca, 56"
+1016,10,Colonia Jardín,Fuentesaúco,Sedano,"Fuentesaúco, 44"
+1018,10,Aviación Española,Aviación Española,Fuente de Lima,"C/ Fuente de Lima, 2"
+1018,10,Aviación Española,Aviación Española,Ascensor,"C/ Fuente de Lima, 2"
+1019,10,Cuatro Vientos,Cuatro Vientos,Ascensor nº 2,"Pº de Extremadura, Km 9,500 dirección Madrid"
+1019,10,Cuatro Vientos,Cuatro Vientos,Correspondencia Renfe,Nivel -1 a la altura de la cancela de Metro
+1019,10,Cuatro Vientos,Cuatro Vientos,Ascensor nº 1,"Pº de los Húsares, 46. Colonia Dehesa del Príncipe"
+1019,10,Cuatro Vientos,Cuatro Vientos,Pº de los Húsares,"Pº de los Húsares, 46"
+1019,10,Cuatro Vientos,Cuatro Vientos,Pº de Extremadura,"Pº de Extremadura, Km 9,500 dirección Madrid"
+1020,10,Joaquín Vilumbrales,Joaquín Vilumbrales,Ascensor,"Avenida de la Libertad, 29 (esquina c/ Carballino) ALCORCÓN"
+1020,10,Joaquín Vilumbrales,Joaquín Vilumbrales,"Avenida de la Libertad, impares","Avenida de la Libertad, 29 (esquina c/ Carballino) ALCORCÓN"
+1020,10,Joaquín Vilumbrales,Joaquín Vilumbrales,"Avenida de la Libertad, pares","Avenida de la Libertad, s/n (semiesquina c/ Parque Ordesa) ALCORCÓN"
+1021,10,Puerta del Sur,Alcalde Joaquín Vilumbrales,Ascensor,Avenida de la Libertad ALCORCÓN
+1021,10,Puerta del Sur,Alcalde Joaquín Vilumbrales,"Avenida de la Libertad, pares",Avenida de la Libertad esquina a Avda. de Leganés ALCORCÓN
+1021,10,Puerta del Sur,Alcalde Joaquín Vilumbrales,"Avenida de la Libertad, impares",Avenida de la Libertad del 1 al 9 ALCORCÓN
+1021,10,Puerta del Sur,Olímpico Francisco Fernández Ochoa,Olímpico Francisco Fernández Ochoa,"Olímpico Fernández Ochoa, esquina a Avda. de Leganés ALCORCÓN"
+605,11,Plaza Elíptica,Marcelo Usera,"Marcelo Usera, pares","Marcelo Usera, 170"
+605,11,Plaza Elíptica,Marcelo Usera,Marcelo Usera Ascensor,"Plaza Elíptica, esq. Marcelo Usera con Paseo de Santa María de la Cabeza"
+605,11,Plaza Elíptica,Marcelo Usera,"Marcelo Usera, impares","Plaza Elíptica, 2 esq. Marcelo Usera"
+605,11,Plaza Elíptica,Princesa Juana de Austria,Intercambiador,Avda. Princesa Juana de Austria
+605,11,Plaza Elíptica,Vía Lusitana,Plaza Elíptica Ascensor. Acceso a línea 11,"Plaza Eliptica esq. Avda. Oporto, 2"
+605,11,Plaza Elíptica,Vía Lusitana,Plaza Eíptica,"Plaza Elíptica esq. A. Leyva 88, 90, 92"
+605,11,Plaza Elíptica,Vía Lusitana,"Avda. Oporto, pares","Avda. Oporto, 2"
+1102,11,Abrantes,Abrantes,"Avenida de Abrantes, impares","Avda. Abrantes, 79"
+1102,11,Abrantes,Abrantes,Ascensor,"Avda. Abrantes, 52 (esq. Papagayo y A.Mtez)"
+1102,11,Abrantes,Abrantes,"Avenida de Abrantes, pares","Avda. Abrantes, 52 (esq. Papagayo y A.Mtez)"
+1103,11,Pan Bendito,Pan Bendito,Ascensor,"Avda. de Abrantes, 122"
+1103,11,Pan Bendito,Pan Bendito,"Avenida de Abrantes, pares - Besolla","Avda. Abrantes, 122 (esq. Besolla)"
+1103,11,Pan Bendito,Pan Bendito,"Avenida de Abrantes, impares - Besolla","Avda. Abrantes, 289 (esq. Besolla)"
+1104,11,San Francisco,San Francisco,"Avenida Los Poblados, pares","Avda. Los Poblados, 102"
+1104,11,San Francisco,San Francisco,"Avenida Los Poblados, impares","Avda. Los Poblados, 91 / C/ Albox, 35"
+1104,11,San Francisco,San Francisco,Ascensor,"Avda. Los Poblados, 102"
+1105,11,Carabanchel Alto,Carabanchel Alto,Avenida Carabanchel Alto,"Avda. Carabanchel Alto, 15"
+1105,11,Carabanchel Alto,Carabanchel Alto,Ascensor,"Avda. Carabanchel Alto, 15"
+1106,11,La Peseta,La Peseta,Avda. La Peseta,"Avda. La Peseta, 61"
+1106,11,La Peseta,La Peseta,Ascensor,"Dentro del templete del acceso Avda. La Peseta, 61"
+1107,11,La Fortuna,La Fortuna,San José,"C/ San José, 40"
+1107,11,La Fortuna,La Fortuna,Ascensor,"C/ San José, 44, semiesquina C/ Del Carmen"
+1201,12,Puerta del Sur,Alcalde Joaquín Vilumbrales,Ascensor,Avenida de la Libertad ALCORCÓN
+1201,12,Puerta del Sur,Alcalde Joaquín Vilumbrales,"Avenida de la Libertad, pares",Avenida de la Libertad esquina a Avda. de Leganés ALCORCÓN
+1201,12,Puerta del Sur,Alcalde Joaquín Vilumbrales,"Avenida de la Libertad, impares",Avenida de la Libertad del 1 al 9 ALCORCÓN
+1201,12,Puerta del Sur,Olímpico Francisco Fernández Ochoa,Olímpico Francisco Fernández Ochoa,"Olímpico Fernández Ochoa, esquina a Avda. de Leganés ALCORCÓN"
+1202,12,Parque Lisboa,Parque de Lisboa,Avenida de Leganés,"Avda. de Leganés, 20 (esquina c/ Porto Lagos, 20) ALCORCÓN"
+1202,12,Parque Lisboa,Parque de Lisboa,Ascensor,"Avda. de Leganés, 20 (esquina c/ Porto Lagos, 20) ALCORCÓN"
+1203,12,Alcorcón Central,Alcorcón Central,Renfe,Nivel -1 a la altura de la cancela de Metro ALCORCÓN
+1203,12,Alcorcón Central,Alcorcón Central,Ascensor exterior,Avda. Móstoles ALCORCÓN
+1203,12,Alcorcón Central,Alcorcón Central,Avda. Móstoles - Navalcarnero,"Pº Extremadura, 11, templete (también Avda. de Mostoles) ALCORCÓN"
+1203,12,Alcorcón Central,Alcorcón Central,Avenida Móstoles - Bailén,"Pº Extremadura, 15 (también Avda. de Mostoles) ALCORCÓN"
+1204,12,Parque Oeste,Parque del Oeste,Estambul,"Estambul, 16 ALCORCÓN"
+1204,12,Parque Oeste,Parque del Oeste,Ascensor,"Estambul, 16 ALCORCÓN"
+1205,12,Universidad Rey Juan Carlos,Universidad Rey Juan Carlos I,Ascensor,"Avda. Alcalde de Móstoles, 35 MÓSTOLES"
+1205,12,Universidad Rey Juan Carlos,Universidad Rey Juan Carlos I,Avenida Alcalde de Móstoles,"Avda. Alcalde de Móstoles, 35 MÓSTOLES"
+1205,12,Universidad Rey Juan Carlos,Universidad Rey Juan Carlos I,Avenida Alcalde de Móstoles,"Avda. Alcalde de Móstoles, 35; Izda al salir C2 MÓSTOLES"
+1206,12,Móstoles Central,Móstoles Central,Paseo de la Estación,"Paseo de la Estación, s/n MOSTOLES"
+1206,12,Móstoles Central,Móstoles Central,Ascensor,"Paseo de la Estación, s/n MOSTOLES"
+1206,12,Móstoles Central,Móstoles Central,Renfe,Nivel -1 a la altura de la cancela de Metro MÓSTOLES
+1207,12,Pradillo,Pradillo,Plaza del Pradillo,Plaza del Pradillo s/n MÓSTOLES
+1207,12,Pradillo,Pradillo,Ascensor,Plaza del Pradillo s/n MÓSTOLES
+1208,12,Hospital de Móstoles,Hospital de Móstoles,Ascensor,C/ Río Sella MÓSTOLES
+1208,12,Hospital de Móstoles,Hospital de Móstoles,Río Ebro - Río Sella,C/ Río Sella MÓSTOLES
+1209,12,Manuela Malasaña,Manuela Malasaña,Plaza del Sol,Plaza del Sol s/n (altura del nº 30) MÓSTOLES
+1209,12,Manuela Malasaña,Manuela Malasaña,Ascensor,Plaza del Sol s/n (altura del nº 30) MÓSTOLES
+1210,12,Loranca,Loranca,Avenida de Pablo Iglesias,"Avda. Pablo Iglesias, s/n FUENLABRADA"
+1210,12,Loranca,Loranca,Plaza de la Concordia,Plaza de la Concordia FUENLABRADA
+1210,12,Loranca,Loranca,Ascensor,Plaza de la Concordia FUENLABRADA
+1211,12,Parque Europa,Hospital de Fuenlabrada,Ascensor,"Cº del Molino, pares s/n FUENLABRADA"
+1211,12,Parque Europa,Hospital de Fuenlabrada,Camino del Molino - Hospital,"Cº del Molino, pares s/n FUENLABRADA"
+1211,12,Parque Europa,Hospital de Fuenlabrada,Camino del Molino - Universidad,"Cº del Molino, impares s/n FUENLABRADA"
+1212,12,Hospital de Fuenlabrada,Parque Europa,Ascensor,"C/ Francia, 36 FUENLABRADA"
+1212,12,Hospital de Fuenlabrada,Parque Europa,Francia,"Francia, 34 (esquina Avda. de las Naciones) FUENLABRADA"
+1214,12,Fuenlabrada Central,Fuenlabrada Central,Paseo de la Estación,"Pº de la Estación, s/n (templete) FUENLABRADA"
+1214,12,Fuenlabrada Central,Fuenlabrada Central,Ascensor,Pº de la Estación s/n (dentro del templete) FUENLABRADA
+1214,12,Fuenlabrada Central,Fuenlabrada Central,Renfe,Lí­mites Metro/Renfe en nivel -1 FUENLABRADA
+1215,12,Parque de los Estados,Parque de los Estados,Avenida de los Estados,"Avda. de los Estados, 10 (esquina c/ Venezuela) FUENLABRADA"
+1215,12,Parque de los Estados,Parque de los Estados,Ascensor,"Venezuela, 2 FUENLABRADA"
+1215,12,Parque de los Estados,Parque de los Estados,La Habana,"La Habana, 2 (esquina c/ Venezuela) FUENLABRADA"
+1217,12,Arroyo Culebro,Arroyo Culebro,Ascensor,"Las Ciencias, 14 (esquina C/ Canarias, 143) GETAFE"
+1217,12,Arroyo Culebro,Arroyo Culebro,Las Ciencias,"Las Ciencias, 14 (esquina C/ Canarias, 143) GETAFE"
+1218,12,Conservatorio,Conservatorio,Senda de Mafalda,"Avda. de las Arcas del Agua, 9 (esquina a c/ Senda de Mafalda) GETAFE"
+1218,12,Conservatorio,Conservatorio,Ascensor,"Avda. de las Arcas del Agua, 9 (esquina a c/ Senda de Mafalda) GETAFE"
+1219,12,Alonso de Mendoza,Alonso de Mendoza,Ascensor,"C/ El Greco, 2 (esquina con C/ Ferrocarril) GETAFE"
+1219,12,Alonso de Mendoza,Alonso de Mendoza,Ferrocarril - El Greco,"C/ El Greco, 2 (esquina con C/ Ferrocarril) GETAFE"
+1220,12,Getafe Central,Getafe Central,Renfe,"Límites Metro/Renfe en nivel -1,5 al terminar las escaleras mecanicas de Metro GETAFE"
+1220,12,Getafe Central,Getafe Central,Paseo del Ferrocarril,Esquina con Ramón y Cajal y con Pablo Iglesias GETAFE
+1220,12,Getafe Central,Getafe Central,Ascensor,Paseo del Ferrocarril GETAFE
+1221,12,Juan de la Cierva,Juan de la Cierva,"Avenida de España, pares","Avda. España, 16 GETAFE"
+1221,12,Juan de la Cierva,Juan de la Cierva,"Avenida de España, impares","Avda. España, 5 GETAFE"
+1221,12,Juan de la Cierva,Juan de la Cierva,Ascensor,"Avda. España, 9 GETAFE"
+358,12,El Casar,Correspondencia L3/L12,Correspondencia L3/L12,Nivel-2 límite L3/L12
+358,12,El Casar,El Casar,Av. Casar,"Av. Casar, s/n"
+358,12,El Casar,El Casar,El Casar-Ascensor,"Av. Casar, s/n"
+358,12,El Casar,El Casar,Cercanías-El Casar,Nivel -1 límite Metro/Cercanías
+358,12,El Casar,Gitanilla,Cercanías-Gitanilla,Nivel-1 límite Metro/Cercanias
+358,12,El Casar,Gitanilla,Gitanilla-Ascensor,"C. Gitanilla, s/n"
+358,12,El Casar,Gitanilla,Gitanilla,"C. Gitanilla, s/n"
+1223,12,Los Espartales,Los Espartales,Ascensor,"Avda. de Rigoberta Menchú, 3 (esquina a C/ Rosa de Luxemburgo) GETAFE"
+1223,12,Los Espartales,Los Espartales,Avenida de Rigoberta Menchú,"Avda. de Rigoberta Menchú, 3 (esquina a C/ Rosa de Luxemburgo) GETAFE"
+1224,12,El Bercial,El Bercial,El Bercial,Próximo C/Turquía - Bº del Bercial GETAFE
+1225,12,El Carrascal,El Carrascal,Ascensor,"Avda. Rey Juan Carlos I, Bulevar LEGANÉS"
+1225,12,El Carrascal,El Carrascal,"Avenida Rey Juan Carlos I, pares","Avda. Rey Juan Carlos I, 110 LEGANÉS"
+1225,12,El Carrascal,El Carrascal,"Avenida Rey Juan Carlos I, impares","Avda. Rey Juan Carlos I, 87 LEGANÉS"
+1226,12,Julián Besteiro,Julián Besteiro,"Avenida Rey Juan Carlos I, pares","Avda. Rey Juan Carlos I, 30 LEGANÉS"
+1226,12,Julián Besteiro,Julián Besteiro,Ascensor,"Avda. Rey Juan Carlos I, 25 LEGANÉS"
+1226,12,Julián Besteiro,Julián Besteiro,"Avenida Rey Juan Carlos I, impares","Avda. Rey Juan Carlos I, 25 LEGANÉS"
+1227,12,Casa del Reloj,Casa del Reloj,"Avenida de Gibraltar, impares","Avda. de Gibraltar, 7 LEGANÉS"
+1227,12,Casa del Reloj,Casa del Reloj,Casa del Reloj,"Avda. de Gibraltar, 2 LEGANÉS"
+1227,12,Casa del Reloj,Casa del Reloj,Ascensor,"Avda. de Gibraltar, 2 LEGANÉS"
+1228,12,Hospital Severo Ochoa,Hospital Severo Ochoa,Ascensor,Avda. Orellana LEGANÉS
+1228,12,Hospital Severo Ochoa,Hospital Severo Ochoa,Avenida de Orellana,Avda. Orellana LEGANÉS
+1228,12,Hospital Severo Ochoa,Hospital Severo Ochoa,Hospital Severo Ochoa,Avda. Orellana LEGANÉS
+1229,12,Leganés Central,Leganés Central,Avenida del Cobre,"Avda. del Cobre, templete LEGANÉS"
+1229,12,Leganés Central,Leganés Central,Ascensor,Avda. del Cobre (fuera templete) LEGANÉS
+1229,12,Leganés Central,Leganés Central,Renfe,Limites Metro/Renfe en nivel -1 LEGANÉS
+1230,12,San Nicasio,San Nicasio,Ascensor,Avda. del Mar Mediterráneo LEGANÉS
+1230,12,San Nicasio,San Nicasio,Avenida del Mar Mediterráneo,"Avda. del Mar Mediterráneo s/n, junto a puente ctra. Alcorcón a Leganés LEGANÉS"
+1230,12,San Nicasio,San Nicasio,La Encina,"C/ La Encina, junto a residencia de estudiantes LEGANÉS"
+255,2,Las Rosas,Las Rosas,Ascensor,"Paseo de Ginebra, 35"
+255,2,Las Rosas,Las Rosas,Paseo de Ginebra,Paseo de Ginebra esquina C/ Suecia
+254,2,Avenida de Guadalajara,Avenida de Guadalajara,Ascensor,Avda. de Guadalajara esquina Avda. Canillejas a Vicalvaro
+254,2,Avenida de Guadalajara,Avenida de Guadalajara,Dresde,"Avenida de Guadalajara, 136"
+253,2,Alsacia,Alsacia,Intercambiador,Plaza Alsacia s/n
+253,2,Alsacia,Alsacia,Ascensor,Plaza de Alsacia s/n
+253,2,Alsacia,Alsacia,Avenida de Guadalajara,"frente a Hermanos García Noblejas, 133"
+253,2,Alsacia,Alsacia,Ascensor,"frente a Hermanos García Noblejas, 133"
+252,2,La Almudena,La Almudena,Ascensor,C/ Arriaga esquina C/ Francisco Largo Caballero
+252,2,La Almudena,La Almudena,Arriaga,"C/ Arriaga, 75"
+251,2,La Elipa,La Elipa,Avda. Marqués de Corbera,"Avda. Marqués de Corbera, 56"
+251,2,La Elipa,La Elipa,Ascensor,"Avda. Marqués de Corbera, 58"
+201,2,Ventas,Ventas,Plaza de Toros,"Alcalá, 233 (Frente a Pza. de Toros)"
+201,2,Ventas,Ventas,Plaza de Toros,"Alcalá, 233 (Frente a Pza. de Toros)"
+202,2,Manuel Becerra,Manuel Becerra,Doctor Esquerdo,"Pza. Manuel Becerra, 20 (Alcalá/Dr. Esquerdo)"
+202,2,Manuel Becerra,Manuel Becerra,D. Ramón de la Cruz,"Pza. Manuel Becerra, 4 (Fco. Silvela/R. Cruz)"
+203,2,Goya,Conde de Peñalver,"Conde de Peñalver, pares","Conde de Peñalver, 2 (Esq. con Alcalá)"
+203,2,Goya,Conde de Peñalver,Ascensores 4 y 5,"C/ Goya, 87"
+203,2,Goya,Conde de Peñalver,"Conde de Peñalver, impares","Goya, 89 (Esq. C/Peñalver , 1)"
+203,2,Goya,Felipe II,"Felipe II, impares","Avda. Felipe II, 1 (Esq. con c/ Narváez)"
+203,2,Goya,Felipe II,Ascensores 2 y 3. Acceso a línea 2 dirección Cuatro Caminos,"Avda. Felipe II, 1 (Esq. con c/ Alcalá)"
+203,2,Goya,Felipe II,"Felipe II, pares","Avda. Felipe II, 12 (Esq. con C/ Narváez)"
+203,2,Goya,General Díaz Porlier,General Díaz Porlier,"Goya, 62 (Esq. Gnral Díaz Porlier)"
+203,2,Goya,General Díaz Porlier,Ascensor 1. Acceso a línea 2 dirección Las Rosas y línea 4 dirección Argüelles,"General Díaz Porlier, 3"
+203,2,Goya,General Díaz Porlier,Centro Comercial,Nivel -2 Centro Comercial
+204,2,Príncipe de Vergara,Príncipe de Vergara,Alcalá,"Alcalá, 123 (Esq. Ppe. Vergara)"
+204,2,Príncipe de Vergara,Príncipe de Vergara-Ascensor,Ascensor 1,"Príncipe de Vergara, 7"
+204,2,Príncipe de Vergara,Príncipe de Vergara-Ascensor,Ascensor 2,"Príncipe de Vergara, 5"
+205,2,Retiro,Claudio Coello,Claudio Coello,"Alcalá, 75 (esq. Claudio Coello)"
+205,2,Retiro,Lagasca,Rampa,"Lagasca, 4."
+205,2,Retiro,Lagasca,Lagasca,"Lagasca, 4"
+205,2,Retiro,Lagasca,Retiro,Parque del Retiro
+206,2,Banco de España,Barquillo,Barquillo,"Alcalá, 47 (Esq. Barquillo)"
+206,2,Banco de España,Barquillo,Marqués de Cubas,"Alcalá, 46 (Esq. M. Cubas)"
+206,2,Banco de España,Cibeles,Palacio de Buenavista,"Alcalá, 51"
+206,2,Banco de España,Cibeles,Banco de España,"Alcalá, 48 (Esq. Pº. del Prado)"
+207,2,Sevilla,Sevilla,Alcalá,"Alcalá, 23"
+207,2,Sevilla,Sevilla,Ascensor,"Alcalá, 21"
+112,2,Sol,Mayor,Ascensor,Puerta del Sol
+112,2,Sol,Mayor,Mayor,"Pta. del Sol, s/n (esq. Mayor y Arenal)"
+112,2,Sol,Preciados,Centro Comercial,Acceso directo al centro comercial
+112,2,Sol,Preciados,Preciados,"Preciados, 3"
+112,2,Sol,Puerta del Sol,Alcalá,"Puerta del Sol, 13"
+112,2,Sol,Puerta del Sol,Carmen,"Puerta del Sol, 12"
+112,2,Sol,Puerta del Sol,RENFE,Cúpula de RENFE y Ascensor
+112,2,Sol,Puerta del Sol,Carretas,"Pta. del Sol, 7 (semiesq. Carretas)"
+112,2,Sol,RENFE,RENFE,Intercambiador Nivel -1
+209,2,Ópera,Plaza de Isabel II,Campomanes,"Plaza de Isabel II, 5"
+209,2,Ópera,Plaza de Isabel II,Arenal,"Plaza de Isabel II, 1 (Esq. Arenal)"
+209,2,Ópera,Plaza de Isabel II,Ascensor,"Plaza de Isabel II, 8"
+210,2,Santo Domingo,Gran Vía,Gran Vía,"Gran Vía, 51 (esq. San Bernardo)"
+210,2,Santo Domingo,Santo Domingo,Santo Domingo,"Pza. Santo Domingo, 6"
+211,2,Noviciado,Ministerio de Justicia,Ministerio de Justicia,"San Bernardo, 45 (Junto al Mº de Justicia)"
+211,2,Noviciado,Noviciado,Noviciado,"San Bernardo, 51 (Esq. C/Noviciado)"
+212,2,San Bernardo,Alberto Aguilera,Alberto Aguilera,"Gta. Ruiz Jiménez, 2 (S.Bernardo - A. Aguilera)"
+212,2,San Bernardo,Carranza,Carranza,"Gta. Ruiz Jiménez, 5 (Esq. Carranza)"
+213,2,Quevedo,Quevedo,Fuencarral,"Gta. Quevedo, 1 (S.Bernardo - Fuencarral)"
+213,2,Quevedo,Quevedo,Arapiles,"Gta. Quevedo, 2 (Esq. Arapiles)"
+214,2,Canal,Canal,Ascensor,"Bravo Murillo, impares"
+214,2,Canal,Canal,"Bravo Murillo, impares","Bravo Murillo, 47"
+214,2,Canal,Canal,"Bravo Murillo, pares","Bravo Murillo, 40"
+106,2,Cuatro Caminos,Central,Ascensor exterior,Santa Engracia (semiesquina Bravo Murillo)
+106,2,Cuatro Caminos,Central,"Reina Victoria, pares","Avda. Reina Victoria, 2"
+106,2,Cuatro Caminos,Central,Bravo Murillo,"Bravo Murillo, 101 (esq. Gta. Cuatro Caminos)"
+106,2,Cuatro Caminos,Central,Santa Engracia,"Santa Engracia, 168"
+106,2,Cuatro Caminos,Central,"Reina Victoria, impares","Gta. Cuatro Caminos (esq. Reina Victoria, 1)"
+106,2,Cuatro Caminos,Maudes,Maudes,"Maudes, 8"
+358,3,El Casar,Correspondencia L3/L12,Correspondencia L3/L12,Nivel-2 límite L3/L12
+358,3,El Casar,El Casar,Av. Casar,"Av. Casar, s/n"
+358,3,El Casar,El Casar,El Casar-Ascensor,"Av. Casar, s/n"
+358,3,El Casar,El Casar,Cercanías-El Casar,Nivel -1 límite Metro/Cercanías
+358,3,El Casar,Gitanilla,Cercanías-Gitanilla,Nivel-1 límite Metro/Cercanias
+358,3,El Casar,Gitanilla,Gitanilla-Ascensor,"C. Gitanilla, s/n"
+358,3,El Casar,Gitanilla,Gitanilla,"C. Gitanilla, s/n"
+357,3,Villaverde Alto,Villaverde Alto,Valle de Tobalina,"C/ Valle de Tobalina, frente al nº 42"
+357,3,Villaverde Alto,Villaverde Alto,Renfe,Correspondencia con Renfe
+357,3,Villaverde Alto,Villaverde Alto,Ascensor,"C/ Valle de Tobalina, frente al nº 42"
+356,3,San Cristóbal,San Cristóbal,Ascensor,"C/ Moncada, 13"
+356,3,San Cristóbal,San Cristóbal,Avda. Andalucía pares,"Avda Andalucía pares, junto C/ San Dalmacio"
+356,3,San Cristóbal,San Cristóbal,Moncada,"C/ Moncada, 13"
+355,3,Villaverde Bajo Cruce,Villaverde Bajo Cruce,Santiago Amón,"C/ Santiago Amón, frente al nº 1"
+355,3,Villaverde Bajo Cruce,Villaverde Bajo Cruce,Ascensor,"C/ Santa Petronila, 3"
+355,3,Villaverde Bajo Cruce,Villaverde Bajo Cruce,Santa Petronila,"C/ Santa Petronila, 3"
+354,3,Ciudad de los Ángeles,Ciudad de los Ángeles,Paseo Gigantes y Cabezudos,"Paseo Gigantes y Cabezudos, frente al nº 12"
+354,3,Ciudad de los Ángeles,Ciudad de los Ángeles,Ascensor,"Paseo Gigantes y Cabezudos, frente al nº 12"
+354,3,Ciudad de los Ángeles,Ciudad de los Ángeles,Tertulia,C/ Tertulia frente al nº 17
+353,3,San Fermín – Orcasur,San Fermín - Orcasur,Avenida de Andalucía pares,"Avenida de Andalucía, 20"
+353,3,San Fermín – Orcasur,San Fermín - Orcasur,Ascensor,Avenida Perla frente al nº 29
+353,3,San Fermín – Orcasur,San Fermín - Orcasur,Avenida Perla,Avenida Perla frente al nº 29
+352,3,Hospital 12 de Octubre,Hospital 12 de Octubre,Glorieta de Málaga,Avda. de Córdoba s/n en la Glorieta de Málaga
+352,3,Hospital 12 de Octubre,Hospital 12 de Octubre,Ascensor,Avda. de Córdoba s/n en la Glorieta de Málaga
+351,3,Almendrales,Almendrales,Avda. Cordoba pares,"Avda. Cordoba, 21"
+351,3,Almendrales,Almendrales,Ascensor,"Santa Cruz de Mudela, 17 / Avda. de Córdoba, frente al 21"
+351,3,Almendrales,Almendrales,Avda. Cordoba impares,"Avda. Cordoba, 21"
+301,3,Legazpi,Beata María Ana de Jesús,Beata María Ana de Jesús,"Pº de las Delicias, 132"
+301,3,Legazpi,Legazpi,Plaza de Legazpi (esquina Bolivar),"Plaza de Legazpi, 3"
+301,3,Legazpi,Legazpi,Ascensor,"Plaza de Legazpi, 3"
+301,3,Legazpi,Legazpi,Plaza de Legazpi,"Plaza de Legazpi, 1"
+302,3,Delicias,Ciudad Real,Ascensor,"Pº de las Delicias, 58"
+302,3,Delicias,Ciudad Real,Ciudad Real,"Pº de las Delicias, 60"
+302,3,Delicias,Ciudad Real,"Pº de las Delicias, impares","Pº de las Delicias, 61"
+302,3,Delicias,Cáceres,Cáceres,"Pº de las Delicias, 78 (Esq. Cáceres)"
+303,3,Palos de la Frontera,Delicias,"Palos de la Frontera, impares","Palos de la Frontera, 29"
+303,3,Palos de la Frontera,Delicias,Ascensor,"Palos de la Frontera, 33"
+303,3,Palos de la Frontera,Delicias,Paseo de las Delicias,"Palos de la Frontera, 42"
+304,3,Embajadores,Acacias,Acacias,"Gta. Embajadores, 7"
+304,3,Embajadores,Acacias,Ascensor,"Gta. Embajadores, 7"
+304,3,Embajadores,Renfe,Renfe,Renfe Cercanías
+304,3,Embajadores,Ronda de Valencia,Ronda de Valencia,"Gta. Embajadores, 3"
+305,3,Lavapiés,Argumosa,Ascensor,"Argumosa, 3"
+305,3,Lavapiés,Argumosa,Argumosa,"Argumosa, 1"
+112,3,Sol,Mayor,Ascensor,Puerta del Sol
+112,3,Sol,Mayor,Mayor,"Pta. del Sol, s/n (esq. Mayor y Arenal)"
+112,3,Sol,Preciados,Centro Comercial,Acceso directo al centro comercial
+112,3,Sol,Preciados,Preciados,"Preciados, 3"
+112,3,Sol,Puerta del Sol,Alcalá,"Puerta del Sol, 13"
+112,3,Sol,Puerta del Sol,Carmen,"Puerta del Sol, 12"
+112,3,Sol,Puerta del Sol,RENFE,Cúpula de RENFE y Ascensor
+112,3,Sol,Puerta del Sol,Carretas,"Pta. del Sol, 7 (semiesq. Carretas)"
+112,3,Sol,RENFE,RENFE,Intercambiador Nivel -1
+307,3,Callao,Callao,Centro Comercial,En pasillo del acceso Cine Avenida
+307,3,Callao,Callao,Ascensor,"Plaza de Callao, 1"
+307,3,Callao,Callao,Plaza de Callao,"Plaza de Callao, 1"
+307,3,Callao,Callao,Palacio de la Prensa,"Gran Vía, 46"
+307,3,Callao,Callao,Gran Vía,"Gran Vía, 39"
+307,3,Callao,Jacometrezo,Jacometrezo,"C/ Jacometrezo, 1"
+307,3,Callao,Jacometrezo,Ascensor,"C/ Jacometrezo, impares"
+308,3,Plaza de España,Conde de Toreno,Ascensor. Acceso a línea 10,Pza. Conde de Toreno
+308,3,Plaza de España,Conde de Toreno,Ascensor. Acceso a línea 10,Pza. Conde de Toreno
+308,3,Plaza de España,Leganitos,Gran Vía,"Gran Vía, 80"
+308,3,Plaza de España,Leganitos,Leganitos,"Gran Vía, 73"
+308,3,Plaza de España,Leganitos,Reyes,"Reyes, 1"
+308,3,Plaza de España,Leganitos,Princesa,"Princesa, 2"
+308,3,Plaza de España,Plaza de España,Plaza de España,"Plaza de España,18"
+308,3,Plaza de España,Plaza de España,Ascensor. Acceso a línea 3,"Plaza de España, 18"
+309,3,Ventura Rodríguez,Ventura Rodríguez,"Princesa, impares","Princesa, 23"
+309,3,Ventura Rodríguez,Ventura Rodríguez,"Princesa, pares","C/ Princesa, 22"
+309,3,Ventura Rodríguez,Ventura Rodríguez,Ascensor,Princesa pares
+310,3,Argüelles,Alberto Aguilera,Princesa,"Princesa, 56 (Esq. A. Aguilera)"
+310,3,Argüelles,Alberto Aguilera,Ascensor,"Alberto Aguilera, pares"
+310,3,Argüelles,Alberto Aguilera,Alberto Aguilera,"Alberto Aguilera, 70 (Esq. Gaztambide)"
+310,3,Argüelles,Altamirano,Altamirano (Esq. Altamirano),"Princesa, 65"
+310,3,Argüelles,Guzmán el Bueno,Guzmán el Bueno - Ascensor,"C/ Alberto Aguilera, 62"
+310,3,Argüelles,Guzmán el Bueno,Guzmán el Bueno,"Alberto Aguilera, 62 (A. Mellado - G. Bueno)"
+311,3,Moncloa,Arcipreste de Hita,Arcipreste de Hita,Arcipreste de Hita 1 y 3
+311,3,Moncloa,Arcipreste de Hita,Intercambiador E. del Aire,Intercambiador E. del Aire
+311,3,Moncloa,Cuartel General del Ejercito del Aire,Intercambiador,En vestibulo mixto Metro-Intercambiador (nivel-2) a la altura puerta corredera intercambiador
+311,3,Moncloa,Cuartel General del Ejercito del Aire,Princesa,"Altura Princesa, 96 (Junta municipal)"
+310,4,Argüelles,Alberto Aguilera,Princesa,"Princesa, 56 (Esq. A. Aguilera)"
+310,4,Argüelles,Alberto Aguilera,Ascensor,"Alberto Aguilera, pares"
+310,4,Argüelles,Alberto Aguilera,Alberto Aguilera,"Alberto Aguilera, 70 (Esq. Gaztambide)"
+310,4,Argüelles,Altamirano,Altamirano (Esq. Altamirano),"Princesa, 65"
+310,4,Argüelles,Guzmán el Bueno,Guzmán el Bueno - Ascensor,"C/ Alberto Aguilera, 62"
+310,4,Argüelles,Guzmán el Bueno,Guzmán el Bueno,"Alberto Aguilera, 62 (A. Mellado - G. Bueno)"
+212,4,San Bernardo,Alberto Aguilera,Alberto Aguilera,"Gta. Ruiz Jiménez, 2 (S.Bernardo - A. Aguilera)"
+212,4,San Bernardo,Carranza,Carranza,"Gta. Ruiz Jiménez, 5 (Esq. Carranza)"
+113,4,Bilbao,Central,Manuela Malasaña (Malasaña/Fuencarral),"Gta. Bilbao, 7"
+113,4,Bilbao,Central,Fuencarral,"Gta. Bilbao, 5 (semiesq. Fuencarral)"
+113,4,Bilbao,Central,Luchana Ascensor,"Glorieta de Bilbao, 6"
+113,4,Bilbao,Luchana,Trafalgar,"Luchana, 23"
+113,4,Bilbao,Luchana,Francisco de Rojas,"Luchana, 22 (esq. Fco. de Rojas)"
+113,4,Bilbao,Luchana,"Luchana, impares","Luchana, 21 (esq. Trafalgar pares)"
+404,4,Alonso Martínez,Hermanos Álvarez Quintero,Hermanos Álvarez Quintero,"Sagasta, 30 (Esq. Álvarez Quintero)"
+404,4,Alonso Martínez,Santa Bárbara,Santa Bárbara,"Pza. Santa Bárbara, 5"
+404,4,Alonso Martínez,Santa Bárbara,Santa Engracia,"Pza. Alonso Martínez, 4 (Sta. Engracia, 4 - Almagro)"
+404,4,Alonso Martínez,Santa Bárbara,"Génova, pares","Génova, 2 (Esq. Pza. A. Martínez)"
+405,4,Colón,Colón,"Génova, pares","Génova, 28 (Próx. Marqués de la Ensenada)"
+405,4,Colón,Colón,Museo de Cera,En pasillo del acceso Genova Pares.
+405,4,Colón,Colón,"Génova, impares","Génova, 29 (Próx. Pza. de Colón)"
+406,4,Serrano,Lagasca,"Goya, pares","Goya, 10 (Esq. Lagasca)"
+406,4,Serrano,Lagasca,"Goya, impares","Goya, 23 (Esq. Lagasca)"
+406,4,Serrano,Serrano,Serrano,"Goya, 15 (Esq. Serrano)"
+406,4,Serrano,Serrano,"Goya, pares","Goya, 4 (Esq. Serrano)"
+407,4,Velázquez,Castelló,"Goya, impares","Goya, 53 (Esq. Castelló)"
+407,4,Velázquez,Castelló,"Goya, pares","Goya, 32 (Esq. Castelló)"
+407,4,Velázquez,Velázquez,"Goya, pares","Goya, 20"
+407,4,Velázquez,Velázquez,"Goya, impares","Goya, 39 (Esq. Velázquez)"
+203,4,Goya,Conde de Peñalver,"Conde de Peñalver, pares","Conde de Peñalver, 2 (Esq. con Alcalá)"
+203,4,Goya,Conde de Peñalver,Ascensores 4 y 5,"C/ Goya, 87"
+203,4,Goya,Conde de Peñalver,"Conde de Peñalver, impares","Goya, 89 (Esq. C/Peñalver , 1)"
+203,4,Goya,Felipe II,"Felipe II, impares","Avda. Felipe II, 1 (Esq. con c/ Narváez)"
+203,4,Goya,Felipe II,Ascensores 2 y 3. Acceso a línea 2 dirección Cuatro Caminos,"Avda. Felipe II, 1 (Esq. con c/ Alcalá)"
+203,4,Goya,Felipe II,"Felipe II, pares","Avda. Felipe II, 12 (Esq. con C/ Narváez)"
+203,4,Goya,General Díaz Porlier,General Díaz Porlier,"Goya, 62 (Esq. Gnral Díaz Porlier)"
+203,4,Goya,General Díaz Porlier,Ascensor 1. Acceso a línea 2 dirección Las Rosas y línea 4 dirección Argüelles,"General Díaz Porlier, 3"
+203,4,Goya,General Díaz Porlier,Centro Comercial,Nivel -2 Centro Comercial
+409,4,Lista,Don Ramón de la Cruz,Conde de Peñalver,"Conde de Peñalver, 39 (Esq. R. de la Cruz)"
+409,4,Lista,Ortega y Gasset,Conde de Peñalver,"Conde de Peñalver, 47 (Esq. Ortega y Gasset)"
+410,4,Diego de León,Alcántara,Alcántara (Línea 5),"Francisco Silvela, 47 (esq. Alcántara)"
+410,4,Diego de León,Alcántara,"Francisco Silvela, pares","Francisco Silvela, 34 (esquina Azcona)"
+410,4,Diego de León,Alcántara,"Francisco Silvela, pares (Línea 5)","Francisco Silvela, 40 (esquina Eraso)"
+410,4,Diego de León,Diego de León,"Francisco Silvela, impares","Francisco Silvela, 61 (rampa esquina Diego de León)"
+410,4,Diego de León,Diego de León,"Francisco Silvela, pares (línea 4)","Francisco Silvela, 54 (rampa)"
+410,4,Diego de León,Diego de León,Diego de León (línea 4),"Diego de León, 69"
+410,4,Diego de León,Diego de León,"Francisco Silvela, pares","Francisco Silvela, 56"
+410,4,Diego de León,Juan Bravo,Juan Bravo/Alcántara,"Juan Bravo bulevar, altura 69"
+410,4,Diego de León,Juan Bravo,Juan Bravo-Conde Peñalver,"Juan Bravo bulevar, altura 52-55"
+411,4,Avenida de América,Avenida de América,Intercambiador,Avenida de América frente al nº 7
+411,4,Avenida de América,Avenida de América,"Av. América, pares","Av. América, 4"
+411,4,Avenida de América,Francisco Silvela,Pedro Valdivia,"Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+412,4,Prosperidad,Prosperidad,Plaza Prosperidad,"Plaza Prosperidad, 5 (Semiesq. S.Quiñones)"
+413,4,Alfonso XIII,Alfonso XIII,Clara del Rey,"Clara del Rey, 81 (Esq. L. Hoyos , 190)"
+414,4,Avenida de la Paz,Avenida de la Paz,Avda. de la Paz,M-30 (parque)
+414,4,Avenida de la Paz,Avenida de la Paz,"Ramón y Cajal, impares","Ramón y Cajal, 101"
+414,4,Avenida de la Paz,Avenida de la Paz,"Ramón y Cajal, pares","Ramón y Cajal, 80 (esq. Normas , 2)"
+415,4,Arturo Soria,Arturo Soria,"José Silva, impares","José Silva, 1 (Esq. A. Soria , 157)"
+415,4,Arturo Soria,Arturo Soria,Arturo Soria,"Arturo Soria, 172 (Semiesq. Ulises)"
+415,4,Arturo Soria,Arturo Soria,Ulises,"Ulises, 1"
+415,4,Arturo Soria,Ulises,"Ulises, impares","Ulises, 5-7 (Esq. Asura/A. Soria, 172)"
+416,4,Esperanza,Esperanza,Andorra,"Andorra, 41-51"
+417,4,Canillas,Canillas,Mota del Cuervo,M. Cuervo (Esq. Machupichu)
+417,4,Canillas,Canillas,"Avenida Machupichu, impares","Avda. Machupichu, s/n"
+417,4,Canillas,Canillas,Ramón Power,Ramón Power (Esq. Machupichu)
+417,4,Canillas,Canillas,Montalbos,C. Canillas (Esq. Machupichu)
+417,4,Canillas,Canillas,Ascensor,"Avda. Machupichu, impares"
+418,4,Mar de Cristal,Mar de Cristal,Mar Adriático,Mar Adriático (Esq. Ayacucho)
+418,4,Mar de Cristal,Mar de Cristal,Ascensor,Emigrantes (Esq. Arequipa)
+418,4,Mar de Cristal,Mar de Cristal,Gta. Mar de Cristal,Centro Comercial
+418,4,Mar de Cristal,Mar de Cristal,Arequipa,Emigrantes (Esq. Arequipa)
+419,4,San Lorenzo,San Lorenzo,Ascensor,"Frente Avda. Baranquilla, 9"
+419,4,San Lorenzo,San Lorenzo,"Avenida Barranquilla, pares","Esq. Baraona, 2"
+419,4,San Lorenzo,San Lorenzo,"Avenida Barranquilla, impares","Esq. Avda. Barranquilla, 11"
+420,4,Parque de Santa María,Parque de Santa María,Ascensor,Santa Virgilia s/n
+420,4,Parque de Santa María,Parque de Santa María,Santa Virgilia,"Santa Virgilia, 1"
+420,4,Parque de Santa María,Parque de Santa María,Los Arcos,"Los Arcos, 3"
+421,4,Hortaleza,Hortaleza,Capitán Cortés,"C/ Manuel Chaves Nogales, 4"
+421,4,Hortaleza,Hortaleza,Costa del Sol,"C/ Costa del Sol s/n, junto al 20 D, (esta a nivel de calle)"
+422,4,Manoteras,Manoteras,Ascensor,C/ Vélez Rubio esquina C/ Bacares 11
+422,4,Manoteras,Manoteras,Vélez Rubio,C/ Vélez Rubio esquina C/ Bacares 11
+153,4,Pinar de Chamartín,Pinar de Chamartín,Ascensor,"C/ Arturo Soria, 330"
+153,4,Pinar de Chamartín,Pinar de Chamartín,Arturo Soria,"C/ Arturo Soria, 330"
+552,5,Alameda de Osuna,Alameda de Osuna,Ascensor,"C/ de la Corbeta,14 (esquina calle de La Rioja)"
+552,5,Alameda de Osuna,Alameda de Osuna,Corbeta,"C/ de la Corbeta,14 (esquina calle de La Rioja)"
+551,5,El Capricho,Pinos de Osuna,Pinos de Osuna,"C/ de los Pinos de Osuna, 15"
+551,5,El Capricho,Velero,Velero,"C/ del Velero, 15"
+551,5,El Capricho,Velero,Ascensor,"C/ del Velero, 15"
+501,5,Canillejas,Canillejas,"Alcalá, pares","Alcalá, 640 (semiesq. Cartago, 1)"
+501,5,Canillejas,Josefa Valcárcel,Alcalá/Josefa Valcárcel,"C/ Alcalá, frente al 636"
+502,5,Torre Arias,Torre Arias,"Alcalá, pares","Alcalá, 550 (Esq. Cº Vicálvaro)"
+502,5,Torre Arias,Torre Arias,"Alcalá, impares","Alcalá, impares"
+503,5,Suanzes,Suanzes,"Alcalá, pares","Semiesquina Ruf. Gonz., 5"
+503,5,Suanzes,Suanzes,"Alcalá, impares","Alcalá, 527"
+504,5,Ciudad Lineal,Albarracín,Albarracín,"Alcalá, 434 (Próx. Albarracín)"
+504,5,Ciudad Lineal,Arturo Soria,Misterios,"Alcalá, 413 (Esq. Arturo Soria)"
+504,5,Ciudad Lineal,Arturo Soria,Arturo Soria,"Arturo Soria, 2 (Esq. Alcalá)"
+504,5,Ciudad Lineal,Arturo Soria,Hnos. García Noblejas,"Hermanos García Noblejas, 2"
+505,5,Pueblo Nuevo,Emilio Ferrari,Hermanos de Pablo,"Alcalá, 373 (próx. Hnos. de Pablo)"
+505,5,Pueblo Nuevo,Emilio Ferrari,Ascensor,"Alcalá, 366"
+505,5,Pueblo Nuevo,Emilio Ferrari,Emilio Ferrari,"Alcalá, 364"
+505,5,Pueblo Nuevo,Vicente Espinel,Doctor Vallejo (Pileo-Dr. Vallejo),"Alcalá, 387"
+505,5,Pueblo Nuevo,Vicente Espinel,Vicente Espinel,"Alcalá, 380 (Campuzano-V. Espinel)"
+505,5,Pueblo Nuevo,Vicente Espinel,Campuzano,"Alcalá, 378 (Campuzano-V. Espinel)"
+506,5,Quintana,Hermanos Machado,Argentina,"Alcalá, 333 (Esq. Argentina)"
+506,5,Quintana,Hermanos Machado,Hermanos Machado,"Alcalá, 306 (Esq. Hnos. Machado)"
+506,5,Quintana,Virgen del Sagrario,Virgen del Sagrario,"Virgen del Sagrario, 1 (Esq. Alcalá)"
+506,5,Quintana,Virgen del Sagrario,Ezequiel Solana,"Alcalá, 328 (Esq. Ezequiel-Solana)"
+507,5,El Carmen,Alcalde López Casero,Alcalde López Casero,"Alcalde López Casero, 2 (Semiesq. Alcalá)"
+507,5,El Carmen,Alcalde López Casero,José Villena,"Alcalá, 258 (Esq. J. Villena)"
+507,5,El Carmen,Hermanos Fernández Lanseros,Raquel Meller,"Alcalá, 259 (Raquel Meller)"
+507,5,El Carmen,Hermanos Fernández Lanseros,José Mª Fernández Lanseros,"Altura de Alcalá, 234 (Esq. Fdez. Lanseros)"
+201,5,Ventas,Ventas,Plaza de Toros,"Alcalá, 233 (Frente a Pza. de Toros)"
+201,5,Ventas,Ventas,Plaza de Toros,"Alcalá, 233 (Frente a Pza. de Toros)"
+410,5,Diego de León,Alcántara,Alcántara (Línea 5),"Francisco Silvela, 47 (esq. Alcántara)"
+410,5,Diego de León,Alcántara,"Francisco Silvela, pares","Francisco Silvela, 34 (esquina Azcona)"
+410,5,Diego de León,Alcántara,"Francisco Silvela, pares (Línea 5)","Francisco Silvela, 40 (esquina Eraso)"
+410,5,Diego de León,Diego de León,"Francisco Silvela, impares","Francisco Silvela, 61 (rampa esquina Diego de León)"
+410,5,Diego de León,Diego de León,"Francisco Silvela, pares (línea 4)","Francisco Silvela, 54 (rampa)"
+410,5,Diego de León,Diego de León,Diego de León (línea 4),"Diego de León, 69"
+410,5,Diego de León,Diego de León,"Francisco Silvela, pares","Francisco Silvela, 56"
+410,5,Diego de León,Juan Bravo,Juan Bravo/Alcántara,"Juan Bravo bulevar, altura 69"
+410,5,Diego de León,Juan Bravo,Juan Bravo-Conde Peñalver,"Juan Bravo bulevar, altura 52-55"
+510,5,Núñez de Balboa,Juan Bravo,Velázquez,"Velázquez, 92 (Esq. Juan Bravo, 11)"
+510,5,Núñez de Balboa,Juan Bravo,Núñez de Balboa,"Núñez de Balboa, 85 (Esq. Juan Bravo, 13)"
+510,5,Núñez de Balboa,Marqués de Salamanca,Pza. Marqués de Salamanca,"Pza. Marqués de Salamanca, 10"
+511,5,Rubén Darío,Castellana,Castellana,"Pº de la Castellana, 39 (Esq. Eduardo Dato)"
+511,5,Rubén Darío,Rubén Darío,Almagro,"Rubén Darío, 2 (E. Dato-Almagro)"
+511,5,Rubén Darío,Rubén Darío,Miguel Ángel,"Rubén Darío, 3 ( E. Dato-Miguel Angel)"
+404,5,Alonso Martínez,Hermanos Álvarez Quintero,Hermanos Álvarez Quintero,"Sagasta, 30 (Esq. Álvarez Quintero)"
+404,5,Alonso Martínez,Santa Bárbara,Santa Bárbara,"Pza. Santa Bárbara, 5"
+404,5,Alonso Martínez,Santa Bárbara,Santa Engracia,"Pza. Alonso Martínez, 4 (Sta. Engracia, 4 - Almagro)"
+404,5,Alonso Martínez,Santa Bárbara,"Génova, pares","Génova, 2 (Esq. Pza. A. Martínez)"
+513,5,Chueca,Chueca,Plaza de Chueca,"Plaza de Chueca, 4"
+111,5,Gran Vía,Antonio Palacios,Fuencarral,"Gran Vía, 28"
+111,5,Gran Vía,Antonio Palacios,Montera-Ascensor,"Montera, 47"
+111,5,Gran Vía,Antonio Palacios,Montera,"Montera, 48"
+111,5,Gran Vía,Antonio Palacios,Gran Vía,"Gran Vía, 25"
+111,5,Gran Vía,Renfe,Calle -Nivel -4,Escaleras nivel -4
+111,5,Gran Vía,Renfe,Montera-Ascensor nivel - 4,"Montera, 47"
+111,5,Gran Vía,Renfe,Cercanías,Límite Metro/Renfe en nivel - 4
+307,5,Callao,Callao,Centro Comercial,En pasillo del acceso Cine Avenida
+307,5,Callao,Callao,Ascensor,"Plaza de Callao, 1"
+307,5,Callao,Callao,Plaza de Callao,"Plaza de Callao, 1"
+307,5,Callao,Callao,Palacio de la Prensa,"Gran Vía, 46"
+307,5,Callao,Callao,Gran Vía,"Gran Vía, 39"
+307,5,Callao,Jacometrezo,Jacometrezo,"C/ Jacometrezo, 1"
+307,5,Callao,Jacometrezo,Ascensor,"C/ Jacometrezo, impares"
+216,5,Ópera,Plaza de Isabel II,Campomanes,"Plaza de Isabel II, 5"
+216,5,Ópera,Plaza de Isabel II,Arenal,"Plaza de Isabel II, 1 (Esq. Arenal)"
+216,5,Ópera,Plaza de Isabel II,Ascensor,"Plaza de Isabel II, 8"
+517,5,La Latina,La Latina,San Francisco,"Toledo, 56"
+517,5,La Latina,La Latina,San Millán,"Toledo, 65 (S. Millan-Maldonadas)"
+517,5,La Latina,La Latina,Toledo,"Toledo, 52"
+518,5,Puerta de Toledo,Puerta de Toledo,Puerta de Toledo,"Ronda de Toledo, 1 (Esq. Gta. Pza. Toledo)"
+519,5,Acacias,Acacias,Pº de la Esperanza,"Pº de la Esperanza, 2 (Esq. Pº Acacias)"
+520,5,Pirámides,Pirámides,"Pº de las Acacias, pares","Pº de las Acacias, 50"
+520,5,Pirámides,Pirámides,"Pº de las Acacias, impares","Pº de las Acacias, 65"
+520,5,Pirámides,Renfe,Ascensor exterior Renfe,Plaza Ortega y Munilla
+520,5,Pirámides,Renfe,Renfe,Nivel -1 dentro del vestibulo Renfe
+521,5,Marqués de Vadillo,Marqués de Vadillo,Antonio Leyva,"Gta. Marqués de Vadillo, 1 (Esq. Gnral. Ricardos)"
+521,5,Marqués de Vadillo,Marqués de Vadillo,Avda. Emperatriz Isabel,"Gta. Marqués de Vadillo, 6"
+522,5,Urgel,Leganés,Peñafiel,"General Ricardos, 80 (Esq. Peñaafiel)"
+522,5,Urgel,Leganés,Camino Viejo de Leganés,"Camino Viejo de Leganés, 1 (Esq. Gnral. Ricardos)"
+522,5,Urgel,Toboso,San Patricio,"General Ricardos, 85"
+522,5,Urgel,Toboso,Toboso,"General Ricardos, 98 (Próx. Toboso)"
+523,5,Oporto,General Ricardos,"General Ricardos, pares","General Ricardos, 148"
+523,5,Oporto,General Ricardos,"General Ricardos, impares","General Ricardos, 143"
+523,5,Oporto,Valle de Oro,Oca,"General Ricardos, 164 (Esq. Oca)"
+523,5,Oporto,Valle de Oro,Valle de Oro,"Gta. Valle de Oro, 2"
+524,5,Vista Alegre,Oca,Oca,"Oca, 43 (Esq. Eduardo Morales)"
+524,5,Vista Alegre,Pinzón,Pinzón,"Oca, 69 (Próx. Pinzón)"
+525,5,Carabanchel,Carabanchel,Glorieta del Ejército,"Gta. del Ejército, s/n (esq. Paseo Muñoz Grandes)"
+526,5,Eugenia de Montijo,Eugenia de Montijo,Ntra. Sra. de la Luz,"Ocaña, 70"
+527,5,Aluche,Avenida de los Poblados,Maqueda,Maqueda
+527,5,Aluche,Avenida de los Poblados,Terminal Autobuses,Terminal autobuses cerca Maqueda
+527,5,Aluche,Avenida de los Poblados,Avenida de los Poblados,"Avda. de los Poblados s/n, cerca autobuses"
+527,5,Aluche,Avenida de los Poblados,Terminal Autobuses,Terminal autobuses cerca Poblados
+527,5,Aluche,Renfe,Avenida de los Poblados,Avda. de los Poblados s/n (cerca Renfe)
+527,5,Aluche,Renfe,Maqueda,Maqueda
+527,5,Aluche,Renfe,Renfe,"Nivel 0, limite Metro/RENFE a la altura de la puerta cancela"
+528,5,Empalme,Empalme,"Padre Piquer, bis","Tembleque, 119"
+528,5,Empalme,Empalme,Padre Piquer,"Tembleque, 119"
+529,5,Campamento,Campamento,"Padre Piquer, pares","Padre Piquer, 8"
+529,5,Campamento,Campamento,"Padre Piquer, impares","Padre Piquer, 5"
+530,5,Casa de Campo,Casa de Campo,Ascensor,Camino de Campamento s/n (esq. Paseo de la Puerta del Batán)
+530,5,Casa de Campo,Casa de Campo,Camino de Campamento s/n,Camino de Campamento s/n (esq. Paseo de la Puerta del Batán)
+601,6,Laguna,Laguna,Ascensor 2,c/ Cuart de Poblet esquina c/ Alhambra 56
+601,6,Laguna,Laguna,"Alhambra, impares","Alhambra, impares"
+601,6,Laguna,Laguna,Correspondencia RENFE,Altura cancela RENFE
+601,6,Laguna,Laguna,"Alhambra, pares",c/ Cuart de Poblet esquina c/ Alhambra 56
+601,6,Laguna,Laguna,Ascensor 1,c/ Cuart de Poblet esquina c/ Alhambra 56
+601,6,Laguna,Laguna,Ascensor 3,c/ Cuart de Poblet esquina c/ Alhambra 56
+602,6,Carpetana,Carpetana,Ascensor,"Vía carpetana, 141 semiesquina Avenida Nuestra Señora de Valvanera, 121"
+602,6,Carpetana,Carpetana,Vía Carpetana,"Vía Carpetana, 328 (semiesq. N. S. Valvanera)"
+602,6,Carpetana,Nuestra Señora de Valvanera,Nuestra Señora de Valvanera,Vía Carpetana s/n frente al nº 137
+602,6,Carpetana,Nuestra Señora de Valvanera,Ascensor,Vía Carpetana s/n frente al nº 139
+523,6,Oporto,General Ricardos,"General Ricardos, pares","General Ricardos, 148"
+523,6,Oporto,General Ricardos,"General Ricardos, impares","General Ricardos, 143"
+523,6,Oporto,Valle de Oro,Oca,"General Ricardos, 164 (Esq. Oca)"
+523,6,Oporto,Valle de Oro,Valle de Oro,"Gta. Valle de Oro, 2"
+604,6,Opañel,Opañel,"Portalegre, impares","Portalegre, 73 (Semiesq. Oporto, 32)"
+604,6,Opañel,Opañel,"Portalegre, pares","Portalegre, 98"
+605,6,Plaza Elíptica,Marcelo Usera,"Marcelo Usera, pares","Marcelo Usera, 170"
+605,6,Plaza Elíptica,Marcelo Usera,Marcelo Usera Ascensor,"Plaza Elíptica, esq. Marcelo Usera con Paseo de Santa María de la Cabeza"
+605,6,Plaza Elíptica,Marcelo Usera,"Marcelo Usera, impares","Plaza Elíptica, 2 esq. Marcelo Usera"
+605,6,Plaza Elíptica,Princesa Juana de Austria,Intercambiador,Avda. Princesa Juana de Austria
+605,6,Plaza Elíptica,Vía Lusitana,Plaza Elíptica Ascensor. Acceso a línea 11,"Plaza Eliptica esq. Avda. Oporto, 2"
+605,6,Plaza Elíptica,Vía Lusitana,Plaza Eíptica,"Plaza Elíptica esq. A. Leyva 88, 90, 92"
+605,6,Plaza Elíptica,Vía Lusitana,"Avda. Oporto, pares","Avda. Oporto, 2"
+606,6,Usera,Amparo Usera,Ascensor,"Amparo Usera, 46"
+606,6,Usera,Amparo Usera,Amparo Usera,"Amparo Usera, 46"
+606,6,Usera,Mirasierra,Mirasierra,"Mirasierra, 33 (esq. Carmen Bruguera)"
+301,6,Legazpi,Beata María Ana de Jesús,Beata María Ana de Jesús,"Pº de las Delicias, 132"
+301,6,Legazpi,Legazpi,Plaza de Legazpi (esquina Bolivar),"Plaza de Legazpi, 3"
+301,6,Legazpi,Legazpi,Ascensor,"Plaza de Legazpi, 3"
+301,6,Legazpi,Legazpi,Plaza de Legazpi,"Plaza de Legazpi, 1"
+608,6,Arganzuela – Planetario,Arganzuela-Planetario,Bronce,"C/ Bronce, 1 A"
+609,6,Méndez Álvaro,Méndez Álvaro,"Méndez Álvaro, impares","Méndez Álvaro, 73 (Semiesq. Pedro Bosch)"
+609,6,Méndez Álvaro,Méndez Álvaro,"Méndez Álvaro, pares","Méndez Álvaro, 62"
+609,6,Méndez Álvaro,Renfe,Intercambiador Autobuses,Limite del pasillo de acceso de la Estación Sur de autobuses
+609,6,Méndez Álvaro,Renfe,Renfe,Nivel -2
+118,6,Pacífico,Doctor Esquerdo,"Doctor Esquerdo, impares","Doctor Esquerdo, 219 (Semiesq. Avda. Ciudad de Barcelona)"
+118,6,Pacífico,Doctor Esquerdo,"Doctor Esquerdo, pares","Doctor Esquerdo, 186 (Semiesq. Avda. Ciudad de Barcelona)"
+118,6,Pacífico,Dr. Esquerdo - Línea 6 - Ascensor,Ascensor,"C/ Doctor Esquerdo, 219"
+118,6,Pacífico,Sánchez Barcáiztegui,Sánchez Barcáiztegui,"Sánchez Barcáiztegui, 1"
+611,6,Conde de Casal,Conde de Casal,Ascensor,"Pza. Conde de Casal, 2"
+611,6,Conde de Casal,Conde de Casal,Conde de Casal,"Pza. Conde de Casal, 2 (Semiesq. Dr. Esquerdo)"
+611,6,Conde de Casal,Conde de Casal,Doctor Esquerdo,"Doctor Esquerdo, 175 (Esq. Pza. C. Casal)"
+611,6,Conde de Casal,Doctor Esquerdo,"Doctor Esquerdo, pares","Doctor Esquerdo, 116 (Semiesq. Ganivet)"
+611,6,Conde de Casal,Doctor Esquerdo,"Doctor Esquerdo, impares","Doctor Esquerdo, 157 (Semiesq. Lira)"
+612,6,Sainz de Baranda,Doctor Esquerdo / Ascensor,Ascensor 1,"C/ Dr. Esquerdo, 62 (frente a C/Doctor Esquerdo, 107)"
+612,6,Sainz de Baranda,Doctor Esquerdo / Ascensor,Ascensor 2,"C/ Dr. Esquerdo, 62 (frente a C/Doctor Esquerdo, 107)"
+612,6,Sainz de Baranda,Sainz de Baranda,Sainz de Baranda,"C/ Dr. Esquerdo, 62"
+612,6,Sainz de Baranda,Sainz de Baranda,Doctor Esquerdo,"C/ Dr. Esquerdo, 62 (frente a C/Doctor Esquerdo, 107)"
+612,6,Sainz de Baranda,Sainz de Baranda,Rafael Salazar Alonso,"C/ Dr. Esquerdo, 103"
+612,6,Sainz de Baranda,Sainz de Baranda,"Moneda, impares","C/ Dr. Esquerdo, 107"
+613,6,O’Donnell,O'Donnell,O'Donnell,"Dr. Esquerdo, 42 (Semiesq. O`Donnell)"
+613,6,O’Donnell,O'Donnell,"J. Juan/Dr. Esquerdo, pares","Dr. Esquerdo, 34 (Esq. J. Juan)"
+613,6,O’Donnell,O'Donnell,"J. Juan/Dr. Esquerdo, impares","Dr. Esquerdo, 49 (Esq. J. Juan)"
+613,6,O’Donnell,O'Donnell,Casa de la Moneda,"Casa de la Moneda (Esq. Dr. Esquerdo, 38)"
+202,6,Manuel Becerra,Manuel Becerra,Doctor Esquerdo,"Pza. Manuel Becerra, 20 (Alcalá/Dr. Esquerdo)"
+202,6,Manuel Becerra,Manuel Becerra,D. Ramón de la Cruz,"Pza. Manuel Becerra, 4 (Fco. Silvela/R. Cruz)"
+410,6,Diego de León,Alcántara,Alcántara (Línea 5),"Francisco Silvela, 47 (esq. Alcántara)"
+410,6,Diego de León,Alcántara,"Francisco Silvela, pares","Francisco Silvela, 34 (esquina Azcona)"
+410,6,Diego de León,Alcántara,"Francisco Silvela, pares (Línea 5)","Francisco Silvela, 40 (esquina Eraso)"
+410,6,Diego de León,Diego de León,"Francisco Silvela, impares","Francisco Silvela, 61 (rampa esquina Diego de León)"
+410,6,Diego de León,Diego de León,"Francisco Silvela, pares (línea 4)","Francisco Silvela, 54 (rampa)"
+410,6,Diego de León,Diego de León,Diego de León (línea 4),"Diego de León, 69"
+410,6,Diego de León,Diego de León,"Francisco Silvela, pares","Francisco Silvela, 56"
+410,6,Diego de León,Juan Bravo,Juan Bravo/Alcántara,"Juan Bravo bulevar, altura 69"
+410,6,Diego de León,Juan Bravo,Juan Bravo-Conde Peñalver,"Juan Bravo bulevar, altura 52-55"
+411,6,Avenida de América,Avenida de América,Intercambiador,Avenida de América frente al nº 7
+411,6,Avenida de América,Avenida de América,"Av. América, pares","Av. América, 4"
+411,6,Avenida de América,Francisco Silvela,Pedro Valdivia,"Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+617,6,República Argentina,República Argentina,República Argentina,"República Argentina, 8"
+617,6,República Argentina,República Argentina,"Joaquín Costa, pares","Joaquín Costa, 26, rampa. (esq. Juan de la Cierva)"
+617,6,República Argentina,República Argentina,"Joaquín Costa, impares","Joaquín Costa, 41 (esq. Rodriguez Marín)"
+617,6,República Argentina,República Argentina,"Joaquín Costa, pares","Juan de la Cierva (esquina Joaquin Costa, pares)"
+618,6,Nuevos Ministerios,Azca-Renfe,Azca-Cercanías-Ascensor 1,Entrada Corte Inglés
+618,6,Nuevos Ministerios,Azca-Renfe,Centro Comercial,Entrada Corte Inglés
+618,6,Nuevos Ministerios,Azca-Renfe,Azca-Cercanías-Ascensor 2,Entrada Corte Inglés
+618,6,Nuevos Ministerios,Orense,Orense,"Orense, 2"
+618,6,Nuevos Ministerios,Orense,Agustín de Bethancourt,"Agustín de Bethancourt, 25"
+618,6,Nuevos Ministerios,Paseo de la Castellana,Renfe - Arcadas,"Nivel -1, limite entre Metro y los accesos de Renfe"
+618,6,Nuevos Ministerios,Paseo de la Castellana,Renfe - Raimundo Fernández Villaverde,"Nivel -1, limite entre Metro y los accesos de Renfe"
+618,6,Nuevos Ministerios,Paseo de la Castellana,Ascensor nº 5,"Pº de la Castellana, 67 en el bulevar"
+618,6,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, impares (bulevar)","Pº de la Castellana, 67 en el bulevar"
+618,6,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, pares","Pº de la Castellana,110. Esq. Joaquín Costa"
+618,6,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, impares",Pº de la Castellana esq. Raimundo Fdez. Villaverde
+618,6,Nuevos Ministerios,Paseo de la Castellana,Ascensor nº 6,"Pº de la Castellana, 100"
+618,6,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, pares","Pº de la Castellana, 100"
+618,6,Nuevos Ministerios,RENFE-Distribuidor,RENFE Cercanías,Nivel -2
+106,6,Cuatro Caminos,Central,Ascensor exterior,Santa Engracia (semiesquina Bravo Murillo)
+106,6,Cuatro Caminos,Central,"Reina Victoria, pares","Avda. Reina Victoria, 2"
+106,6,Cuatro Caminos,Central,Bravo Murillo,"Bravo Murillo, 101 (esq. Gta. Cuatro Caminos)"
+106,6,Cuatro Caminos,Central,Santa Engracia,"Santa Engracia, 168"
+106,6,Cuatro Caminos,Central,"Reina Victoria, impares","Gta. Cuatro Caminos (esq. Reina Victoria, 1)"
+106,6,Cuatro Caminos,Maudes,Maudes,"Maudes, 8"
+620,6,Guzmán el Bueno,General Rodrigo,"Av. Reina Victoria, impares - Guzmán el Bueno",Reina Victoria s/n
+620,6,Guzmán el Bueno,General Rodrigo,General Rodrigo,"Maestro Ángel Llorca, 17 (R. Victoria-Hacienda)"
+620,6,Guzmán el Bueno,General Rodrigo,Ascensor,"Reina Victoria, s/n"
+620,6,Guzmán el Bueno,Reina Victoria,"Reina Victoria, pares","Reina Victoria, 30"
+620,6,Guzmán el Bueno,Reina Victoria,Los Vascos,"Reina Victoria, 32 (Esq. Los Vascos)"
+621,6,Vicente Aleixandre,Vicente Aleixandre,Gregorio del Amo,"Gregorio del Amo, 8 (Col. M.S.J. Evangel.)"
+621,6,Vicente Aleixandre,Vicente Aleixandre,Juan XXIII,"Avda. de Moncloa, 15"
+622,6,Ciudad Universitaria,Ciudad Universitaria,Ascensor,"Avda. Complutense, pares"
+622,6,Ciudad Universitaria,Ciudad Universitaria,Avda. Complutense,Pza. Ramón y Cajal (Frente E. I. Agrónomos)
+622,6,Ciudad Universitaria,Ciudad Universitaria,Facultades,Pza. Ramón y Cajal (Frente E. Estomat.)
+622,6,Ciudad Universitaria,Ciudad Universitaria,Aparcamiento,Aparcamiento bajo la Plaza de Ramón y Cajal
+311,6,Moncloa,Arcipreste de Hita,Arcipreste de Hita,Arcipreste de Hita 1 y 3
+311,6,Moncloa,Arcipreste de Hita,Intercambiador E. del Aire,Intercambiador E. del Aire
+311,6,Moncloa,Cuartel General del Ejercito del Aire,Intercambiador,En vestibulo mixto Metro-Intercambiador (nivel-2) a la altura puerta corredera intercambiador
+311,6,Moncloa,Cuartel General del Ejercito del Aire,Princesa,"Altura Princesa, 96 (Junta municipal)"
+310,6,Argüelles,Alberto Aguilera,Princesa,"Princesa, 56 (Esq. A. Aguilera)"
+310,6,Argüelles,Alberto Aguilera,Ascensor,"Alberto Aguilera, pares"
+310,6,Argüelles,Alberto Aguilera,Alberto Aguilera,"Alberto Aguilera, 70 (Esq. Gaztambide)"
+310,6,Argüelles,Altamirano,Altamirano (Esq. Altamirano),"Princesa, 65"
+310,6,Argüelles,Guzmán el Bueno,Guzmán el Bueno - Ascensor,"C/ Alberto Aguilera, 62"
+310,6,Argüelles,Guzmán el Bueno,Guzmán el Bueno,"Alberto Aguilera, 62 (A. Mellado - G. Bueno)"
+625,6,Príncipe Pío,Paseo de la Florida,Renfe,Puertas mamparas en nivel -1 a la izda de los torniquetes
+625,6,Príncipe Pío,Paseo de la Florida,Ascensor,"Pº de la Florida, 2"
+625,6,Príncipe Pío,Paseo de la Florida,Intercambiador,"Pº de la Florida, 2"
+625,6,Príncipe Pío,Renfe,Renfe,Limites Metro/Renfe en el vestibulo mixto
+623,6,Puerta del Ángel,Puerta del Ángel,Caramuel,"Caramuel, 1"
+623,6,Puerta del Ángel,Puerta del Ángel,Plaza Santa Cristina,"Pza. Santa Cristina, 2"
+626,6,Alto de Extremadura,Alto de Extremadura,Pza. Alto de Extremadura,"Pº Extremadura, 156"
+626,6,Alto de Extremadura,Alto de Extremadura,Francisco Brizuela,"Pº Extremadura, 147"
+628,6,Lucero,Lucero,Cebreros,"Cebreros, impares (Esq. Higueras, pares)"
+628,6,Lucero,Lucero,Higueras,"Higueras, 49 (Esq. Cebreros)"
+628,6,Lucero,Lucero,Ascensor,"Cebreros, impares (Esq. Higueras, impares)"
+760,7,Hospital del Henares,Hospital del Henares,Hospital del Henares,"Camino Labor, s/n (frente al hospital) COSLADA"
+760,7,Hospital del Henares,Hospital del Henares,Ascensor,"Camino Labor, s/n (frente al hospital) COSLADA"
+759,7,Henares,Henares,Ascensor,"Avda. Algorta, 12 SAN FERNANDO DE HENARES"
+759,7,Henares,Henares,Algorta,"Avda. Algorta, 12 SAN FERNANDO DE HENARES"
+758,7,Jarama,Jarama,Plaza Guernica,"Plaza Guernica, esquina Avda. San Sebastián SAN FERNANDO DE HENARES"
+758,7,Jarama,Jarama,Ascensor,"Plaza Guernica, esquina Avda. San Sebastián SAN FERNANDO DE HENARES"
+757,7,San Fernando,San Fernando,Ascensor,"Plaza Echebeste s/n frente a C/ Gonzalo de Córdoba, 33 SAN FERNANDO DE HENARES"
+757,7,San Fernando,San Fernando,Gonzalo de Córdoba,"Plaza Echebeste s/n frente a C/ Gonzalo de Córdoba, 33 SAN FERNANDO DE HENARES"
+756,7,La Rambla,La Rambla,Ascensor,C/ Honduras s/n semiesquina a C/ Méjico COSLADA
+756,7,La Rambla,La Rambla,Honduras,C/ Honduras s/n semiesquina a C/ Méjico COSLADA
+755,7,Coslada Central,Coslada Central,Renfe,Correspondencia con Renfe COSLADA
+755,7,Coslada Central,Coslada Central,Doctor Fleming,C/ Doctor Fleming s/n en el parque Doctor Fleming COSLADA
+755,7,Coslada Central,Coslada Central,Ascensor,C/ Doctor Fleming s/n en el parque Doctor Fleming COSLADA
+754,7,Barrio del Puerto,Barrio del Puerto,Avda. España,Avda. España s/n junto al parque Avenida España COSLADA
+754,7,Barrio del Puerto,Barrio del Puerto,Ascensor,Avda. España s/n junto al parque Avenida España COSLADA
+751,7,Estadio Metropolitano,Correspondencia Línea 7/Línea 7B,Correspondencia Línea 7/Línea 7B,Nivel -1 Correspondencia Línea 7/Línea 7B
+751,7,Estadio Metropolitano,Estadio Metropolitano,Ascensor,C/ Estocolmo s/n semiesquina C/ Sofía
+751,7,Estadio Metropolitano,Estadio Metropolitano,Estocolmo,C/ Estocolmo s/n semiesquina C/ Sofía
+751,7,Estadio Metropolitano,Estadio Metropolitano,Estadio Metropolitano,Avda. Arcentales s/n
+701,7,Las Musas,Las Musas,"Av. Niza, impares","Avda. de Niza, s/n (esq. Trav. de Ronda)"
+701,7,Las Musas,Las Musas,"Av. Niza, pares","Avenida de Niza, s/n (esq. Travesía de Ronda)"
+702,7,San Blas,San Blas,"Pobladura del Valle, impares","Pobladura del Valle, s/n"
+702,7,San Blas,San Blas,"Pobladura del Valle, pares","C. Pobladura del Valle, s/n (frente a C. Vidriería)"
+703,7,Simancas,Amposta,Amposta,"Alberique, 4 (semesq. Amposta)"
+703,7,Simancas,Castillo de Uclés,Zaratán,Zaratan (semiesq. M. Altas Torres)
+703,7,Simancas,Castillo de Uclés,Castillo de Uclés,Castillo de Uclés (esquina M. Altas Torres)
+704,7,García Noblejas,García Noblejas,Hermanos García Noblejas,Luis Campos esq. Hermanos García Noblejas
+704,7,García Noblejas,José Arcones Gil,José Arcones Gil,"José Arcones Gil, 108 (esq. Río Nervión)"
+705,7,Ascao,Ascao,Ascao,"Ascao, 29 (Esq. Gutierr. Cetina)"
+505,7,Pueblo Nuevo,Emilio Ferrari,Hermanos de Pablo,"Alcalá, 373 (próx. Hnos. de Pablo)"
+505,7,Pueblo Nuevo,Emilio Ferrari,Ascensor,"Alcalá, 366"
+505,7,Pueblo Nuevo,Emilio Ferrari,Emilio Ferrari,"Alcalá, 364"
+505,7,Pueblo Nuevo,Vicente Espinel,Doctor Vallejo (Pileo-Dr. Vallejo),"Alcalá, 387"
+505,7,Pueblo Nuevo,Vicente Espinel,Vicente Espinel,"Alcalá, 380 (Campuzano-V. Espinel)"
+505,7,Pueblo Nuevo,Vicente Espinel,Campuzano,"Alcalá, 378 (Campuzano-V. Espinel)"
+707,7,Barrio de la Concepción,Barrio de la Concepción,Virgen del Romero,"Pza. Virgen del Romero, 1 (esq. Virgen de los Reyes)"
+707,7,Barrio de la Concepción,Barrio de la Concepción,Martínez Villergas,"Martínez Villergas, 1 (semiesq. Virgen del Val)"
+707,7,Barrio de la Concepción,Barrio de la Concepción/Ascensor,Ascensor,"Martínez Villergas, 3"
+708,7,Parque de las Avenidas,Parque de las Avenidas,"Avda. de Bruselas, impares","Avda. de Bruselas, impares"
+708,7,Parque de las Avenidas,Parque de las Avenidas,"Avda. de Bruselas, pares","Avda. de Bruselas, 56"
+709,7,Cartagena,Cartagena,"Avda. de América, impares","Avda. de América, s/n (esq. Av. C.P. Xifré)"
+709,7,Cartagena,Cartagena,"Avda. de América, pares","Avda. de América, 32 (esq. Gremios)"
+411,7,Avenida de América,Avenida de América,Intercambiador,Avenida de América frente al nº 7
+411,7,Avenida de América,Avenida de América,"Av. América, pares","Av. América, 4"
+411,7,Avenida de América,Francisco Silvela,Pedro Valdivia,"Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+711,7,Gregorio Marañón,Gregorio Marañón,Miguel Ángel,"Miguel Ángel, 33"
+711,7,Gregorio Marañón,Gregorio Marañón,Ascensor,José Abascal (esq. Castellana)
+711,7,Gregorio Marañón,Gregorio Marañón,José Abascal,José Abascal (esq. Castellana)
+712,7,Alonso Cano,Alonso Cano,José Abascal - Ponzano,"José Abascal, 20 (esq. Ponzano)"
+712,7,Alonso Cano,Alonso Cano,José Abascal - Alonso Cano,"José Abascal, 24 (esq. Alonso Cano)"
+712,7,Alonso Cano,Alonso Cano,Ascensor,"José Abascal, 20"
+214,7,Canal,Canal,Ascensor,"Bravo Murillo, impares"
+214,7,Canal,Canal,"Bravo Murillo, impares","Bravo Murillo, 47"
+214,7,Canal,Canal,"Bravo Murillo, pares","Bravo Murillo, 40"
+714,7,Islas Filipinas,Cristo Rey,Cea Bermúdez impares-Gaztambide,"Cea Bermúdez, 55"
+714,7,Islas Filipinas,Cristo Rey,Cea Bermúdez pares-Gaztambide,"Cea Bermúdez, 64"
+714,7,Islas Filipinas,Cristo Rey,Ascensor,"Cea Bermúdez, 51"
+714,7,Islas Filipinas,Islas Filipinas,Cea Bermúdez pares-Guzmán el Bueno,"Cea Bermúdez, 50"
+714,7,Islas Filipinas,Islas Filipinas,Cea Bermúdez impares-Guzmán el Bueno,"Cea Bermúdez, 43"
+620,7,Guzmán el Bueno,General Rodrigo,"Av. Reina Victoria, impares - Guzmán el Bueno",Reina Victoria s/n
+620,7,Guzmán el Bueno,General Rodrigo,General Rodrigo,"Maestro Ángel Llorca, 17 (R. Victoria-Hacienda)"
+620,7,Guzmán el Bueno,General Rodrigo,Ascensor,"Reina Victoria, s/n"
+620,7,Guzmán el Bueno,Reina Victoria,"Reina Victoria, pares","Reina Victoria, 30"
+620,7,Guzmán el Bueno,Reina Victoria,Los Vascos,"Reina Victoria, 32 (Esq. Los Vascos)"
+716,7,Francos Rodríguez,Francos Rodríguez,Moguer,"Moguer, 1"
+716,7,Francos Rodríguez,Francos Rodríguez,Alejandro Rodríguez,"Alejandro Rodríguez, 37"
+716,7,Francos Rodríguez,Francos Rodríguez,Ascensor,"Pablo Iglesias, 92"
+716,7,Francos Rodríguez,Francos Rodríguez,"Pablo Iglesias, impares - Francos Rodríguez","Pablo Iglesias, 91"
+716,7,Francos Rodríguez,Francos Rodríguez,"Pablo Iglesias, pares - Francos Rodríguez","Pablo Iglesias, 94"
+717,7,Valdezarza,Valdezarza,Emerenciana Zurilla,"San Restituto, 58"
+717,7,Valdezarza,Valdezarza,Armenteros,"Arciniega, 11"
+717,7,Valdezarza,Virgen de la Paloma,Ascensor,"San Restituto, 72"
+717,7,Valdezarza,Virgen de la Paloma,San Restituto,"San Restituto, 72"
+718,7,Antonio Machado,Antonio Machado,Valderrodrigo-Valdesangil,Valderrodrigo (esq. Valdesangil)
+718,7,Antonio Machado,Antonio Machado,Valderrodrigo,"Valderrodrigo, 82"
+718,7,Antonio Machado,Antonio Machado,Ascensor,Valderrodrigo
+719,7,Peñagrande,Peñagrande,"Vereda de Ganapanes, pares","Vereda de Ganapanes, s/n"
+719,7,Peñagrande,Peñagrande,"Vereda de Ganapanes, impares","Vereda de Ganapanes, 33"
+719,7,Peñagrande,Peñagrande,Ascensor,"Vereda de Ganapanes, impares (esq. Bañeza, 40)"
+720,7,Avenida de la Ilustración,Avenida de la Ilustración,Islas Cíes,"Islas Cíes, 23"
+720,7,Avenida de la Ilustración,Avenida de la Ilustración,Ascensor,"Islas Cíes, 23"
+721,7,Lacoma,Lacoma,Riscos de Polanco,"Riscos de Polanco, 2"
+721,7,Lacoma,Lacoma,Ascensor,"Riscos de Polanco, 2"
+721,7,Lacoma,Lacoma,Ramón Gómez de la Serna,"Ramón Gómez de la Serna, 33"
+722,7,Arroyofresno,Arroyofresno,Arroyo del Monte,"Parcela calles María de Maeztu (prox. Nº 52), Federica Montseny, Arroyo del Monte"
+722,7,Arroyofresno,Arroyofresno,Ascensor,"Parcela calles María de Maeztu (prox. Nº 52), Federica Montseny, Arroyo del Monte"
+723,7,Pitis,Pitis,Renfe,Renfe Cercanias
+723,7,Pitis,Pitis,Ascensor,Gloria Fuertes a la altura del nº 181
+723,7,Pitis,Pitis,Gloria Fuertes,Gloria Fuertes a la altura del nº 181
+618,8,Nuevos Ministerios,Azca-Renfe,Azca-Cercanías-Ascensor 1,Entrada Corte Inglés
+618,8,Nuevos Ministerios,Azca-Renfe,Centro Comercial,Entrada Corte Inglés
+618,8,Nuevos Ministerios,Azca-Renfe,Azca-Cercanías-Ascensor 2,Entrada Corte Inglés
+618,8,Nuevos Ministerios,Orense,Orense,"Orense, 2"
+618,8,Nuevos Ministerios,Orense,Agustín de Bethancourt,"Agustín de Bethancourt, 25"
+618,8,Nuevos Ministerios,Paseo de la Castellana,Renfe - Arcadas,"Nivel -1, limite entre Metro y los accesos de Renfe"
+618,8,Nuevos Ministerios,Paseo de la Castellana,Renfe - Raimundo Fernández Villaverde,"Nivel -1, limite entre Metro y los accesos de Renfe"
+618,8,Nuevos Ministerios,Paseo de la Castellana,Ascensor nº 5,"Pº de la Castellana, 67 en el bulevar"
+618,8,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, impares (bulevar)","Pº de la Castellana, 67 en el bulevar"
+618,8,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, pares","Pº de la Castellana,110. Esq. Joaquín Costa"
+618,8,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, impares",Pº de la Castellana esq. Raimundo Fdez. Villaverde
+618,8,Nuevos Ministerios,Paseo de la Castellana,Ascensor nº 6,"Pº de la Castellana, 100"
+618,8,Nuevos Ministerios,Paseo de la Castellana,"Pº de la Castellana, pares","Pº de la Castellana, 100"
+618,8,Nuevos Ministerios,RENFE-Distribuidor,RENFE Cercanías,Nivel -2
+802,8,Colombia,República Dominicana,"Principe Vergara, pares - Colombia","Principe Vergara, 260"
+802,8,Colombia,República Dominicana,Ascensor,"Colombia, 3"
+802,8,Colombia,República Dominicana,"Principe Vergara, impares - Pza. Rep. Dominicana","Principe Vergara, 273"
+802,8,Colombia,República Dominicana,"Principe Vergara, pares - Pza. Rep. Dominicana","Principe Vergara, 266"
+802,8,Colombia,República Dominicana,"Principe Vergara, impares - Colombia","Principe Vergara, 261"
+803,8,Pinar del Rey,Pinar del Rey,Gran Vía de Hortaleza,"Gran Vía de Hortaleza, 47"
+803,8,Pinar del Rey,Pinar del Rey,Ascensor,"Gran Vía de Hortaleza, frente 47 y 62"
+418,8,Mar de Cristal,Mar de Cristal,Mar Adriático,Mar Adriático (Esq. Ayacucho)
+418,8,Mar de Cristal,Mar de Cristal,Ascensor,Emigrantes (Esq. Arequipa)
+418,8,Mar de Cristal,Mar de Cristal,Gta. Mar de Cristal,Centro Comercial
+418,8,Mar de Cristal,Mar de Cristal,Arequipa,Emigrantes (Esq. Arequipa)
+805,8,Feria de Madrid,Feria de Madrid,"Fería de Madrid, pabellones, pares","Pabellones, pares"
+805,8,Feria de Madrid,Feria de Madrid,Ascensor,"Pabellones, pares"
+805,8,Feria de Madrid,Feria de Madrid,Avda. Capital de España - Madrid,Avda. Capital de España - Madrid
+805,8,Feria de Madrid,Feria de Madrid,"Fería de Madrid, pabellones, impares","Pabellones, impares"
+806,8,Aeropuerto T1-T2-T3,Aeropuerto,Ascensor,
+806,8,Aeropuerto T1-T2-T3,Aeropuerto,Ascensor,
+806,8,Aeropuerto T1-T2-T3,Aeropuerto,"Terminales 1, 2, 3",Próximo terminal 2
+807,8,Barajas,Barajas,Ascensor,"Avda. Logroño, 347"
+807,8,Barajas,Barajas,Avda. Logroño,"Avda. Logroño, 347 (Esq. Cº Viejo de Hortaleza)"
+808,8,Aeropuerto T4,Aeropuerto T4,Aeropuerto T4,Planta 0 de la terminal T-4
+952,9,Paco de Lucía,Costa BRava,Costa Brava,"C/ Costa Brava, 18"
+952,9,Paco de Lucía,Costa BRava,Ascensor,"C/ Costa Brava, 18"
+951,9,Mirasierra,Mirasierra,Mirasierra,"C/ Ventisquero de la Condesa, 28"
+951,9,Mirasierra,Mirasierra,Ascensor,"C/ Ventisquero de la Condesa, 28 esquina C/ Mirador de la Reina, 54"
+901,9,Herrera Oria,Fermín Caballero,Ginzo de Limia,Ginzo de Limia (Semiesq F. Caballero)
+901,9,Herrera Oria,Herrera Oria,Cardenal Herrera Oria,Ginzo de Limia (Semiesq H. Oria)
+902,9,Barrio del Pilar,Melchor Fernández Almagro,Melchor Fernández Almagro,"Ginzo de Limia, 11"
+902,9,Barrio del Pilar,Melchor Fernández Almagro,"Ginzo de Limia, pares","Ginzo de Limia, 2"
+902,9,Barrio del Pilar,Plaza Mondáriz,"Ginzo de Limia, pares","Ginzo de Limia, 38"
+902,9,Barrio del Pilar,Plaza Mondáriz,"Ginzo de Limia, impares","Ginzo de Limia, 29 (Próx. C.Comercial)"
+903,9,Ventilla,Ventilla,"Avda. Asturias, impares","Avda. Asturias, impares"
+903,9,Ventilla,Ventilla,"Avda. Asturias, pares","Avda. Asturias, pares"
+101,9,Plaza de Castilla,Avenida de Asturias,Intercambiador,Límite Intercambiador/Metro
+101,9,Plaza de Castilla,Bravo Murillo,Bravo Murillo,"Bravo Murillo, 377"
+101,9,Plaza de Castilla,Castellana,Castellana,Fr. Dep. Canal Isabel II
+101,9,Plaza de Castilla,Castellana,Ascensor,Plaza de Castilla esq. Paseo Castellana pares - acera del Canal de Isabel II
+101,9,Plaza de Castilla,Plaza de Castilla,Ascensor,"Paseo de la Castellana, bulevar central"
+101,9,Plaza de Castilla,Plaza de Castilla,Plaza de Castilla,Pº. Castellana bulevar central
+101,9,Plaza de Castilla,Plaza de Castilla,Intercambiador Superficie,Intercambiador Superficie
+101,9,Plaza de Castilla,Plaza de Castilla,Intercambiador Subterraneo,Interconexión con Intercambiador subterráneo
+101,9,Plaza de Castilla,Plaza de Castilla,"Castellana, impares","Pº Castellana, 189 (junto a torres)"
+905,9,Duque de Pastrana,Duque de Pastrana,Mateo Inurria,"Mateo Inurria, 36 (Esq. Pº de la Habana)"
+906,9,Pío XII,Manuel Montilla,Avenida de Pío XII,"Avda. de Pío XII, 16 (Esq. Manuel Montilla)"
+906,9,Pío XII,Pío XII,Avenida de Pío XII,"Avda. de Pío XII, 4 (Centro Comercial)"
+802,9,Colombia,República Dominicana,"Principe Vergara, pares - Colombia","Principe Vergara, 260"
+802,9,Colombia,República Dominicana,Ascensor,"Colombia, 3"
+802,9,Colombia,República Dominicana,"Principe Vergara, impares - Pza. Rep. Dominicana","Principe Vergara, 273"
+802,9,Colombia,República Dominicana,"Principe Vergara, pares - Pza. Rep. Dominicana","Principe Vergara, 266"
+802,9,Colombia,República Dominicana,"Principe Vergara, impares - Colombia","Principe Vergara, 261"
+908,9,Concha Espina,Plaza de Cataluña,Plaza de Cataluña,"Príncipe de Vergara, 204 (Pza. Cataluña)"
+908,9,Concha Espina,Príncipe de Vergara,Príncipe de Vergara,"Príncipe de Vergara, 246 (P.Autom. G. Civil)"
+909,9,Cruz del Rayo,Principe Vergara,"Principe Vergara, impares","Principe Vergara, 133"
+909,9,Cruz del Rayo,Principe Vergara,"Principe Vergara, pares","Principe Vergara, 128"
+909,9,Cruz del Rayo,Sánchez Pacheco,"Principe Vergara, impares","Principe Vergara, 181"
+909,9,Cruz del Rayo,Sánchez Pacheco,"Principe Vergara, pares",Principe Vergara (esq. Sánchez Pacheco)
+411,9,Avenida de América,Avenida de América,Intercambiador,Avenida de América frente al nº 7
+411,9,Avenida de América,Avenida de América,"Av. América, pares","Av. América, 4"
+411,9,Avenida de América,Francisco Silvela,Pedro Valdivia,"Pedro Valdivia, 31 (Francisco Silvela - Príncipe de Vergara)"
+510,9,Núñez de Balboa,Juan Bravo,Velázquez,"Velázquez, 92 (Esq. Juan Bravo, 11)"
+510,9,Núñez de Balboa,Juan Bravo,Núñez de Balboa,"Núñez de Balboa, 85 (Esq. Juan Bravo, 13)"
+510,9,Núñez de Balboa,Marqués de Salamanca,Pza. Marqués de Salamanca,"Pza. Marqués de Salamanca, 10"
+204,9,Príncipe de Vergara,Príncipe de Vergara,Alcalá,"Alcalá, 123 (Esq. Ppe. Vergara)"
+204,9,Príncipe de Vergara,Príncipe de Vergara-Ascensor,Ascensor 1,"Príncipe de Vergara, 7"
+204,9,Príncipe de Vergara,Príncipe de Vergara-Ascensor,Ascensor 2,"Príncipe de Vergara, 5"
+913,9,Ibiza,Ibiza,Ibiza,"Ibiza 4 - 7, bulevar (Semiesq. Lope de Rueda)"
+612,9,Sainz de Baranda,Doctor Esquerdo / Ascensor,Ascensor 1,"C/ Dr. Esquerdo, 62 (frente a C/Doctor Esquerdo, 107)"
+612,9,Sainz de Baranda,Doctor Esquerdo / Ascensor,Ascensor 2,"C/ Dr. Esquerdo, 62 (frente a C/Doctor Esquerdo, 107)"
+612,9,Sainz de Baranda,Sainz de Baranda,Sainz de Baranda,"C/ Dr. Esquerdo, 62"
+612,9,Sainz de Baranda,Sainz de Baranda,Doctor Esquerdo,"C/ Dr. Esquerdo, 62 (frente a C/Doctor Esquerdo, 107)"
+612,9,Sainz de Baranda,Sainz de Baranda,Rafael Salazar Alonso,"C/ Dr. Esquerdo, 103"
+612,9,Sainz de Baranda,Sainz de Baranda,"Moneda, impares","C/ Dr. Esquerdo, 107"
+915,9,Estrella,Estrella,Estrella Polar,"Sirio, 34"
+915,9,Estrella,Moratalaz,"Camino de los Vinateros, impares","Camino de los Vinateros, 1"
+915,9,Estrella,Moratalaz,"Camino de los Vinateros, pares","Camino de Vinateros, 10"
+916,9,Vinateros,Arroyo Belincoso,Arroyo Belincoso,"Arroyo Belincoso, 36"
+916,9,Vinateros,Arroyo Belincoso,"Vinateros, pares","Vinateros, 70"
+916,9,Vinateros,Vinateros,Corregidor José de Pasamonte,"Vinateros, 104"
+916,9,Vinateros,Vinateros,"Vinateros, impares","Vinateros, 75"
+917,9,Artilleros,Juan de Bobadilla,"Vinateros, impares","Vinateros, 119 (Semiesq. Cañada, 47)"
+917,9,Artilleros,Juan de Bobadilla,"Vinateros, pares","Vinateros, 172 (Semiesq. J. Bobadilla)"
+917,9,Artilleros,Pico de Artilleros,Vinateros,"Pico de Vinateros, 126 (Esq. Vinateros, impares)"
+917,9,Artilleros,Pico de Artilleros,Pico de Artilleros,"Pico de Artilleros, 59"
+918,9,Pavones,Pavones,Ascensor,"Hacienda de Pavones, 340"
+918,9,Pavones,Pavones,Terminal de Autobuses,"Hacienda de Pavones, s/n (pares frente al nº 215)"
+918,9,Pavones,Pavones,"Hacienda de Pavones, impares","Hacienda de Pavones, 215"
+919,9,Valdebernardo,Norte,Ascensor,Indalecio Prieto (parcela 24) (semiesq. Raya)
+919,9,Valdebernardo,Norte,Bulevar Indalecio Prieto - Raya,Indalecio Prieto (parcela 23) (esq. Raya)
+919,9,Valdebernardo,Sur,Bulevar Indalecio Prieto - Los Pinilla,"Indalecio Prieto, 33 (semiesq. Los Pinillas)"
+920,9,Vicálvaro,Vicálvaro,"Pº Artilleros, impares","Pº Artilleros, s/n (C. Comercial)"
+920,9,Vicálvaro,Vicálvaro,"Pº Artilleros, pares","Pº Artilleros, s/n (Universidad)"
+920,9,Vicálvaro,Vicálvaro,Ascensor,"Pº Artilleros, s/n (Universidad)"
+921,9,San Cipriano,San Cipriano,"San Cipriano, pares","San Cipriano, 44"
+921,9,San Cipriano,San Cipriano,Ascensor,"San Cipriano, 50"
+921,9,San Cipriano,San Cipriano,"San Cipriano, impares","San Cipriano, 55"
+922,9,Puerta de Arganda,Puerta de Arganda,Renfe-Edificio de acceso,"Nivel 0, en el interior del edificio de acceso"
+922,9,Puerta de Arganda,Puerta de Arganda,Ascensor no acceso independiente,"En el interior del edificio de acceso- no es exterior, ni un acceso independente"
+922,9,Puerta de Arganda,Puerta de Arganda,Renfe-Correspondencia,Nivel -1 en el vestíbulo mixto Metro-Renfe
+922,9,Puerta de Arganda,Puerta de Arganda,Terminal de Autobuses,"San Cipriano, 85"
+924,9,Rivas Urbanizaciones,Rivas Urbanizaciones,Paseo del Ferrocarril,"Paseo del Ferrocarril, 9 RIVAS VACIAMADRID"
+925,9,Rivas Futura,Rivas Futura,Ascensor,nivel parking RIVAS VACIAMADRID
+925,9,Rivas Futura,Rivas Futura,Concepción Arenal,C/ Concepción Arenal esquina Avenida Aurelio Álvarez RIVAS VACIAMADRID
+925,9,Rivas Futura,Rivas Futura,Marie Curie,C/ Marie Curie esquina C/ Concepción Arenal RIVAS VACIAMADRID
+926,9,Rivas Vaciamadrid,Rivas Vaciamadrid,Wenceslao García,"Wenceslao García, s/n RIVAS VACIAMADRID"
+927,9,La Poveda,La Poveda,Ctra. Campo Real,Ctra. Campo Real (M-300) Km. 2 ARGANDA DEL REY
+928,9,Arganda del Rey,Arganda del Rey,Pº de la Estación,"Pº de la Estación, 37 ARGANDA DEL REY"
+209,Ramal,Ópera,Plaza de Isabel II,Campomanes,"Plaza de Isabel II, 5"
+209,Ramal,Ópera,Plaza de Isabel II,Arenal,"Plaza de Isabel II, 1 (Esq. Arenal)"
+209,Ramal,Ópera,Plaza de Isabel II,Ascensor,"Plaza de Isabel II, 8"
+625,Ramal,Príncipe Pío,Paseo de la Florida,Renfe,Puertas mamparas en nivel -1 a la izda de los torniquetes
+625,Ramal,Príncipe Pío,Paseo de la Florida,Ascensor,"Pº de la Florida, 2"
+625,Ramal,Príncipe Pío,Paseo de la Florida,Intercambiador,"Pº de la Florida, 2"
+625,Ramal,Príncipe Pío,Renfe,Renfe,Limites Metro/Renfe en el vestibulo mixto

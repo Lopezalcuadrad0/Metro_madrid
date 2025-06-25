@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Metro de Madrid{% endblock %}</title>
+    
+    <!-- Favicon optimizado - una sola referencia -->
+    <link rel="icon" type="image/png" href="/static/logos/Logomarca_azul.png">
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="/static/logos/Logomarca_azul.png" as="image" type="image/png">
+    <link rel="preload" href="/static/css/global.css" as="style">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css">
+    {% block extra_css %}{% endblock %}
+    
+    <!-- Meta tags -->
+    <meta name="description" content="{% block description %}Información en tiempo real del Metro de Madrid{% endblock %}">
+    <meta name="keywords" content="metro, madrid, transporte, líneas, estaciones">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include 'header.html' %}
+    
+    <main style="margin-top: 48px;">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <script>
+        // ---- GESTOR DE TEMA GLOBAL ----
+        (function() {
+            function applyTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                console.log(`🎨 Tema global aplicado: ${theme}`);
+            }
+
+            async function initializeTheme() {
+                try {
+                    const response = await fetch('/api/lines/global-status');
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.activo) {
+                            applyTheme('nocturno');
+                            return;
+                        }
+                    }
+                } catch (error) {
+                    console.error('No se pudo verificar el modo nocturno, usando tema guardado.', error);
+                }
+
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme && savedTheme !== 'nocturno') {
+                    applyTheme(savedTheme);
+                } else {
+                    applyTheme('light'); // Tema por defecto
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', initializeTheme);
+        })();
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+</html> 

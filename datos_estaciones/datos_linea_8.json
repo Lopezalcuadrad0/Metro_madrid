@@ -1,0 +1,593 @@
+{
+  "Aeropuerto T1-T2-T3": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Aeropuerto T1-T2-T3",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Aeropuerto",
+        "nombre": "Ascensor",
+        "direccion": "Aeropuerto\tAscensor"
+      },
+      {
+        "vestibulo": "Aeropuerto",
+        "nombre": "Terminales 1, 2, 3",
+        "direccion": "Próximo terminal 2"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Aeropuerto T4": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Aeropuerto T4",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Azca-Renfe",
+        "nombre": "Azca-Cercanías-Ascensor 1",
+        "direccion": "Entrada Corte Inglés"
+      },
+      {
+        "vestibulo": "Azca-Renfe",
+        "nombre": "Centro Comercial",
+        "direccion": "Entrada Corte Inglés"
+      },
+      {
+        "vestibulo": "Azca-Renfe",
+        "nombre": "Azca-Cercanías-Ascensor 2",
+        "direccion": "Entrada Corte Inglés"
+      },
+      {
+        "vestibulo": "Orense",
+        "nombre": "Orense",
+        "direccion": "Orense, 2"
+      },
+      {
+        "vestibulo": "Orense",
+        "nombre": "Agustín de Bethancourt",
+        "direccion": "Agustín de Bethancourt, 25"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Renfe - Arcadas",
+        "direccion": "Nivel -1, limite entre Metro y los accesos de Renfe"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Renfe - Raimundo Fernández Villaverde",
+        "direccion": "Nivel -1, limite entre Metro y los accesos de Renfe"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Ascensor nº 5",
+        "direccion": "Pº de la Castellana, 67 en el bulevar"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Pº de la Castellana, impares (bulevar)",
+        "direccion": "Pº de la Castellana, 67 en el bulevar"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Pº de la Castellana, pares",
+        "direccion": "Pº de la Castellana,110. Esq. Joaquín Costa"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Pº de la Castellana, impares",
+        "direccion": "Pº de la Castellana esq. Raimundo Fdez. Villaverde"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Ascensor nº 6",
+        "direccion": "Pº de la Castellana, 100"
+      },
+      {
+        "vestibulo": "Paseo de la Castellana",
+        "nombre": "Pº de la Castellana, pares",
+        "direccion": "Pº de la Castellana, 100"
+      },
+      {
+        "vestibulo": "RENFE-Distribuidor",
+        "nombre": "RENFE Cercanías",
+        "direccion": "Nivel -2"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Barajas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Barajas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Barajas",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Logroño, 347"
+      },
+      {
+        "vestibulo": "Barajas",
+        "nombre": "Avda. Logroño",
+        "direccion": "Avda. Logroño, 347 (Esq. Cº Viejo de Hortaleza)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Mar de Cristal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Mar de Cristal",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Mar Adriático",
+        "direccion": "Mar Adriático (Esq. Ayacucho)"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Ascensor",
+        "direccion": "Emigrantes (Esq. Arequipa)"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Gta. Mar de Cristal",
+        "direccion": "Centro Comercial"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Arequipa",
+        "direccion": "Emigrantes (Esq. Arequipa)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pinar del Rey": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pinar del Rey",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Pinar del Rey",
+        "nombre": "Gran Vía de Hortaleza",
+        "direccion": "Gran Vía de Hortaleza, 47"
+      },
+      {
+        "vestibulo": "Pinar del Rey",
+        "nombre": "Ascensor",
+        "direccion": "Gran Vía de Hortaleza, frente 47 y 62"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Colombia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Colombia",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, pares - Colombia",
+        "direccion": "Principe Vergara, 260"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Ascensor",
+        "direccion": "Colombia, 3"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, impares - Pza. Rep. Dominicana",
+        "direccion": "Principe Vergara, 273"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, pares - Pza. Rep. Dominicana",
+        "direccion": "Principe Vergara, 266"
+      },
+      {
+        "vestibulo": "República Dominicana",
+        "nombre": "Principe Vergara, impares - Colombia",
+        "direccion": "Principe Vergara, 261"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Nuevos Ministerios": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Nuevos Ministerios",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Gregorio Marañón": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Gregorio Marañón",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alonso Martínez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alonso Martínez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Colón": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Colón",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Serrano": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Serrano",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Velázquez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Velázquez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Goya": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Goya",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Lista": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Lista",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Diego de León": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Diego de León",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de América": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de América",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Prosperidad": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Prosperidad",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alfonso XIII": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alfonso XIII",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Avenida de la Paz": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Avenida de la Paz",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Arturo Soria": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Arturo Soria",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Esperanza": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Esperanza",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Canillas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Canillas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Lorenzo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Lorenzo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Parque de Santa María": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Parque de Santa María",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Hortaleza": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hortaleza",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Mar Adriático",
+        "direccion": "Mar Adriático (Esq. Ayacucho)"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Ascensor",
+        "direccion": "Emigrantes (Esq. Arequipa)"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Gta. Mar de Cristal",
+        "direccion": "Centro Comercial"
+      },
+      {
+        "vestibulo": "Mar de Cristal",
+        "nombre": "Arequipa",
+        "direccion": "Emigrantes (Esq. Arequipa)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Manoteras": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Manoteras",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pinar de Chamartín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pinar de Chamartín",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

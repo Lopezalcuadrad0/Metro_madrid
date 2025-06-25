@@ -1,0 +1,1255 @@
+{
+  "Pinar de Chamartín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pinar de Chamartín",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Pinar de Chamartín",
+        "nombre": "Ascensor",
+        "direccion": "C/ Arturo Soria, 330"
+      },
+      {
+        "vestibulo": "Pinar de Chamartín",
+        "nombre": "Arturo Soria",
+        "direccion": "C/ Arturo Soria, 330"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Bambú": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Bambú",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Bambú",
+        "nombre": "Ascensor",
+        "direccion": "C/ Bambú, frente al nº 14"
+      },
+      {
+        "vestibulo": "Bambú",
+        "nombre": "Bambú",
+        "direccion": "C/ Bambú, frente al nº 14"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Chamartín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Chamartín",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Pinar de Chamartín",
+        "nombre": "Ascensor",
+        "direccion": "C/ Arturo Soria, 330"
+      },
+      {
+        "vestibulo": "Pinar de Chamartín",
+        "nombre": "Arturo Soria",
+        "direccion": "C/ Arturo Soria, 330"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Plaza de Castilla": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza de Castilla",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Avenida de Asturias",
+        "nombre": "Intercambiador",
+        "direccion": "Límite Intercambiador/Metro"
+      },
+      {
+        "vestibulo": "Bravo Murillo",
+        "nombre": "Bravo Murillo",
+        "direccion": "Bravo Murillo, 377"
+      },
+      {
+        "vestibulo": "Castellana",
+        "nombre": "Castellana",
+        "direccion": "Fr. Dep. Canal Isabel II"
+      },
+      {
+        "vestibulo": "Castellana",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Castilla esq. Paseo Castellana pares - acera del Canal de Isabel II"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Ascensor",
+        "direccion": "Paseo de la Castellana, bulevar central"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Plaza de Castilla",
+        "direccion": "Pº. Castellana bulevar central"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Intercambiador Superficie",
+        "direccion": "Intercambiador Superficie"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Intercambiador Subterraneo",
+        "direccion": "Interconexión con Intercambiador subterráneo"
+      },
+      {
+        "vestibulo": "Plaza de Castilla",
+        "nombre": "Castellana, impares",
+        "direccion": "Pº Castellana, 189 (junto a torres)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tienda de Metro",
+      "Parking disuasorio",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Atención al cliente",
+      "Oficina de gestión TTP",
+      "Oficina Objetos Perdidos",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Valdeacederas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Valdeacederas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Tetuán": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Tetuán",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Algodonales",
+        "nombre": "Algodonales",
+        "direccion": "Bravo Murillo, 269"
+      },
+      {
+        "vestibulo": "General Margallo",
+        "nombre": "General Margallo",
+        "direccion": "General Margallo, 2 (esq. Bravo Murillo)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Estrecho": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Estrecho",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Fulgencio de Miguel",
+        "nombre": "Fulgencio de Miguel",
+        "direccion": "Bravo Murillo, 205"
+      },
+      {
+        "vestibulo": "Fulgencio de Miguel",
+        "nombre": "Manuel Luna",
+        "direccion": "Bravo Murillo, 194"
+      },
+      {
+        "vestibulo": "Juan de Olías",
+        "nombre": "Juan de Olías",
+        "direccion": "Bravo Murillo, 172"
+      },
+      {
+        "vestibulo": "Juan de Olías",
+        "nombre": "Navarra",
+        "direccion": "Bravo Murillo, 181"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alvarado": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alvarado",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Cuatro Caminos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Cuatro Caminos",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Central",
+        "nombre": "Ascensor exterior",
+        "direccion": "Santa Engracia (semiesquina Bravo Murillo)"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Reina Victoria, pares",
+        "direccion": "Avda. Reina Victoria, 2"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Bravo Murillo",
+        "direccion": "Bravo Murillo, 101 (esq. Gta. Cuatro Caminos)"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Santa Engracia",
+        "direccion": "Santa Engracia, 168"
+      },
+      {
+        "vestibulo": "Central",
+        "nombre": "Reina Victoria, impares",
+        "direccion": "Gta. Cuatro Caminos (esq. Reina Victoria, 1)"
+      },
+      {
+        "vestibulo": "Maudes",
+        "nombre": "Maudes",
+        "direccion": "Maudes, 8"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ríos Rosas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ríos Rosas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Bretón de los Herreros",
+        "nombre": "Santa Engracia-Plaza Descubridor Diego de Ordás",
+        "direccion": "Santa Engracia, 127"
+      },
+      {
+        "vestibulo": "Ríos Rosas",
+        "nombre": "Ríos Rosas, impares",
+        "direccion": "Ríos Rosas, 19"
+      },
+      {
+        "vestibulo": "Ríos Rosas",
+        "nombre": "Ríos Rosas, pares",
+        "direccion": "Ríos Rosas, 22"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Iglesia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Iglesia",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Eloy Gonzalo",
+        "nombre": "Eloy Gonzalo, impares",
+        "direccion": "Eloy Gonzalo, 35"
+      },
+      {
+        "vestibulo": "Eloy Gonzalo",
+        "nombre": "Ascensor. Acceso a línea 1 dirección Pinar de Chamartín",
+        "direccion": "Glorieta Pintor Sorolla, 1"
+      },
+      {
+        "vestibulo": "Eloy Gonzalo",
+        "nombre": "Eloy Gonzalo, pares",
+        "direccion": "Eloy Gonzalo, 38"
+      },
+      {
+        "vestibulo": "Martínez Campos",
+        "nombre": "Ascensor. Acceso a línea 1 dirección Valdecarros",
+        "direccion": "General Martínez Campos, 1 (esq C/ Santa Engracia)"
+      },
+      {
+        "vestibulo": "Martínez Campos",
+        "nombre": "Santa Engracia",
+        "direccion": "Santa Engracia, 58"
+      },
+      {
+        "vestibulo": "Martínez Campos",
+        "nombre": "General Martínez Campos",
+        "direccion": "General Martínez Campos, 1"
+      },
+      {
+        "vestibulo": "Sagunto",
+        "nombre": "Sagunto",
+        "direccion": "Santa Engracia, 61"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Espacio histórico de Metro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Bilbao": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Bilbao",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Tribunal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Tribunal",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Gran Vía": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Gran Vía",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Fuencarral",
+        "direccion": "Gran Vía, 28"
+      },
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Montera-Ascensor",
+        "direccion": "Montera, 47"
+      },
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Montera",
+        "direccion": "Montera, 48"
+      },
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 25"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Calle -Nivel -4",
+        "direccion": "Escaleras nivel -4"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Montera-Ascensor nivel - 4",
+        "direccion": "Montera, 47"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Cercanías",
+        "direccion": "Límite Metro/Renfe en nivel - 4"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Espacio histórico de Metro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sol": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sol",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mayor",
+        "nombre": "Ascensor",
+        "direccion": "Puerta del Sol"
+      },
+      {
+        "vestibulo": "Mayor",
+        "nombre": "Mayor",
+        "direccion": "Pta. del Sol, s/n (esq. Mayor y Arenal)"
+      },
+      {
+        "vestibulo": "Preciados",
+        "nombre": "Centro Comercial",
+        "direccion": "Acceso directo al centro comercial"
+      },
+      {
+        "vestibulo": "Preciados",
+        "nombre": "Preciados",
+        "direccion": "Preciados, 3"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Alcalá",
+        "direccion": "Puerta del Sol, 13"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Carmen",
+        "direccion": "Puerta del Sol, 12"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "RENFE",
+        "direccion": "Cúpula de RENFE y Ascensor"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Carretas",
+        "direccion": "Pta. del Sol, 7 (semiesq. Carretas)"
+      },
+      {
+        "vestibulo": "RENFE",
+        "nombre": "RENFE",
+        "direccion": "Intercambiador Nivel -1"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tienda de Metro",
+      "Quioscos ONCE",
+      "Atención al cliente",
+      "Oficina de gestión TTP",
+      "Tiendas"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Tirso de Molina": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Tirso de Molina",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Conde de Romanones",
+        "nombre": "Conde de Romanones",
+        "direccion": "Pza. Tirso de Molina, 14"
+      },
+      {
+        "vestibulo": "Magdalena",
+        "nombre": "Magdalena",
+        "direccion": "Pza. Tirso de Molina, 1"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Antón Martín": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Antón Martín",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Estación del Arte": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Estación del Arte",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Atocha": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Atocha",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Menéndez Pelayo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Menéndez Pelayo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pacífico": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pacífico",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Doctor Esquerdo",
+        "nombre": "Doctor Esquerdo, impares",
+        "direccion": "Doctor Esquerdo, 219 (Semiesq. Avda. Ciudad de Barcelona)"
+      },
+      {
+        "vestibulo": "Doctor Esquerdo",
+        "nombre": "Doctor Esquerdo, pares",
+        "direccion": "Doctor Esquerdo, 186 (Semiesq. Avda. Ciudad de Barcelona)"
+      },
+      {
+        "vestibulo": "Dr. Esquerdo - Línea 6 - Ascensor",
+        "nombre": "Ascensor",
+        "direccion": "C/ Doctor Esquerdo, 219"
+      },
+      {
+        "vestibulo": "Sánchez Barcáiztegui",
+        "nombre": "Sánchez Barcáiztegui",
+        "direccion": "Sánchez Barcáiztegui, 1"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE",
+      "Espacio histórico de Metro",
+      "Tiendas",
+      "Pasillos rodantes"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Puente de Vallecas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puente de Vallecas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Albufera",
+        "nombre": "Albufera, impares",
+        "direccion": "Avda. Albufera, 9"
+      },
+      {
+        "vestibulo": "Albufera",
+        "nombre": "Albufera, pares",
+        "direccion": "Avda. Albufera, 14"
+      },
+      {
+        "vestibulo": "Peña Prieta",
+        "nombre": "Peña Prieta",
+        "direccion": "Peña Prieta, 2"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Nueva Numancia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Nueva Numancia",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Norte",
+        "nombre": "Avda. Albufera, pares",
+        "direccion": "Avda. Albufera, 54"
+      },
+      {
+        "vestibulo": "Norte",
+        "nombre": "Avda. Albufera, impares",
+        "direccion": "Avda. Albufera, 47"
+      },
+      {
+        "vestibulo": "Sur",
+        "nombre": "Avda. Albufera, pares",
+        "direccion": "Avda. Albufera, 76"
+      },
+      {
+        "vestibulo": "Sur",
+        "nombre": "Avda. Albufera, impares",
+        "direccion": "Avda. Albufera, 69"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Portazgo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Portazgo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Albufera",
+        "nombre": "Albufera, pares",
+        "direccion": "Avda. Albufera, 108 (Esq. Sierra del Cadi)"
+      },
+      {
+        "vestibulo": "Albufera",
+        "nombre": "Rogelio Folgueras",
+        "direccion": "Avda. Albufera, 117 (Esq. R. Folgueras)"
+      },
+      {
+        "vestibulo": "Josefa Díaz/Ascensor",
+        "nombre": "Ascensor 1. Acceso a línea 1 dirección Valdecarros",
+        "direccion": "Avenida Albufera, 125"
+      },
+      {
+        "vestibulo": "Palomeras",
+        "nombre": "Teniente Muñoz Díaz",
+        "direccion": "Avda. Albufera, 130"
+      },
+      {
+        "vestibulo": "Palomeras",
+        "nombre": "Albufera, impares",
+        "direccion": "Avda. Albufera, 145 (Esq. D. Folgueras)"
+      },
+      {
+        "vestibulo": "Payaso Fofó/Ascensor",
+        "nombre": "Ascensor 2. Acceso a línea 1 dirección Pinar de Chamartín",
+        "direccion": "Avenida Albufera, 112"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Buenos Aires": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Buenos Aires",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Buenos Aires",
+        "nombre": "Pío Felipe",
+        "direccion": "Avda. Albufera, 179 (Esq. Pio Felipe)"
+      },
+      {
+        "vestibulo": "Buenos Aires",
+        "nombre": "Buenos Aires",
+        "direccion": "Avda. Albufera, 140 (Esq. Buenos Aires)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alto del Arenal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alto del Arenal",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alto Arenal",
+        "nombre": "Albufera, pares",
+        "direccion": "Avda. Albufera, 248"
+      },
+      {
+        "vestibulo": "Alto Arenal",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Albufera, 246"
+      },
+      {
+        "vestibulo": "Alto Arenal",
+        "nombre": "Albufera, impares",
+        "direccion": "Santillana del Mar, 19 (Esq. Avda. Albufera)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Miguel Hernández": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Miguel Hernández",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Miguel Hernández",
+        "nombre": "Rafael Alberti-Ambulatorio",
+        "direccion": "Avda. Albufera, 285 (Esq. Rafael Alberti)"
+      },
+      {
+        "vestibulo": "Miguel Hernández",
+        "nombre": "Albufera, pares",
+        "direccion": "Avda. Albufera, 290"
+      },
+      {
+        "vestibulo": "Miguel Hernández",
+        "nombre": "Aparcamiento",
+        "direccion": "Pasarela (Cañon Albufera, pares)"
+      },
+      {
+        "vestibulo": "Miguel Hernández",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Albufera, 285"
+      },
+      {
+        "vestibulo": "Miguel Hernández",
+        "nombre": "Aparcamiento-nivel vestíbulo",
+        "direccion": "Vestíbulo Miguel Hernández"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Metroteca"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sierra de Guadalupe": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sierra de Guadalupe",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Avenida de la Democracia",
+        "direccion": "Avda. de la Democracia, 1"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Sierra de Guadalupe",
+        "direccion": "Estación de Renfe"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Ascensor",
+        "direccion": "Avda. de la Democracia, 3"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Renfe",
+        "direccion": "Vestíbulo Renfe"
+      },
+      {
+        "vestibulo": "Universidad",
+        "nombre": "Avda. de la Democracia-Arboleda",
+        "direccion": "Avda. de la Democracia, 4"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Villa de Vallecas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Villa de Vallecas",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Congosto": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Congosto",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Congosto",
+        "nombre": "Plaza de Congosto",
+        "direccion": "Congosto, 33"
+      },
+      {
+        "vestibulo": "Congosto",
+        "nombre": "Ascensor",
+        "direccion": "Congosto, 50"
+      },
+      {
+        "vestibulo": "Congosto",
+        "nombre": "Congosto",
+        "direccion": "Congosto, 35"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Gavia": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Gavia",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "La Gavia",
+        "nombre": "Avda. Ensanche de Vallecas",
+        "direccion": "Avda. Ensan. de Vallecas esq C/ Alto de la Sartenilla, 2"
+      },
+      {
+        "vestibulo": "La Gavia",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Ensan. de Vallecas esq C/ Alto de la Sartenilla, 2"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Las Suertes": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Las Suertes",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Las Suertes",
+        "nombre": "Cañada del Santísimo",
+        "direccion": "C/ Cañada del Santísimo esquina Avda. Ensanche de Vallecas, 80"
+      },
+      {
+        "vestibulo": "Las Suertes",
+        "nombre": "Ascensor",
+        "direccion": "C/ Cañada del Santísimo esquina Avda. Ensanche de Vallecas, 80"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Valdecarros": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Valdecarros",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Valdecarros",
+        "nombre": "Avda. Ensanche de Vallecas",
+        "direccion": "Avda. Ensanche de Vallecas 120A esq. Avda. Gran Vía del Sureste"
+      },
+      {
+        "vestibulo": "Valdecarros",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Ensanche de Vallecas 120A esq. Avda. Gran Vía del Sureste"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

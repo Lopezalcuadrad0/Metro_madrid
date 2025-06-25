@@ -1,0 +1,779 @@
+{
+  "Alameda de Osuna": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alameda de Osuna",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alameda de Osuna",
+        "nombre": "Ascensor",
+        "direccion": "C/ de la Corbeta,14 (esquina calle de La Rioja)"
+      },
+      {
+        "vestibulo": "Alameda de Osuna",
+        "nombre": "Corbeta",
+        "direccion": "C/ de la Corbeta,14 (esquina calle de La Rioja)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "El Capricho": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "El Capricho",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Canillejas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Canillejas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Canillejas",
+        "nombre": "Alcalá, pares",
+        "direccion": "Alcalá, 640 (semiesq. Cartago, 1)"
+      },
+      {
+        "vestibulo": "Josefa Valcárcel",
+        "nombre": "Alcalá/Josefa Valcárcel",
+        "direccion": "C/ Alcalá, frente al 636"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Torre Arias": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Torre Arias",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Suanzes": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Suanzes",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ciudad Lineal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ciudad Lineal",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pueblo Nuevo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pueblo Nuevo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Quintana": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Quintana",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "El Carmen": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "El Carmen",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ventas": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ventas",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Ventas",
+        "nombre": "Plaza de Toros",
+        "direccion": "Alcalá, 233 (Frente a Pza. de Toros)"
+      },
+      {
+        "vestibulo": "Ventas",
+        "nombre": "Plaza de Toros",
+        "direccion": "Alcalá, 233 (Frente a Pza. de Toros)"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Diego de León": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Diego de León",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Alcántara (Línea 5)",
+        "direccion": "Francisco Silvela, 47 (esq. Alcántara)"
+      },
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Francisco Silvela, pares",
+        "direccion": "Francisco Silvela, 34 (esquina Azcona)"
+      },
+      {
+        "vestibulo": "Alcántara",
+        "nombre": "Francisco Silvela, pares (Línea 5)",
+        "direccion": "Francisco Silvela, 40 (esquina Eraso)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, impares",
+        "direccion": "Francisco Silvela, 61 (rampa esquina Diego de León)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, pares (línea 4)",
+        "direccion": "Francisco Silvela, 54 (rampa)"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Diego de León (línea 4)",
+        "direccion": "Diego de León, 69"
+      },
+      {
+        "vestibulo": "Diego de León",
+        "nombre": "Francisco Silvela, pares",
+        "direccion": "Francisco Silvela, 56"
+      },
+      {
+        "vestibulo": "Juan Bravo",
+        "nombre": "Juan Bravo/Alcántara",
+        "direccion": "Juan Bravo bulevar, altura 69"
+      },
+      {
+        "vestibulo": "Juan Bravo",
+        "nombre": "Juan Bravo-Conde Peñalver",
+        "direccion": "Juan Bravo bulevar, altura 52-55"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Núñez de Balboa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Núñez de Balboa",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Rubén Darío": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Rubén Darío",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alonso Martínez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alonso Martínez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Chueca": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Chueca",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Chueca",
+        "nombre": "Plaza de Chueca",
+        "direccion": "Plaza de Chueca, 4"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Gran Vía": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Gran Vía",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Fuencarral",
+        "direccion": "Gran Vía, 28"
+      },
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Montera-Ascensor",
+        "direccion": "Montera, 47"
+      },
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Montera",
+        "direccion": "Montera, 48"
+      },
+      {
+        "vestibulo": "Antonio Palacios",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 25"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Calle -Nivel -4",
+        "direccion": "Escaleras nivel -4"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Montera-Ascensor nivel - 4",
+        "direccion": "Montera, 47"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Cercanías",
+        "direccion": "Límite Metro/Renfe en nivel - 4"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Espacio histórico de Metro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Callao": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Callao",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Callao",
+        "nombre": "Centro Comercial",
+        "direccion": "En pasillo del acceso Cine Avenida"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Callao, 1"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Plaza de Callao",
+        "direccion": "Plaza de Callao, 1"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Palacio de la Prensa",
+        "direccion": "Gran Vía, 46"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 39"
+      },
+      {
+        "vestibulo": "Jacometrezo",
+        "nombre": "Jacometrezo",
+        "direccion": "C/ Jacometrezo, 1"
+      },
+      {
+        "vestibulo": "Jacometrezo",
+        "nombre": "Ascensor",
+        "direccion": "C/ Jacometrezo, impares"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ópera": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ópera",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Campomanes",
+        "direccion": "Plaza de Isabel II, 5"
+      },
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Arenal",
+        "direccion": "Plaza de Isabel II, 1 (Esq. Arenal)"
+      },
+      {
+        "vestibulo": "Plaza de Isabel II",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Isabel II, 8"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Espacio histórico de Metro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "La Latina": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "La Latina",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "La Latina",
+        "nombre": "San Francisco",
+        "direccion": "Toledo, 56"
+      },
+      {
+        "vestibulo": "La Latina",
+        "nombre": "San Millán",
+        "direccion": "Toledo, 65 (S. Millan-Maldonadas)"
+      },
+      {
+        "vestibulo": "La Latina",
+        "nombre": "Toledo",
+        "direccion": "Toledo, 52"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Puerta de Toledo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puerta de Toledo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Acacias": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Acacias",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pirámides": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pirámides",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Marqués de Vadillo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Marqués de Vadillo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Urgel": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Urgel",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Oporto": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Oporto",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Vista Alegre": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Vista Alegre",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Carabanchel": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Carabanchel",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Eugenia de Montijo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Eugenia de Montijo",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Eugenia de Montijo",
+        "nombre": "Ntra. Sra. de la Luz",
+        "direccion": "Ocaña, 70"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Aluche": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Aluche",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Empalme": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Empalme",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Campamento": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Campamento",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Casa de Campo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Casa de Campo",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

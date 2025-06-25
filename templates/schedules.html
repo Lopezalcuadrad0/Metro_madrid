@@ -1,0 +1,376 @@
+{% extends "header.html" %}
+
+{% block title %}Horarios - Metro de Madrid{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">
+                <i class="fas fa-clock text-primary"></i>
+                Horarios del Metro de Madrid
+            </h1>
+            <p class="text-muted mb-4">Selecciona una línea para ver sus horarios oficiales</p>
+        </div>
+    </div>
+
+    <!-- Selector de líneas -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-train"></i>
+                        Seleccionar Línea
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row" id="lineSelector">
+                        {% for line in lines %}
+                        <div class="col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="line-card" 
+                                 data-line="{{ line.id }}" 
+                                 style="border-left: 4px solid {{ line.color }};"
+                                 onclick="selectLine('{{ line.id }}', '{{ line.name }}')">
+                                <div class="line-info">
+                                    <h6 class="mb-1">{{ line.name }}</h6>
+                                    <small class="text-muted">Ver horarios</small>
+                                </div>
+                                <div class="line-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visualizador de horarios -->
+    <div class="row" id="schedulesViewer" style="display: none;">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-calendar-alt"></i>
+                        Horarios de <span id="selectedLineName"></span>
+                    </h5>
+                    <button class="btn btn-outline-light btn-sm" onclick="closeSchedules()">
+                        <i class="fas fa-times"></i> Cerrar
+                    </button>
+                </div>
+                <div class="card-body">
+                    <!-- Pestañas de dirección -->
+                    <ul class="nav nav-tabs mb-3" id="directionTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="ida-tab" data-bs-toggle="tab" data-bs-target="#ida" type="button" role="tab">
+                                <i class="fas fa-arrow-right"></i> Ida
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vuelta-tab" data-bs-toggle="tab" data-bs-target="#vuelta" type="button" role="tab">
+                                <i class="fas fa-arrow-left"></i> Vuelta
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content" id="directionTabContent">
+                        <div class="tab-pane fade show active" id="ida" role="tabpanel">
+                            <div class="text-center">
+                                <div class="loading-spinner mb-3" id="idaLoading">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Cargando...</span>
+                                    </div>
+                                </div>
+                                <img id="idaImage" class="img-fluid schedule-image" style="display: none;" alt="Horario Ida">
+                                <div id="idaError" class="alert alert-warning" style="display: none;">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    No se pudo cargar el horario de ida
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="vuelta" role="tabpanel">
+                            <div class="text-center">
+                                <div class="loading-spinner mb-3" id="vueltaLoading">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Cargando...</span>
+                                    </div>
+                                </div>
+                                <img id="vueltaImage" class="img-fluid schedule-image" style="display: none;" alt="Horario Vuelta">
+                                <div id="vueltaError" class="alert alert-warning" style="display: none;">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    No se pudo cargar el horario de vuelta
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Controles adicionales -->
+                    <div class="text-center mt-3">
+                        <button class="btn btn-outline-primary btn-sm" onclick="downloadSchedule()">
+                            <i class="fas fa-download"></i> Descargar
+                        </button>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="printSchedule()">
+                            <i class="fas fa-print"></i> Imprimir
+                        </button>
+                        <button class="btn btn-outline-info btn-sm" onclick="zoomIn()">
+                            <i class="fas fa-search-plus"></i> Ampliar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Información adicional -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h6 class="mb-0">
+                        <i class="fas fa-info-circle"></i>
+                        Información de Horarios
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-check text-success"></i> Horarios oficiales de Metro de Madrid</li>
+                        <li><i class="fas fa-check text-success"></i> Actualizados regularmente</li>
+                        <li><i class="fas fa-check text-success"></i> Incluyen días laborables y festivos</li>
+                        <li><i class="fas fa-check text-success"></i> Frecuencias de paso detalladas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">
+                    <h6 class="mb-0">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Notas Importantes
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-info-circle text-info"></i> Los horarios pueden variar en días festivos</li>
+                        <li><i class="fas fa-info-circle text-info"></i> Consulta la web oficial para cambios</li>
+                        <li><i class="fas fa-info-circle text-info"></i> Servicios especiales en eventos</li>
+                        <li><i class="fas fa-info-circle text-info"></i> Mantenimiento puede afectar horarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.line-card {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-card:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.line-info h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.line-icon {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.schedule-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.loading-spinner {
+    padding: 20px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom-color: #007bff;
+    color: #007bff;
+    background: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #007bff;
+}
+
+/* Modal para ampliar imagen */
+.modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .line-card {
+        padding: 12px;
+    }
+    
+    .line-info h6 {
+        font-size: 0.9em;
+    }
+    
+    .schedule-image {
+        max-width: 100%;
+    }
+}
+</style>
+
+<script>
+let currentLine = null;
+
+function selectLine(lineId, lineName) {
+    currentLine = lineId;
+    document.getElementById('selectedLineName').textContent = lineName;
+    document.getElementById('schedulesViewer').style.display = 'block';
+    
+    // Hacer scroll suave hasta el visualizador
+    document.getElementById('schedulesViewer').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+    
+    // Cargar horarios
+    loadSchedule('ida');
+    loadSchedule('vuelta');
+}
+
+function closeSchedules() {
+    document.getElementById('schedulesViewer').style.display = 'none';
+    currentLine = null;
+}
+
+function loadSchedule(direction) {
+    if (!currentLine) return;
+    
+    const imageId = direction + 'Image';
+    const loadingId = direction + 'Loading';
+    const errorId = direction + 'Error';
+    
+    // Mostrar loading
+    document.getElementById(loadingId).style.display = 'block';
+    document.getElementById(imageId).style.display = 'none';
+    document.getElementById(errorId).style.display = 'none';
+    
+    const img = document.getElementById(imageId);
+    const imagePath = `/static/utils/fotohorarios/horario_L${currentLine}_${direction}.png`;
+    
+    img.onload = function() {
+        document.getElementById(loadingId).style.display = 'none';
+        img.style.display = 'block';
+    };
+    
+    img.onerror = function() {
+        document.getElementById(loadingId).style.display = 'none';
+        document.getElementById(errorId).style.display = 'block';
+    };
+    
+    img.src = imagePath;
+}
+
+function downloadSchedule() {
+    if (!currentLine) return;
+    
+    const activeTab = document.querySelector('.nav-link.active');
+    const direction = activeTab.id.replace('-tab', '');
+    const imagePath = `/static/utils/fotohorarios/horario_L${currentLine}_${direction}.png`;
+    
+    const link = document.createElement('a');
+    link.href = imagePath;
+    link.download = `horario_L${currentLine}_${direction}.png`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+function printSchedule() {
+    if (!currentLine) return;
+    
+    const activeTab = document.querySelector('.nav-link.active');
+    const direction = activeTab.id.replace('-tab', '');
+    const imagePath = `/static/utils/fotohorarios/horario_L${currentLine}_${direction}.png`;
+    
+    const printWindow = window.open(imagePath, '_blank');
+    printWindow.onload = function() {
+        printWindow.print();
+    };
+}
+
+function zoomIn() {
+    if (!currentLine) return;
+    
+    const activeTab = document.querySelector('.nav-link.active');
+    const direction = activeTab.id.replace('-tab', '');
+    const imagePath = `/static/utils/fotohorarios/horario_L${currentLine}_${direction}.png`;
+    
+    // Crear modal para ampliar imagen
+    const modal = document.createElement('div');
+    modal.className = 'modal fade';
+    modal.id = 'imageModal';
+    modal.innerHTML = `
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Horario ${direction.charAt(0).toUpperCase() + direction.slice(1)} - Línea ${currentLine}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="${imagePath}" class="modal-image" alt="Horario ampliado">
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    const bootstrapModal = new bootstrap.Modal(modal);
+    bootstrapModal.show();
+    
+    modal.addEventListener('hidden.bs.modal', function() {
+        document.body.removeChild(modal);
+    });
+}
+
+// Inicializar cuando se carga la página
+document.addEventListener('DOMContentLoaded', function() {
+    // Añadir efecto hover a las tarjetas de línea
+    const lineCards = document.querySelectorAll('.line-card');
+    lineCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});
+</script>
+{% endblock %} 

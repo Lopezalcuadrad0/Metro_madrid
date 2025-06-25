@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block title %}{{ line_info.name }} - Metro de Madrid{% endblock %}
+
+{% block content %}
+<div class="container-fluid p-0">
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="line-header">
+                <div class="line-symbol" style="background-color: {{ line_info.color }}; color: {{ line_info.text_color }};">
+                    <img src="{{ url_for('static', filename='logos/lineas/' + line_info.logo) }}" alt="Línea {{ line_info.id }}" class="line-logo-main">
+                </div>
+                <div class="line-title">
+                    <h1>{{ line_info.name }} 
+                        <button id="favoriteLineBtn" class="favorite-btn" onclick="toggleFavoriteLine()" title="Añadir a favoritos">⭐</button>
+                    </h1>
+                    <p>{{ line_info.id.upper() }}</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <h2>Estaciones de la {{ line_info.name }}</h2>
+            <div id="debug-info" style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px;">
+                <strong>Debug Info:</strong><br>
+                <span id="debug-text">Iniciando...</span>
+            </div>
+            
+            <div class="station-list-container">
+                <ul class="station-list" id="station-list">
+                    <li style="color: blue; font-weight: bold;">🔄 Cargando estaciones...</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script>
+console.log('🚀 Script iniciado');
+
+const currentLineId = "{{ line_info.id }}";
+const debugInfo = document.getElementById('debug-text');
+const stationList = document.getElementById('station-list');
+
+debugInfo.innerHTML = 'LineId: ' + currentLineId;
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('📍 DOM loaded');
+    debugInfo.innerHTML += '<br>DOM loaded';
+    
+    // Test simple
+    fetch('/api/lines/' + currentLineId + '/stations')
+        .then(response => {
+            console.log('📡 Response:', response.status);
+            debugInfo.innerHTML += '<br>Response status: ' + response.status;
+            return response.json();
+        })
+        .then(data => {
+            console.log('📊 Data:', data);
+            debugInfo.innerHTML += '<br>Estaciones recibidas: ' + (data.stations ? data.stations.length : 0);
+            
+            if (data.stations && data.stations.length > 0) {
+                stationList.innerHTML = '';
+                data.stations.forEach(function(station) {
+                    const li = document.createElement('li');
+                    li.style.cssText = 'padding: 10px; border: 1px solid #ccc; margin: 5px 0; background: white;';
+                    li.innerHTML = station.name + ' (ID: ' + station.id_fijo + ')';
+                    stationList.appendChild(li);
+                });
+                debugInfo.innerHTML += '<br>✅ Estaciones añadidas al DOM';
+            } else {
+                stationList.innerHTML = '<li style="color: red;">❌ No se encontraron estaciones</li>';
+            }
+        })
+        .catch(function(error) {
+            console.error('❌ Error:', error);
+            debugInfo.innerHTML += '<br>❌ Error: ' + error;
+            stationList.innerHTML = '<li style="color: red;">❌ Error: ' + error + '</li>';
+        });
+});
+
+// Función simple de favoritos
+function toggleFavoriteLine() {
+    console.log('Toggle favorite clicked');
+    // Implementación simple sin fetch por ahora
+    const btn = document.getElementById('favoriteLineBtn');
+    if (btn.classList.contains('active')) {
+        btn.classList.remove('active');
+        btn.style.color = '#999';
+    } else {
+        btn.classList.add('active');
+        btn.style.color = '#FFD700';
+    }
+}
+</script>
+
+<style>
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 44px);
+}
+
+.sidebar {
+    width: 350px;
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+    flex-shrink: 0;
+    position: sticky;
+    top: 44px;
+    height: calc(100vh - 44px);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px 40px;
+    min-height: calc(100vh - 44px);
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.line-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.line-symbol {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.line-logo-main {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.line-title h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #343a40;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #999;
+}
+
+.favorite-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.favorite-btn.active {
+    color: #FFD700;
+}
+
+.station-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.station-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    background: white;
+    border-radius: 5px;
+}
+</style>
+{% endblock %} 

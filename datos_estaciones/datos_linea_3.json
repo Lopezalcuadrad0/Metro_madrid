@@ -1,0 +1,612 @@
+{
+  "Villaverde Alto": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Villaverde Alto",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Cristóbal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Cristóbal",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "San Cristóbal",
+        "nombre": "Ascensor",
+        "direccion": "C/ Moncada, 13"
+      },
+      {
+        "vestibulo": "San Cristóbal",
+        "nombre": "Avda. Andalucía pares",
+        "direccion": "Avda Andalucía pares, junto C/ San Dalmacio"
+      },
+      {
+        "vestibulo": "San Cristóbal",
+        "nombre": "Moncada",
+        "direccion": "C/ Moncada, 13"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Villaverde Bajo Cruce": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Villaverde Bajo Cruce",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ciudad de los Ángeles": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ciudad de los Ángeles",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Ciudad de los Ángeles",
+        "nombre": "Paseo Gigantes y Cabezudos",
+        "direccion": "Paseo Gigantes y Cabezudos, frente al nº 12"
+      },
+      {
+        "vestibulo": "Ciudad de los Ángeles",
+        "nombre": "Ascensor",
+        "direccion": "Paseo Gigantes y Cabezudos, frente al nº 12"
+      },
+      {
+        "vestibulo": "Ciudad de los Ángeles",
+        "nombre": "Tertulia",
+        "direccion": "C/ Tertulia frente al nº 17"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Fermín – Orcasur": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Fermín – Orcasur",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {},
+    "accesible": false,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Hospital 12 de Octubre": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hospital 12 de Octubre",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Almendrales": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Almendrales",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Legazpi": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Legazpi",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Delicias": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Delicias",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Palos de la Frontera": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Palos de la Frontera",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Embajadores": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Embajadores",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Acacias",
+        "nombre": "Acacias",
+        "direccion": "Gta. Embajadores, 7"
+      },
+      {
+        "vestibulo": "Acacias",
+        "nombre": "Ascensor",
+        "direccion": "Gta. Embajadores, 7"
+      },
+      {
+        "vestibulo": "Renfe",
+        "nombre": "Renfe",
+        "direccion": "Renfe Cercanías"
+      },
+      {
+        "vestibulo": "Ronda de Valencia",
+        "nombre": "Ronda de Valencia",
+        "direccion": "Gta. Embajadores, 3"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Lavapiés": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Lavapiés",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Argumosa",
+        "nombre": "Ascensor",
+        "direccion": "Argumosa, 3"
+      },
+      {
+        "vestibulo": "Argumosa",
+        "nombre": "Argumosa",
+        "direccion": "Argumosa, 1"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Sol": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Sol",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Mayor",
+        "nombre": "Ascensor",
+        "direccion": "Puerta del Sol"
+      },
+      {
+        "vestibulo": "Mayor",
+        "nombre": "Mayor",
+        "direccion": "Pta. del Sol, s/n (esq. Mayor y Arenal)"
+      },
+      {
+        "vestibulo": "Preciados",
+        "nombre": "Centro Comercial",
+        "direccion": "Acceso directo al centro comercial"
+      },
+      {
+        "vestibulo": "Preciados",
+        "nombre": "Preciados",
+        "direccion": "Preciados, 3"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Alcalá",
+        "direccion": "Puerta del Sol, 13"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Carmen",
+        "direccion": "Puerta del Sol, 12"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "RENFE",
+        "direccion": "Cúpula de RENFE y Ascensor"
+      },
+      {
+        "vestibulo": "Puerta del Sol",
+        "nombre": "Carretas",
+        "direccion": "Pta. del Sol, 7 (semiesq. Carretas)"
+      },
+      {
+        "vestibulo": "RENFE",
+        "nombre": "RENFE",
+        "direccion": "Intercambiador Nivel -1"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Tienda de Metro",
+      "Quioscos ONCE",
+      "Atención al cliente",
+      "Oficina de gestión TTP",
+      "Tiendas"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Callao": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Callao",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Callao",
+        "nombre": "Centro Comercial",
+        "direccion": "En pasillo del acceso Cine Avenida"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de Callao, 1"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Plaza de Callao",
+        "direccion": "Plaza de Callao, 1"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Palacio de la Prensa",
+        "direccion": "Gran Vía, 46"
+      },
+      {
+        "vestibulo": "Callao",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 39"
+      },
+      {
+        "vestibulo": "Jacometrezo",
+        "nombre": "Jacometrezo",
+        "direccion": "C/ Jacometrezo, 1"
+      },
+      {
+        "vestibulo": "Jacometrezo",
+        "nombre": "Ascensor",
+        "direccion": "C/ Jacometrezo, impares"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Quioscos ONCE"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Plaza de España": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Plaza de España",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Conde de Toreno",
+        "nombre": "Ascensor. Acceso a línea 10",
+        "direccion": "Pza. Conde de Toreno"
+      },
+      {
+        "vestibulo": "Conde de Toreno",
+        "nombre": "Ascensor. Acceso a línea 10",
+        "direccion": "Pza. Conde de Toreno"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Gran Vía",
+        "direccion": "Gran Vía, 80"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Leganitos",
+        "direccion": "Gran Vía, 73"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Reyes",
+        "direccion": "Reyes, 1"
+      },
+      {
+        "vestibulo": "Leganitos",
+        "nombre": "Princesa",
+        "direccion": "Princesa, 2"
+      },
+      {
+        "vestibulo": "Plaza de España",
+        "nombre": "Plaza de España",
+        "direccion": "Plaza de España,18"
+      },
+      {
+        "vestibulo": "Plaza de España",
+        "nombre": "Ascensor. Acceso a línea 3",
+        "direccion": "Plaza de España, 18"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Ventura Rodríguez": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Ventura Rodríguez",
+    "zona_tarifaria": "",
+    "accesos": [],
+    "conexiones": [],
+    "servicios": [],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Argüelles": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Argüelles",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Princesa",
+        "direccion": "Princesa, 56 (Esq. A. Aguilera)"
+      },
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Ascensor",
+        "direccion": "Alberto Aguilera, pares"
+      },
+      {
+        "vestibulo": "Alberto Aguilera",
+        "nombre": "Alberto Aguilera",
+        "direccion": "Alberto Aguilera, 70 (Esq. Gaztambide)"
+      },
+      {
+        "vestibulo": "Altamirano",
+        "nombre": "Altamirano (Esq. Altamirano)",
+        "direccion": "Princesa, 65"
+      },
+      {
+        "vestibulo": "Guzmán el Bueno",
+        "nombre": "Guzmán el Bueno - Ascensor",
+        "direccion": "C/ Alberto Aguilera, 62"
+      },
+      {
+        "vestibulo": "Guzmán el Bueno",
+        "nombre": "Guzmán el Bueno",
+        "direccion": "Alberto Aguilera, 62 (A. Mellado - G. Bueno)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Moncloa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Moncloa",
+    "zona_tarifaria": "A",
+    "accesos": [
+      {
+        "vestibulo": "Arcipreste de Hita",
+        "nombre": "Arcipreste de Hita",
+        "direccion": "Arcipreste de Hita 1 y 3"
+      },
+      {
+        "vestibulo": "Arcipreste de Hita",
+        "nombre": "Intercambiador E. del Aire",
+        "direccion": "Intercambiador E. del Aire"
+      },
+      {
+        "vestibulo": "Cuartel General del Ejercito del Aire",
+        "nombre": "Intercambiador",
+        "direccion": "En vestibulo mixto Metro-Intercambiador (nivel-2) a la altura puerta corredera intercambiador"
+      },
+      {
+        "vestibulo": "Cuartel General del Ejercito del Aire",
+        "nombre": "Princesa",
+        "direccion": "Altura Princesa, 96 (Junta municipal)"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Autobuses Interurbanos",
+        "icono": "autobuses-interurbanos"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Estacionamiento de bicicletas",
+      "Quioscos ONCE",
+      "Oficina de gestión TTP",
+      "Tiendas"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

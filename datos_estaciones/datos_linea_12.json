@@ -1,0 +1,1215 @@
+{
+  "Puerta del Sur": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Puerta del Sur",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Alcalde Joaquín Vilumbrales",
+        "nombre": "Ascensor",
+        "direccion": "Avenida de la Libertad ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcalde Joaquín Vilumbrales",
+        "nombre": "Avenida de la Libertad, pares",
+        "direccion": "Avenida de la Libertad esquina a Avda. de Leganés ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcalde Joaquín Vilumbrales",
+        "nombre": "Avenida de la Libertad, impares",
+        "direccion": "Avenida de la Libertad del 1 al 9 ALCORCÓN"
+      },
+      {
+        "vestibulo": "Olímpico Francisco Fernández Ochoa",
+        "nombre": "Olímpico Francisco Fernández Ochoa",
+        "direccion": "Olímpico Fernández Ochoa, esquina a Avda. de Leganés ALCORCÓN"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Bibliometro",
+      "Estacionamiento de bicicletas",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Parque de Lisboa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Parque de Lisboa",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Parque de Lisboa",
+        "nombre": "Avenida de Leganés",
+        "direccion": "Avda. de Leganés, 20 (esquina c/ Porto Lagos, 20) ALCORCÓN"
+      },
+      {
+        "vestibulo": "Parque de Lisboa",
+        "nombre": "Ascensor",
+        "direccion": "Avda. de Leganés, 20 (esquina c/ Porto Lagos, 20) ALCORCÓN"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alcorcón Central": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alcorcón Central",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Alcorcón Central",
+        "nombre": "Renfe",
+        "direccion": "Nivel -1 a la altura de la cancela de Metro ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcorcón Central",
+        "nombre": "Ascensor exterior",
+        "direccion": "Avda. Móstoles ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcorcón Central",
+        "nombre": "Avda. Móstoles - Navalcarnero",
+        "direccion": "Pº Extremadura, 11, templete (también Avda. de Mostoles) ALCORCÓN"
+      },
+      {
+        "vestibulo": "Alcorcón Central",
+        "nombre": "Avenida Móstoles - Bailén",
+        "direccion": "Pº Extremadura, 15 (también Avda. de Mostoles) ALCORCÓN"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Parque Oeste": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Parque Oeste",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Parque del Oeste",
+        "nombre": "Estambul",
+        "direccion": "Estambul, 16 ALCORCÓN"
+      },
+      {
+        "vestibulo": "Parque del Oeste",
+        "nombre": "Ascensor",
+        "direccion": "Estambul, 16 ALCORCÓN"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Universidad Rey Juan Carlos": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Universidad Rey Juan Carlos",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Universidad Rey Juan Carlos I",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Alcalde de Móstoles, 35 MÓSTOLES"
+      },
+      {
+        "vestibulo": "Universidad Rey Juan Carlos I",
+        "nombre": "Avenida Alcalde de Móstoles",
+        "direccion": "Avda. Alcalde de Móstoles, 35 MÓSTOLES"
+      },
+      {
+        "vestibulo": "Universidad Rey Juan Carlos I",
+        "nombre": "Avenida Alcalde de Móstoles",
+        "direccion": "Avda. Alcalde de Móstoles, 35; Izda al salir C2 MÓSTOLES"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Móstoles Central": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Móstoles Central",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Móstoles Central",
+        "nombre": "Paseo de la Estación",
+        "direccion": "Paseo de la Estación, s/n MOSTOLES"
+      },
+      {
+        "vestibulo": "Móstoles Central",
+        "nombre": "Ascensor",
+        "direccion": "Paseo de la Estación, s/n MOSTOLES"
+      },
+      {
+        "vestibulo": "Móstoles Central",
+        "nombre": "Renfe",
+        "direccion": "Nivel -1 a la altura de la cancela de Metro MÓSTOLES"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Oficina de gestión TTP",
+      "Metroteca",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Pradillo": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Pradillo",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Pradillo",
+        "nombre": "Plaza del Pradillo",
+        "direccion": "Plaza del Pradillo s/n MÓSTOLES"
+      },
+      {
+        "vestibulo": "Pradillo",
+        "nombre": "Ascensor",
+        "direccion": "Plaza del Pradillo s/n MÓSTOLES"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Hospital de Móstoles": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hospital de Móstoles",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Hospital de Móstoles",
+        "nombre": "Ascensor",
+        "direccion": "C/ Río Sella MÓSTOLES"
+      },
+      {
+        "vestibulo": "Hospital de Móstoles",
+        "nombre": "Río Ebro - Río Sella",
+        "direccion": "C/ Río Sella MÓSTOLES"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Manuela Malasaña": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Manuela Malasaña",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Manuela Malasaña",
+        "nombre": "Plaza del Sol",
+        "direccion": "Plaza del Sol s/n (altura del nº 30) MÓSTOLES"
+      },
+      {
+        "vestibulo": "Manuela Malasaña",
+        "nombre": "Ascensor",
+        "direccion": "Plaza del Sol s/n (altura del nº 30) MÓSTOLES"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Loranca": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Loranca",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Loranca",
+        "nombre": "Avenida de Pablo Iglesias",
+        "direccion": "Avda. Pablo Iglesias, s/n FUENLABRADA"
+      },
+      {
+        "vestibulo": "Loranca",
+        "nombre": "Plaza de la Concordia",
+        "direccion": "Plaza de la Concordia FUENLABRADA"
+      },
+      {
+        "vestibulo": "Loranca",
+        "nombre": "Ascensor",
+        "direccion": "Plaza de la Concordia FUENLABRADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Hospital de Fuenlabrada": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hospital de Fuenlabrada",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Hospital de Fuenlabrada",
+        "nombre": "Ascensor",
+        "direccion": "Cº del Molino, pares s/n FUENLABRADA"
+      },
+      {
+        "vestibulo": "Hospital de Fuenlabrada",
+        "nombre": "Camino del Molino - Hospital",
+        "direccion": "Cº del Molino, pares s/n FUENLABRADA"
+      },
+      {
+        "vestibulo": "Hospital de Fuenlabrada",
+        "nombre": "Camino del Molino - Universidad",
+        "direccion": "Cº del Molino, impares s/n FUENLABRADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Parque Europa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Parque Europa",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Parque Europa",
+        "nombre": "Ascensor",
+        "direccion": "C/ Francia, 36 FUENLABRADA"
+      },
+      {
+        "vestibulo": "Parque Europa",
+        "nombre": "Francia",
+        "direccion": "Francia, 34 (esquina Avda. de las Naciones) FUENLABRADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Fuenlabrada Central": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Fuenlabrada Central",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Fuenlabrada Central",
+        "nombre": "Paseo de la Estación",
+        "direccion": "Pº de la Estación, s/n (templete) FUENLABRADA"
+      },
+      {
+        "vestibulo": "Fuenlabrada Central",
+        "nombre": "Ascensor",
+        "direccion": "Pº de la Estación s/n (dentro del templete) FUENLABRADA"
+      },
+      {
+        "vestibulo": "Fuenlabrada Central",
+        "nombre": "Renfe",
+        "direccion": "Lí­mites Metro/Renfe en nivel -1 FUENLABRADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Oficina de gestión TTP",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Parque de los Estados": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Parque de los Estados",
+    "zona_tarifaria": "B2",
+    "accesos": [
+      {
+        "vestibulo": "Parque de los Estados",
+        "nombre": "Avenida de los Estados",
+        "direccion": "Avda. de los Estados, 10 (esquina c/ Venezuela) FUENLABRADA"
+      },
+      {
+        "vestibulo": "Parque de los Estados",
+        "nombre": "Ascensor",
+        "direccion": "Venezuela, 2 FUENLABRADA"
+      },
+      {
+        "vestibulo": "Parque de los Estados",
+        "nombre": "La Habana",
+        "direccion": "La Habana, 2 (esquina c/ Venezuela) FUENLABRADA"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Arroyo Culebro": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Arroyo Culebro",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Arroyo Culebro",
+        "nombre": "Ascensor",
+        "direccion": "Las Ciencias, 14 (esquina C/ Canarias, 143) GETAFE"
+      },
+      {
+        "vestibulo": "Arroyo Culebro",
+        "nombre": "Las Ciencias",
+        "direccion": "Las Ciencias, 14 (esquina C/ Canarias, 143) GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Conservatorio": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Conservatorio",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Conservatorio",
+        "nombre": "Senda de Mafalda",
+        "direccion": "Avda. de las Arcas del Agua, 9 (esquina a c/ Senda de Mafalda) GETAFE"
+      },
+      {
+        "vestibulo": "Conservatorio",
+        "nombre": "Ascensor",
+        "direccion": "Avda. de las Arcas del Agua, 9 (esquina a c/ Senda de Mafalda) GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Alonso de Mendoza": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Alonso de Mendoza",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Alonso de Mendoza",
+        "nombre": "Ascensor",
+        "direccion": "C/ El Greco, 2 (esquina con C/ Ferrocarril) GETAFE"
+      },
+      {
+        "vestibulo": "Alonso de Mendoza",
+        "nombre": "Ferrocarril - El Greco",
+        "direccion": "C/ El Greco, 2 (esquina con C/ Ferrocarril) GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Getafe Central": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Getafe Central",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Getafe Central",
+        "nombre": "Renfe",
+        "direccion": "Límites Metro/Renfe en nivel -1,5 al terminar las escaleras mecanicas de Metro GETAFE"
+      },
+      {
+        "vestibulo": "Getafe Central",
+        "nombre": "Paseo del Ferrocarril",
+        "direccion": "Esquina con Ramón y Cajal y con Pablo Iglesias GETAFE"
+      },
+      {
+        "vestibulo": "Getafe Central",
+        "nombre": "Ascensor",
+        "direccion": "Paseo del Ferrocarril GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Oficina de gestión TTP",
+      "Metroteca",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Juan de la Cierva": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Juan de la Cierva",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Juan de la Cierva",
+        "nombre": "Avenida de España, pares",
+        "direccion": "Avda. España, 16 GETAFE"
+      },
+      {
+        "vestibulo": "Juan de la Cierva",
+        "nombre": "Avenida de España, impares",
+        "direccion": "Avda. España, 5 GETAFE"
+      },
+      {
+        "vestibulo": "Juan de la Cierva",
+        "nombre": "Ascensor",
+        "direccion": "Avda. España, 9 GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "El Casar": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "El Casar",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Correspondencia L3/L12",
+        "nombre": "Correspondencia L3/L12",
+        "direccion": "Nivel-2 límite L3/L12"
+      },
+      {
+        "vestibulo": "El Casar",
+        "nombre": "Av. Casar",
+        "direccion": "Av. Casar, s/n"
+      },
+      {
+        "vestibulo": "El Casar",
+        "nombre": "El Casar-Ascensor",
+        "direccion": "Av. Casar, s/n"
+      },
+      {
+        "vestibulo": "El Casar",
+        "nombre": "Cercanías-El Casar",
+        "direccion": "Nivel -1 límite Metro/Cercanías"
+      },
+      {
+        "vestibulo": "Gitanilla",
+        "nombre": "Cercanías-Gitanilla",
+        "direccion": "Nivel-1 límite Metro/Cercanias"
+      },
+      {
+        "vestibulo": "Gitanilla",
+        "nombre": "Gitanilla-Ascensor",
+        "direccion": "C. Gitanilla, s/n"
+      },
+      {
+        "vestibulo": "Gitanilla",
+        "nombre": "Gitanilla",
+        "direccion": "C. Gitanilla, s/n"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Los Espartales": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Los Espartales",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Los Espartales",
+        "nombre": "Ascensor",
+        "direccion": "Avda. de Rigoberta Menchú, 3 (esquina a C/ Rosa de Luxemburgo) GETAFE"
+      },
+      {
+        "vestibulo": "Los Espartales",
+        "nombre": "Avenida de Rigoberta Menchú",
+        "direccion": "Avda. de Rigoberta Menchú, 3 (esquina a C/ Rosa de Luxemburgo) GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "El Bercial": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "El Bercial",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "El Bercial",
+        "nombre": "El Bercial",
+        "direccion": "Próximo C/Turquía - Bº del Bercial GETAFE"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "El Carrascal": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "El Carrascal",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "El Carrascal",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Rey Juan Carlos I, Bulevar LEGANÉS"
+      },
+      {
+        "vestibulo": "El Carrascal",
+        "nombre": "Avenida Rey Juan Carlos I, pares",
+        "direccion": "Avda. Rey Juan Carlos I, 110 LEGANÉS"
+      },
+      {
+        "vestibulo": "El Carrascal",
+        "nombre": "Avenida Rey Juan Carlos I, impares",
+        "direccion": "Avda. Rey Juan Carlos I, 87 LEGANÉS"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Julián Besteiro": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Julián Besteiro",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Julián Besteiro",
+        "nombre": "Avenida Rey Juan Carlos I, pares",
+        "direccion": "Avda. Rey Juan Carlos I, 30 LEGANÉS"
+      },
+      {
+        "vestibulo": "Julián Besteiro",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Rey Juan Carlos I, 25 LEGANÉS"
+      },
+      {
+        "vestibulo": "Julián Besteiro",
+        "nombre": "Avenida Rey Juan Carlos I, impares",
+        "direccion": "Avda. Rey Juan Carlos I, 25 LEGANÉS"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Casa del Reloj": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Casa del Reloj",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Casa del Reloj",
+        "nombre": "Avenida de Gibraltar, impares",
+        "direccion": "Avda. de Gibraltar, 7 LEGANÉS"
+      },
+      {
+        "vestibulo": "Casa del Reloj",
+        "nombre": "Casa del Reloj",
+        "direccion": "Avda. de Gibraltar, 2 LEGANÉS"
+      },
+      {
+        "vestibulo": "Casa del Reloj",
+        "nombre": "Ascensor",
+        "direccion": "Avda. de Gibraltar, 2 LEGANÉS"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Hospital Severo Ochoa": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Hospital Severo Ochoa",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Hospital Severo Ochoa",
+        "nombre": "Ascensor",
+        "direccion": "Avda. Orellana LEGANÉS"
+      },
+      {
+        "vestibulo": "Hospital Severo Ochoa",
+        "nombre": "Avenida de Orellana",
+        "direccion": "Avda. Orellana LEGANÉS"
+      },
+      {
+        "vestibulo": "Hospital Severo Ochoa",
+        "nombre": "Hospital Severo Ochoa",
+        "direccion": "Avda. Orellana LEGANÉS"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "Leganés Central": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "Leganés Central",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "Leganés Central",
+        "nombre": "Avenida del Cobre",
+        "direccion": "Avda. del Cobre, templete LEGANÉS"
+      },
+      {
+        "vestibulo": "Leganés Central",
+        "nombre": "Ascensor",
+        "direccion": "Avda. del Cobre (fuera templete) LEGANÉS"
+      },
+      {
+        "vestibulo": "Leganés Central",
+        "nombre": "Renfe",
+        "direccion": "Limites Metro/Renfe en nivel -1 LEGANÉS"
+      }
+    ],
+    "conexiones": [
+      {
+        "tipo": "Cercanías Renfe",
+        "icono": "cercanias-renfe"
+      }
+    ],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Parking disuasorio",
+      "Oficina de gestión TTP",
+      "Parking disuasorio gratuito",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  },
+  "San Nicasio": {
+    "id": null,
+    "idmodal": null,
+    "nombre": "San Nicasio",
+    "zona_tarifaria": "B1",
+    "accesos": [
+      {
+        "vestibulo": "San Nicasio",
+        "nombre": "Ascensor",
+        "direccion": "Avda. del Mar Mediterráneo LEGANÉS"
+      },
+      {
+        "vestibulo": "San Nicasio",
+        "nombre": "Avenida del Mar Mediterráneo",
+        "direccion": "Avda. del Mar Mediterráneo s/n, junto a puente ctra. Alcorcón a Leganés LEGANÉS"
+      },
+      {
+        "vestibulo": "San Nicasio",
+        "nombre": "La Encina",
+        "direccion": "C/ La Encina, junto a residencia de estudiantes LEGANÉS"
+      }
+    ],
+    "conexiones": [],
+    "servicios": [
+      "Estación accesible",
+      "Ascensores",
+      "Escaleras mecánicas",
+      "Desfibrilador",
+      "Cobertura móvil",
+      "Atención a la tarifa/Validación a la SALIDA"
+    ],
+    "estado_equipos": {
+      "ascensores": "Desconocido",
+      "escaleras": "Desconocido",
+      "alertas": []
+    },
+    "accesible": true,
+    "horarios": "6:00 a.m. a 1:30 a.m."
+  }
+}

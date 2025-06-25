@@ -1,0 +1,103 @@
+ESTADÍSTICAS COMPLETAS DEL METRO DE MADRID
+==================================================
+
+RESUMEN GENERAL:
+- Total de líneas: 13
+- Total de estaciones: 317
+- Total de accesos: 598
+- Total de conexiones: 86
+- Estaciones accesibles: 204
+
+DETALLE POR LÍNEA:
+------------------------------
+Línea 1:
+  - Estaciones: 33
+  - Accesos: 96
+  - Conexiones: 14
+  - Accesibles: 26
+  - Con problemas: 0
+
+Línea 10:
+  - Estaciones: 31
+  - Accesos: 57
+  - Conexiones: 5
+  - Accesibles: 29
+  - Con problemas: 0
+
+Línea 11:
+  - Estaciones: 7
+  - Accesos: 13
+  - Conexiones: 1
+  - Accesibles: 7
+  - Con problemas: 0
+
+Línea 12:
+  - Estaciones: 28
+  - Accesos: 78
+  - Conexiones: 25
+  - Accesibles: 28
+  - Con problemas: 0
+
+Línea 2:
+  - Estaciones: 20
+  - Accesos: 65
+  - Conexiones: 3
+  - Accesibles: 20
+  - Con problemas: 0
+
+Línea 3:
+  - Estaciones: 18
+  - Accesos: 46
+  - Conexiones: 5
+  - Accesibles: 16
+  - Con problemas: 0
+
+Línea 4:
+  - Estaciones: 23
+  - Accesos: 43
+  - Conexiones: 2
+  - Accesibles: 11
+  - Con problemas: 0
+
+Línea 5:
+  - Estaciones: 32
+  - Accesos: 37
+  - Conexiones: 3
+  - Accesibles: 12
+  - Con problemas: 0
+
+Línea 6:
+  - Estaciones: 27
+  - Accesos: 52
+  - Conexiones: 8
+  - Accesibles: 16
+  - Con problemas: 0
+
+Línea 7:
+  - Estaciones: 40
+  - Accesos: 15
+  - Conexiones: 6
+  - Accesibles: 10
+  - Con problemas: 0
+
+Línea 8:
+  - Estaciones: 27
+  - Accesos: 33
+  - Conexiones: 2
+  - Accesibles: 8
+  - Con problemas: 0
+
+Línea 9:
+  - Estaciones: 29
+  - Accesos: 56
+  - Conexiones: 10
+  - Accesibles: 19
+  - Con problemas: 0
+
+Línea R:
+  - Estaciones: 2
+  - Accesos: 7
+  - Conexiones: 2
+  - Accesibles: 2
+  - Con problemas: 0
+
