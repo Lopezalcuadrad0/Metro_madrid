@@ -199,6 +199,68 @@
         opacity: 0.8;
         font-weight: 500;
     }
+
+    .line-status {
+        margin-top: 0.8rem;
+        text-align: center;
+    }
+
+    .btn-check-status {
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid #e0e6ed;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #333;
+    }
+
+    /* Tema oscuro para botón de estado */
+    [data-theme="dark"] .btn-check-status,
+    [data-theme="nocturno"] .btn-check-status {
+        background: rgba(45, 45, 45, 0.9);
+        border-color: #555;
+        color: #e0e0e0;
+    }
+
+    .btn-check-status:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-check-status.loading {
+        background: #f39c12;
+        color: white;
+        cursor: not-allowed;
+    }
+
+    .line-status-info {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .line-status-info.normal {
+        background: rgba(39, 174, 96, 0.1);
+        color: #27ae60;
+        border: 1px solid rgba(39, 174, 96, 0.3);
+    }
+
+    .line-status-info.interrupted {
+        background: rgba(231, 76, 60, 0.1);
+        color: #e74c3c;
+        border: 1px solid rgba(231, 76, 60, 0.3);
+    }
+
+    .line-status-info.unknown {
+        background: rgba(149, 165, 166, 0.1);
+        color: #95a5a6;
+        border: 1px solid rgba(149, 165, 166, 0.3);
+    }
     
     .remove-favorite {
         position: absolute;
@@ -239,7 +301,7 @@
         transition: all 0.3s ease;
         border-left: 4px solid;
     }
-
+    
     /* Tema oscuro para tarjetas de estaciones */
     [data-theme="dark"] .favorite-station-card-group,
     [data-theme="nocturno"] .favorite-station-card-group {
@@ -268,7 +330,7 @@
         margin: 0;
         flex: 1;
     }
-
+    
     /* Tema oscuro para nombre de estación */
     [data-theme="dark"] .station-name,
     [data-theme="nocturno"] .station-name {
@@ -491,13 +553,14 @@
         </div>
     </div>
 
+    <!-- Solo mostrar info básica si no hay favoritos -->
+    {% if not favorite_lines and not favorite_stations %}
     <div class="account-info">
         <p><strong>🗓️ Miembro desde:</strong> {{ current_user.created_at.strftime('%d-%m-%Y') if current_user.created_at else 'N/A' }}</p>
         <p><strong>⭐ Líneas favoritas:</strong> {{ favorite_lines|length }}</p>
         <p><strong>🚇 Estaciones favoritas:</strong> {{ favorite_stations|length }}</p>
     </div>
 
-    {% if not favorite_lines and not favorite_stations %}
     <div class="add-favorites-tip">
         <h4>💡 ¿Cómo añadir favoritos?</h4>
         <p><strong>Para líneas:</strong> Ve a cualquier página de línea y haz clic en el ⭐ para añadirla a favoritos.</p>
@@ -524,6 +587,11 @@
                 </button>
                 <div class="line-name" style="color: {{ line.color }};">{{ line.name }}</div>
                 <div class="line-added">Añadida: {{ line.added_at.split('T')[0] if line.added_at else 'Fecha no disponible' }}</div>
+                <div class="line-status" id="line-status-{{ line.id }}">
+                    <button class="btn-check-status" onclick="event.preventDefault(); checkLineStatus('{{ line.id }}', '{{ line.name }}');">
+                        🚇 Ver estado
+                    </button>
+                </div>
             </a>
             {% endfor %}
         </div>
@@ -627,6 +695,59 @@ async function removeFavoriteStation(stationId, lineId) {
     } catch (error) {
         console.error('Error:', error);
         console.log('Error eliminando estación de favoritos');
+    }
+}
+
+async function checkLineStatus(lineId, lineName) {
+    const statusContainer = document.getElementById(`line-status-${lineId}`);
+    const btn = statusContainer.querySelector('.btn-check-status');
+    
+    // Mostrar estado de carga
+    btn.textContent = '🔄 Cargando...';
+    btn.classList.add('loading');
+    
+    try {
+        const response = await fetch(`/api/lines/${lineId}/status`);
+        const data = await response.json();
+        
+        if (response.ok && data.status) {
+            // Remover botón y mostrar estado
+            btn.remove();
+            
+            let statusClass = 'unknown';
+            let statusText = data.status.estado || 'Estado no disponible';
+            
+            if (statusText.toLowerCase().includes('normal')) {
+                statusClass = 'normal';
+                statusText = '✅ Servicio normal';
+            } else if (statusText.toLowerCase().includes('interrumpido') || statusText.toLowerCase().includes('cortado')) {
+                statusClass = 'interrupted';
+                statusText = '❌ Servicio interrumpido';
+            }
+            
+            const statusInfo = document.createElement('div');
+            statusInfo.className = `line-status-info ${statusClass}`;
+            statusInfo.textContent = statusText;
+            
+            statusContainer.appendChild(statusInfo);
+            
+        } else {
+            // Error al obtener estado
+            btn.textContent = '❌ Error';
+            btn.classList.remove('loading');
+            setTimeout(() => {
+                btn.textContent = '🚇 Ver estado';
+                btn.classList.remove('loading');
+            }, 2000);
+        }
+    } catch (error) {
+        console.error('Error checking line status:', error);
+        btn.textContent = '❌ Error';
+        btn.classList.remove('loading');
+        setTimeout(() => {
+            btn.textContent = '🚇 Ver estado';
+            btn.classList.remove('loading');
+        }, 2000);
     }
 }
 </script>

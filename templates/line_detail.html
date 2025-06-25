@@ -56,6 +56,181 @@
             0%, 100% { filter: drop-shadow(0 0 8px #FFD700) drop-shadow(0 0 16px #FFD700); }
             50% { filter: drop-shadow(0 0 12px #FFD700) drop-shadow(0 0 24px #FFD700); }
         }
+        .line-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 24px;
+            min-height: 110px;
+            padding: 24px 0 18px 0;
+        }
+        .line-symbol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25%;
+            width: 100px;
+            height: 100px;
+            background: var(--line-color);
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            position: relative;
+            flex-shrink: 0;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        .line-symbol .svg-line {
+            width: 48px;
+            height: 48px;
+            display: block;
+            margin: 0 auto 2px auto;
+        }
+        .line-symbol .line-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-top: 2px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        .line-title h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0 0 8px 0;
+        }
+        .line-title p {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 500;
+        }
+        @media (max-width: 600px) {
+            .line-header {
+                flex-direction: column;
+                align-items: center;
+                min-height: 160px;
+                padding: 18px 0 10px 0;
+                gap: 10px;
+            }
+            .line-symbol {
+                width: 110px;
+                height: 110px;
+                font-size: 3.5rem;
+                border-radius: 25%;
+                margin-bottom: 0;
+            }
+            .line-symbol .svg-line {
+                width: 60px;
+                height: 60px;
+            }
+            .line-symbol .line-num {
+                font-size: 2.7rem;
+            }
+            .line-title h1, .line-title p {
+                display: none;
+            }
+        }
+        .line-track {
+            position: absolute;
+            left: 32px;
+            top: 25px;
+            bottom: 25px;
+            width: 6px;
+            background-color: var(--line-color);
+            border-radius: 5px;
+            z-index: 1;
+            transform: none;
+        }
+        .station-marker {
+            position: absolute;
+            left: 32px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 4px solid var(--line-color);
+            background: #fff;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .station-entry {
+            position: relative;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .station-info {
+            margin-left: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .station-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+        .station-correspondencias {
+            margin-left: 60px;
+        }
+        @media (max-width: 600px) {
+            .line-track {
+                left: 28px;
+                width: 6px;
+            }
+            .station-marker {
+                left: 28px;
+                width: 20px;
+                height: 20px;
+                font-size: 0.9rem;
+            }
+            .station-info, .station-correspondencias {
+                margin-left: 48px;
+            }
+        }
+        .line-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .line-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 2px solid #eee;
+            transition: all 0.2s;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .line-icon .svg-line {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 2px;
+        }
+        .line-icon .line-num {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #222;
+            line-height: 1;
+        }
+        .line-icon:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            border-color: #bbb;
+            transform: scale(1.08);
+        }
     </style>
 </head>
 <body>
@@ -66,15 +241,7 @@
     <aside class="sidebar">
     <div class="line-header">
             <div class="line-symbol" style="background-color: var(--line-color);">
-                {% if line_info.linea == 'Ramal' or line_info.linea == 'R' %}
-                    <img src="/static/logos/lineas/ramal.svg" alt="Ramal" class="line-logo-main">
-                {% elif line_info.linea == '6' %}
-                    <img src="/static/logos/lineas/linea-6-circular.svg" alt="Línea 6" class="line-logo-main">
-                {% elif line_info.linea == '12' %}
-                    <img src="/static/logos/lineas/linea-12-metrosur.svg" alt="Línea 12" class="line-logo-main">
-                {% else %}
-                    <img src="/static/logos/lineas/linea-{{ line_info.linea }}.svg" alt="Línea {{ line_info.linea }}" class="line-logo-main">
-                {% endif %}
+                <img class="svg-line" src="/static/logos/lineas/linea-{{ line_info.linea|lower }}.svg" alt="Línea {{ line_info.linea }}">
             </div>
             <div class="line-title">
                 <h1>{{ line_info.name }}</h1>
@@ -106,13 +273,11 @@
     </div>
         <div class="other-lines">
             <h2>Otras líneas</h2>
-                <div class="line-grid">
+            <div class="line-grid">
                 {% if other_lines %}
                     {% for line in other_lines %}
-                        <a href="{{ url_for('line_detail', line_id=line.id) }}" 
-                           class="line-icon" 
-                           data-line-id="{{ line.name }}">
-                            <span>{{ line.name.replace('Línea ', '').replace('Ramal', 'R') }}</span>
+                        <a href="{{ url_for('line_detail', line_id=line.id) }}" class="line-icon" data-line-id="{{ line.name }}" style="background: {{ line.color }};">
+                            <img class="svg-line" src="/static/logos/lineas/linea-{{ line.id|lower }}.svg" alt="Línea {{ line.id }}">
                         </a>
                     {% endfor %}
                 {% endif %}
