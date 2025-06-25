@@ -6,10 +6,35 @@
     .account-container {
         max-width: 1000px;
         margin: 3rem auto;
-        padding: 2rem;
+        padding: 2.5rem;
         background-color: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Tema oscuro para el contenedor */
+    [data-theme="dark"] .account-container,
+    [data-theme="nocturno"] .account-container {
+        background-color: #2a2a2a;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .account-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #0D47A1, #00AEEF);
+    }
+
+    /* Tema oscuro para la línea superior */
+    [data-theme="dark"] .account-container::before,
+    [data-theme="nocturno"] .account-container::before {
+        background: linear-gradient(90deg, #0066cc, #4a9eff);
     }
     
     .account-header {
@@ -20,6 +45,12 @@
         border-bottom: 1px solid #dee2e6;
         padding-bottom: 1.5rem;
     }
+
+    /* Tema oscuro para el header */
+    [data-theme="dark"] .account-header,
+    [data-theme="nocturno"] .account-header {
+        border-bottom-color: #444;
+    }
     
     .account-header img {
         width: 80px;
@@ -27,21 +58,63 @@
         border-radius: 50%;
         border: 3px solid #0D47A1;
     }
+
+    /* Tema oscuro para el avatar */
+    [data-theme="dark"] .account-header img,
+    [data-theme="nocturno"] .account-header img {
+        border-color: #4a9eff;
+    }
     
     .account-header h2 {
         margin: 0;
         color: #333;
         font-size: 2rem;
+        font-weight: 700;
+    }
+
+    /* Tema oscuro para el título */
+    [data-theme="dark"] .account-header h2,
+    [data-theme="nocturno"] .account-header h2 {
+        color: #e0e0e0;
+    }
+
+    .text-muted {
+        color: #6c757d !important;
+        font-size: 1.1rem;
+    }
+
+    /* Tema oscuro para texto muted */
+    [data-theme="dark"] .text-muted,
+    [data-theme="nocturno"] .text-muted {
+        color: #aaa !important;
     }
     
     .account-info {
         margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: rgba(248, 249, 250, 0.8);
+        border-radius: 12px;
+        border-left: 4px solid #0D47A1;
+    }
+
+    /* Tema oscuro para info de cuenta */
+    [data-theme="dark"] .account-info,
+    [data-theme="nocturno"] .account-info {
+        background: rgba(45, 45, 45, 0.8);
+        border-left-color: #4a9eff;
     }
     
     .account-info p {
         font-size: 1.1rem;
         color: #555;
-        margin: 0.5rem 0;
+        margin: 0.8rem 0;
+        font-weight: 500;
+    }
+
+    /* Tema oscuro para párrafos de info */
+    [data-theme="dark"] .account-info p,
+    [data-theme="nocturno"] .account-info p {
+        color: #ccc;
     }
     
     .favorites-section {
@@ -59,64 +132,96 @@
         color: #0D47A1;
         margin: 0;
         font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    /* Tema oscuro para títulos de sección */
+    [data-theme="dark"] .favorites-header h3,
+    [data-theme="nocturno"] .favorites-header h3 {
+        color: #4a9eff;
     }
     
     .favorites-count {
         background: #e3f2fd;
         color: #0D47A1;
-        padding: 0.3rem 0.8rem;
+        padding: 0.5rem 1rem;
         border-radius: 20px;
         font-size: 0.9rem;
         font-weight: bold;
+    }
+
+    /* Tema oscuro para contador */
+    [data-theme="dark"] .favorites-count,
+    [data-theme="nocturno"] .favorites-count {
+        background: rgba(74, 158, 255, 0.2);
+        color: #4a9eff;
     }
     
     .favorites-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
+        gap: 1.5rem;
         margin-bottom: 2rem;
     }
     
     .favorite-line-card {
-        padding: 1rem;
-        border-radius: 10px;
+        padding: 1.5rem;
+        border-radius: 15px;
         border: 2px solid;
         position: relative;
         cursor: pointer;
         transition: all 0.3s ease;
         text-decoration: none;
         display: block;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Tema oscuro para tarjetas de líneas */
+    [data-theme="dark"] .favorite-line-card,
+    [data-theme="nocturno"] .favorite-line-card {
+        background: rgba(45, 45, 45, 0.9);
     }
     
     .favorite-line-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         text-decoration: none;
     }
     
     .line-name {
         font-weight: bold;
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
     
     .line-added {
-        font-size: 0.8rem;
-        opacity: 0.7;
+        font-size: 0.9rem;
+        opacity: 0.8;
+        font-weight: 500;
     }
     
     .remove-favorite {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 15px;
+        right: 15px;
         background: rgba(255, 255, 255, 0.9);
         border: none;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         cursor: pointer;
         font-size: 16px;
         transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Tema oscuro para botón de eliminar */
+    [data-theme="dark"] .remove-favorite,
+    [data-theme="nocturno"] .remove-favorite {
+        background: rgba(45, 45, 45, 0.9);
+        color: #e0e0e0;
     }
     
     .remove-favorite:hover {
@@ -128,72 +233,107 @@
     .favorite-station-card-group {
         background: white;
         border: 1px solid #dee2e6;
-        border-radius: 10px;
-        padding: 1rem;
+        border-radius: 15px;
+        padding: 1.5rem;
         position: relative;
         transition: all 0.3s ease;
         border-left: 4px solid;
     }
+
+    /* Tema oscuro para tarjetas de estaciones */
+    [data-theme="dark"] .favorite-station-card-group,
+    [data-theme="nocturno"] .favorite-station-card-group {
+        background: #2a2a2a;
+        border-color: #444;
+    }
     
     .favorite-station-card-group:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
     
     .station-group-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
         flex-wrap: wrap;
         gap: 0.5rem;
     }
     
     .station-name {
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #333;
         margin: 0;
         flex: 1;
+    }
+
+    /* Tema oscuro para nombre de estación */
+    [data-theme="dark"] .station-name,
+    [data-theme="nocturno"] .station-name {
+        color: #e0e0e0;
     }
     
     .lines-count-badge {
         background: #e3f2fd;
         color: #1976d2;
-        padding: 0.2rem 0.6rem;
+        padding: 0.3rem 0.8rem;
         border-radius: 12px;
         font-size: 0.8rem;
         font-weight: 500;
         border: 1px solid #bbdefb;
     }
+
+    /* Tema oscuro para badge */
+    [data-theme="dark"] .lines-count-badge,
+    [data-theme="nocturno"] .lines-count-badge {
+        background: rgba(74, 158, 255, 0.2);
+        color: #4a9eff;
+        border-color: rgba(74, 158, 255, 0.3);
+    }
     
     .station-added {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: #666;
         margin: 0;
         width: 100%;
+        font-weight: 500;
+    }
+
+    /* Tema oscuro para fecha añadida */
+    [data-theme="dark"] .station-added,
+    [data-theme="nocturno"] .station-added {
+        color: #aaa;
     }
     
     .station-lines-list {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
     }
     
     .station-line-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.5rem;
+        padding: 0.8rem;
         background: #f8f9fa;
-        border-radius: 6px;
+        border-radius: 8px;
         border: 1px solid #e9ecef;
+    }
+
+    /* Tema oscuro para items de línea */
+    [data-theme="dark"] .station-line-item,
+    [data-theme="nocturno"] .station-line-item {
+        background: #3a3a3a;
+        border-color: #555;
     }
     
     .line-link {
         font-weight: 500;
         text-decoration: none;
-        font-size: 0.95rem;
+        font-size: 1rem;
         flex: 1;
     }
     
@@ -205,14 +345,21 @@
         background: rgba(255, 255, 255, 0.9);
         border: none;
         border-radius: 50%;
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
         cursor: pointer;
         font-size: 12px;
         transition: all 0.3s ease;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    /* Tema oscuro para botón de eliminar línea */
+    [data-theme="dark"] .remove-favorite-line,
+    [data-theme="nocturno"] .remove-favorite-line {
+        background: rgba(45, 45, 45, 0.9);
+        color: #e0e0e0;
     }
     
     .remove-favorite-line:hover {
@@ -226,43 +373,97 @@
         padding: 3rem;
         color: #666;
         background: #f8f9fa;
-        border-radius: 10px;
+        border-radius: 15px;
         border: 2px dashed #dee2e6;
+    }
+
+    /* Tema oscuro para estado vacío */
+    [data-theme="dark"] .empty-favorites,
+    [data-theme="nocturno"] .empty-favorites {
+        background: #3a3a3a;
+        border-color: #555;
+        color: #aaa;
     }
     
     .empty-favorites h4 {
         color: #999;
         margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    /* Tema oscuro para título vacío */
+    [data-theme="dark"] .empty-favorites h4,
+    [data-theme="nocturno"] .empty-favorites h4 {
+        color: #ccc;
     }
     
     .empty-favorites p {
-        margin: 0.5rem 0;
+        margin: 0.8rem 0;
+        font-size: 1rem;
+    }
+
+    .empty-favorites a {
+        color: #0D47A1;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    /* Tema oscuro para enlaces vacíos */
+    [data-theme="dark"] .empty-favorites a,
+    [data-theme="nocturno"] .empty-favorites a {
+        color: #4a9eff;
+    }
+
+    .empty-favorites a:hover {
+        color: #0066cc;
+        text-decoration: underline;
     }
     
     .add-favorites-tip {
         background: #fff3cd;
         border: 1px solid #ffeaa7;
-        border-radius: 8px;
-        padding: 1rem;
+        border-radius: 12px;
+        padding: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    /* Tema oscuro para tip */
+    [data-theme="dark"] .add-favorites-tip,
+    [data-theme="nocturno"] .add-favorites-tip {
+        background: rgba(255, 193, 7, 0.1);
+        border-color: rgba(255, 193, 7, 0.3);
     }
     
     .add-favorites-tip h4 {
         color: #856404;
-        margin: 0 0 0.5rem 0;
-        font-size: 1rem;
+        margin: 0 0 0.8rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* Tema oscuro para título del tip */
+    [data-theme="dark"] .add-favorites-tip h4,
+    [data-theme="nocturno"] .add-favorites-tip h4 {
+        color: #ffc107;
     }
     
     .add-favorites-tip p {
         color: #856404;
-        margin: 0;
-        font-size: 0.9rem;
+        margin: 0.5rem 0;
+        font-size: 0.95rem;
+    }
+
+    /* Tema oscuro para texto del tip */
+    [data-theme="dark"] .add-favorites-tip p,
+    [data-theme="nocturno"] .add-favorites-tip p {
+        color: #ffc107;
     }
     
     @media (max-width: 768px) {
         .account-container {
             margin: 1rem;
-            padding: 1rem;
+            padding: 1.5rem;
         }
         
         .favorites-grid {
@@ -272,7 +473,11 @@
         .account-header {
             flex-direction: column;
             text-align: center;
-            gap: 10px;
+            gap: 15px;
+        }
+
+        .account-header h2 {
+            font-size: 1.75rem;
         }
     }
 </style>
@@ -281,7 +486,7 @@
     <div class="account-header">
         <img src="https://api.dicebear.com/8.x/initials/svg?seed={{ current_user.username }}" alt="Avatar">
         <div>
-            <h2>{{ current_user.username }}</h2>
+            <h2>🚇 {{ current_user.username }}</h2>
             <p class="text-muted">{{ current_user.email }}</p>
         </div>
     </div>

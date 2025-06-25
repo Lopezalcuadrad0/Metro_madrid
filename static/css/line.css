@@ -118,8 +118,10 @@ body {
 
 .line-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    gap: 5px;
+    justify-items: center;
+    justify-content: center;
 }
 
 .line-icon {
@@ -172,6 +174,17 @@ body {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
+    background: rgba(128, 128, 128, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tema oscuro para el contenedor de estaciones */
+[data-theme="dark"] .station-list-container,
+[data-theme="nocturno"] .station-list-container {
+    background: rgba(128, 128, 128, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .line-track {
@@ -549,9 +562,8 @@ body {
     }
     
     .station-list-container {
-        max-width: 100%;
+        padding: 10px;
         width: 100%;
-        padding: 0 10px;
         margin: 0 auto;
     }
     
@@ -647,9 +659,8 @@ body {
     }
     
     .station-list-container {
-        max-width: 100%;
+        padding: 10px;
         width: 100%;
-        padding: 0 5px;
         margin: 0 auto;
     }
     
@@ -719,7 +730,7 @@ body {
     }
     
     .station-list-container {
-        padding: 0;
+        padding: 10px;
         width: 100%;
         margin: 0 auto;
     }

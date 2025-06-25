@@ -41,11 +41,19 @@
     padding: 16px;
     color: #333;
     font-size: 14px;
-    width: 320px;
+    width: 500px;
     max-height: 85vh;
     overflow-y: auto;
     transition: transform 0.5s ease;
     backdrop-filter: blur(10px);
+  }
+
+  /* Tema oscuro para el panel de control */
+  [data-theme="dark"] #control-panel,
+  [data-theme="nocturno"] #control-panel {
+    background: rgba(30, 30, 30, 0.95);
+    color: #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   }
 
   /* Estado oculto del panel */
@@ -107,6 +115,108 @@
       left: 4%;
       top: auto;
     }
+
+    #location-btn {
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      font-size: 18px;
+    }
+
+    .location-buttons,
+    .layers-buttons {
+      flex-direction: column;
+    }
+
+    /* Panel de ruta flotante en móvil */
+    .mobile-route-panel {
+      position: fixed;
+      top: 70px;
+      left: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.98);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      z-index: 2000;
+      display: none;
+      backdrop-filter: blur(10px);
+      border: 2px solid #e74c3c;
+    }
+
+    .mobile-route-panel.show {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .mobile-route-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .mobile-route-title {
+      font-weight: bold;
+      color: #e74c3c;
+      font-size: 16px;
+    }
+
+    .mobile-route-close {
+      background: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-route-stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 8px;
+    }
+
+    .mobile-route-stat {
+      text-align: center;
+    }
+
+    .mobile-route-stat-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .mobile-route-stat-label {
+      font-size: 11px;
+      color: #666;
+    }
+
+    .mobile-route-algorithm {
+      font-size: 11px;
+      text-align: center;
+      color: #666;
+      opacity: 0.9;
+    }
   }
 
   /* Header del panel */
@@ -155,6 +265,13 @@
     border-left: 4px solid #0066cc;
   }
 
+  /* Tema oscuro para secciones */
+  [data-theme="dark"] .panel-section,
+  [data-theme="nocturno"] .panel-section {
+    background: rgba(45, 45, 45, 0.8);
+    border-left-color: #4a9eff;
+  }
+
   .section-title {
     font-weight: 600;
     color: #0066cc;
@@ -162,6 +279,12 @@
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+  }
+
+  /* Tema oscuro para títulos */
+  [data-theme="dark"] .section-title,
+  [data-theme="nocturno"] .section-title {
+    color: #4a9eff;
   }
 
   /* Búsqueda de rutas */
@@ -182,12 +305,29 @@
     border-radius: 8px;
     font-size: 14px;
     transition: border-color 0.3s;
+    background: white;
+    color: #333;
+  }
+
+  /* Tema oscuro para inputs */
+  [data-theme="dark"] .search-input,
+  [data-theme="nocturno"] .search-input {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #e0e0e0;
   }
 
   .search-input:focus {
     outline: none;
     border-color: #0066cc;
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  }
+
+  /* Tema oscuro para focus */
+  [data-theme="dark"] .search-input:focus,
+  [data-theme="nocturno"] .search-input:focus {
+    border-color: #4a9eff;
+    box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.2);
   }
 
   .suggestions {
@@ -205,19 +345,37 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
 
+  /* Tema oscuro para sugerencias */
+  [data-theme="dark"] .suggestions,
+  [data-theme="nocturno"] .suggestions {
+    background: #2a2a2a;
+    border-color: #444;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
+
   .suggestion-item {
     padding: 8px 12px;
     cursor: pointer;
     border-bottom: 1px solid #f0f0f0;
     font-size: 13px;
+    color: #333;
+  }
+
+  /* Tema oscuro para items de sugerencia */
+  [data-theme="dark"] .suggestion-item,
+  [data-theme="nocturno"] .suggestion-item {
+    border-bottom-color: #444;
+    color: #e0e0e0;
   }
 
   .suggestion-item:hover {
     background: #f8f9fa;
   }
 
-  .suggestion-item:last-child {
-    border-bottom: none;
+  /* Tema oscuro para hover de sugerencias */
+  [data-theme="dark"] .suggestion-item:hover,
+  [data-theme="nocturno"] .suggestion-item:hover {
+    background: #3a3a3a;
   }
 
   .search-button {
@@ -369,6 +527,8 @@
   /* Efecto de entrada del botón hamburguesa */
   #show-panel-btn.show {
     display: flex;
+    justify-content: center;
+    align-items: center;
     animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
@@ -387,23 +547,80 @@
     }
   }
 
-  /* Estilos para marcadores y mapas */
+  /* Emojis más grandes para estaciones */
   .station-marker {
-    border: 2px solid white !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    font-size: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 3px solid !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
     transition: all 0.3s ease !important;
+    background: white !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 
+  /* Tamaños dinámicos según zoom */
+  .station-marker.zoom-close {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 28px !important;
+    border-width: 4px !important;
+  }
+
+  .station-marker.zoom-medium {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 20px !important;
+    border-width: 3px !important;
+  }
+
+  .station-marker.zoom-far {
+    width: 25px !important;
+    height: 25px !important;
+    font-size: 14px !important;
+    border-width: 2px !important;
+  }
+
+  /* Marcadores de origen y destino */
   .route-marker-origin {
+    font-size: 36px !important;
     background: #27ae60 !important;
-    border: 3px solid white !important;
-    box-shadow: 0 0 15px rgba(39, 174, 96, 0.6) !important;
+    border: 4px solid white !important;
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.8) !important;
+    animation: pulse-origin 2s infinite !important;
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .route-marker-destination {
+    font-size: 36px !important;
     background: #e74c3c !important;
-    border: 3px solid white !important;
-    box-shadow: 0 0 15px rgba(231, 76, 60, 0.6) !important;
+    border: 4px solid white !important;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.8) !important;
+    animation: pulse-destination 2s infinite !important;
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  @keyframes pulse-origin {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  @keyframes pulse-destination {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
   }
 
   /* Estilos personalizados para clusters de marcadores */
@@ -594,6 +811,119 @@
       flex-direction: column;
     }
   }
+
+  /* Panel de información de estación */
+  .station-info-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 3000;
+    max-width: 400px;
+    width: 90%;
+    display: none;
+    backdrop-filter: blur(10px);
+    border: 2px solid #e74c3c;
+  }
+
+  .station-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e74c3c;
+  }
+
+  .station-info-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+
+  .station-info-close {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .station-info-close:hover {
+    transform: scale(1.1);
+    background: #c0392b;
+  }
+
+  .station-info-content {
+    margin-bottom: 20px;
+  }
+
+  .station-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .station-info-label {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .station-info-value {
+    color: #666;
+    font-family: monospace;
+  }
+
+  .station-info-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  .station-info-btn {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .station-info-btn.primary {
+    background: #e74c3c;
+    color: white;
+  }
+
+  .station-info-btn.primary:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+  }
+
+  .station-info-btn.secondary {
+    background: #3498db;
+    color: white;
+  }
+
+  .station-info-btn.secondary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+  }
 </style>
 {% endblock %}
 
@@ -710,6 +1040,61 @@
   <div class="spinner"></div>
   <p>Calculando ruta óptima...</p>
 </div>
+
+<!-- Panel de información de estación -->
+<div class="station-info-panel" id="station-info-panel">
+  <div class="station-info-header">
+    <div class="station-info-title">🚉 Información de Estación</div>
+    <button class="station-info-close" id="close-station-info">✕</button>
+  </div>
+  <div class="station-info-content">
+    <div class="station-info-item">
+      <span class="station-info-label">Nombre:</span>
+      <span class="station-info-value" id="station-name">--</span>
+    </div>
+    <div class="station-info-item">
+      <span class="station-info-label">ID:</span>
+      <span class="station-info-value" id="station-id">--</span>
+    </div>
+    <div class="station-info-item">
+      <span class="station-info-label">Línea:</span>
+      <span class="station-info-value" id="station-line">--</span>
+    </div>
+    <div class="station-info-item">
+      <span class="station-info-label">Zona:</span>
+      <span class="station-info-value" id="station-zone">--</span>
+    </div>
+  </div>
+  <div class="station-info-actions">
+    <a href="#" class="station-info-btn primary" id="go-to-station">🚇 Ver Estación</a>
+    <button class="station-info-btn secondary" id="select-for-route">🎯 Seleccionar Ruta</button>
+  </div>
+</div>
+
+<!-- Panel de ruta móvil -->
+<div class="mobile-route-panel" id="mobile-route-panel">
+  <div class="mobile-route-header">
+    <div class="mobile-route-title">🚇 Ruta Calculada</div>
+    <button class="mobile-route-close" id="close-mobile-route">✕</button>
+  </div>
+  <div class="mobile-route-stats">
+    <div class="mobile-route-stat">
+      <div class="mobile-route-stat-value" id="mobile-route-time">--</div>
+      <div class="mobile-route-stat-label">minutos</div>
+    </div>
+    <div class="mobile-route-stat">
+      <div class="mobile-route-stat-value" id="mobile-route-transfers">--</div>
+      <div class="mobile-route-stat-label">transbordos</div>
+    </div>
+    <div class="mobile-route-stat">
+      <div class="mobile-route-stat-value" id="mobile-route-stations">--</div>
+      <div class="mobile-route-stat-label">estaciones</div>
+    </div>
+  </div>
+  <div class="mobile-route-algorithm" id="mobile-route-algorithm">
+    Algoritmo: <span id="mobile-algorithm-used">--</span>
+  </div>
+</div>
 {% endblock %}
 
 {% block scripts %}
@@ -730,25 +1115,129 @@ document.addEventListener('DOMContentLoaded', function() {
         maxZoom: 18
     });
 
-    // Capas base
+    // Capas base del mapa
     const baseLayers = {
-        light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '© CARTO'
-        }),
-        dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '© CARTO'
-        })
+      dark: L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+        { attribution: "© CARTO" }
+      ),
+      classic: L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        { attribution: "© CARTO" }
+      ),
+      clear: L.tileLayer(
+        "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+        { attribution: "© OpenStreetMap" }
+      ),
     };
 
-    let currentBaseLayer = baseLayers.light;
+    // Función para cambiar el estilo del mapa según el tema
+    function updateMapStyle(theme) {
+      if (currentBaseLayer) map.removeLayer(currentBaseLayer);
+
+      // Mapear temas a estilos de mapa
+      const themeToStyle = {
+        light: "classic", // Tema claro -> Mapa clásico bonito
+        dark: "dark", // Tema oscuro -> Mapa oscuro moderno
+        nocturno: "dark", // Tema nocturno -> Mapa oscuro moderno
+      };
+
+      const mapStyle = themeToStyle[theme] || "classic";
+      currentBaseLayer = baseLayers[mapStyle];
+      currentBaseLayer.addTo(map);
+
+      console.log(`🗺️ Estilo de mapa cambiado a: ${mapStyle} (tema: ${theme})`);
+    }
+
+    // Detectar el tema actual al cargar la página
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+    let currentBaseLayer = baseLayers[
+      currentTheme === "dark" || currentTheme === "nocturno" ? "dark" : "classic"
+    ];
     currentBaseLayer.addTo(map);
+
+    // Escuchar cambios en el tema global
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "data-theme"
+        ) {
+          const newTheme = document.documentElement.getAttribute("data-theme");
+          updateMapStyle(newTheme);
+        }
+      });
+    });
+
+    // Observar cambios en el atributo data-theme del html
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
+    // También escuchar eventos personalizados si existen
+    document.addEventListener("themeChanged", function (e) {
+      updateMapStyle(e.detail.theme);
+    });
 
     // Variables globales
     const routeLayers = {};
     const lineColors = {};
     let stationClusterLayer = L.markerClusterGroup({
-        maxClusterRadius: 30,
-        disableClusteringAtZoom: 15
+        chunkedLoading: true,
+        maxClusterRadius: 60,
+        spiderfyOnMaxZoom: true,
+        showCoverageOnHover: false,
+        zoomToBoundsOnClick: true,
+        disableClusteringAtZoom: 16,
+        iconCreateFunction: function(cluster) {
+            const markers = cluster.getAllChildMarkers();
+            const count = markers.length;
+            
+            const lineCounts = {};
+            markers.forEach((marker) => {
+                if (marker.stationData && marker.stationData.lines) {
+                    marker.stationData.lines.forEach((line) => {
+                        lineCounts[line] = (lineCounts[line] || 0) + 1;
+                    });
+                }
+            });
+
+            let mainLine = "default";
+            let maxCount = 0;
+            let minLineNumber = Infinity;
+            
+            for (const [line, count] of Object.entries(lineCounts)) {
+                const lineNumber = parseInt(line.replace("R", "99"));
+                
+                if (count > maxCount || (count === maxCount && lineNumber < minLineNumber)) {
+                    maxCount = count;
+                    mainLine = line;
+                    minLineNumber = lineNumber;
+                }
+            }
+
+            const lineConfig = lineColors[mainLine] || { color: '#666666' };
+            
+            return L.divIcon({
+                html: `<div style="
+                    background-color: ${lineConfig.color};
+                    color: white;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    font-size: 14px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                ">${count}</div>`,
+                className: 'marker-cluster',
+                iconSize: L.point(40, 40)
+            });
+        }
     });
     let currentRouteLayer = L.layerGroup();
     let estaciones = [];
@@ -841,7 +1330,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     lat: station.lat,
                     lon: station.lon,
                     lines: new Set(),
-                    id_fijo: station.id
+                    id_fijo: station.id,
+                    zone: station.zone || 'A'
                 };
             }
 
@@ -853,20 +1343,70 @@ document.addEventListener('DOMContentLoaded', function() {
             const mainLine = linesArray[0];
             const lineConfig = lineColors[mainLine] || { color: '#666666' };
 
-            const marker = L.circleMarker([stationData.lat, stationData.lon], {
-                radius: linesArray.length > 1 ? 8 : 5,
-                fillColor: lineConfig.color,
-                color: '#fff',
-                weight: 2,
-                opacity: 1,
-                fillOpacity: 0.9,
-                className: 'station-marker'
+            // Determinar tamaño según zoom
+            const zoom = map.getZoom();
+            let markerClass = 'station-marker';
+            let iconSize = [40, 40];
+            let fontSize = 24;
+
+            if (zoom >= 14) {
+                markerClass += ' zoom-close';
+                iconSize = [50, 50];
+                fontSize = 28;
+            } else if (zoom >= 12) {
+                markerClass += ' zoom-medium';
+                iconSize = [35, 35];
+                fontSize = 20;
+            } else {
+                markerClass += ' zoom-far';
+                iconSize = [25, 25];
+                fontSize = 14;
+            }
+
+            // Crear marcador con emoji y borde del color de la línea
+            const marker = L.divIcon({
+                className: markerClass,
+                html: '🚉',
+                iconSize: iconSize,
+                iconAnchor: [iconSize[0]/2, iconSize[1]/2]
             });
 
-            marker.stationData = stationData;
+            const stationMarker = L.marker([stationData.lat, stationData.lon], {
+                icon: marker
+            });
 
-            marker.bindTooltip(
-                `${stationData.name}<br><strong>Líneas:</strong> ${linesArray.join(', ')}`,
+            // Aplicar color de línea al borde del marcador
+            stationMarker.on('add', function() {
+                const element = this.getElement();
+                if (element) {
+                    element.style.borderColor = lineConfig.color;
+                }
+            });
+
+            stationMarker.stationData = stationData;
+            stationMarker.clickCount = 0;
+            stationMarker.clickTimer = null;
+
+            // Lógica de click y doble click
+            stationMarker.on('click', function(e) {
+                this.clickCount++;
+                
+                if (this.clickCount === 1) {
+                    this.clickTimer = setTimeout(() => {
+                        // Click simple - Mostrar panel de información
+                        showStationInfo(stationData);
+                        this.clickCount = 0;
+                    }, 200);
+                } else if (this.clickCount === 2) {
+                    // Doble click - Seleccionar para ruta
+                    clearTimeout(this.clickTimer);
+                    selectStationForRoute(stationData);
+                    this.clickCount = 0;
+                }
+            });
+
+            stationMarker.bindTooltip(
+                `${stationData.name}<br><strong>Líneas:</strong> ${linesArray.join(', ')}<br><small>Click: Info | Doble click: Ruta</small>`,
                 {
                     permanent: false,
                     direction: 'top',
@@ -875,102 +1415,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             );
 
-            stationClusterLayer.addLayer(marker);
+            stationClusterLayer.addLayer(stationMarker);
         });
 
         map.addLayer(stationClusterLayer);
-    }
-
-    // Configuración mejorada de clusters
-    function setupClusterConfiguration() {
-        // Personalizar el estilo de los clusters
-        stationClusterLayer.on('clusterclick', function(e) {
-            const markers = e.layer.getAllChildMarkers();
-            
-            // Encontrar la línea principal (la que más aparece en el cluster)
-            const lineCounts = {};
-            markers.forEach((marker) => {
-                if (marker.stationData && marker.stationData.lines) {
-                    marker.stationData.lines.forEach((line) => {
-                        lineCounts[line] = (lineCounts[line] || 0) + 1;
-                    });
-                }
-            });
-
-            // Obtener la línea más frecuente, en caso de empate elegir la menor
-            let mainLine = "default";
-            let maxCount = 0;
-            let minLineNumber = Infinity;
-            
-            for (const [line, count] of Object.entries(lineCounts)) {
-                const lineNumber = parseInt(line.replace("R", "99"));
-                
-                if (count > maxCount || (count === maxCount && lineNumber < minLineNumber)) {
-                    maxCount = count;
-                    mainLine = line;
-                    minLineNumber = lineNumber;
-                }
-            }
-
-            const lineConfig = lineColors[mainLine] || { color: '#666666' };
-            
-            // Crear tooltip con información del cluster
-            const stationNames = markers.map(m => m.stationData.name).join(', ');
-            const tooltipContent = `
-                <div class="cluster-tooltip">
-                    <strong>${markers.length} estaciones</strong><br>
-                    <small>${stationNames}</small><br>
-                    <small>Línea principal: ${mainLine}</small>
-                </div>
-            `;
-
-            e.layer.bindTooltip(tooltipContent, {
-                permanent: false,
-                direction: 'top',
-                offset: [0, -10],
-                className: 'cluster-tooltip'
-            });
-        });
-
-        // Personalizar el estilo visual de los clusters
-        stationClusterLayer.on('add', function() {
-            const clusterElements = document.querySelectorAll('.marker-cluster');
-            clusterElements.forEach(cluster => {
-                const markers = cluster._leaflet_id ? stationClusterLayer.getLayer(cluster._leaflet_id)?.getAllChildMarkers() : [];
-                if (markers && markers.length > 0) {
-                    const lineCounts = {};
-                    markers.forEach((marker) => {
-                        if (marker.stationData && marker.stationData.lines) {
-                            marker.stationData.lines.forEach((line) => {
-                                lineCounts[line] = (lineCounts[line] || 0) + 1;
-                            });
-                        }
-                    });
-
-                    let mainLine = "default";
-                    let maxCount = 0;
-                    let minLineNumber = Infinity;
-                    
-                    for (const [line, count] of Object.entries(lineCounts)) {
-                        const lineNumber = parseInt(line.replace("R", "99"));
-                        
-                        if (count > maxCount || (count === maxCount && lineNumber < minLineNumber)) {
-                            maxCount = count;
-                            mainLine = line;
-                            minLineNumber = lineNumber;
-                        }
-                    }
-
-                    const lineConfig = lineColors[mainLine] || { color: '#666666' };
-                    
-                    // Aplicar color de la línea principal al cluster
-                    cluster.style.backgroundColor = lineConfig.color;
-                    cluster.style.borderColor = '#fff';
-                    cluster.style.color = '#fff';
-                    cluster.style.fontWeight = 'bold';
-                }
-            });
-        });
     }
 
     // ========================================================================
@@ -1065,6 +1513,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('route-stations').textContent = ruta.estaciones;
                 document.getElementById('algorithm-used').textContent = ruta.algoritmo;
                 document.getElementById('route-info').style.display = 'block';
+
+                // Mostrar panel móvil en dispositivos móviles
+                if (window.innerWidth <= 768) {
+                    document.getElementById('mobile-route-time').textContent = Math.round(ruta.tiempo_total * 10) / 10;
+                    document.getElementById('mobile-route-transfers').textContent = ruta.transbordos;
+                    document.getElementById('mobile-route-stations').textContent = ruta.estaciones;
+                    document.getElementById('mobile-algorithm-used').textContent = ruta.algoritmo;
+                    document.getElementById('mobile-route-panel').classList.add('show');
+                }
 
                 // Visualizar ruta en el mapa
                 visualizeRoute(data.data);
@@ -1412,9 +1869,42 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.remove('show');
         });
 
+        // Panel de información de estación
+        document.getElementById('close-station-info').addEventListener('click', function() {
+            document.getElementById('station-info-panel').style.display = 'none';
+        });
+
+        document.getElementById('select-for-route').addEventListener('click', function() {
+            const stationName = document.getElementById('station-name').textContent;
+            const stationData = estaciones.find(s => s.name === stationName);
+            if (stationData) {
+                selectStationForRoute(stationData);
+                document.getElementById('station-info-panel').style.display = 'none';
+            }
+        });
+
+        // Panel de ruta móvil
+        document.getElementById('close-mobile-route').addEventListener('click', function() {
+            document.getElementById('mobile-route-panel').classList.remove('show');
+        });
+
+        // Cerrar panel al hacer click fuera
+        document.addEventListener('click', function(e) {
+            const panel = document.getElementById('station-info-panel');
+            if (e.target === panel) {
+                panel.style.display = 'none';
+            }
+            
+            const mobilePanel = document.getElementById('mobile-route-panel');
+            if (e.target === mobilePanel) {
+                mobilePanel.classList.remove('show');
+            }
+        });
+
         // Eventos del mapa
         map.on('moveend', updateMapInfo);
         map.on('zoomend', updateMapInfo);
+        map.on('zoomend', updateMarkerSizes);
 
         // Tecla Enter para calcular ruta
         document.addEventListener('keypress', function(e) {
@@ -1470,17 +1960,150 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // ========================================================================
+    // 8. PANEL DE INFORMACIÓN DE ESTACIÓN
+    // ========================================================================
+
+    let selectedOrigin = null;
+    let selectedDestination = null;
+    let originMarker = null;
+    let destinationMarker = null;
+
+    function showStationInfo(stationData) {
+        // Llenar información en el panel
+        document.getElementById('station-name').textContent = stationData.name;
+        document.getElementById('station-id').textContent = stationData.id_fijo;
+        document.getElementById('station-line').textContent = Array.from(stationData.lines).join(', ');
+        document.getElementById('station-zone').textContent = stationData.zone;
+
+        // Configurar enlaces
+        const mainLine = Array.from(stationData.lines)[0];
+        document.getElementById('go-to-station').href = `/station/${mainLine}/${stationData.id_fijo}`;
+        
+        // Mostrar panel
+        document.getElementById('station-info-panel').style.display = 'block';
+    }
+
+    function selectStationForRoute(stationData) {
+        if (!selectedOrigin) {
+            // Primera selección - Origen
+            selectedOrigin = stationData;
+            createRouteMarker(stationData, 'origin');
+            showMessage(`🚀 Origen seleccionado: ${stationData.name}`, 'success');
+        } else if (!selectedDestination) {
+            // Segunda selección - Destino
+            selectedDestination = stationData;
+            createRouteMarker(stationData, 'destination');
+            showMessage(`🎯 Destino seleccionado: ${stationData.name}`, 'success');
+            
+            // Calcular ruta automáticamente
+            setTimeout(() => {
+                calcularRutaConSeleccion();
+            }, 500);
+        } else {
+            // Tercera selección - Resetear y seleccionar nuevo origen
+            clearRouteSelection();
+            selectedOrigin = stationData;
+            createRouteMarker(stationData, 'origin');
+            showMessage(`🚀 Nuevo origen seleccionado: ${stationData.name}`, 'success');
+        }
+
+        // Actualizar inputs del formulario
+        updateRouteInputs();
+    }
+
+    function createRouteMarker(stationData, type) {
+        const icon = L.divIcon({
+            className: `route-marker-${type}`,
+            html: type === 'origin' ? '🚀' : '🎯',
+            iconSize: [50, 50],
+            iconAnchor: [25, 25]
+        });
+
+        const marker = L.marker([stationData.lat, stationData.lon], {
+            icon: icon,
+            zIndexOffset: 1000
+        }).addTo(map);
+
+        if (type === 'origin') {
+            originMarker = marker;
+        } else {
+            destinationMarker = marker;
+        }
+
+        marker.bindTooltip(
+            `${type === 'origin' ? '🚀 Origen' : '🎯 Destino'}: ${stationData.name}`,
+            { permanent: true, className: 'station-tooltip' }
+        );
+    }
+
+    function clearRouteSelection() {
+        selectedOrigin = null;
+        selectedDestination = null;
+        
+        if (originMarker) {
+            map.removeLayer(originMarker);
+            originMarker = null;
+        }
+        
+        if (destinationMarker) {
+            map.removeLayer(destinationMarker);
+            destinationMarker = null;
+        }
+    }
+
+    function updateRouteInputs() {
+        if (selectedOrigin) {
+            document.getElementById('origen').value = selectedOrigin.name;
+        }
+        if (selectedDestination) {
+            document.getElementById('destino').value = selectedDestination.name;
+        }
+    }
+
+    function calcularRutaConSeleccion() {
+        if (selectedOrigin && selectedDestination) {
+            document.getElementById('origen').value = selectedOrigin.name;
+            document.getElementById('destino').value = selectedDestination.name;
+            calcularRuta();
+        }
+    }
+
+    // Función para actualizar tamaños de marcadores según zoom
+    function updateMarkerSizes() {
+        const zoom = map.getZoom();
+        const markers = stationClusterLayer.getLayers();
+        
+        markers.forEach(marker => {
+            if (marker.getElement) {
+                const element = marker.getElement();
+                if (element) {
+                    // Remover clases anteriores
+                    element.className = element.className.replace(/zoom-\w+/g, '');
+                    
+                    // Añadir nueva clase según zoom
+                    if (zoom >= 14) {
+                        element.classList.add('zoom-close');
+                    } else if (zoom >= 12) {
+                        element.classList.add('zoom-medium');
+                    } else {
+                        element.classList.add('zoom-far');
+                    }
+                }
+            }
+        });
+    }
+
+    // ========================================================================
     // 9. INICIALIZACIÓN
     // ========================================================================
 
     // Inicializar todo
     loadAllData();
     setupAutocomplete();
-    setupClusterConfiguration();
     updateMapInfo();
     setupEventListeners();
 
     console.log('🚇 Sistema de Mapa de Rutas v5.0 inicializado correctamente');
 });
 </script>
-{% endblock %} 
+{% endblock %}
