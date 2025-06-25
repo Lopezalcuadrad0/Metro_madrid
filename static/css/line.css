@@ -169,8 +169,9 @@ body {
 
 .station-list-container {
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .line-track {
@@ -519,18 +520,57 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .main-container {
         flex-direction: column;
+        margin-top: 44px; /* Mantener margen del header */
     }
+    
     .sidebar {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
         height: auto;
+        position: relative;
+        top: 0;
+        max-height: none;
+        overflow-y: visible;
     }
+    
     .content {
-        padding: 20px;
+        padding: 15px;
+        min-height: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .station-list-container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    
+    /* Banner nocturno centrado */
+    .nocturno-banner {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px auto !important;
+    }
+    
+    .line-grid {
+        grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+        gap: 8px;
+    }
+    
+    .line-icon {
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
     }
 }
 
@@ -583,6 +623,7 @@ body {
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
+        margin-top: 44px;
     }
     
     .sidebar {
@@ -590,10 +631,150 @@ body {
         position: relative;
         height: auto;
         top: 0;
+        padding: 15px;
+        overflow-y: visible;
     }
     
     .content {
-        padding: 20px;
+        padding: 10px;
+        min-height: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .station-list-container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 5px;
+        margin: 0 auto;
+    }
+    
+    /* Banner nocturno centrado */
+    .nocturno-banner {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 15px auto !important;
+    }
+    
+    .station-item {
+        padding: 10px 15px 10px 50px;
+        font-size: 14px;
+    }
+    
+    .line-track {
+        left: 15px;
+    }
+    
+    .station-marker {
+        left: 17.5px;
+    }
+    
+    .line-grid {
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+        gap: 6px;
+    }
+    
+    .line-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+    
+    .line-header {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .line-symbol {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+    
+    .line-logo-main {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .other-lines h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+    .content {
+        padding: 5px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .station-list-container {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Banner nocturno centrado */
+    .nocturno-banner {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 10px auto !important;
+        padding: 15px !important;
+    }
+    
+    .station-item {
+        padding: 8px 10px 8px 45px;
+        font-size: 13px;
+        gap: 10px;
+    }
+    
+    .line-track {
+        left: 12px;
+        width: 4px;
+    }
+    
+    .station-marker {
+        left: 14px;
+        width: 16px;
+        height: 4px;
+    }
+    
+    .station-entry.interchange .station-marker,
+    .station-entry.terminus .station-marker {
+        width: 14px;
+        height: 14px;
+        border: 3px solid var(--line-color);
+    }
+    
+    .line-badge {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+    
+    .sidebar {
+        padding: 10px;
+    }
+    
+    .line-grid {
+        grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+        gap: 4px;
+    }
+    
+    .line-icon {
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
     }
 }
 
