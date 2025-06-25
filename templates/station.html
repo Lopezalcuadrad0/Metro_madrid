@@ -1576,84 +1576,41 @@
         
         console.log(`🖼️ Ruta final de imagen: ${imgPath}`);
         
-        // Cargar imagen con manejo de errores
+        // Asignar imagen directamente y forzar visualización
+        console.log(`🚀 Asignando imagen directamente: ${imgPath}`);
+        model3dImage.src = imgPath;
+        
+        // Forzar visualización inmediata
+        console.log(`🎯 Forzando visualización de imagen 3D`);
+        model3dImage.style.display = 'block';
+        model3dSection.style.display = 'grid';
+        model3DLoaded = true;
+        
+        // Configurar eventos después de mostrar
+        model3dImage.onload = function() {
+            console.log(`✅ Imagen 3D cargada exitosamente: ${imgPath}`);
+            console.log(`📐 Dimensiones: ${model3dImage.naturalWidth}x${model3dImage.naturalHeight}`);
+            console.log(`🎉 ¡IMAGEN 3D VISIBLE!`);
+        };
+        
         model3dImage.onerror = function() {
-            console.warn(`❌ No se pudo cargar la imagen 3D local: ${imgPath}`);
-            // Intentar con la URL externa como fallback
-            const fallbackPath = `http://estacions.albertguillaumes.cat/img/madrid/${nombreArchivo}.png`;
-            console.log(`🔄 Intentando con fallback externo: ${fallbackPath}`);
-            
-            // Crear una nueva imagen temporal para probar el fallback
-            const tempImg = new Image();
-            tempImg.onload = function() {
-                console.log(`✅ Fallback externo cargado: ${fallbackPath}`);
-                model3dImage.src = fallbackPath;
-                model3dImage.style.display = 'block';
-                model3dSection.style.display = 'grid';
-                model3DLoaded = true; // Marcar como cargado
-            };
-            tempImg.onerror = function() {
-                console.error(`❌ Fallback externo también falló, ocultando sección 3D`);
-                model3dSection.style.display = 'none';
-            };
-            tempImg.src = fallbackPath;
-        };
-        
-        // Usar imagen temporal para evitar problemas de caché
-        const testImg = new Image();
-        
-        testImg.onload = function() {
-            console.log(`✅ Imagen 3D cargada correctamente: ${imgPath}`);
-            console.log(`📐 Dimensiones: ${testImg.naturalWidth}x${testImg.naturalHeight}`);
-            
-            // Ahora asignar al elemento DOM
-            model3dImage.src = imgPath;
-            model3dImage.style.display = 'block';
-            model3dSection.style.display = 'grid';
-            model3DLoaded = true;
-            
-            // Click para ampliar
-            model3dImage.onclick = function() {
-                showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
-            };
-            
-            console.log(`🎉 ¡IMAGEN 3D MOSTRADA EXITOSAMENTE!`);
-        };
-        
-        testImg.onerror = function() {
-            console.error(`❌ Error cargando imagen 3D: ${imgPath}`);
+            console.warn(`⚠️ Error cargando imagen local: ${imgPath}`);
             console.log(`🔄 Intentando fallback externo...`);
             
-            // Fallback: intentar cargar desde GitHub
-            const fallbackPath = `https://raw.githubusercontent.com/Lopezalcuadrad0/Metro_madrid/main/static/model_3D/${carpetaLinea}/${nombreTransformado}.png`;
+            // Fallback: imagen externa
+            const fallbackPath = `http://estacions.albertguillaumes.cat/img/madrid/${nombreArchivo}.png`;
             console.log(`🌐 Probando fallback: ${fallbackPath}`);
             
-            const fallbackImg = new Image();
-            fallbackImg.onload = function() {
-                console.log(`✅ Fallback externo cargado: ${fallbackPath}`);
-                model3dImage.src = fallbackPath;
-                model3dImage.style.display = 'block';
-                model3dSection.style.display = 'grid';
-                model3DLoaded = true;
-                
-                model3dImage.onclick = function() {
-                    showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
-                };
-                
-                console.log(`🎉 ¡FALLBACK MOSTRADO EXITOSAMENTE!`);
-            };
-            fallbackImg.onerror = function() {
-                console.error(`❌ Fallback también falló: ${fallbackPath}`);
-                console.log(`🚫 Ocultando sección de imagen 3D`);
-                model3dSection.style.display = 'none';
-            };
-            fallbackImg.src = fallbackPath;
+            model3dImage.src = fallbackPath;
+            // Mantener visible incluso con fallback
         };
         
-        // Iniciar carga con imagen temporal
-        console.log(`🚀 Intentando cargar imagen: ${imgPath}`);
-        console.log(`🏗️ Iniciando carga de imagen 3D: ${imgPath}`);
-        testImg.src = imgPath;
+        // Click para ampliar
+        model3dImage.onclick = function() {
+            showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
+        };
+        
+        console.log(`🎉 ¡IMAGEN 3D CONFIGURADA Y MOSTRADA!`);
     }
 
     // Función de test para debugging (solo para uso manual)
