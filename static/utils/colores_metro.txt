@@ -11,4 +11,4 @@ Línea	Color oficial (hex)	Color aproximado (nombre)
 9	#990066	Rosa fuerte
 10	#000099	Azul oscuro
 11	#006600	Verde oscuro
-12	#a49a00	Amarillo verdoso (Metrosur)
+12	#a49a00	Amarillo verdoso 

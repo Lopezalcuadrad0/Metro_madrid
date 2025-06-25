@@ -14,11 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
         status: "/api/status"
     };
 
+    // Colores de las líneas del metro
+    function getLineColor(lineName) {
+        const colors = {
+            '1': '#00AEEF', '2': '#FF0000', '3': '#FFDF00', '4': '#824100',
+            '5': '#339900', '6': '#999999', '7': '#FF6600', '8': '#FF69B4',
+            '9': '#990066', '10': '#000099', '11': '#006600', '12': '#999933',
+            'R': '#FF0000', 'C': '#0070C0', 'ML1': '#36A9E1', 'ML2': '#97C93D', 'ML3': '#FAB20B'
+        };
+        return colors[lineName] || '#666666';
+    }
+
     function renderStations() {
-        const container = document.getElementById('station-list-container');
-        if (!container) return;
+        const stationList = document.querySelector('.station-list');
+        if (!stationList) return;
         
-        container.innerHTML = '<div class="line-track"></div>'; // Reset but keep track
+        stationList.innerHTML = ''; // Reset content
 
         if (!stationsData || stationsData.length === 0) return;
 
@@ -39,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (station.connecting_lines && station.connecting_lines.length > 1) {
                 console.log(`Estación ${station.name} tiene ${station.connecting_lines.length} líneas de conexión:`, station.connecting_lines);
                 
-                correspondenciasHtml = '<div class="box__line-correspondencias">';
+                correspondenciasHtml = '<div class="station-correspondencias">';
                 let addedConnections = 0;
                 
                 // Normalizar el nombre de la línea actual para comparación
@@ -68,18 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             'ML3': 'ml3'
                         };
 
-                        // Si la correspondencia tiene un icono SVG, creamos la etiqueta <img>.
+                        // Si la correspondencia tiene un icono SVG, creamos la etiqueta con badge.
                         if (svgIconLines.includes(lineName)) {
-                            const fileName = specialFileNames[lineName] || `linea-${lineName}`;
-                             correspondenciasHtml += `
-                                <img src="/static/logos/lineas/${fileName}.svg" 
-                                     alt="Icono línea ${lineName}" 
-                                     class="linea-logo ${fileName}"
-                                     onerror="this.style.display='none'; console.error('Error cargando icono: /static/logos/lineas/${fileName}.svg')">
-                            `;
+                            const color = getLineColor(lineName);
+                            correspondenciasHtml += `<span class="line-badge" style="background-color: ${color}">${lineName}</span>`;
                         } else {
                             // Para el resto (BI, BL, BN, AEA, ET), se muestra un texto corto como fallback.
-                            correspondenciasHtml += `<span class="interchange-fallback">${lineName}</span>`;
+                            correspondenciasHtml += `<span class="line-badge interchange-fallback">${lineName}</span>`;
                         }
 
                         addedConnections++;
@@ -97,12 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
             stationEntry.innerHTML = `
                 <div class="station-item">
                     <div class="station-marker"></div>
-                    <span class="station-name">${station.name}</span>
-                    ${correspondenciasHtml}
+                    <div class="station-info">
+                        <span class="station-name">${station.name}</span>
+                        ${correspondenciasHtml}
+                        <div class="station-actions">
+                            <button class="btn-more-info" onclick="goToStation('${station.name}', '${station.id}')">ℹ️ Info</button>
+                            <button class="btn-favorite-station" onclick="addFavoriteStation('${station.id}', '${lineInfo.id}', '${station.name}')">⭐ Fav</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="schedule-container"></div>
             `;
-            container.appendChild(stationEntry);
+            stationList.appendChild(stationEntry);
             
             stationEntry.querySelector('.station-item').addEventListener('click', () => toggleSchedule(station.id));
         });
@@ -181,6 +193,17 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(err => console.error("Error actualizando trenes:", err));
     }
     
+    // Funciones para los botones de acción
+    window.goToStation = function(stationName, stationId) {
+        window.location.href = `/station/${lineInfo.id}/${stationId}`;
+    };
+
+    window.addFavoriteStation = function(stationId, lineId, stationName) {
+        // Esta función se implementará cuando esté el sistema de favoritos
+        console.log(`Añadiendo a favoritos: ${stationName} (ID: ${stationId}, Línea: ${lineId})`);
+        alert('Funcionalidad de favoritos próximamente disponible');
+    };
+
     // Iniciar todo
     renderStations();
     setInterval(updateTrainPositions, 15000);

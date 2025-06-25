@@ -313,6 +313,54 @@
             color: var(--text-secondary);
             font-size: 0.9em;
         }
+
+        /* Bloque bonito para próximos trenes favoritos */
+        .fav-station-trains {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 12px;
+            margin: 8px 0;
+        }
+        .fav-train-line {
+            margin-bottom: 8px;
+        }
+        .fav-line-badge {
+            display: inline-block;
+            min-width: 22px;
+            text-align: center;
+            color: #fff;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-right: 6px;
+            padding: 2px 6px;
+        }
+        .fav-train-dir {
+            margin-left: 28px;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        .fav-dir {
+            font-weight: 600;
+            color: #333;
+            margin-right: 4px;
+        }
+        .fav-train-time {
+            background: #e9ecef;
+            color: #212529;
+            border-radius: 8px;
+            padding: 2px 7px;
+            margin-left: 3px;
+            font-size: 12px;
+        }
+        .fav-train-time.no {
+            background: #ffcdd2;
+            color: #b71c1c;
+        }
+        .fav-station-trains.error {
+            color: #dc3545;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -362,7 +410,7 @@
             <!-- Próximos trenes -->
             <div class="schedules-section">
                 <h4>Próximos Trenes</h4>
-                <div id="modernTrainsContainer"></div> 
+                <div id="favTrainsContainer"></div> 
             </div>
             
             <!-- Vista 3D de la estación -->
@@ -540,6 +588,9 @@
             
             // Cargar datos de la estación
             searchStationWithNinjaScrap(stationName);
+            
+            // Cargar próximos trenes
+            showFavoriteStationTrains(stationName, 'favTrainsContainer');
         }
 
         // Función para buscar estación con NinjaScrap
@@ -586,6 +637,51 @@
             if (currentStationName) {
                 searchStationWithNinjaScrap(currentStationName);
             }
+        }
+
+        // Asegúrate de que lineColors está definido
+        const lineColors = {
+            "1":  { color: "#0065FE", name: "Línea 1" },
+            "2":  { color: "#FF0000", name: "Línea 2" },
+            "3":  { color: "#FFDF00", name: "Línea 3" },
+            "4":  { color: "#824100", name: "Línea 4" },
+            "5":  { color: "#339900", name: "Línea 5" },
+            "6":  { color: "#999999", name: "Línea 6" },
+            "7":  { color: "#FF6600", name: "Línea 7" },
+            "8":  { color: "#FF69B4", name: "Línea 8" },
+            "9":  { color: "#990066", name: "Línea 9" },
+            "10": { color: "#000099", name: "Línea 10" },
+            "11": { color: "#006600", name: "Línea 11" },
+            "12": { color: "#999933", name: "Línea 12" },
+            "R":  { color: "#0055a4", name: "Ramal" }
+        };
+
+        // Función para mostrar los próximos trenes de una estación
+        async function showFavoriteStationTrains(stationName, containerId) {
+            const response = await fetch(`/api/station/raw-trains/${encodeURIComponent(stationName)}`);
+            const data = await response.json();
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            if (!data.success || !data.trains_data || !data.trains_data.lineas) {
+                container.innerHTML = '<div class="fav-station-trains error">No hay datos de trenes disponibles.</div>';
+                return;
+            }
+            let html = '<div class="fav-station-trains">';
+            data.trains_data.lineas.forEach(linea => {
+                html += `<div class="fav-train-line"><span class="fav-line-badge" style="background:${lineColors[linea.numero]?.color || '#666'}">${linea.numero}</span>`;
+                linea.direcciones.forEach(dir => {
+                    html += `<div class="fav-train-dir"><span class="fav-dir">${dir.destino}</span> `;
+                    if (dir.tiempos && dir.tiempos.length > 0) {
+                        html += dir.tiempos.map(t => `<span class="fav-train-time">${t} min</span>`).join(' ');
+                    } else {
+                        html += '<span class="fav-train-time no">Sin trenes</span>';
+                    }
+                    html += '</div>';
+                });
+                html += '</div>';
+            });
+            html += '</div>';
+            container.innerHTML = html;
         }
     </script>
 </body>

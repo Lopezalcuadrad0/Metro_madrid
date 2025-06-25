@@ -56,180 +56,30 @@
             0%, 100% { filter: drop-shadow(0 0 8px #FFD700) drop-shadow(0 0 16px #FFD700); }
             50% { filter: drop-shadow(0 0 12px #FFD700) drop-shadow(0 0 24px #FFD700); }
         }
-        .line-header {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 24px;
-            min-height: 110px;
-            padding: 24px 0 18px 0;
+
+        .btn-favorite-station {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ccc;
+            color: #333;
+            cursor: pointer;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin: 0 5px;
         }
-        .line-symbol {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 25%;
-            width: 100px;
-            height: 100px;
-            background: var(--line-color);
-            color: #fff;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-            position: relative;
-            flex-shrink: 0;
-            transition: all 0.3s;
-            overflow: hidden;
+        
+        .btn-favorite-station:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: #FFD700;
+            transform: scale(1.05);
         }
-        .line-symbol .svg-line {
-            width: 48px;
-            height: 48px;
-            display: block;
-            margin: 0 auto 2px auto;
-        }
-        .line-symbol .line-num {
-            font-size: 2.2rem;
-            font-weight: 800;
-            line-height: 1;
-            margin-top: 2px;
-            letter-spacing: 1px;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.10);
-        }
-        .line-title h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin: 0 0 8px 0;
-        }
-        .line-title p {
-            font-size: 1.2rem;
-            margin: 0;
-            font-weight: 500;
-        }
-        @media (max-width: 600px) {
-            .line-header {
-                flex-direction: column;
-                align-items: center;
-                min-height: 160px;
-                padding: 18px 0 10px 0;
-                gap: 10px;
-            }
-            .line-symbol {
-                width: 110px;
-                height: 110px;
-                font-size: 3.5rem;
-                border-radius: 25%;
-                margin-bottom: 0;
-            }
-            .line-symbol .svg-line {
-                width: 60px;
-                height: 60px;
-            }
-            .line-symbol .line-num {
-                font-size: 2.7rem;
-            }
-            .line-title h1, .line-title p {
-                display: none;
-            }
-        }
-        .line-track {
-            position: absolute;
-            left: 32px;
-            top: 25px;
-            bottom: 25px;
-            width: 6px;
-            background-color: var(--line-color);
-            border-radius: 5px;
-            z-index: 1;
-            transform: none;
-        }
-        .station-marker {
-            position: absolute;
-            left: 32px;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            border: 4px solid var(--line-color);
-            background: #fff;
-            font-size: 1rem;
-            box-sizing: border-box;
-        }
-        .station-entry {
-            position: relative;
-            min-height: 40px;
-            display: flex;
-            align-items: center;
-        }
-        .station-info {
-            margin-left: 60px;
-            display: flex;
-            align-items: center;
-        }
-        .station-name {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #fff;
-        }
-        .station-correspondencias {
-            margin-left: 60px;
-        }
-        @media (max-width: 600px) {
-            .line-track {
-                left: 28px;
-                width: 6px;
-            }
-            .station-marker {
-                left: 28px;
-                width: 20px;
-                height: 20px;
-                font-size: 0.9rem;
-            }
-            .station-info, .station-correspondencias {
-                margin-left: 48px;
-            }
-        }
-        .line-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .line-icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 56px;
-            height: 56px;
-            border-radius: 18px;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            border: 2px solid #eee;
-            transition: all 0.2s;
-            text-decoration: none;
-            position: relative;
-            overflow: hidden;
-        }
-        .line-icon .svg-line {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 2px;
-        }
-        .line-icon .line-num {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #222;
-            line-height: 1;
-        }
-        .line-icon:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-            border-color: #bbb;
-            transform: scale(1.08);
+        
+        .btn-favorite-station.active {
+            color: #FFD700;
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #FFD700;
+            filter: drop-shadow(0 0 8px #FFD700);
         }
     </style>
 </head>
@@ -240,16 +90,22 @@
     <!-- Barra lateral -->
     <aside class="sidebar">
     <div class="line-header">
-            <div class="line-symbol" style="background-color: var(--line-color);">
-                <img class="svg-line" src="/static/logos/lineas/linea-{{ line_info.linea|lower }}.svg" alt="Línea {{ line_info.linea }}">
+            <div class="line-symbol">
+                {% if line_info.linea == 'Ramal' or line_info.linea == 'R' %}
+                    <img src="/static/logos/lineas/linea-R.svg" alt="Ramal" class="line-logo-main">
+                {% elif line_info.linea == '12' %}
+                    <img src="/static/logos/lineas/linea-12.svg" alt="Línea 12" class="line-logo-main">
+                {% else %}
+                    <img src="/static/logos/lineas/linea-{{ line_info.id }}.svg" alt="Línea {{ line_info.id }}" class="line-logo-main">
+                {% endif %}
             </div>
             <div class="line-title">
                 <h1>{{ line_info.name }}</h1>
-                <p>Línea {{ line_info.linea }}</p>
+                <p>LÍNEA {{ line_info.id }}</p>
+            </div>
                 <button id="favoriteLineBtn" class="favorite-btn" onclick="toggleFavoriteLine()" title="Añadir a favoritos">
                     ⭐
                 </button>
-            </div>
         </div>
         <!-- Estado de la línea (opcional) -->
         <div class="line-status-sidebar">
@@ -273,14 +129,20 @@
     </div>
         <div class="other-lines">
             <h2>Otras líneas</h2>
-            <div class="line-grid">
-                {% if other_lines %}
+                <div class="line-grid">
                     {% for line in other_lines %}
-                        <a href="{{ url_for('line_detail', line_id=line.id) }}" class="line-icon" data-line-id="{{ line.name }}" style="background: {{ line.color }};">
-                            <img class="svg-line" src="/static/logos/lineas/linea-{{ line.id|lower }}.svg" alt="Línea {{ line.id }}">
+                    {% set logo_path = '/static/logos/lineas/' %}
+                    {% if line.name == 'Ramal' or line.name == 'R' %}
+                        {% set logo_path = logo_path + 'linea-R.svg' %}
+                    {% else %}
+                        {% set logo_path = logo_path + 'linea-' + line.id + '.svg' %}
+                    {% endif %}
+                        <a href="{{ url_for('line_detail', line_id=line.id) }}" 
+                           class="line-icon" 
+                           data-line-id="{{ line.name }}">
+                        <img src="{{ logo_path }}" alt="Línea {{ line.name }}" class="line-logo">
                         </a>
                     {% endfor %}
-                {% endif %}
             </div>
         </div>
 
@@ -291,10 +153,12 @@
     <!-- Contenido principal -->
     <main class="content">
         <div class="station-list-container">
-            <div class="line-track"></div>
-            <ul class="station-list">
-                <li style="color: red; font-weight: bold;">🔄 Cargando estaciones...</li>
-            </ul>
+            <div class="station-strip">
+                <div class="station-connector"></div>
+                <ul class="station-list">
+                    <li style="color: red; font-weight: bold;">🔄 Cargando estaciones...</li>
+                </ul>
+            </div>
         </div>
     </main>
     </div>
@@ -336,8 +200,20 @@
                             if (station.correspondencias && station.correspondencias.length > 0) {
                                 correspondenciasHTML += '<div class="station-correspondencias">';
                                 station.correspondencias.forEach(corr => {
-                                    const color = getLineColor(corr);
-                                    correspondenciasHTML += `<span class="line-badge" style="background-color:${color};">${corr}</span>`;
+                                    let logoPath = '';
+                                    if (corr === 'Ramal' || corr === 'R') {
+                                        logoPath = '/static/logos/lineas/linea-R.svg';
+                                    } else if (corr === '6') {
+                                        logoPath = '/static/logos/lineas/linea-6.svg';
+                                    } else if (corr === '12') {
+                                        logoPath = '/static/logos/lineas/linea-12-metrosur.svg';
+                                    } else {
+                                        logoPath = `/static/logos/lineas/linea-${corr}.svg`;
+                                    }
+                                    correspondenciasHTML += `
+                                        <div class="line-badge">
+                                            <img src="${logoPath}" alt="Línea ${corr}" class="line-logo">
+                                        </div>`;
                                 });
                                 correspondenciasHTML += '</div>';
                             }
@@ -351,6 +227,9 @@
                                             <button class="btn-refresh-times" onclick="event.stopPropagation(); refreshTrainTimes('${station.id_fijo}', '${station.name}')">
                                                 🔄 Recargar tiempos
                                             </button>
+                                            <button class="btn-favorite-station" onclick="event.stopPropagation(); toggleStationFavorite('${station.id_fijo}', '${station.name}', this)" title="Añadir a favoritos">
+                                                ⭐ Favorito
+                                            </button>
                                             <a href="/station/${lineId}/${encodeURIComponent(station.id_fijo)}" class="btn-more-info" onclick="event.stopPropagation();">
                                                 ℹ️ Más info
                                             </a>
@@ -362,6 +241,9 @@
                             `;
                             stationList.appendChild(li);
                         });
+                        
+                        // Cargar estado de favoritos para todas las estaciones
+                        loadStationsFavoriteStatus();
                     } else {
                         stationList.innerHTML = '<li>No se encontraron estaciones.</li>';
                     }
@@ -684,10 +566,10 @@
             
             // Determinar el logo correcto
             let logoPath = '';
-            if (linea.numero === 'Ramal') {
-                logoPath = '/static/logos/lineas/ramal.svg';
+            if (linea.numero === 'Ramal' || linea.numero === 'R') {
+                logoPath = '/static/logos/lineas/linea-R.svg';
             } else if (linea.numero === '6') {
-                logoPath = '/static/logos/lineas/linea-6-circular.svg';
+                logoPath = '/static/logos/lineas/linea-6.svg';
             } else if (linea.numero === '12') {
                 logoPath = '/static/logos/lineas/linea-12-metrosur.svg';
             } else {
@@ -730,6 +612,112 @@
         html += '</div>';
         html += '</div>';
         return html;
+    }
+
+    // Actualizar la sección de otras líneas
+    const lineGrid = document.querySelector('.line-grid');
+    if (lineGrid) {
+        other_lines.forEach(line => {
+            let logoPath = '';
+            if (line.name === 'Ramal' || line.name === 'R') {
+                logoPath = '/static/logos/lineas/linea-R.svg';
+            } else if (line.name === '6') {
+                logoPath = '/static/logos/lineas/linea-6.svg';
+            } else if (line.name === '12') {
+                logoPath = '/static/logos/lineas/linea-12.svg';
+            } else {
+                logoPath = `/static/logos/lineas/linea-${line.numero}.svg`;
+            }
+            
+            const lineIcon = document.createElement('a');
+            lineIcon.href = `/line/${line.id}`;
+            lineIcon.className = 'line-icon';
+            lineIcon.dataset.lineId = line.name;
+            lineIcon.innerHTML = `<img src="${logoPath}" alt="Línea ${line.name}" class="line-logo">`;
+            lineGrid.appendChild(lineIcon);
+        });
+    }
+
+    // Funciones para manejar favoritos de estaciones
+    async function loadStationsFavoriteStatus() {
+        const stationItems = document.querySelectorAll('.station-item');
+        for (const stationItem of stationItems) {
+            const stationId = stationItem.dataset.stationId;
+            const favoriteBtn = stationItem.querySelector('.btn-favorite-station');
+            if (favoriteBtn && stationId) {
+                try {
+                    const response = await fetch(`/api/favorites/check/station/${stationId}/${currentLineId}`);
+                    const data = await response.json();
+                    
+                    if (data.is_favorite) {
+                        favoriteBtn.classList.add('active');
+                        favoriteBtn.title = 'Eliminar de favoritos';
+                        favoriteBtn.innerHTML = '⭐ Favorito';
+                    } else {
+                        favoriteBtn.classList.remove('active');
+                        favoriteBtn.title = 'Añadir a favoritos';
+                        favoriteBtn.innerHTML = '⭐ Favorito';
+                    }
+                } catch (error) {
+                    console.error('Error checking station favorite status:', error);
+                }
+            }
+        }
+    }
+
+    async function toggleStationFavorite(stationId, stationName, button) {
+        if (!button) return;
+        
+        const isCurrentlyFavorite = button.classList.contains('active');
+        
+        try {
+            if (isCurrentlyFavorite) {
+                // Eliminar de favoritos
+                const response = await fetch(`/api/favorites/stations/${stationId}/${currentLineId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    button.classList.remove('active');
+                    button.title = 'Añadir a favoritos';
+                    button.innerHTML = '⭐ Favorito';
+                    console.log(`Estación ${stationName} eliminada de favoritos`);
+                } else {
+                    console.error('Error eliminando estación de favoritos:', data.error);
+                }
+            } else {
+                // Añadir a favoritos
+                const response = await fetch('/api/favorites/stations', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        station_id: parseInt(stationId),
+                        line_id: currentLineId,
+                        station_name: stationName
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    button.classList.add('active');
+                    button.title = 'Eliminar de favoritos';
+                    button.innerHTML = '⭐ Favorito';
+                    console.log(`Estación ${stationName} añadida a favoritos de línea ${currentLineId}`);
+                } else {
+                    console.error('Error añadiendo estación a favoritos:', data.error);
+                }
+            }
+        } catch (error) {
+            console.error('Network error:', error);
+        }
     }
     </script>
 </body>

@@ -1402,7 +1402,7 @@ def convertir_proximos_trenes_a_html_personalizado(html_content, station_name):
                         'numero': 'Ramal',
                         'nombre': 'Ramal',
                         'color': '#FFFFFF',
-                        'logo': '/static/logos/lineas/ramal.svg',
+                        'logo': '/static/logos/lineas/linea-R.svg',
                         'direcciones': [{
                             'destino': 'Sin previsión',
                             'tiempos': [],
@@ -1492,7 +1492,7 @@ def convertir_proximos_trenes_a_html_personalizado(html_content, station_name):
                                 <span class="direction-name">{direction_name}</span>
                             </div>
                             <div class="line-name" style="color: {color}">
-                                <img src="/static/logos/lineas/{linea_svg}.svg" alt="{linea_nombre}" style="width: 16px; height: 16px; margin-right: 5px;">
+                                <img src="/static/logos/lineas/linea{linea_num}.svg" alt="{linea_nombre}" style="width: 16px; height: 16px; margin-right: 5px;">
                                 {linea_nombre}
                             </div>
                             <div class="line-destination">
@@ -3101,7 +3101,7 @@ def convertir_proximos_trenes_a_html_personalizado(html_content, station_name):
                         'numero': 'Ramal',
                         'nombre': 'Ramal',
                         'color': '#FFFFFF',
-                        'logo': '/static/logos/lineas/ramal.svg',
+                        'logo': '/static/logos/lineas/linea-R.svg',
                         'direcciones': [{
                             'destino': 'Sin previsión',
                             'tiempos': [],
@@ -3171,7 +3171,7 @@ def convertir_proximos_trenes_a_html_personalizado(html_content, station_name):
                 <div class="line-card-multi" style="border-left-color: {color}">
                     <div class="line-header" style="color: {color}">
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <img src="/static/logos/lineas/{linea_svg}.svg" alt="{linea_nombre}" style="width: 20px; height: 20px;">
+                            <img src="/static/logos/lineas/linea{linea_num}svg" alt="{linea_nombre}" style="width: 20px; height: 20px;">
                             <strong>{linea_nombre}</strong>
                         </div>
                         <span class="directions-count">{sentido_texto}</span>
@@ -3191,7 +3191,7 @@ def convertir_proximos_trenes_a_html_personalizado(html_content, station_name):
                                 <span class="direction-name">{direction_name}</span>
                             </div>
                             <div class="line-name" style="color: {color}">
-                                <img src="/static/logos/lineas/{linea_svg}.svg" alt="{linea_nombre}" style="width: 16px; height: 16px; margin-right: 5px;">
+                                <img src="/static/logos/lineas/linea{linea_num}.svg" alt="{linea_nombre}" style="width: 16px; height: 16px; margin-right: 5px;">
                                 {linea_nombre}
                             </div>
                             <div class="line-destination">
@@ -3425,6 +3425,7 @@ def simulate_ninjascrap_data(station_data):
 def get_raw_trains_data(station_name):
     """Devuelve datos crudos de próximos trenes en formato JSON para procesamiento en frontend"""
     try:
+        import requests
         print(f"[RAW_TRAINS] Obteniendo datos crudos para: {station_name}")
         
         
@@ -3502,16 +3503,16 @@ def get_line_logo(linea_num):
         '3': 'linea-3',
         '4': 'linea-4',
         '5': 'linea-5',
-        '6': 'linea-6-circular',  # Caso especial para línea 6
+        '6': 'linea-6',  # Caso especial para línea 6
         '7': 'linea-7',
         '8': 'linea-8',
         '9': 'linea-9',
         '10': 'linea-10',
         '11': 'linea-11',
-        '12': 'linea-12-metrosur',  # Caso especial para línea 12
-        'Ramal': 'ramal'
+        '12': 'linea-12',  # Caso especial para línea 12
+        'Ramal': 'linea-R'
     }
-    return f'/static/logos/lineas/{logo_mapping.get(linea_num, f"linea-{linea_num}")}.svg'
+    return f'/static/logos/lineas/linea{logo_mapping.get(linea_num, f"linea-{linea_num}")}.svg'
 
 def parse_raw_trains_html(html_content):
     """
@@ -3532,13 +3533,23 @@ def parse_raw_trains_html(html_content):
             'Ramal': '#FFFFFF'
         }
         
+        # Función auxiliar para obtener logo
+        def get_line_logo_local(linea_num):
+            logo_mapping = {
+                '1': 'linea-1', '2': 'linea-2', '3': 'linea-3', '4': 'linea-4',
+                '5': 'linea-5', '6': 'linea-6', '7': 'linea-7', '8': 'linea-8',
+                '9': 'linea-9', '10': 'linea-10', '11': 'linea-11', '12': 'linea-12',
+                'Ramal': 'linea-R'
+            }
+            return f'/static/logos/lineas/{logo_mapping.get(linea_num, f"linea-{linea_num}")}.svg'
+        
         lineas_data = {}
 
         # Buscar cada bloque de información de una dirección de una línea
         direction_blocks = soup.find_all('div', class_='text__info-estacion--tit-icon')
 
         # Caso especial para el Ramal
-        ramal_block = soup.find('img', src=re.compile(r'ramal\.svg'))
+        ramal_block = soup.find('img', src=re.compile(r'Linea-R.svg'))
         if ramal_block:
             ramal_container = ramal_block.find_parent('div', class_='small-12')
             if ramal_container:
@@ -3549,7 +3560,7 @@ def parse_raw_trains_html(html_content):
                         'numero': 'Ramal',
                         'nombre': 'Ramal',
                         'color': '#FFFFFF',
-                        'logo': '/static/logos/lineas/ramal.svg',
+                        'logo': '/static/logos/lineas/linea-R.svg',
                         'direcciones': [{
                             'destino': 'Sin previsión',
                             'tiempos': [],
@@ -3601,7 +3612,7 @@ def parse_raw_trains_html(html_content):
                     'numero': linea_num,
                     'nombre': f'Línea {linea_num}',
                     'color': colores_lineas.get(linea_num, '#333333'),
-                    'logo': get_line_logo(linea_num),
+                    'logo': get_line_logo_local(linea_num),
                     'direcciones': []
                 }
             
@@ -4184,7 +4195,7 @@ def generate_ramal_trains_data(station_name):
                 'numero': 'Ramal',
                 'nombre': 'Ramal',
                 'color': '#FFFFFF',
-                'logo': '/static/logos/lineas/ramal.svg',
+                'logo': '/static/logos/lineas/linea-R.svg',
                 'direcciones': [{
                     'destino': destino,
                     'tiempos': tiempos,
@@ -5321,9 +5332,36 @@ def account():
     favorite_lines = get_user_favorite_lines(current_user.id)
     favorite_stations = get_user_favorite_stations(current_user.id)
     
+    # Agrupar estaciones favoritas por línea principal, pero mostrando todas las líneas de cada estación
+    from collections import defaultdict
+    grouped_fav_stations = defaultdict(list)
+    
+    for station in favorite_stations:
+        # Usar la línea principal (primera línea) para el agrupamiento
+        primary_line = station['all_lines'][0]
+        line_id = primary_line['line_id']
+        
+        # Crear el objeto de estación con todas las líneas
+        station_with_all_lines = {
+            'station_name': station['station_name'],
+            'station_id': primary_line['station_id'],
+            'line_id': line_id,
+            'line_name': primary_line['line_name'],
+            'line_color': primary_line['line_color'],
+            'added_at': primary_line['added_at'],
+            'all_lines': station['all_lines'],  # Incluir todas las líneas
+            'lines_count': len(station['all_lines'])
+        }
+        
+        grouped_fav_stations[line_id].append(station_with_all_lines)
+    
+    # Convertir defaultdict a dict normal
+    grouped_fav_stations = dict(grouped_fav_stations)
+    
     return render_template('account.html', title='Mi Cuenta', 
                          favorite_lines=favorite_lines, 
-                         favorite_stations=favorite_stations)
+                         favorite_stations=favorite_stations,
+                         grouped_fav_stations=grouped_fav_stations)
 
 
 # ============================================================================

@@ -174,12 +174,79 @@
         text-decoration: none;
         display: block;
         background: rgba(255, 255, 255, 0.9);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        min-height: 180px;
+    }
+
+    .favorite-line-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.75);
+        z-index: 1;
+    }
+
+    .favorite-line-card > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Imágenes de fondo específicas por línea */
+    .favorite-line-card[data-line="1"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line1.svg.png');
+    }
+    .favorite-line-card[data-line="2"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line2.svg.png');
+    }
+    .favorite-line-card[data-line="3"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line3.svg.png');
+    }
+    .favorite-line-card[data-line="4"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line4.svg.png');
+    }
+    .favorite-line-card[data-line="5"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line5.svg.png');
+    }
+    .favorite-line-card[data-line="6"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line6.svg.png');
+    }
+    .favorite-line-card[data-line="7"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line7.svg.png');
+    }
+    .favorite-line-card[data-line="8"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line8.svg.png');
+    }
+    .favorite-line-card[data-line="9"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line9.svg.png');
+    }
+    .favorite-line-card[data-line="10"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line10.svg.png');
+    }
+    .favorite-line-card[data-line="11"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line11.svg.png');
+    }
+    .favorite-line-card[data-line="12"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_Line12.svg.png');
+    }
+    .favorite-line-card[data-line="R"] {
+        background-image: url('/static/data/imagenlinea/Madrid_Metro_LineR.svg.png');
     }
 
     /* Tema oscuro para tarjetas de líneas */
     [data-theme="dark"] .favorite-line-card,
     [data-theme="nocturno"] .favorite-line-card {
         background: rgba(45, 45, 45, 0.9);
+    }
+
+    [data-theme="dark"] .favorite-line-card::before,
+    [data-theme="nocturno"] .favorite-line-card::before {
+        background: rgba(45, 45, 45, 0.75);
     }
     
     .favorite-line-card:hover {
@@ -234,6 +301,32 @@
         background: #f39c12;
         color: white;
         cursor: not-allowed;
+    }
+
+    .btn-go-to-line {
+        background: rgba(33, 150, 243, 0.9);
+        border: 2px solid #2196F3;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: white;
+        margin-left: 0.5rem;
+    }
+
+    /* Tema oscuro para botón de ir a línea */
+    [data-theme="dark"] .btn-go-to-line,
+    [data-theme="nocturno"] .btn-go-to-line {
+        background: rgba(33, 150, 243, 0.8);
+        border-color: #1976D2;
+    }
+
+    .btn-go-to-line:hover {
+        background: #1976D2;
+        transform: translateY(-1px);
+        box-shadow: 0 3px 10px rgba(33, 150, 243, 0.3);
     }
 
     .line-status-info {
@@ -376,13 +469,12 @@
     }
     
     .station-line-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem;
         background: #f8f9fa;
-        border-radius: 8px;
         border: 1px solid #e9ecef;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
     }
 
     /* Tema oscuro para items de línea */
@@ -390,6 +482,11 @@
     [data-theme="nocturno"] .station-line-item {
         background: #3a3a3a;
         border-color: #555;
+    }
+    
+    .station-line-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     
     .line-link {
@@ -522,6 +619,264 @@
         color: #ffc107;
     }
     
+    /* Nuevos estilos para estaciones favoritas agrupadas por línea */
+    .station-group-line-name {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    
+    .station-group-count {
+        background: rgba(0, 0, 0, 0.1);
+        color: #555;
+        padding: 0.3rem 0.8rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    /* Tema oscuro para contador de grupo */
+    [data-theme="dark"] .station-group-count,
+    [data-theme="nocturno"] .station-group-count {
+        background: rgba(255, 255, 255, 0.1);
+        color: #ccc;
+    }
+    
+    .station-item-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .station-name-text {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    /* Tema oscuro para texto de estación */
+    [data-theme="dark"] .station-name-text,
+    [data-theme="nocturno"] .station-name-text {
+        color: #e0e0e0;
+    }
+    
+    .station-added-date {
+        font-size: 0.85rem;
+        color: #888;
+        margin-left: 0.5rem;
+    }
+
+    /* Tema oscuro para fecha */
+    [data-theme="dark"] .station-added-date,
+    [data-theme="nocturno"] .station-added-date {
+        color: #aaa;
+    }
+    
+    .station-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .btn-station-link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid currentColor;
+        transition: all 0.3s ease;
+    }
+
+    /* Tema oscuro para enlace de estación */
+    [data-theme="dark"] .btn-station-link,
+    [data-theme="nocturno"] .btn-station-link {
+        background: rgba(45, 45, 45, 0.8);
+    }
+    
+    .btn-station-link:hover {
+        background: currentColor;
+        color: white !important;
+        text-decoration: none;
+    }
+    
+    .remove-favorite-btn {
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Tema oscuro para botón de eliminar */
+    [data-theme="dark"] .remove-favorite-btn,
+    [data-theme="nocturno"] .remove-favorite-btn {
+        background: rgba(45, 45, 45, 0.9);
+        color: #e0e0e0;
+    }
+    
+    .remove-favorite-btn:hover {
+        background: #ff4444;
+        color: white;
+        transform: scale(1.1);
+    }
+    
+    .btn-refresh-trains {
+        background: rgba(74, 158, 255, 0.1);
+        border: 1px solid #4a9eff;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4a9eff;
+    }
+
+    /* Tema oscuro para botón de actualizar */
+    [data-theme="dark"] .btn-refresh-trains,
+    [data-theme="nocturno"] .btn-refresh-trains {
+        background: rgba(74, 158, 255, 0.2);
+        border-color: #4a9eff;
+        color: #4a9eff;
+    }
+    
+    .btn-refresh-trains:hover {
+        background: #4a9eff;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    /* CSS para contenedor de trenes favoritos */
+    .station-trains-container {
+        margin-top: 0.5rem;
+    }
+    
+    .loading-trains {
+        color: #888;
+        font-style: italic;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Tema oscuro para loading */
+    [data-theme="dark"] .loading-trains,
+    [data-theme="nocturno"] .loading-trains {
+        color: #aaa;
+    }
+    
+    .fav-station-trains {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Tema oscuro para bloque de trenes */
+    [data-theme="dark"] .fav-station-trains,
+    [data-theme="nocturno"] .fav-station-trains {
+        background: #2a2a2a;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    
+    .fav-station-trains.error {
+        background: #fff5f5;
+        border: 1px solid #fed7d7;
+        color: #c53030;
+    }
+
+    /* Tema oscuro para error */
+    [data-theme="dark"] .fav-station-trains.error,
+    [data-theme="nocturno"] .fav-station-trains.error {
+        background: rgba(197, 48, 48, 0.1);
+        border-color: rgba(197, 48, 48, 0.3);
+        color: #ff6b6b;
+    }
+    
+    .fav-train-line {
+        margin-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    
+    .fav-line-badge {
+        display: inline-block;
+        min-width: 22px;
+        text-align: center;
+        color: #fff;
+        border-radius: 4px;
+        padding: 0.3rem 0.5rem;
+        font-weight: 700;
+        font-size: 0.85rem;
+    }
+    
+    .fav-train-dir {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .fav-dir {
+        font-weight: 600;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    /* Tema oscuro para dirección */
+    [data-theme="dark"] .fav-dir,
+    [data-theme="nocturno"] .fav-dir {
+        color: #ccc;
+    }
+    
+    .fav-train-time {
+        background: #e8f5e8;
+        color: #2e7d32;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: 1px solid #c8e6c9;
+    }
+
+    /* Tema oscuro para tiempo de tren */
+    [data-theme="dark"] .fav-train-time,
+    [data-theme="nocturno"] .fav-train-time {
+        background: rgba(46, 125, 50, 0.2);
+        border-color: rgba(46, 125, 50, 0.3);
+        color: #81c784;
+    }
+    
+    .fav-train-time.no {
+        background: #fff3cd;
+        color: #856404;
+        border-color: #ffeaa7;
+    }
+
+    /* Tema oscuro para sin trenes */
+    [data-theme="dark"] .fav-train-time.no,
+    [data-theme="nocturno"] .fav-train-time.no {
+        background: rgba(133, 100, 4, 0.2);
+        border-color: rgba(133, 100, 4, 0.3);
+        color: #ffc107;
+    }
+
     @media (max-width: 768px) {
         .account-container {
             margin: 1rem;
@@ -540,6 +895,16 @@
 
         .account-header h2 {
             font-size: 1.75rem;
+        }
+        
+        .station-item-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .station-actions {
+            width: 100%;
+            justify-content: space-between;
         }
     }
 </style>
@@ -579,7 +944,8 @@
         <div class="favorites-grid">
             {% for line in favorite_lines %}
             <a href="/line/{{ line.id }}" class="favorite-line-card" 
-               style="border-color: {{ line.color }}; background: linear-gradient(135deg, {{ line.color_secondary }}20, {{ line.color_secondary }}10); color: {{ line.text_color if line.text_color == '#FFFFFF' else '#333' }};">
+               data-line="{{ line.id }}"
+               style="border-color: {{ line.color }}; color: {{ line.text_color if line.text_color == '#FFFFFF' else '#333' }};">
                 <button class="remove-favorite" 
                         onclick="event.preventDefault(); removeFavoriteLine('{{ line.id }}');" 
                         title="Eliminar de favoritos">
@@ -590,6 +956,9 @@
                 <div class="line-status" id="line-status-{{ line.id }}">
                     <button class="btn-check-status" onclick="event.preventDefault(); checkLineStatus('{{ line.id }}', '{{ line.name }}');">
                         🚇 Ver estado
+                    </button>
+                    <button class="btn-go-to-line" onclick="event.preventDefault(); goToLine('{{ line.id }}');">
+                        🚇 Ir a línea {{ line.name }}
                     </button>
                 </div>
             </a>
@@ -608,50 +977,110 @@
     <div class="favorites-section">
         <div class="favorites-header">
             <h3>🚇 Mis Estaciones Favoritas</h3>
-            <span class="favorites-count">{{ favorite_stations|length }}</span>
+            <span class="favorites-count">
+                {{ favorite_stations|length }}
+            </span>
         </div>
-        
-        {% if favorite_stations %}
-        <div class="favorites-grid">
-            {% for station in favorite_stations %}
-            <div class="favorite-station-card-group" style="border-left-color: {{ station.line_color }};">
-                <div class="station-group-header">
-                    <h4 class="station-name">{{ station.station_name }}</h4>
-                    {% if station.lines_count > 1 %}
-                        <span class="lines-count-badge">{{ station.lines_count }} líneas</span>
-                    {% endif %}
-                    <p class="station-added">Añadida: {{ station.added_at.split('T')[0] if station.added_at else 'Fecha no disponible' }}</p>
-                </div>
-                
-                <div class="station-lines-list">
-                    {% for line_data in station.all_lines %}
-                        <div class="station-line-item">
-                            <a href="/station/{{ line_data.line_id }}/{{ line_data.station_id }}" 
-                               class="line-link" style="color: {{ line_data.line_color }};">
-                                {{ line_data.line_name }}
-                            </a>
-                            <button class="remove-favorite-line" 
-                                    onclick="removeFavoriteStation('{{ line_data.station_id }}', '{{ line_data.line_id }}');" 
-                                    title="Eliminar {{ line_data.line_name }} de favoritos">
-                    ❌
-                </button>
+        {% if grouped_fav_stations %}
+            {% for line_id, stations in grouped_fav_stations.items() %}
+                <div class="favorite-station-card-group" style="border-left: 4px solid {{ stations[0].line_color }};">
+                    <div class="station-group-header">
+                        <h4 class="station-group-line-name" style="color: {{ stations[0].line_color }};">
+                            Línea {{ line_id }}
+                        </h4>
+                        <span class="station-group-count">{{ stations|length }} estación{{ 'es' if stations|length > 1 else '' }}</span>
                     </div>
-                    {% endfor %}
+                    <ul class="station-lines-list">
+                        {% for station in stations %}
+                            <li class="station-line-item">
+                                <div class="station-item-header">
+                                    <span class="station-name-text">{{ station.station_name }}</span>
+                                    <span class="station-added-date">({{ station.added_at.split('T')[0] if station.added_at else 'Fecha no disponible' }})</span>
+                                    <div class="station-actions">
+                                        <button class="btn-refresh-trains" onclick="refreshFavoriteTrains('{{ station.station_name }}', 'favTrains-{{ line_id }}-{{ loop.index0 }}')" title="Actualizar trenes">
+                                            🔄
+                                        </button>
+                                        <a href="/station/{{ station.line_id }}/{{ station.station_id }}" class="btn-station-link" style="color: {{ station.line_color }};">
+                                            Ver estación
+                                        </a>
+                                        <button class="remove-favorite-btn" onclick="removeFavoriteStation('{{ station.station_id }}', '{{ station.line_id }}');" title="Eliminar de favoritos">❌</button>
+                                    </div>
+                                </div>
+                                <div class="station-trains-container" id="favTrains-{{ line_id }}-{{ loop.index0 }}">
+                                    <div class="loading-trains">Cargando próximos trenes...</div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
-            </div>
             {% endfor %}
-        </div>
         {% else %}
-        <div class="empty-favorites">
-            <h4>🚇 No tienes estaciones favoritas</h4>
-            <p>Busca estaciones y marca tus favoritas</p>
-            <p><a href="/" style="color: #0D47A1;">Buscar estaciones</a></p>
-        </div>
+            <div class="empty-favorites">
+                <h4>🚇 No tienes estaciones favoritas</h4>
+                <p>Busca estaciones y marca tus favoritas</p>
+                <p><a href="/" style="color: #0D47A1;">Buscar estaciones</a></p>
+            </div>
         {% endif %}
     </div>
 </div>
 
 <script>
+const lineColors = {
+    "1":  { color: "#0065FE" }, "2":  { color: "#FF0000" }, "3":  { color: "#FFDF00" },
+    "4":  { color: "#824100" }, "5":  { color: "#339900" }, "6":  { color: "#999999" },
+    "7":  { color: "#FF6600" }, "8":  { color: "#FF69B4" }, "9":  { color: "#990066" },
+    "10": { color: "#000099" }, "11": { color: "#006600" }, "12": { color: "#999933" },
+    "R":  { color: "#0055a4" }
+};
+
+async function showFavoriteStationTrains(stationName, containerId) {
+    const response = await fetch(`/api/station/raw-trains/${encodeURIComponent(stationName)}`);
+    const data = await response.json();
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    if (!data.success || !data.trains_data || !data.trains_data.lineas) {
+        container.innerHTML = '<div class="fav-station-trains error">No hay datos de trenes disponibles.</div>';
+        return;
+    }
+    let html = '<div class="fav-station-trains">';
+    data.trains_data.lineas.forEach(linea => {
+        html += `<div class="fav-train-line"><span class="fav-line-badge" style="background:${lineColors[linea.numero]?.color || '#666'}">${linea.numero}</span>`;
+        linea.direcciones.forEach(dir => {
+            html += `<div class="fav-train-dir"><span class="fav-dir">${dir.destino}</span> `;
+            if (dir.tiempos && dir.tiempos.length > 0) {
+                html += dir.tiempos.map(t => `<span class="fav-train-time">${t} min</span>`).join(' ');
+            } else {
+                html += '<span class="fav-train-time no">Sin trenes</span>';
+            }
+            html += '</div>';
+        });
+        html += '</div>';
+    });
+    html += '</div>';
+    container.innerHTML = html;
+}
+
+// Función para actualizar trenes de una estación favorita
+async function refreshFavoriteTrains(stationName, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    // Mostrar loading
+    container.innerHTML = '<div class="loading-trains">🔄 Actualizando...</div>';
+    
+    // Llamar a la función de actualización
+    await showFavoriteStationTrains(stationName, containerId);
+}
+
+// Llama a la función para cada estación favorita agrupada por línea
+document.addEventListener('DOMContentLoaded', function() {
+    {% for line_id, stations in grouped_fav_stations.items() %}
+        {% for station in stations %}
+            showFavoriteStationTrains("{{ station.station_name }}", "favTrains-{{ line_id }}-{{ loop.index0 }}");
+        {% endfor %}
+    {% endfor %}
+});
+
 async function removeFavoriteLine(lineId) {
     try {
         const response = await fetch(`/api/favorites/lines/${lineId}`, {
@@ -749,6 +1178,11 @@ async function checkLineStatus(lineId, lineName) {
             btn.classList.remove('loading');
         }, 2000);
     }
+}
+
+function goToLine(lineId) {
+    // Redirigir a la página de la línea
+    window.location.href = `/line/${lineId}`;
 }
 </script>
 {% endblock %} 

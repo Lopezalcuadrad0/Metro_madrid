@@ -152,9 +152,9 @@
     <script>
     function getLogoFileName(linea) {
         let lineId = linea.replace('Línea ', '');
-        if (lineId === '12') return 'linea-12-metrosur';
-        if (lineId === 'Ramal') return 'ramal';
-        if (lineId === 'R') return 'ramal'; 
+        if (lineId === 'Ramal' || lineId === 'R') {
+            return 'linea-R';
+        }
         return `linea-${lineId}`;
     }
 
@@ -201,7 +201,7 @@
 
         await loadGlobalStatus();
 
-        const lineColors = { '1': '#00AEEF', '2': '#FF0000', '3': '#FFDF00', '4': '#824100', '5': '#339900', '6': '#999999', '7': '#FF6600', '8': '#FF69B4', '9': '#990066', '10': '#000099', '11': '#006600', '12': '#999933', 'R': '#868e96', 'ML1': '#00AEEF', 'ML2': '#b70073', 'ML3': '#6f6f6f', 'Ramal': '#868e96' };
+        const lineColors = { '1': '#00AEEF', '2': '#FF0000', '3': '#FFDF00', '4': '#824100', '5': '#339900', '6': '#999999', '7': '#FF6600', '8': '#FF69B4', '9': '#990066', '10': '#000099', '11': '#006600', '12': '#999933', 'R': '#868e96', 'ML1': '#00AEEF', 'ML2': '#b70073', 'ML3': '#6f6f6f', 'R': '#868e96' };
 
         try {
             const response = await fetch('/api/lines/status');
@@ -218,8 +218,8 @@
                         <div class="card-header">
                             <div class="line-info">
                                 <a href="/line/${line.number}" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px;">
-                                <img src="/static/logos/lineas/${getLogoFileName(line.name)}.svg" alt="${line.name}" class="line-logo">
-                                <span class="line-name">${line.name}</span>
+                                <img src="/static/logos/lineas/${getLogoFileName(line.number)}.svg" alt="${line.number}" class="line-logo">
+                                <span class="line-name">${line.number}</span>
                                 </a>
                             </div>
                             <div class="status-text">
@@ -240,6 +240,14 @@
             }
 
             const normalLines = data.filter(line => line.status === 'circulación normal');
+
+            // Ordenar por número de línea, dejando Ramal al final
+            normalLines.sort((a, b) => {
+                if (a.number === 'R' || a.number === 'Ramal') return 1;
+                if (b.number === 'R' || b.number === 'Ramal') return -1;
+                return Number(a.number) - Number(b.number);
+            });
+
             if (normalLines.length > 0) {
                 normalLinesBoard.innerHTML = normalLines.map(line => `
                     <a href="/line/${line.number}" style="text-decoration: none; color: inherit;">

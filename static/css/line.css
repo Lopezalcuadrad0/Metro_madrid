@@ -117,29 +117,43 @@ body {
 }
 
 .line-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
-    gap: 5px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; /* Espacio entre iconos */
     justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Limita el alto si quieres, para que no crezca infinito */
+    max-width: 320px; /* o el valor que prefieras */
+    /* Si quieres que no se salga del sidebar: */
+    /* width: 100%; */
 }
 
 .line-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
     color: white;
-    transition: var(--transition);
+    background: #fff;
+    transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    /* Elimina margin si usas gap */
+}
+.line-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
 }
 .line-icon:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: var(--shadow-hover);
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .line-icon.active {
@@ -171,13 +185,14 @@ body {
 
 .station-list-container {
     position: relative;
-    max-width: 800px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
     background: rgba(128, 128, 128, 0.1);
     border-radius: 15px;
-    padding: 30px;
+    padding: 40px 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    overflow-y: visible;
 }
 
 /* Tema oscuro para el contenedor de estaciones */
@@ -187,57 +202,92 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.line-track {
+/* Línea conectora horizontal como en station.html */
+.station-strip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 20px 0;
+    margin: 0 auto;
+    min-width: max-content;
+    width: 100%;
+}
+
+.station-connector {
     position: absolute;
-    left: 20px;
-    top: 25px;
-    bottom: 25px;
-    width: 5px;
-    background-color: var(--line-color);
-    border-radius: 5px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--line-color);
+    border-radius: 2px;
     z-index: 1;
+    transform: translateY(-50%);
 }
 
 .station-list {
     padding: 0;
     margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    min-width: max-content;
+    width: 100%;
 }
 
 .station-entry {
     position: relative;
     z-index: 2;
     list-style: none;
-    margin-bottom: 5px; /* Tighter list */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    flex-shrink: 0;
 }
 
 .station-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 12px 20px 12px 55px; /* Left padding for marker */
+    gap: 8px;
+    padding: 10px 5px;
     border-radius: 10px;
     transition: var(--transition);
     cursor: pointer;
     background-color: transparent;
+    text-align: center;
+    width: 100%;
+    position: relative;
 }
 
 .station-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    gap: 15px;
+    gap: 5px;
+    width: 100%;
 }
 
 .station-name {
     font-weight: 600;
     color: var(--text-primary);
-    flex-shrink: 0;
+    font-size: 0.85em;
+    line-height: 1.2;
+    max-width: 140px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .station-item:hover {
     background-color: #f1f3f5;
-    transform: translateX(5px);
+    transform: translateY(-3px);
 }
 
 /* Tema oscuro para hover de estaciones */
@@ -251,35 +301,43 @@ body {
 
 .station-marker {
     position: absolute;
-    left: 22.5px; /* Centrado en el raíl de 5px que empieza en 20px */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Ancho del tick */
-    height: 5px; /* Grosor del tick, igual que el raíl */
-    background-color: var(--line-color);
-    /* Se eliminan bordes y sombras para el estilo base (tick) */
-}
-
-/* Marker sizes and styles */
-.station-entry .station-marker {
-    /* Este selector ya no es necesario para el tamaño, se controla en la base */
-}
-
-.station-entry.interchange .station-marker,
-.station-entry.terminus .station-marker {
-    /* Re-estilar como círculos para correspondencias y terminales */
-    transform: translate(-50%, -50%); /* Centrado completo */
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
     background-color: #fff;
+    border: 3px solid var(--line-color);
     border-radius: 50%;
-    border: 5px solid var(--line-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 3;
+}
+
+/* Terminales: primera y última estación */
+.station-entry:first-child .station-marker,
+.station-entry:last-child .station-marker {
+    background-color: var(--line-color);
+    border: 3px solid #fff;
     width: 18px;
     height: 18px;
-    z-index: 2; /* Asegurar que esté por encima del raíl */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-.station-entry.terminus .station-marker {
+/* Estaciones de intercambio: círculos más grandes */
+.station-entry.interchange .station-marker {
+    width: 20px;
+    height: 20px;
+    border: 4px solid var(--line-color);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Terminales con intercambio: priorizar estilo de terminal */
+.station-entry:first-child.interchange .station-marker,
+.station-entry:last-child.interchange .station-marker {
     background-color: var(--line-color);
+    border: 3px solid #fff;
+    width: 20px;
+    height: 20px;
 }
 
 .station-entry.terminus .station-name,
@@ -289,22 +347,24 @@ body {
 
 .station-correspondencias {
     display: flex;
-    gap: 6px;
-    margin-left: auto; /* Empuja las correspondencias a la derecha */
+    gap: 4px;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3px;
 }
 
 .line-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%; /* Hacer círculos perfectos */
-    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 9px;
     font-weight: bold;
     color: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     border: 2px solid rgba(255,255,255,0.3);
 }
 
@@ -409,7 +469,7 @@ body {
 
 .station-details {
     display: none;
-    padding: 15px 20px 15px 65px; /* Alineado con el nombre de la estación */
+    padding: 15px 20px 15px 65px;
     background-color: #f8f9fa;
     border-top: 1px solid #e9ecef;
     animation: slide-down 0.3s ease-out;
@@ -567,6 +627,40 @@ body {
         margin: 0 auto;
     }
     
+    .station-item {
+        padding: 10px 15px 10px 50px;
+        font-size: 14px;
+    }
+    
+    .station-list::before {
+        left: 15px;
+        top: calc(10px + 20px);
+        bottom: calc(10px + 20px);
+    }
+    
+    .station-marker {
+        left: 17.5px;
+    }
+    
+    .station-entry:first-child .station-marker,
+    .station-entry:last-child .station-marker {
+        width: 16px;
+        height: 16px;
+        border: 3px solid #fff;
+    }
+    
+    .station-entry.interchange .station-marker {
+        width: 18px;
+        height: 18px;
+        border: 4px solid var(--line-color);
+    }
+    
+    .line-badge {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+    
     /* Banner nocturno centrado */
     .nocturno-banner {
         width: 100%;
@@ -662,6 +756,46 @@ body {
         padding: 10px;
         width: 100%;
         margin: 0 auto;
+        overflow-x: auto;
+    }
+    
+    .station-strip {
+        padding: 15px 0;
+        gap: 0;
+    }
+
+    .station-entry {
+        min-width: 120px;
+        flex-shrink: 0;
+    }
+    
+    .station-item {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+    
+    .station-name {
+        font-size: 0.8em;
+        max-width: 110px;
+        line-height: 1.1;
+    }
+    
+    .station-marker {
+        width: 14px;
+        height: 14px;
+        border: 2px solid var(--line-color);
+    }
+
+    .station-entry:first-child .station-marker,
+    .station-entry:last-child .station-marker {
+        width: 16px;
+        height: 16px;
+    }
+
+    .station-entry.interchange .station-marker {
+        width: 18px;
+        height: 18px;
+        border: 3px solid var(--line-color);
     }
     
     /* Banner nocturno centrado */
@@ -669,19 +803,6 @@ body {
         width: 100%;
         max-width: 100%;
         margin: 0 auto 15px auto !important;
-    }
-    
-    .station-item {
-        padding: 10px 15px 10px 50px;
-        font-size: 14px;
-    }
-    
-    .line-track {
-        left: 15px;
-    }
-    
-    .station-marker {
-        left: 17.5px;
     }
     
     .line-grid {
@@ -730,9 +851,59 @@ body {
     }
     
     .station-list-container {
-        padding: 10px;
+        padding: 8px;
         width: 100%;
         margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    .station-entry {
+        min-width: 100px;
+        flex-shrink: 0;
+    }
+    
+    .station-item {
+        padding: 6px 3px;
+        font-size: 13px;
+        gap: 5px;
+    }
+    
+    .station-name {
+        font-size: 0.75em;
+        max-width: 90px;
+        line-height: 1.1;
+    }
+    
+    .station-marker {
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--line-color);
+    }
+
+    .station-entry:first-child .station-marker,
+    .station-entry:last-child .station-marker {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .station-entry.interchange .station-marker {
+        width: 16px;
+        height: 16px;
+        border: 3px solid var(--line-color);
+    }
+    
+    .line-badge {
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
+    }
+
+    .btn-refresh-times,
+    .btn-more-info,
+    .btn-favorite-station {
+        padding: 2px 4px;
+        font-size: 0.6em;
+        gap: 1px;
     }
     
     /* Banner nocturno centrado */
@@ -741,36 +912,6 @@ body {
         max-width: 100%;
         margin: 0 auto 10px auto !important;
         padding: 15px !important;
-    }
-    
-    .station-item {
-        padding: 8px 10px 8px 45px;
-        font-size: 13px;
-        gap: 10px;
-    }
-    
-    .line-track {
-        left: 12px;
-        width: 4px;
-    }
-    
-    .station-marker {
-        left: 14px;
-        width: 16px;
-        height: 4px;
-    }
-    
-    .station-entry.interchange .station-marker,
-    .station-entry.terminus .station-marker {
-        width: 14px;
-        height: 14px;
-        border: 3px solid var(--line-color);
-    }
-    
-    .line-badge {
-        width: 22px;
-        height: 22px;
-        font-size: 10px;
     }
     
     .sidebar {
@@ -816,23 +957,27 @@ body {
 /* Estilos para los botones de acción de estación */
 .station-actions {
     display: flex;
-    gap: 8px;
-    flex-shrink: 0;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .btn-refresh-times,
-.btn-more-info {
-    padding: 4px 8px;
+.btn-more-info,
+.btn-favorite-station {
+    padding: 4px 6px;
     border-radius: 4px;
-    font-size: 0.75em;
+    font-size: 0.7em;
     font-weight: 500;
     text-decoration: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 3px;
+    justify-content: center;
+    gap: 2px;
     white-space: nowrap;
 }
 
@@ -863,4 +1008,6 @@ body {
     padding: 20px;
     color: #6c757d;
     font-style: italic;
-} 
+}
+
+ 

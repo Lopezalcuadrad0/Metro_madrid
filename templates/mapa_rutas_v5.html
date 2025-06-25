@@ -108,6 +108,9 @@
     #control-panel.hidden {
       transform: translateX(-100%);
     }
+    #control-panel::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    }
 
     #control-panel.hidden .panel-header #hide-panel-btn {
       position: fixed;
@@ -1133,56 +1136,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para cambiar el estilo del mapa según el tema
     function updateMapStyle(theme) {
-      if (currentBaseLayer) map.removeLayer(currentBaseLayer);
+        if (currentBaseLayer) map.removeLayer(currentBaseLayer);
 
-      // Mapear temas a estilos de mapa
-      const themeToStyle = {
-        light: "classic", // Tema claro -> Mapa clásico bonito
-        dark: "dark", // Tema oscuro -> Mapa oscuro moderno
-        nocturno: "dark", // Tema nocturno -> Mapa oscuro moderno
-      };
+        // Mapear temas a estilos de mapa
+        const themeToStyle = {
+            light: "classic",    // Tema claro -> Mapa clásico
+            dark: "dark",        // Tema oscuro -> Mapa oscuro
+            nocturno: "dark"     // Tema nocturno -> Mapa oscuro
+        };
 
-      const mapStyle = themeToStyle[theme] || "classic";
-      currentBaseLayer = baseLayers[mapStyle];
-      currentBaseLayer.addTo(map);
-
-      console.log(`🗺️ Estilo de mapa cambiado a: ${mapStyle} (tema: ${theme})`);
+        const mapStyle = themeToStyle[theme] || "classic";
+        currentBaseLayer = baseLayers[mapStyle];
+        currentBaseLayer.addTo(map);
     }
 
     // Detectar el tema actual al cargar la página
     const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
     let currentBaseLayer = baseLayers[
-      currentTheme === "dark" || currentTheme === "nocturno" ? "dark" : "classic"
+        currentTheme === "dark" || currentTheme === "nocturno" ? "dark" : "classic"
     ];
     currentBaseLayer.addTo(map);
 
     // Escuchar cambios en el tema global
-    const observer = new MutationObserver(function (mutations) {
-      mutations.forEach(function (mutation) {
-        if (
-          mutation.type === "attributes" &&
-          mutation.attributeName === "data-theme"
-        ) {
-          const newTheme = document.documentElement.getAttribute("data-theme");
-          updateMapStyle(newTheme);
-        }
-      });
-    });
-
-    // Observar cambios en el atributo data-theme del html
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["data-theme"],
-    });
-
-    // También escuchar eventos personalizados si existen
-    document.addEventListener("themeChanged", function (e) {
-      updateMapStyle(e.detail.theme);
+    document.addEventListener("themeChanged", function(e) {
+        updateMapStyle(e.detail.theme);
     });
 
     // Variables globales
     const routeLayers = {};
-    const lineColors = {};
+    const lineColors = {
+        "1":  { color: "#0065FE", name: "Línea 1" },
+        "2":  { color: "#FF0000", name: "Línea 2" },
+        "3":  { color: "#FFDF00", name: "Línea 3" },
+        "4":  { color: "#824100", name: "Línea 4" },
+        "5":  { color: "#339900", name: "Línea 5" },
+        "6":  { color: "#999999", name: "Línea 6" },
+        "7":  { color: "#FF6600", name: "Línea 7" },
+        "8":  { color: "#FF75FF", name: "Línea 8" },
+        "9":  { color: "#990066", name: "Línea 9" },
+        "10": { color: "#000099", name: "Línea 10" },
+        "11": { color: "#006600", name: "Línea 11" },
+        "12": { color: "#a49a00", name: "Línea 12" },
+        "R":  { color: "#0055a4", name: "Ramal" }
+    };
     let stationClusterLayer = L.markerClusterGroup({
         chunkedLoading: true,
         maxClusterRadius: 60,
@@ -1192,36 +1188,23 @@ document.addEventListener('DOMContentLoaded', function() {
         disableClusteringAtZoom: 16,
         iconCreateFunction: function(cluster) {
             const markers = cluster.getAllChildMarkers();
-            const count = markers.length;
-            
+            // Cuenta cuántos hay de cada línea principal
             const lineCounts = {};
-            markers.forEach((marker) => {
-                if (marker.stationData && marker.stationData.lines) {
-                    marker.stationData.lines.forEach((line) => {
-                        lineCounts[line] = (lineCounts[line] || 0) + 1;
-                    });
-                }
+            markers.forEach(marker => {
+                let lines = marker.stationData && marker.stationData.lines ? Array.from(marker.stationData.lines) : [];
+                lines.forEach(line => {
+                    // Normaliza el identificador de línea
+                    let lineId = String(line).replace('Línea ', '').replace(' ', '').toUpperCase();
+                    lineCounts[lineId] = (lineCounts[lineId] || 0) + 1;
+                });
             });
+            // Elige la línea con más estaciones en el cluster
+            let mainLine = Object.keys(lineCounts).sort((a, b) => lineCounts[b] - lineCounts[a])[0] || "1";
+            let color = lineColors[mainLine] ? lineColors[mainLine].color : "#666666";
 
-            let mainLine = "default";
-            let maxCount = 0;
-            let minLineNumber = Infinity;
-            
-            for (const [line, count] of Object.entries(lineCounts)) {
-                const lineNumber = parseInt(line.replace("R", "99"));
-                
-                if (count > maxCount || (count === maxCount && lineNumber < minLineNumber)) {
-                    maxCount = count;
-                    mainLine = line;
-                    minLineNumber = lineNumber;
-                }
-            }
-
-            const lineConfig = lineColors[mainLine] || { color: '#666666' };
-            
             return L.divIcon({
                 html: `<div style="
-                    background-color: ${lineConfig.color};
+                    background-color: ${color};
                     color: white;
                     border: 3px solid white;
                     border-radius: 50%;
@@ -1233,7 +1216,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     font-weight: bold;
                     font-size: 14px;
                     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-                ">${count}</div>`,
+                ">${markers.length}</div>`,
                 className: 'marker-cluster',
                 iconSize: L.point(40, 40)
             });
@@ -1317,12 +1300,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function drawStations(stations) {
         stationClusterLayer.clearLayers();
-
         const stationsByName = {};
-
         stations.forEach(station => {
             if (!station.lat || !station.lon) return;
-
             const stationName = station.name;
             if (!stationsByName[stationName]) {
                 stationsByName[stationName] = {
@@ -1334,77 +1314,63 @@ document.addEventListener('DOMContentLoaded', function() {
                     zone: station.zone || 'A'
                 };
             }
-
             stationsByName[stationName].lines.add(station.line);
         });
-
         Object.values(stationsByName).forEach(stationData => {
-            const linesArray = Array.from(stationData.lines).sort();
-            const mainLine = linesArray[0];
+            // Normaliza y elige la línea principal (menor número)
+            const linesArray = Array.from(stationData.lines).map(l => String(l).replace('Línea ', '').replace(' ', '').toUpperCase());
+            const mainLine = linesArray.sort((a, b) => Number(a) - Number(b))[0];
             const lineConfig = lineColors[mainLine] || { color: '#666666' };
-
-            // Determinar tamaño según zoom
+            // Tamaños más pequeños
             const zoom = map.getZoom();
             let markerClass = 'station-marker';
-            let iconSize = [40, 40];
-            let fontSize = 24;
-
+            let iconSize = [4, 4];
             if (zoom >= 14) {
                 markerClass += ' zoom-close';
-                iconSize = [50, 50];
-                fontSize = 28;
+                iconSize = [2, 2];
             } else if (zoom >= 12) {
                 markerClass += ' zoom-medium';
-                iconSize = [35, 35];
-                fontSize = 20;
+                iconSize = [1, 1];
             } else {
                 markerClass += ' zoom-far';
-                iconSize = [25, 25];
-                fontSize = 14;
+                iconSize = [0, 0];
             }
-
-            // Crear marcador con emoji y borde del color de la línea
+            // Crear marcador como círculo blanco con borde de color
             const marker = L.divIcon({
                 className: markerClass,
-                html: '🚉',
+                html: `<div style="
+                    width: ${iconSize[0] - 6}px;
+                    height: ${iconSize[1] - 6}px;
+                    border-radius: 50%;
+                    background: #fff;
+                    border: 3px solid ${lineConfig.color};
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+                    margin: auto;
+                    display: block;
+                "></div>`,
                 iconSize: iconSize,
                 iconAnchor: [iconSize[0]/2, iconSize[1]/2]
             });
-
             const stationMarker = L.marker([stationData.lat, stationData.lon], {
                 icon: marker
             });
-
-            // Aplicar color de línea al borde del marcador
-            stationMarker.on('add', function() {
-                const element = this.getElement();
-                if (element) {
-                    element.style.borderColor = lineConfig.color;
-                }
-            });
-
             stationMarker.stationData = stationData;
             stationMarker.clickCount = 0;
             stationMarker.clickTimer = null;
-
             // Lógica de click y doble click
             stationMarker.on('click', function(e) {
                 this.clickCount++;
-                
                 if (this.clickCount === 1) {
                     this.clickTimer = setTimeout(() => {
-                        // Click simple - Mostrar panel de información
                         showStationInfo(stationData);
                         this.clickCount = 0;
                     }, 200);
                 } else if (this.clickCount === 2) {
-                    // Doble click - Seleccionar para ruta
                     clearTimeout(this.clickTimer);
                     selectStationForRoute(stationData);
                     this.clickCount = 0;
                 }
             });
-
             stationMarker.bindTooltip(
                 `${stationData.name}<br><strong>Líneas:</strong> ${linesArray.join(', ')}<br><small>Click: Info | Doble click: Ruta</small>`,
                 {
@@ -1414,10 +1380,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     className: 'station-tooltip'
                 }
             );
-
             stationClusterLayer.addLayer(stationMarker);
         });
-
         map.addLayer(stationClusterLayer);
     }
 
