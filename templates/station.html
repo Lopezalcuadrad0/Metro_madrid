@@ -877,6 +877,9 @@
     let currentStationLines = [];
 
     // Configuración de líneas
+    console.log('🔥 ARCHIVO JAVASCRIPT CARGADO - station.html');
+    console.log('🌐 URL actual al cargar:', window.location.href);
+    
     const LINE_COLORS = {
         '1': '#00AEEF', '2': '#FF0000', '3': '#FFDF00', '4': '#824100',
         '5': '#339900', '6': '#999999', '7': '#FF6600', '8': '#FF69B4',
@@ -901,8 +904,9 @@
     };
 
     // Inicialización
+    console.log('🎯 PUNTO DE CONTROL: Llegando al primer DOMContentLoaded');
     document.addEventListener('DOMContentLoaded', function() {
-    console.log('🚀 Script de station.html cargado');
+        console.log('🚀 Script de station.html cargado - PRIMER DOMCONTENTLOADED');
         try {
             initializeEventListeners();
             console.log('✅ Event listeners inicializados correctamente');
@@ -1503,9 +1507,18 @@
         loadModernTrains(stationName, 'modernTrainsContainer');
     }
 
+    // Variable para evitar cargas duplicadas
+    let model3DLoaded = false;
+    
     // Mostrar imagen 3D
     function showModel3D(lineas, nombreEstacion) {
         console.log(`🎯 showModel3D llamada con:`, { lineas, nombreEstacion });
+        
+        // Evitar cargas duplicadas
+        if (model3DLoaded) {
+            console.log('⚠️ Modelo 3D ya cargado, evitando duplicación');
+            return;
+        }
         
         const model3dSection = document.getElementById('model3dSection');
         const model3dImage = document.getElementById('model3dImage');
@@ -1577,6 +1590,7 @@
                 model3dImage.src = fallbackPath;
                 model3dImage.style.display = 'block';
                 model3dSection.style.display = 'grid';
+                model3DLoaded = true; // Marcar como cargado
             };
             tempImg.onerror = function() {
                 console.error(`❌ Fallback externo también falló, ocultando sección 3D`);
@@ -1585,25 +1599,64 @@
             tempImg.src = fallbackPath;
         };
         
-        model3dImage.onload = function() {
-            console.log(`✅ Imagen 3D cargada correctamente: ${model3dImage.src}`);
+        // Usar imagen temporal para evitar problemas de caché
+        const testImg = new Image();
+        
+        testImg.onload = function() {
+            console.log(`✅ Imagen 3D cargada correctamente: ${imgPath}`);
+            console.log(`📐 Dimensiones: ${testImg.naturalWidth}x${testImg.naturalHeight}`);
+            
+            // Ahora asignar al elemento DOM
+            model3dImage.src = imgPath;
             model3dImage.style.display = 'block';
             model3dSection.style.display = 'grid';
+            model3DLoaded = true;
+            
+            // Click para ampliar
+            model3dImage.onclick = function() {
+                showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
+            };
+            
+            console.log(`🎉 ¡IMAGEN 3D MOSTRADA EXITOSAMENTE!`);
         };
         
-        // Cargar imagen
+        testImg.onerror = function() {
+            console.error(`❌ Error cargando imagen 3D: ${imgPath}`);
+            console.log(`🔄 Intentando fallback externo...`);
+            
+            // Fallback: intentar cargar desde GitHub
+            const fallbackPath = `https://raw.githubusercontent.com/Lopezalcuadrad0/Metro_madrid/main/static/model_3D/${carpetaLinea}/${nombreTransformado}.png`;
+            console.log(`🌐 Probando fallback: ${fallbackPath}`);
+            
+            const fallbackImg = new Image();
+            fallbackImg.onload = function() {
+                console.log(`✅ Fallback externo cargado: ${fallbackPath}`);
+                model3dImage.src = fallbackPath;
+                model3dImage.style.display = 'block';
+                model3dSection.style.display = 'grid';
+                model3DLoaded = true;
+                
+                model3dImage.onclick = function() {
+                    showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
+                };
+                
+                console.log(`🎉 ¡FALLBACK MOSTRADO EXITOSAMENTE!`);
+            };
+            fallbackImg.onerror = function() {
+                console.error(`❌ Fallback también falló: ${fallbackPath}`);
+                console.log(`🚫 Ocultando sección de imagen 3D`);
+                model3dSection.style.display = 'none';
+            };
+            fallbackImg.src = fallbackPath;
+        };
+        
+        // Iniciar carga con imagen temporal
         console.log(`🚀 Intentando cargar imagen: ${imgPath}`);
-        model3dImage.src = imgPath;
-        
-        // Click para ampliar
-        model3dImage.onclick = function() {
-            showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
-        };
-        
         console.log(`🏗️ Iniciando carga de imagen 3D: ${imgPath}`);
+        testImg.src = imgPath;
     }
 
-    // Función de test para debugging
+    // Función de test para debugging (solo para uso manual)
     function testModel3D() {
         console.log('🧪 Test de imagen 3D ejecutado');
         const model3dSection = document.getElementById('model3dSection');
@@ -1625,8 +1678,7 @@
         }
     }
 
-    // Ejecutar test después de un delay
-    setTimeout(testModel3D, 3000);
+    // Test automático removido para evitar conflictos
 
     // Modal para imagen 3D
     function showModalImage(imgPath, caption) {
@@ -1766,13 +1818,16 @@
         return null;
     }
 
+    console.log('🎯 PUNTO DE CONTROL: Llegando al segundo DOMContentLoaded');
+    
     document.addEventListener('DOMContentLoaded', function() {
-        console.log('🚀 DOMContentLoaded ejecutado');
+        console.log('🚀 DOMContentLoaded ejecutado - CARGA DE ESTACIÓN');
         const params = getStationParamsFromUrl();
         console.log('📍 Parámetros de URL:', params);
+        console.log('🔍 URL actual:', window.location.pathname);
         
         if (params && params.lineNumber && params.stationId) {
-            console.log(`🔍 Cargando estación línea ${params.lineNumber}, ID ${params.stationId}`);
+            console.log(`✅ Condición 1 cumplida - Cargando estación línea ${params.lineNumber}, ID ${params.stationId}`);
             // Usar una sola llamada a la API moderna que devuelve todos los datos
             fetch(`/api/station/${params.lineNumber}/${params.stationId}`)
                 .then(res => res.json())

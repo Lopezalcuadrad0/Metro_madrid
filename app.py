@@ -6310,6 +6310,19 @@ def get_nearest_station():
             'error': str(e)
         }), 500
 
+@app.route('/test-js')
+def test_js():
+    """Ruta de prueba para verificar si JavaScript funciona"""
+    return send_file('test_js.html')
+
+@app.route('/test-station-js')
+def test_station_js():
+    """Ruta de prueba para verificar JavaScript específico de station.html"""
+    try:
+        return send_file('test_station_js.html')
+    except Exception as e:
+        return f"Error cargando archivo: {e}"
+
 if __name__ == '__main__':
     inicializar_aplicacion()
     app.run(host='0.0.0.0', port=5000, debug=True)
