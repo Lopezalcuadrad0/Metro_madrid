@@ -225,13 +225,9 @@
                      fetchpriority="high">
             </a>
             <ul class="nav-links">
-                <li><a href="/" class="{{ 'active' if request.endpoint == 'index' else '' }}">Dashboard</a></li>
                 <li><a href="/map" class="{{ 'active' if request.endpoint == 'map_view' else '' }}">Mapa Red Metro</a></li>
-                <li><a href="/station" class="{{ 'active' if request.endpoint == 'station_page' else '' }}">Estación</a></li>
                 <li><a href="/status" class="{{ 'active' if request.endpoint == 'status' else '' }}">Estado de la Red</a></li>
                 <li><a href="/line/1" class="{{ 'active' if request.endpoint == 'line_detail' else '' }}">Líneas</a></li>  
-                <li><a href="/about_us" class="{{ 'active' if request.endpoint == 'about_THIS' else '' }}">El Proyecto</a></li>
-                <li><a href="/about_me" class="{{ 'active' if request.endpoint == 'about_ME' else '' }}">GL</a></li>
 
                 {% if current_user.is_authenticated %}
                     <li>
