@@ -794,9 +794,9 @@
         </div>
 
         <!-- Imagen 3D y Estado de Escaleras/Ascensores -->
-        <div class="station-3d-section" id="model3dSection" style="display: none;">
+        <div class="station-3d-section" id="model3dSection" style="display: grid;">
             <div class="model-3d-column">
-                <img id="model3dImage" class="model-3d-image" src="" alt="Modelo 3D estación" loading="lazy" />
+                <img id="model3dImage" class="model-3d-image" src="/static/model_3D/linea_1/alto_del_arenal.png" alt="Modelo 3D estación" loading="lazy" />
                 <div class="model-3d-caption">Vista 2D del modelo 3D de la estación</div>
             </div>
             <div class="status-column">
@@ -1505,12 +1505,24 @@
 
     // Mostrar imagen 3D
     function showModel3D(lineas, nombreEstacion) {
+        console.log(`🎯 showModel3D llamada con:`, { lineas, nombreEstacion });
+        
         const model3dSection = document.getElementById('model3dSection');
         const model3dImage = document.getElementById('model3dImage');
-        if (!model3dSection || !model3dImage) return;
+        
+        console.log(`🔍 Elementos DOM encontrados:`, { 
+            model3dSection: !!model3dSection, 
+            model3dImage: !!model3dImage 
+        });
+        
+        if (!model3dSection || !model3dImage) {
+            console.error(`❌ No se encontraron elementos DOM para imagen 3D`);
+            return;
+        }
         
         // Si no hay líneas, ocultar la sección
         if (!lineas || lineas.length === 0) {
+            console.warn(`⚠️ No hay líneas para mostrar imagen 3D`);
             model3dSection.style.display = 'none';
             return;
         }
@@ -1521,6 +1533,8 @@
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '');
         
+        console.log(`📝 Transformación de nombre: "${nombreEstacion}" → "${nombreArchivo}"`);
+        
         // Usar la primera línea para determinar la carpeta
         const primeraLinea = lineas[0];
         let carpetaLinea = `linea_${primeraLinea}`;
@@ -1530,6 +1544,8 @@
             carpetaLinea = 'linea_Ramal';
         }
         
+        console.log(`📂 Carpeta de línea: "${carpetaLinea}" (línea: ${primeraLinea})`);
+        
         // Construir la ruta local
         let imgPath = `/static/model_3D/${carpetaLinea}/${nombreArchivo}.png`;
         
@@ -1538,15 +1554,17 @@
             imgPath = `/static/model_3D/${carpetaLinea}/sol.png`;
         }
         
+        console.log(`🖼️ Ruta final de imagen: ${imgPath}`);
+        
         // Cargar imagen con manejo de errores
         model3dImage.onerror = function() {
-            console.warn(`❌ No se pudo cargar la imagen 3D: ${imgPath}`);
+            console.warn(`❌ No se pudo cargar la imagen 3D local: ${imgPath}`);
             // Intentar con la URL externa como fallback
             const fallbackPath = `http://estacions.albertguillaumes.cat/img/madrid/${nombreArchivo}.png`;
-            console.log(`🔄 Intentando con fallback: ${fallbackPath}`);
+            console.log(`🔄 Intentando con fallback externo: ${fallbackPath}`);
             model3dImage.src = fallbackPath;
             model3dImage.onerror = function() {
-                console.error(`❌ Fallback también falló, ocultando sección 3D`);
+                console.error(`❌ Fallback externo también falló, ocultando sección 3D`);
                 model3dSection.style.display = 'none';
             };
         };
@@ -1565,7 +1583,7 @@
             showModalImage(imgPath, `Modelo 3D - ${nombreEstacion}`);
         };
         
-        console.log(`🏗️ Intentando cargar imagen 3D: ${imgPath}`);
+        console.log(`🏗️ Iniciando carga de imagen 3D: ${imgPath}`);
     }
 
     // Modal para imagen 3D
