@@ -234,11 +234,11 @@ body {
     content: "";
     position: absolute;
     top: 30px; /* Empieza en el primer círculo */
-    bottom: 30px; /* Termina en el último círculo */
+    bottom: 45px; /* Termina en el último círculo */
     left: 30px; /* Posición de la línea */
-    width: 4px;
+    width: 5px;
     background: var(--line-color);
-    border-radius: 2px;
+    border-radius: 12px;
     z-index: 1;
 }
 
@@ -251,7 +251,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0;
-    width: 100%;
+    width: 80%;
 }
 
 /* Cada entrada de estación */
@@ -262,7 +262,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
     width: 100%;
     min-height: var(--station-gap);
     padding: 8px 0;
@@ -292,8 +292,8 @@ body {
 .station-marker {
     position: absolute;
     top: 50%;
-    left: 30px; /* 2 px más a la izquierda */
-    transform: translateX(-50%) translateY(-50%);
+    left: 30px; /* 30 + ancho_línea/2 */
+    transform: translate(-50%, -50%); /* centra el marcador */
     width: 16px;
     height: 4px;
     background-color: var(--line-color);
@@ -367,6 +367,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 4px;
+    margin-left: auto;
+    justify-content: flex-end;
 }
 
 .line-badge {
@@ -671,8 +673,8 @@ body {
     }
     
     .station-marker {
-        left: 24.5px; /* 2 px más a la izquierda */
-        transform: translateX(-50%) translateY(-50%);
+        left: 24.5px;
+        transform: translate(-50%, -50%);
         width: 14px;
         height: 3px;
     }
@@ -736,8 +738,8 @@ body {
     }
     
     .station-marker {
-        left: 19px; /* 2 px más a la izquierda */
-        transform: translateX(-50%) translateY(-50%);
+        left: 19px;
+        transform: translate(-50%, -50%);
         width: 12px;
         height: 2px;
     }
