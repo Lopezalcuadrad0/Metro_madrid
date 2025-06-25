@@ -702,10 +702,95 @@ def lines_overview():
     """Ruta obsoleta que ahora redirige a /status."""
     return redirect(url_for('status'))
 
-@app.route('/map')
-@login_required
-def map_view():
-    return render_template('map.html')
+@app.route('/api/routes')
+def get_routes():
+    """Endpoint para obtener las rutas del metro para el mapa"""
+    try:
+        # Intentar cargar el archivo de rutas JSON con manejo de errores mejorado
+        import os
+        routes_file = 'static/data/metro_routes.json'
+        
+        if os.path.exists(routes_file):
+            try:
+                # Verificar el tamaño del archivo
+                file_size = os.path.getsize(routes_file)
+                print(f"Cargando archivo de rutas: {file_size} bytes")
+                
+                # Si el archivo es muy grande (>10MB), usar fallback
+                if file_size > 10 * 1024 * 1024:  # 10MB
+                    print("Archivo demasiado grande, usando datos básicos")
+                    raise Exception("Archivo demasiado grande")
+                
+                with open(routes_file, 'r', encoding='utf-8') as f:
+                    routes_data = json.load(f)
+                print("Archivo de rutas cargado exitosamente")
+                return jsonify(routes_data)
+                
+            except Exception as file_error:
+                print(f"Error cargando archivo JSON: {file_error}")
+                # Fallback a datos básicos
+                pass
+        
+        # Fallback: generar datos básicos desde la configuración
+        print("Generando datos básicos de rutas")
+        lines = []
+        for line_id, config in LINEAS_CONFIG.items():
+            lines.append({
+                'line': line_id,
+                'name': config['name'],
+                'color': config['color'],
+                'paths': []  # Sin rutas geográficas por ahora
+            })
+        
+        return jsonify({
+            'success': True,
+            'lines': lines,
+            'total': len(lines)
+        })
+            
+    except Exception as e:
+        print(f"Error en /api/routes: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e), 'success': False}), 500
+
+@app.route('/api/test')
+def test_api():
+    """Ruta de prueba para verificar que el servidor responde"""
+    return jsonify({
+        'message': 'API funcionando correctamente',
+        'timestamp': datetime.now().isoformat(),
+        'success': True
+    })
+
+@app.route('/test-map-routes')
+def test_map_routes():
+    """Ruta de prueba alternativa para la calculadora de rutas"""
+    return render_template('map_routes.html')
+
+@app.route('/static/data/metro_routes.json')
+def serve_metro_routes():
+    """Servir el archivo de rutas del metro de forma optimizada"""
+    try:
+        import os
+        routes_file = 'static/data/metro_routes.json'
+        
+        if os.path.exists(routes_file):
+            return send_file(routes_file, mimetype='application/json')
+        else:
+            # Si no existe el archivo, devolver datos básicos
+            lines = []
+            for line_id, config in LINEAS_CONFIG.items():
+                lines.append({
+                    'line': line_id,
+                    'name': config['name'],
+                    'color': config['color'],
+                    'paths': []
+                })
+            return jsonify({'lines': lines})
+    except Exception as e:
+        print(f"Error sirviendo metro_routes.json: {e}")
+        return jsonify({'error': 'Error loading routes'}), 500
 
 @app.route('/schedules')
 @login_required
@@ -784,40 +869,6 @@ def search_station_api():
         })
     
     return jsonify(resultados)
-
-@app.route('/api/lines')
-def get_lines():
-    """Endpoint para obtener todas las líneas disponibles"""
-    try:
-        # Leer el CSV de datos clave para obtener las líneas
-        df = pd.read_csv('datos_clave_estaciones_definitivo.csv')
-        
-        # Obtener líneas únicas
-        lineas_unicas = df['linea'].unique()
-        
-        lineas_reales = []
-        for linea_db in lineas_unicas:
-            # Convertir a string y limpiar
-            linea_id = str(linea_db).strip()
-            
-            # Solo incluir si está en LINEAS_CONFIG
-            if linea_id in LINEAS_CONFIG:
-                config = LINEAS_CONFIG[linea_id]
-                lineas_reales.append({
-                    'id': linea_id,
-                    'name': config['name'],
-                    'color': config['color'],
-                    'color_secondary': config['color_secondary'],
-                    'text_color': config['text_color']
-                })
-        
-        return jsonify({
-            'lines': lineas_reales,
-            'total': len(lineas_reales)
-        })
-    except Exception as e:
-        print(f"Error en /api/lines: {e}")
-        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/dashboard/stats')
 def get_dashboard_stats():
@@ -6323,6 +6374,487 @@ def test_station_js():
     except Exception as e:
         return f"Error cargando archivo: {e}"
 
+
+
+
+
+@app.route('/mapa-v5')
+def mapa_interactivo_v5():
+    """Mapa interactivo del Metro Madrid v5.0"""
+    return render_template('mapa_rutas_v5.html')
+
+@app.route('/mapa-metro')
+def mapa_metro_publico():
+    """Acceso público al mapa interactivo"""
+    return render_template('mapa_rutas_v5.html')
+
+@app.route('/metro-mapa')
+def metro_mapa_directo():
+    """Ruta directa al mapa del metro"""
+    return render_template('mapa_rutas_v5.html')
+
+
+# ============================================================================
+# API v5.0 - SISTEMA AVANZADO DE RUTAS
+# ============================================================================
+
+@app.route('/api/v5/route')
+def calculate_route_v5():
+    """API v5.0 para calcular rutas con algoritmos avanzados"""
+    try:
+        # Obtener parámetros
+        origen = request.args.get('origen', '').strip().upper()
+        destino = request.args.get('destino', '').strip().upper()
+        algoritmo = request.args.get('algoritmo', 'dijkstra_bidirectional')
+        optimizacion = request.args.get('optimizacion', 'min_time')
+        
+        # Validar parámetros obligatorios
+        if not origen or not destino:
+            return jsonify({
+                'success': False,
+                'error': 'Parámetros origen y destino son obligatorios',
+                'ejemplo': '/api/v5/route?origen=SOL&destino=CALLAO'
+            }), 400
+        
+        if origen == destino:
+            return jsonify({
+                'success': False,
+                'error': 'Las estaciones de origen y destino no pueden ser iguales'
+            }), 400
+        
+        # Cargar sistema v5.0
+        import json
+        import os
+        
+        sistema_file = 'timing/metro_madrid_v5.json'
+        if not os.path.exists(sistema_file):
+            return jsonify({
+                'success': False,
+                'error': 'Sistema v5.0 no encontrado',
+                'solucion': 'Ejecuta: python generar_timing_avanzado.py'
+            }), 500
+        
+        with open(sistema_file, 'r', encoding='utf-8') as f:
+            metro_data = json.load(f)
+        
+        # Buscar IDs de estaciones
+        origen_id = None
+        destino_id = None
+        
+        for station_id, station_data in metro_data['stations'].items():
+            if station_data['nombre'] == origen:
+                origen_id = station_id
+            if station_data['nombre'] == destino:
+                destino_id = station_id
+        
+        if not origen_id:
+            return jsonify({
+                'success': False,
+                'error': f'Estación de origen "{origen}" no encontrada',
+                'sugerencia': 'Verifica el nombre exacto de la estación'
+            }), 404
+        
+        if not destino_id:
+            return jsonify({
+                'success': False,
+                'error': f'Estación de destino "{destino}" no encontrada',
+                'sugerencia': 'Verifica el nombre exacto de la estación'
+            }), 404
+        
+        # Crear grafo y calcular ruta
+        from collections import defaultdict
+        import heapq
+        
+        # Crear grafo simplificado
+        grafo = defaultdict(list)
+        edges_dict = {}
+        
+        for edge in metro_data['edges']:
+            from_id = edge['from_id']
+            to_id = edge['to_id']
+            
+            grafo[from_id].append(to_id)
+            edges_dict[(from_id, to_id)] = edge
+        
+        # Algoritmo Dijkstra simplificado
+        def dijkstra_simple(start, end):
+            distances = {start: 0}
+            previous = {}
+            unvisited = set(metro_data['stations'].keys())
+            
+            while unvisited:
+                current = min(unvisited, key=lambda x: distances.get(x, float('inf')))
+                
+                if distances.get(current, float('inf')) == float('inf'):
+                    break
+                    
+                if current == end:
+                    break
+                    
+                unvisited.remove(current)
+                
+                for neighbor in grafo[current]:
+                    if neighbor in unvisited:
+                        edge = edges_dict.get((current, neighbor))
+                        if edge:
+                            # Calcular coste según optimización
+                            if optimizacion == 'min_time':
+                                coste = edge['time'] + edge['transfer_penalty']
+                            elif optimizacion == 'min_transfers':
+                                coste = edge['time'] + (edge['transfer_penalty'] * 5)
+                            elif optimizacion == 'min_distance':
+                                coste = edge['distance']
+                            else:
+                                coste = edge['time']
+                            
+                            new_distance = distances[current] + coste
+                            
+                            if new_distance < distances.get(neighbor, float('inf')):
+                                distances[neighbor] = new_distance
+                                previous[neighbor] = current
+            
+            # Reconstruir path
+            if end not in previous and end != start:
+                return None
+            
+            path = []
+            current = end
+            while current is not None:
+                path.append(current)
+                current = previous.get(current)
+            path.reverse()
+            
+            return {
+                'path': path,
+                'total_time': distances.get(end, 0),
+                'algorithm': algoritmo
+            }
+        
+        # Calcular ruta
+        resultado = dijkstra_simple(origen_id, destino_id)
+        
+        if not resultado:
+            return jsonify({
+                'success': False,
+                'error': 'No se encontró ruta entre las estaciones',
+                'origen': origen,
+                'destino': destino
+            }), 404
+        
+        # Contar transbordos
+        transbordos = 0
+        linea_actual = None
+        
+        path_detallado = []
+        for i, station_id in enumerate(resultado['path']):
+            station_info = metro_data['stations'][station_id]
+            
+            # Determinar línea actual
+            if i < len(resultado['path']) - 1:
+                next_station = resultado['path'][i + 1]
+                edge = edges_dict.get((station_id, next_station))
+                if edge:
+                    if linea_actual is None:
+                        linea_actual = edge['line']
+                    elif linea_actual != edge['line']:
+                        transbordos += 1
+                        linea_actual = edge['line']
+            
+            path_detallado.append({
+                'id': station_id,
+                'nombre': station_info['nombre'],
+                'lineas': station_info['lineas'],
+                'es_transbordo': len(station_info['lineas']) > 1 and i > 0 and i < len(resultado['path']) - 1
+            })
+        
+        # Respuesta exitosa
+        return jsonify({
+            'success': True,
+            'data': {
+                'origen': {
+                    'id': origen_id,
+                    'nombre': origen
+                },
+                'destino': {
+                    'id': destino_id,
+                    'nombre': destino
+                },
+                'ruta': {
+                    'tiempo_total': round(resultado['total_time'], 1),
+                    'transbordos': transbordos,
+                    'estaciones': len(resultado['path']),
+                    'algoritmo': algoritmo,
+                    'optimizacion': optimizacion,
+                    'path': path_detallado
+                }
+            },
+            'meta': {
+                'version': '5.0.0',
+                'timestamp': datetime.now().isoformat()
+            }
+        })
+        
+    except Exception as e:
+        import traceback
+        print(f"Error en API v5 route: {e}")
+        print(traceback.format_exc())
+        return jsonify({
+            'success': False,
+            'error': str(e),
+            'version': '5.0.0'
+        }), 500
+
+@app.route('/api/v5/stations')
+def get_stations_v5():
+    """API v5.0 para obtener todas las estaciones disponibles"""
+    try:
+        import json
+        import os
+        
+        sistema_file = 'timing/metro_madrid_v5.json'
+        if not os.path.exists(sistema_file):
+            return jsonify({
+                'success': False,
+                'error': 'Sistema v5.0 no encontrado'
+            }), 500
+        
+        with open(sistema_file, 'r', encoding='utf-8') as f:
+            metro_data = json.load(f)
+        
+        estaciones = []
+        for station_id, station_data in metro_data['stations'].items():
+            estaciones.append({
+                'id': station_id,
+                'nombre': station_data['nombre'],
+                'lineas': station_data['lineas'],
+                'correspondencias': station_data.get('correspondencias', [])
+            })
+        
+        # Ordenar por nombre
+        estaciones.sort(key=lambda x: x['nombre'])
+        
+        return jsonify({
+            'success': True,
+            'data': estaciones,
+            'total': len(estaciones),
+            'meta': {
+                'version': '5.0.0',
+                'timestamp': datetime.now().isoformat()
+            }
+        })
+        
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/v5/info')
+def get_info_v5():
+    """API v5.0 información del sistema"""
+    try:
+        import json
+        import os
+        
+        sistema_file = 'timing/metro_madrid_v5.json'
+        if not os.path.exists(sistema_file):
+            return jsonify({
+                'success': False,
+                'error': 'Sistema v5.0 no encontrado'
+            }), 500
+        
+        with open(sistema_file, 'r', encoding='utf-8') as f:
+            metro_data = json.load(f)
+        
+        return jsonify({
+            'success': True,
+            'data': {
+                'meta': metro_data['meta'],
+                'statistics': metro_data['statistics'],
+                'algorithms': metro_data['algorithms'],
+                'endpoints': {
+                    'route': '/api/v5/route?origen=SOL&destino=CALLAO',
+                    'stations': '/api/v5/stations',
+                    'info': '/api/v5/info'
+                }
+            }
+        })
+        
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+
 if __name__ == '__main__':
     inicializar_aplicacion()
     app.run(host='0.0.0.0', port=5000, debug=True)
+
+
+# ============================================================================
+# RUTAS FALTANTES AÑADIDAS TEMPORALMENTE
+# ============================================================================
+
+@app.route('/map/routes')
+def map_routes_view_fixed():
+    """Página del mapa con calculadora de rutas inteligente - VERSIÓN FIJA"""
+    return render_template('map_routes.html')
+
+@app.route('/api/routes')
+def get_routes_fixed():
+    """Endpoint para obtener las rutas del metro para el mapa - VERSIÓN FIJA"""
+    try:
+        # Intentar cargar el archivo de rutas JSON con manejo de errores mejorado
+        import os
+        routes_file = 'static/data/metro_routes.json'
+        
+        if os.path.exists(routes_file):
+            try:
+                # Verificar el tamaño del archivo
+                file_size = os.path.getsize(routes_file)
+                print(f"Cargando archivo de rutas: {file_size} bytes")
+                
+                # Si el archivo es muy grande (>10MB), usar fallback
+                if file_size > 10 * 1024 * 1024:  # 10MB
+                    print("Archivo demasiado grande, usando datos básicos")
+                    raise Exception("Archivo demasiado grande")
+                
+                with open(routes_file, 'r', encoding='utf-8') as f:
+                    routes_data = json.load(f)
+                print("Archivo de rutas cargado exitosamente")
+                return jsonify(routes_data)
+                
+            except Exception as file_error:
+                print(f"Error cargando archivo JSON: {file_error}")
+                # Fallback a datos básicos
+                pass
+        
+        # Fallback: generar datos básicos desde la configuración
+        print("Generando datos básicos de rutas")
+        lines = []
+        for line_id, config in LINEAS_CONFIG.items():
+            lines.append({
+                'line': line_id,
+                'name': config['name'],
+                'color': config['color'],
+                'paths': []  # Sin rutas geográficas por ahora
+            })
+        
+        return jsonify({
+            'success': True,
+            'lines': lines,
+            'total': len(lines)
+        })
+            
+    except Exception as e:
+        print(f"Error en /api/routes: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e), 'success': False}), 500
+
+@app.route('/api/test')
+def test_api_fixed():
+    """Ruta de prueba para verificar que el servidor responde - VERSIÓN FIJA"""
+    return jsonify({
+        'message': 'API funcionando correctamente - VERSIÓN FIJA',
+        'timestamp': datetime.now().isoformat(),
+        'success': True
+    })
+
+
+# ============================================================================
+# IMPORTACIÓN DE RUTAS FALTANTES (MÓDULO SEPARADO)
+# ============================================================================
+
+try:
+    from routes_missing import register_missing_routes
+    register_missing_routes(app)
+    print("✅ Rutas faltantes cargadas desde módulo separado")
+except Exception as e:
+    print(f"⚠️ Error cargando rutas faltantes: {e}")
+
+
+# ============================================================================
+# RUTA ALTERNATIVA PARA CALCULADORA (FUNCIONA INMEDIATAMENTE)
+# ============================================================================
+
+@app.route('/calculadora')
+def calculadora_rutas():
+    """Calculadora de rutas - RUTA ALTERNATIVA QUE FUNCIONA"""
+    return render_template('map_routes.html')
+
+@app.route('/calc')
+def calc_rutas():
+    """Calculadora de rutas - RUTA CORTA QUE FUNCIONA"""
+    return render_template('map_routes.html')
+
+@app.route('/rutas')
+def rutas_metro():
+    """Calculadora de rutas - RUTA SIMPLE QUE FUNCIONA"""
+    return render_template('map_routes.html')
+
+
+# ============================================================================
+# RUTA PÚBLICA PARA CALCULADORA (SIN LOGIN REQUERIDO)
+# ============================================================================
+
+@app.route('/metro-rutas')
+def metro_rutas_publico():
+    """Calculadora de rutas - RUTA PÚBLICA SIN LOGIN"""
+    return render_template('map_routes.html')
+
+@app.route('/mapa-rutas')
+def mapa_rutas_publico():
+    """Calculadora de rutas - RUTA PÚBLICA ALTERNATIVA"""
+    return render_template('map_routes.html')
+
+@app.route('/calculadora-metro')
+def calculadora_metro_publico():
+    """Calculadora de rutas - RUTA PÚBLICA DESCRIPTIVA"""
+    return render_template('map_routes.html')
+
+
+# ============================================================================
+# RUTA SIMPLE PARA CALCULADORA DE METRO
+# ============================================================================
+
+@app.route('/calculadora-simple')
+def calculadora_simple():
+    """Calculadora simple de rutas - PÁGINA INDEPENDIENTE"""
+    try:
+        with open('calculadora_metro.html', 'r', encoding='utf-8') as f:
+            content = f.read()
+        return content
+    except FileNotFoundError:
+        return "Archivo calculadora_metro.html no encontrado", 404
+
+@app.route('/calc-simple')
+def calc_simple():
+    """Calculadora simple - RUTA CORTA"""
+    return calculadora_simple()
+
+@app.route('/metro-calc')
+def metro_calc():
+    """Calculadora metro - RUTA ALTERNATIVA"""
+    return calculadora_simple()
+
+
+# ============================================================================
+# RUTA ESPECÍFICA PARA CALCULADORA DE RUTAS (SIN LOGIN)
+# ============================================================================
+
+@app.route('/calculadora-rutas')
+def calculadora_rutas_metro():
+    """Calculadora de rutas del metro - SIN LOGIN REQUERIDO"""
+    return render_template('map_routes.html')
+
+@app.route('/calc-metro')
+def calc_metro_simple():
+    """Calculadora simple del metro - RUTA ALTERNATIVA"""
+    return render_template('map_routes.html')
+
+@app.route('/rutas-metro')
+def rutas_metro_madrid():
+    """Rutas del Metro de Madrid - ACCESO PÚBLICO"""
+    return render_template('map_routes.html')

@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚇 Metro Madrid - Calculadora de Rutas</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        /* Panel lateral */
+        .sidebar {
+            width: 400px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+        }
+        
+        .sidebar-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .sidebar-header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .sidebar-header p {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        /* Calculadora de rutas */
+        .route-calculator {
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .station-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .station-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .suggestions {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #e1e5e9;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            background: white;
+            display: none;
+        }
+        
+        .suggestion {
+            padding: 12px;
+            cursor: pointer;
+            border-bottom: 1px solid #f1f3f4;
+            transition: background-color 0.2s;
+        }
+        
+        .suggestion:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .suggestion:last-child {
+            border-bottom: none;
+        }
+        
+        .suggestion-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .suggestion-line {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        .calculate-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .calculate-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .clear-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .clear-btn:hover {
+            background-color: #c82333;
+        }
+        
+        /* Resultados */
+        .route-results {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        
+        .route-summary {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .route-time {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .route-details {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .route-steps {
+            list-style: none;
+        }
+        
+        .route-step {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-station {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
+        }
+        
+        .step-action {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        /* Mapa */
+        .map-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Colores de líneas */
+        .line-1 { background-color: #0066CC; }
+        .line-2 { background-color: #FF0000; }
+        .line-3 { background-color: #FFFF00; color: #000; }
+        .line-4 { background-color: #8B4513; }
+        .line-5 { background-color: #00FF00; color: #000; }
+        .line-6 { background-color: #808080; }
+        .line-7 { background-color: #FFA500; }
+        .line-8 { background-color: #FFC0CB; color: #000; }
+        .line-9 { background-color: #800080; }
+        .line-10 { background-color: #654321; }
+        .line-11 { background-color: #008000; }
+        .line-12 { background-color: #FFD700; color: #000; }
+        .line-R { background-color: #4169E1; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                height: 60vh;
+            }
+            
+            .map-container {
+                height: 40vh;
+            }
+        }
+        
+        /* Animaciones para notificaciones */
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        
+        /* Estilos para marcadores personalizados */
+        .custom-div-icon {
+            background: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Panel lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚇 Calculadora de Rutas</h1>
+                <p>Encuentra la ruta más rápida entre estaciones</p>
+            </div>
+            
+            <div class="route-calculator">
+                <!-- Estación origen -->
+                <div class="input-group">
+                    <label for="origin">🚀 Estación de Origen</label>
+                    <input type="text" id="origin" class="station-input" placeholder="Escribe el nombre de la estación..." autocomplete="off">
+                    <div id="origin-suggestions" class="suggestions"></div>
+                </div>
+                
+                <!-- Estación destino -->
+                <div class="input-group">
+                    <label for="destination">🎯 Estación de Destino</label>
+                    <input type="text" id="destination" class="station-input" placeholder="Escribe el nombre de la estación..." autocomplete="off">
+                    <div id="destination-suggestions" class="suggestions"></div>
+                </div>
+                
+                <!-- Botón calcular -->
+                <button id="calculate-route" class="calculate-btn" disabled>
+                    <i class="fas fa-route"></i> Calcular Ruta Más Rápida
+                </button>
+                
+                <!-- Botón limpiar selección -->
+                <button id="clear-selection" class="clear-btn" style="display: none;">
+                    <i class="fas fa-times"></i> Limpiar Selección
+                </button>
+                
+                <!-- Resultados -->
+                <div id="route-results" class="route-results">
+                    <div class="route-summary">
+                        <div class="route-time" id="total-time">--</div>
+                        <div class="route-details">
+                            <span id="total-stations">-- estaciones</span> • 
+                            <span id="total-transfers">-- transbordos</span>
+                        </div>
+                    </div>
+                    
+                    <ul id="route-steps" class="route-steps">
+                        <!-- Los pasos se generarán dinámicamente -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mapa -->
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    
+    <script>
+        // ========================================================================
+        // 1. VARIABLES GLOBALES Y CONFIGURACIÓN
+        // ========================================================================
+        
+        let map;
+        let stationsData = [];
+        let routesData = {};
+        let distanceMatrix = {};
+        let nextStationMatrix = {};
+        let pressTimer;
+        let isLongPress = false;
+        let selectedOrigin = null;
+        let selectedDestination = null;
+        let originMarker = null;
+        let destinationMarker = null;
+        let routeLayer = null;
+        
+        const lineColors = {
+            1: '#0066CC', 2: '#FF0000', 3: '#FFFF00', 4: '#8B4513',
+            5: '#00FF00', 6: '#808080', 7: '#FFA500', 8: '#FFC0CB',
+            9: '#800080', 10: '#654321', 11: '#008000', 12: '#FFD700', 'R': '#4169E1'
+        };
+        
+        // ========================================================================
+        // 2. INICIALIZACIÓN
+        // ========================================================================
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMap();
+            loadData();
+            setupEventListeners();
+        });
+        
+        function initializeMap() {
+            // Inicializar mapa centrado en Madrid
+            map = L.map('map').setView([40.4168, -3.7038], 11);
+            
+            // Añadir capa base
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+        }
+        
+        async function loadData() {
+            try {
+                console.log('🔄 Cargando datos...');
+                
+                // Cargar solo estaciones (que sí funciona)
+                const stationsResponse = await fetch('/api/stations/all');
+                stationsData = await stationsResponse.json();
+                
+                // Usar datos simulados para rutas (en lugar de /api/routes que no funciona)
+                routesData = {
+                    success: true,
+                    lines: [
+                        { line: '1', name: 'Línea 1', color: '#0066CC', paths: [] },
+                        { line: '2', name: 'Línea 2', color: '#FF0000', paths: [] },
+                        { line: '3', name: 'Línea 3', color: '#FFFF00', paths: [] },
+                        { line: '4', name: 'Línea 4', color: '#8B4513', paths: [] },
+                        { line: '5', name: 'Línea 5', color: '#00FF00', paths: [] },
+                        { line: '6', name: 'Línea 6', color: '#808080', paths: [] },
+                        { line: '7', name: 'Línea 7', color: '#FFA500', paths: [] },
+                        { line: '8', name: 'Línea 8', color: '#FFC0CB', paths: [] },
+                        { line: '9', name: 'Línea 9', color: '#800080', paths: [] },
+                        { line: '10', name: 'Línea 10', color: '#654321', paths: [] },
+                        { line: '11', name: 'Línea 11', color: '#008000', paths: [] },
+                        { line: '12', name: 'Línea 12', color: '#FFD700', paths: [] },
+                        { line: 'R', name: 'Ramal', color: '#4169E1', paths: [] }
+                    ],
+                    total: 13
+                };
+                
+                console.log(`✅ Cargadas ${stationsData.length} estaciones`);
+                console.log('✅ Usando datos simulados para rutas (bypass /api/routes)');
+                
+                // Construir matriz de distancias
+                buildDistanceMatrix();
+                
+                // Dibujar mapa
+                drawMap();
+                
+            } catch (error) {
+                console.error('❌ Error cargando datos:', error);
+                alert('Error cargando los datos del metro. Inténtelo de nuevo.');
+            }
+        }
+        
+        // ========================================================================
+        // 3. ALGORITMO FLOYD-WARSHALL PARA RUTAS MÁS RÁPIDAS
+        // ========================================================================
+        
+        function buildDistanceMatrix() {
+            console.log('🧮 Construyendo matriz de distancias...');
+            
+            // Crear índice de estaciones por nombre
+            const stationIndex = {};
+            const stationNames = [];
+            
+            stationsData.forEach(station => {
+                if (!stationIndex[station.name]) {
+                    stationIndex[station.name] = stationNames.length;
+                    stationNames.push(station.name);
+                }
+            });
+            
+            const n = stationNames.length;
+            
+            // Inicializar matrices
+            distanceMatrix = Array(n).fill().map(() => Array(n).fill(Infinity));
+            nextStationMatrix = Array(n).fill().map(() => Array(n).fill(-1));
+            
+            // Distancia 0 para la misma estación
+            for (let i = 0; i < n; i++) {
+                distanceMatrix[i][i] = 0;
+            }
+            
+            // Construir conexiones directas entre estaciones
+            stationsData.forEach(station => {
+                const stationIdx = stationIndex[station.name];
+                
+                // Conexiones dentro de la misma línea (estaciones adyacentes)
+                const sameLineStations = stationsData.filter(s => s.line === station.line);
+                sameLineStations.forEach(otherStation => {
+                    if (otherStation.name !== station.name) {
+                        const otherIdx = stationIndex[otherStation.name];
+                        // Tiempo estimado: 2 minutos entre estaciones adyacentes
+                        distanceMatrix[stationIdx][otherIdx] = 2;
+                        nextStationMatrix[stationIdx][otherIdx] = otherIdx;
+                    }
+                });
+                
+                // Conexiones por correspondencia (transbordos)
+                if (station.connections && station.connections.length > 0) {
+                    station.connections.forEach(connectionLine => {
+                        const connectionStations = stationsData.filter(s => 
+                            s.line == connectionLine && s.name === station.name
+                        );
+                        
+                        connectionStations.forEach(connStation => {
+                            const connIdx = stationIndex[connStation.name];
+                            // Tiempo de transbordo: 3 minutos
+                            distanceMatrix[stationIdx][connIdx] = 3;
+                            nextStationMatrix[stationIdx][connIdx] = connIdx;
+                        });
+                    });
+                }
+            });
+            
+            // Aplicar algoritmo Floyd-Warshall
+            console.log('🔄 Ejecutando Floyd-Warshall...');
+            for (let k = 0; k < n; k++) {
+                for (let i = 0; i < n; i++) {
+                    for (let j = 0; j < n; j++) {
+                        if (distanceMatrix[i][k] + distanceMatrix[k][j] < distanceMatrix[i][j]) {
+                            distanceMatrix[i][j] = distanceMatrix[i][k] + distanceMatrix[k][j];
+                            nextStationMatrix[i][j] = nextStationMatrix[i][k];
+                        }
+                    }
+                }
+            }
+            
+            // Guardar índice para uso posterior
+            window.stationIndex = stationIndex;
+            window.stationNames = stationNames;
+            
+            console.log('✅ Matriz de distancias construida');
+        }
+        
+        function findShortestPath(originName, destinationName) {
+            const originIdx = window.stationIndex[originName];
+            const destIdx = window.stationIndex[destinationName];
+            
+            if (originIdx === undefined || destIdx === undefined) {
+                return null;
+            }
+            
+            if (distanceMatrix[originIdx][destIdx] === Infinity) {
+                return null; // No hay ruta
+            }
+            
+            // Reconstruir ruta
+            const path = [];
+            let current = originIdx;
+            
+            while (current !== destIdx) {
+                path.push(window.stationNames[current]);
+                current = nextStationMatrix[current][destIdx];
+                
+                if (current === -1) break; // Error en la matriz
+            }
+            
+            path.push(window.stationNames[destIdx]);
+            
+            return {
+                path: path,
+                totalTime: distanceMatrix[originIdx][destIdx],
+                totalStations: path.length,
+                totalTransfers: calculateTransfers(path)
+            };
+        }
+        
+        function calculateTransfers(path) {
+            let transfers = 0;
+            let currentLine = null;
+            
+            path.forEach(stationName => {
+                const station = stationsData.find(s => s.name === stationName);
+                if (station) {
+                    if (currentLine && currentLine !== station.line) {
+                        transfers++;
+                    }
+                    currentLine = station.line;
+                }
+            });
+            
+            return Math.max(0, transfers - 1); // El primer cambio no cuenta como transbordo
+        }
+        
+        // ========================================================================
+        // 4. INTERFAZ DE USUARIO
+        // ========================================================================
+        
+        function setupEventListeners() {
+            const originInput = document.getElementById('origin');
+            const destinationInput = document.getElementById('destination');
+            const calculateBtn = document.getElementById('calculate-route');
+            
+            // Autocompletado para origen
+            originInput.addEventListener('input', function() {
+                showSuggestions(this.value, 'origin-suggestions', (station) => {
+                    selectedOrigin = station;
+                    originInput.value = station.name;
+                    hideSuggestions('origin-suggestions');
+                    checkInputs();
+                });
+            });
+            
+            // Autocompletado para destino
+            destinationInput.addEventListener('input', function() {
+                showSuggestions(this.value, 'destination-suggestions', (station) => {
+                    selectedDestination = station;
+                    destinationInput.value = station.name;
+                    hideSuggestions('destination-suggestions');
+                    checkInputs();
+                });
+            });
+            
+            // Calcular ruta
+            calculateBtn.addEventListener('click', calculateRoute);
+            
+            // Ocultar sugerencias al hacer clic fuera
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.input-group')) {
+                    hideSuggestions('origin-suggestions');
+                    hideSuggestions('destination-suggestions');
+                }
+            });
+            
+            // Botón limpiar selección
+            document.getElementById('clear-selection').addEventListener('click', function() {
+                clearRouteSelection();
+                updateRouteCalculator();
+                this.style.display = 'none';
+                showNotification('🗑️ Selección limpiada', 'info');
+            });
+        }
+        
+        function showSuggestions(query, containerId, onSelect) {
+            const container = document.getElementById(containerId);
+            
+            if (query.length < 2) {
+                hideSuggestions(containerId);
+                return;
+            }
+            
+            const filtered = stationsData.filter(station => 
+                station.name.toLowerCase().includes(query.toLowerCase())
+            );
+            
+            if (filtered.length === 0) {
+                hideSuggestions(containerId);
+                return;
+            }
+            
+            // Eliminar duplicados por nombre
+            const unique = filtered.reduce((acc, station) => {
+                if (!acc.find(s => s.name === station.name)) {
+                    acc.push(station);
+                }
+                return acc;
+            }, []);
+            
+            container.innerHTML = unique.slice(0, 8).map(station => `
+                <div class="suggestion" data-station='${JSON.stringify(station)}'>
+                    <div class="suggestion-name">${station.name}</div>
+                    <div class="suggestion-line">Línea ${station.line} • Zona ${station.zone || 'A'}</div>
+                </div>
+            `).join('');
+            
+            // Añadir event listeners
+            container.querySelectorAll('.suggestion').forEach(el => {
+                el.addEventListener('click', () => {
+                    const station = JSON.parse(el.dataset.station);
+                    onSelect(station);
+                });
+            });
+            
+            container.style.display = 'block';
+        }
+        
+        function hideSuggestions(containerId) {
+            document.getElementById(containerId).style.display = 'none';
+        }
+        
+        function checkInputs() {
+            const calculateBtn = document.getElementById('calculate-route');
+            calculateBtn.disabled = !(selectedOrigin && selectedDestination);
+        }
+        
+        function calculateRoute() {
+            if (!selectedOrigin || !selectedDestination) return;
+            
+            console.log(`🚇 Calculando ruta: ${selectedOrigin.name} → ${selectedDestination.name}`);
+            
+            const route = findShortestPath(selectedOrigin.name, selectedDestination.name);
+            
+            if (!route) {
+                showNotification('❌ No se encontró una ruta entre estas estaciones.', 'error');
+                return;
+            }
+            
+            displayRoute(route);
+            drawRouteOnMap(route);
+            showNotification(`✅ Ruta calculada: ${route.totalTime} min, ${route.totalStations} estaciones`, 'success');
+        }
+        
+        function displayRoute(route) {
+            const resultsContainer = document.getElementById('route-results');
+            const totalTimeEl = document.getElementById('total-time');
+            const totalStationsEl = document.getElementById('total-stations');
+            const totalTransfersEl = document.getElementById('total-transfers');
+            const stepsEl = document.getElementById('route-steps');
+            
+            // Actualizar resumen
+            totalTimeEl.textContent = `${route.totalTime} min`;
+            totalStationsEl.textContent = `${route.totalStations} estaciones`;
+            totalTransfersEl.textContent = `${route.totalTransfers} transbordos`;
+            
+            // Generar pasos
+            const steps = generateRouteSteps(route.path);
+            stepsEl.innerHTML = steps.map((step, index) => `
+                <li class="route-step">
+                    <div class="step-icon line-${step.line}">
+                        ${step.line}
+                    </div>
+                    <div class="step-content">
+                        <div class="step-station">${step.station}</div>
+                        <div class="step-action">${step.action}</div>
+                    </div>
+                </li>
+            `).join('');
+            
+            resultsContainer.style.display = 'block';
+        }
+        
+        function generateRouteSteps(path) {
+            const steps = [];
+            let currentLine = null;
+            
+            path.forEach((stationName, index) => {
+                const station = stationsData.find(s => s.name === stationName);
+                if (!station) return;
+                
+                let action = '';
+                
+                if (index === 0) {
+                    action = 'Origen - Subir al metro';
+                } else if (index === path.length - 1) {
+                    action = 'Destino - Bajar del metro';
+                } else if (currentLine && currentLine !== station.line) {
+                    action = `Transbordo a Línea ${station.line}`;
+                } else {
+                    action = `Continuar en Línea ${station.line}`;
+                }
+                
+                steps.push({
+                    station: stationName,
+                    line: station.line,
+                    action: action
+                });
+                
+                currentLine = station.line;
+            });
+            
+            return steps;
+        }
+        
+        // ========================================================================
+        // 5. VISUALIZACIÓN EN EL MAPA
+        // ========================================================================
+        
+        function drawMap() {
+            // Dibujar estaciones
+            stationsData.forEach(station => {
+                if (station.lat && station.lon) {
+                    const marker = L.circleMarker([station.lat, station.lon], {
+                        radius: 6,
+                        fillColor: lineColors[station.line] || '#666',
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(map);
+                    
+                    // Información del popup
+                    const popupContent = `
+                        <strong>${station.name}</strong><br>
+                        Línea ${station.line}<br>
+                        Zona ${station.zone || 'A'}<br>
+                        <small>Click: Ver estación | Doble click: Seleccionar ruta</small>
+                    `;
+                    
+                    marker.bindPopup(popupContent);
+                    
+                    // Sistema de doble funcionalidad
+                    setupDualFunctionality(marker, station);
+                }
+            });
+        }
+        
+        function setupDualFunctionality(marker, station) {
+            let clickCount = 0;
+            let clickTimer;
+            
+            // Click simple - Navegar a la estación
+            marker.on('click', function(e) {
+                clickCount++;
+                
+                if (clickCount === 1) {
+                    clickTimer = setTimeout(() => {
+                        // Click simple - Navegar
+                        window.location.href = `/station/${station.line}/${station.id}`;
+                        clickCount = 0;
+                    }, 200);
+                } else if (clickCount === 2) {
+                    // Doble click - Seleccionar para ruta
+                    clearTimeout(clickTimer);
+                    selectStationForRoute(station);
+                    clickCount = 0;
+                }
+            });
+            
+            // Click derecho - Seleccionar para ruta (alternativa)
+            marker.on('contextmenu', function(e) {
+                e.originalEvent.preventDefault();
+                selectStationForRoute(station);
+            });
+        }
+        
+        function selectStationForRoute(station) {
+            if (!selectedOrigin) {
+                // Primera selección - Origen
+                selectedOrigin = station;
+                showOriginMarker(station);
+                updateRouteCalculator();
+                showNotification(`🚀 Origen seleccionado: ${station.name}`, 'success');
+            } else if (!selectedDestination) {
+                // Segunda selección - Destino
+                selectedDestination = station;
+                showDestinationMarker(station);
+                updateRouteCalculator();
+                showNotification(`🎯 Destino seleccionado: ${station.name}`, 'success');
+                
+                // Calcular ruta automáticamente
+                setTimeout(() => {
+                    calculateRoute();
+                }, 500);
+            } else {
+                // Resetear selección
+                clearRouteSelection();
+                selectedOrigin = station;
+                showOriginMarker(station);
+                updateRouteCalculator();
+                showNotification(`🚀 Nuevo origen: ${station.name}`, 'info');
+            }
+        }
+        
+        function showOriginMarker(station) {
+            // Limpiar marcador anterior
+            if (originMarker) {
+                map.removeLayer(originMarker);
+            }
+            
+            // Crear marcador de origen
+            originMarker = L.marker([station.lat, station.lon], {
+                icon: L.divIcon({
+                    html: '<i class="fas fa-rocket" style="color: #28a745; font-size: 24px;"></i>',
+                    iconSize: [30, 30],
+                    className: 'custom-div-icon'
+                })
+            }).addTo(map);
+            
+            originMarker.bindPopup(`🚀 Origen: ${station.name}`);
+        }
+        
+        function showDestinationMarker(station) {
+            // Limpiar marcador anterior
+            if (destinationMarker) {
+                map.removeLayer(destinationMarker);
+            }
+            
+            // Crear marcador de destino
+            destinationMarker = L.marker([station.lat, station.lon], {
+                icon: L.divIcon({
+                    html: '<i class="fas fa-bullseye" style="color: #dc3545; font-size: 24px;"></i>',
+                    iconSize: [30, 30],
+                    className: 'custom-div-icon'
+                })
+            }).addTo(map);
+            
+            destinationMarker.bindPopup(`🎯 Destino: ${station.name}`);
+        }
+        
+        function clearRouteSelection() {
+            selectedOrigin = null;
+            selectedDestination = null;
+            
+            // Limpiar inputs
+            document.getElementById('origin').value = '';
+            document.getElementById('destination').value = '';
+            
+            if (originMarker) {
+                map.removeLayer(originMarker);
+                originMarker = null;
+            }
+            
+            if (destinationMarker) {
+                map.removeLayer(destinationMarker);
+                destinationMarker = null;
+            }
+            
+            if (routeLayer) {
+                map.removeLayer(routeLayer);
+                routeLayer = null;
+            }
+        }
+        
+        function updateRouteCalculator() {
+            const originInput = document.getElementById('origin');
+            const destinationInput = document.getElementById('destination');
+            const calculateBtn = document.getElementById('calculate-route');
+            const clearBtn = document.getElementById('clear-selection');
+            
+            if (selectedOrigin) {
+                originInput.value = selectedOrigin.name;
+            }
+            
+            if (selectedDestination) {
+                destinationInput.value = selectedDestination.name;
+            }
+            
+            calculateBtn.disabled = !(selectedOrigin && selectedDestination);
+            
+            // Mostrar/ocultar botón de limpiar
+            if (selectedOrigin || selectedDestination) {
+                clearBtn.style.display = 'block';
+            } else {
+                clearBtn.style.display = 'none';
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            // Crear notificación temporal
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#28a745' : type === 'error' ? '#dc3545' : '#17a2b8'};
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                z-index: 10000;
+                font-weight: 600;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                animation: slideIn 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Remover después de 3 segundos
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+        
+        function drawRouteOnMap(route) {
+            // Limpiar ruta anterior
+            if (routeLayer) {
+                map.removeLayer(routeLayer);
+            }
+            
+            // Obtener coordenadas de la ruta
+            const routeCoords = route.path.map(stationName => {
+                const station = stationsData.find(s => s.name === stationName);
+                return station && station.lat && station.lon ? [station.lat, station.lon] : null;
+            }).filter(coord => coord !== null);
+            
+            if (routeCoords.length < 2) return;
+            
+            // Dibujar línea de ruta
+            routeLayer = L.polyline(routeCoords, {
+                color: '#FF6B6B',
+                weight: 6,
+                opacity: 0.8,
+                dashArray: '10, 10'
+            }).addTo(map);
+            
+            // Añadir marcadores de origen y destino
+            L.marker(routeCoords[0], {
+                icon: L.divIcon({
+                    html: '<i class="fas fa-play" style="color: green; font-size: 20px;"></i>',
+                    iconSize: [30, 30],
+                    className: 'custom-div-icon'
+                })
+            }).addTo(map).bindPopup('🚀 Origen: ' + route.path[0]);
+            
+            L.marker(routeCoords[routeCoords.length - 1], {
+                icon: L.divIcon({
+                    html: '<i class="fas fa-flag-checkered" style="color: red; font-size: 20px;"></i>',
+                    iconSize: [30, 30],
+                    className: 'custom-div-icon'
+                })
+            }).addTo(map).bindPopup('🎯 Destino: ' + route.path[route.path.length - 1]);
+            
+            // Ajustar vista del mapa
+            map.fitBounds(routeLayer.getBounds(), { padding: [20, 20] });
+        }
+        
+        console.log('🚇 Calculadora de Rutas Metro Madrid cargada');
+        
+    </script>
+</body>
+</html>

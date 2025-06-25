@@ -1,0 +1,1053 @@
+NOMBRES DE ESTACIONES EXTRAÍDOS
+========================================
+
+acc_4_100_272: Maqueda
+acc_4_100_273: Acceso RENFE
+acc_4_100_274: Maqueda
+acc_4_102_280: Padre Piquer impares
+acc_4_103_281: Camino de Campamento s/n
+acc_4_104_1029: Ascensor nº1
+acc_4_105_1033: Ascensor exterior nº1
+acc_4_105_1035: Nuestra Señora de Valvanera - via Carpetana - Ateca
+acc_4_105_1036: Ascensor exterior nº2
+acc_4_105_286: Vía Carpetana
+acc_4_107_287: Portalegre pares
+acc_4_107_288: Portalegre impares
+acc_4_108_1100: Marcelo Usera - Ascensor
+acc_4_108_290: Plaza Elíptica
+acc_4_108_291: Plaza Elíptica - Ascensor
+acc_4_108_292: Marcelo Usera pares
+acc_4_109_295: Mirasierra
+acc_4_10_1102: Barceló - Ascensor
+acc_4_10_35: Fuencarral
+acc_4_10_36: Tribunal de Cuentas
+acc_4_111_297: Méndez Alvaro pares
+acc_4_113_301: Doctor Esquerdo
+acc_4_113_304: Doctor Esquerdo pares
+acc_4_113_801: Ascensor
+acc_4_114_1038: Ascensor exterior 1
+acc_4_114_1039: Ascensor exterior 2
+acc_4_114_307: Moneda impares
+acc_4_114_308: Moneda pares
+acc_4_115_309: O´Donnell
+acc_4_115_310: Casa de la Moneda
+acc_4_115_312: J. Juan / Dr. Esquerdo impares
+acc_4_119_313: República Argentina
+acc_4_119_314: Joaquín Costa impares
+acc_4_119_315: Joaquín Costa pares
+acc_4_11_1105: Montera - Ascensor
+acc_4_11_38: Gran Vía
+acc_4_11_39: Fuencarral
+acc_4_120_317: Orense
+acc_4_120_318: Agustín de Bethancourt
+acc_4_120_319: Centro Comercial
+acc_4_120_322: Ascensor nº2
+acc_4_120_395: Pº de la Castellana impares
+acc_4_120_396: Pº de la Castellana pares
+acc_4_120_397: Pº de la Castellana impares (Bulevar)
+acc_4_120_398: Pº de la Castellana pares (Facturacion)
+acc_4_120_403: Edificio acceso RENFE - Raimundo Fernandez Villaverde
+acc_4_120_404: Ascensor nº5
+acc_4_120_405: Ascensor nº6
+acc_4_120_406: Ascensor exterior RENFE - Arcadas
+acc_4_120_605: Edificio acceso RENFE - Raimundo Fernandez Villaverde
+acc_4_120_607: Ascensor exterior RENFE 2 - Raimundo Fernandez Villaverde
+acc_4_120_608: Ascensor exterior RENFE 1 - Raimundo Fernandez Villaverde
+acc_4_122_323: General Rodrigo
+acc_4_122_324: Reina Victoria impares - G. el Bueno
+acc_4_122_326: Los Vascos
+acc_4_122_327: Reina Victoria pares
+acc_4_123_328: Gregorio del Amo
+acc_4_124_330: Facultades
+acc_4_124_331: Avda. Complutense
+acc_4_124_332: Ascensor
+acc_4_127_333: Correspondencia RENFE
+acc_4_127_334: Intercambiador
+acc_4_127_336: Correspondencia RENFE
+acc_4_127_610: Arcadas
+acc_4_127_612: Centro Comercial
+acc_4_127_613: Ascensor
+acc_4_128_340: Caramuel
+acc_4_129_341: Pza. Alto de Extremadura
+acc_4_12_1034: Alcalá
+acc_4_12_41: Carretas
+acc_4_12_42: Carmen
+acc_4_12_776: Ascensor
+acc_4_12_777: Preciados
+acc_4_130_343: Cebreros
+acc_4_130_344: Higueras
+acc_4_130_345: Ascensor
+acc_4_132_346: Avda. de Niza impares
+acc_4_132_802: Avda. de Niza pares
+acc_4_133_347: Pobladura del Valle pares
+acc_4_133_348: Pobladura del Valle impares
+acc_4_134_349: Amposta
+acc_4_134_350: Castillo de Uclés
+acc_4_135_352: Hermanos García Noblejas
+acc_4_136_354: Ascao
+acc_4_138_1092: Ascensor
+acc_4_138_355: Martínez Villergas
+acc_4_138_356: Virgen del Romero
+acc_4_139_358: Avda. de Bruselas pares
+acc_4_142_361: Miguel Angel
+acc_4_143_365: José Abascal - Ponzano
+acc_4_143_366: Ascensor
+acc_4_145_367: Cea Bermúdez pares - Gaztambide
+acc_4_145_368: Cea Bermúdez impares - Gaztambide
+acc_4_145_369: Ascensor
+acc_4_145_370: Cea Bermúdez - Guzmán el Bueno
+acc_4_145_371: Cea Bermúdez impares - Guzmán el Bueno
+acc_4_147_372: Moguer
+acc_4_147_373: Alejandro Rodríguez
+acc_4_147_376: Ascensor
+acc_4_148_378: Ascensor
+acc_4_148_379: Emerenciana Zurilla
+acc_4_148_380: Armenteros
+acc_4_149_381: Valderrodrigo - Valdesangil
+acc_4_149_382: Valderrodrigo
+acc_4_149_383: Ascensor
+acc_4_14_46: Amor de Dios
+acc_4_14_49: Atocha impares
+acc_4_14_50: Atocha pares
+acc_4_150_385: Vereda de Ganapanes pares
+acc_4_150_386: Ascensor
+acc_4_151_387: Islas Cíes
+acc_4_152_390: Riscos de Polanco
+acc_4_152_391: Ascensor
+acc_4_153_1090: Ascensor
+acc_4_154_392: Camino de Peñagrande
+acc_4_154_394: Ascensor
+acc_4_156_409: Príncipe de Vergara impares - Colombia
+acc_4_156_410: Príncipe de Vergara pares - Colombia
+acc_4_156_411: Príncipe de Vergara impares - Pza. Rep. Dominicana
+acc_4_158_414: Avda. Capital de España-Madrid
+acc_4_158_415: Feria de Madrid pabellones impares
+acc_4_158_416: Feria de Madrid pabellones pares
+acc_4_158_417: Ascensor
+acc_4_159_418: Terminales 123
+acc_4_159_420: Ascensor
+acc_4_15_52: Ministerio
+acc_4_160_421: Avda. Logroño
+acc_4_160_422: Ascensor
+acc_4_161_424: Cardenal Herrera Oria
+acc_4_162_425: Ginzo de Limia impares
+acc_4_162_426: Ginzo de Limia pares
+acc_4_162_428: Ginzo de Limia pares
+acc_4_163_430: Avda. Asturias pares
+acc_4_165_431: Mateo Inurria
+acc_4_166_432: Avda. de Pío XII
+acc_4_166_433: Avda. de Pío XII
+acc_4_168_434: Plaza de Cataluña
+acc_4_169_436: Príncipe de Vergara pares
+acc_4_169_438: Príncipe de Vergara impares
+acc_4_16_53: Alfonso XII
+acc_4_16_54: Paseo Infanta Isabel
+acc_4_173_440: Ibiza
+acc_4_175_443: Estrella Polar
+acc_4_176_444: Vinateros impares
+acc_4_176_445: Corregidor José de Pasamonte
+acc_4_176_446: Vinateros pares
+acc_4_176_447: Arroyo Belincoso
+acc_4_177_448: Vinateros impares
+acc_4_177_450: Vinateros
+acc_4_177_451: Pico de Artilleros
+acc_4_178_1095: Ascensor
+acc_4_178_452: Hacienda de Pavones impares
+acc_4_179_454: Bulevar Indalecio Prieto - Raya
+acc_4_179_455: Ascensor
+acc_4_17_57: Menéndez Pelayo impares
+acc_4_17_58: Menéndez Pelayo pares
+acc_4_17_59: Gutenberg
+acc_4_180_458: Pº Artilleros pares
+acc_4_180_459: Ascensor
+acc_4_181_460: San Cipriano pares
+acc_4_181_461: San Cipriano impares
+acc_4_181_462: Ascensor
+acc_4_182_463: Terminal de Autobuses
+acc_4_182_465: Ascensor no acceso independiente
+acc_4_183_467: Pº Ferrocarril
+acc_4_184_468: Wenceslao Garcia
+acc_4_186_470: Pº de la Estación
+acc_4_188_472: Cdad. Sanitaria La Paz
+acc_4_188_473: San Modesto
+acc_4_18_1050: Ascensor
+acc_4_18_60: Doctor Esquerdo pares
+acc_4_18_61: Doctor Esquerdo impares
+acc_4_18_62: Sánchez Barcaíztegui
+acc_4_191_475: Paseo Castellana impares
+acc_4_191_476: Paseo Castellana pares
+acc_4_192_478: Paseo Castellana pares
+acc_4_192_479: Paseo Castellana impares
+acc_4_192_480: Paseo Castellana pares
+acc_4_19_63: Albufera pares
+acc_4_19_64: Albufera impares
+acc_4_19_65: Peña Prieta
+acc_4_1_1: Plaza de Castilla
+acc_4_1_1040: Ascensor
+acc_4_1_1043: Intercambiador Superficie
+acc_4_1_1044: Ascensor
+acc_4_1_4: Paseo Castellana pares
+acc_4_1_773: Intercambiador
+acc_4_200_482: Villamanín
+acc_4_202_485: Crta. Carabanchel - Aravaca
+acc_4_202_486: Ascensor
+acc_4_203_487: Pº de Extremadura
+acc_4_203_488: Pº de los Húsares
+acc_4_203_489: Ascensor nº2
+acc_4_203_490: Ascensor nº1
+acc_4_204_492: Avenida de la Libertad impares
+acc_4_205_494: Avenida de la Libertad pares
+acc_4_205_495: Avenida de la Libertad impares
+acc_4_205_496: Ascensor
+acc_4_205_497: Olímpico Francisco Fernández Ochoa
+acc_4_207_499: Avda. de Abrantes pares
+acc_4_207_500: Ascensor
+acc_4_208_501: Avda. de Abrantes pares - Besolla
+acc_4_208_502: Avda. de Abrantes impares - Besolla
+acc_4_208_503: Ascensor
+acc_4_20_66: Avenida de la Albufera pares (N)
+acc_4_20_67: Avenida de la Albufera impares (N)
+acc_4_20_68: Avenida de la Albufera impares (S)
+acc_4_20_69: Avenida de la Albufera pares (S)
+acc_4_210_504: Avda. de Leganés
+acc_4_210_505: Ascensor
+acc_4_211_506: Avda. Móstoles-Navalcarnero
+acc_4_211_507: Avda. Móstoles-Bailén
+acc_4_211_508: Ascensor exterior
+acc_4_211_509: Avda. Móstoles
+acc_4_211_582: C/ Berlín Hospital
+acc_4_213_513: Ascensor
+acc_4_214_586: Goya
+acc_4_214_587: Ascensor exterior RENFE 2
+acc_4_215_516: Pza. de Pradillo
+acc_4_216_518: Río Ebro - Río Sella
+acc_4_216_519: Ascensor
+acc_4_218_524: Ascensor
+acc_4_219_526: Cº del Molino - Universidad
+acc_4_21_1093: Ascensor 1
+acc_4_21_1094: Ascensor 2
+acc_4_21_70: Albufera pares
+acc_4_21_73: Teniente Muñoz Díaz
+acc_4_220_528: Francia
+acc_4_220_529: Ascensor
+acc_4_221_530: Pº de la Estación
+acc_4_222_534: Ascensor
+acc_4_223_535: Las Ciencias
+acc_4_224_537: Senda de Mafalda
+acc_4_224_538: Ascensor
+acc_4_225_539: Ferrocarril - El Greco
+acc_4_225_540: Ascensor
+acc_4_226_543: Paseo del Ferrocarril
+acc_4_226_544: Ramon y Cajal
+acc_4_226_545: Ascensor exterior RENFE 1
+acc_4_227_546: Avda. de España pares
+acc_4_227_548: Ascensor
+acc_4_228_1084: C. Gitanilla
+acc_4_228_1085: Ascensor
+acc_4_228_550: Ascensor
+acc_4_229_551: Avda. de Rigoberta Menchú
+acc_4_22_74: Pío Felipe
+acc_4_231_556: Avda. Rey Juan Carlos I impares
+acc_4_232_558: Avda. Rey Juan Carlos I pares
+acc_4_232_559: Avda. Rey Juan Carlos I impares
+acc_4_233_562: Avda. de Gibraltar impares
+acc_4_234_564: Avda. de Orellana
+acc_4_234_566: Ascensor
+acc_4_235_568: Ascensor
+acc_4_23_76: Albufera impares
+acc_4_23_77: Albufera pares
+acc_4_24_80: Albufera pares
+acc_4_24_81: Aparcamiento
+acc_4_24_82: Ascensor
+acc_4_252_623: Corbeta
+acc_4_252_624: Ascensor
+acc_4_253_625: Velero
+acc_4_253_626: Ascensor
+acc_4_254_628: Avda. Los Poblados impares
+acc_4_255_632: Ascensor
+acc_4_256_633: Avda. La Peseta
+acc_4_257_635: Fuente de Lima
+acc_4_258_638: Ascensor
+acc_4_259_639: Bronce
+acc_4_25_577: Acceso Glorieta RENFE
+acc_4_25_83: Avenida de la Democracia
+acc_4_25_84: Correspondencia RENFE
+acc_4_25_85: Ascensor exterior RENFE
+acc_4_25_86: Avda. de la Democracia - Arboleda
+acc_4_260_640: Avda. Marqués de Corbera
+acc_4_260_641: Ascensor
+acc_4_261_642: Ascensor
+acc_4_262_643: Bambú
+acc_4_262_644: Ascensor
+acc_4_264_647: Capitán Cortés
+acc_4_264_648: Costa del Sol
+acc_4_265_649: Vélez Rubio
+acc_4_265_650: Ascensor
+acc_4_267_651: Avda. Córdoba impares
+acc_4_267_653: Ascensor
+acc_4_268_654: Glorieta de Málaga
+acc_4_268_655: Ascensor
+acc_4_269_657: Avda. Andalucia pares
+acc_4_26_87: Pº Federico García Lorca
+acc_4_26_88: Sierra Vieja
+acc_4_26_89: Ascensor
+acc_4_270_659: Tertulia
+acc_4_270_660: Paseo Gigantes y Cabezudos
+acc_4_270_661: Ascensor
+acc_4_271_662: Santiago Amón
+acc_4_271_663: Santa Petronila
+acc_4_272_665: Moncada
+acc_4_272_667: Ascensor
+acc_4_273_670: Ascensor
+acc_4_274_693: Retablo de Melisendra
+acc_4_275_691: Avda. Monasterio de Silos
+acc_4_275_692: Ascensor
+acc_4_276_689: Palas de Rey
+acc_4_276_690: Ascensor
+acc_4_277_688: Ascensor
+acc_4_278_686: Ascensor
+acc_4_279_683: Avda. Bruselas
+acc_4_279_684: Ascensor
+acc_4_27_90: Congosto
+acc_4_27_91: Plaza de Congosto
+acc_4_27_92: Ascensor
+acc_4_280_681: Ascensor
+acc_4_282_677: Ascensor
+acc_4_283_674: Avda. Plaza de Toros
+acc_4_284_671: Poeta Rafael Morales
+acc_4_284_673: Ascensor
+acc_4_285_694: Terminal T4
+acc_4_286_710: Estadio Metropolitano
+acc_4_287_708: Avda. España
+acc_4_287_709: Ascensor
+acc_4_288_704: Correspondencia RENFE
+acc_4_288_706: Ascensor RENFE
+acc_4_288_707: Ascensor
+acc_4_289_701: Honduras
+acc_4_289_702: Ascensor
+acc_4_28_93: Plaza de Toros
+acc_4_28_94: Plaza de Toros
+acc_4_290_699: Gonzalo de Córdoba
+acc_4_291_697: Plaza de Guernica
+acc_4_291_698: Ascensor
+acc_4_292_695: Algorta
+acc_4_292_696: Ascensor
+acc_4_293_713: Avda. Ensanche de Vallecas
+acc_4_293_714: Ascensor
+acc_4_294_715: Cañada del Santísimo
+acc_4_295_718: Ascensor
+acc_4_296_761: Hospital del Henares
+acc_4_29_96: Doctor Esquerdo
+acc_4_2_5: Capitán Blanco Argibay
+acc_4_300_815: Concepción Arenal
+acc_4_300_816: Marie Curie
+acc_4_300_817: Ascensor exterior
+acc_4_305_1046: Ascensor Exterior
+acc_4_30_101: General Díaz Porlier
+acc_4_30_778: Ascensor ext nº4 a A2 L4
+acc_4_30_779: Ascensor ext nº5 a A2 L4
+acc_4_30_781: Ascensor ext nº3 a A1 L2
+acc_4_30_782: Ascensor exterior
+acc_4_30_97: Conde de Peñalver pares
+acc_4_30_98: Conde de Peñalver impares
+acc_4_30_99: Felipe II pares
+acc_4_31_103: Alcalá
+acc_4_31_1104: Príncipe de Vergara - Ascensor 2
+acc_4_322_1058: Arriaga
+acc_4_322_1059: Ascensor Exterior
+acc_4_323_1061: Ascensor Exterior Nº1
+acc_4_323_1062: Avenida de Guadalajara
+acc_4_323_1063: Ascensor Exterior Nº 2
+acc_4_324_1064: Dresde
+acc_4_324_1065: Ascensor Exterior
+acc_4_325_1066: Paseo de Ginebra
+acc_4_32_104: Lagasca
+acc_4_32_105: Rampa
+acc_4_32_107: Claudio Coello
+acc_4_33_108: Palacio de Buenavista
+acc_4_33_109: Banco de España
+acc_4_33_110: Marqués de Cubas
+acc_4_345_1076: Ascensor Exterior
+acc_4_34_1097: Alcalá
+acc_4_36_1056: Campomanes
+acc_4_37_116: Santo Domingo
+acc_4_37_117: Gran Vía
+acc_4_38_118: Ministerio de Justicia
+acc_4_39_120: Alberto Aguilera
+acc_4_39_121: Carranza
+acc_4_3_7: Algodonales
+acc_4_3_8: General Margallo
+acc_4_40_122: Arapiles
+acc_4_40_123: Fuencarral
+acc_4_41_124: Bravo Murillo pares
+acc_4_41_125: Bravo Murillo impares
+acc_4_41_126: Ascensor
+acc_4_43_127: Plaza de Legazpi
+acc_4_43_128: Beata María Ana de Jesús
+acc_4_43_783: Plaza de Legazpi esquina Bolivar
+acc_4_43_784: Ascensor
+acc_4_44_129: Cáceres
+acc_4_44_130: Ciudad Real
+acc_4_44_785: Pº de las Delicias impares
+acc_4_45_131: Paseo de las Delicias
+acc_4_45_787: Palos de la Frontera impares
+acc_4_45_788: Ascensor
+acc_4_46_136: Embajadores
+acc_4_46_789: Ascensor
+acc_4_49_139: Centro Comercial
+acc_4_49_140: Plaza de Callao
+acc_4_49_141: Gran Vía
+acc_4_49_142: Palacio de la Prensa
+acc_4_49_792: Jacometrezo
+acc_4_49_793: Ascensor
+acc_4_49_794: Ascensor
+acc_4_4_10: Juan de Olías
+acc_4_4_9: Navarra
+acc_4_50_143: Leganitos
+acc_4_50_145: Plaza de España
+acc_4_50_146: Reyes
+acc_4_50_148: Ascensor
+acc_4_50_149: Ascensor
+acc_4_50_795: Ascensor
+acc_4_51_150: Princesa impares
+acc_4_51_618: Princesa pares
+acc_4_52_1099: Guzmán el Bueno - Ascensor
+acc_4_52_152: Alberto Aguilera
+acc_4_52_153: Altamirano
+acc_4_52_154: Guzmán el Bueno
+acc_4_52_797: Alberto Aguilera - Ascensor
+acc_4_53_155: Acceso Intercambiador Ejercito del Aire
+acc_4_53_156: Princesa
+acc_4_53_157: Ascensor exterior intercambiador
+acc_4_53_579: Edificio de acceso intercambiador
+acc_4_53_798: Arcipreste de Hita
+acc_4_53_807: Intercambiador E. del Aire
+acc_4_57_160: Santa Bárbara
+acc_4_57_161: Génova pares
+acc_4_57_162: Santa Engracia
+acc_4_57_163: Hermanos Álvarez Quintero
+acc_4_58_164: Génova impares
+acc_4_58_165: Génova pares
+acc_4_59_168: Goya pares
+acc_4_59_169: Goya impares
+acc_4_5_13: Bravo Murillo impares
+acc_4_5_14: Bravo Murillo pares
+acc_4_60_171: Goya impares
+acc_4_60_172: Goya pares
+acc_4_62_175: Conde de Peñalver
+acc_4_62_176: Conde de Peñalver
+acc_4_63_178: Francisco Silvela impares
+acc_4_63_179: Francisco Silvela pares
+acc_4_63_180: Francisco Silvela pares
+acc_4_63_234: Juan Bravo - Conde Peñalver
+acc_4_63_236: Francisco Silvela pares
+acc_4_63_237: Francisco Silvela pares
+acc_4_63_238: Alcántara
+acc_4_64_181: Avda. América impares
+acc_4_64_182: Avda. América pares
+acc_4_64_184: Ascensor exterior intercambiador
+acc_4_64_185: Pedro Valdivia
+acc_4_65_186: Plaza Prosperidad
+acc_4_67_188: Ramón y Cajal pares
+acc_4_67_189: Avenida de la Paz
+acc_4_68_191: Ulises
+acc_4_68_192: Arturo Soria
+acc_4_68_194: Ulises impares
+acc_4_69_195: Andorra
+acc_4_6_15: Reina Victoria impares
+acc_4_6_16: Santa Engracia
+acc_4_6_19: Maudes
+acc_4_6_615: Ascensor exterior
+acc_4_70_196: Avda. Machupichu impares
+acc_4_70_198: Montalbos
+acc_4_70_199: Mota del Cuervo
+acc_4_70_200: Ascensor
+acc_4_71_201: Arequipa
+acc_4_71_202: Gta. Mar de Cristal
+acc_4_71_204: Ascensor
+acc_4_72_205: Avda. Barranquilla impares
+acc_4_72_206: Avda. Barranquilla pares
+acc_4_72_207: Ascensor
+acc_4_73_208: Santa Virgilia
+acc_4_73_209: Los Arcos
+acc_4_73_210: Ascensor
+acc_4_74_211: Alcalá impares
+acc_4_74_212: Alcalá pares
+acc_4_75_213: Alcalá impares
+acc_4_75_214: Alcalá pares
+acc_4_76_215: Alcalá pares
+acc_4_77_217: Hnos. García Noblejas
+acc_4_77_219: Arturo Soria
+acc_4_78_222: Emilio Ferrari
+acc_4_78_223: Doctor Vallejo
+acc_4_78_224: Vicente Espinel
+acc_4_78_225: Campuzano
+acc_4_79_226: Hnos. Machado
+acc_4_79_227: Argentina
+acc_4_79_228: Ezequiel Solana
+acc_4_79_229: Virgen del Sagrario
+acc_4_7_20: Ríos Rosas pares
+acc_4_7_22: Sta. Engracia - Pza. Descubridor Diego de Ordás
+acc_4_80_231: Alcalde López Casero
+acc_4_80_232: Hnos. Fdez. Lanseros
+acc_4_83_239: Velázquez
+acc_4_83_240: Núñez de Balboa
+acc_4_84_243: Almagro
+acc_4_86_246: Plaza de Chueca
+acc_4_8_24: Santa Engracia
+acc_4_8_25: Sagunto
+acc_4_8_27: Eloy Gonzalo impares
+acc_4_90_247: San Francisco
+acc_4_90_248: San Millán
+acc_4_90_249: Toledo
+acc_4_91_250: Puerta de Toledo
+acc_4_92_251: Pº Esperanza
+acc_4_93_252: Pº de las Acacias pares
+acc_4_93_253: Pº de las Acacias impares
+acc_4_93_255: Acceso RENFE
+acc_4_94_257: Antonio Leyva
+acc_4_94_258: Avda. Emperatriz Isabel
+acc_4_95_259: Toboso
+acc_4_95_260: San Patricio
+acc_4_95_262: Peñafiel
+acc_4_96_263: Valle de Oro
+acc_4_96_264: Oca
+acc_4_96_266: General Ricardos impares
+acc_4_97_267: Pinzón
+acc_4_97_268: Oca
+acc_4_99_270: Ntra. Sra. de la Luz
+acc_4_9_1101: Luchana - Ascensor
+acc_4_9_28: Fuencarral
+acc_4_9_30: Manuela Malasaña
+acc_4_9_31: Francisco de Rojas
+acc_4_9_33: Trafalgar
+est_4_10: TRIBUNAL
+est_4_101: EMPALME
+est_4_102: CAMPAMENTO
+est_4_103: CASA DE CAMPO
+est_4_104: LAGUNA
+est_4_105: CARPETANA
+est_4_107: OPAÑEL
+est_4_109: USERA
+est_4_11: GRAN VIA
+est_4_113: CONDE DE CASAL
+est_4_114: SAINZ DE BARANDA
+est_4_115: ODONNELL
+est_4_119: REPUBLICA ARGENTINA
+est_4_122: GUZMAN EL BUENO
+est_4_123: VICENTE ALEIXANDRE
+est_4_124: CIUDAD UNIVERSITARIA
+est_4_128: PUERTA DEL ANGEL
+est_4_129: ALTO DE EXTREMADURA
+est_4_13: TIRSO DE MOLINA
+est_4_130: LUCERO
+est_4_132: LAS MUSAS
+est_4_133: SAN BLAS
+est_4_134: SIMANCAS
+est_4_135: GARCIA NOBLEJAS
+est_4_136: ASCAO
+est_4_138: BARRIO DE LA CONCEPCION
+est_4_139: PARQUE DE LAS AVENIDAS
+est_4_14: ANTON MARTIN
+est_4_140: CARTAGENA
+est_4_142: GREGORIO MARAÑON
+est_4_143: ALONSO CANO
+est_4_145: ISLAS FILIPINAS
+est_4_147: FRANCOS RODRIGUEZ
+est_4_148: VALDEZARZA
+est_4_149: ANTONIO MACHADO
+est_4_15: ESTACION DEL ARTE
+est_4_150: PEÑAGRANDE
+est_4_151: AVENIDA DE LA ILUSTRACION
+est_4_152: LACOMA
+est_4_153: ARROYOFRESNO
+est_4_154: PITIS
+est_4_156: COLOMBIA
+est_4_158: FERIA DE MADRID
+est_4_160: BARAJAS
+est_4_161: HERRERA ORIA
+est_4_162: BARRIO DEL PILAR
+est_4_163: VENTILLA
+est_4_165: DUQUE DE PASTRANA
+est_4_166: PIO XII
+est_4_168: CONCHA ESPINA
+est_4_169: CRUZ DEL RAYO
+est_4_17: MENENDEZ PELAYO
+est_4_173: IBIZA
+est_4_175: ESTRELLA
+est_4_176: VINATEROS
+est_4_177: ARTILLEROS
+est_4_178: PAVONES
+est_4_179: VALDEBERNARDO
+est_4_18: PACIFICO
+est_4_180: VICALVARO
+est_4_181: SAN CIPRIANO
+est_4_182: PUERTA DE ARGANDA
+est_4_183: RIVAS URBANIZACIONES
+est_4_184: RIVAS VACIAMADRID
+est_4_185: LA POVEDA
+est_4_186: ARGANDA DEL REY
+est_4_187: FUENCARRAL
+est_4_188: BEGOÑA
+est_4_19: PUENTE DE VALLECAS
+est_4_191: CUZCO
+est_4_192: SANTIAGO BERNABEU
+est_4_199: LAGO
+est_4_2: VALDEACEDERAS
+est_4_20: NUEVA NUMANCIA
+est_4_200: BATAN
+est_4_202: COLONIA JARDIN
+est_4_203: CUATRO VIENTOS
+est_4_204: JOAQUIN VILUMBRALES
+est_4_205: PUERTA DEL SUR
+est_4_207: ABRANTES
+est_4_208: PAN BENDITO
+est_4_21: PORTAZGO
+est_4_210: PARQUE LISBOA
+est_4_211: ALCORCON CENTRAL
+est_4_212: PARQUE OESTE
+est_4_213: UNIVERSIDAD REY JUAN CARLOS
+est_4_214: MOSTOLES CENTRAL
+est_4_215: PRADILLO
+est_4_216: HOSPITAL DE MOSTOLES
+est_4_217: MANUELA MALASAÑA
+est_4_218: LORANCA
+est_4_219: HOSPITAL DE FUENLABRADA
+est_4_22: BUENOS AIRES
+est_4_220: PARQUE EUROPA
+est_4_221: FUENLABRADA CENTRAL
+est_4_222: PARQUE DE LOS ESTADOS
+est_4_223: ARROYO CULEBRO
+est_4_224: CONSERVATORIO
+est_4_225: ALONSO DE MENDOZA
+est_4_226: GETAFE CENTRAL
+est_4_227: JUAN DE LA CIERVA
+est_4_228: EL CASAR
+est_4_229: LOS ESPARTALES
+est_4_23: ALTO DEL ARENAL
+est_4_230: EL BERCIAL
+est_4_231: EL CARRASCAL
+est_4_232: JULIAN BESTEIRO
+est_4_233: CASA DEL RELOJ
+est_4_234: HOSPITAL SEVERO OCHOA
+est_4_235: LEGANES CENTRAL
+est_4_236: SAN NICASIO
+est_4_24: MIGUEL HERNANDEZ
+est_4_25: SIERRA DE GUADALUPE
+est_4_252: ALAMEDA DE OSUNA
+est_4_253: EL CAPRICHO
+est_4_254: SAN FRANCISCO
+est_4_255: CARABANCHEL ALTO
+est_4_256: LA PESETA
+est_4_257: AVIACION ESPAÑOLA
+est_4_258: PINAR DEL REY
+est_4_259: ARGANZUELA-PLANETARIO
+est_4_26: VILLA DE VALLECAS
+est_4_260: LA ELIPA
+est_4_262: BAMBU
+est_4_263: PINAR DE CHAMARTIN
+est_4_264: HORTALEZA
+est_4_265: MANOTERAS
+est_4_267: ALMENDRALES
+est_4_268: HOSPITAL 12 DE OCTUBRE
+est_4_269: SAN FERMIN-ORCASUR
+est_4_27: CONGOSTO
+est_4_270: CIUDAD DE LOS ANGELES
+est_4_271: VILLAVERDE BAJO CRUCE
+est_4_272: SAN CRISTOBAL
+est_4_273: VILLAVERDE ALTO
+est_4_274: TRES OLIVOS
+est_4_275: MONTECARMELO
+est_4_276: LAS TABLAS
+est_4_277: RONDA DE LA COMUNICACION
+est_4_278: LA GRANJA
+est_4_279: LA MORALEJA
+est_4_28: VENTAS
+est_4_280: MARQUES DE LA VALDAVIA
+est_4_281: MANUEL DE FALLA
+est_4_282: BAUNATAL
+est_4_283: REYES CATOLICOS
+est_4_284: HOSPITAL INFANTA SOFIA
+est_4_286: ESTADIO METROPOLITANO
+est_4_287: BARRIO DEL PUERTO
+est_4_288: COSLADA CENTRAL
+est_4_289: LA RAMBLA
+est_4_29: MANUEL BECERRA
+est_4_290: SAN FERNANDO
+est_4_291: JARAMA
+est_4_292: HENARES
+est_4_293: LA GAVIA
+est_4_294: LAS SUERTES
+est_4_295: VALDECARROS
+est_4_296: HOSPITAL DEL HENARES
+est_4_3: TETUAN
+est_4_30: GOYA
+est_4_300: RIVAS FUTURA
+est_4_305: LA FORTUNA
+est_4_31: PRINCIPE DE VERGARA
+est_4_32: RETIRO
+est_4_322: LA ALMUDENA
+est_4_323: ALSACIA
+est_4_324: AVENIDA DE GUADALAJARA
+est_4_325: LAS ROSAS
+est_4_326: MIRASIERRA
+est_4_33: BANCO DE ESPAÑA
+est_4_34: SEVILLA
+est_4_345: PACO DE LUCIA
+est_4_36: OPERA
+est_4_37: SANTO DOMINGO
+est_4_39: SAN BERNARDO
+est_4_4: ESTRECHO
+est_4_40: QUEVEDO
+est_4_41: CANAL
+est_4_43: LEGAZPI
+est_4_44: DELICIAS
+est_4_45: PALOS DE LA FRONTERA
+est_4_46: EMBAJADORES
+est_4_47: LAVAPIES
+est_4_49: CALLAO
+est_4_5: ALVARADO
+est_4_50: PLAZA DE ESPAÑA
+est_4_51: VENTURA RODRIGUEZ
+est_4_52: ARGÜELLES
+est_4_57: ALONSO MARTINEZ
+est_4_58: COLON
+est_4_59: SERRANO
+est_4_6: CUATRO CAMINOS
+est_4_60: VELAZQUEZ
+est_4_62: LISTA
+est_4_63: DIEGO DE LEON
+est_4_65: PROSPERIDAD
+est_4_66: ALFONSO XIII
+est_4_67: AVENIDA DE LA PAZ
+est_4_68: ARTURO SORIA
+est_4_69: ESPERANZA
+est_4_7: RIOS ROSAS
+est_4_70: CANILLAS
+est_4_71: MAR DE CRISTAL
+est_4_72: SAN LORENZO
+est_4_73: PARQUE DE SANTA MARIA
+est_4_74: CANILLEJAS
+est_4_75: TORRE ARIAS
+est_4_76: SUANZES
+est_4_77: CIUDAD LINEAL
+est_4_78: PUEBLO NUEVO
+est_4_79: QUINTANA
+est_4_8: IGLESIA
+est_4_80: EL CARMEN
+est_4_83: NUÑEZ DE BALBOA
+est_4_84: RUBEN DARIO
+est_4_86: CHUECA
+est_4_9: BILBAO
+est_4_90: LA LATINA
+est_4_91: PUERTA DE TOLEDO
+est_4_93: PIRAMIDES
+est_4_94: MARQUES DE VADILLO
+est_4_95: URGEL
+est_4_96: OPORTO
+est_4_97: VISTA ALEGRE
+est_4_98: CARABANCHEL
+est_4_99: EUGENIA DE MONTIJO
+est_90_1: Aluche
+est_90_13: Méndez Álvaro Estación Sur
+est_90_14: Intercambiador de Moncloa
+est_90_18: Intercambiador de Príncipe Pío
+est_90_21: Intercambiador de Plaza de Castilla
+est_90_25: Chamartín
+est_90_33: Aeropuerto T4
+est_90_34: Aeropuerto T1 - T2 - T3
+est_90_36: Intercambiador de Plaza Elíptica
+est_90_4: Intercambiador de Avenida de América
+est_90_54: Atocha-Renfe
+est_90_58: Puerta del Sol
+est_90_71: Nuevos Ministerios
+par_4_1: PLAZA DE CASTILLA
+par_4_10: TRIBUNAL
+par_4_100: ALUCHE
+par_4_101: EMPALME
+par_4_102: CAMPAMENTO
+par_4_103: CASA DE CAMPO
+par_4_104: LAGUNA
+par_4_105: CARPETANA
+par_4_106: OPORTO
+par_4_107: OPAÑEL
+par_4_108: PLAZA ELIPTICA
+par_4_109: USERA
+par_4_11: GRAN VIA
+par_4_110: LEGAZPI
+par_4_111: MENDEZ ALVARO
+par_4_112: PACIFICO
+par_4_113: CONDE DE CASAL
+par_4_114: SAINZ DE BARANDA
+par_4_115: ODONNELL
+par_4_116: MANUEL BECERRA
+par_4_117: DIEGO DE LEON
+par_4_118: AVENIDA DE AMERICA
+par_4_119: REPUBLICA ARGENTINA
+par_4_12: SOL
+par_4_120: NUEVOS MINISTERIOS
+par_4_121: CUATRO CAMINOS
+par_4_122: GUZMAN EL BUENO
+par_4_123: VICENTE ALEIXANDRE
+par_4_124: CIUDAD UNIVERSITARIA
+par_4_125: MONCLOA
+par_4_126: ARGÜELLES
+par_4_127: PRINCIPE PIO
+par_4_128: PUERTA DEL ANGEL
+par_4_129: ALTO DE EXTREMADURA
+par_4_13: TIRSO DE MOLINA
+par_4_130: LUCERO
+par_4_132: LAS MUSAS
+par_4_133: SAN BLAS
+par_4_134: SIMANCAS
+par_4_135: GARCIA NOBLEJAS
+par_4_136: ASCAO
+par_4_137: PUEBLO NUEVO
+par_4_138: BARRIO DE LA CONCEPCION
+par_4_139: PARQUE DE LAS AVENIDAS
+par_4_14: ANTON MARTIN
+par_4_140: CARTAGENA
+par_4_141: AVENIDA DE AMERICA
+par_4_142: GREGORIO MARAÑON
+par_4_143: ALONSO CANO
+par_4_144: CANAL
+par_4_145: ISLAS FILIPINAS
+par_4_146: GUZMAN EL BUENO
+par_4_147: FRANCOS RODRIGUEZ
+par_4_148: VALDEZARZA
+par_4_149: ANTONIO MACHADO
+par_4_15: ESTACION DEL ARTE
+par_4_150: PEÑAGRANDE
+par_4_151: AVENIDA DE LA ILUSTRACION
+par_4_152: LACOMA
+par_4_153: ARROYOFRESNO
+par_4_154: PITIS
+par_4_155: NUEVOS MINISTERIOS
+par_4_156: COLOMBIA
+par_4_157: MAR DE CRISTAL
+par_4_158: FERIA DE MADRID
+par_4_159: AEROPUERTO T1-T2-T3
+par_4_16: ATOCHA
+par_4_160: BARAJAS
+par_4_161: HERRERA ORIA
+par_4_162: BARRIO DEL PILAR
+par_4_163: VENTILLA
+par_4_164: PLAZA DE CASTILLA
+par_4_165: DUQUE DE PASTRANA
+par_4_166: PIO XII
+par_4_167: COLOMBIA
+par_4_168: CONCHA ESPINA
+par_4_169: CRUZ DEL RAYO
+par_4_17: MENENDEZ PELAYO
+par_4_170: AVENIDA DE AMERICA
+par_4_171: NUÑEZ DE BALBOA
+par_4_172: PRINCIPE DE VERGARA
+par_4_173: IBIZA
+par_4_174: SAINZ DE BARANDA
+par_4_175: ESTRELLA
+par_4_176: VINATEROS
+par_4_177: ARTILLEROS
+par_4_178: PAVONES
+par_4_179: VALDEBERNARDO
+par_4_18: PACIFICO
+par_4_180: VICALVARO
+par_4_181: SAN CIPRIANO
+par_4_182: PUERTA DE ARGANDA
+par_4_183: RIVAS URBANIZACIONES
+par_4_184: RIVAS VACIAMADRID
+par_4_185: LA POVEDA
+par_4_186: ARGANDA DEL REY
+par_4_187: FUENCARRAL
+par_4_188: BEGOÑA
+par_4_189: CHAMARTIN
+par_4_19: PUENTE DE VALLECAS
+par_4_190: PLAZA DE CASTILLA
+par_4_191: CUZCO
+par_4_192: SANTIAGO BERNABEU
+par_4_193: NUEVOS MINISTERIOS
+par_4_194: GREGORIO MARAÑON
+par_4_195: ALONSO MARTINEZ
+par_4_196: TRIBUNAL
+par_4_197: PLAZA DE ESPAÑA
+par_4_198: PRINCIPE PIO
+par_4_199: LAGO
+par_4_2: VALDEACEDERAS
+par_4_20: NUEVA NUMANCIA
+par_4_200: BATAN
+par_4_201: CASA DE CAMPO
+par_4_202: COLONIA JARDIN
+par_4_203: CUATRO VIENTOS
+par_4_204: JOAQUIN VILUMBRALES
+par_4_205: PUERTA DEL SUR
+par_4_206: PLAZA ELIPTICA
+par_4_207: ABRANTES
+par_4_208: PAN BENDITO
+par_4_209: PUERTA DEL SUR
+par_4_21: PORTAZGO
+par_4_210: PARQUE LISBOA
+par_4_211: ALCORCON CENTRAL
+par_4_212: PARQUE OESTE
+par_4_213: UNIVERSIDAD REY JUAN CARLOS
+par_4_214: MOSTOLES CENTRAL
+par_4_215: PRADILLO
+par_4_216: HOSPITAL DE MOSTOLES
+par_4_217: MANUELA MALASAÑA
+par_4_218: LORANCA
+par_4_219: HOSPITAL DE FUENLABRADA
+par_4_22: BUENOS AIRES
+par_4_220: PARQUE EUROPA
+par_4_221: FUENLABRADA CENTRAL
+par_4_222: PARQUE DE LOS ESTADOS
+par_4_223: ARROYO CULEBRO
+par_4_224: CONSERVATORIO
+par_4_225: ALONSO DE MENDOZA
+par_4_226: GETAFE CENTRAL
+par_4_227: JUAN DE LA CIERVA
+par_4_228: EL CASAR
+par_4_229: LOS ESPARTALES
+par_4_23: ALTO DEL ARENAL
+par_4_230: EL BERCIAL
+par_4_231: EL CARRASCAL
+par_4_232: JULIAN BESTEIRO
+par_4_233: CASA DEL RELOJ
+par_4_234: HOSPITAL SEVERO OCHOA
+par_4_235: LEGANES CENTRAL
+par_4_236: SAN NICASIO
+par_4_237: OPERA
+par_4_238: PRINCIPE PIO
+par_4_24: MIGUEL HERNANDEZ
+par_4_25: SIERRA DE GUADALUPE
+par_4_252: ALAMEDA DE OSUNA
+par_4_253: EL CAPRICHO
+par_4_254: SAN FRANCISCO
+par_4_255: CARABANCHEL ALTO
+par_4_256: LA PESETA
+par_4_257: AVIACION ESPAÑOLA
+par_4_258: PINAR DEL REY
+par_4_259: ARGANZUELA-PLANETARIO
+par_4_26: VILLA DE VALLECAS
+par_4_260: LA ELIPA
+par_4_261: CHAMARTIN
+par_4_262: BAMBU
+par_4_263: PINAR DE CHAMARTIN
+par_4_264: HORTALEZA
+par_4_265: MANOTERAS
+par_4_266: PINAR DE CHAMARTIN
+par_4_267: ALMENDRALES
+par_4_268: HOSPITAL 12 DE OCTUBRE
+par_4_269: SAN FERMIN-ORCASUR
+par_4_27: CONGOSTO
+par_4_270: CIUDAD DE LOS ANGELES
+par_4_271: VILLAVERDE BAJO CRUCE
+par_4_272: SAN CRISTOBAL
+par_4_273: VILLAVERDE ALTO
+par_4_274: TRES OLIVOS
+par_4_275: MONTECARMELO
+par_4_276: LAS TABLAS
+par_4_277: RONDA DE LA COMUNICACION
+par_4_278: LA GRANJA
+par_4_279: LA MORALEJA
+par_4_28: VENTAS
+par_4_280: MARQUES DE LA VALDAVIA
+par_4_281: MANUEL DE FALLA
+par_4_282: BAUNATAL
+par_4_283: REYES CATOLICOS
+par_4_284: HOSPITAL INFANTA SOFIA
+par_4_285: AEROPUERTO T-4
+par_4_286: ESTADIO METROPOLITANO
+par_4_287: BARRIO DEL PUERTO
+par_4_288: COSLADA CENTRAL
+par_4_289: LA RAMBLA
+par_4_29: MANUEL BECERRA
+par_4_290: SAN FERNANDO
+par_4_291: JARAMA
+par_4_292: HENARES
+par_4_293: LA GAVIA
+par_4_294: LAS SUERTES
+par_4_295: VALDECARROS
+par_4_296: HOSPITAL DEL HENARES
+par_4_3: TETUAN
+par_4_30: GOYA
+par_4_300: RIVAS FUTURA
+par_4_305: LA FORTUNA
+par_4_31: PRINCIPE DE VERGARA
+par_4_32: RETIRO
+par_4_322: LA ALMUDENA
+par_4_323: ALSACIA
+par_4_324: AVENIDA DE GUADALAJARA
+par_4_325: LAS ROSAS
+par_4_326: MIRASIERRA
+par_4_33: BANCO DE ESPAÑA
+par_4_34: SEVILLA
+par_4_345: PACO DE LUCIA
+par_4_35: SOL
+par_4_36: OPERA
+par_4_37: SANTO DOMINGO
+par_4_38: NOVICIADO
+par_4_39: SAN BERNARDO
+par_4_4: ESTRECHO
+par_4_40: QUEVEDO
+par_4_41: CANAL
+par_4_42: CUATRO CAMINOS
+par_4_43: LEGAZPI
+par_4_44: DELICIAS
+par_4_45: PALOS DE LA FRONTERA
+par_4_46: EMBAJADORES
+par_4_47: LAVAPIES
+par_4_48: SOL
+par_4_49: CALLAO
+par_4_5: ALVARADO
+par_4_50: PLAZA DE ESPAÑA
+par_4_51: VENTURA RODRIGUEZ
+par_4_52: ARGÜELLES
+par_4_53: MONCLOA
+par_4_54: ARGÜELLES
+par_4_55: SAN BERNARDO
+par_4_56: BILBAO
+par_4_57: ALONSO MARTINEZ
+par_4_58: COLON
+par_4_59: SERRANO
+par_4_6: CUATRO CAMINOS
+par_4_60: VELAZQUEZ
+par_4_61: GOYA
+par_4_62: LISTA
+par_4_63: DIEGO DE LEON
+par_4_64: AVENIDA DE AMERICA
+par_4_65: PROSPERIDAD
+par_4_66: ALFONSO XIII
+par_4_67: AVENIDA DE LA PAZ
+par_4_68: ARTURO SORIA
+par_4_69: ESPERANZA
+par_4_7: RIOS ROSAS
+par_4_70: CANILLAS
+par_4_71: MAR DE CRISTAL
+par_4_72: SAN LORENZO
+par_4_73: PARQUE DE SANTA MARIA
+par_4_74: CANILLEJAS
+par_4_75: TORRE ARIAS
+par_4_76: SUANZES
+par_4_77: CIUDAD LINEAL
+par_4_78: PUEBLO NUEVO
+par_4_79: QUINTANA
+par_4_8: IGLESIA
+par_4_80: EL CARMEN
+par_4_81: VENTAS
+par_4_82: DIEGO DE LEON
+par_4_83: NUÑEZ DE BALBOA
+par_4_84: RUBEN DARIO
+par_4_85: ALONSO MARTINEZ
+par_4_86: CHUECA
+par_4_87: GRAN VIA
+par_4_88: CALLAO
+par_4_89: OPERA
+par_4_9: BILBAO
+par_4_90: LA LATINA
+par_4_91: PUERTA DE TOLEDO
+par_4_92: ACACIAS
+par_4_93: PIRAMIDES
+par_4_94: MARQUES DE VADILLO
+par_4_95: URGEL
+par_4_96: OPORTO
+par_4_97: VISTA ALEGRE
+par_4_98: CARABANCHEL
+par_4_99: EUGENIA DE MONTIJO

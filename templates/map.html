@@ -1,377 +1,653 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %}Metro Madrid - Live Timing{% endblock
+%} {% block extra_css %}
+<!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+/>
 
-{% block title %}Metro Madrid - Live Timing{% endblock %}
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-{% block extra_css %}
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f7f7f7;
-            height: 100vh;
-            overflow: hidden;
-        }
+  #map {
+    position: absolute;
+    top: 44px; /* Altura de la cabecera */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 
-        #map {
-            position: absolute;
-            top: 44px; /* Altura de la cabecera */
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-        }
+  .map-container.leaflet-container {
+    filter: none; /* Resetear filtros previos */
+  }
 
-        .map-container.leaflet-container {
-            filter: none; /* Resetear filtros previos */
-        }
-        
-        /* Estilos para los iconos de estaciones */
-        .station-marker {
-            border: 3px solid white !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
-            transition: all 0.3s ease !important;
-            cursor: pointer !important;
-        }
+  /* Estilos para los iconos de estaciones */
+  .station-marker {
+    border: 3px solid white !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+  }
 
-        /* .station-marker:hover {
+  /* .station-marker:hover {
             transform: scale(1.2) !important;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
         } */
 
-        /* Estilos personalizados para clusters de marcadores */
-        .marker-cluster {
-            background: transparent !important;
-            border: none !important;
-            border-radius: 50% !important;
-            box-shadow: none !important;
-        }
+  /* Estilos personalizados para clusters de marcadores */
+  .marker-cluster {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+  }
 
-        /* .marker-cluster:hover {
+  /* .marker-cluster:hover {
             transform: scale(1.1) !important;
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6) !important;
         } */
 
-        .marker-cluster-small {
-            background: transparent !important;
-        }
+  .marker-cluster-small {
+    background: transparent !important;
+  }
 
-        .marker-cluster-medium {
-            background: transparent !important;
-        }
+  .marker-cluster-medium {
+    background: transparent !important;
+  }
 
-        .marker-cluster-large {
-            background: transparent !important;
-        }
+  .marker-cluster-large {
+    background: transparent !important;
+  }
+  /* Estilos generales (desktop) */
+  #layer-control-panel {
+    position: fixed;
+    top: 56px;
+    left: 30px;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 18px 22px;
+    color: #222;
+    font-size: 15px;
+    min-width: 280px;
+    max-width: 380px;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+  }
 
-        /* Estilos para tooltips de estaciones */
-        .station-tooltip {
-            background: rgba(0, 0, 0, 0.8) !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 8px !important;
-            padding: 8px 12px !important;
-            font-size: 13px !important;
-            font-weight: bold !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
-        }
+  /* Responsive para pantallas < 600px (móvil) */
+  @media (max-width: 600px) {
+    #layer-control-panel {
+      /* Ocupar casi todo el ancho */
+      left: 5%;
+      right: 5%;
+      top: auto; /* quitamos el top fijo */
+      bottom: 10px; /* lo colocamos al pie */
+      width: 90%;
+      max-width: none;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 14px;
+      max-height: 50vh; /* menos alto en móvil */
+    }
 
-        .station-tooltip::before {
-            border-top-color: rgba(0, 0, 0, 0.8) !important;
-        }
+    /* Ajustamos el header del panel para que quede más compacto */
+    #layer-control-panel > div:first-child {
+      flex-direction: row-reverse; /* botón a la izquierda */
+      justify-content: space-between;
+    }
+    #layer-control-panel span {
+      font-size: 14px;
+    }
+    #hide-panel-btn {
+      font-size: 20px;
+    }
+  }
 
-        /* Estilos para tooltips de clusters */
-        .cluster-tooltip {
-            background: rgba(255, 255, 255, 0.95) !important;
-            color: #333 !important;
-            border: 2px solid #0055a4 !important;
-            border-radius: 8px !important;
-            padding: 10px 15px !important;
-            font-size: 12px !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
-            max-width: 300px !important;
-        }
+  /* Header del panel - estilos generales */
+  #layer-control-panel > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
 
-        .cluster-tooltip::before {
-            border-top-color: #0055a4 !important;
-        }
+  #layer-control-panel span {
+    font-weight: bold;
+  }
 
-        /* Estilos para marcadores de accesos/salidas */
-        .access-marker {
-            background: rgba(255, 255, 255, 0.9) !important;
-            border: 2px solid #666 !important;
-            border-radius: 50% !important;
-            text-align: center !important;
-            line-height: 16px !important;
-            font-size: 12px !important;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
-            transition: all 0.2s ease !important;
-        }
+  #hide-panel-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    padding: 5px;
+  }
 
-        .access-marker:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
-        }
+  /* Estilos para tooltips de estaciones */
+  .station-tooltip {
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  }
 
-        /* Tooltips para accesos */
-        .access-tooltip {
-            background: rgba(102, 102, 102, 0.9) !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 6px !important;
-            padding: 6px 10px !important;
-            font-size: 12px !important;
-            font-weight: normal !important;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
-        }
+  .station-tooltip::before {
+    border-top-color: rgba(0, 0, 0, 0.8) !important;
+  }
 
-        .access-tooltip::before {
-            border-top-color: rgba(102, 102, 102, 0.9) !important;
-        }
+  /* Estilos para tooltips de clusters */
+  .cluster-tooltip {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #333 !important;
+    border: 2px solid #0055a4 !important;
+    border-radius: 8px !important;
+    padding: 10px 15px !important;
+    font-size: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    max-width: 300px !important;
+  }
 
-        /* Estilos para tooltips de ubicación del usuario */
-        .user-location-tooltip {
-            background: rgba(231, 76, 60, 0.9) !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 8px !important;
-            padding: 8px 12px !important;
-            font-size: 13px !important;
-            font-weight: bold !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
-        }
+  .cluster-tooltip::before {
+    border-top-color: #0055a4 !important;
+  }
 
-        .user-location-tooltip::before {
-            border-top-color: rgba(231, 76, 60, 0.9) !important;
-        }
+  /* Estilos para marcadores de accesos/salidas */
+  .access-marker {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid #666 !important;
+    border-radius: 50% !important;
+    text-align: center !important;
+    line-height: 16px !important;
+    font-size: 12px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.2s ease !important;
+  }
 
-        /* Animaciones para marcadores de geolocalización */
-        .nearest-station-marker {
-            animation: bounce 1s infinite !important;
-        }
+  .access-marker:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  }
 
-        .nearby-station-marker {
-            transition: transform 0.3s ease !important;
-        }
+  /* Tooltips para accesos */
+  .access-tooltip {
+    background: rgba(102, 102, 102, 0.9) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
 
-        .nearby-station-marker:hover {
-            transform: scale(1.2) !important;
-        }
+  .access-tooltip::before {
+    border-top-color: rgba(102, 102, 102, 0.9) !important;
+  }
 
-        /* Efectos hover para las líneas del metro - VERSIÓN SIMPLIFICADA */
-        .metro-line {
-            transition: stroke-width 0.3s ease, opacity 0.3s ease !important;
-            cursor: pointer !important;
-        }
+  /* Estilos para tooltips de ubicación del usuario */
+  .user-location-tooltip {
+    background: rgba(231, 76, 60, 0.9) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  }
 
-        .metro-line:hover {
-            stroke-width: 8px !important;
-            opacity: 1 !important;
-            filter: brightness(1.3) !important;
-        }
+  .user-location-tooltip::before {
+    border-top-color: rgba(231, 76, 60, 0.9) !important;
+  }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            #layer-control-panel {
-                width: calc(100% - 40px);
-                left: 20px;
-                right: 20px;
-            }
-            
-            #mobile-location-btn {
-                display: block !important;
-            }
-            
-            #layer-control-panel {
-                max-height: 60vh;
-            }
-        }
-    </style>
-{% endblock %}
+  /* Animaciones para marcadores de geolocalización */
+  .nearest-station-marker {
+    animation: bounce 1s infinite !important;
+  }
 
-{% block content %}
-    <div id="map"></div>
+  .nearby-station-marker {
+    transition: transform 0.3s ease !important;
+  }
 
-    <!-- Panel flotante de control de capas -->
-<div id="layer-control-panel" style="position: fixed; top: 56px; left: 30px; z-index: 2000; background: rgba(255,255,255,0.95); border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.15); padding: 18px 22px; color: #222; font-size: 15px; min-width: 280px; max-height: 80vh; overflow-y: auto; transition: transform 0.3s ease;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-            <span style="font-weight: bold;">☰ Controles del mapa</span>
-            <button id="hide-panel-btn" style="background: none; border: none; font-size: 18px; color: #888; cursor: pointer; padding: 5px;">✕</button>
-        </div>
-        
-        <!-- Control de ubicación -->
-        <div style="margin-bottom: 20px;">
-            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #e74c3c;">📍 Tu ubicación:</label>
-            <button id="find-me-btn" style="width: 100%; padding: 10px; background: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 8px; font-size: 14px;">🎯 Encontrar mi ubicación</button>
-            <button id="nearest-station-btn" style="width: 100%; padding: 10px; background: #27ae60; color: white; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 8px; font-size: 14px;" disabled>🚇 Estación más cercana</button>
-            <button id="nearby-stations-btn" style="width: 100%; padding: 10px; background: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 8px; font-size: 14px;" disabled>📍 Estaciones cercanas</button>
-            <div id="location-status" style="font-size: 12px; color: #666; text-align: center;">Haz clic para obtener tu ubicación</div>
-        </div>
+  .nearby-station-marker:hover {
+    transform: scale(1.2) !important;
+  }
 
-    <!-- Control de capas principales -->
-        <div style="margin-bottom: 20px;">
-            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #d7192d;">Capas del mapa:</label>
-            <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <input type="checkbox" id="toggleStations" checked style="accent-color: #d7192d;"> Estaciones
-            </label>
-            <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <input type="checkbox" id="toggleRoutes" checked style="accent-color: #0055a4;"> Líneas
-            </label>
-            <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-            <input type="checkbox" id="toggleUserLocation" checked style="accent-color: #e74c3c;"> Mi ubicación
-            </label>
-        </div>
+  /* Efectos hover para las líneas del metro - VERSIÓN SIMPLIFICADA */
+  .metro-line {
+    transition: stroke-width 0.3s ease, opacity 0.3s ease !important;
+    cursor: pointer !important;
+  }
 
-    <!-- Control de líneas individuales -->
-    <div style="margin-bottom: 20px;">
-        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #0055a4;">Líneas individuales:</label>
-        <div id="lines-controls" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; max-height: 200px; overflow-y: auto;">
-            <!-- Los checkboxes de líneas se generarán dinámicamente -->
-        </div>
-        </div>
-        
-        <!-- Información de estado -->
-        <div style="border-top: 1px solid #eee; padding-top: 15px;">
-            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #39b54a;">Información del mapa:</label>
-            <div style="font-size: 13px; line-height: 1.4;">
-                <div style="margin-bottom: 5px;"><strong>Centro:</strong> <span id="map-center">_</span></div>
-                <div style="margin-bottom: 5px;"><strong>Zoom:</strong> <span id="zoom-level">_</span></div>
-                <div style="margin-bottom: 10px;"><strong>Tamaño:</strong> <span id="map-size">_</span></div>
-                <div id="metro-stats" style="margin-bottom: 10px;"></div>
-            <button id="refresh-data-btn" style="width: 100%; padding: 8px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 10px;">🔄 Recargar datos</button>
-                <div style="font-size: 11px; color: #666; text-align: right;" id="last-update">Última actualización: --:--:--</div>
-            </div>
-        </div>
+  .metro-line:hover {
+    stroke-width: 8px !important;
+    opacity: 1 !important;
+    filter: brightness(1.3) !important;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #layer-control-panel {
+      width: calc(100% - 40px);
+      left: 20px;
+      right: 20px;
+    }
+
+    #mobile-location-btn {
+      display: block !important;
+    }
+
+    #layer-control-panel {
+      max-height: 60vh;
+    }
+  }
+</style>
+{% endblock %} {% block content %}
+<div id="map"></div>
+
+<!-- Panel flotante de control de capas -->
+<div id="layer-control-panel">
+  <div>
+    <span>☰ Controles del mapa</span>
+    <button id="hide-panel-btn">✕</button>
+  </div>
+
+  <!-- Control de ubicación -->
+  <div style="margin-bottom: 20px">
+    <label
+      style="
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #e74c3c;
+      "
+      >📍 Tu ubicación:</label
+    >
+    <button
+      id="find-me-btn"
+      style="
+        width: 100%;
+        padding: 10px;
+        background: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        font-size: 14px;
+      "
+    >
+      🎯 Encontrar mi ubicación
+    </button>
+    <button
+      id="nearest-station-btn"
+      style="
+        width: 100%;
+        padding: 10px;
+        background: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        font-size: 14px;
+      "
+      disabled
+    >
+      🚇 Estación más cercana
+    </button>
+    <button
+      id="nearby-stations-btn"
+      style="
+        width: 100%;
+        padding: 10px;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        font-size: 14px;
+      "
+      disabled
+    >
+      📍 Estaciones cercanas
+    </button>
+    <div
+      id="location-status"
+      style="font-size: 12px; color: #666; text-align: center"
+    >
+      Haz clic para obtener tu ubicación
     </div>
-    <!-- Botón hamburguesa para mostrar el panel cuando está oculto -->
-    <button id="show-panel-btn" style="display:none; position: fixed; top: 140px; left: 30px; z-index: 2001; background: #0055a4; color: #fff; border: none; border-radius: 8px; padding: 12px 16px; font-size: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); cursor: pointer; transition: all 0.3s ease;">☰</button>
-    
-    <!-- Botón flotante de ubicación (móvil) -->
-    <button id="mobile-location-btn" style="display: none; position: fixed; bottom: 80px; right: 20px; z-index: 2001; background: #e74c3c; color: white; border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); cursor: pointer; transition: all 0.3s ease;">📍</button>
-{% endblock %}
+  </div>
 
-{% block scripts %}
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
 
-            // ========================================================================
-            // 1. INICIALIZACIÓN DEL MAPA
-            // ========================================================================
-            const map = L.map('map', {
-                center: [40.4168, -3.7038], // Madrid
-                zoom: 12,
-                minZoom: 10,
-                maxZoom: 18
+  <!-- Control de capas principales -->
+  <div style="margin-bottom: 20px">
+    <label
+      style="
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #d7192d;
+      "
+      >Capas del mapa:</label
+    >
+    <label
+      style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px"
+    >
+      <input
+        type="checkbox"
+        id="toggleStations"
+        checked
+        style="accent-color: #d7192d"
+      />
+      Estaciones
+    </label>
+    <label
+      style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px"
+    >
+      <input
+        type="checkbox"
+        id="toggleRoutes"
+        checked
+        style="accent-color: #0055a4"
+      />
+      Líneas
+    </label>
+    <label
+      style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px"
+    >
+      <input
+        type="checkbox"
+        id="toggleUserLocation"
+        checked
+        style="accent-color: #e74c3c"
+      />
+      Mi ubicación
+    </label>
+  </div>
+
+  <!-- Control de líneas individuales -->
+  <div style="margin-bottom: 20px">
+    <label
+      style="
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #0055a4;
+      "
+      >Líneas individuales:</label
+    >
+    <div
+      id="lines-controls"
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        max-height: 200px;
+        overflow-y: auto;
+      "
+    >
+      <!-- Los checkboxes de líneas se generarán dinámicamente -->
+    </div>
+  </div>
+
+  <!-- Información de estado -->
+  <div style="border-top: 1px solid #eee; padding-top: 15px">
+    <label
+      style="
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #39b54a;
+      "
+      >Información del mapa:</label
+    >
+    <div style="font-size: 13px; line-height: 1.4">
+      <div style="margin-bottom: 5px">
+        <strong>Centro:</strong> <span id="map-center">_</span>
+      </div>
+      <div style="margin-bottom: 5px">
+        <strong>Zoom:</strong> <span id="zoom-level">_</span>
+      </div>
+      <div style="margin-bottom: 10px">
+        <strong>Tamaño:</strong> <span id="map-size">_</span>
+      </div>
+      <div id="metro-stats" style="margin-bottom: 10px"></div>
+      <button
+        id="refresh-data-btn"
+        style="
+          width: 100%;
+          padding: 8px;
+          background: #007bff;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        "
+      >
+        🔄 Recargar datos
+      </button>
+      <div
+        style="font-size: 11px; color: #666; text-align: right"
+        id="last-update"
+      >
+        Última actualización: --:--:--
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Botón hamburguesa para mostrar el panel cuando está oculto -->
+<button
+  id="show-panel-btn"
+  style="
+    display: none;
+    position: fixed;
+    top: 140px;
+    left: 30px;
+    z-index: 2001;
+    background: #0055a4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  "
+>
+  ☰
+</button>
+
+<!-- Botón flotante de ubicación (móvil) -->
+<button
+  id="mobile-location-btn"
+  style="
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 2001;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  "
+>
+  📍
+</button>
+{% endblock %} {% block scripts %}
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // ========================================================================
+    // 1. INICIALIZACIÓN DEL MAPA
+    // ========================================================================
+    const map = L.map("map", {
+      center: [40.4168, -3.7038], // Madrid
+      zoom: 12,
+      minZoom: 10,
+      maxZoom: 18,
+    });
+
+    const baseLayers = {
+      dark: L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+        { attribution: "© CARTO" }
+      ),
+      classic: L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        { attribution: "© CARTO" }
+      ),
+      clear: L.tileLayer(
+        "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+        { attribution: "© OpenStreetMap" }
+      ),
+    };
+
+    // Función para cambiar el estilo del mapa según el tema
+    function updateMapStyle(theme) {
+      if (currentBaseLayer) map.removeLayer(currentBaseLayer);
+
+      // Mapear temas a estilos de mapa
+      const themeToStyle = {
+        light: "classic", // Tema claro -> Mapa clásico bonito
+        dark: "dark", // Tema oscuro -> Mapa oscuro moderno
+        nocturno: "dark", // Tema nocturno -> Mapa oscuro moderno
+      };
+
+      const mapStyle = themeToStyle[theme] || "classic";
+      currentBaseLayer = baseLayers[mapStyle];
+      currentBaseLayer.addTo(map);
+
+      console.log(`🗺️ Estilo de mapa cambiado a: ${mapStyle} (tema: ${theme})`);
+    }
+
+    // Detectar el tema actual al cargar la página
+    const currentTheme =
+      document.documentElement.getAttribute("data-theme") || "light";
+    let currentBaseLayer =
+      baseLayers[
+        currentTheme === "dark" || currentTheme === "nocturno"
+          ? "dark"
+          : "classic"
+      ];
+    currentBaseLayer.addTo(map);
+
+    // Escuchar cambios en el tema global
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "data-theme"
+        ) {
+          const newTheme = document.documentElement.getAttribute("data-theme");
+          updateMapStyle(newTheme);
+        }
+      });
+    });
+
+    // Observar cambios en el atributo data-theme del html
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
+    // También escuchar eventos personalizados si existen
+    document.addEventListener("themeChanged", function (e) {
+      updateMapStyle(e.detail.theme);
+    });
+
+    // ========================================================================
+    // 2. CAPAS Y DATOS
+    // ========================================================================
+    const routeLayers = {};
+    const lineColors = {}; // Almacenará { '1': '#color', '2': '#color' }
+    const accessesLayer = L.layerGroup(); // Capa para los accesos/salidas
+    let accessesData = []; // Almacenar datos de accesos
+    const stationClusterLayer = L.markerClusterGroup({
+      maxClusterRadius: 40,
+      disableClusteringAtZoom: 16,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      iconCreateFunction: function (cluster) {
+        const markers = cluster.getAllChildMarkers();
+        const count = markers.length;
+
+        // Encontrar la línea principal (la que más aparece en el cluster)
+        const lineCounts = {};
+        markers.forEach((marker) => {
+          if (marker.stationData && marker.stationData.lines) {
+            marker.stationData.lines.forEach((line) => {
+              lineCounts[line] = (lineCounts[line] || 0) + 1;
             });
+          }
+        });
 
-            const baseLayers = {
-                'dark': L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution: '© CARTO' }),
-                'classic': L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { attribution: '© CARTO' }),
-                'clear': L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' })
-            };
+        // Obtener la línea más frecuente, en caso de empate elegir la menor
+        let mainLine = "default";
+        let maxCount = 0;
+        let minLineNumber = Infinity;
+        
+        for (const [line, count] of Object.entries(lineCounts)) {
+          const lineNumber = parseInt(line.replace("R", "99"));
+          
+          if (count > maxCount || (count === maxCount && lineNumber < minLineNumber)) {
+            maxCount = count;
+            mainLine = line;
+            minLineNumber = lineNumber;
+          }
+        }
 
-            // Función para cambiar el estilo del mapa según el tema
-            function updateMapStyle(theme) {
-                if (currentBaseLayer) map.removeLayer(currentBaseLayer);
-                
-                // Mapear temas a estilos de mapa
-                const themeToStyle = {
-                    'light': 'classic',  // Tema claro -> Mapa clásico bonito
-                    'dark': 'dark',      // Tema oscuro -> Mapa oscuro moderno
-                    'nocturno': 'dark'   // Tema nocturno -> Mapa oscuro moderno
-                };
-                
-                const mapStyle = themeToStyle[theme] || 'classic';
-                currentBaseLayer = baseLayers[mapStyle];
-                currentBaseLayer.addTo(map);
-                
-                console.log(`🗺️ Estilo de mapa cambiado a: ${mapStyle} (tema: ${theme})`);
-            }
+        // Obtener el color de la línea principal
+        const lineConfig = lineColors[mainLine] || { color: "#757575" };
 
-            // Detectar el tema actual al cargar la página
-            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-            let currentBaseLayer = baseLayers[currentTheme === 'dark' || currentTheme === 'nocturno' ? 'dark' : 'classic'];
-            currentBaseLayer.addTo(map);
+        // Determinar tamaño del cluster
+        let size = "small";
+        if (count > 20) size = "medium";
+        if (count > 50) size = "large";
 
-            // Escuchar cambios en el tema global
-            const observer = new MutationObserver(function(mutations) {
-                mutations.forEach(function(mutation) {
-                    if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-                        const newTheme = document.documentElement.getAttribute('data-theme');
-                        updateMapStyle(newTheme);
-                    }
-                });
-            });
-
-            // Observar cambios en el atributo data-theme del html
-            observer.observe(document.documentElement, {
-                attributes: true,
-                attributeFilter: ['data-theme']
-            });
-
-            // También escuchar eventos personalizados si existen
-            document.addEventListener('themeChanged', function(e) {
-                updateMapStyle(e.detail.theme);
-            });
-
-            // ========================================================================
-            // 2. CAPAS Y DATOS
-            // ========================================================================
-            const routeLayers = {};
-            const lineColors = {}; // Almacenará { '1': '#color', '2': '#color' }
-            const accessesLayer = L.layerGroup(); // Capa para los accesos/salidas
-            let accessesData = []; // Almacenar datos de accesos
-            const stationClusterLayer = L.markerClusterGroup({
-                maxClusterRadius: 40,
-                disableClusteringAtZoom: 16,
-                spiderfyOnMaxZoom: true,
-                showCoverageOnHover: false,
-                iconCreateFunction: function(cluster) {
-                    const markers = cluster.getAllChildMarkers();
-                    const count = markers.length;
-
-                    // Encontrar la línea principal (la que más aparece en el cluster)
-                    const lineCounts = {};
-                    markers.forEach(marker => {
-                        if (marker.stationData && marker.stationData.lines) {
-                            marker.stationData.lines.forEach(line => {
-                                lineCounts[line] = (lineCounts[line] || 0) + 1;
-                            });
-                        }
-                    });
-
-                    // Obtener la línea más frecuente
-                    let mainLine = 'default';
-                    let maxCount = 0;
-                    for (const [line, count] of Object.entries(lineCounts)) {
-                        if (count > maxCount) {
-                            maxCount = count;
-                            mainLine = line;
-                        }
-                    }
-                    
-                    // Obtener el color de la línea principal
-                    const lineConfig = lineColors[mainLine] || { color: '#757575' };
-                    
-                    // Determinar tamaño del cluster
-                    let size = 'small';
-                    if (count > 20) size = 'medium';
-                    if (count > 50) size = 'large';
-                    
-                    // Crear icono con fondo blanco y texto del color de la línea principal
-                    const iconHtml = `
+        // Crear icono con fondo blanco y texto del color de la línea principal
+        const iconHtml = `
                         <div style="
                             background-color: white;
                             border: 3px solid ${lineConfig.color};
@@ -387,378 +663,428 @@
                             box-shadow: 0 2px 8px rgba(0,0,0,0.3);
                         ">${count}</div>
                     `;
-                    
-                    return L.divIcon({
-                        html: iconHtml,
-                        className: `marker-cluster marker-cluster-${size}`,
-                        iconSize: [40, 40]
-                    });
-                }
-            });
 
+        return L.divIcon({
+          html: iconHtml,
+          className: `marker-cluster marker-cluster-${size}`,
+          iconSize: [40, 40],
+        });
+      },
+    });
 
-            // ========================================================================
-            // 3. LÓGICA DE CARGA Y DIBUJADO
-            // ========================================================================
+    // ========================================================================
+    // 3. LÓGICA DE CARGA Y DIBUJADO
+    // ========================================================================
 
-            function drawStations(stations) {
-                stationClusterLayer.clearLayers();
+    function drawStations(stations) {
+      stationClusterLayer.clearLayers();
 
-                // Agrupar estaciones por nombre (estaciones de correspondencia)
-                const stationsByName = {};
-                
-                stations.forEach(station => {
-                    if (!station.lat || !station.lon) return;
-                    
-                    const stationName = station.name;
-                    
-                    if (!stationsByName[stationName]) {
-                        stationsByName[stationName] = {
-                            name: stationName,
-                            lat: station.lat,
-                            lon: station.lon,
-                            lines: new Set(),
-                            connections: new Set(),
-                            id_fijo: station.id
-                        };
-                    }
-                    
-                    // Añadir línea y conexiones
-                    stationsByName[stationName].lines.add(station.line);
-                    if (station.connections) {
-                        station.connections.forEach(conn => stationsByName[stationName].connections.add(conn));
-                    }
-                });
-                
-                // Crear marcadores para cada estación agrupada
-                Object.values(stationsByName).forEach(stationData => {
-                    const linesArray = Array.from(stationData.lines).sort((a, b) => {
-                        const numA = parseInt(a.replace('R', '99'));
-                        const numB = parseInt(b.replace('R', '99'));
-                        return numA - numB;
-                    });
-                    
-                    // Determinar color principal (línea con más conexiones o primera)
-                    const mainLine = linesArray[0];
-                    const lineConfig = lineColors[mainLine] || { color: '#757575' };
-                    const isInterchange = linesArray.length > 1 || stationData.connections.size > 0;
-                    
-                    const marker = L.circleMarker([stationData.lat, stationData.lon], {
-                        radius: isInterchange ? 10 : 6,
-                        fillColor: lineConfig.color,
-                        color: "#fff",
-                        weight: 2,
-                        opacity: 1,
-                        fillOpacity: 0.95,
-                        className: 'station-marker'
-                    });
+      // Agrupar estaciones por nombre (estaciones de correspondencia)
+      const stationsByName = {};
 
-                    marker.stationData = stationData;
-                
-                    // Tooltip con nombre y líneas
-                    const linesText = linesArray.join(', ');
-                    marker.bindTooltip(`${stationData.name}<br><strong>Líneas:</strong> ${linesText}`, {
-                            permanent: false,
-                            direction: 'top',
-                    offset: [0, -10],
-                    className: 'station-tooltip'
-                });
-                
-                    // Popup con información detallada
-                    const connectionsText = Array.from(stationData.connections).join(', ') || 'Ninguna';
-                    // Usar la primera línea disponible para el enlace
-                    const firstLine = linesArray[0];
-                    const popupContent = `
+      stations.forEach((station) => {
+        if (!station.lat || !station.lon) return;
+
+        const stationName = station.name;
+
+        if (!stationsByName[stationName]) {
+          stationsByName[stationName] = {
+            name: stationName,
+            lat: station.lat,
+            lon: station.lon,
+            lines: new Set(),
+            connections: new Set(),
+            id_fijo: station.id,
+          };
+        }
+
+        // Añadir línea y conexiones
+        stationsByName[stationName].lines.add(station.line);
+        if (station.connections) {
+          station.connections.forEach((conn) =>
+            stationsByName[stationName].connections.add(conn)
+          );
+        }
+      });
+
+      // Crear marcadores para cada estación agrupada
+      Object.values(stationsByName).forEach((stationData) => {
+        const linesArray = Array.from(stationData.lines).sort((a, b) => {
+          const numA = parseInt(a.replace("R", "99"));
+          const numB = parseInt(b.replace("R", "99"));
+          return numA - numB;
+        });
+
+        // Determinar color principal (línea con más conexiones o primera)
+        const mainLine = linesArray[0];
+        const lineConfig = lineColors[mainLine] || { color: "#757575" };
+        const isInterchange =
+          linesArray.length > 1 || stationData.connections.size > 0;
+
+        const marker = L.circleMarker([stationData.lat, stationData.lon], {
+          radius: isInterchange ? 10 : 6,
+          fillColor: lineConfig.color,
+          color: "#fff",
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.95,
+          className: "station-marker",
+        });
+
+        marker.stationData = stationData;
+
+        // Tooltip con nombre y líneas
+        const linesText = linesArray.join(", ");
+        marker.bindTooltip(
+          `${stationData.name}<br><strong>Líneas:</strong> ${linesText}`,
+          {
+            permanent: false,
+            direction: "top",
+            offset: [0, -10],
+            className: "station-tooltip",
+          }
+        );
+
+        // Popup con información detallada
+        const connectionsText =
+          Array.from(stationData.connections).join(", ") || "Ninguna";
+        // Usar la primera línea disponible para el enlace
+        const firstLine = linesArray[0];
+        const popupContent = `
                         <h3>${stationData.name}</h3>
                         <p><strong>Líneas:</strong> ${linesText}</p>
                         <p><strong>Conexiones:</strong> ${connectionsText}</p>
                         <a href="/station/${firstLine}/${stationData.id_fijo}" target="_blank">Ver detalles</a>
                         `;
-                marker.bindPopup(popupContent);
-                
-                    stationClusterLayer.addLayer(marker);
-                });
-                
-                map.addLayer(stationClusterLayer);
-                console.log(`Dibujadas ${Object.keys(stationsByName).length} estaciones agrupadas.`);
-            }
+        marker.bindPopup(popupContent);
 
-            // Función para cargar y mostrar accesos/salidas
-            async function loadAccesses() {
-                try {
-                    if (accessesData.length === 0) {
-                        console.log("Cargando accesos/salidas...");
-                        const response = await fetch('/api/stations/accesses');
-                        if (response.ok) {
-                            accessesData = await response.json();
-                            console.log(`Cargados ${accessesData.length} accesos/salidas`);
-                        }
-                    }
-                } catch (error) {
-                    console.error('Error cargando accesos:', error);
-                }
-            }
+        stationClusterLayer.addLayer(marker);
+      });
 
-            function showAccesses() {
-                accessesLayer.clearLayers();
-                
-                accessesData.forEach(access => {
-                    const marker = L.marker([access.lat, access.lon], {
-                        icon: L.divIcon({
-                            html: access.emoji,
-                            className: 'access-marker',
-                            iconSize: [20, 20],
-                            iconAnchor: [10, 10]
-                        })
-                    });
+      map.addLayer(stationClusterLayer);
+      console.log(
+        `Dibujadas ${Object.keys(stationsByName).length} estaciones agrupadas.`
+      );
+    }
 
-                    marker.bindTooltip(access.name, {
-                        permanent: false,
-                        direction: 'top',
-                        offset: [0, -10],
-                        className: 'access-tooltip'
-                    });
+    // Función para cargar y mostrar accesos/salidas
+    async function loadAccesses() {
+      try {
+        if (accessesData.length === 0) {
+          console.log("Cargando accesos/salidas...");
+          const response = await fetch("/api/stations/accesses");
+          if (response.ok) {
+            accessesData = await response.json();
+            console.log(`Cargados ${accessesData.length} accesos/salidas`);
+          }
+        }
+      } catch (error) {
+        console.error("Error cargando accesos:", error);
+      }
+    }
 
-                    const popupContent = `
+    function showAccesses() {
+      accessesLayer.clearLayers();
+
+      accessesData.forEach((access) => {
+        const marker = L.marker([access.lat, access.lon], {
+          icon: L.divIcon({
+            html: access.emoji,
+            className: "access-marker",
+            iconSize: [20, 20],
+            iconAnchor: [10, 10],
+          }),
+        });
+
+        marker.bindTooltip(access.name, {
+          permanent: false,
+          direction: "top",
+          offset: [0, -10],
+          className: "access-tooltip",
+        });
+
+        const popupContent = `
                         <h4>${access.name}</h4>
                         <p><strong>Dirección:</strong> ${access.description}</p>
-                        <p><strong>Tipo:</strong> ${access.type === 'elevator' ? 'Ascensor' : access.type === 'escalator' ? 'Escalera mecánica' : 'Salida'}</p>
+                        <p><strong>Tipo:</strong> ${
+                          access.type === "elevator"
+                            ? "Ascensor"
+                            : access.type === "escalator"
+                            ? "Escalera mecánica"
+                            : "Salida"
+                        }</p>
                     `;
-                    marker.bindPopup(popupContent);
+        marker.bindPopup(popupContent);
 
-                    accessesLayer.addLayer(marker);
+        accessesLayer.addLayer(marker);
+      });
+
+      map.addLayer(accessesLayer);
+      console.log(`Mostrados ${accessesData.length} accesos/salidas`);
+    }
+
+    function hideAccesses() {
+      map.removeLayer(accessesLayer);
+    }
+
+    // Función para controlar la visibilidad de accesos según el zoom
+    function handleZoomChange() {
+      const currentZoom = map.getZoom();
+
+      if (currentZoom > 16) {
+        // Cargar y mostrar accesos si no están cargados
+        if (accessesData.length === 0) {
+          loadAccesses().then(() => {
+            if (accessesData.length > 0) {
+              showAccesses();
+            }
+          });
+        } else if (!map.hasLayer(accessesLayer)) {
+          showAccesses();
+        }
+      } else {
+        // Ocultar accesos si el zoom es menor
+        if (map.hasLayer(accessesLayer)) {
+          hideAccesses();
+        }
+      }
+    }
+
+    async function loadAllData() {
+      try {
+        console.log("Iniciando carga de todos los datos...");
+        const [routesResponse, stationsResponse] = await Promise.all([
+          fetch("/static/data/metro_routes.json?v=" + new Date().getTime()),
+          fetch("/api/stations/all?v=" + new Date().getTime()),
+        ]);
+
+        if (!routesResponse.ok || !stationsResponse.ok) {
+          throw new Error(
+            `Fallo al obtener los datos del servidor: Rutas ${routesResponse.status}, Estaciones ${stationsResponse.status}`
+          );
+        }
+
+        const routesData = await routesResponse.json();
+        const stationsData = await stationsResponse.json();
+        console.log("Datos de rutas y estaciones cargados.");
+
+        // Limpiar capas de rutas existentes y el mapa de colores
+        Object.values(routeLayers).forEach((layer) => layer.clearLayers());
+        Object.keys(lineColors).forEach((key) => delete lineColors[key]);
+
+        // Procesar y dibujar rutas
+        if (routesData.lines && Array.isArray(routesData.lines)) {
+          routesData.lines.forEach((line) => {
+            const lineColor = line.color || "#FFFFFF";
+            const lineName = line.name || `Línea ${line.line}`;
+            const lineId = line.line;
+
+            // Guardar colores para los marcadores
+            lineColors[lineId] = { color: lineColor, name: lineName };
+
+            if (!routeLayers[lineId]) {
+              routeLayers[lineId] = L.layerGroup();
+            }
+
+            if (line.paths && Array.isArray(line.paths)) {
+              line.paths.forEach((path) => {
+                // Corregir orden de coordenadas: Leaflet espera [lat, lng]
+                const latLngs = path.map((coord) => {
+                  // Si las coordenadas están en formato [lon, lat], intercambiamos
+                  if (coord[0] > coord[1]) {
+                    return [coord[1], coord[0]]; // [lat, lng]
+                  }
+                  return [coord[0], coord[1]]; // Ya está en formato correcto
+                });
+                
+                if (latLngs.length < 2) return;
+
+                const polyline = L.polyline(latLngs, {
+                  color: lineColor,
+                  weight: 5,
+                  opacity: 0.7,
+                  className: "metro-line",
                 });
 
-                map.addLayer(accessesLayer);
-                console.log(`Mostrados ${accessesData.length} accesos/salidas`);
+                polyline.bindTooltip(`${lineName}`, {
+                  sticky: true,
+                  className: "line-tooltip",
+                  direction: "top",
+                });
+
+                // Hacer las líneas clicables para abrir la página de la línea
+                polyline.on("click", function () {
+                  window.open(`/line/${lineId}`, "_blank");
+                });
+
+                routeLayers[lineId].addLayer(polyline);
+              });
             }
+          });
+          // Añadir todas las capas de rutas al mapa por defecto
+          Object.values(routeLayers).forEach((layer) => layer.addTo(map));
+          console.log(`Procesadas ${routesData.lines.length} líneas.`);
+        }
 
-            function hideAccesses() {
-                map.removeLayer(accessesLayer);
-            }
+        // Dibujar estaciones
+        if (Array.isArray(stationsData)) {
+          drawStations(stationsData);
+        } else {
+          console.error(
+            "La respuesta de estaciones no tiene el formato esperado:",
+            stationsData
+          );
+        }
 
-            // Función para controlar la visibilidad de accesos según el zoom
-            function handleZoomChange() {
-                const currentZoom = map.getZoom();
-                
-                if (currentZoom > 16) {
-                    // Cargar y mostrar accesos si no están cargados
-                    if (accessesData.length === 0) {
-                        loadAccesses().then(() => {
-                            if (accessesData.length > 0) {
-                                showAccesses();
-                            }
-                        });
-                    } else if (!map.hasLayer(accessesLayer)) {
-                        showAccesses();
-                    }
-                } else {
-                    // Ocultar accesos si el zoom es menor
-                    if (map.hasLayer(accessesLayer)) {
-                        hideAccesses();
-                    }
-                }
-            }
+        updateLastUpdateTime();
+        generateLineControls();
 
-            async function loadAllData() {
-                try {
-                    console.log("Iniciando carga de todos los datos...");
-                    const [routesResponse, stationsResponse] = await Promise.all([
-                        fetch('/static/data/metro_routes.json?v=' + new Date().getTime()),
-                        fetch('/api/stations/all?v=' + new Date().getTime())
-                    ]);
-                    
-                    if (!routesResponse.ok || !stationsResponse.ok) {
-                        throw new Error(`Fallo al obtener los datos del servidor: Rutas ${routesResponse.status}, Estaciones ${stationsResponse.status}`);
-                    }
+        // Actualizar estadísticas después de cargar todos los datos
+        setTimeout(updateMetroStats, 500);
+      } catch (error) {
+        console.error("Error fatal cargando datos del mapa:", error);
+        alert(
+          "No se pudieron cargar los datos del mapa. Inténtelo de nuevo más tarde."
+        );
+      }
+    }
 
-                    const routesData = await routesResponse.json();
-                    const stationsData = await stationsResponse.json();
-                    console.log("Datos de rutas y estaciones cargados.");
-                    
-                    // Limpiar capas de rutas existentes y el mapa de colores
-                    Object.values(routeLayers).forEach(layer => layer.clearLayers());
-                    Object.keys(lineColors).forEach(key => delete lineColors[key]);
-                    
-                    // Procesar y dibujar rutas
-                    if (routesData.lines && Array.isArray(routesData.lines)) {
-                        routesData.lines.forEach(line => {
-                            const lineColor = line.color || '#FFFFFF';
-                            const lineName = line.name || `Línea ${line.line}`;
-                            const lineId = line.line;
+    // ========================================================================
+    // 4. CONTROLES Y EJECUCIÓN
+    // ========================================================================
 
-                            // Guardar colores para los marcadores
-                            lineColors[lineId] = { color: lineColor, name: lineName };
-                            
-                            if (!routeLayers[lineId]) {
-                                routeLayers[lineId] = L.layerGroup();
-                            }
+    function updateLastUpdateTime() {
+      document.getElementById(
+        "last-update"
+      ).textContent = `Actualizado: ${new Date().toLocaleTimeString()}`;
+    }
 
-                            if (line.paths && Array.isArray(line.paths)) {
-                                line.paths.forEach(path => {
-                                    const latLngs = path.map(coord => [coord[0], coord[1]]);
-                                    if (latLngs.length < 2) return;
-
-                                    const polyline = L.polyline(latLngs, {
-                                        color: lineColor,
-                                        weight: 5,
-                                        opacity: 0.7,
-                                        className: 'metro-line'
-                                    });
-
-                                    polyline.bindTooltip(`${lineName}`, { sticky: true, className: 'line-tooltip', direction: 'top' });
-                                    
-                                    // Hacer las líneas clicables para abrir la página de la línea
-                                    polyline.on('click', function() {
-                                        window.open(`/line/${lineId}`, '_blank');
-                                    });
-                                    
-                                    routeLayers[lineId].addLayer(polyline);
-                                });
-                            }
-                        });
-                        // Añadir todas las capas de rutas al mapa por defecto
-                        Object.values(routeLayers).forEach(layer => layer.addTo(map));
-                        console.log(`Procesadas ${routesData.lines.length} líneas.`);
-                    }
-
-                    // Dibujar estaciones
-                    if (Array.isArray(stationsData)) {
-                        drawStations(stationsData);
-                            } else {
-                        console.error("La respuesta de estaciones no tiene el formato esperado:", stationsData);
-                    }
-
-                    updateLastUpdateTime();
-                    generateLineControls();
-                    
-                    // Actualizar estadísticas después de cargar todos los datos
-                    setTimeout(updateMetroStats, 500);
-
-                } catch (error) {
-                    console.error('Error fatal cargando datos del mapa:', error);
-                    alert('No se pudieron cargar los datos del mapa. Inténtelo de nuevo más tarde.');
-                }
-            }
-
-            // ========================================================================
-            // 4. CONTROLES Y EJECUCIÓN
-            // ========================================================================
-            
-            function updateLastUpdateTime() {
-                document.getElementById('last-update').textContent = `Actualizado: ${new Date().toLocaleTimeString()}`;
-            }
-
-            function generateLineControls() {
-                const container = document.getElementById('lines-controls');
-                container.innerHTML = '';
-                Object.keys(lineColors).sort((a, b) => {
-                    const numA = parseInt(a.replace('R', '99'));
-                    const numB = parseInt(b.replace('R', '99'));
-                    return numA - numB;
-                }).forEach(lineId => {
-                    const config = lineColors[lineId];
-                    const label = document.createElement('label');
-                    label.style = "display: flex; align-items: center; gap: 8px; cursor: pointer;";
-                    label.innerHTML = `
+    function generateLineControls() {
+      const container = document.getElementById("lines-controls");
+      container.innerHTML = "";
+      Object.keys(lineColors)
+        .sort((a, b) => {
+          const numA = parseInt(a.replace("R", "99"));
+          const numB = parseInt(b.replace("R", "99"));
+          return numA - numB;
+        })
+        .forEach((lineId) => {
+          const config = lineColors[lineId];
+          const label = document.createElement("label");
+          label.style =
+            "display: flex; align-items: center; gap: 8px; cursor: pointer;";
+          label.innerHTML = `
                         <input type="checkbox" data-line-id="${lineId}" checked style="accent-color: ${config.color};">
                         <span style="border-left: 4px solid ${config.color}; padding-left: 6px;">${config.name}</span>
                     `;
-                    container.appendChild(label);
-                });
-            }
-            
-            document.getElementById('lines-controls').addEventListener('change', e => {
-                if (e.target.tagName === 'INPUT') {
-                    const lineId = e.target.dataset.lineId;
-                    const layer = routeLayers[lineId];
-                    if (layer) {
-                        e.target.checked ? map.addLayer(layer) : map.removeLayer(layer);
-                    }
-                }
-            });
+          container.appendChild(label);
+        });
+    }
 
-            document.getElementById('toggleStations').addEventListener('change', e => {
-                e.target.checked ? map.addLayer(stationClusterLayer) : map.removeLayer(stationClusterLayer);
-            });
+    document
+      .getElementById("lines-controls")
+      .addEventListener("change", (e) => {
+        if (e.target.tagName === "INPUT") {
+          const lineId = e.target.dataset.lineId;
+          const layer = routeLayers[lineId];
+          if (layer) {
+            e.target.checked ? map.addLayer(layer) : map.removeLayer(layer);
+          }
+        }
+      });
 
-             document.getElementById('toggleRoutes').addEventListener('change', e => {
-                Object.keys(routeLayers).forEach(lineId => {
-                    const checkbox = document.querySelector(`#lines-controls input[data-line-id="${lineId}"]`);
-                    if (checkbox) {
-                        checkbox.checked = e.target.checked;
-                        checkbox.dispatchEvent(new Event('change'));
-                    }
-                });
-            });
+    document
+      .getElementById("toggleStations")
+      .addEventListener("change", (e) => {
+        e.target.checked
+          ? map.addLayer(stationClusterLayer)
+          : map.removeLayer(stationClusterLayer);
+      });
 
-            // Lógica del panel hamburguesa
-            const panel = document.getElementById('layer-control-panel');
-            const showBtn = document.getElementById('show-panel-btn');
-            const hideBtn = document.getElementById('hide-panel-btn');
-            
-            function hidePanel() {
-                panel.style.transform = 'translateX(-100%)';
-                showBtn.style.display = 'block';
-            }
-            
-            function showPanel() {
-                panel.style.transform = 'translateX(0)';
-                showBtn.style.display = 'none';
-            }
-            
-            hideBtn.addEventListener('click', hidePanel);
-            showBtn.addEventListener('click', showPanel);
+    document.getElementById("toggleRoutes").addEventListener("change", (e) => {
+      Object.keys(routeLayers).forEach((lineId) => {
+        const checkbox = document.querySelector(
+          `#lines-controls input[data-line-id="${lineId}"]`
+        );
+        if (checkbox) {
+          checkbox.checked = e.target.checked;
+          checkbox.dispatchEvent(new Event("change"));
+        }
+      });
+    });
 
-            // Carga inicial
-            loadAllData();
-            document.getElementById('refresh-data-btn').addEventListener('click', loadAllData);
+    // Lógica del panel hamburguesa
+    const panel = document.getElementById("layer-control-panel");
+    const showBtn = document.getElementById("show-panel-btn");
+    const hideBtn = document.getElementById("hide-panel-btn");
 
-            // Actualizar información del mapa en movimiento
-            function updateMapInfo() {
-                const center = map.getCenter();
-                document.getElementById('map-center').textContent = 
-                    `${center.lat.toFixed(4)}, ${center.lng.toFixed(4)}`;
-                document.getElementById('zoom-level').textContent = map.getZoom();
-                document.getElementById('map-size').textContent = `${map.getSize().x}x${map.getSize().y}`;
-            }
-            
-            // Actualizar estadísticas del metro
-            function updateMetroStats() {
-                const totalLines = Object.keys(routeLayers).length;
-                const totalStations = stationClusterLayer.getLayers().length;
-                document.getElementById('metro-stats').innerHTML = `
+    function hidePanel() {
+      panel.style.transform = "translateX(-100%)";
+      showBtn.style.display = "block";
+    }
+
+    function showPanel() {
+      panel.style.transform = "translateX(0)";
+      showBtn.style.display = "none";
+    }
+
+    hideBtn.addEventListener("click", hidePanel);
+    showBtn.addEventListener("click", showPanel);
+
+    // Carga inicial
+    loadAllData();
+    document
+      .getElementById("refresh-data-btn")
+      .addEventListener("click", loadAllData);
+
+    // Actualizar información del mapa en movimiento
+    function updateMapInfo() {
+      const center = map.getCenter();
+      document.getElementById("map-center").textContent = `${center.lat.toFixed(
+        4
+      )}, ${center.lng.toFixed(4)}`;
+      document.getElementById("zoom-level").textContent = map.getZoom();
+      document.getElementById("map-size").textContent = `${map.getSize().x}x${
+        map.getSize().y
+      }`;
+    }
+
+    // Actualizar estadísticas del metro
+    function updateMetroStats() {
+      const totalLines = Object.keys(routeLayers).length;
+      const totalStations = stationClusterLayer.getLayers().length;
+      document.getElementById("metro-stats").innerHTML = `
                     <div><strong>Líneas:</strong> ${totalLines}</div>
                     <div><strong>Estaciones:</strong> ${totalStations}</div>
                 `;
-            }
-            
-            // Actualizar información cuando el mapa se mueve
-            map.on('moveend', updateMapInfo);
-            map.on('zoomend', function() {
-                updateMapInfo();
-                handleZoomChange(); // Controlar visibilidad de accesos
-            });
-            
-            // Actualizar información inicial
-            updateMapInfo();
-            handleZoomChange(); // Verificar zoom inicial
-            
-            // Actualizar estadísticas después de cargar datos
-            setTimeout(updateMetroStats, 1000);
-            
-            // ========================================================================
-            // 5. FUNCIONALIDAD DE GEOLOCALIZACIÓN
-            // ========================================================================
-            
-            let userLocationMarker = null;
-            let userLocationCircle = null;
-            let nearbyStationsLayer = L.layerGroup();
-            let userPosition = null;
-            
-            // Iconos personalizados para ubicación
-            const userLocationIcon = L.divIcon({
-                html: `
+    }
+
+    // Actualizar información cuando el mapa se mueve
+    map.on("moveend", updateMapInfo);
+    map.on("zoomend", function () {
+      updateMapInfo();
+      handleZoomChange(); // Controlar visibilidad de accesos
+    });
+
+    // Actualizar información inicial
+    updateMapInfo();
+    handleZoomChange(); // Verificar zoom inicial
+
+    // Actualizar estadísticas después de cargar datos
+    setTimeout(updateMetroStats, 1000);
+
+    // ========================================================================
+    // 5. FUNCIONALIDAD DE GEOLOCALIZACIÓN
+    // ========================================================================
+
+    let userLocationMarker = null;
+    let userLocationCircle = null;
+    let nearbyStationsLayer = L.layerGroup();
+    let userPosition = null;
+
+    // Iconos personalizados para ubicación
+    const userLocationIcon = L.divIcon({
+      html: `
                     <div style="
                         width: 20px;
                         height: 20px;
@@ -776,169 +1102,175 @@
                         }
                     </style>
                 `,
-                className: 'user-location-marker',
-                iconSize: [26, 26],
-                iconAnchor: [13, 13]
-            });
-            
-            // Función para obtener ubicación del usuario
-            function getUserLocation() {
-                const statusDiv = document.getElementById('location-status');
-                const findBtn = document.getElementById('find-me-btn');
-                const nearestBtn = document.getElementById('nearest-station-btn');
-                const nearbyBtn = document.getElementById('nearby-stations-btn');
-                
-                if (!navigator.geolocation) {
-                    statusDiv.textContent = 'Geolocalización no soportada';
-                    statusDiv.style.color = '#e74c3c';
-                    return;
-                }
-                
-                findBtn.disabled = true;
-                findBtn.textContent = '🔄 Obteniendo ubicación...';
-                statusDiv.textContent = 'Obteniendo tu ubicación...';
-                statusDiv.style.color = '#f39c12';
-                
-                navigator.geolocation.getCurrentPosition(
-                    function(position) {
-                        userPosition = {
-                            lat: position.coords.latitude,
-                            lon: position.coords.longitude,
-                            accuracy: position.coords.accuracy
-                        };
-                        
-                        console.log('Ubicación obtenida:', userPosition);
-                        
-                        // Mostrar ubicación en el mapa
-                        showUserLocation();
-                        
-                        // Habilitar botones
-                        findBtn.disabled = false;
-                        findBtn.textContent = '✅ Ubicación obtenida';
-                        nearestBtn.disabled = false;
-                        nearbyBtn.disabled = false;
-                        
-                        statusDiv.textContent = `Precisión: ${Math.round(userPosition.accuracy)} metros`;
-                        statusDiv.style.color = '#27ae60';
-                        
-                        // Centrar mapa en la ubicación del usuario
-                        map.setView([userPosition.lat, userPosition.lon], 16);
-                    },
-                    function(error) {
-                        console.error('Error obteniendo ubicación:', error);
-                        let errorMsg = 'Error obteniendo ubicación';
-                        
-                        switch(error.code) {
-                            case error.PERMISSION_DENIED:
-                                errorMsg = 'Permiso denegado para ubicación';
-                                break;
-                            case error.POSITION_UNAVAILABLE:
-                                errorMsg = 'Ubicación no disponible';
-                                break;
-                            case error.TIMEOUT:
-                                errorMsg = 'Tiempo de espera agotado';
-                                break;
-                        }
-                        
-                        findBtn.disabled = false;
-                        findBtn.textContent = '🎯 Reintentar ubicación';
-                        statusDiv.textContent = errorMsg;
-                        statusDiv.style.color = '#e74c3c';
-                    },
-                    {
-                        enableHighAccuracy: true,
-                        timeout: 10000,
-                        maximumAge: 300000 // 5 minutos
-                    }
-                );
-            }
-            
-            // Función para mostrar ubicación del usuario en el mapa
-            function showUserLocation() {
-                if (!userPosition) return;
-                
-                // Remover marcador anterior si existe
-                if (userLocationMarker) {
-                    map.removeLayer(userLocationMarker);
-                }
-                if (userLocationCircle) {
-                    map.removeLayer(userLocationCircle);
-                }
-                
-                // Crear marcador de ubicación
-                userLocationMarker = L.marker([userPosition.lat, userPosition.lon], {
-                    icon: userLocationIcon
-                });
-                
-                userLocationMarker.bindTooltip('Tu ubicación actual', {
-                    permanent: false,
-                    direction: 'top',
-                    offset: [0, -20],
-                    className: 'user-location-tooltip'
-                });
-                
-                userLocationMarker.bindPopup(`
+      className: "user-location-marker",
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
+    });
+
+    // Función para obtener ubicación del usuario
+    function getUserLocation() {
+      const statusDiv = document.getElementById("location-status");
+      const findBtn = document.getElementById("find-me-btn");
+      const nearestBtn = document.getElementById("nearest-station-btn");
+      const nearbyBtn = document.getElementById("nearby-stations-btn");
+
+      if (!navigator.geolocation) {
+        statusDiv.textContent = "Geolocalización no soportada";
+        statusDiv.style.color = "#e74c3c";
+        return;
+      }
+
+      findBtn.disabled = true;
+      findBtn.textContent = "🔄 Obteniendo ubicación...";
+      statusDiv.textContent = "Obteniendo tu ubicación...";
+      statusDiv.style.color = "#f39c12";
+
+      navigator.geolocation.getCurrentPosition(
+        function (position) {
+          userPosition = {
+            lat: position.coords.latitude,
+            lon: position.coords.longitude,
+            accuracy: position.coords.accuracy,
+          };
+
+          console.log("Ubicación obtenida:", userPosition);
+
+          // Mostrar ubicación en el mapa
+          showUserLocation();
+
+          // Habilitar botones
+          findBtn.disabled = false;
+          findBtn.textContent = "✅ Ubicación obtenida";
+          nearestBtn.disabled = false;
+          nearbyBtn.disabled = false;
+
+          statusDiv.textContent = `Precisión: ${Math.round(
+            userPosition.accuracy
+          )} metros`;
+          statusDiv.style.color = "#27ae60";
+
+          // Centrar mapa en la ubicación del usuario
+          map.setView([userPosition.lat, userPosition.lon], 16);
+        },
+        function (error) {
+          console.error("Error obteniendo ubicación:", error);
+          let errorMsg = "Error obteniendo ubicación";
+
+          switch (error.code) {
+            case error.PERMISSION_DENIED:
+              errorMsg = "Permiso denegado para ubicación";
+              break;
+            case error.POSITION_UNAVAILABLE:
+              errorMsg = "Ubicación no disponible";
+              break;
+            case error.TIMEOUT:
+              errorMsg = "Tiempo de espera agotado";
+              break;
+          }
+
+          findBtn.disabled = false;
+          findBtn.textContent = "🎯 Reintentar ubicación";
+          statusDiv.textContent = errorMsg;
+          statusDiv.style.color = "#e74c3c";
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 300000, // 5 minutos
+        }
+      );
+    }
+
+    // Función para mostrar ubicación del usuario en el mapa
+    function showUserLocation() {
+      if (!userPosition) return;
+
+      // Remover marcador anterior si existe
+      if (userLocationMarker) {
+        map.removeLayer(userLocationMarker);
+      }
+      if (userLocationCircle) {
+        map.removeLayer(userLocationCircle);
+      }
+
+      // Crear marcador de ubicación
+      userLocationMarker = L.marker([userPosition.lat, userPosition.lon], {
+        icon: userLocationIcon,
+      });
+
+      userLocationMarker.bindTooltip("Tu ubicación actual", {
+        permanent: false,
+        direction: "top",
+        offset: [0, -20],
+        className: "user-location-tooltip",
+      });
+
+      userLocationMarker.bindPopup(`
                     <div style="text-align: center;">
                         <h3>📍 Tu ubicación</h3>
-                        <p><strong>Coordenadas:</strong><br>${userPosition.lat.toFixed(6)}, ${userPosition.lon.toFixed(6)}</p>
-                        <p><strong>Precisión:</strong> ${Math.round(userPosition.accuracy)} metros</p>
+                        <p><strong>Coordenadas:</strong><br>${userPosition.lat.toFixed(
+                          6
+                        )}, ${userPosition.lon.toFixed(6)}</p>
+                        <p><strong>Precisión:</strong> ${Math.round(
+                          userPosition.accuracy
+                        )} metros</p>
                         <button onclick="findNearestStation()" style="background: #27ae60; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; margin: 4px;">🚇 Estación más cercana</button>
                         <button onclick="findNearbyStations()" style="background: #3498db; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; margin: 4px;">📍 Estaciones cercanas</button>
                     </div>
                 `);
-                
-                // Círculo de precisión
-                userLocationCircle = L.circle([userPosition.lat, userPosition.lon], {
-                    radius: userPosition.accuracy,
-                    color: '#e74c3c',
-                    fillColor: '#e74c3c',
-                    fillOpacity: 0.1,
-                    weight: 2,
-                    opacity: 0.6
-                });
-                
-                // Añadir al mapa si la capa está habilitada
-                if (document.getElementById('toggleUserLocation').checked) {
-                    map.addLayer(userLocationMarker);
-                    map.addLayer(userLocationCircle);
-                }
-            }
-            
-            // Función para encontrar la estación más cercana
-            async function findNearestStation() {
-                if (!userPosition) {
-                    alert('Primero obtén tu ubicación');
-                    return;
-                }
-                
-                const nearestBtn = document.getElementById('nearest-station-btn');
-                nearestBtn.disabled = true;
-                nearestBtn.textContent = '🔄 Buscando...';
-                
-                try {
-                    // Usar el endpoint de estaciones cercanas con limit=1 para obtener la más cercana
-                    const response = await fetch('/api/stations/nearby', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            lat: userPosition.lat,
-                            lon: userPosition.lon,
-                            radius: 10.0, // Radio amplio para asegurar encontrar estaciones
-                            limit: 1 // Solo la más cercana
-                        })
-                    });
-                    
-                    const data = await response.json();
-                    
-                    if (data.success && data.stations && data.stations.length > 0) {
-                        const station = data.stations[0]; // La primera (y única) estación
-                        
-                        // Crear marcador especial para la estación más cercana
-                        const nearestMarker = L.marker([station.lat, station.lon], {
-                            icon: L.divIcon({
-                                html: `
+
+      // Círculo de precisión
+      userLocationCircle = L.circle([userPosition.lat, userPosition.lon], {
+        radius: userPosition.accuracy,
+        color: "#e74c3c",
+        fillColor: "#e74c3c",
+        fillOpacity: 0.1,
+        weight: 2,
+        opacity: 0.6,
+      });
+
+      // Añadir al mapa si la capa está habilitada
+      if (document.getElementById("toggleUserLocation").checked) {
+        map.addLayer(userLocationMarker);
+        map.addLayer(userLocationCircle);
+      }
+    }
+
+    // Función para encontrar la estación más cercana
+    async function findNearestStation() {
+      if (!userPosition) {
+        alert("Primero obtén tu ubicación");
+        return;
+      }
+
+      const nearestBtn = document.getElementById("nearest-station-btn");
+      nearestBtn.disabled = true;
+      nearestBtn.textContent = "🔄 Buscando...";
+
+      try {
+        // Usar el endpoint de estaciones cercanas con limit=1 para obtener la más cercana
+        const response = await fetch("/api/stations/nearby", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            lat: userPosition.lat,
+            lon: userPosition.lon,
+            radius: 10.0, // Radio amplio para asegurar encontrar estaciones
+            limit: 1, // Solo la más cercana
+          }),
+        });
+
+        const data = await response.json();
+
+        if (data.success && data.stations && data.stations.length > 0) {
+          const station = data.stations[0]; // La primera (y única) estación
+
+          // Crear marcador especial para la estación más cercana
+          const nearestMarker = L.marker([station.lat, station.lon], {
+            icon: L.divIcon({
+              html: `
                                     <div style="
                                         background: ${station.linea_color};
                                         color: white;
@@ -962,13 +1294,13 @@
                                         }
                                     </style>
                                 `,
-                                className: 'nearest-station-marker',
-                                iconSize: [36, 36],
-                                iconAnchor: [18, 18]
-                            })
-                        });
-                        
-                        nearestMarker.bindPopup(`
+              className: "nearest-station-marker",
+              iconSize: [36, 36],
+              iconAnchor: [18, 18],
+            }),
+          });
+
+          nearestMarker.bindPopup(`
                             <div style="text-align: center;">
                                 <h3>🚇 Estación más cercana</h3>
                                 <h4 style="color: ${station.linea_color};">${station.nombre}</h4>
@@ -978,65 +1310,64 @@
                                 <a href="/station/${station.linea}/${station.id_fijo}" target="_blank" style="background: ${station.linea_color}; color: white; text-decoration: none; padding: 8px 16px; border-radius: 4px; display: inline-block; margin-top: 8px;">Ver detalles</a>
                             </div>
                         `);
-                        
-                        // Añadir al mapa y abrir popup
-                        nearestMarker.addTo(map);
-                        nearestMarker.openPopup();
-                        
-                        // Ajustar vista para mostrar ambos puntos
-                        const group = L.featureGroup([userLocationMarker, nearestMarker]);
-                        map.fitBounds(group.getBounds(), { padding: [50, 50] });
-                        
-                        console.log('Estación más cercana:', station);
-                    } else {
-                        alert('Error: ' + data.error);
-                    }
-                    
-                } catch (error) {
-                    console.error('Error buscando estación más cercana:', error);
-                    alert('Error conectando con el servidor');
-                } finally {
-                    nearestBtn.disabled = false;
-                    nearestBtn.textContent = '🚇 Estación más cercana';
-                }
-            }
-            
-            // Función para encontrar estaciones cercanas
-            async function findNearbyStations() {
-                if (!userPosition) {
-                    alert('Primero obtén tu ubicación');
-                    return;
-                }
-                
-                const nearbyBtn = document.getElementById('nearby-stations-btn');
-                nearbyBtn.disabled = true;
-                nearbyBtn.textContent = '🔄 Buscando...';
-                
-                try {
-                    const response = await fetch('/api/stations/nearby', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            lat: userPosition.lat,
-                            lon: userPosition.lon,
-                            radius: 1.5, // 1.5 km de radio
-                            limit: 10
-                        })
-                    });
-                    
-                    const data = await response.json();
-                    
-                    if (data.success) {
-                        // Limpiar marcadores anteriores
-                        nearbyStationsLayer.clearLayers();
-                        
-                        // Crear marcadores para estaciones cercanas
-                        data.stations.forEach((station, index) => {
-                            const marker = L.marker([station.lat, station.lon], {
-                                icon: L.divIcon({
-                                    html: `
+
+          // Añadir al mapa y abrir popup
+          nearestMarker.addTo(map);
+          nearestMarker.openPopup();
+
+          // Ajustar vista para mostrar ambos puntos
+          const group = L.featureGroup([userLocationMarker, nearestMarker]);
+          map.fitBounds(group.getBounds(), { padding: [50, 50] });
+
+          console.log("Estación más cercana:", station);
+        } else {
+          alert("Error: " + data.error);
+        }
+      } catch (error) {
+        console.error("Error buscando estación más cercana:", error);
+        alert("Error conectando con el servidor");
+      } finally {
+        nearestBtn.disabled = false;
+        nearestBtn.textContent = "🚇 Estación más cercana";
+      }
+    }
+
+    // Función para encontrar estaciones cercanas
+    async function findNearbyStations() {
+      if (!userPosition) {
+        alert("Primero obtén tu ubicación");
+        return;
+      }
+
+      const nearbyBtn = document.getElementById("nearby-stations-btn");
+      nearbyBtn.disabled = true;
+      nearbyBtn.textContent = "🔄 Buscando...";
+
+      try {
+        const response = await fetch("/api/stations/nearby", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            lat: userPosition.lat,
+            lon: userPosition.lon,
+            radius: 1.5, // 1.5 km de radio
+            limit: 10,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          // Limpiar marcadores anteriores
+          nearbyStationsLayer.clearLayers();
+
+          // Crear marcadores para estaciones cercanas
+          data.stations.forEach((station, index) => {
+            const marker = L.marker([station.lat, station.lon], {
+              icon: L.divIcon({
+                html: `
                                         <div style="
                                             background: ${station.linea_color};
                                             color: white;
@@ -1052,100 +1383,159 @@
                                             box-shadow: 0 2px 8px rgba(0,0,0,0.3);
                                         ">${index + 1}</div>
                                     `,
-                                    className: 'nearby-station-marker',
-                                    iconSize: [28, 28],
-                                    iconAnchor: [14, 14]
-                                })
-                            });
-                            
-                            marker.bindPopup(`
+                className: "nearby-station-marker",
+                iconSize: [28, 28],
+                iconAnchor: [14, 14],
+              }),
+            });
+
+            marker.bindPopup(`
                                 <div>
-                                    <h4 style="color: ${station.linea_color};">${station.nombre}</h4>
-                                    <p><strong>${station.linea_nombre}</strong></p>
+                                    <h4 style="color: ${
+                                      station.linea_color
+                                    };">${station.nombre}</h4>
+                                    <p><strong>${
+                                      station.linea_nombre
+                                    }</strong></p>
                                     <p>📏 ${station.distancia_metros} metros</p>
-                                    <p>🚶 ~${Math.round(station.distancia_km * 12)} min caminando</p>
-                                    <a href="/station/${station.linea}/${station.id_fijo}" target="_blank" style="background: ${station.linea_color}; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px; display: inline-block; margin-top: 4px; font-size: 12px;">Ver detalles</a>
+                                    <p>🚶 ~${Math.round(
+                                      station.distancia_km * 12
+                                    )} min caminando</p>
+                                    <a href="/station/${station.linea}/${
+              station.id_fijo
+            }" target="_blank" style="background: ${
+              station.linea_color
+            }; color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px; display: inline-block; margin-top: 4px; font-size: 12px;">Ver detalles</a>
                                 </div>
                             `);
-                            
-                            nearbyStationsLayer.addLayer(marker);
-                        });
-                        
-                        // Añadir capa al mapa
-                        nearbyStationsLayer.addTo(map);
-                        
-                        // Mostrar resumen
-                        const summaryPopup = L.popup()
-                            .setLatLng([userPosition.lat, userPosition.lon])
-                            .setContent(`
+
+            nearbyStationsLayer.addLayer(marker);
+          });
+
+          // Añadir capa al mapa
+          nearbyStationsLayer.addTo(map);
+
+          // Mostrar resumen
+          const summaryPopup = L.popup()
+            .setLatLng([userPosition.lat, userPosition.lon])
+            .setContent(
+              `
                                 <div style="text-align: center;">
                                     <h3>📍 Estaciones cercanas</h3>
                                     <p>Encontradas <strong>${data.stations.length}</strong> estaciones</p>
                                     <p>Radio de búsqueda: <strong>${data.search_radius_km} km</strong></p>
                                     <p style="font-size: 12px; color: #666;">Haz clic en los números para ver detalles</p>
                                 </div>
-                            `)
-                            .openOn(map);
-                        
-                        console.log('Estaciones cercanas:', data.stations);
-                    } else {
-                        alert('Error: ' + data.error);
-                    }
-                    
-                } catch (error) {
-                    console.error('Error buscando estaciones cercanas:', error);
-                    alert('Error conectando con el servidor');
-                } finally {
-                    nearbyBtn.disabled = false;
-                    nearbyBtn.textContent = '📍 Estaciones cercanas';
-                }
-            }
-            
-            // Event listeners para los botones de geolocalización
-            document.getElementById('find-me-btn').addEventListener('click', getUserLocation);
-            document.getElementById('nearest-station-btn').addEventListener('click', findNearestStation);
-            document.getElementById('nearby-stations-btn').addEventListener('click', findNearbyStations);
-            
-            // Control de visibilidad de ubicación del usuario
-            document.getElementById('toggleUserLocation').addEventListener('change', function(e) {
-                if (e.target.checked) {
-                    if (userLocationMarker) map.addLayer(userLocationMarker);
-                    if (userLocationCircle) map.addLayer(userLocationCircle);
-                } else {
-                    if (userLocationMarker) map.removeLayer(userLocationMarker);
-                    if (userLocationCircle) map.removeLayer(userLocationCircle);
-                }
-            });
-            
-            // Botón móvil de ubicación
-            const mobileLocationBtn = document.getElementById('mobile-location-btn');
-            
-            // Mostrar botón móvil en pantallas pequeñas
-            function checkMobileView() {
-                if (window.innerWidth <= 768) {
-                    mobileLocationBtn.style.display = 'block';
-                } else {
-                    mobileLocationBtn.style.display = 'none';
-                }
-            }
-            
-            // Funcionalidad del botón móvil
-            mobileLocationBtn.addEventListener('click', function() {
-                if (!userPosition) {
-                    getUserLocation();
-                } else {
-                    // Si ya tenemos ubicación, centrar mapa
-                    map.setView([userPosition.lat, userPosition.lon], 16);
-                }
-            });
-            
-            // Hacer funciones globales para uso en popups
-            window.findNearestStation = findNearestStation;
-            window.findNearbyStations = findNearbyStations;
-            
-            // Verificar vista móvil al cargar y redimensionar
-            checkMobileView();
-            window.addEventListener('resize', checkMobileView);
-        });
-    </script>
+                            `
+            )
+            .openOn(map);
+
+          console.log("Estaciones cercanas:", data.stations);
+        } else {
+          alert("Error: " + data.error);
+        }
+      } catch (error) {
+        console.error("Error buscando estaciones cercanas:", error);
+        alert("Error conectando con el servidor");
+      } finally {
+        nearbyBtn.disabled = false;
+        nearbyBtn.textContent = "📍 Estaciones cercanas";
+      }
+    }
+
+    // Event listeners para los botones de geolocalización
+    document
+      .getElementById("find-me-btn")
+      .addEventListener("click", getUserLocation);
+    document
+      .getElementById("nearest-station-btn")
+      .addEventListener("click", findNearestStation);
+    document
+      .getElementById("nearby-stations-btn")
+      .addEventListener("click", findNearbyStations);
+
+    // Control de visibilidad de ubicación del usuario
+    document
+      .getElementById("toggleUserLocation")
+      .addEventListener("change", function (e) {
+        if (e.target.checked) {
+          if (userLocationMarker) map.addLayer(userLocationMarker);
+          if (userLocationCircle) map.addLayer(userLocationCircle);
+        } else {
+          if (userLocationMarker) map.removeLayer(userLocationMarker);
+          if (userLocationCircle) map.removeLayer(userLocationCircle);
+        }
+      });
+
+    // Botón móvil de ubicación
+    const mobileLocationBtn = document.getElementById("mobile-location-btn");
+
+    // Mostrar botón móvil en pantallas pequeñas
+    function checkMobileView() {
+      if (window.innerWidth <= 768) {
+        mobileLocationBtn.style.display = "block";
+      } else {
+        mobileLocationBtn.style.display = "none";
+      }
+    }
+
+    // Funcionalidad del botón móvil
+    mobileLocationBtn.addEventListener("click", function () {
+      if (!userPosition) {
+        getUserLocation();
+      } else {
+        // Si ya tenemos ubicación, centrar mapa
+        map.setView([userPosition.lat, userPosition.lon], 16);
+      }
+    });
+
+    // Hacer funciones globales para uso en popups
+    window.findNearestStation = findNearestStation;
+    window.findNearbyStations = findNearbyStations;
+
+    // Verificar vista móvil al cargar y redimensionar
+    checkMobileView();
+    window.addEventListener("resize", checkMobileView);
+
+    // Event listeners para los botones de tema
+    document.getElementById("theme-light").addEventListener("click", function() {
+      document.documentElement.setAttribute("data-theme", "light");
+      updateThemeButtons();
+    });
+    
+    document.getElementById("theme-dark").addEventListener("click", function() {
+      document.documentElement.setAttribute("data-theme", "dark");
+      updateThemeButtons();
+    });
+    
+    function updateThemeButtons() {
+      const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+      const lightBtn = document.getElementById("theme-light");
+      const darkBtn = document.getElementById("theme-dark");
+      
+      // Resetear estilos
+      lightBtn.style.background = "#f8f9fa";
+      lightBtn.style.color = "#333";
+      lightBtn.style.borderColor = "#dee2e6";
+      
+      darkBtn.style.background = "#343a40";
+      darkBtn.style.color = "white";
+      darkBtn.style.borderColor = "#495057";
+      
+      // Resaltar botón activo
+      if (currentTheme === "light") {
+        lightBtn.style.background = "#007bff";
+        lightBtn.style.color = "white";
+        lightBtn.style.borderColor = "#0056b3";
+      } else if (currentTheme === "dark") {
+        darkBtn.style.background = "#007bff";
+        darkBtn.style.color = "white";
+        darkBtn.style.borderColor = "#0056b3";
+      }
+    }
+    
+    // Inicializar estado de botones de tema
+    updateThemeButtons();
+  });
+</script>
 {% endblock %}

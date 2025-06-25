@@ -1509,7 +1509,7 @@
 
     // Variable para evitar cargas duplicadas
     let model3DLoaded = false;
-    
+
     // Mostrar imagen 3D
     function showModel3D(lineas, nombreEstacion) {
         console.log(`🎯 showModel3D llamada con:`, { lineas, nombreEstacion });
@@ -1632,7 +1632,7 @@
             };
         } else {
             console.error('❌ No se encontraron elementos DOM');
-        }
+    }
     }
 
     // Test automático removido para evitar conflictos
@@ -1776,7 +1776,7 @@
     }
 
     console.log('🎯 PUNTO DE CONTROL: Llegando al segundo DOMContentLoaded');
-    
+
     document.addEventListener('DOMContentLoaded', function() {
         console.log('🚀 DOMContentLoaded ejecutado - CARGA DE ESTACIÓN');
         const params = getStationParamsFromUrl();
