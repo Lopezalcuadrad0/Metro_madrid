@@ -794,9 +794,9 @@
         </div>
 
         <!-- Imagen 3D y Estado de Escaleras/Ascensores -->
-        <div class="station-3d-section" id="model3dSection" style="display: grid;">
+        <div class="station-3d-section" id="model3dSection" style="display: none;">
             <div class="model-3d-column">
-                <img id="model3dImage" class="model-3d-image" src="/static/model_3D/linea_1/alto_del_arenal.png" alt="Modelo 3D estación" loading="lazy" />
+                <img id="model3dImage" class="model-3d-image" src="" alt="Modelo 3D estación" loading="lazy" style="display: none;" />
                 <div class="model-3d-caption">Vista 2D del modelo 3D de la estación</div>
             </div>
             <div class="status-column">
@@ -1527,20 +1527,25 @@
             return;
         }
         
+        // Limpiar imagen anterior
+        model3dImage.style.display = 'none';
+        model3dImage.src = '';
+        
         const nombreArchivo = nombreEstacion.toLowerCase()
             .replace(/ /g, '_')
             .replace(/-/g, '')  // Eliminar guiones
+            .replace(/'/g, '')  // Eliminar apostrofes
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '');
         
         console.log(`📝 Transformación de nombre: "${nombreEstacion}" → "${nombreArchivo}"`);
         
         // Usar la primera línea para determinar la carpeta
-        const primeraLinea = lineas[0];
+        const primeraLinea = String(lineas[0]);
         let carpetaLinea = `linea_${primeraLinea}`;
         
         // Casos especiales para algunas líneas
-        if (primeraLinea.toLowerCase() === 'ramal') {
+        if (primeraLinea.toLowerCase() === 'ramal' || primeraLinea.toLowerCase() === 'r') {
             carpetaLinea = 'linea_Ramal';
         }
         
@@ -1552,6 +1557,8 @@
         // Casos especiales para ciertas estaciones
         if (nombreArchivo === "sol") {
             imgPath = `/static/model_3D/${carpetaLinea}/sol.png`;
+        } else if (nombreArchivo === "callao") {
+            imgPath = `/static/model_3D/${carpetaLinea}/callao.png`;
         }
         
         console.log(`🖼️ Ruta final de imagen: ${imgPath}`);
@@ -1562,11 +1569,20 @@
             // Intentar con la URL externa como fallback
             const fallbackPath = `http://estacions.albertguillaumes.cat/img/madrid/${nombreArchivo}.png`;
             console.log(`🔄 Intentando con fallback externo: ${fallbackPath}`);
-            model3dImage.src = fallbackPath;
-            model3dImage.onerror = function() {
+            
+            // Crear una nueva imagen temporal para probar el fallback
+            const tempImg = new Image();
+            tempImg.onload = function() {
+                console.log(`✅ Fallback externo cargado: ${fallbackPath}`);
+                model3dImage.src = fallbackPath;
+                model3dImage.style.display = 'block';
+                model3dSection.style.display = 'grid';
+            };
+            tempImg.onerror = function() {
                 console.error(`❌ Fallback externo también falló, ocultando sección 3D`);
                 model3dSection.style.display = 'none';
             };
+            tempImg.src = fallbackPath;
         };
         
         model3dImage.onload = function() {
@@ -1580,7 +1596,7 @@
         
         // Click para ampliar
         model3dImage.onclick = function() {
-            showModalImage(imgPath, `Modelo 3D - ${nombreEstacion}`);
+            showModalImage(model3dImage.src, `Modelo 3D - ${nombreEstacion}`);
         };
         
         console.log(`🏗️ Iniciando carga de imagen 3D: ${imgPath}`);
