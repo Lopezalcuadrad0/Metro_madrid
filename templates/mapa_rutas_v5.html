@@ -979,6 +979,14 @@
       <div style="font-size: 12px; text-align: center; opacity: 0.9;" id="route-algorithm">
         Algoritmo: <span id="algorithm-used">--</span>
       </div>
+
+      <!-- Botón para mostrar/ocultar detalle -->
+      <div style="text-align:center; margin-top:6px;">
+        <button id="toggle-itinerary-btn" style="display:none; padding:4px 8px; font-size:12px; cursor:pointer; border:1px solid #ccc; border-radius:4px; background:#f2f2f2;">Mostrar detalle</button>
+      </div>
+
+      <!-- Contenedor del itinerario -->
+      <div class="route-itinerary" id="route-itinerary" style="display:none; margin-top:8px; font-size:12px; line-height:1.4;"></div>
     </div>
   </div>
 
@@ -1478,6 +1486,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('algorithm-used').textContent = ruta.algoritmo;
                 document.getElementById('route-info').style.display = 'block';
 
+                // Construir detalle de itinerario
+                const itineraryDiv = document.getElementById('route-itinerary');
+                const toggleBtn = document.getElementById('toggle-itinerary-btn');
+
+                if (ruta.recorrido && ruta.recorrido.length > 0) {
+                    itineraryDiv.innerHTML = buildItineraryHtml(ruta.recorrido);
+                    toggleBtn.style.display = 'inline-block';
+                    itineraryDiv.style.display = 'none';
+                    toggleBtn.textContent = 'Mostrar detalle';
+
+                    toggleBtn.onclick = () => {
+                        const visible = itineraryDiv.style.display !== 'none';
+                        itineraryDiv.style.display = visible ? 'none' : 'block';
+                        toggleBtn.textContent = visible ? 'Mostrar detalle' : 'Ocultar detalle';
+                    };
+                } else {
+                    toggleBtn.style.display = 'none';
+                    itineraryDiv.style.display = 'none';
+                }
+
                 // Mostrar panel móvil en dispositivos móviles
                 if (window.innerWidth <= 768) {
                     document.getElementById('mobile-route-time').textContent = Math.round(ruta.tiempo_total * 10) / 10;
@@ -1570,7 +1598,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Añadir al mapa y ajustar vista
-        if (document.getElementById('toggleRoute').checked) {
+        const toggleRouteEl = document.getElementById('toggleRoute');
+        if (!toggleRouteEl || toggleRouteEl.checked) {
             currentRouteLayer.addTo(map);
         }
 
@@ -1579,6 +1608,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         console.log('✅ Ruta visualizada en el mapa');
+    }
+
+    // --------------------------------------------------------------------
+    // Construir HTML de detalle de itinerario
+    // --------------------------------------------------------------------
+    function buildItineraryHtml(recorrido) {
+        let html = '<ul style="list-style:none; padding:0; margin:0;">';
+        recorrido.forEach(seg => {
+            if ('linea' in seg) {
+                const paradas = Math.max(seg.estaciones - 1, 0);
+                html += `<li style="margin-bottom:4px;">🚇 <strong>Línea ${seg.linea}</strong>: ${seg.desde} → ${seg.hasta} (${paradas} parada${paradas!==1?'s':''})</li>`;
+            } else if ('transbordo' in seg) {
+                html += `<li style="margin-bottom:4px;">🔄 Transbordo en <strong>${seg.transbordo}</strong> → Línea ${seg.a_linea}</li>`;
+            }
+        });
+        html += '</ul>';
+        return html;
     }
 
     // ========================================================================

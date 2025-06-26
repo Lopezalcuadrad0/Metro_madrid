@@ -893,13 +893,13 @@
         '3': '/static/logos/lineas/linea-3.svg',
         '4': '/static/logos/lineas/linea-4.svg',
         '5': '/static/logos/lineas/linea-5.svg',
-        '6': '/static/logos/lineas/linea-6-circular.svg',
+        '6': '/static/logos/lineas/linea-6.svg',
         '7': '/static/logos/lineas/linea-7.svg',
         '8': '/static/logos/lineas/linea-8.svg',
         '9': '/static/logos/lineas/linea-9.svg',
         '10': '/static/logos/lineas/linea-10.svg',
         '11': '/static/logos/lineas/linea-11.svg',
-        '12': '/static/logos/lineas/linea-12-metrosur.svg',
+        '12': '/static/logos/lineas/linea-12.svg',
         'Ramal': '/static/logos/lineas/ramal.svg'
     };
 
@@ -1973,9 +1973,6 @@
         let html = '<div class="station-lines-row">';
         lines.forEach(linea => {
             let svgName = `linea-${linea}.svg`;
-            if (linea === '6') svgName = 'linea-6-circular.svg';
-            if (linea === '12') svgName = 'linea-12-metrosur.svg';
-            if (linea.toLowerCase() === 'ramal') svgName = 'ramal.svg';
             html += `<img src="/static/logos/lineas/${svgName}" alt="Línea ${linea}" class="station-line-icon">`;
         });
         html += '</div>';
