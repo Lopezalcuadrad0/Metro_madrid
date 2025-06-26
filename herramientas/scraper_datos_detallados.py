@@ -23,7 +23,7 @@ class ScraperDatosDetallados:
         """Inicializa el scraper con la base de datos"""
         try:
             # Conectar a la base de datos
-            self.conn = sqlite3.connect('../db/estaciones_fijas_v2.db')
+            self.conn = sqlite3.connect('db/estaciones_fijas_v2.db')
             self.cursor = self.conn.cursor()
             print("[INFO] Base de datos conectada correctamente")
             

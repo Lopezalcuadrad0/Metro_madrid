@@ -15,7 +15,7 @@ window["loaderConfig"] = "/TSPD/?type=21";
 //<![CDATA[
 window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
 //]]>
-</script><script type="text/javascript" src="/TSbd/08c5d7641cab20002774492b7979b082cc1c02ae8b1e5ebc0c1469fdb5a53338a7c6cca6127ab49c?type=2"></script><script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://digitaldat.metromadrid.es/" : "http://digitaldat.metromadrid.es/");_paq.push(["setSiteId", "2"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+</script><script type="text/javascript" src="/TSbd/08c5d7641cab20001220f5ff2ec178bfd01745c0aed08a7b846fb874b06ab80ea4ef5d66c08cf6a3?type=2"></script><script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://digitaldat.metromadrid.es/" : "http://digitaldat.metromadrid.es/");_paq.push(["setSiteId", "2"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
 <meta name="geo.placename" content="MADRID" />
 <meta name="geo.region" content="ES" />
 <meta name="robots" content="index, follow" />
@@ -818,29 +818,13 @@ a2a_config.callbacks.push({
         <div class="small-12 columns">
                       <div class="row box__actualizar">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--incidencias color--red-state">Estado de los ascensores y escaleras mecánicas</p>
+                <p class="text__info-estacion text__info-estacion--incidencias color--green-state">Estado de los ascensores y escaleras mecánicas</p>
                                   <p class="text_act--escaleras">Última actualización: hace 13 minutos.</p>
                               </div>
             </div>
                         <div class="row">
               <div class="small-12 columns">
-                <div class="box__incidencias">
-                  <p class="text__info-estacion text__info-estacion--tit-inc">Lamentamos informarle de alteraciones en el funcionamiento de escaleras mecánicas y/o ascensores:</p>
-                                                      <div class="box__incidencias-incidencia">
-                    <div class="box__text-icon box__text-icon--tit">
-                      <div class="box__icon">
-                        <img src="/themes/custom/buson8/images/icons-serv/escaleras-mecanicas.svg" alt="icono escaleras" class="icon-escaleras">
-                      </div>
-                      <p class="text__info-estacion text__info-estacion--tit-icon">Escaleras mecánicas</p>
-                      <div class="clear"></div>
-                    </div>
-                                          <div class="text__incidencia">
-                        <div class="text__info-estacion"><p>De vestíbulo a andén central de Línea 1 dirección Valdecarros y a andén central de Línea 4 dirección Argüelles. Hay otra escalera en el mismo sentido y localización.</p>
-                          <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
-                        </div>
-                      </div>
-                                      </div>
-                                                                      </div>
+                <p class="text__info-estacion text__info-estacion--tit-inc">Todas las escaleras mecánicas y/o ascensores funcionan correctamente.</p>
               </div>
             </div>
                               </div>
@@ -1594,11 +1578,30 @@ a2a_config.callbacks.push({
                     </div>
                                           <div class="text__incidencia">
                         <div class="text__info-estacion"><p>De pasillo distribuidor de Línea 1-9-10 a andén de Línea 9 dirección Paco de Lucía</p>
+                          <span class="incidencia_red">Fuera de servicio por trabajos de reparación. Fecha prevista de puesta en funcionamiento: 26-06-2025</span>
+                        </div>
+                      </div>
+                                      </div>
+                                                      <div class="box__incidencias-incidencia">
+                    <div class="box__text-icon box__text-icon--tit">
+                      <div class="box__icon">
+                        <img src="/themes/custom/buson8/images/icons-serv/escaleras-mecanicas.svg" alt="icono escaleras" class="icon-escaleras">
+                      </div>
+                      <p class="text__info-estacion text__info-estacion--tit-icon">Escaleras mecánicas</p>
+                      <div class="clear"></div>
+                    </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De distribuidor de líneas del vestíbulo intercambiador y andenes de Línea 10 a andén de Línea 10 dirección Tres Olivos</p>
+                          <span class="incidencia_red">Pendiente de recibir información.</span>
+                        </div>
+                      </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De vestíbulo Plaza de Castilla a pasillo distribuidor, a andén de Línea 1 dirección Valdecarros y vestíbulo Bravo Murillo</p>
                           <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
                         </div>
                       </div>
                                       </div>
-                                                                                        </div>
+                                                                      </div>
               </div>
             </div>
                               </div>
@@ -2581,6 +2584,11 @@ a2a_config.callbacks.push({
                       <p class="text__info-estacion text__info-estacion--tit-icon">Escaleras mecánicas</p>
                       <div class="clear"></div>
                     </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De vestíbulo a distribuidor de andenes</p>
+                          <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
+                        </div>
+                      </div>
                                           <div class="text__incidencia">
                         <div class="text__info-estacion"><p>De vestíbulo a distribuidor de andenes</p>
                           <span class="incidencia_red">Fuera de servicio por trabajos de reparación. Fecha prevista de puesta en funcionamiento: 05-07-2025</span>
@@ -3597,13 +3605,29 @@ a2a_config.callbacks.push({
         <div class="small-12 columns">
                       <div class="row box__actualizar">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--incidencias color--green-state">Estado de los ascensores y escaleras mecánicas</p>
+                <p class="text__info-estacion text__info-estacion--incidencias color--red-state">Estado de los ascensores y escaleras mecánicas</p>
                                   <p class="text_act--escaleras">Última actualización: hace 13 minutos.</p>
                               </div>
             </div>
                         <div class="row">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--tit-inc">Todas las escaleras mecánicas y/o ascensores funcionan correctamente.</p>
+                <div class="box__incidencias">
+                  <p class="text__info-estacion text__info-estacion--tit-inc">Lamentamos informarle de alteraciones en el funcionamiento de escaleras mecánicas y/o ascensores:</p>
+                                    <div class="box__incidencias-incidencia">
+                    <div class="box__text-icon box__text-icon--tit">
+                      <div class="box__icon">
+                        <img src="/themes/custom/buson8/images/icons-serv/ascensores.svg" alt="icono ascensores" class="icon-ascensores">
+                      </div>
+                      <p class="text__info-estacion text__info-estacion--tit-icon">Ascensores</p>
+                      <div class="clear"></div>
+                    </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De vestíbulo Antonio Palacios a andén 1 de Línea 1 y a andén 1 de Línea 5</p>
+                          <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
+                        </div>
+                      </div>
+                                      </div>
+                                                                                        </div>
               </div>
             </div>
                               </div>
@@ -6813,13 +6837,29 @@ a2a_config.callbacks.push({
         <div class="small-12 columns">
                       <div class="row box__actualizar">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--incidencias color--green-state">Estado de los ascensores y escaleras mecánicas</p>
+                <p class="text__info-estacion text__info-estacion--incidencias color--red-state">Estado de los ascensores y escaleras mecánicas</p>
                                   <p class="text_act--escaleras">Última actualización: hace 13 minutos.</p>
                               </div>
             </div>
                         <div class="row">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--tit-inc">Todas las escaleras mecánicas y/o ascensores funcionan correctamente.</p>
+                <div class="box__incidencias">
+                  <p class="text__info-estacion text__info-estacion--tit-inc">Lamentamos informarle de alteraciones en el funcionamiento de escaleras mecánicas y/o ascensores:</p>
+                                                      <div class="box__incidencias-incidencia">
+                    <div class="box__text-icon box__text-icon--tit">
+                      <div class="box__icon">
+                        <img src="/themes/custom/buson8/images/icons-serv/escaleras-mecanicas.svg" alt="icono escaleras" class="icon-escaleras">
+                      </div>
+                      <p class="text__info-estacion text__info-estacion--tit-icon">Escaleras mecánicas</p>
+                      <div class="clear"></div>
+                    </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De vestíbulo a distribuidor de andenes</p>
+                          <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
+                        </div>
+                      </div>
+                                      </div>
+                                                                      </div>
               </div>
             </div>
                               </div>
@@ -7201,13 +7241,34 @@ a2a_config.callbacks.push({
         <div class="small-12 columns">
                       <div class="row box__actualizar">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--incidencias color--green-state">Estado de los ascensores y escaleras mecánicas</p>
+                <p class="text__info-estacion text__info-estacion--incidencias color--red-state">Estado de los ascensores y escaleras mecánicas</p>
                                   <p class="text_act--escaleras">Última actualización: hace 13 minutos.</p>
                               </div>
             </div>
                         <div class="row">
               <div class="small-12 columns">
-                <p class="text__info-estacion text__info-estacion--tit-inc">Todas las escaleras mecánicas y/o ascensores funcionan correctamente.</p>
+                <div class="box__incidencias">
+                  <p class="text__info-estacion text__info-estacion--tit-inc">Lamentamos informarle de alteraciones en el funcionamiento de escaleras mecánicas y/o ascensores:</p>
+                                    <div class="box__incidencias-incidencia">
+                    <div class="box__text-icon box__text-icon--tit">
+                      <div class="box__icon">
+                        <img src="/themes/custom/buson8/images/icons-serv/ascensores.svg" alt="icono ascensores" class="icon-ascensores">
+                      </div>
+                      <p class="text__info-estacion text__info-estacion--tit-icon">Ascensores</p>
+                      <div class="clear"></div>
+                    </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De vestíbulo a andén dirección Pinar de Chamartín</p>
+                          <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
+                        </div>
+                      </div>
+                                          <div class="text__incidencia">
+                        <div class="text__info-estacion"><p>De vestíbulo a andén dirección Valdecarros</p>
+                          <span class="incidencia_red">Fuera de servicio. Estamos analizando los motivos de la parada.</span>
+                        </div>
+                      </div>
+                                      </div>
+                                                                                        </div>
               </div>
             </div>
                               </div>
@@ -8081,7 +8142,7 @@ a2a_config.callbacks.push({
           <section class="region region-footer-left">
     
 
-  <section id="block-block-logo-cm-pie" class="block-block-logo-cm-pie block block-block-content block-block-content6210e2a0-2670-4968-8886-8db7b7ef4a64 block--type-image-block block--view-mode-full block-in-node--type-line">
+  <section id="block-block-logo-cm-pie" class="block-block-logo-cm-pie block block-block-content block-block-content6210e2a0-2670-4968-8886-8db7b7ef4a64 block--type-image-block block--view-mode-full block-in-node--type-page">
     
         
 
@@ -8108,7 +8169,7 @@ a2a_config.callbacks.push({
           <section class="region region-footer-right">
     
 
-  <section id="block-block-logo-excelente" class="block-block-logo-excelente block block-block-content block-block-contentb01cf36b-08b5-4455-b201-af72e077e2aa block--type-image-block block--view-mode-full block-in-node--type-line">
+  <section id="block-block-logo-excelente" class="block-block-logo-excelente block block-block-content block-block-contentb01cf36b-08b5-4455-b201-af72e077e2aa block--type-image-block block--view-mode-full block-in-node--type-page">
     
         
 
@@ -8214,7 +8275,7 @@ a2a_config.callbacks.push({
 
   </body>
 </html>
-<script id="f5_cspm">(function(){var f5_cspm={f5_p:'DIGPFGGIHPEPMBGNFFBKKDBAAGMPCFNJFDHNCLHPEOIGLFOPGDDKNLCBKIDECMJGLFCBLCMJAAGPKHMBALNAODOIAAEHNABFIOGGCIIJIPPDEOKLHMCJMHABKIGNFADL',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0825628344aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'ABGMFDHEPBHECODMKIDHDLLJEJJIEDDHPPBOJHNGHHICGLJGEKINEMBFPALKNNOIPPFBDLFJAAALCMIPEBEANLEKAAHNLJFAMNHCHEGPGMBMILBEHMPIPMLCAMONKMGE',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0825628344aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
 return;}}
 catch(err){return;}
 setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')

@@ -354,6 +354,12 @@
         color: #95a5a6;
         border: 1px solid rgba(149, 165, 166, 0.3);
     }
+
+    .line-status-info.partial {
+        background: rgba(255, 152, 0, 0.1); /* naranja claro */
+        color: #ff9800;
+        border: 1px solid rgba(255, 152, 0, 0.3);
+    }
     
     .remove-favorite {
         position: absolute;
@@ -1139,36 +1145,67 @@ async function checkLineStatus(lineId, lineName) {
         const response = await fetch(`/api/lines/${lineId}/status`);
         const data = await response.json();
         
-        if (response.ok && data.status) {
-            // Remover botón y mostrar estado
-            btn.remove();
-            
-            let statusClass = 'unknown';
-            let statusText = data.status.estado || 'Estado no disponible';
-            
-            if (statusText.toLowerCase().includes('normal')) {
-                statusClass = 'normal';
-                statusText = '✅ Servicio normal';
-            } else if (statusText.toLowerCase().includes('interrumpido') || statusText.toLowerCase().includes('cortado')) {
-                statusClass = 'interrupted';
-                statusText = '❌ Servicio interrumpido';
-            }
-            
-            const statusInfo = document.createElement('div');
-            statusInfo.className = `line-status-info ${statusClass}`;
-            statusInfo.textContent = statusText;
-            
-            statusContainer.appendChild(statusInfo);
-            
+        if (!response.ok) throw new Error('Respuesta no OK');
+
+        // Estructura del endpoint: datos directos
+        const estadoLinea = (data.estado || (data.status && data.status.estado) || 'Desconocido').toLowerCase();
+        const estacionesCerradas = data.estaciones_cerradas || [];
+
+        // Eliminar el botón
+        btn.remove();
+
+        // Determinar clase y texto visual del estado
+        let statusClass = 'unknown';
+        let statusText;
+
+        const esInterrumpido = estadoLinea.includes('interrumpido') || estadoLinea.includes('cortado') || estadoLinea.includes('suspendido');
+        const tieneCierres = estacionesCerradas.length > 0;
+
+        if (esInterrumpido) {
+            statusClass = 'interrupted';
+            statusText = '❌ Circulación interrumpida';
+        } else if (tieneCierres) {
+            // Cierre parcial
+            statusClass = 'partial';
+            statusText = '🚧 Cierre parcial';
+        } else if (estadoLinea.includes('normal')) {
+            statusClass = 'normal';
+            statusText = '✅ Servicio normal';
         } else {
-            // Error al obtener estado
-            btn.textContent = '❌ Error';
-            btn.classList.remove('loading');
-            setTimeout(() => {
-                btn.textContent = '🚇 Ver estado';
-                btn.classList.remove('loading');
-            }, 2000);
+            statusText = 'Estado no disponible';
         }
+
+        // Crear elemento visual de estado
+        const statusInfo = document.createElement('div');
+        statusInfo.className = `line-status-info ${statusClass}`;
+        statusInfo.textContent = statusText;
+        statusContainer.appendChild(statusInfo);
+
+        // Añadir lista de estaciones cerradas si las hubiera
+        if (estacionesCerradas.length > 0) {
+            const listTitle = document.createElement('div');
+            listTitle.style.fontSize = '0.85rem';
+            listTitle.style.marginTop = '0.4rem';
+            listTitle.style.fontWeight = '600';
+            listTitle.textContent = '🚧 Estaciones cerradas:';
+            statusContainer.appendChild(listTitle);
+
+            const list = document.createElement('ul');
+            list.style.margin = '0.3rem 0 0 0';
+            list.style.paddingLeft = '0';
+            list.style.listStyleType = 'none';
+            list.style.textAlign = 'center';
+            list.style.fontSize = '0.8rem';
+
+            estacionesCerradas.forEach(est => {
+                const li = document.createElement('li');
+                // El objeto puede venir como string o dict
+                li.textContent = est.nombre ? est.nombre : est;
+                list.appendChild(li);
+            });
+            statusContainer.appendChild(list);
+        }
+
     } catch (error) {
         console.error('Error checking line status:', error);
         btn.textContent = '❌ Error';

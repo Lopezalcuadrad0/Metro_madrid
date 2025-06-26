@@ -291,8 +291,8 @@ body {
 /* Marcadores de estación - Estilo Metro Oficial */
 .station-marker {
     position: absolute;
-    top: 50%;
-    left: 30px; /* 30 + ancho_línea/2 */
+    top: 35%;
+    left: 0px; /* 30 + ancho_línea/2 */
     transform: translate(-50%, -50%); /* centra el marcador */
     width: 16px;
     height: 4px;
@@ -308,6 +308,9 @@ body {
     height: 20px;
     background-color: #ffffff;
     border: 4px solid var(--line-color);
+
+        transform: translate(-50%, -50%); /* centra el marcador */
+
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
@@ -721,40 +724,43 @@ body {
 /* Pantallas muy pequeñas */
 @media (max-width: 480px) {
     .content {
-        padding: 15px;
+        padding: 5px;
     }
     
     .station-list-container {
-        padding: 15px;
+        padding: 4px;
     }
     
     .station-strip {
-        padding: 10px 0 10px 30px;
+        padding: 23px 0 10px 30px;
+        left: 15px;
+
     }
     
     .station-strip::before {
-        left: 20px;
-        width: 2px;
+        left: 5px;
+        width: 15px;
     }
     
     .station-marker {
-        left: 19px;
-        transform: translate(-50%, -50%);
-        width: 12px;
-        height: 2px;
+        left: -5px;
+        transform: translate(-70%, 50%);
+        width: 25px;
+        height: 6px;
     }
     
     .station-entry:first-child .station-marker,
     .station-entry:last-child .station-marker {
-        width: 14px;
-        height: 14px;
+        width: 25px;
+        height: 25px;
+        left: -10px;
         border-width: 2px;
     }
     
     .station-entry.interchange .station-marker {
-        width: 13px;
-        height: 13px;
-        border-width: 2px;
+        width: 25px;;
+        height: 25px;;
+        border-width: 4px;
     }
     
     .station-name {
