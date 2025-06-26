@@ -225,14 +225,14 @@
                      fetchpriority="high">
             </a>
             <ul class="nav-links">
-                <li><a href="/mapa-v5" class="{{ 'active' if request.endpoint == 'map_routes_view' else '' }}">🚇 Mapa 🚇</a></li>
-                <li><a href="/status" class="{{ 'active' if request.endpoint == 'status' else '' }}">Estado de la Red</a></li>
+                <li><a href="/mapa-v5" class="{{ 'active' if request.endpoint == 'map_routes_view' else '' }}">Mapa</a></li>
+                <li><a href="/status" class="{{ 'active' if request.endpoint == 'status' else '' }}">Estado Red</a></li>
                 <li><a href="/line/1" class="{{ 'active' if request.endpoint == 'line_detail' else '' }}">Líneas</a></li>  
 
                 {% if current_user.is_authenticated %}
                     <li>
                         <a href="{{ url_for('account') }}" id="accountLink">
-                            👤 Mi Cuenta
+                            👤 
                         </a>
                     </li>
                     <li><a href="{{ url_for('logout') }}">🔒 </a></li>

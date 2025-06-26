@@ -208,6 +208,9 @@ body {
     border-radius: 15px;
     padding: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 [data-theme="dark"] .station-list-container,
@@ -633,7 +636,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     :root {
         --station-gap: var(--station-gap-mobile);
     }
@@ -660,13 +663,13 @@ body {
     }
     
     .station-list-container {
-        padding: 20px;
+        padding: 0px;
         margin: 0;
         max-width: 100%;
     }
     
     .station-strip {
-        padding: 15px 0 15px 35px;
+        padding: 1px 0 15px 35px;
         max-width: 100%;
     }
     
@@ -722,13 +725,13 @@ body {
 }
 
 /* Pantallas muy pequeñas */
-@media (max-width: 480px) {
+@media (max-width: 850px) {
     .content {
         padding: 5px;
     }
     
     .station-list-container {
-        padding: 4px;
+        padding: 40px;
     }
     
     .station-strip {
