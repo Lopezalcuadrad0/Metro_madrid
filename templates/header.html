@@ -212,6 +212,18 @@
             font-size: 10px;
         }
     }
+
+    /* Cabecera más alta en móviles (doble) */
+    @media (max-width: 600px) {
+        .main-nav {
+            height: 88px; /* doble de los 44px originales */
+            flex-wrap: wrap;
+        }
+
+        body {
+            padding-top: 88px; /* compensa la cabecera fija */
+        }
+    }
 </style>
 
 <header class="main-header">

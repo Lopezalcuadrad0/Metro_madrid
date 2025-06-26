@@ -109,7 +109,7 @@ body {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    max-width: 320px;
+    max-width: 800px;
 }
 
 .line-icon {
@@ -725,7 +725,7 @@ body {
 }
 
 /* Pantallas muy pequeñas */
-@media (max-width: 850px) {
+@media (max-width: 899.9999px) {
     .content {
         padding: 5px;
     }
@@ -756,7 +756,7 @@ body {
     .station-entry:last-child .station-marker {
         width: 25px;
         height: 25px;
-        left: -10px;
+        left: -16px;
         border-width: 2px;
     }
     
