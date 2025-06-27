@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Metro de Madrid{% endblock %}</title>
     
-    <!-- Favicon optimizado - una sola referencia -->
-    <link rel="icon" type="image/png" href="/static/logos/Logomarca_azul.png">
-    
-    <!-- Preload de recursos críticos -->
-    <link rel="preload" href="/static/logos/Logomarca_azul.png" as="image" type="image/png">
-    <link rel="preload" href="/static/css/global.css" as="style">
+    <!-- Favicon optimizado -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logos/Logomarca_azul.png') }}">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
     {% block extra_css %}{% endblock %}
     
     <!-- Meta tags -->
     <meta name="description" content="{% block description %}Información en tiempo real del Metro de Madrid{% endblock %}">
     <meta name="keywords" content="metro, madrid, transporte, líneas, estaciones">
     
-    {% block extra_head %}{% endblock %}
+    {% block head %}{% endblock %}
 </head>
 <body>
     {% include 'header.html' %}

@@ -29,27 +29,19 @@ def username_exists(form, field):
 
 class RegistrationForm(FlaskForm):
     """Formulario de registro de usuarios."""
-    username = StringField('Nombre de usuario', 
-                           validators=[DataRequired(message="El nombre de usuario es obligatorio."), 
-                                       Length(min=3, max=25, message="Debe tener entre 3 y 25 caracteres."), 
-                                       username_exists])
+    username = StringField('Usuario',
+                         validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email',
-                        validators=[DataRequired(message="El email es obligatorio."), 
-                                    Email(message="Por favor, introduce un email válido."), 
-                                    email_exists])
-    password = PasswordField('Contraseña', 
-                             validators=[DataRequired(message="La contraseña es obligatoria."), 
-                                         Length(min=6, message="La contraseña debe tener al menos 6 caracteres.")])
+                       validators=[DataRequired(), Email()])
+    password = PasswordField('Contraseña', validators=[DataRequired()])
     confirm_password = PasswordField('Confirmar Contraseña',
-                                     validators=[DataRequired(message="Confirma la contraseña."), 
-                                                 EqualTo('password', message="Las contraseñas no coinciden.")])
+                                   validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Registrarse')
 
 class LoginForm(FlaskForm):
     """Formulario de inicio de sesión."""
-    email = StringField('Email',
-                        validators=[DataRequired(message="El email es obligatorio."), 
-                                    Email(message="Email no válido.")])
-    password = PasswordField('Contraseña', validators=[DataRequired(message="La contraseña es obligatoria.")])
-    remember = BooleanField('Recuérdame')
+    username = StringField('Usuario',
+                         validators=[DataRequired(), Length(min=2, max=20)])
+    password = PasswordField('Contraseña', validators=[DataRequired()])
+    remember = BooleanField('Recordarme')
     submit = SubmitField('Iniciar Sesión') 

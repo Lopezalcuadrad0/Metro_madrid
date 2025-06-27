@@ -1,0 +1,149 @@
+{
+  "estaciones_por_linea": {
+    "C8b": [
+      "4 min",
+      "Madrid Chamartín-Clara Campoamor"
+    ],
+    "C2": [
+      "Guadalajara"
+    ],
+    "C8a": [
+      "4 min",
+      "Recoletos"
+    ],
+    "C10": [
+      "Villalba de Guadarrama"
+    ],
+    "C3": [
+      "Aranjuez",
+      "10 min",
+      "10 min",
+      "Valdemoro",
+      "5 min",
+      "Pinto",
+      "5 min",
+      "Getafe-Industrial",
+      "5 min",
+      "El Casar",
+      "3 min",
+      "San Cristóbal Industrial",
+      "3 min",
+      "San Cristóbal de los Ángeles",
+      "3 min"
+    ],
+    "C4b": [
+      "2 min",
+      "Zarzaquemada",
+      "3 min",
+      "Leganés",
+      "3 min",
+      "Parque Polvoranca",
+      "2 min",
+      "La Serna",
+      "3 min",
+      "Fuenlabrada",
+      "2 min",
+      "Humanes"
+    ],
+    "C4a": [
+      "Universidad Pontificia de Comillas"
+    ],
+    "C5": [
+      "2 min",
+      "Madrid Atocha Cercanías"
+    ],
+    "C4": [
+      "4 min"
+    ],
+    "C7": [
+      "5 min",
+      "Pirámides",
+      "3 min",
+      "Delicias",
+      "2 min",
+      "Méndez Álvaro"
+    ],
+    "C8": [
+      "Guadalajara"
+    ]
+  },
+  "estaciones_coincidentes": {
+    "4 min": {
+      "lineas": [
+        "C4",
+        "C8a",
+        "C8b"
+      ],
+      "linea_principal": "C4",
+      "total_lineas": 3
+    },
+    "Guadalajara": {
+      "lineas": [
+        "C2",
+        "C8"
+      ],
+      "linea_principal": "C2",
+      "total_lineas": 2
+    },
+    "10 min": {
+      "lineas": [
+        "C3",
+        "C3"
+      ],
+      "linea_principal": "C3",
+      "total_lineas": 2
+    },
+    "5 min": {
+      "lineas": [
+        "C3",
+        "C3",
+        "C3",
+        "C7"
+      ],
+      "linea_principal": "C3",
+      "total_lineas": 4
+    },
+    "3 min": {
+      "lineas": [
+        "C3",
+        "C3",
+        "C3",
+        "C4b",
+        "C4b",
+        "C4b",
+        "C7"
+      ],
+      "linea_principal": "C3",
+      "total_lineas": 7
+    },
+    "2 min": {
+      "lineas": [
+        "C4b",
+        "C4b",
+        "C4b",
+        "C5",
+        "C7"
+      ],
+      "linea_principal": "C4b",
+      "total_lineas": 5
+    }
+  },
+  "estadisticas": {
+    "total_lineas": 11,
+    "total_estaciones": 44,
+    "estaciones_coincidentes": 6,
+    "lineas_identificadas": [
+      "C8b",
+      "C2",
+      "C8a",
+      "C10",
+      "C3",
+      "C4b",
+      "C4a",
+      "C5",
+      "C4",
+      "C7",
+      "C8"
+    ]
+  }
+}

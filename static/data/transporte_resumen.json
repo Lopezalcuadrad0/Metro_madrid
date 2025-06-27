@@ -1,0 +1,20 @@
+{
+  "metro": {
+    "lineas_estaciones": [
+      "unknown"
+    ],
+    "total_estaciones": 517
+  },
+  "metro_ligero": {
+    "lineas_estaciones": [
+      "unknown"
+    ],
+    "total_estaciones": 76
+  },
+  "cercanias": {
+    "lineas_estaciones": [
+      "unknown"
+    ],
+    "total_estaciones": 22
+  }
+}

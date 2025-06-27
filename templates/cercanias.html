@@ -1,0 +1,846 @@
+{% extends "base.html" %}
+
+{% block title %}Metro Madrid - Mapa Integrado{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+    #map {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        z-index: 1 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+    
+    .map-controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .control-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    .control-btn {
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 6px;
+        background: #fff;
+        color: #333;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .control-btn:hover {
+        background: #f0f0f0;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .control-btn.active {
+        background: #007bff;
+        color: white;
+        box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+    }
+
+    .control-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    /* Responsive para controles */
+    @media (max-width: 768px) {
+        .map-controls {
+            top: 5px;
+            left: 5px;
+        }
+        
+        .control-group {
+            padding: 5px;
+        }
+        
+        .control-btn {
+            width: 35px;
+            height: 35px;
+            font-size: 14px;
+        }
+    }
+
+    .transport-section {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+
+    .transport-section:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .transport-title {
+        font-weight: bold;
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .transport-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: #fff;
+        min-width: 40px;
+        height: 40px;
+        margin: 2px;
+    }
+
+    .transport-button img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    .transport-button.active {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .line-button {
+        display: flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 4px;
+        border: 2px solid;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 2px;
+        min-width: 60px;
+        justify-content: center;
+    }
+
+    .line-button.active {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: white;
+    }
+
+     /* Quitar controles de zoom de Leaflet */
+  .leaflet-control-zoom {
+    display: none !important;
+  }
+
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out {
+    display: none !important;
+  }
+
+    .transport-button.metro {
+        border: 2px solid #0055A4;
+    }
+
+    .transport-button.metro:hover,
+    .transport-button.metro.active {
+        background: #0055A4;
+        color: #fff;
+        border-color: #0055A4;
+    }
+
+    .transport-button.metro-ligero {
+        border: 2px solid #70C5E8;
+    }
+
+    .transport-button.metro-ligero:hover,
+    .transport-button.metro-ligero.active {
+        background: #70C5E8;
+        color: #fff;
+        border-color: #70C5E8;
+    }
+
+    .transport-button.cercanias {
+        margin: 0 ;
+        font-size: 2rem;
+        border-radius: 8px;
+        padding: 8px 16px;
+        background: #fff;
+        color: #333;
+        border: 2px solid #ff0000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: all 0.2s;
+    }
+    .transport-button.cercanias:hover,
+    .transport-button.bicimad.active {
+        background: #0f73b6;
+        color: white;
+    }
+    .transport-button.cercanias.active {
+        background: #ff0000;
+        color: #fff;
+        border-color: #ff0000;
+    }
+
+    .transport-button.bicimad {
+        border: 2px solid #0f73b6;
+        font-size: 20px;
+    }
+
+    .transport-button.bicimad:hover,
+    .transport-button.bicimad.active {
+        background: #0f73b6;
+        color: white;
+    }
+
+    /* Colores específicos para líneas de Metro Ligero */
+    .line-button.ml1 {
+        border-color: #70C5E8 !important;
+        color: #70C5E8 !important;
+    }
+
+    .line-button.ml1.active {
+        background: #70C5E8 !important;
+        color: white !important;
+    }
+
+    .line-button.ml2 {
+        border-color: #9B4782 !important;
+        color: #9B4782 !important;
+    }
+
+    .line-button.ml2.active {
+        background: #9B4782 !important;
+        color: white !important;
+    }
+
+    .line-button.ml3 {
+        border-color: #DE1E40 !important;
+        color: #DE1E40 !important;
+    }
+
+    .line-button.ml3.active {
+        background: #DE1E40 !important;
+        color: white !important;
+    }
+
+    /* Colores específicos para líneas de Metro */
+    .line-button.metro-line[data-line="1"].active {
+        background: #30A3DC !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="2"].active {
+        background: #E0292F !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="3"].active {
+        background: #FFE114 !important;
+        color: black !important;
+    }
+
+    .line-button.metro-line[data-line="4"].active {
+        background: #814109 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="5"].active {
+        background: #96BF0D !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="6"].active {
+        background: #9A9999 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="7"].active {
+        background: #F96611 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="8"].active {
+        background: #F373B7 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="9"].active {
+        background: #990D66 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="10"].active {
+        background: #1B0C80 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="11"].active {
+        background: #136926 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="12"].active {
+        background: #999933 !important;
+        color: white !important;
+    }
+
+    .line-button.metro-line[data-line="R"].active {
+        background: #800080 !important;
+        color: white !important;
+    }
+
+    .line-buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        justify-content: center;
+    }
+
+    /* Colores específicos para líneas de Cercanías */
+    .line-button.cercanias-line[data-line="C-1"].active {
+        background: #70C5E8 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-2"].active {
+        background: #008F3E !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-3"].active {
+        background: #9B4782 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-4a"].active {
+        background: #004E98 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-4b"].active {
+        background: #004E98 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-5"].active {
+        background: #F2C500 !important;
+        color: black !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-7a"].active {
+        background: #DE1E40 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-8"].active {
+        background: #808080 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-8a"].active {
+        background: #B2B2B2 !important;
+        color: black !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-8b"].active {
+        background: #E20714 !important;
+        color: white !important;
+    }
+
+    .line-button.cercanias-line[data-line="C-9"].active {
+        background: #F09600 !important;
+        color: white !important;
+    }
+
+    /* Estilos para marcadores de Cercanías */
+    .cercanias-marker {
+        background: transparent !important;
+        border: none !important;
+    }
+
+    .cercanias-marker .marker-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .cercanias-marker .marker-primary {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+        border: 2px solid white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .cercanias-marker .marker-secondary {
+        display: flex;
+        gap: 1px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 30px;
+    }
+
+    .cercanias-marker .line-badge {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 8px;
+        border: 1px solid white;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+
+    /* Estilos para tooltips de Cercanías */
+    .cercanias-tooltip {
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 12px;
+        max-width: 250px;
+    }
+
+    .cercanias-tooltip h4 {
+        margin: 0 0 5px 0;
+        color: #70C5E8;
+        font-size: 14px;
+    }
+
+    .cercanias-tooltip p {
+        margin: 3px 0;
+        line-height: 1.3;
+    }
+
+    /* Estilos para marcador de ubicación del usuario */
+    .user-location-marker {
+        background: transparent !important;
+        border: none !important;
+        font-size: 24px;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+
+    /* Estilos para tooltips de estaciones */
+    .station-tooltip {
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 12px;
+        max-width: 250px;
+    }
+
+    .station-tooltip h4 {
+        margin: 0 0 5px 0;
+        color: #70C5E8;
+        font-size: 14px;
+    }
+
+    .station-tooltip p {
+        margin: 3px 0;
+        line-height: 1.3;
+    }
+
+    /* Estilos para marcadores de BiciMAD */
+    .bicimad-marker {
+        font-size: 20px;
+        text-align: center;
+        line-height: 24px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+    }
+
+    /* Estilos para popups de BiciMAD */
+    .bicimad-popup {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .bicimad-popup strong {
+        color: #333;
+        font-size: 14px;
+    }
+
+    /* Estilos para clusters */
+    .marker-cluster {
+        background: rgba(0, 168, 89, 0.6);
+        border: 2px solid #00A859;
+        border-radius: 50%;
+        color: white;
+        height: 40px;
+        line-height: 37px;
+        text-align: center;
+        width: 40px;
+        font-weight: bold;
+    }
+
+    .marker-cluster-small {
+        background-color: rgba(0, 168, 89, 0.6);
+    }
+
+    .marker-cluster-small div {
+        background-color: rgba(0, 168, 89, 0.8);
+    }
+
+    .marker-cluster-medium {
+        background-color: rgba(255, 193, 7, 0.6);
+    }
+
+    .marker-cluster-medium div {
+        background-color: rgba(255, 193, 7, 0.8);
+    }
+
+    .marker-cluster-large {
+        background-color: rgba(220, 53, 69, 0.6);
+    }
+
+    .marker-cluster-large div {
+        background-color: rgba(220, 53, 69, 0.8);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="map"></div>
+
+<!-- Controles de cabecera -->
+<div class="map-controls">
+    <div class="control-group">
+        <button id="toggle-stations-btn" class="control-btn " title="Mostrar/Ocultar Estaciones">
+            🚇
+        </button>
+        <button id="toggle-routes-btn" class="control-btn " title="Mostrar/Ocultar Rutas">
+            🛤️
+        </button>
+        <button id="toggle-my-location-btn" class="control-btn" title="Mi Ubicación">
+            📍
+        </button>
+    </div>
+    
+    <div class="control-group">
+    <button class="transport-button metro" id="metro-button">
+        <img src="{{ url_for('static', filename='logos/Logomarca_azul.png') }}" alt="Metro">
+    </button>
+    <button class="transport-button metro-ligero" id="metro-ligero-button">
+        <img src="{{ url_for('static', filename='logos/lineas/_ml.svg') }}" alt="Metro Ligero">
+    </button>
+    <button class="transport-button cercanias" id="cercanias-button">
+          <img src="{{ url_for('static', filename='logos/cercanias-renfe.svg') }}" alt="cercanias-renfe">
+    </button>
+    <button class="transport-button bicimad"> 
+        <img src="{{ url_for('static', filename='logos/bici.jpg') }}" alt="bicimad">
+      </button>
+</div>
+
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+<script>
+    // Variables globales
+    var map;
+    var layers = {};
+
+    // Esperar a que el DOM esté listo
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Inicializando mapa...');
+        
+        // Inicializar el mapa
+        map = L.map('map', {
+            zoomControl: true,
+            zoomAnimation: true
+        }).setView([40.4168, -3.7038], 12);
+
+        // Capas base del mapa
+        const baseLayers = {
+            dark: L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                { attribution: "© CARTO" }
+            ),
+            classic: L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                { attribution: "© CARTO" }
+            ),
+            clear: L.tileLayer(
+                "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+                { attribution: "© OpenStreetMap" }
+            ),
+        };
+
+        // Función para cambiar el estilo del mapa según el tema
+        function updateMapStyle(theme) {
+            if (currentBaseLayer) map.removeLayer(currentBaseLayer);
+
+            // Mapear temas a estilos de mapa
+            const themeToStyle = {
+                light: "classic",    // Tema claro -> Mapa clásico
+                dark: "dark",        // Tema oscuro -> Mapa oscuro
+                nocturno: "dark"     // Tema nocturno -> Mapa oscuro
+            };
+
+            const mapStyle = themeToStyle[theme] || "classic";
+            currentBaseLayer = baseLayers[mapStyle];
+            currentBaseLayer.addTo(map);
+        }
+
+        // Detectar el tema actual al cargar la página
+        const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+        let currentBaseLayer = baseLayers[
+            currentTheme === "dark" || currentTheme === "nocturno" ? "dark" : "classic"
+        ];
+        currentBaseLayer.addTo(map);
+
+        // Escuchar cambios en el tema global
+        document.addEventListener("themeChanged", function(e) {
+            updateMapStyle(e.detail.theme);
+        });
+
+        // Control de capas de Leaflet
+        const overlayLayers = {};
+        const layerControl = L.control.layers(baseLayers, overlayLayers, {
+            collapsed: false,
+            position: 'topright'
+        }).addTo(map);
+
+        console.log('Mapa inicializado');
+
+        // Inicializar capas principales
+        layers = {
+            bicimad: L.markerClusterGroup({
+                chunkedLoading: true,
+                maxClusterRadius: 50,
+                spiderfyOnMaxZoom: true,
+                showCoverageOnHover: true,
+                zoomToBoundsOnClick: true,
+                iconCreateFunction: function(cluster) {
+                    var count = cluster.getChildCount();
+                    var size = count < 10 ? 'small' : count < 100 ? 'medium' : 'large';
+                    return L.divIcon({
+                        html: '<div><span>' + count + '</span></div>',
+                        className: 'marker-cluster marker-cluster-' + size,
+                        iconSize: L.point(40, 40)
+                    });
+                }
+            })
+        };
+
+        // ---
+        // Cargar datos de Metro con nuevo sistema
+        var metroData = {{ metro_data|tojson|safe }};
+        var metroLigeroData = {{ metro_ligero_data|tojson|safe }};
+        var bicimadData = {{ bicimad_data|tojson|safe }};
+        var cercaniasData = {{ cercanias_data|tojson|safe }};
+
+        // BiciMAD
+        if (bicimadData && bicimadData.stations) {
+            bicimadData.stations.forEach(function(station) {
+                if (station.lat && station.lon) {
+                    var fillColor = station.fill_color || '#00A859';
+                    var statusText = station.status_text || 'Operativa';
+                    var marker = L.marker([station.lat, station.lon], {
+                        icon: L.divIcon({
+                            className: 'bicimad-marker',
+                            html: '🚲',
+                            iconSize: [24, 24],
+                            iconAnchor: [12, 12]
+                        })
+                    });
+                    marker.bindPopup(
+                        '<div class="bicimad-popup">' +
+                        '<strong>' + station.name + '</strong><br>' +
+                        '<span style="color: ' + fillColor + '">● ' + statusText + '</span><br>' +
+                        '🚲 Bicis: ' + station.dock_bikes + '<br>' +
+                        '🅿️ Anclajes libres: ' + station.free_bases + '<br>' +
+                        '📊 Total anclajes: ' + station.total_bases + '<br>' +
+                        '📍 ' + station.address +
+                        '</div>'
+                    );
+                    marker.addTo(layers.bicimad);
+                }
+            });
+        }
+        // Cercanías
+        if (typeof drawCercanias === 'function') {
+            drawCercanias(cercaniasData);
+        }
+        // Botón BiciMAD
+        var bicimadButton = document.querySelector('.transport-button.bicimad');
+        if (bicimadButton) {
+            bicimadButton.addEventListener('click', function() {
+                toggleLayer('bicimad');
+            });
+        }
+        // Botón Metro
+        var metroButton = document.querySelector('.transport-button.metro');
+        if (metroButton) {
+            metroButton.addEventListener('click', function() {
+                console.log('🚇 Botón Metro clickeado');
+                
+                // Dibujar Metro solo la primera vez
+                if (typeof drawMetro === 'function' && !window.metroDrawn) {
+                    console.log('🚇 Dibujando Metro por primera vez...');
+                    drawMetro(metroData);
+                    window.metroDrawn = true;
+                }
+                
+                // Verificar si Metro está visible
+                var metroVisible = false;
+                if (typeof window.metroLayers !== 'undefined' && Object.keys(window.metroLayers).length > 0) {
+                    // Verificar si al menos una capa está visible
+                    Object.values(window.metroLayers).forEach(function(layer) {
+                        if (map.hasLayer(layer)) {
+                            metroVisible = true;
+                        }
+                    });
+                }
+                
+                console.log('🚇 Metro visible actualmente:', metroVisible);
+                
+                if (metroVisible) {
+                    // Ocultar Metro
+                    console.log('🚇 Ocultando Metro...');
+                    Object.values(window.metroLayers).forEach(function(layer) {
+                        map.removeLayer(layer);
+                    });
+                    metroButton.classList.remove('active');
+                    console.log('🚇 Clase active removida');
+                } else {
+                    // Mostrar Metro
+                    console.log('🚇 Mostrando Metro...');
+                    Object.values(window.metroLayers).forEach(function(layer) {
+                        map.addLayer(layer);
+                    });
+                    metroButton.classList.add('active');
+                    console.log('🚇 Clase active añadida');
+                }
+                
+                console.log('🚇 Clases finales del botón:', metroButton.className);
+            });
+        }
+        
+        // Botón Metro Ligero
+        var mlButton = document.querySelector('.transport-button.metro-ligero');
+        if (mlButton) {
+            mlButton.addEventListener('click', function() {
+                console.log('🚊 Botón Metro Ligero clickeado');
+                
+                // Dibujar Metro Ligero solo la primera vez
+                if (typeof drawMetroLigero === 'function' && !window.mlDrawn) {
+                    console.log('🚊 Dibujando Metro Ligero por primera vez...');
+                    drawMetroLigero(metroLigeroData);
+                    window.mlDrawn = true;
+                }
+                
+                // Verificar si Metro Ligero está visible
+                var mlVisible = false;
+                if (typeof window.metroLigeroLayers !== 'undefined' && Object.keys(window.metroLigeroLayers).length > 0) {
+                    // Verificar si al menos una capa está visible
+                    Object.values(window.metroLigeroLayers).forEach(function(layer) {
+                        if (map.hasLayer(layer)) {
+                            mlVisible = true;
+                        }
+                    });
+                }
+                
+                console.log('🚊 Metro Ligero visible actualmente:', mlVisible);
+                
+                if (mlVisible) {
+                    // Ocultar Metro Ligero
+                    console.log('🚊 Ocultando Metro Ligero...');
+                    Object.values(window.metroLigeroLayers).forEach(function(layer) {
+                        map.removeLayer(layer);
+                    });
+                    mlButton.classList.remove('active');
+                    console.log('🚊 Clase active removida');
+                } else {
+                    // Mostrar Metro Ligero
+                    console.log('🚊 Mostrando Metro Ligero...');
+                    Object.values(window.metroLigeroLayers).forEach(function(layer) {
+                        map.addLayer(layer);
+                    });
+                    mlButton.classList.add('active');
+                    console.log('🚊 Clase active añadida');
+                }
+                
+                console.log('🚊 Clases finales del botón:', mlButton.className);
+            });
+        }
+    });
+
+    // Función para alternar capa de BiciMAD
+    function toggleLayer(layerName) {
+        console.log('🔧 toggleLayer llamado con:', layerName);
+        console.log('🔧 layers disponibles:', Object.keys(layers));
+        console.log('🔧 layers[layerName]:', layers[layerName]);
+        
+        if (layers[layerName]) {
+            if (map.hasLayer(layers[layerName])) {
+                console.log('🔧 Removiendo capa:', layerName);
+                map.removeLayer(layers[layerName]);
+                document.querySelector('.transport-button.bicimad').classList.remove('active');
+            } else {
+                console.log('🔧 Añadiendo capa:', layerName);
+                map.addLayer(layers[layerName]);
+                document.querySelector('.transport-button.bicimad').classList.add('active');
+            }
+        } else {
+            console.error('❌ Capa no encontrada:', layerName);
+        }
+    }
+
+    // Hacer funciones globales
+    window.toggleLayer = toggleLayer;
+</script>
+
+<!-- Cargar script de Metro al final -->
+<script src="{{ url_for('static', filename='js/metro.js') }}"></script>
+
+<!-- Cargar script de Metro Ligero al final -->
+<script src="{{ url_for('static', filename='js/metro-ligero.js') }}"></script>
+
+<!-- Cargar script de Cercanías al final -->
+<script src="{{ url_for('static', filename='js/cercanias.js') }}"></script>
+{% endblock %} 

@@ -244,30 +244,30 @@
         <h2>🚇 Iniciar Sesión</h2>
         
         <div class="form-group">
-            {{ form.email.label(class="form-control-label") }}
-            {% if form.email.errors %}
-                {{ form.email(class="form-control is-invalid", placeholder="tu@email.com") }}
+            {{ form.username.label(class="form-control-label") }}
+            {% if form.username.errors %}
+                {{ form.username(class="form-control form-control-lg is-invalid") }}
                 <div class="invalid-feedback">
-                    {% for error in form.email.errors %}
+                    {% for error in form.username.errors %}
                         <span>{{ error }}</span>
                     {% endfor %}
                 </div>
             {% else %}
-                {{ form.email(class="form-control", placeholder="tu@email.com") }}
+                {{ form.username(class="form-control form-control-lg") }}
             {% endif %}
         </div>
         
         <div class="form-group">
             {{ form.password.label(class="form-control-label") }}
             {% if form.password.errors %}
-                {{ form.password(class="form-control is-invalid", placeholder="Tu contraseña") }}
+                {{ form.password(class="form-control form-control-lg is-invalid") }}
                 <div class="invalid-feedback">
                     {% for error in form.password.errors %}
                         <span>{{ error }}</span>
                     {% endfor %}
                 </div>
             {% else %}
-                {{ form.password(class="form-control", placeholder="Tu contraseña") }}
+                {{ form.password(class="form-control form-control-lg") }}
             {% endif %}
         </div>
 

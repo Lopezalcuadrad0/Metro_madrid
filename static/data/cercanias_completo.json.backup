@@ -1,0 +1,10 @@
+{
+  "stations": [],
+  "lines": [],
+  "metadata": {
+    "total_stations": 0,
+    "converted_from_utm": true,
+    "utm_zone": 30,
+    "source_file": "static/data/cercanias_completo.json"
+  }
+}

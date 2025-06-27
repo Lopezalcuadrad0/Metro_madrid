@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% block title %}Cercanías Madrid - Mapa Interactivo{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+    #map {
+        height: calc(100vh - 44px);
+        width: 100%;
+        margin-top: 44px;
+    }
+    
+    .info-panel {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 300px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 15px;
+    }
+    
+    .loading {
+        text-align: center;
+        color: #666;
+        font-style: italic;
+    }
+    
+    .error {
+        color: #d32f2f;
+        background: #ffebee;
+        padding: 10px;
+        border-radius: 4px;
+        border-left: 4px solid #d32f2f;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="map"></div>
+
+<div class="info-panel">
+    <h3>🚆 Cercanías Madrid</h3>
+    <div id="loading" class="loading">Cargando información...</div>
+    <div id="error" class="error" style="display: none;"></div>
+    <div id="info-content" style="display: none;"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Variables globales
+var map;
+var layerReferences = {};
+
+// Inicializar mapa
+function initMap() {
+    map = L.map('map').setView([40.4168, -3.7038], 10);
+    
+    // Capa base de OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    
+    console.log('🗺️ Mapa inicializado');
+}
+
+// Cargar datos de Cercanías
+function loadCercaniasData() {
+    fetch('/api/transport/cercanias')
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Error en la respuesta del servidor');
+            }
+            return response.json();
+        })
+        .then(function(data) {
+            if (data.success && data.data) {
+                displayCercaniasData(data.data);
+                showInfo('✅ Datos de Cercanías cargados correctamente');
+            } else {
+                throw new Error('Formato de datos inválido');
+            }
+        })
+        .catch(function(error) {
+            console.error('Error cargando Cercanías:', error);
+            showError('Error cargando datos de Cercanías: ' + error.message);
+        });
+}
+
+// Mostrar datos de Cercanías en el mapa
+function displayCercaniasData(data) {
+    if (data.features && data.features.length > 0) {
+        L.geoJSON(data, {
+            pointToLayer: function(feature, latlng) {
+                return L.circleMarker(latlng, {
+                    radius: 6,
+                    fillColor: '#99CC00',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                });
+            },
+            onEachFeature: function(feature, layer) {
+                if (feature.properties) {
+                    var popupContent = '<div style="font-family: Arial, sans-serif;">';
+                    popupContent += '<h4 style="margin: 0 0 10px 0; color: #333;">🚆 ' + (feature.properties.Name || feature.properties.name || 'Estación') + '</h4>';
+                    
+                    if (feature.properties.Address) {
+                        popupContent += '<p style="margin: 5px 0; color: #666;"><strong>📍 Dirección:</strong> ' + feature.properties.Address + '</p>';
+                    }
+                    
+                    if (feature.properties.Linea) {
+                        popupContent += '<p style="margin: 5px 0; color: #666;"><strong>🚇 Línea:</strong> ' + feature.properties.Linea + '</p>';
+                    }
+                    
+                    popupContent += '</div>';
+                    layer.bindPopup(popupContent);
+                }
+            }
+        }).addTo(map);
+        
+        console.log('✅ ' + data.features.length + ' estaciones de Cercanías añadidas al mapa');
+    } else {
+        console.warn('⚠️ No se encontraron features en los datos de Cercanías');
+    }
+}
+
+// Mostrar error en el panel
+function showError(message) {
+    var errorDiv = document.getElementById('error');
+    var loadingDiv = document.getElementById('loading');
+    var infoDiv = document.getElementById('info-content');
+    
+    if (errorDiv && loadingDiv && infoDiv) {
+        loadingDiv.style.display = 'none';
+        infoDiv.style.display = 'none';
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = '<p>❌ ' + message + '</p>';
+    }
+}
+
+// Mostrar información en el panel
+function showInfo(content) {
+    var errorDiv = document.getElementById('error');
+    var loadingDiv = document.getElementById('loading');
+    var infoDiv = document.getElementById('info-content');
+    
+    if (errorDiv && loadingDiv && infoDiv) {
+        loadingDiv.style.display = 'none';
+        errorDiv.style.display = 'none';
+        infoDiv.style.display = 'block';
+        infoDiv.innerHTML = content;
+    }
+}
+
+// Cargar estado global
+function loadGlobalStatus() {
+    fetch('/api/lines/global-status')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            if (data.success && data.lines) {
+                var statusHtml = '<div style="margin-top: 15px;"><h4>Estado del Transporte:</h4>';
+                data.lines.forEach(function(line) {
+                    statusHtml += '<div style="margin: 5px 0; padding: 5px; background: #f8f9fa; border-radius: 3px;">';
+                    statusHtml += '<span style="display: inline-block; width: 12px; height: 12px; background: ' + line.color + '; border-radius: 50%; margin-right: 8px;"></span>';
+                    statusHtml += line.name + ': <strong>' + line.status + '</strong>';
+                    statusHtml += '</div>';
+                });
+                statusHtml += '</div>';
+                
+                var infoDiv = document.getElementById('info-content');
+                if (infoDiv) {
+                    infoDiv.innerHTML += statusHtml;
+                }
+            }
+        })
+        .catch(function(error) {
+            console.error('Error cargando estado global:', error);
+        });
+}
+
+// Inicializar cuando se carga la página
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚆 Iniciando mapa de Cercanías...');
+    
+    // Inicializar mapa
+    initMap();
+    
+    // Cargar datos de Cercanías
+    loadCercaniasData();
+    
+    // Cargar estado global
+    loadGlobalStatus();
+    
+    console.log('✅ Mapa de Cercanías inicializado');
+});
+</script>
+{% endblock %} 

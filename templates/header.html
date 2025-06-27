@@ -59,7 +59,7 @@
         align-items: center;
         padding: 0 40px;
         height: 44px;
-        background-color: var(--metro-azul-oscuro);
+        background-color: #DE1E40; /* Rojo Cercanías */
         box-sizing: border-box;
     }
     
@@ -96,10 +96,42 @@
         transition: color 0.2s, border-color 0.2s;
     }
 
-    .nav-links li a:hover,
-    .nav-links li a.active {
-        color: var(--metro-rojo);
-        border-bottom-color: var(--metro-rojo);
+
+    /* Dropdown styles */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1001;
+        border-radius: 4px;
+        top: 100%;
+        left: 0;
+    }
+
+    .dropdown-content a {
+        color: #333 !important;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border: none !important;
+        font-size: 13px;
+        height: auto !important;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: var(--metro-rojo) !important;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .nav-extra {
@@ -229,38 +261,49 @@
 <header class="main-header">
     <div class="header-line-color"></div>
     <nav class="main-nav">
-        <div class="header-container">
-            <a href="/" class="main-logo">
-                <img src="{{ url_for('static', filename='logos/Logomarca_azul.png') }}" 
-                     alt="Metro de Madrid Logo" 
-                     loading="eager"
-                     fetchpriority="high">
+        <div class="main-logo">
+            <a href="{{ url_for('index') }}">
+                
+                <img src="{{ url_for('static', filename='logos/Logomarca_azul.png') }}" alt="Metro Madrid Logo" class="metro-logo">
             </a>
-            <ul class="nav-links">
-                <li><a href="/mapa-v5" class="{{ 'active' if request.endpoint == 'map_routes_view' else '' }}">Mapa</a></li>
-                <li><a href="/status" class="{{ 'active' if request.endpoint == 'status' else '' }}">Estado Red</a></li>
-                <li><a href="/line/1" class="{{ 'active' if request.endpoint == 'line_detail' else '' }}">Líneas</a></li>  
-
-                {% if current_user.is_authenticated %}
-                    <li>
-                        <a href="{{ url_for('account') }}" id="accountLink">
-                            👤 
-                        </a>
-                    </li>
-                    <li><a href="{{ url_for('logout') }}">🔒 </a></li>
-                {% else %}
-                    <li><a href="{{ url_for('login') }}">🔑 Iniciar Sesión</a></li>
-                    <li><a href="{{ url_for('register') }}">📝 Registrarse</a></li>
-                {% endif %}
-            </ul>
-            <div class="nav-extra">
-                <div class="theme-selector">
-                    <button class="theme-btn" data-theme="light">☀️</button>
-                    <button class="theme-btn" data-theme="dark">🌙</button>
-                </div>
-                <span>ES</span>&nbsp;|&nbsp;<a href="#">EN</a>
-                <button class="search" href="/station">🔍</button>
+        </div>
+        <div class="header-logo" style="height: 40px; display: flex; align-items: center;">
+            {% if request.endpoint == 'cercanias' %}
+            <img src="{{ url_for('static', filename='logos/b0d0c833-8b9b-464d-a63f-febecebd41ca.png') }}" alt="Logo Cercanias alt" style="height: 32px; width: auto;">
+            {% else %}
+            <a href="{{ url_for('cercanias') }}" style="height: 32px; display: flex; align-items: center;">
+                <img src="{{ url_for('static', filename='logos/cercanias-renfe.svg') }}" alt="Logo Cercanías" style="height: 28px; width: auto;">
+            </a>
+            {% endif %}
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/line/1" class="{{ 'active' if request.endpoint == 'line_detail_view' else '' }}">
+                    Líneas
+                </a>
+            </li>
+            <li>
+                <a href="/station" class="{{ 'active' if request.endpoint == 'station_page' else '' }}">
+                    Estaciones
+                </a>
+            </li>
+            <li>
+                <a href="/mapa-v5" class="{{ 'active' if request.endpoint == 'station_page' else '' }}">
+                    Mapa
+                </a>
+            </li>
+            <li>
+                <a href="/status" class="{{ 'active' if request.endpoint == 'status' else '' }}">
+                    Estado
+                </a>
+            </li>
+        </ul>
+        <div class="nav-extra">
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="light">☀️</button>
+                <button class="theme-btn" data-theme="dark">🌚</button>
             </div>
+            <a href="/account">Mi Cuenta</a>
         </div>
     </nav>
 </header>
@@ -316,3 +359,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+

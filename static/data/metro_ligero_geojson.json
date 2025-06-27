@@ -1,0 +1,923 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.66684,
+          40.48014
+        ]
+      },
+      "properties": {
+        "id_estacion": "153",
+        "id_modal": "581",
+        "DENOMINACION": "Pinar de Chamartín",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/581",
+          "proximos_trenes": "/es/metro_next_trains/modal/581"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.66325,
+          40.48482
+        ]
+      },
+      "properties": {
+        "id_estacion": "5112",
+        "id_modal": "497",
+        "DENOMINACION": "Fuente de la Mora",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/497",
+          "proximos_trenes": "/es/metro_next_trains/modal/497"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.66098,
+          40.48734
+        ]
+      },
+      "properties": {
+        "id_estacion": "5113",
+        "id_modal": "650",
+        "DENOMINACION": "Virgen del Cortijo",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/650",
+          "proximos_trenes": "/es/metro_next_trains/modal/650"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.65353,
+          40.48546
+        ]
+      },
+      "properties": {
+        "id_estacion": "5114",
+        "id_modal": "422",
+        "DENOMINACION": "Antonio Saura",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/422",
+          "proximos_trenes": "/es/metro_next_trains/modal/422"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.65136,
+          40.48905
+        ]
+      },
+      "properties": {
+        "id_estacion": "5115",
+        "id_modal": "419",
+        "DENOMINACION": "Álvarez de Villaamil",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/419",
+          "proximos_trenes": "/es/metro_next_trains/modal/419"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.65584,
+          40.49368
+        ]
+      },
+      "properties": {
+        "id_estacion": "5116",
+        "id_modal": "448",
+        "DENOMINACION": "Blasco Ibáñez",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/448",
+          "proximos_trenes": "/es/metro_next_trains/modal/448"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.65889,
+          40.49717
+        ]
+      },
+      "properties": {
+        "id_estacion": "5117",
+        "id_modal": "549",
+        "DENOMINACION": "María Tudor",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/549",
+          "proximos_trenes": "/es/metro_next_trains/modal/549"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.66507,
+          40.50544
+        ]
+      },
+      "properties": {
+        "id_estacion": "5118",
+        "id_modal": "570",
+        "DENOMINACION": "Palas de Rey",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/570",
+          "proximos_trenes": "/es/metro_next_trains/modal/570"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.66932,
+          40.50824
+        ]
+      },
+      "properties": {
+        "id_estacion": "1053",
+        "id_modal": "536",
+        "DENOMINACION": "Las Tablas",
+        "NUMEROLINEAUSUARIO": "1",
+        "LINEA": "ML1",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/536",
+          "proximos_trenes": "/es/metro_next_trains/modal/536"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.77451,
+          40.39698
+        ]
+      },
+      "properties": {
+        "id_estacion": "1016",
+        "id_modal": "468",
+        "DENOMINACION": "Colonia Jardín",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/468",
+          "proximos_trenes": "/es/metro_next_trains/modal/468"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.78121,
+          40.4023
+        ]
+      },
+      "properties": {
+        "id_estacion": "5212",
+        "id_modal": "660",
+        "DENOMINACION": "Prado de la Vega",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/660",
+          "proximos_trenes": "/es/metro_next_trains/modal/660"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7844,
+          40.40721
+        ]
+      },
+      "properties": {
+        "id_estacion": "5213",
+        "id_modal": "656",
+        "DENOMINACION": "Colonia de los Ángeles",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/656",
+          "proximos_trenes": "/es/metro_next_trains/modal/656"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.78748,
+          40.41047
+        ]
+      },
+      "properties": {
+        "id_estacion": "5214",
+        "id_modal": "661",
+        "DENOMINACION": "Prado del Rey",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/661",
+          "proximos_trenes": "/es/metro_next_trains/modal/661"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.79252,
+          40.41536
+        ]
+      },
+      "properties": {
+        "id_estacion": "5215",
+        "id_modal": "663",
+        "DENOMINACION": "Somosaguas Sur",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/663",
+          "proximos_trenes": "/es/metro_next_trains/modal/663"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.79874,
+          40.41937
+        ]
+      },
+      "properties": {
+        "id_estacion": "5216",
+        "id_modal": "662",
+        "DENOMINACION": "Somosaguas Centro",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/662",
+          "proximos_trenes": "/es/metro_next_trains/modal/662"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.80447,
+          40.42307
+        ]
+      },
+      "properties": {
+        "id_estacion": "5217",
+        "id_modal": "659",
+        "DENOMINACION": "Pozuelo Oeste",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/659",
+          "proximos_trenes": "/es/metro_next_trains/modal/659"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.80755,
+          40.43058
+        ]
+      },
+      "properties": {
+        "id_estacion": "5219",
+        "id_modal": "654",
+        "DENOMINACION": "Bélgica",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/654",
+          "proximos_trenes": "/es/metro_next_trains/modal/654"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.80162,
+          40.43253
+        ]
+      },
+      "properties": {
+        "id_estacion": "5220",
+        "id_modal": "657",
+        "DENOMINACION": "Dos Castillas",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/657",
+          "proximos_trenes": "/es/metro_next_trains/modal/657"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.79525,
+          40.43338
+        ]
+      },
+      "properties": {
+        "id_estacion": "5221",
+        "id_modal": "655",
+        "DENOMINACION": "Campus de Somosaguas",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/655",
+          "proximos_trenes": "/es/metro_next_trains/modal/655"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.79305,
+          40.43931
+        ]
+      },
+      "properties": {
+        "id_estacion": "5222",
+        "id_modal": "652",
+        "DENOMINACION": "Avenida de Europa",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/652",
+          "proximos_trenes": "/es/metro_next_trains/modal/652"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7912,
+          40.44487
+        ]
+      },
+      "properties": {
+        "id_estacion": "5223",
+        "id_modal": "653",
+        "DENOMINACION": "Berna",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/653",
+          "proximos_trenes": "/es/metro_next_trains/modal/653"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.78591,
+          40.44833
+        ]
+      },
+      "properties": {
+        "id_estacion": "5224",
+        "id_modal": "658",
+        "DENOMINACION": "Estación de Aravaca",
+        "NUMEROLINEAUSUARIO": "2",
+        "LINEA": "ML2",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/658",
+          "proximos_trenes": "/es/metro_next_trains/modal/658"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.77451,
+          40.39698
+        ]
+      },
+      "properties": {
+        "id_estacion": "1016",
+        "id_modal": "468",
+        "DENOMINACION": "Colonia Jardín",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/468",
+          "proximos_trenes": "/es/metro_next_trains/modal/468"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.78399,
+          40.39709
+        ]
+      },
+      "properties": {
+        "id_estacion": "5312",
+        "id_modal": "666",
+        "DENOMINACION": "Ciudad de la Imagen",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/666",
+          "proximos_trenes": "/es/metro_next_trains/modal/666"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.78993,
+          40.39525
+        ]
+      },
+      "properties": {
+        "id_estacion": "5313",
+        "id_modal": "671",
+        "DENOMINACION": "José Isbert",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/671",
+          "proximos_trenes": "/es/metro_next_trains/modal/671"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.79557,
+          40.39455
+        ]
+      },
+      "properties": {
+        "id_estacion": "5314",
+        "id_modal": "667",
+        "DENOMINACION": "Ciudad del Cine",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/667",
+          "proximos_trenes": "/es/metro_next_trains/modal/667"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.80386,
+          40.39688
+        ]
+      },
+      "properties": {
+        "id_estacion": "5315",
+        "id_modal": "668",
+        "DENOMINACION": "Cocheras",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/668",
+          "proximos_trenes": "/es/metro_next_trains/modal/668"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.81675,
+          40.39872
+        ]
+      },
+      "properties": {
+        "id_estacion": "5316",
+        "id_modal": "676",
+        "DENOMINACION": "Retamares",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/676",
+          "proximos_trenes": "/es/metro_next_trains/modal/676"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8358,
+          40.39792
+        ]
+      },
+      "properties": {
+        "id_estacion": "5318",
+        "id_modal": "672",
+        "DENOMINACION": "Montepríncipe",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/672",
+          "proximos_trenes": "/es/metro_next_trains/modal/672"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.83811,
+          40.3942
+        ]
+      },
+      "properties": {
+        "id_estacion": "5319",
+        "id_modal": "678",
+        "DENOMINACION": "Ventorro del Cano",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/678",
+          "proximos_trenes": "/es/metro_next_trains/modal/678"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.84774,
+          40.39502
+        ]
+      },
+      "properties": {
+        "id_estacion": "5320",
+        "id_modal": "674",
+        "DENOMINACION": "Prado del Espino",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/674",
+          "proximos_trenes": "/es/metro_next_trains/modal/674"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.86439,
+          40.39529
+        ]
+      },
+      "properties": {
+        "id_estacion": "5322",
+        "id_modal": "665",
+        "DENOMINACION": "Cantabria",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/665",
+          "proximos_trenes": "/es/metro_next_trains/modal/665"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.87938,
+          40.40196
+        ]
+      },
+      "properties": {
+        "id_estacion": "5324",
+        "id_modal": "669",
+        "DENOMINACION": "Ferial de Boadilla",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/669",
+          "proximos_trenes": "/es/metro_next_trains/modal/669"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.88004,
+          40.40714
+        ]
+      },
+      "properties": {
+        "id_estacion": "5325",
+        "id_modal": "664",
+        "DENOMINACION": "Boadilla Centro",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/664",
+          "proximos_trenes": "/es/metro_next_trains/modal/664"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.88576,
+          40.40564
+        ]
+      },
+      "properties": {
+        "id_estacion": "5326",
+        "id_modal": "673",
+        "DENOMINACION": "Nuevo Mundo",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/673",
+          "proximos_trenes": "/es/metro_next_trains/modal/673"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.89263,
+          40.40513
+        ]
+      },
+      "properties": {
+        "id_estacion": "5327",
+        "id_modal": "677",
+        "DENOMINACION": "Siglo XXI",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/677",
+          "proximos_trenes": "/es/metro_next_trains/modal/677"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.89741,
+          40.40595
+        ]
+      },
+      "properties": {
+        "id_estacion": "5328",
+        "id_modal": "670",
+        "DENOMINACION": "Infante Don Luís",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/670",
+          "proximos_trenes": "/es/metro_next_trains/modal/670"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.90378,
+          40.40777
+        ]
+      },
+      "properties": {
+        "id_estacion": "5329",
+        "id_modal": "675",
+        "DENOMINACION": "Puerta de Boadilla",
+        "NUMEROLINEAUSUARIO": "3",
+        "LINEA": "ML3",
+        "TIPOPARADA": "Metro Ligero",
+        "MUNICIPIO": "Madrid",
+        "layer_type": "estacion",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/675",
+          "proximos_trenes": "/es/metro_next_trains/modal/675"
+        }
+      }
+    }
+  ],
+  "properties": {
+    "layer_type": "metro_ligero",
+    "total_features": 38,
+    "source": "HTML Scraper from Metro Madrid website",
+    "description": "Estaciones de Metro Ligero extraídas de archivos HTML de debug"
+  }
+}

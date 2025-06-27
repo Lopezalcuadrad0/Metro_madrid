@@ -1,0 +1,1800 @@
+{
+  "stations": [
+    {
+      "nombre": "NUEVOS MINISTERIOS",
+      "codigo": "51",
+      "linea": "C-8",
+      "latitud": 40.44662158894824,
+      "longitud": -3.6923440604876765,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": "Personal de atención / taquillas: SI\r\nParking disuasorio: SI"
+    },
+    {
+      "nombre": "RECOLETOS",
+      "codigo": "65",
+      "linea": "C-8",
+      "latitud": 40.42340902295012,
+      "longitud": -3.6908577595028076,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ATOCHA",
+      "codigo": "11",
+      "linea": "C-8",
+      "latitud": 40.40659004384564,
+      "longitud": -3.6893018805661915,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "CHAMARTIN",
+      "codigo": "18",
+      "linea": "C-8",
+      "latitud": 40.47210382500549,
+      "longitud": -3.6824722795015497,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": "Complejo Ferroviario"
+    },
+    {
+      "nombre": "GUADALAJARA",
+      "codigo": "38",
+      "linea": "C-8",
+      "latitud": 40.64408262561063,
+      "longitud": -3.1823900388720445,
+      "municipio": "",
+      "provincia": "19",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Estación RENFE"
+    },
+    {
+      "nombre": "MECO",
+      "codigo": "45",
+      "linea": "C-8",
+      "latitud": 40.534616102981175,
+      "longitud": -3.29865551437522,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SAN FERNANDO",
+      "codigo": "71",
+      "linea": "C-8",
+      "latitud": 40.44266006707045,
+      "longitud": -3.533848609806538,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Con Avda de San Pablo"
+    },
+    {
+      "nombre": "SANTA EUGENIA",
+      "codigo": "75",
+      "linea": "C-8",
+      "latitud": 40.386985575882775,
+      "longitud": -3.60906393170745,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ASAMBLEA DE MADRID-ENTREVIAS",
+      "codigo": "10",
+      "linea": "C-8",
+      "latitud": 40.38167149076706,
+      "longitud": -3.66800400641145,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "AZUQUECA",
+      "codigo": "12",
+      "linea": "C-8",
+      "latitud": 40.561027158828225,
+      "longitud": -3.2654562155762794,
+      "municipio": "",
+      "provincia": "19",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SOTO DEL HENARES",
+      "codigo": "143",
+      "linea": "C-8",
+      "latitud": 40.46352794276594,
+      "longitud": -3.4413394419542813,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ALCALÁ DE HENARES",
+      "codigo": "2",
+      "linea": "C-8",
+      "latitud": 40.489030276674725,
+      "longitud": -3.366335670314045,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Con Calle de Valdetorres"
+    },
+    {
+      "nombre": "ALCALÁ DE HENARES UNIVERSIDAD",
+      "codigo": "3",
+      "linea": "C-8",
+      "latitud": 40.505339030498746,
+      "longitud": -3.3354129781376307,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Pl Sector 20"
+    },
+    {
+      "nombre": "TORREJON DE ARDOZ",
+      "codigo": "81",
+      "linea": "C-8",
+      "latitud": 40.454601489895296,
+      "longitud": -3.4798198074479525,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Con Calle Pamplona"
+    },
+    {
+      "nombre": "VICALVARO",
+      "codigo": "90",
+      "linea": "C-8",
+      "latitud": 40.4013173452897,
+      "longitud": -3.5959286284884495,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "GALAPAGAR-LA NAVATA",
+      "codigo": "33",
+      "linea": "C-8",
+      "latitud": 40.60011361052977,
+      "longitud": -3.981849391242033,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PITIS",
+      "codigo": "58",
+      "linea": "C-8",
+      "latitud": 40.49510377435108,
+      "longitud": -3.725841256099911,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "RAMON Y CAJAL",
+      "codigo": "64",
+      "linea": "C-8",
+      "latitud": 40.48824112515935,
+      "longitud": -3.6947336373996644,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "TORRELODONES",
+      "codigo": "82",
+      "linea": "C-8",
+      "latitud": 40.57451260390746,
+      "longitud": -3.956537627791863,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "VILLALBA",
+      "codigo": "91",
+      "linea": "C-8",
+      "latitud": 40.62636567924939,
+      "longitud": -4.0080952537595955,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ROBLEDO DE CHAVELA",
+      "codigo": "67",
+      "linea": "C-8a",
+      "latitud": 40.520781786360914,
+      "longitud": -4.246711422023377,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SAN YAGO",
+      "codigo": "74",
+      "linea": "C-8a",
+      "latitud": 40.61786503320529,
+      "longitud": -4.031107448146831,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ZARZALEJO",
+      "codigo": "94",
+      "linea": "C-8a",
+      "latitud": 40.53871802074518,
+      "longitud": -4.1581696217010276,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ALPEDRETE",
+      "codigo": "6",
+      "linea": "C-8b",
+      "latitud": 40.65816295230323,
+      "longitud": -4.035058751030534,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "CERCEDILLA",
+      "codigo": "16",
+      "linea": "C-8b",
+      "latitud": 40.73756597492679,
+      "longitud": -4.065904552006554,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Posee Parking sin plazas PMRs"
+    },
+    {
+      "nombre": "COLLADO MEDIANO",
+      "codigo": "20",
+      "linea": "C-8b",
+      "latitud": 40.69275542175365,
+      "longitud": -4.035874643306189,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "MENDEZ ALVARO",
+      "codigo": "46",
+      "linea": "C-1",
+      "latitud": 40.39537835052002,
+      "longitud": -3.678079183668179,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PIRAMIDES",
+      "codigo": "57",
+      "linea": "C-1",
+      "latitud": 40.40259526700968,
+      "longitud": -3.711340410728219,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PRINCIPE PIO",
+      "codigo": "61",
+      "linea": "C-1",
+      "latitud": 40.42107161754798,
+      "longitud": -3.720261210541066,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": "Con Vía Ferrocarril"
+    },
+    {
+      "nombre": "FUENTE DE LA MORA",
+      "codigo": "133",
+      "linea": "C-1",
+      "latitud": 40.48474516881835,
+      "longitud": -3.6628230519246707,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "AEROPUERTO T4",
+      "codigo": "142",
+      "linea": "C-1",
+      "latitud": 40.49176752615543,
+      "longitud": -3.593331461481845,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "VALDEBEBAS",
+      "codigo": "144",
+      "linea": "C-1",
+      "latitud": 40.482301537257726,
+      "longitud": -3.616424678134467,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "DELICIAS",
+      "codigo": "25",
+      "linea": "C-1",
+      "latitud": 40.400369736251186,
+      "longitud": -3.6927678828593584,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "POZO, EL",
+      "codigo": "59",
+      "linea": "C-2",
+      "latitud": 40.375902052755265,
+      "longitud": -3.656225994392949,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "GARENA, LA",
+      "codigo": "106",
+      "linea": "C-2",
+      "latitud": 40.48043251257941,
+      "longitud": -3.393168738789986,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "E",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "COSLADA",
+      "codigo": "22",
+      "linea": "C-2",
+      "latitud": 40.42373528575365,
+      "longitud": -3.561136198051028,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": "Con Trva de León Felipe"
+    },
+    {
+      "nombre": "VALLECAS",
+      "codigo": "87",
+      "linea": "C-2",
+      "latitud": 40.38221377788358,
+      "longitud": -3.6245516982631028,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "E",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "GETAFE INDUSTRIAL",
+      "codigo": "35",
+      "linea": "C-3",
+      "latitud": 40.3054769309777,
+      "longitud": -3.7076941279913216,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Frente al nº 13"
+    },
+    {
+      "nombre": "MATAS, LAS",
+      "codigo": "44",
+      "linea": "C-3",
+      "latitud": 40.55251968390584,
+      "longitud": -3.896832146328068,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PINAR DE LAS ROZAS",
+      "codigo": "55",
+      "linea": "C-3",
+      "latitud": 40.522300184550495,
+      "longitud": -3.8821620895921254,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PINTO",
+      "codigo": "56",
+      "linea": "C-3",
+      "latitud": 40.24279049593359,
+      "longitud": -3.7037375583151553,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SAN CRISTOBAL DE LOS ANGELES",
+      "codigo": "69",
+      "linea": "C-3",
+      "latitud": 40.34236284837366,
+      "longitud": -3.683845962904132,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SAN CRISTOBAL INDUSTRIAL",
+      "codigo": "70",
+      "linea": "C-3",
+      "latitud": 40.331908727901904,
+      "longitud": -3.69871853110086,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Ndup-E"
+    },
+    {
+      "nombre": "SANTA MARIA DE LA ALAMEDA",
+      "codigo": "76",
+      "linea": "C-3",
+      "latitud": 40.56892357599901,
+      "longitud": -4.269331271759294,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "CASAR, EL",
+      "codigo": "103",
+      "linea": "C-3",
+      "latitud": 40.3184661528431,
+      "longitud": -3.7098354105204523,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SOL",
+      "codigo": "122",
+      "linea": "C-3",
+      "latitud": 40.41684551098166,
+      "longitud": -3.7030944599344244,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "CIEMPOZUELOS",
+      "codigo": "19",
+      "linea": "C-3",
+      "latitud": 40.15906287803533,
+      "longitud": -3.6100279137781737,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ESCORIAL, EL",
+      "codigo": "29",
+      "linea": "C-3",
+      "latitud": 40.58526715326845,
+      "longitud": -4.13233067695818,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ARANJUEZ",
+      "codigo": "8",
+      "linea": "C-3",
+      "latitud": 40.03482994318064,
+      "longitud": -3.6183084421231544,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "VALDEMORO",
+      "codigo": "86",
+      "linea": "C-3",
+      "latitud": 40.196042129958265,
+      "longitud": -3.6648158560517268,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "VILLAVERDE BAJO",
+      "codigo": "93",
+      "linea": "C-3",
+      "latitud": 40.35263918351553,
+      "longitud": -3.68398281299011,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ZORRERAS, LAS",
+      "codigo": "96",
+      "linea": "C-3",
+      "latitud": 40.609412775561985,
+      "longitud": -4.0460551170960715,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "GETAFE CENTRO",
+      "codigo": "34",
+      "linea": "C-4a",
+      "latitud": 40.31009561643505,
+      "longitud": -3.733941778087537,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "GETAFE SECTOR 3",
+      "codigo": "36",
+      "linea": "C-4a",
+      "latitud": 40.2882438378771,
+      "longitud": -3.7373414868572583,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ALCOBENDAS-S.S. DE LOS REYES",
+      "codigo": "4",
+      "linea": "C-4a",
+      "latitud": 40.546567955952874,
+      "longitud": -3.6351867666972284,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "MARGARITAS-UNIVERSIDAD, LAS",
+      "codigo": "43",
+      "linea": "C-4a",
+      "latitud": 40.32304243382564,
+      "longitud": -3.7273736556732797,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PARLA",
+      "codigo": "53",
+      "linea": "C-4a",
+      "latitud": 40.240766841417184,
+      "longitud": -3.7693629409269365,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "CANTOBLANCO UNIVERSIDAD",
+      "codigo": "15",
+      "linea": "C-4a",
+      "latitud": 40.543783870011026,
+      "longitud": -3.700344071491919,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "FUENCARRAL",
+      "codigo": "31",
+      "linea": "C-4a",
+      "latitud": 40.501558788124655,
+      "longitud": -3.682336985855194,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "UNIVERSIDAD P. COMILLAS",
+      "codigo": "84",
+      "linea": "C-4a",
+      "latitud": 40.55406096890646,
+      "longitud": -3.683339932011165,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "VALDELASFUENTES",
+      "codigo": "85",
+      "linea": "C-4a",
+      "latitud": 40.54744527773161,
+      "longitud": -3.654335295160764,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "VILLAVERDE ALTO",
+      "codigo": "92",
+      "linea": "C-4a",
+      "latitud": 40.341226656735934,
+      "longitud": -3.7119279452549283,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "GOLOSO, EL",
+      "codigo": "37",
+      "linea": "C-4b",
+      "latitud": 40.55857253359992,
+      "longitud": -3.714070935163339,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "El goloso. Madrid (MADRID-FUENCARRAL) (MADRID)"
+    },
+    {
+      "nombre": "COLMENAR VIEJO",
+      "codigo": "21",
+      "linea": "C-4b",
+      "latitud": 40.644970797108655,
+      "longitud": -3.775731731574342,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "TRES CANTOS",
+      "codigo": "83",
+      "linea": "C-4b",
+      "latitud": 40.59843994143789,
+      "longitud": -3.7156442112225814,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "FUENLABRADA",
+      "codigo": "32",
+      "linea": "C-5",
+      "latitud": 40.28267733320006,
+      "longitud": -3.798854007652494,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Frente a Paseo Estación"
+    },
+    {
+      "nombre": "LAGUNA",
+      "codigo": "40",
+      "linea": "C-5",
+      "latitud": 40.399176011370564,
+      "longitud": -3.7442211893173463,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "LEGANES",
+      "codigo": "41",
+      "linea": "C-5",
+      "latitud": 40.32898560575864,
+      "longitud": -3.7714809408525976,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "MOSTOLES",
+      "codigo": "48",
+      "linea": "C-5",
+      "latitud": 40.32850297573885,
+      "longitud": -3.863492377242892,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "MOSTOLES EL SOTO",
+      "codigo": "49",
+      "linea": "C-5",
+      "latitud": 40.33089245126826,
+      "longitud": -3.882337056033047,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ALCORCON",
+      "codigo": "5",
+      "linea": "C-5",
+      "latitud": 40.350082294564956,
+      "longitud": -3.831731862924151,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "E",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ORCASITAS",
+      "codigo": "52",
+      "linea": "C-5",
+      "latitud": 40.36690522954467,
+      "longitud": -3.7044165807753933,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PUENTE ALCOCER",
+      "codigo": "62",
+      "linea": "C-5",
+      "latitud": 40.350283415323226,
+      "longitud": -3.7051605745241374,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "RETAMAS, LAS",
+      "codigo": "66",
+      "linea": "C-5",
+      "latitud": 40.34189213919542,
+      "longitud": -3.8424209576101442,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "E",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ALUCHE",
+      "codigo": "7",
+      "linea": "C-5",
+      "latitud": 40.385626627401294,
+      "longitud": -3.760744561479329,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SAN JOSE DE VALDERAS",
+      "codigo": "72",
+      "linea": "C-5",
+      "latitud": 40.35653328760626,
+      "longitud": -3.815884286987004,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "SERNA, LA",
+      "codigo": "77",
+      "linea": "C-5",
+      "latitud": 40.29672177745728,
+      "longitud": -3.7924755021617194,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "AGUILAS, LAS",
+      "codigo": "1",
+      "linea": "C-5",
+      "latitud": 40.38118815017889,
+      "longitud": -3.7802731532655063,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "HUMANES",
+      "codigo": "104",
+      "linea": "C-5",
+      "latitud": 40.25564582985341,
+      "longitud": -3.828465169614709,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PARQUE POLVORANCA",
+      "codigo": "105",
+      "linea": "C-5",
+      "latitud": 40.312504103335655,
+      "longitud": -3.7833438840071842,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "CUATRO VIENTOS",
+      "codigo": "24",
+      "linea": "C-5",
+      "latitud": 40.37770600950501,
+      "longitud": -3.791434776185084,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "DOCE DE OCTUBRE",
+      "codigo": "26",
+      "linea": "C-5",
+      "latitud": 40.37895563577694,
+      "longitud": -3.698613514001797,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "EMBAJADORES",
+      "codigo": "28",
+      "linea": "C-5",
+      "latitud": 40.40512523039133,
+      "longitud": -3.7026243551752955,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "FANJUL",
+      "codigo": "30",
+      "linea": "C-5",
+      "latitud": 40.38365125114092,
+      "longitud": -3.768564148677327,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "I",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ZARZAQUEMADA",
+      "codigo": "95",
+      "linea": "C-5",
+      "latitud": 40.34085438464729,
+      "longitud": -3.7483034330063103,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "E",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "MAJADAHONDA",
+      "codigo": "42",
+      "linea": "C-7a",
+      "latitud": 40.474278108070905,
+      "longitud": -3.845342717612877,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "POZUELO",
+      "codigo": "60",
+      "linea": "C-7a",
+      "latitud": 40.44726854094544,
+      "longitud": -3.8001193971667355,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "ROZAS, LAS",
+      "codigo": "68",
+      "linea": "C-7a",
+      "latitud": 40.49423117800699,
+      "longitud": -3.868123357025696,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "BARRIAL-C.COM.POZUELO, EL",
+      "codigo": "13",
+      "linea": "C-7a",
+      "latitud": 40.46537297527161,
+      "longitud": -3.8077378665593686,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Con Vía Ferrocarril"
+    },
+    {
+      "nombre": "ARAVACA",
+      "codigo": "9",
+      "linea": "C-7a",
+      "latitud": 40.44832806496564,
+      "longitud": -3.785858255907955,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": "Con Calle de las Rosas de Aravaca"
+    },
+    {
+      "nombre": "MOLINOS, LOS",
+      "codigo": "47",
+      "linea": "C-8",
+      "latitud": 40.707344053207386,
+      "longitud": -4.0668092466473205,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "NEGRALES, LOS",
+      "codigo": "50",
+      "linea": "C-8",
+      "latitud": 40.6385765324213,
+      "longitud": -4.021894427639779,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "PUERTO NAVACERRADA",
+      "codigo": "63",
+      "linea": "C-9",
+      "latitud": 40.78440948322582,
+      "longitud": -4.004734713529758,
+      "municipio": "",
+      "provincia": "28",
+      "situacion": "S",
+      "tipo": "U",
+      "observaciones": null
+    },
+    {
+      "nombre": "COTOS",
+      "codigo": "23",
+      "linea": "C-9",
+      "latitud": 40.82225990013424,
+      "longitud": -3.9645203402910494,
+      "municipio": "",
+      "provincia": "40",
+      "situacion": "S",
+      "tipo": "C",
+      "observaciones": "Con Ctra a Valdesquí"
+    }
+  ],
+  "lines": [],
+  "layers": {
+    "cercanias_linea_C_8": {
+      "id": "cercanias_linea_C_8",
+      "name": "Cercanías C-8",
+      "type": "cercanias",
+      "line_type": "C-8",
+      "visible": false,
+      "stations": [
+        "51",
+        "65",
+        "11",
+        "18",
+        "38",
+        "45",
+        "71",
+        "75",
+        "10",
+        "12",
+        "143",
+        "2",
+        "3",
+        "81",
+        "90",
+        "33",
+        "58",
+        "64",
+        "82",
+        "91",
+        "47",
+        "50"
+      ],
+      "color": "#808080",
+      "icon": "/static/logos/Cercanias/Cercanías_C-8.svg.png",
+      "paths": [
+        [
+          [
+            40.44662158894824,
+            -3.6923440604876765
+          ],
+          [
+            40.42340902295012,
+            -3.6908577595028076
+          ],
+          [
+            40.40659004384564,
+            -3.6893018805661915
+          ],
+          [
+            40.47210382500549,
+            -3.6824722795015497
+          ],
+          [
+            40.64408262561063,
+            -3.1823900388720445
+          ],
+          [
+            40.534616102981175,
+            -3.29865551437522
+          ],
+          [
+            40.44266006707045,
+            -3.533848609806538
+          ],
+          [
+            40.386985575882775,
+            -3.60906393170745
+          ],
+          [
+            40.38167149076706,
+            -3.66800400641145
+          ],
+          [
+            40.561027158828225,
+            -3.2654562155762794
+          ],
+          [
+            40.46352794276594,
+            -3.4413394419542813
+          ],
+          [
+            40.489030276674725,
+            -3.366335670314045
+          ],
+          [
+            40.505339030498746,
+            -3.3354129781376307
+          ],
+          [
+            40.454601489895296,
+            -3.4798198074479525
+          ],
+          [
+            40.4013173452897,
+            -3.5959286284884495
+          ],
+          [
+            40.60011361052977,
+            -3.981849391242033
+          ],
+          [
+            40.49510377435108,
+            -3.725841256099911
+          ],
+          [
+            40.48824112515935,
+            -3.6947336373996644
+          ],
+          [
+            40.57451260390746,
+            -3.956537627791863
+          ],
+          [
+            40.62636567924939,
+            -4.0080952537595955
+          ],
+          [
+            40.707344053207386,
+            -4.0668092466473205
+          ],
+          [
+            40.6385765324213,
+            -4.021894427639779
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_8a": {
+      "id": "cercanias_linea_C_8a",
+      "name": "Cercanías C-8a",
+      "type": "cercanias",
+      "line_type": "C-8a",
+      "visible": false,
+      "stations": [
+        "67",
+        "74",
+        "94"
+      ],
+      "color": "#B2B2B2",
+      "icon": "/static/logos/Cercanias/Cercanías_C-8a.svg.png",
+      "paths": [
+        [
+          [
+            40.520781786360914,
+            -4.246711422023377
+          ],
+          [
+            40.61786503320529,
+            -4.031107448146831
+          ],
+          [
+            40.53871802074518,
+            -4.1581696217010276
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_8b": {
+      "id": "cercanias_linea_C_8b",
+      "name": "Cercanías C-8b",
+      "type": "cercanias",
+      "line_type": "C-8b",
+      "visible": false,
+      "stations": [
+        "6",
+        "16",
+        "20"
+      ],
+      "color": "#E20714",
+      "icon": "/static/logos/Cercanias/Cercanías_C-8b.svg.png",
+      "paths": [
+        [
+          [
+            40.65816295230323,
+            -4.035058751030534
+          ],
+          [
+            40.73756597492679,
+            -4.065904552006554
+          ],
+          [
+            40.69275542175365,
+            -4.035874643306189
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_1": {
+      "id": "cercanias_linea_C_1",
+      "name": "Cercanías C-1",
+      "type": "cercanias",
+      "line_type": "C-1",
+      "visible": false,
+      "stations": [
+        "46",
+        "57",
+        "61",
+        "133",
+        "142",
+        "144",
+        "25"
+      ],
+      "color": "#70C5E8",
+      "icon": "/static/logos/Cercanias/Cercanías_C-1.svg.png",
+      "paths": [
+        [
+          [
+            40.39537835052002,
+            -3.678079183668179
+          ],
+          [
+            40.40259526700968,
+            -3.711340410728219
+          ],
+          [
+            40.42107161754798,
+            -3.720261210541066
+          ],
+          [
+            40.48474516881835,
+            -3.6628230519246707
+          ],
+          [
+            40.49176752615543,
+            -3.593331461481845
+          ],
+          [
+            40.482301537257726,
+            -3.616424678134467
+          ],
+          [
+            40.400369736251186,
+            -3.6927678828593584
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_2": {
+      "id": "cercanias_linea_C_2",
+      "name": "Cercanías C-2",
+      "type": "cercanias",
+      "line_type": "C-2",
+      "visible": false,
+      "stations": [
+        "59",
+        "106",
+        "22",
+        "87"
+      ],
+      "color": "#008F3E",
+      "icon": "/static/logos/Cercanias/Cercanías_C-2.svg.png",
+      "paths": [
+        [
+          [
+            40.375902052755265,
+            -3.656225994392949
+          ],
+          [
+            40.48043251257941,
+            -3.393168738789986
+          ],
+          [
+            40.42373528575365,
+            -3.561136198051028
+          ],
+          [
+            40.38221377788358,
+            -3.6245516982631028
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_3": {
+      "id": "cercanias_linea_C_3",
+      "name": "Cercanías C-3",
+      "type": "cercanias",
+      "line_type": "C-3",
+      "visible": false,
+      "stations": [
+        "35",
+        "44",
+        "55",
+        "56",
+        "69",
+        "70",
+        "76",
+        "103",
+        "122",
+        "19",
+        "29",
+        "8",
+        "86",
+        "93",
+        "96"
+      ],
+      "color": "#9B4782",
+      "icon": "/static/logos/Cercanias/Cercanías_C-3.svg.png",
+      "paths": [
+        [
+          [
+            40.3054769309777,
+            -3.7076941279913216
+          ],
+          [
+            40.55251968390584,
+            -3.896832146328068
+          ],
+          [
+            40.522300184550495,
+            -3.8821620895921254
+          ],
+          [
+            40.24279049593359,
+            -3.7037375583151553
+          ],
+          [
+            40.34236284837366,
+            -3.683845962904132
+          ],
+          [
+            40.331908727901904,
+            -3.69871853110086
+          ],
+          [
+            40.56892357599901,
+            -4.269331271759294
+          ],
+          [
+            40.3184661528431,
+            -3.7098354105204523
+          ],
+          [
+            40.41684551098166,
+            -3.7030944599344244
+          ],
+          [
+            40.15906287803533,
+            -3.6100279137781737
+          ],
+          [
+            40.58526715326845,
+            -4.13233067695818
+          ],
+          [
+            40.03482994318064,
+            -3.6183084421231544
+          ],
+          [
+            40.196042129958265,
+            -3.6648158560517268
+          ],
+          [
+            40.35263918351553,
+            -3.68398281299011
+          ],
+          [
+            40.609412775561985,
+            -4.0460551170960715
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_4a": {
+      "id": "cercanias_linea_C_4a",
+      "name": "Cercanías C-4a",
+      "type": "cercanias",
+      "line_type": "C-4a",
+      "visible": false,
+      "stations": [
+        "34",
+        "36",
+        "4",
+        "43",
+        "53",
+        "15",
+        "31",
+        "84",
+        "85",
+        "92"
+      ],
+      "color": "#004E98",
+      "icon": "/static/logos/Cercanias/Cercanías_C-4a.svg.png",
+      "paths": [
+        [
+          [
+            40.31009561643505,
+            -3.733941778087537
+          ],
+          [
+            40.2882438378771,
+            -3.7373414868572583
+          ],
+          [
+            40.546567955952874,
+            -3.6351867666972284
+          ],
+          [
+            40.32304243382564,
+            -3.7273736556732797
+          ],
+          [
+            40.240766841417184,
+            -3.7693629409269365
+          ],
+          [
+            40.543783870011026,
+            -3.700344071491919
+          ],
+          [
+            40.501558788124655,
+            -3.682336985855194
+          ],
+          [
+            40.55406096890646,
+            -3.683339932011165
+          ],
+          [
+            40.54744527773161,
+            -3.654335295160764
+          ],
+          [
+            40.341226656735934,
+            -3.7119279452549283
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_4b": {
+      "id": "cercanias_linea_C_4b",
+      "name": "Cercanías C-4b",
+      "type": "cercanias",
+      "line_type": "C-4b",
+      "visible": false,
+      "stations": [
+        "37",
+        "21",
+        "83"
+      ],
+      "color": "#004E98",
+      "icon": "/static/logos/Cercanias/Cercanías_C-4b.svg.png",
+      "paths": [
+        [
+          [
+            40.55857253359992,
+            -3.714070935163339
+          ],
+          [
+            40.644970797108655,
+            -3.775731731574342
+          ],
+          [
+            40.59843994143789,
+            -3.7156442112225814
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_5": {
+      "id": "cercanias_linea_C_5",
+      "name": "Cercanías C-5",
+      "type": "cercanias",
+      "line_type": "C-5",
+      "visible": false,
+      "stations": [
+        "32",
+        "40",
+        "41",
+        "48",
+        "49",
+        "5",
+        "52",
+        "62",
+        "66",
+        "7",
+        "72",
+        "77",
+        "1",
+        "104",
+        "105",
+        "24",
+        "26",
+        "28",
+        "30",
+        "95"
+      ],
+      "color": "#F2C500",
+      "icon": "/static/logos/Cercanias/Cercanías_C-5.svg.png",
+      "paths": [
+        [
+          [
+            40.28267733320006,
+            -3.798854007652494
+          ],
+          [
+            40.399176011370564,
+            -3.7442211893173463
+          ],
+          [
+            40.32898560575864,
+            -3.7714809408525976
+          ],
+          [
+            40.32850297573885,
+            -3.863492377242892
+          ],
+          [
+            40.33089245126826,
+            -3.882337056033047
+          ],
+          [
+            40.350082294564956,
+            -3.831731862924151
+          ],
+          [
+            40.36690522954467,
+            -3.7044165807753933
+          ],
+          [
+            40.350283415323226,
+            -3.7051605745241374
+          ],
+          [
+            40.34189213919542,
+            -3.8424209576101442
+          ],
+          [
+            40.385626627401294,
+            -3.760744561479329
+          ],
+          [
+            40.35653328760626,
+            -3.815884286987004
+          ],
+          [
+            40.29672177745728,
+            -3.7924755021617194
+          ],
+          [
+            40.38118815017889,
+            -3.7802731532655063
+          ],
+          [
+            40.25564582985341,
+            -3.828465169614709
+          ],
+          [
+            40.312504103335655,
+            -3.7833438840071842
+          ],
+          [
+            40.37770600950501,
+            -3.791434776185084
+          ],
+          [
+            40.37895563577694,
+            -3.698613514001797
+          ],
+          [
+            40.40512523039133,
+            -3.7026243551752955
+          ],
+          [
+            40.38365125114092,
+            -3.768564148677327
+          ],
+          [
+            40.34085438464729,
+            -3.7483034330063103
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_7a": {
+      "id": "cercanias_linea_C_7a",
+      "name": "Cercanías C-7a",
+      "type": "cercanias",
+      "line_type": "C-7a",
+      "visible": false,
+      "stations": [
+        "42",
+        "60",
+        "68",
+        "13",
+        "9"
+      ],
+      "color": "#E20714",
+      "icon": "/static/logos/Cercanias/Cercanías_C-7a.svg.png",
+      "paths": [
+        [
+          [
+            40.474278108070905,
+            -3.845342717612877
+          ],
+          [
+            40.44726854094544,
+            -3.8001193971667355
+          ],
+          [
+            40.49423117800699,
+            -3.868123357025696
+          ],
+          [
+            40.46537297527161,
+            -3.8077378665593686
+          ],
+          [
+            40.44832806496564,
+            -3.785858255907955
+          ]
+        ]
+      ]
+    },
+    "cercanias_linea_C_9": {
+      "id": "cercanias_linea_C_9",
+      "name": "Cercanías C-9",
+      "type": "cercanias",
+      "line_type": "C-9",
+      "visible": false,
+      "stations": [
+        "63",
+        "23"
+      ],
+      "color": "#F09600",
+      "icon": "/static/logos/Cercanias/Cercanías_C-9.svg.png",
+      "paths": [
+        [
+          [
+            40.78440948322582,
+            -4.004734713529758
+          ],
+          [
+            40.82225990013424,
+            -3.9645203402910494
+          ]
+        ]
+      ]
+    }
+  },
+  "colors": {
+    "C-1": "#70C5E8",
+    "C-2": "#008F3E",
+    "C-3": "#9B4782",
+    "C-4": "#004E98",
+    "C-4a": "#004E98",
+    "C-4b": "#004E98",
+    "C-5": "#F2C500",
+    "C-7": "#DE1E40",
+    "C-8": "#808080",
+    "C-8a": "#B2B2B2",
+    "C-9": "#F09600",
+    "C-10": "#B0D136",
+    "1": "#70C5E8",
+    "2": "#008F3E",
+    "3": "#9B4782",
+    "4": "#004E98",
+    "5": "#F2C500",
+    "7": "#DE1E40",
+    "8": "#808080",
+    "9": "#F09600",
+    "10": "#B0D136"
+  },
+  "metadata": {
+    "name": "Cercanías Madrid",
+    "version": "2.0",
+    "total_stations": 94,
+    "total_lines": 11,
+    "description": "Datos completos de Cercanías Madrid con estaciones y capas por línea"
+  }
+}

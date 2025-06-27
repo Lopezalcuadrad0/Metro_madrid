@@ -1,0 +1,7764 @@
+{
+  "stations": [
+    {
+      "id": "arroyofresno",
+      "name": "ARROYOFRESNO",
+      "lat": 40.49089826566541,
+      "lon": -3.7260354006891747,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0722",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7260354006891747,
+        40.49089826566541
+      ]
+    },
+    {
+      "id": "rivas_urbanizaciones",
+      "name": "RIVAS URBANIZACIONES",
+      "lat": 40.366771502577514,
+      "lon": -3.5472758067455525,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0924",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5472758067455525,
+        40.366771502577514
+      ]
+    },
+    {
+      "id": "noviciado",
+      "name": "NOVICIADO",
+      "lat": 40.424842233578424,
+      "lon": -3.7074190426136306,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0211",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7074190426136306,
+        40.424842233578424
+      ]
+    },
+    {
+      "id": "lago",
+      "name": "LAGO",
+      "lat": 40.416414110991504,
+      "lon": -3.7356310593736235,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1013",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7356310593736235,
+        40.416414110991504
+      ]
+    },
+    {
+      "id": "batan",
+      "name": "BATAN",
+      "lat": 40.40786020840237,
+      "lon": -3.7531099371759526,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1014",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7531099371759526,
+        40.40786020840237
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.41687606089402,
+      "lon": -3.703261648575282,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0112",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703261648575282,
+        40.41687606089402
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.4168474580948,
+      "lon": -3.7032613507552123,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0208",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7032613507552123,
+        40.4168474580948
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.41681647165373,
+      "lon": -3.7032610281165037,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0306",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7032610281165037,
+        40.41681647165373
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.446621215182525,
+      "lon": -3.6924064585114573,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0618",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6924064585114573,
+        40.446621215182525
+      ]
+    },
+    {
+      "id": "estrella",
+      "name": "ESTRELLA",
+      "lat": 40.41147221920649,
+      "lon": -3.6617852707606366,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0915",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6617852707606366,
+        40.41147221920649
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.44658546516346,
+      "lon": -3.6924060916320443,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1007",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6924060916320443,
+        40.44658546516346
+      ]
+    },
+    {
+      "id": "lista",
+      "name": "LISTA",
+      "lat": 40.429168520255786,
+      "lon": -3.675409822278686,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0409",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.675409822278686,
+        40.429168520255786
+      ]
+    },
+    {
+      "id": "la_poveda",
+      "name": "LA POVEDA",
+      "lat": 40.31901573079284,
+      "lon": -3.477447350588455,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0927",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.477447350588455,
+        40.31901573079284
+      ]
+    },
+    {
+      "id": "empalme",
+      "name": "EMPALME",
+      "lat": 40.39057255783158,
+      "lon": -3.765347875572339,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0528",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.765347875572339,
+        40.39057255783158
+      ]
+    },
+    {
+      "id": "manoteras",
+      "name": "MANOTERAS",
+      "lat": 40.476874226693596,
+      "lon": -3.6628954758911214,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0422",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6628954758911214,
+        40.476874226693596
+      ]
+    },
+    {
+      "id": "san_fermin_orcasur",
+      "name": "SAN FERMIN-ORCASUR",
+      "lat": 40.36999093055091,
+      "lon": -3.6941764145036964,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0353",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6941764145036964,
+        40.36999093055091
+      ]
+    },
+    {
+      "id": "congosto",
+      "name": "CONGOSTO",
+      "lat": 40.37238237036666,
+      "lon": -3.6188413501245416,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0127",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6188413501245416,
+        40.37238237036666
+      ]
+    },
+    {
+      "id": "ciudad_de_los_angeles",
+      "name": "CIUDAD DE LOS ANGELES",
+      "lat": 40.359585428137,
+      "lon": -3.6936264441706634,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0354",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6936264441706634,
+        40.359585428137
+      ]
+    },
+    {
+      "id": "san_cristobal",
+      "name": "SAN CRISTOBAL",
+      "lat": 40.34154193600964,
+      "lon": -3.6931802991863165,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0356",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6931802991863165,
+        40.34154193600964
+      ]
+    },
+    {
+      "id": "puerta_del_sur",
+      "name": "PUERTA DEL SUR",
+      "lat": 40.34543086550063,
+      "lon": -3.8124891797456804,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1201",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.8124891797456804,
+        40.34543086550063
+      ]
+    },
+    {
+      "id": "coslada_central",
+      "name": "COSLADA CENTRAL",
+      "lat": 40.42373620597773,
+      "lon": -3.5611923494996556,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0755",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5611923494996556,
+        40.42373620597773
+      ]
+    },
+    {
+      "id": "garcia_noblejas",
+      "name": "GARCIA NOBLEJAS",
+      "lat": 40.428423190545146,
+      "lon": -3.633299465727318,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0704",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.633299465727318,
+        40.428423190545146
+      ]
+    },
+    {
+      "id": "barrio_de_la_concepcion",
+      "name": "BARRIO DE LA CONCEPCION",
+      "lat": 40.439099399993054,
+      "lon": -3.6520040012947503,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0707",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6520040012947503,
+        40.439099399993054
+      ]
+    },
+    {
+      "id": "anton_martin",
+      "name": "ANTON MARTIN",
+      "lat": 40.41246356569,
+      "lon": -3.6993729633448895,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0114",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6993729633448895,
+        40.41246356569
+      ]
+    },
+    {
+      "id": "gregorio_mara_on",
+      "name": "GREGORIO MARAÑON",
+      "lat": 40.43825099442897,
+      "lon": -3.6914828621190114,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0711",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6914828621190114,
+        40.43825099442897
+      ]
+    },
+    {
+      "id": "alonso_cano",
+      "name": "ALONSO CANO",
+      "lat": 40.43837537611044,
+      "lon": -3.6992456432372576,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0712",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6992456432372576,
+        40.43837537611044
+      ]
+    },
+    {
+      "id": "francos_rodriguez",
+      "name": "FRANCOS RODRIGUEZ",
+      "lat": 40.45648182077827,
+      "lon": -3.712386672198295,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0716",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.712386672198295,
+        40.45648182077827
+      ]
+    },
+    {
+      "id": "antonio_machado",
+      "name": "ANTONIO MACHADO",
+      "lat": 40.47021772039073,
+      "lon": -3.7176948552412226,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0718",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7176948552412226,
+        40.47021772039073
+      ]
+    },
+    {
+      "id": "arganda_del_rey",
+      "name": "ARGANDA DEL REY",
+      "lat": 40.303669277437,
+      "lon": -3.447518960780649,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0928",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.447518960780649,
+        40.303669277437
+      ]
+    },
+    {
+      "id": "pe_agrande",
+      "name": "PEÑAGRANDE",
+      "lat": 40.47592352024965,
+      "lon": -3.715824157912478,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0719",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715824157912478,
+        40.47592352024965
+      ]
+    },
+    {
+      "id": "herrera_oria",
+      "name": "HERRERA ORIA",
+      "lat": 40.48466278015302,
+      "lon": -3.70751021303079,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0901",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.70751021303079,
+        40.48466278015302
+      ]
+    },
+    {
+      "id": "barrio_del_pilar",
+      "name": "BARRIO DEL PILAR",
+      "lat": 40.47688906880558,
+      "lon": -3.703164503841757,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0902",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703164503841757,
+        40.47688906880558
+      ]
+    },
+    {
+      "id": "cuatro_vientos",
+      "name": "CUATRO VIENTOS",
+      "lat": 40.37770688876972,
+      "lon": -3.7915151998735666,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1019",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7915151998735666,
+        40.37770688876972
+      ]
+    },
+    {
+      "id": "cuatro_caminos",
+      "name": "CUATRO CAMINOS",
+      "lat": 40.44697395278304,
+      "lon": -3.703974771978261,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0106",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703974771978261,
+        40.44697395278304
+      ]
+    },
+    {
+      "id": "buenos_aires",
+      "name": "BUENOS AIRES",
+      "lat": 40.39156287721576,
+      "lon": -3.6539061229836958,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0122",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6539061229836958,
+        40.39156287721576
+      ]
+    },
+    {
+      "id": "puente_de_vallecas",
+      "name": "PUENTE DE VALLECAS",
+      "lat": 40.39819215100294,
+      "lon": -3.669058999478586,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0119",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.669058999478586,
+        40.39819215100294
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.41687606089402,
+      "lon": -3.703261648575282,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0112",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703261648575282,
+        40.41687606089402
+      ]
+    },
+    {
+      "id": "tribunal",
+      "name": "TRIBUNAL",
+      "lat": 40.42618539559021,
+      "lon": -3.70109984950459,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0110",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.70109984950459,
+        40.42618539559021
+      ]
+    },
+    {
+      "id": "tirso_de_molina",
+      "name": "TIRSO DE MOLINA",
+      "lat": 40.412348094110165,
+      "lon": -3.704655268799714,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0113",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704655268799714,
+        40.412348094110165
+      ]
+    },
+    {
+      "id": "rios_rosas",
+      "name": "RIOS ROSAS",
+      "lat": 40.44197535635587,
+      "lon": -3.701328481177294,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0107",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.701328481177294,
+        40.44197535635587
+      ]
+    },
+    {
+      "id": "pinar_de_chamartin",
+      "name": "PINAR DE CHAMARTIN",
+      "lat": 40.48013997815096,
+      "lon": -3.666804481448275,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0153",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.666804481448275,
+        40.48013997815096
+      ]
+    },
+    {
+      "id": "congosto",
+      "name": "CONGOSTO",
+      "lat": 40.37238237036666,
+      "lon": -3.6188413501245416,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0127",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6188413501245416,
+        40.37238237036666
+      ]
+    },
+    {
+      "id": "anton_martin",
+      "name": "ANTON MARTIN",
+      "lat": 40.41246356569,
+      "lon": -3.6993729633448895,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0114",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6993729633448895,
+        40.41246356569
+      ]
+    },
+    {
+      "id": "bilbao",
+      "name": "BILBAO",
+      "lat": 40.42905602410363,
+      "lon": -3.7021820657784166,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0109",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7021820657784166,
+        40.42905602410363
+      ]
+    },
+    {
+      "id": "las_suertes",
+      "name": "LAS SUERTES",
+      "lat": 40.36322802476594,
+      "lon": -3.5995326897288193,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0129",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5995326897288193,
+        40.36322802476594
+      ]
+    },
+    {
+      "id": "valdecarros",
+      "name": "VALDECARROS",
+      "lat": 40.360068133185166,
+      "lon": -3.59316035499877,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0130",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.59316035499877,
+        40.360068133185166
+      ]
+    },
+    {
+      "id": "iglesia",
+      "name": "IGLESIA",
+      "lat": 40.434923478284944,
+      "lon": -3.698979992348473,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0108",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.698979992348473,
+        40.434923478284944
+      ]
+    },
+    {
+      "id": "sierra_de_guadalupe",
+      "name": "SIERRA DE GUADALUPE",
+      "lat": 40.3821642503006,
+      "lon": -3.6247174701487794,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0125",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6247174701487794,
+        40.3821642503006
+      ]
+    },
+    {
+      "id": "gran_via",
+      "name": "GRAN VIA",
+      "lat": 40.420008279509474,
+      "lon": -3.701804154062708,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0111",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.701804154062708,
+        40.420008279509474
+      ]
+    },
+    {
+      "id": "bambu",
+      "name": "BAMBU",
+      "lat": 40.47681536116508,
+      "lon": -3.6763674414711556,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0152",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6763674414711556,
+        40.47681536116508
+      ]
+    },
+    {
+      "id": "valdeacederas",
+      "name": "VALDEACEDERAS",
+      "lat": 40.46442417859868,
+      "lon": -3.6950620375087544,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0102",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6950620375087544,
+        40.46442417859868
+      ]
+    },
+    {
+      "id": "portazgo",
+      "name": "PORTAZGO",
+      "lat": 40.39266410896103,
+      "lon": -3.658682425344429,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0121",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.658682425344429,
+        40.39266410896103
+      ]
+    },
+    {
+      "id": "alto_del_arenal",
+      "name": "ALTO DEL ARENAL",
+      "lat": 40.38977101214874,
+      "lon": -3.6452165490428263,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0123",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6452165490428263,
+        40.38977101214874
+      ]
+    },
+    {
+      "id": "miguel_hernandez",
+      "name": "MIGUEL HERNANDEZ",
+      "lat": 40.38731574705667,
+      "lon": -3.6395099006306384,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0124",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6395099006306384,
+        40.38731574705667
+      ]
+    },
+    {
+      "id": "villa_de_vallecas",
+      "name": "VILLA DE VALLECAS",
+      "lat": 40.379598611419055,
+      "lon": -3.621296484882349,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0126",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.621296484882349,
+        40.379598611419055
+      ]
+    },
+    {
+      "id": "chamartin",
+      "name": "CHAMARTIN",
+      "lat": 40.47202685297345,
+      "lon": -3.682590109403099,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0151",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.682590109403099,
+        40.47202685297345
+      ]
+    },
+    {
+      "id": "pacifico",
+      "name": "PACIFICO",
+      "lat": 40.40126178904823,
+      "lon": -3.67513655621334,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0118",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.67513655621334,
+        40.40126178904823
+      ]
+    },
+    {
+      "id": "nueva_numancia",
+      "name": "NUEVA NUMANCIA",
+      "lat": 40.39553816215716,
+      "lon": -3.6641417014856694,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0120",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6641417014856694,
+        40.39553816215716
+      ]
+    },
+    {
+      "id": "menendez_pelayo",
+      "name": "MENENDEZ PELAYO",
+      "lat": 40.40445052226359,
+      "lon": -3.6809794170757697,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0117",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6809794170757697,
+        40.40445052226359
+      ]
+    },
+    {
+      "id": "alvarado",
+      "name": "ALVARADO",
+      "lat": 40.450331975994324,
+      "lon": -3.7033142092757845,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0105",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7033142092757845,
+        40.450331975994324
+      ]
+    },
+    {
+      "id": "estaci_n_del_arte",
+      "name": "ESTACIÓN DEL ARTE",
+      "lat": 40.40885159837552,
+      "lon": -3.692487271050582,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0115",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.692487271050582,
+        40.40885159837552
+      ]
+    },
+    {
+      "id": "atocha_renfe",
+      "name": "ATOCHA RENFE",
+      "lat": 40.406586814542514,
+      "lon": -3.689378110765852,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0116",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.689378110765852,
+        40.406586814542514
+      ]
+    },
+    {
+      "id": "tetuan",
+      "name": "TETUAN",
+      "lat": 40.46055188266481,
+      "lon": -3.698249893972328,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0103",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.698249893972328,
+        40.46055188266481
+      ]
+    },
+    {
+      "id": "la_gavia",
+      "name": "LA GAVIA",
+      "lat": 40.37019166319747,
+      "lon": -3.613463483075256,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0128",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.613463483075256,
+        40.37019166319747
+      ]
+    },
+    {
+      "id": "estrecho",
+      "name": "ESTRECHO",
+      "lat": 40.45428802582823,
+      "lon": -3.7030229599498505,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0104",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7030229599498505,
+        40.45428802582823
+      ]
+    },
+    {
+      "id": "plaza_de_castilla",
+      "name": "PLAZA DE CASTILLA",
+      "lat": 40.46689603731065,
+      "lon": -3.689169587035836,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0101",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.689169587035836,
+        40.46689603731065
+      ]
+    },
+    {
+      "id": "manuel_becerra",
+      "name": "MANUEL BECERRA",
+      "lat": 40.42790417380744,
+      "lon": -3.669258203049727,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0202",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.669258203049727,
+        40.42790417380744
+      ]
+    },
+    {
+      "id": "cuatro_caminos",
+      "name": "CUATRO CAMINOS",
+      "lat": 40.446974274859556,
+      "lon": -3.7039217350429934,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0215",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7039217350429934,
+        40.446974274859556
+      ]
+    },
+    {
+      "id": "noviciado",
+      "name": "NOVICIADO",
+      "lat": 40.424842233578424,
+      "lon": -3.7074190426136306,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0211",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7074190426136306,
+        40.424842233578424
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.4168474580948,
+      "lon": -3.7032613507552123,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0208",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7032613507552123,
+        40.4168474580948
+      ]
+    },
+    {
+      "id": "alsacia",
+      "name": "ALSACIA",
+      "lat": 40.41829269464442,
+      "lon": -3.6235060015486664,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0253",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6235060015486664,
+        40.41829269464442
+      ]
+    },
+    {
+      "id": "la_almudena",
+      "name": "LA ALMUDENA",
+      "lat": 40.42361329068056,
+      "lon": -3.6391423303625725,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0252",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6391423303625725,
+        40.42361329068056
+      ]
+    },
+    {
+      "id": "canal",
+      "name": "CANAL",
+      "lat": 40.43841299799997,
+      "lon": -3.704334573354305,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0214",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704334573354305,
+        40.43841299799997
+      ]
+    },
+    {
+      "id": "quevedo",
+      "name": "QUEVEDO",
+      "lat": 40.433217315157556,
+      "lon": -3.704332861250257,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0213",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704332861250257,
+        40.433217315157556
+      ]
+    },
+    {
+      "id": "la_elipa",
+      "name": "LA ELIPA",
+      "lat": 40.426617234977186,
+      "lon": -3.6505189139028626,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0251",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6505189139028626,
+        40.426617234977186
+      ]
+    },
+    {
+      "id": "avenida_de_guadalajara",
+      "name": "AVENIDA DE GUADALAJARA",
+      "lat": 40.42239358382272,
+      "lon": -3.6120646096811457,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0254",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6120646096811457,
+        40.42239358382272
+      ]
+    },
+    {
+      "id": "las_rosas",
+      "name": "LAS ROSAS",
+      "lat": 40.42374843104424,
+      "lon": -3.6033055955674373,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0255",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6033055955674373,
+        40.42374843104424
+      ]
+    },
+    {
+      "id": "ventas",
+      "name": "VENTAS",
+      "lat": 40.430884498813434,
+      "lon": -3.6636588664575465,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0201",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6636588664575465,
+        40.430884498813434
+      ]
+    },
+    {
+      "id": "opera",
+      "name": "OPERA",
+      "lat": 40.418092919493105,
+      "lon": -3.7094186087196794,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0209",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7094186087196794,
+        40.418092919493105
+      ]
+    },
+    {
+      "id": "sevilla",
+      "name": "SEVILLA",
+      "lat": 40.41805074812411,
+      "lon": -3.699251138040337,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0207",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.699251138040337,
+        40.41805074812411
+      ]
+    },
+    {
+      "id": "goya",
+      "name": "GOYA",
+      "lat": 40.4245483896706,
+      "lon": -3.675910176185961,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0203",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.675910176185961,
+        40.4245483896706
+      ]
+    },
+    {
+      "id": "principe_de_vergara",
+      "name": "PRINCIPE DE VERGARA",
+      "lat": 40.422944861760726,
+      "lon": -3.680122681043693,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0204",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.680122681043693,
+        40.422944861760726
+      ]
+    },
+    {
+      "id": "retiro",
+      "name": "RETIRO",
+      "lat": 40.42030671752325,
+      "lon": -3.686244719177841,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0205",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.686244719177841,
+        40.42030671752325
+      ]
+    },
+    {
+      "id": "banco_de_espa_a",
+      "name": "BANCO DE ESPAÑA",
+      "lat": 40.4192197861148,
+      "lon": -3.6949651055813844,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0206",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6949651055813844,
+        40.4192197861148
+      ]
+    },
+    {
+      "id": "santo_domingo",
+      "name": "SANTO DOMINGO",
+      "lat": 40.42131540813318,
+      "lon": -3.707955276656987,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0210",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.707955276656987,
+        40.42131540813318
+      ]
+    },
+    {
+      "id": "san_bernardo",
+      "name": "SAN BERNARDO",
+      "lat": 40.430012762660795,
+      "lon": -3.7055699332510224,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0212",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7055699332510224,
+        40.430012762660795
+      ]
+    },
+    {
+      "id": "manuel_becerra",
+      "name": "MANUEL BECERRA",
+      "lat": 40.42790417380744,
+      "lon": -3.669258203049727,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0202",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.669258203049727,
+        40.42790417380744
+      ]
+    },
+    {
+      "id": "cuatro_caminos",
+      "name": "CUATRO CAMINOS",
+      "lat": 40.446974274859556,
+      "lon": -3.7039217350429934,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0215",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7039217350429934,
+        40.446974274859556
+      ]
+    },
+    {
+      "id": "noviciado",
+      "name": "NOVICIADO",
+      "lat": 40.424842233578424,
+      "lon": -3.7074190426136306,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0211",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7074190426136306,
+        40.424842233578424
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.4168474580948,
+      "lon": -3.7032613507552123,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0208",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7032613507552123,
+        40.4168474580948
+      ]
+    },
+    {
+      "id": "alsacia",
+      "name": "ALSACIA",
+      "lat": 40.41829269464442,
+      "lon": -3.6235060015486664,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0253",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6235060015486664,
+        40.41829269464442
+      ]
+    },
+    {
+      "id": "la_almudena",
+      "name": "LA ALMUDENA",
+      "lat": 40.42361329068056,
+      "lon": -3.6391423303625725,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0252",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6391423303625725,
+        40.42361329068056
+      ]
+    },
+    {
+      "id": "canal",
+      "name": "CANAL",
+      "lat": 40.43841299799997,
+      "lon": -3.704334573354305,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0214",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704334573354305,
+        40.43841299799997
+      ]
+    },
+    {
+      "id": "quevedo",
+      "name": "QUEVEDO",
+      "lat": 40.433217315157556,
+      "lon": -3.704332861250257,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0213",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704332861250257,
+        40.433217315157556
+      ]
+    },
+    {
+      "id": "la_elipa",
+      "name": "LA ELIPA",
+      "lat": 40.426617234977186,
+      "lon": -3.6505189139028626,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0251",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6505189139028626,
+        40.426617234977186
+      ]
+    },
+    {
+      "id": "avenida_de_guadalajara",
+      "name": "AVENIDA DE GUADALAJARA",
+      "lat": 40.42239358382272,
+      "lon": -3.6120646096811457,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0254",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6120646096811457,
+        40.42239358382272
+      ]
+    },
+    {
+      "id": "las_rosas",
+      "name": "LAS ROSAS",
+      "lat": 40.42374843104424,
+      "lon": -3.6033055955674373,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0255",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6033055955674373,
+        40.42374843104424
+      ]
+    },
+    {
+      "id": "ventas",
+      "name": "VENTAS",
+      "lat": 40.430884498813434,
+      "lon": -3.6636588664575465,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0201",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6636588664575465,
+        40.430884498813434
+      ]
+    },
+    {
+      "id": "opera",
+      "name": "OPERA",
+      "lat": 40.418092919493105,
+      "lon": -3.7094186087196794,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0209",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7094186087196794,
+        40.418092919493105
+      ]
+    },
+    {
+      "id": "sevilla",
+      "name": "SEVILLA",
+      "lat": 40.41805074812411,
+      "lon": -3.699251138040337,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0207",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.699251138040337,
+        40.41805074812411
+      ]
+    },
+    {
+      "id": "goya",
+      "name": "GOYA",
+      "lat": 40.4245483896706,
+      "lon": -3.675910176185961,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0203",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.675910176185961,
+        40.4245483896706
+      ]
+    },
+    {
+      "id": "principe_de_vergara",
+      "name": "PRINCIPE DE VERGARA",
+      "lat": 40.422944861760726,
+      "lon": -3.680122681043693,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0204",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.680122681043693,
+        40.422944861760726
+      ]
+    },
+    {
+      "id": "retiro",
+      "name": "RETIRO",
+      "lat": 40.42030671752325,
+      "lon": -3.686244719177841,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0205",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.686244719177841,
+        40.42030671752325
+      ]
+    },
+    {
+      "id": "banco_de_espa_a",
+      "name": "BANCO DE ESPAÑA",
+      "lat": 40.4192197861148,
+      "lon": -3.6949651055813844,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0206",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6949651055813844,
+        40.4192197861148
+      ]
+    },
+    {
+      "id": "santo_domingo",
+      "name": "SANTO DOMINGO",
+      "lat": 40.42131540813318,
+      "lon": -3.707955276656987,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0210",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.707955276656987,
+        40.42131540813318
+      ]
+    },
+    {
+      "id": "san_bernardo",
+      "name": "SAN BERNARDO",
+      "lat": 40.430012762660795,
+      "lon": -3.7055699332510224,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0212",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7055699332510224,
+        40.430012762660795
+      ]
+    },
+    {
+      "id": "arg_elles",
+      "name": "ARGÜELLES",
+      "lat": 40.43066093022461,
+      "lon": -3.715962651094834,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0310",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715962651094834,
+        40.43066093022461
+      ]
+    },
+    {
+      "id": "callao",
+      "name": "CALLAO",
+      "lat": 40.420136495085096,
+      "lon": -3.7056612368434116,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0307",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7056612368434116,
+        40.420136495085096
+      ]
+    },
+    {
+      "id": "villaverde_alto",
+      "name": "VILLAVERDE ALTO",
+      "lat": 40.34122865689154,
+      "lon": -3.7119902708686725,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0357",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7119902708686725,
+        40.34122865689154
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.41681647165373,
+      "lon": -3.7032610281165037,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0306",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7032610281165037,
+        40.41681647165373
+      ]
+    },
+    {
+      "id": "hospital_12_de_octubre",
+      "name": "HOSPITAL 12 DE OCTUBRE",
+      "lat": 40.375031361291015,
+      "lon": -3.6958546924445588,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0352",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6958546924445588,
+        40.375031361291015
+      ]
+    },
+    {
+      "id": "almendrales",
+      "name": "ALMENDRALES",
+      "lat": 40.38409352717396,
+      "lon": -3.697881397655217,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0351",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.697881397655217,
+        40.38409352717396
+      ]
+    },
+    {
+      "id": "lavapies",
+      "name": "LAVAPIES",
+      "lat": 40.40851094285593,
+      "lon": -3.7009041232004773,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0305",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7009041232004773,
+        40.40851094285593
+      ]
+    },
+    {
+      "id": "san_fermin_orcasur",
+      "name": "SAN FERMIN-ORCASUR",
+      "lat": 40.36999093055091,
+      "lon": -3.6941764145036964,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0353",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6941764145036964,
+        40.36999093055091
+      ]
+    },
+    {
+      "id": "legazpi",
+      "name": "LEGAZPI",
+      "lat": 40.391154999510235,
+      "lon": -3.695113687596018,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0301",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.695113687596018,
+        40.391154999510235
+      ]
+    },
+    {
+      "id": "palos_de_la_frontera",
+      "name": "PALOS DE LA FRONTERA",
+      "lat": 40.40307228397831,
+      "lon": -3.6942326840798296,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0303",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6942326840798296,
+        40.40307228397831
+      ]
+    },
+    {
+      "id": "delicias",
+      "name": "DELICIAS",
+      "lat": 40.39990477855439,
+      "lon": -3.694199616036338,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0302",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.694199616036338,
+        40.39990477855439
+      ]
+    },
+    {
+      "id": "ciudad_de_los_angeles",
+      "name": "CIUDAD DE LOS ANGELES",
+      "lat": 40.359585428137,
+      "lon": -3.6936264441706634,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0354",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6936264441706634,
+        40.359585428137
+      ]
+    },
+    {
+      "id": "san_cristobal",
+      "name": "SAN CRISTOBAL",
+      "lat": 40.34154193600964,
+      "lon": -3.6931802991863165,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0356",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6931802991863165,
+        40.34154193600964
+      ]
+    },
+    {
+      "id": "plaza_de_espa_a",
+      "name": "PLAZA DE ESPAÑA",
+      "lat": 40.42341602795806,
+      "lon": -3.711197037580092,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0308",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.711197037580092,
+        40.42341602795806
+      ]
+    },
+    {
+      "id": "ventura_rodriguez",
+      "name": "VENTURA RODRIGUEZ",
+      "lat": 40.42708736443108,
+      "lon": -3.713413096705454,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0309",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.713413096705454,
+        40.42708736443108
+      ]
+    },
+    {
+      "id": "embajadores",
+      "name": "EMBAJADORES",
+      "lat": 40.405127271162534,
+      "lon": -3.70268049977228,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0304",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.70268049977228,
+        40.405127271162534
+      ]
+    },
+    {
+      "id": "moncloa",
+      "name": "MONCLOA",
+      "lat": 40.43502351519558,
+      "lon": -3.719450619240696,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0311",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.719450619240696,
+        40.43502351519558
+      ]
+    },
+    {
+      "id": "villaverde_bajo_cruce",
+      "name": "VILLAVERDE BAJO CRUCE",
+      "lat": 40.35089476396152,
+      "lon": -3.6926489418134363,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0355",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6926489418134363,
+        40.35089476396152
+      ]
+    },
+    {
+      "id": "arg_elles",
+      "name": "ARGÜELLES",
+      "lat": 40.43066093022461,
+      "lon": -3.715962651094834,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0310",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715962651094834,
+        40.43066093022461
+      ]
+    },
+    {
+      "id": "callao",
+      "name": "CALLAO",
+      "lat": 40.420136495085096,
+      "lon": -3.7056612368434116,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0307",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7056612368434116,
+        40.420136495085096
+      ]
+    },
+    {
+      "id": "villaverde_alto",
+      "name": "VILLAVERDE ALTO",
+      "lat": 40.34122865689154,
+      "lon": -3.7119902708686725,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0357",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7119902708686725,
+        40.34122865689154
+      ]
+    },
+    {
+      "id": "sol",
+      "name": "SOL",
+      "lat": 40.41681647165373,
+      "lon": -3.7032610281165037,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0306",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7032610281165037,
+        40.41681647165373
+      ]
+    },
+    {
+      "id": "hospital_12_de_octubre",
+      "name": "HOSPITAL 12 DE OCTUBRE",
+      "lat": 40.375031361291015,
+      "lon": -3.6958546924445588,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0352",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6958546924445588,
+        40.375031361291015
+      ]
+    },
+    {
+      "id": "almendrales",
+      "name": "ALMENDRALES",
+      "lat": 40.38409352717396,
+      "lon": -3.697881397655217,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0351",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.697881397655217,
+        40.38409352717396
+      ]
+    },
+    {
+      "id": "lavapies",
+      "name": "LAVAPIES",
+      "lat": 40.40851094285593,
+      "lon": -3.7009041232004773,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0305",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7009041232004773,
+        40.40851094285593
+      ]
+    },
+    {
+      "id": "san_fermin_orcasur",
+      "name": "SAN FERMIN-ORCASUR",
+      "lat": 40.36999093055091,
+      "lon": -3.6941764145036964,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0353",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6941764145036964,
+        40.36999093055091
+      ]
+    },
+    {
+      "id": "legazpi",
+      "name": "LEGAZPI",
+      "lat": 40.391154999510235,
+      "lon": -3.695113687596018,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0301",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.695113687596018,
+        40.391154999510235
+      ]
+    },
+    {
+      "id": "palos_de_la_frontera",
+      "name": "PALOS DE LA FRONTERA",
+      "lat": 40.40307228397831,
+      "lon": -3.6942326840798296,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0303",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6942326840798296,
+        40.40307228397831
+      ]
+    },
+    {
+      "id": "delicias",
+      "name": "DELICIAS",
+      "lat": 40.39990477855439,
+      "lon": -3.694199616036338,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0302",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.694199616036338,
+        40.39990477855439
+      ]
+    },
+    {
+      "id": "ciudad_de_los_angeles",
+      "name": "CIUDAD DE LOS ANGELES",
+      "lat": 40.359585428137,
+      "lon": -3.6936264441706634,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0354",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6936264441706634,
+        40.359585428137
+      ]
+    },
+    {
+      "id": "san_cristobal",
+      "name": "SAN CRISTOBAL",
+      "lat": 40.34154193600964,
+      "lon": -3.6931802991863165,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0356",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6931802991863165,
+        40.34154193600964
+      ]
+    },
+    {
+      "id": "plaza_de_espa_a",
+      "name": "PLAZA DE ESPAÑA",
+      "lat": 40.42341602795806,
+      "lon": -3.711197037580092,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0308",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.711197037580092,
+        40.42341602795806
+      ]
+    },
+    {
+      "id": "ventura_rodriguez",
+      "name": "VENTURA RODRIGUEZ",
+      "lat": 40.42708736443108,
+      "lon": -3.713413096705454,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0309",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.713413096705454,
+        40.42708736443108
+      ]
+    },
+    {
+      "id": "embajadores",
+      "name": "EMBAJADORES",
+      "lat": 40.405127271162534,
+      "lon": -3.70268049977228,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0304",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.70268049977228,
+        40.405127271162534
+      ]
+    },
+    {
+      "id": "moncloa",
+      "name": "MONCLOA",
+      "lat": 40.43502351519558,
+      "lon": -3.719450619240696,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0311",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.719450619240696,
+        40.43502351519558
+      ]
+    },
+    {
+      "id": "villaverde_bajo_cruce",
+      "name": "VILLAVERDE BAJO CRUCE",
+      "lat": 40.35089476396152,
+      "lon": -3.6926489418134363,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0355",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6926489418134363,
+        40.35089476396152
+      ]
+    },
+    {
+      "id": "arg_elles",
+      "name": "ARGÜELLES",
+      "lat": 40.430598358763966,
+      "lon": -3.7159568697272873,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0401",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7159568697272873,
+        40.430598358763966
+      ]
+    },
+    {
+      "id": "hortaleza",
+      "name": "HORTALEZA",
+      "lat": 40.47537171795902,
+      "lon": -3.6525726113410113,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0421",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6525726113410113,
+        40.47537171795902
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803257738159,
+      "lon": -3.6766395553262643,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0411",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6766395553262643,
+        40.43803257738159
+      ]
+    },
+    {
+      "id": "lista",
+      "name": "LISTA",
+      "lat": 40.429168520255786,
+      "lon": -3.675409822278686,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0409",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.675409822278686,
+        40.429168520255786
+      ]
+    },
+    {
+      "id": "pinar_de_chamartin",
+      "name": "PINAR DE CHAMARTIN",
+      "lat": 40.48013848447957,
+      "lon": -3.6667610675346913,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0423",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6667610675346913,
+        40.48013848447957
+      ]
+    },
+    {
+      "id": "manoteras",
+      "name": "MANOTERAS",
+      "lat": 40.476874226693596,
+      "lon": -3.6628954758911214,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0422",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6628954758911214,
+        40.476874226693596
+      ]
+    },
+    {
+      "id": "serrano",
+      "name": "SERRANO",
+      "lat": 40.42543215941902,
+      "lon": -3.6866304363833353,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0406",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6866304363833353,
+        40.42543215941902
+      ]
+    },
+    {
+      "id": "velazquez",
+      "name": "VELAZQUEZ",
+      "lat": 40.425032550864806,
+      "lon": -3.6829181480861983,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0407",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6829181480861983,
+        40.425032550864806
+      ]
+    },
+    {
+      "id": "diego_de_leon",
+      "name": "DIEGO DE LEON",
+      "lat": 40.43467946439266,
+      "lon": -3.6749527300771714,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0410",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6749527300771714,
+        40.43467946439266
+      ]
+    },
+    {
+      "id": "prosperidad",
+      "name": "PROSPERIDAD",
+      "lat": 40.444188974144545,
+      "lon": -3.674818902992059,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0412",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.674818902992059,
+        40.444188974144545
+      ]
+    },
+    {
+      "id": "alfonso_xiii",
+      "name": "ALFONSO XIII",
+      "lat": 40.44824838816102,
+      "lon": -3.6679061529956103,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0413",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6679061529956103,
+        40.44824838816102
+      ]
+    },
+    {
+      "id": "avenida_de_la_paz",
+      "name": "AVENIDA DE LA PAZ",
+      "lat": 40.453542634899286,
+      "lon": -3.6611819996826074,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0414",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6611819996826074,
+        40.453542634899286
+      ]
+    },
+    {
+      "id": "arturo_soria",
+      "name": "ARTURO SORIA",
+      "lat": 40.4558324918715,
+      "lon": -3.656181218097823,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0415",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.656181218097823,
+        40.4558324918715
+      ]
+    },
+    {
+      "id": "esperanza",
+      "name": "ESPERANZA",
+      "lat": 40.45944729719177,
+      "lon": -3.645817180039627,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0416",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.645817180039627,
+        40.45944729719177
+      ]
+    },
+    {
+      "id": "canillas",
+      "name": "CANILLAS",
+      "lat": 40.463810536980176,
+      "lon": -3.6355954639810872,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0417",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6355954639810872,
+        40.463810536980176
+      ]
+    },
+    {
+      "id": "mar_de_cristal",
+      "name": "MAR DE CRISTAL",
+      "lat": 40.46942603388481,
+      "lon": -3.638322673402993,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0418",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.638322673402993,
+        40.46942603388481
+      ]
+    },
+    {
+      "id": "san_lorenzo",
+      "name": "SAN LORENZO",
+      "lat": 40.47447073958695,
+      "lon": -3.639577276564596,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0419",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.639577276564596,
+        40.47447073958695
+      ]
+    },
+    {
+      "id": "parque_de_santa_maria",
+      "name": "PARQUE DE SANTA MARIA",
+      "lat": 40.47711429389674,
+      "lon": -3.6452420021656278,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0420",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6452420021656278,
+        40.47711429389674
+      ]
+    },
+    {
+      "id": "alonso_martinez",
+      "name": "ALONSO MARTINEZ",
+      "lat": 40.42772011333865,
+      "lon": -3.6959386952332616,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0404",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6959386952332616,
+        40.42772011333865
+      ]
+    },
+    {
+      "id": "colon",
+      "name": "COLON",
+      "lat": 40.42541918213737,
+      "lon": -3.6910073925714295,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0405",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6910073925714295,
+        40.42541918213737
+      ]
+    },
+    {
+      "id": "san_bernardo",
+      "name": "SAN BERNARDO",
+      "lat": 40.429662461610036,
+      "lon": -3.705673788588775,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0402",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.705673788588775,
+        40.429662461610036
+      ]
+    },
+    {
+      "id": "bilbao",
+      "name": "BILBAO",
+      "lat": 40.42885030444197,
+      "lon": -3.7011381755651382,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0403",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7011381755651382,
+        40.42885030444197
+      ]
+    },
+    {
+      "id": "goya",
+      "name": "GOYA",
+      "lat": 40.424805404817974,
+      "lon": -3.6768461429074466,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0408",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6768461429074466,
+        40.424805404817974
+      ]
+    },
+    {
+      "id": "arg_elles",
+      "name": "ARGÜELLES",
+      "lat": 40.430598358763966,
+      "lon": -3.7159568697272873,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0401",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7159568697272873,
+        40.430598358763966
+      ]
+    },
+    {
+      "id": "hortaleza",
+      "name": "HORTALEZA",
+      "lat": 40.47537171795902,
+      "lon": -3.6525726113410113,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0421",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6525726113410113,
+        40.47537171795902
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803257738159,
+      "lon": -3.6766395553262643,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0411",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6766395553262643,
+        40.43803257738159
+      ]
+    },
+    {
+      "id": "lista",
+      "name": "LISTA",
+      "lat": 40.429168520255786,
+      "lon": -3.675409822278686,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0409",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.675409822278686,
+        40.429168520255786
+      ]
+    },
+    {
+      "id": "pinar_de_chamartin",
+      "name": "PINAR DE CHAMARTIN",
+      "lat": 40.48013848447957,
+      "lon": -3.6667610675346913,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0423",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6667610675346913,
+        40.48013848447957
+      ]
+    },
+    {
+      "id": "manoteras",
+      "name": "MANOTERAS",
+      "lat": 40.476874226693596,
+      "lon": -3.6628954758911214,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0422",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6628954758911214,
+        40.476874226693596
+      ]
+    },
+    {
+      "id": "serrano",
+      "name": "SERRANO",
+      "lat": 40.42543215941902,
+      "lon": -3.6866304363833353,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0406",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6866304363833353,
+        40.42543215941902
+      ]
+    },
+    {
+      "id": "velazquez",
+      "name": "VELAZQUEZ",
+      "lat": 40.425032550864806,
+      "lon": -3.6829181480861983,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0407",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6829181480861983,
+        40.425032550864806
+      ]
+    },
+    {
+      "id": "diego_de_leon",
+      "name": "DIEGO DE LEON",
+      "lat": 40.43467946439266,
+      "lon": -3.6749527300771714,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0410",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6749527300771714,
+        40.43467946439266
+      ]
+    },
+    {
+      "id": "prosperidad",
+      "name": "PROSPERIDAD",
+      "lat": 40.444188974144545,
+      "lon": -3.674818902992059,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0412",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.674818902992059,
+        40.444188974144545
+      ]
+    },
+    {
+      "id": "alfonso_xiii",
+      "name": "ALFONSO XIII",
+      "lat": 40.44824838816102,
+      "lon": -3.6679061529956103,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0413",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6679061529956103,
+        40.44824838816102
+      ]
+    },
+    {
+      "id": "avenida_de_la_paz",
+      "name": "AVENIDA DE LA PAZ",
+      "lat": 40.453542634899286,
+      "lon": -3.6611819996826074,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0414",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6611819996826074,
+        40.453542634899286
+      ]
+    },
+    {
+      "id": "arturo_soria",
+      "name": "ARTURO SORIA",
+      "lat": 40.4558324918715,
+      "lon": -3.656181218097823,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0415",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.656181218097823,
+        40.4558324918715
+      ]
+    },
+    {
+      "id": "esperanza",
+      "name": "ESPERANZA",
+      "lat": 40.45944729719177,
+      "lon": -3.645817180039627,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0416",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.645817180039627,
+        40.45944729719177
+      ]
+    },
+    {
+      "id": "canillas",
+      "name": "CANILLAS",
+      "lat": 40.463810536980176,
+      "lon": -3.6355954639810872,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0417",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6355954639810872,
+        40.463810536980176
+      ]
+    },
+    {
+      "id": "mar_de_cristal",
+      "name": "MAR DE CRISTAL",
+      "lat": 40.46942603388481,
+      "lon": -3.638322673402993,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0418",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.638322673402993,
+        40.46942603388481
+      ]
+    },
+    {
+      "id": "san_lorenzo",
+      "name": "SAN LORENZO",
+      "lat": 40.47447073958695,
+      "lon": -3.639577276564596,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0419",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.639577276564596,
+        40.47447073958695
+      ]
+    },
+    {
+      "id": "parque_de_santa_maria",
+      "name": "PARQUE DE SANTA MARIA",
+      "lat": 40.47711429389674,
+      "lon": -3.6452420021656278,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0420",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6452420021656278,
+        40.47711429389674
+      ]
+    },
+    {
+      "id": "alonso_martinez",
+      "name": "ALONSO MARTINEZ",
+      "lat": 40.42772011333865,
+      "lon": -3.6959386952332616,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0404",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6959386952332616,
+        40.42772011333865
+      ]
+    },
+    {
+      "id": "colon",
+      "name": "COLON",
+      "lat": 40.42541918213737,
+      "lon": -3.6910073925714295,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0405",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6910073925714295,
+        40.42541918213737
+      ]
+    },
+    {
+      "id": "san_bernardo",
+      "name": "SAN BERNARDO",
+      "lat": 40.429662461610036,
+      "lon": -3.705673788588775,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0402",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.705673788588775,
+        40.429662461610036
+      ]
+    },
+    {
+      "id": "bilbao",
+      "name": "BILBAO",
+      "lat": 40.42885030444197,
+      "lon": -3.7011381755651382,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0403",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7011381755651382,
+        40.42885030444197
+      ]
+    },
+    {
+      "id": "goya",
+      "name": "GOYA",
+      "lat": 40.424805404817974,
+      "lon": -3.6768461429074466,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0408",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6768461429074466,
+        40.424805404817974
+      ]
+    },
+    {
+      "id": "callao",
+      "name": "CALLAO",
+      "lat": 40.42008325439652,
+      "lon": -3.705664776700521,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0515",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.705664776700521,
+        40.42008325439652
+      ]
+    },
+    {
+      "id": "opera",
+      "name": "OPERA",
+      "lat": 40.41809334199409,
+      "lon": -3.7093496027052257,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0516",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7093496027052257,
+        40.41809334199409
+      ]
+    },
+    {
+      "id": "chueca",
+      "name": "CHUECA",
+      "lat": 40.422933178079816,
+      "lon": -3.6976165924437825,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0513",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6976165924437825,
+        40.422933178079816
+      ]
+    },
+    {
+      "id": "campamento",
+      "name": "CAMPAMENTO",
+      "lat": 40.39480775740209,
+      "lon": -3.768128136787409,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0529",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.768128136787409,
+        40.39480775740209
+      ]
+    },
+    {
+      "id": "empalme",
+      "name": "EMPALME",
+      "lat": 40.39057255783158,
+      "lon": -3.765347875572339,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0528",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.765347875572339,
+        40.39057255783158
+      ]
+    },
+    {
+      "id": "alameda_de_osuna",
+      "name": "ALAMEDA DE OSUNA",
+      "lat": 40.45778862852046,
+      "lon": -3.5875209290434937,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0552",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5875209290434937,
+        40.45778862852046
+      ]
+    },
+    {
+      "id": "aluche",
+      "name": "ALUCHE",
+      "lat": 40.38562861956385,
+      "lon": -3.76080381070444,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0527",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.76080381070444,
+        40.38562861956385
+      ]
+    },
+    {
+      "id": "acacias",
+      "name": "ACACIAS",
+      "lat": 40.40387164372991,
+      "lon": -3.7066410860751864,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0519",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7066410860751864,
+        40.40387164372991
+      ]
+    },
+    {
+      "id": "oporto",
+      "name": "OPORTO",
+      "lat": 40.38846476309323,
+      "lon": -3.7313233124150336,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0523",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7313233124150336,
+        40.38846476309323
+      ]
+    },
+    {
+      "id": "canillejas",
+      "name": "CANILLEJAS",
+      "lat": 40.449420844365704,
+      "lon": -3.608160323120323,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0501",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.608160323120323,
+        40.449420844365704
+      ]
+    },
+    {
+      "id": "torre_arias",
+      "name": "TORRE ARIAS",
+      "lat": 40.443743296414574,
+      "lon": -3.616994705938824,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0502",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.616994705938824,
+        40.443743296414574
+      ]
+    },
+    {
+      "id": "suanzes",
+      "name": "SUANZES",
+      "lat": 40.44085124307767,
+      "lon": -3.6268397441771407,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0503",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6268397441771407,
+        40.44085124307767
+      ]
+    },
+    {
+      "id": "ciudad_lineal",
+      "name": "CIUDAD LINEAL",
+      "lat": 40.4380484084201,
+      "lon": -3.638157588345499,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0504",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.638157588345499,
+        40.4380484084201
+      ]
+    },
+    {
+      "id": "quintana",
+      "name": "QUINTANA",
+      "lat": 40.43358494164949,
+      "lon": -3.6473622420983225,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0506",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6473622420983225,
+        40.43358494164949
+      ]
+    },
+    {
+      "id": "el_carmen",
+      "name": "EL CARMEN",
+      "lat": 40.43189329209465,
+      "lon": -3.6575725472596625,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0507",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6575725472596625,
+        40.43189329209465
+      ]
+    },
+    {
+      "id": "nu_ez_de_balboa",
+      "name": "NUÑEZ DE BALBOA",
+      "lat": 40.43278060804376,
+      "lon": -3.6825799144836044,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0510",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6825799144836044,
+        40.43278060804376
+      ]
+    },
+    {
+      "id": "ruben_dario",
+      "name": "RUBEN DARIO",
+      "lat": 40.43315793720963,
+      "lon": -3.689541598575491,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0511",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.689541598575491,
+        40.43315793720963
+      ]
+    },
+    {
+      "id": "la_latina",
+      "name": "LA LATINA",
+      "lat": 40.41128032868688,
+      "lon": -3.708160868519015,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0517",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.708160868519015,
+        40.41128032868688
+      ]
+    },
+    {
+      "id": "marques_de_vadillo",
+      "name": "MARQUES DE VADILLO",
+      "lat": 40.397356290324495,
+      "lon": -3.7159600765140515,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0521",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7159600765140515,
+        40.397356290324495
+      ]
+    },
+    {
+      "id": "urgel",
+      "name": "URGEL",
+      "lat": 40.39335176845625,
+      "lon": -3.7236048242936626,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0522",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7236048242936626,
+        40.39335176845625
+      ]
+    },
+    {
+      "id": "vista_alegre",
+      "name": "VISTA ALEGRE",
+      "lat": 40.38884702575721,
+      "lon": -3.7398245500065785,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0524",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7398245500065785,
+        40.38884702575721
+      ]
+    },
+    {
+      "id": "carabanchel",
+      "name": "CARABANCHEL",
+      "lat": 40.38782701996798,
+      "lon": -3.744870521041383,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0525",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.744870521041383,
+        40.38782701996798
+      ]
+    },
+    {
+      "id": "eugenia_de_montijo",
+      "name": "EUGENIA DE MONTIJO",
+      "lat": 40.38438579717573,
+      "lon": -3.7512111847828216,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0526",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7512111847828216,
+        40.38438579717573
+      ]
+    },
+    {
+      "id": "gran_via",
+      "name": "GRAN VIA",
+      "lat": 40.419986617735724,
+      "lon": -3.701803930135661,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0514",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.701803930135661,
+        40.419986617735724
+      ]
+    },
+    {
+      "id": "el_capricho",
+      "name": "EL CAPRICHO",
+      "lat": 40.453468332704944,
+      "lon": -3.5940116576957872,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0551",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5940116576957872,
+        40.453468332704944
+      ]
+    },
+    {
+      "id": "casa_de_campo",
+      "name": "CASA DE CAMPO",
+      "lat": 40.403242270835875,
+      "lon": -3.761013667626499,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0530",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.761013667626499,
+        40.403242270835875
+      ]
+    },
+    {
+      "id": "pueblo_nuevo",
+      "name": "PUEBLO NUEVO",
+      "lat": 40.43569283899227,
+      "lon": -3.64282326413925,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0505",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.64282326413925,
+        40.43569283899227
+      ]
+    },
+    {
+      "id": "alonso_martinez",
+      "name": "ALONSO MARTINEZ",
+      "lat": 40.42828258137045,
+      "lon": -3.6950229019466976,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0512",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6950229019466976,
+        40.42828258137045
+      ]
+    },
+    {
+      "id": "diego_de_leon",
+      "name": "DIEGO DE LEON",
+      "lat": 40.43235319427283,
+      "lon": -3.674261712530584,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0509",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.674261712530584,
+        40.43235319427283
+      ]
+    },
+    {
+      "id": "ventas",
+      "name": "VENTAS",
+      "lat": 40.430884803194914,
+      "lon": -3.6636058417273496,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0508",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6636058417273496,
+        40.430884803194914
+      ]
+    },
+    {
+      "id": "piramides",
+      "name": "PIRAMIDES",
+      "lat": 40.40259816545889,
+      "lon": -3.7113771228123165,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0520",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7113771228123165,
+        40.40259816545889
+      ]
+    },
+    {
+      "id": "puerta_de_toledo",
+      "name": "PUERTA DE TOLEDO",
+      "lat": 40.40703575446187,
+      "lon": -3.711046450767629,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0518",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.711046450767629,
+        40.40703575446187
+      ]
+    },
+    {
+      "id": "callao",
+      "name": "CALLAO",
+      "lat": 40.42008325439652,
+      "lon": -3.705664776700521,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0515",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.705664776700521,
+        40.42008325439652
+      ]
+    },
+    {
+      "id": "opera",
+      "name": "OPERA",
+      "lat": 40.41809334199409,
+      "lon": -3.7093496027052257,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0516",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7093496027052257,
+        40.41809334199409
+      ]
+    },
+    {
+      "id": "chueca",
+      "name": "CHUECA",
+      "lat": 40.422933178079816,
+      "lon": -3.6976165924437825,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0513",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6976165924437825,
+        40.422933178079816
+      ]
+    },
+    {
+      "id": "campamento",
+      "name": "CAMPAMENTO",
+      "lat": 40.39480775740209,
+      "lon": -3.768128136787409,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0529",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.768128136787409,
+        40.39480775740209
+      ]
+    },
+    {
+      "id": "empalme",
+      "name": "EMPALME",
+      "lat": 40.39057255783158,
+      "lon": -3.765347875572339,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0528",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.765347875572339,
+        40.39057255783158
+      ]
+    },
+    {
+      "id": "alameda_de_osuna",
+      "name": "ALAMEDA DE OSUNA",
+      "lat": 40.45778862852046,
+      "lon": -3.5875209290434937,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0552",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5875209290434937,
+        40.45778862852046
+      ]
+    },
+    {
+      "id": "aluche",
+      "name": "ALUCHE",
+      "lat": 40.38562861956385,
+      "lon": -3.76080381070444,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0527",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.76080381070444,
+        40.38562861956385
+      ]
+    },
+    {
+      "id": "acacias",
+      "name": "ACACIAS",
+      "lat": 40.40387164372991,
+      "lon": -3.7066410860751864,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0519",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7066410860751864,
+        40.40387164372991
+      ]
+    },
+    {
+      "id": "oporto",
+      "name": "OPORTO",
+      "lat": 40.38846476309323,
+      "lon": -3.7313233124150336,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0523",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7313233124150336,
+        40.38846476309323
+      ]
+    },
+    {
+      "id": "canillejas",
+      "name": "CANILLEJAS",
+      "lat": 40.449420844365704,
+      "lon": -3.608160323120323,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0501",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.608160323120323,
+        40.449420844365704
+      ]
+    },
+    {
+      "id": "torre_arias",
+      "name": "TORRE ARIAS",
+      "lat": 40.443743296414574,
+      "lon": -3.616994705938824,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0502",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.616994705938824,
+        40.443743296414574
+      ]
+    },
+    {
+      "id": "suanzes",
+      "name": "SUANZES",
+      "lat": 40.44085124307767,
+      "lon": -3.6268397441771407,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0503",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6268397441771407,
+        40.44085124307767
+      ]
+    },
+    {
+      "id": "ciudad_lineal",
+      "name": "CIUDAD LINEAL",
+      "lat": 40.4380484084201,
+      "lon": -3.638157588345499,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0504",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.638157588345499,
+        40.4380484084201
+      ]
+    },
+    {
+      "id": "quintana",
+      "name": "QUINTANA",
+      "lat": 40.43358494164949,
+      "lon": -3.6473622420983225,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0506",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6473622420983225,
+        40.43358494164949
+      ]
+    },
+    {
+      "id": "el_carmen",
+      "name": "EL CARMEN",
+      "lat": 40.43189329209465,
+      "lon": -3.6575725472596625,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0507",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6575725472596625,
+        40.43189329209465
+      ]
+    },
+    {
+      "id": "nu_ez_de_balboa",
+      "name": "NUÑEZ DE BALBOA",
+      "lat": 40.43278060804376,
+      "lon": -3.6825799144836044,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0510",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6825799144836044,
+        40.43278060804376
+      ]
+    },
+    {
+      "id": "ruben_dario",
+      "name": "RUBEN DARIO",
+      "lat": 40.43315793720963,
+      "lon": -3.689541598575491,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0511",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.689541598575491,
+        40.43315793720963
+      ]
+    },
+    {
+      "id": "la_latina",
+      "name": "LA LATINA",
+      "lat": 40.41128032868688,
+      "lon": -3.708160868519015,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0517",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.708160868519015,
+        40.41128032868688
+      ]
+    },
+    {
+      "id": "marques_de_vadillo",
+      "name": "MARQUES DE VADILLO",
+      "lat": 40.397356290324495,
+      "lon": -3.7159600765140515,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0521",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7159600765140515,
+        40.397356290324495
+      ]
+    },
+    {
+      "id": "urgel",
+      "name": "URGEL",
+      "lat": 40.39335176845625,
+      "lon": -3.7236048242936626,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0522",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7236048242936626,
+        40.39335176845625
+      ]
+    },
+    {
+      "id": "vista_alegre",
+      "name": "VISTA ALEGRE",
+      "lat": 40.38884702575721,
+      "lon": -3.7398245500065785,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0524",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7398245500065785,
+        40.38884702575721
+      ]
+    },
+    {
+      "id": "carabanchel",
+      "name": "CARABANCHEL",
+      "lat": 40.38782701996798,
+      "lon": -3.744870521041383,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0525",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.744870521041383,
+        40.38782701996798
+      ]
+    },
+    {
+      "id": "eugenia_de_montijo",
+      "name": "EUGENIA DE MONTIJO",
+      "lat": 40.38438579717573,
+      "lon": -3.7512111847828216,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0526",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7512111847828216,
+        40.38438579717573
+      ]
+    },
+    {
+      "id": "gran_via",
+      "name": "GRAN VIA",
+      "lat": 40.419986617735724,
+      "lon": -3.701803930135661,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0514",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.701803930135661,
+        40.419986617735724
+      ]
+    },
+    {
+      "id": "el_capricho",
+      "name": "EL CAPRICHO",
+      "lat": 40.453468332704944,
+      "lon": -3.5940116576957872,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0551",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5940116576957872,
+        40.453468332704944
+      ]
+    },
+    {
+      "id": "casa_de_campo",
+      "name": "CASA DE CAMPO",
+      "lat": 40.403242270835875,
+      "lon": -3.761013667626499,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0530",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.761013667626499,
+        40.403242270835875
+      ]
+    },
+    {
+      "id": "pueblo_nuevo",
+      "name": "PUEBLO NUEVO",
+      "lat": 40.43569283899227,
+      "lon": -3.64282326413925,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0505",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.64282326413925,
+        40.43569283899227
+      ]
+    },
+    {
+      "id": "alonso_martinez",
+      "name": "ALONSO MARTINEZ",
+      "lat": 40.42828258137045,
+      "lon": -3.6950229019466976,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0512",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6950229019466976,
+        40.42828258137045
+      ]
+    },
+    {
+      "id": "diego_de_leon",
+      "name": "DIEGO DE LEON",
+      "lat": 40.43235319427283,
+      "lon": -3.674261712530584,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0509",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.674261712530584,
+        40.43235319427283
+      ]
+    },
+    {
+      "id": "ventas",
+      "name": "VENTAS",
+      "lat": 40.430884803194914,
+      "lon": -3.6636058417273496,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0508",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6636058417273496,
+        40.430884803194914
+      ]
+    },
+    {
+      "id": "piramides",
+      "name": "PIRAMIDES",
+      "lat": 40.40259816545889,
+      "lon": -3.7113771228123165,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0520",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7113771228123165,
+        40.40259816545889
+      ]
+    },
+    {
+      "id": "puerta_de_toledo",
+      "name": "PUERTA DE TOLEDO",
+      "lat": 40.40703575446187,
+      "lon": -3.711046450767629,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0518",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.711046450767629,
+        40.40703575446187
+      ]
+    },
+    {
+      "id": "arg_elles",
+      "name": "ARGÜELLES",
+      "lat": 40.430531839640196,
+      "lon": -3.7159561654441755,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0624",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7159561654441755,
+        40.430531839640196
+      ]
+    },
+    {
+      "id": "plaza_eliptica",
+      "name": "PLAZA ELIPTICA",
+      "lat": 40.38460005540756,
+      "lon": -3.7183705578119546,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0605",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7183705578119546,
+        40.38460005540756
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803528785048,
+      "lon": -3.676583431725225,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0616",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.676583431725225,
+        40.43803528785048
+      ]
+    },
+    {
+      "id": "cuatro_caminos",
+      "name": "CUATRO CAMINOS",
+      "lat": 40.44697459690457,
+      "lon": -3.703868699286015,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0619",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703868699286015,
+        40.44697459690457
+      ]
+    },
+    {
+      "id": "manuel_becerra",
+      "name": "MANUEL BECERRA",
+      "lat": 40.42790447983754,
+      "lon": -3.6692051807116384,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0614",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6692051807116384,
+        40.42790447983754
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.446621215182525,
+      "lon": -3.6924064585114573,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0618",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6924064585114573,
+        40.446621215182525
+      ]
+    },
+    {
+      "id": "carpetana",
+      "name": "CARPETANA",
+      "lat": 40.39270189946354,
+      "lon": -3.740993676713557,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0602",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.740993676713557,
+        40.39270189946354
+      ]
+    },
+    {
+      "id": "opa_el",
+      "name": "OPAÑEL",
+      "lat": 40.38690440425559,
+      "lon": -3.723133621163613,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0604",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.723133621163613,
+        40.38690440425559
+      ]
+    },
+    {
+      "id": "usera",
+      "name": "USERA",
+      "lat": 40.38709669326968,
+      "lon": -3.706895642789324,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0606",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.706895642789324,
+        40.38709669326968
+      ]
+    },
+    {
+      "id": "conde_de_casal",
+      "name": "CONDE DE CASAL",
+      "lat": 40.40696795047538,
+      "lon": -3.670408067233978,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0611",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.670408067233978,
+        40.40696795047538
+      ]
+    },
+    {
+      "id": "o_donnell",
+      "name": "O'DONNELL",
+      "lat": 40.42288842464461,
+      "lon": -3.6685951462919535,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0613",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6685951462919535,
+        40.42288842464461
+      ]
+    },
+    {
+      "id": "vicente_aleixandre",
+      "name": "VICENTE ALEIXANDRE",
+      "lat": 40.44643639934855,
+      "lon": -3.719426711968892,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0621",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.719426711968892,
+        40.44643639934855
+      ]
+    },
+    {
+      "id": "puerta_del_angel",
+      "name": "PUERTA DEL ANGEL",
+      "lat": 40.41389889439627,
+      "lon": -3.7272404518154256,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0626",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7272404518154256,
+        40.41389889439627
+      ]
+    },
+    {
+      "id": "alto_de_extremadura",
+      "name": "ALTO DE EXTREMADURA",
+      "lat": 40.40992601698508,
+      "lon": -3.7389361815722615,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0627",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7389361815722615,
+        40.40992601698508
+      ]
+    },
+    {
+      "id": "pacifico",
+      "name": "PACIFICO",
+      "lat": 40.402071738555954,
+      "lon": -3.6738560384118877,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0610",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6738560384118877,
+        40.402071738555954
+      ]
+    },
+    {
+      "id": "moncloa",
+      "name": "MONCLOA",
+      "lat": 40.43496631087177,
+      "lon": -3.719450010688234,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0623",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.719450010688234,
+        40.43496631087177
+      ]
+    },
+    {
+      "id": "legazpi",
+      "name": "LEGAZPI",
+      "lat": 40.39115775794032,
+      "lon": -3.69505136534669,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0607",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.69505136534669,
+        40.39115775794032
+      ]
+    },
+    {
+      "id": "mendez_alvaro",
+      "name": "MENDEZ ALVARO",
+      "lat": 40.39537559939098,
+      "lon": -3.6781415070830423,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0609",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6781415070830423,
+        40.39537559939098
+      ]
+    },
+    {
+      "id": "oporto",
+      "name": "OPORTO",
+      "lat": 40.388467519483676,
+      "lon": -3.731264112878039,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0603",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.731264112878039,
+        40.388467519483676
+      ]
+    },
+    {
+      "id": "sainz_de_baranda",
+      "name": "SAINZ DE BARANDA",
+      "lat": 40.41506853886662,
+      "lon": -3.669514139418049,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0612",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.669514139418049,
+        40.41506853886662
+      ]
+    },
+    {
+      "id": "principe_pio",
+      "name": "PRINCIPE PIO",
+      "lat": 40.42106884438364,
+      "lon": -3.7203235591422588,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0625",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7203235591422588,
+        40.42106884438364
+      ]
+    },
+    {
+      "id": "laguna",
+      "name": "LAGUNA",
+      "lat": 40.39922962471062,
+      "lon": -3.744288718056632,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0601",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.744288718056632,
+        40.39922962471062
+      ]
+    },
+    {
+      "id": "republica_argentina",
+      "name": "REPUBLICA ARGENTINA",
+      "lat": 40.44379456449,
+      "lon": -3.6840618670570504,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0617",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6840618670570504,
+        40.44379456449
+      ]
+    },
+    {
+      "id": "ciudad_universitaria",
+      "name": "CIUDAD UNIVERSITARIA",
+      "lat": 40.44356467694622,
+      "lon": -3.726784810097875,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0622",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.726784810097875,
+        40.44356467694622
+      ]
+    },
+    {
+      "id": "guzman_el_bueno",
+      "name": "GUZMAN EL BUENO",
+      "lat": 40.44636607914371,
+      "lon": -3.7122940370605675,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0620",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7122940370605675,
+        40.44636607914371
+      ]
+    },
+    {
+      "id": "lucero",
+      "name": "LUCERO",
+      "lat": 40.405099650652225,
+      "lon": -3.745336959451509,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0628",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.745336959451509,
+        40.405099650652225
+      ]
+    },
+    {
+      "id": "diego_de_leon",
+      "name": "DIEGO DE LEON",
+      "lat": 40.432947682446056,
+      "lon": -3.6729385667724195,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0615",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6729385667724195,
+        40.432947682446056
+      ]
+    },
+    {
+      "id": "arganzuela_planetario",
+      "name": "ARGANZUELA-PLANETARIO",
+      "lat": 40.39310270492071,
+      "lon": -3.688640347447094,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0608",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.688640347447094,
+        40.39310270492071
+      ]
+    },
+    {
+      "id": "arg_elles",
+      "name": "ARGÜELLES",
+      "lat": 40.430531839640196,
+      "lon": -3.7159561654441755,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0624",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7159561654441755,
+        40.430531839640196
+      ]
+    },
+    {
+      "id": "plaza_eliptica",
+      "name": "PLAZA ELIPTICA",
+      "lat": 40.38460005540756,
+      "lon": -3.7183705578119546,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0605",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7183705578119546,
+        40.38460005540756
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803528785048,
+      "lon": -3.676583431725225,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0616",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.676583431725225,
+        40.43803528785048
+      ]
+    },
+    {
+      "id": "cuatro_caminos",
+      "name": "CUATRO CAMINOS",
+      "lat": 40.44697459690457,
+      "lon": -3.703868699286015,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0619",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703868699286015,
+        40.44697459690457
+      ]
+    },
+    {
+      "id": "manuel_becerra",
+      "name": "MANUEL BECERRA",
+      "lat": 40.42790447983754,
+      "lon": -3.6692051807116384,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0614",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6692051807116384,
+        40.42790447983754
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.446621215182525,
+      "lon": -3.6924064585114573,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0618",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6924064585114573,
+        40.446621215182525
+      ]
+    },
+    {
+      "id": "carpetana",
+      "name": "CARPETANA",
+      "lat": 40.39270189946354,
+      "lon": -3.740993676713557,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0602",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.740993676713557,
+        40.39270189946354
+      ]
+    },
+    {
+      "id": "opa_el",
+      "name": "OPAÑEL",
+      "lat": 40.38690440425559,
+      "lon": -3.723133621163613,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0604",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.723133621163613,
+        40.38690440425559
+      ]
+    },
+    {
+      "id": "usera",
+      "name": "USERA",
+      "lat": 40.38709669326968,
+      "lon": -3.706895642789324,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0606",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.706895642789324,
+        40.38709669326968
+      ]
+    },
+    {
+      "id": "conde_de_casal",
+      "name": "CONDE DE CASAL",
+      "lat": 40.40696795047538,
+      "lon": -3.670408067233978,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0611",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.670408067233978,
+        40.40696795047538
+      ]
+    },
+    {
+      "id": "o_donnell",
+      "name": "O'DONNELL",
+      "lat": 40.42288842464461,
+      "lon": -3.6685951462919535,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0613",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6685951462919535,
+        40.42288842464461
+      ]
+    },
+    {
+      "id": "vicente_aleixandre",
+      "name": "VICENTE ALEIXANDRE",
+      "lat": 40.44643639934855,
+      "lon": -3.719426711968892,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0621",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.719426711968892,
+        40.44643639934855
+      ]
+    },
+    {
+      "id": "puerta_del_angel",
+      "name": "PUERTA DEL ANGEL",
+      "lat": 40.41389889439627,
+      "lon": -3.7272404518154256,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0626",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7272404518154256,
+        40.41389889439627
+      ]
+    },
+    {
+      "id": "alto_de_extremadura",
+      "name": "ALTO DE EXTREMADURA",
+      "lat": 40.40992601698508,
+      "lon": -3.7389361815722615,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0627",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7389361815722615,
+        40.40992601698508
+      ]
+    },
+    {
+      "id": "pacifico",
+      "name": "PACIFICO",
+      "lat": 40.402071738555954,
+      "lon": -3.6738560384118877,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0610",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6738560384118877,
+        40.402071738555954
+      ]
+    },
+    {
+      "id": "moncloa",
+      "name": "MONCLOA",
+      "lat": 40.43496631087177,
+      "lon": -3.719450010688234,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0623",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.719450010688234,
+        40.43496631087177
+      ]
+    },
+    {
+      "id": "legazpi",
+      "name": "LEGAZPI",
+      "lat": 40.39115775794032,
+      "lon": -3.69505136534669,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0607",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.69505136534669,
+        40.39115775794032
+      ]
+    },
+    {
+      "id": "mendez_alvaro",
+      "name": "MENDEZ ALVARO",
+      "lat": 40.39537559939098,
+      "lon": -3.6781415070830423,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0609",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6781415070830423,
+        40.39537559939098
+      ]
+    },
+    {
+      "id": "oporto",
+      "name": "OPORTO",
+      "lat": 40.388467519483676,
+      "lon": -3.731264112878039,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0603",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.731264112878039,
+        40.388467519483676
+      ]
+    },
+    {
+      "id": "sainz_de_baranda",
+      "name": "SAINZ DE BARANDA",
+      "lat": 40.41506853886662,
+      "lon": -3.669514139418049,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0612",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.669514139418049,
+        40.41506853886662
+      ]
+    },
+    {
+      "id": "principe_pio",
+      "name": "PRINCIPE PIO",
+      "lat": 40.42106884438364,
+      "lon": -3.7203235591422588,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0625",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7203235591422588,
+        40.42106884438364
+      ]
+    },
+    {
+      "id": "laguna",
+      "name": "LAGUNA",
+      "lat": 40.39922962471062,
+      "lon": -3.744288718056632,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0601",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.744288718056632,
+        40.39922962471062
+      ]
+    },
+    {
+      "id": "republica_argentina",
+      "name": "REPUBLICA ARGENTINA",
+      "lat": 40.44379456449,
+      "lon": -3.6840618670570504,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0617",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6840618670570504,
+        40.44379456449
+      ]
+    },
+    {
+      "id": "ciudad_universitaria",
+      "name": "CIUDAD UNIVERSITARIA",
+      "lat": 40.44356467694622,
+      "lon": -3.726784810097875,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0622",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.726784810097875,
+        40.44356467694622
+      ]
+    },
+    {
+      "id": "guzman_el_bueno",
+      "name": "GUZMAN EL BUENO",
+      "lat": 40.44636607914371,
+      "lon": -3.7122940370605675,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0620",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7122940370605675,
+        40.44636607914371
+      ]
+    },
+    {
+      "id": "lucero",
+      "name": "LUCERO",
+      "lat": 40.405099650652225,
+      "lon": -3.745336959451509,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0628",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.745336959451509,
+        40.405099650652225
+      ]
+    },
+    {
+      "id": "diego_de_leon",
+      "name": "DIEGO DE LEON",
+      "lat": 40.432947682446056,
+      "lon": -3.6729385667724195,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0615",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6729385667724195,
+        40.432947682446056
+      ]
+    },
+    {
+      "id": "arganzuela_planetario",
+      "name": "ARGANZUELA-PLANETARIO",
+      "lat": 40.39310270492071,
+      "lon": -3.688640347447094,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0608",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.688640347447094,
+        40.39310270492071
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803561557426,
+      "lon": -3.676527279518791,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0710",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.676527279518791,
+        40.43803561557426
+      ]
+    },
+    {
+      "id": "cartagena",
+      "name": "CARTAGENA",
+      "lat": 40.43933749524513,
+      "lon": -3.672151601329782,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0709",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.672151601329782,
+        40.43933749524513
+      ]
+    },
+    {
+      "id": "parque_de_las_avenidas",
+      "name": "PARQUE DE LAS AVENIDAS",
+      "lat": 40.43944760234025,
+      "lon": -3.6629705808692217,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0708",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6629705808692217,
+        40.43944760234025
+      ]
+    },
+    {
+      "id": "estadio_metropolitano",
+      "name": "ESTADIO METROPOLITANO",
+      "lat": 40.43339348409986,
+      "lon": -3.6001536542125243,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0751",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6001536542125243,
+        40.43339348409986
+      ]
+    },
+    {
+      "id": "san_blas",
+      "name": "SAN BLAS",
+      "lat": 40.427991906767446,
+      "lon": -3.6154690762577584,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0702",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6154690762577584,
+        40.427991906767446
+      ]
+    },
+    {
+      "id": "simancas",
+      "name": "SIMANCAS",
+      "lat": 40.4279923730252,
+      "lon": -3.625721672941209,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0703",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.625721672941209,
+        40.4279923730252
+      ]
+    },
+    {
+      "id": "garcia_noblejas",
+      "name": "GARCIA NOBLEJAS",
+      "lat": 40.428423190545146,
+      "lon": -3.633299465727318,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0704",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.633299465727318,
+        40.428423190545146
+      ]
+    },
+    {
+      "id": "barrio_de_la_concepcion",
+      "name": "BARRIO DE LA CONCEPCION",
+      "lat": 40.439099399993054,
+      "lon": -3.6520040012947503,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0707",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6520040012947503,
+        40.439099399993054
+      ]
+    },
+    {
+      "id": "gregorio_mara_on",
+      "name": "GREGORIO MARAÑON",
+      "lat": 40.43825099442897,
+      "lon": -3.6914828621190114,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0711",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6914828621190114,
+        40.43825099442897
+      ]
+    },
+    {
+      "id": "alonso_cano",
+      "name": "ALONSO CANO",
+      "lat": 40.43837537611044,
+      "lon": -3.6992456432372576,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0712",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6992456432372576,
+        40.43837537611044
+      ]
+    },
+    {
+      "id": "francos_rodriguez",
+      "name": "FRANCOS RODRIGUEZ",
+      "lat": 40.45648182077827,
+      "lon": -3.712386672198295,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0716",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.712386672198295,
+        40.45648182077827
+      ]
+    },
+    {
+      "id": "antonio_machado",
+      "name": "ANTONIO MACHADO",
+      "lat": 40.47021772039073,
+      "lon": -3.7176948552412226,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0718",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7176948552412226,
+        40.47021772039073
+      ]
+    },
+    {
+      "id": "pe_agrande",
+      "name": "PEÑAGRANDE",
+      "lat": 40.47592352024965,
+      "lon": -3.715824157912478,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0719",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715824157912478,
+        40.47592352024965
+      ]
+    },
+    {
+      "id": "ascao",
+      "name": "ASCAO",
+      "lat": 40.4302055301581,
+      "lon": -3.64105571498423,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0705",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.64105571498423,
+        40.4302055301581
+      ]
+    },
+    {
+      "id": "pueblo_nuevo",
+      "name": "PUEBLO NUEVO",
+      "lat": 40.43565851549913,
+      "lon": -3.6428229372521685,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0706",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6428229372521685,
+        40.43565851549913
+      ]
+    },
+    {
+      "id": "guzman_el_bueno",
+      "name": "GUZMAN EL BUENO",
+      "lat": 40.446328896938624,
+      "lon": -3.712293644526187,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0715",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.712293644526187,
+        40.446328896938624
+      ]
+    },
+    {
+      "id": "islas_filipinas",
+      "name": "ISLAS FILIPINAS",
+      "lat": 40.43906820663266,
+      "lon": -3.7137286447993536,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0714",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7137286447993536,
+        40.43906820663266
+      ]
+    },
+    {
+      "id": "canal",
+      "name": "CANAL",
+      "lat": 40.43870250794506,
+      "lon": -3.704888988656737,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0713",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704888988656737,
+        40.43870250794506
+      ]
+    },
+    {
+      "id": "lacoma",
+      "name": "LACOMA",
+      "lat": 40.485015026073626,
+      "lon": -3.723045541550223,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0721",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.723045541550223,
+        40.485015026073626
+      ]
+    },
+    {
+      "id": "avda_de_la_ilustracion",
+      "name": "AVDA. DE LA ILUSTRACION",
+      "lat": 40.48010261154569,
+      "lon": -3.7183982522186554,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0720",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7183982522186554,
+        40.48010261154569
+      ]
+    },
+    {
+      "id": "valdezarza",
+      "name": "VALDEZARZA",
+      "lat": 40.46482353283605,
+      "lon": -3.715972126851418,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0717",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715972126851418,
+        40.46482353283605
+      ]
+    },
+    {
+      "id": "las_musas",
+      "name": "LAS MUSAS",
+      "lat": 40.432988127939815,
+      "lon": -3.607879514276323,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0701",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.607879514276323,
+        40.432988127939815
+      ]
+    },
+    {
+      "id": "pitis",
+      "name": "PITIS",
+      "lat": 40.49510584237574,
+      "lon": -3.7258912329080798,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0723",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7258912329080798,
+        40.49510584237574
+      ]
+    },
+    {
+      "id": "estadio_metropolitano",
+      "name": "ESTADIO METROPOLITANO",
+      "lat": 40.43339348409986,
+      "lon": -3.6001536542125243,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0751",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6001536542125243,
+        40.43339348409986
+      ]
+    },
+    {
+      "id": "coslada_central",
+      "name": "COSLADA CENTRAL",
+      "lat": 40.42373620597773,
+      "lon": -3.5611923494996556,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0755",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5611923494996556,
+        40.42373620597773
+      ]
+    },
+    {
+      "id": "hospital_del_henares",
+      "name": "HOSPITAL DEL HENARES",
+      "lat": 40.41761001821852,
+      "lon": -3.5345349720982124,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0760",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5345349720982124,
+        40.41761001821852
+      ]
+    },
+    {
+      "id": "la_rambla",
+      "name": "LA RAMBLA",
+      "lat": 40.42514348413913,
+      "lon": -3.5479238333382477,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0756",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5479238333382477,
+        40.42514348413913
+      ]
+    },
+    {
+      "id": "barrio_del_puerto",
+      "name": "BARRIO DEL PUERTO",
+      "lat": 40.42249687009597,
+      "lon": -3.5691884702656647,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0754",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5691884702656647,
+        40.42249687009597
+      ]
+    },
+    {
+      "id": "san_fernando",
+      "name": "SAN FERNANDO",
+      "lat": 40.42441224966061,
+      "lon": -3.5354145225517146,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0757",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5354145225517146,
+        40.42441224966061
+      ]
+    },
+    {
+      "id": "jarama",
+      "name": "JARAMA",
+      "lat": 40.42295480433805,
+      "lon": -3.5254937648988705,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0758",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5254937648988705,
+        40.42295480433805
+      ]
+    },
+    {
+      "id": "henares",
+      "name": "HENARES",
+      "lat": 40.41776948524124,
+      "lon": -3.5271783527904157,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0759",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5271783527904157,
+        40.41776948524124
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803561557426,
+      "lon": -3.676527279518791,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0710",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.676527279518791,
+        40.43803561557426
+      ]
+    },
+    {
+      "id": "cartagena",
+      "name": "CARTAGENA",
+      "lat": 40.43933749524513,
+      "lon": -3.672151601329782,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0709",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.672151601329782,
+        40.43933749524513
+      ]
+    },
+    {
+      "id": "parque_de_las_avenidas",
+      "name": "PARQUE DE LAS AVENIDAS",
+      "lat": 40.43944760234025,
+      "lon": -3.6629705808692217,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0708",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6629705808692217,
+        40.43944760234025
+      ]
+    },
+    {
+      "id": "estadio_metropolitano",
+      "name": "ESTADIO METROPOLITANO",
+      "lat": 40.43339348409986,
+      "lon": -3.6001536542125243,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0751",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6001536542125243,
+        40.43339348409986
+      ]
+    },
+    {
+      "id": "san_blas",
+      "name": "SAN BLAS",
+      "lat": 40.427991906767446,
+      "lon": -3.6154690762577584,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0702",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6154690762577584,
+        40.427991906767446
+      ]
+    },
+    {
+      "id": "simancas",
+      "name": "SIMANCAS",
+      "lat": 40.4279923730252,
+      "lon": -3.625721672941209,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0703",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.625721672941209,
+        40.4279923730252
+      ]
+    },
+    {
+      "id": "garcia_noblejas",
+      "name": "GARCIA NOBLEJAS",
+      "lat": 40.428423190545146,
+      "lon": -3.633299465727318,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0704",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.633299465727318,
+        40.428423190545146
+      ]
+    },
+    {
+      "id": "barrio_de_la_concepcion",
+      "name": "BARRIO DE LA CONCEPCION",
+      "lat": 40.439099399993054,
+      "lon": -3.6520040012947503,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0707",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6520040012947503,
+        40.439099399993054
+      ]
+    },
+    {
+      "id": "gregorio_mara_on",
+      "name": "GREGORIO MARAÑON",
+      "lat": 40.43825099442897,
+      "lon": -3.6914828621190114,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0711",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6914828621190114,
+        40.43825099442897
+      ]
+    },
+    {
+      "id": "alonso_cano",
+      "name": "ALONSO CANO",
+      "lat": 40.43837537611044,
+      "lon": -3.6992456432372576,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0712",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6992456432372576,
+        40.43837537611044
+      ]
+    },
+    {
+      "id": "francos_rodriguez",
+      "name": "FRANCOS RODRIGUEZ",
+      "lat": 40.45648182077827,
+      "lon": -3.712386672198295,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0716",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.712386672198295,
+        40.45648182077827
+      ]
+    },
+    {
+      "id": "antonio_machado",
+      "name": "ANTONIO MACHADO",
+      "lat": 40.47021772039073,
+      "lon": -3.7176948552412226,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0718",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7176948552412226,
+        40.47021772039073
+      ]
+    },
+    {
+      "id": "pe_agrande",
+      "name": "PEÑAGRANDE",
+      "lat": 40.47592352024965,
+      "lon": -3.715824157912478,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0719",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715824157912478,
+        40.47592352024965
+      ]
+    },
+    {
+      "id": "ascao",
+      "name": "ASCAO",
+      "lat": 40.4302055301581,
+      "lon": -3.64105571498423,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0705",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.64105571498423,
+        40.4302055301581
+      ]
+    },
+    {
+      "id": "pueblo_nuevo",
+      "name": "PUEBLO NUEVO",
+      "lat": 40.43565851549913,
+      "lon": -3.6428229372521685,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0706",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6428229372521685,
+        40.43565851549913
+      ]
+    },
+    {
+      "id": "guzman_el_bueno",
+      "name": "GUZMAN EL BUENO",
+      "lat": 40.446328896938624,
+      "lon": -3.712293644526187,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0715",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.712293644526187,
+        40.446328896938624
+      ]
+    },
+    {
+      "id": "islas_filipinas",
+      "name": "ISLAS FILIPINAS",
+      "lat": 40.43906820663266,
+      "lon": -3.7137286447993536,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0714",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7137286447993536,
+        40.43906820663266
+      ]
+    },
+    {
+      "id": "canal",
+      "name": "CANAL",
+      "lat": 40.43870250794506,
+      "lon": -3.704888988656737,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0713",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.704888988656737,
+        40.43870250794506
+      ]
+    },
+    {
+      "id": "lacoma",
+      "name": "LACOMA",
+      "lat": 40.485015026073626,
+      "lon": -3.723045541550223,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0721",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.723045541550223,
+        40.485015026073626
+      ]
+    },
+    {
+      "id": "avda_de_la_ilustracion",
+      "name": "AVDA. DE LA ILUSTRACION",
+      "lat": 40.48010261154569,
+      "lon": -3.7183982522186554,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0720",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7183982522186554,
+        40.48010261154569
+      ]
+    },
+    {
+      "id": "valdezarza",
+      "name": "VALDEZARZA",
+      "lat": 40.46482353283605,
+      "lon": -3.715972126851418,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0717",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.715972126851418,
+        40.46482353283605
+      ]
+    },
+    {
+      "id": "las_musas",
+      "name": "LAS MUSAS",
+      "lat": 40.432988127939815,
+      "lon": -3.607879514276323,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0701",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.607879514276323,
+        40.432988127939815
+      ]
+    },
+    {
+      "id": "pitis",
+      "name": "PITIS",
+      "lat": 40.49510584237574,
+      "lon": -3.7258912329080798,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0723",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7258912329080798,
+        40.49510584237574
+      ]
+    },
+    {
+      "id": "estadio_metropilitano",
+      "name": "ESTADIO METROPILITANO",
+      "lat": 40.43339348409986,
+      "lon": -3.6001536542125243,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0751",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6001536542125243,
+        40.43339348409986
+      ]
+    },
+    {
+      "id": "coslada_central",
+      "name": "COSLADA CENTRAL",
+      "lat": 40.42373620597773,
+      "lon": -3.5611923494996556,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0755",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5611923494996556,
+        40.42373620597773
+      ]
+    },
+    {
+      "id": "hospital_del_henares",
+      "name": "HOSPITAL DEL HENARES",
+      "lat": 40.41761001821852,
+      "lon": -3.5345349720982124,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0760",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5345349720982124,
+        40.41761001821852
+      ]
+    },
+    {
+      "id": "la_rambla",
+      "name": "LA RAMBLA",
+      "lat": 40.42514348413913,
+      "lon": -3.5479238333382477,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0756",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5479238333382477,
+        40.42514348413913
+      ]
+    },
+    {
+      "id": "barrio_del_puerto",
+      "name": "BARRIO DEL PUERTO",
+      "lat": 40.42249687009597,
+      "lon": -3.5691884702656647,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0754",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5691884702656647,
+        40.42249687009597
+      ]
+    },
+    {
+      "id": "san_fernando",
+      "name": "SAN FERNANDO",
+      "lat": 40.42441224966061,
+      "lon": -3.5354145225517146,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0757",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5354145225517146,
+        40.42441224966061
+      ]
+    },
+    {
+      "id": "jarama",
+      "name": "JARAMA",
+      "lat": 40.42295480433805,
+      "lon": -3.5254937648988705,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0758",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5254937648988705,
+        40.42295480433805
+      ]
+    },
+    {
+      "id": "henares",
+      "name": "HENARES",
+      "lat": 40.41776948524124,
+      "lon": -3.5271783527904157,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0759",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5271783527904157,
+        40.41776948524124
+      ]
+    },
+    {
+      "id": "barajas",
+      "name": "BARAJAS",
+      "lat": 40.475774163830884,
+      "lon": -3.5825279097963674,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0807",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5825279097963674,
+        40.475774163830884
+      ]
+    },
+    {
+      "id": "aeropuerto_t4",
+      "name": "AEROPUERTO T4",
+      "lat": 40.491766772325995,
+      "lon": -3.593245597213427,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0808",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.593245597213427,
+        40.491766772325995
+      ]
+    },
+    {
+      "id": "mar_de_cristal",
+      "name": "MAR DE CRISTAL",
+      "lat": 40.469383787188725,
+      "lon": -3.6383202232204686,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0804",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6383202232204686,
+        40.469383787188725
+      ]
+    },
+    {
+      "id": "aeropuerto_t1_t2_t3",
+      "name": "AEROPUERTO T1 T2 T3",
+      "lat": 40.4686442368363,
+      "lon": -3.569538255943205,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0806",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.569538255943205,
+        40.4686442368363
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.446552669988414,
+      "lon": -3.692405592344977,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0801",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.692405592344977,
+        40.446552669988414
+      ]
+    },
+    {
+      "id": "pinar_del_rey",
+      "name": "PINAR DEL REY",
+      "lat": 40.46800136207379,
+      "lon": -3.6486683605201167,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0803",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6486683605201167,
+        40.46800136207379
+      ]
+    },
+    {
+      "id": "colombia",
+      "name": "COLOMBIA",
+      "lat": 40.456339068325185,
+      "lon": -3.6768242867748153,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0802",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6768242867748153,
+        40.456339068325185
+      ]
+    },
+    {
+      "id": "feria_de_madrid",
+      "name": "FERIA DE MADRID",
+      "lat": 40.46389315131333,
+      "lon": -3.6162046822415186,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0805",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6162046822415186,
+        40.46389315131333
+      ]
+    },
+    {
+      "id": "barajas",
+      "name": "BARAJAS",
+      "lat": 40.475774163830884,
+      "lon": -3.5825279097963674,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0807",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5825279097963674,
+        40.475774163830884
+      ]
+    },
+    {
+      "id": "aeropuerto_t4",
+      "name": "AEROPUERTO T4",
+      "lat": 40.491766772325995,
+      "lon": -3.593245597213427,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0808",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.593245597213427,
+        40.491766772325995
+      ]
+    },
+    {
+      "id": "mar_de_cristal",
+      "name": "MAR DE CRISTAL",
+      "lat": 40.469383787188725,
+      "lon": -3.6383202232204686,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0804",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6383202232204686,
+        40.469383787188725
+      ]
+    },
+    {
+      "id": "aeropuerto_t1_t2_t3",
+      "name": "AEROPUERTO T1 T2 T3",
+      "lat": 40.4686442368363,
+      "lon": -3.569538255943205,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0806",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.569538255943205,
+        40.4686442368363
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.446552669988414,
+      "lon": -3.692405592344977,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0801",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.692405592344977,
+        40.446552669988414
+      ]
+    },
+    {
+      "id": "pinar_del_rey",
+      "name": "PINAR DEL REY",
+      "lat": 40.46800136207379,
+      "lon": -3.6486683605201167,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0803",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6486683605201167,
+        40.46800136207379
+      ]
+    },
+    {
+      "id": "colombia",
+      "name": "COLOMBIA",
+      "lat": 40.456339068325185,
+      "lon": -3.6768242867748153,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0802",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6768242867748153,
+        40.456339068325185
+      ]
+    },
+    {
+      "id": "feria_de_madrid",
+      "name": "FERIA DE MADRID",
+      "lat": 40.46389315131333,
+      "lon": -3.6162046822415186,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0805",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6162046822415186,
+        40.46389315131333
+      ]
+    },
+    {
+      "id": "herrera_oria",
+      "name": "HERRERA ORIA",
+      "lat": 40.48466278015302,
+      "lon": -3.70751021303079,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0901",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.70751021303079,
+        40.48466278015302
+      ]
+    },
+    {
+      "id": "barrio_del_pilar",
+      "name": "BARRIO DEL PILAR",
+      "lat": 40.47688906880558,
+      "lon": -3.703164503841757,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0902",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703164503841757,
+        40.47688906880558
+      ]
+    },
+    {
+      "id": "concha_espina",
+      "name": "CONCHA ESPINA",
+      "lat": 40.451448432622364,
+      "lon": -3.677380122875907,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0908",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.677380122875907,
+        40.451448432622364
+      ]
+    },
+    {
+      "id": "ventilla",
+      "name": "VENTILLA",
+      "lat": 40.46943537698728,
+      "lon": -3.6958833297651754,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0903",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6958833297651754,
+        40.46943537698728
+      ]
+    },
+    {
+      "id": "duque_de_pastrana",
+      "name": "DUQUE DE PASTRANA",
+      "lat": 40.467625851508785,
+      "lon": -3.6791705524779017,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0905",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6791705524779017,
+        40.467625851508785
+      ]
+    },
+    {
+      "id": "pio_xii",
+      "name": "PIO XII",
+      "lat": 40.46300276051131,
+      "lon": -3.67579015001895,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0906",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.67579015001895,
+        40.46300276051131
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803832871194,
+      "lon": -3.6764711524000466,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0910",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6764711524000466,
+        40.43803832871194
+      ]
+    },
+    {
+      "id": "pavones",
+      "name": "PAVONES",
+      "lat": 40.40051154957267,
+      "lon": -3.635122556293407,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0918",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.635122556293407,
+        40.40051154957267
+      ]
+    },
+    {
+      "id": "estrella",
+      "name": "ESTRELLA",
+      "lat": 40.41147221920649,
+      "lon": -3.6617852707606366,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0915",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6617852707606366,
+        40.41147221920649
+      ]
+    },
+    {
+      "id": "san_cipriano",
+      "name": "SAN CIPRIANO",
+      "lat": 40.40381175745944,
+      "lon": -3.6023940495699014,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0921",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6023940495699014,
+        40.40381175745944
+      ]
+    },
+    {
+      "id": "mirasierra",
+      "name": "MIRASIERRA",
+      "lat": 40.491097784867534,
+      "lon": -3.7163444822992076,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0951",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7163444822992076,
+        40.491097784867534
+      ]
+    },
+    {
+      "id": "sainz_de_baranda",
+      "name": "SAINZ DE BARANDA",
+      "lat": 40.4150284968071,
+      "lon": -3.6695137437026353,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0914",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6695137437026353,
+        40.4150284968071
+      ]
+    },
+    {
+      "id": "vicalvaro",
+      "name": "VICALVARO",
+      "lat": 40.404215916403444,
+      "lon": -3.6088588260062022,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0920",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6088588260062022,
+        40.404215916403444
+      ]
+    },
+    {
+      "id": "vinateros",
+      "name": "VINATEROS",
+      "lat": 40.41023992779957,
+      "lon": -3.6527342071047637,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0916",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6527342071047637,
+        40.41023992779957
+      ]
+    },
+    {
+      "id": "artilleros",
+      "name": "ARTILLEROS",
+      "lat": 40.4052238336675,
+      "lon": -3.641812337774728,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0917",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.641812337774728,
+        40.4052238336675
+      ]
+    },
+    {
+      "id": "cruz_del_rayo",
+      "name": "CRUZ DEL RAYO",
+      "lat": 40.44426588110329,
+      "lon": -3.6782141096710466,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0909",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6782141096710466,
+        40.44426588110329
+      ]
+    },
+    {
+      "id": "ibiza",
+      "name": "IBIZA",
+      "lat": 40.41839121058978,
+      "lon": -3.6785751055264586,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0913",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6785751055264586,
+        40.41839121058978
+      ]
+    },
+    {
+      "id": "paco_de_lucia",
+      "name": "PACO DE LUCIA",
+      "lat": 40.499654912051675,
+      "lon": -3.709081480557363,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0952",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.709081480557363,
+        40.499654912051675
+      ]
+    },
+    {
+      "id": "valdebernardo",
+      "name": "VALDEBERNARDO",
+      "lat": 40.40004712961799,
+      "lon": -3.6215591598085286,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0919",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6215591598085286,
+        40.40004712961799
+      ]
+    },
+    {
+      "id": "colombia",
+      "name": "COLOMBIA",
+      "lat": 40.45748975041236,
+      "lon": -3.6769390594028932,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0907",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6769390594028932,
+        40.45748975041236
+      ]
+    },
+    {
+      "id": "nu_ez_de_balboa",
+      "name": "NUÑEZ DE BALBOA",
+      "lat": 40.43012982126571,
+      "lon": -3.6793637194556172,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0911",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6793637194556172,
+        40.43012982126571
+      ]
+    },
+    {
+      "id": "plaza_de_castilla",
+      "name": "PLAZA DE CASTILLA",
+      "lat": 40.46689629239304,
+      "lon": -3.6891266532024405,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0904",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6891266532024405,
+        40.46689629239304
+      ]
+    },
+    {
+      "id": "puerta_de_arganda",
+      "name": "PUERTA DE ARGANDA",
+      "lat": 40.40131578216117,
+      "lon": -3.5959753029479633,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0922",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5959753029479633,
+        40.40131578216117
+      ]
+    },
+    {
+      "id": "principe_de_vergara",
+      "name": "PRINCIPE DE VERGARA",
+      "lat": 40.42417595482102,
+      "lon": -3.6802398689995695,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0912",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6802398689995695,
+        40.42417595482102
+      ]
+    },
+    {
+      "id": "rivas_urbanizaciones",
+      "name": "RIVAS URBANIZACIONES",
+      "lat": 40.366771502577514,
+      "lon": -3.5472758067455525,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0924",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5472758067455525,
+        40.366771502577514
+      ]
+    },
+    {
+      "id": "la_poveda",
+      "name": "LA POVEDA",
+      "lat": 40.31901573079284,
+      "lon": -3.477447350588455,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0927",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.477447350588455,
+        40.31901573079284
+      ]
+    },
+    {
+      "id": "arganda_del_rey",
+      "name": "ARGANDA DEL REY",
+      "lat": 40.303669277437,
+      "lon": -3.447518960780649,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0928",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.447518960780649,
+        40.303669277437
+      ]
+    },
+    {
+      "id": "rivas_futura",
+      "name": "RIVAS FUTURA",
+      "lat": 40.34134215405359,
+      "lon": -3.5247890122718806,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0925",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5247890122718806,
+        40.34134215405359
+      ]
+    },
+    {
+      "id": "rivas_vaciamadrid",
+      "name": "RIVAS VACIAMADRID",
+      "lat": 40.32837092189286,
+      "lon": -3.5205975209537232,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0926",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5205975209537232,
+        40.32837092189286
+      ]
+    },
+    {
+      "id": "puerta_de_arganda",
+      "name": "PUERTA DE ARGANDA",
+      "lat": 40.40131578216117,
+      "lon": -3.5959753029479633,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0922",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5959753029479633,
+        40.40131578216117
+      ]
+    },
+    {
+      "id": "herrera_oria",
+      "name": "HERRERA ORIA",
+      "lat": 40.48466278015302,
+      "lon": -3.70751021303079,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0901",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.70751021303079,
+        40.48466278015302
+      ]
+    },
+    {
+      "id": "barrio_del_pilar",
+      "name": "BARRIO DEL PILAR",
+      "lat": 40.47688906880558,
+      "lon": -3.703164503841757,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0902",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.703164503841757,
+        40.47688906880558
+      ]
+    },
+    {
+      "id": "concha_espina",
+      "name": "CONCHA ESPINA",
+      "lat": 40.451448432622364,
+      "lon": -3.677380122875907,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0908",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.677380122875907,
+        40.451448432622364
+      ]
+    },
+    {
+      "id": "ventilla",
+      "name": "VENTILLA",
+      "lat": 40.46943537698728,
+      "lon": -3.6958833297651754,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0903",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6958833297651754,
+        40.46943537698728
+      ]
+    },
+    {
+      "id": "duque_de_pastrana",
+      "name": "DUQUE DE PASTRANA",
+      "lat": 40.467625851508785,
+      "lon": -3.6791705524779017,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0905",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6791705524779017,
+        40.467625851508785
+      ]
+    },
+    {
+      "id": "pio_xii",
+      "name": "PIO XII",
+      "lat": 40.46300276051131,
+      "lon": -3.67579015001895,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0906",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.67579015001895,
+        40.46300276051131
+      ]
+    },
+    {
+      "id": "avenida_de_america",
+      "name": "AVENIDA DE AMERICA",
+      "lat": 40.43803832871194,
+      "lon": -3.6764711524000466,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0910",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6764711524000466,
+        40.43803832871194
+      ]
+    },
+    {
+      "id": "pavones",
+      "name": "PAVONES",
+      "lat": 40.40051154957267,
+      "lon": -3.635122556293407,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0918",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.635122556293407,
+        40.40051154957267
+      ]
+    },
+    {
+      "id": "estrella",
+      "name": "ESTRELLA",
+      "lat": 40.41147221920649,
+      "lon": -3.6617852707606366,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0915",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6617852707606366,
+        40.41147221920649
+      ]
+    },
+    {
+      "id": "san_cipriano",
+      "name": "SAN CIPRIANO",
+      "lat": 40.40381175745944,
+      "lon": -3.6023940495699014,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0921",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6023940495699014,
+        40.40381175745944
+      ]
+    },
+    {
+      "id": "mirasierra",
+      "name": "MIRASIERRA",
+      "lat": 40.491097784867534,
+      "lon": -3.7163444822992076,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0951",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7163444822992076,
+        40.491097784867534
+      ]
+    },
+    {
+      "id": "sainz_de_baranda",
+      "name": "SAINZ DE BARANDA",
+      "lat": 40.4150284968071,
+      "lon": -3.6695137437026353,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0914",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6695137437026353,
+        40.4150284968071
+      ]
+    },
+    {
+      "id": "vicalvaro",
+      "name": "VICALVARO",
+      "lat": 40.404215916403444,
+      "lon": -3.6088588260062022,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0920",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6088588260062022,
+        40.404215916403444
+      ]
+    },
+    {
+      "id": "vinateros",
+      "name": "VINATEROS",
+      "lat": 40.41023992779957,
+      "lon": -3.6527342071047637,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0916",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6527342071047637,
+        40.41023992779957
+      ]
+    },
+    {
+      "id": "artilleros",
+      "name": "ARTILLEROS",
+      "lat": 40.4052238336675,
+      "lon": -3.641812337774728,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0917",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.641812337774728,
+        40.4052238336675
+      ]
+    },
+    {
+      "id": "cruz_del_rayo",
+      "name": "CRUZ DEL RAYO",
+      "lat": 40.44426588110329,
+      "lon": -3.6782141096710466,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0909",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6782141096710466,
+        40.44426588110329
+      ]
+    },
+    {
+      "id": "ibiza",
+      "name": "IBIZA",
+      "lat": 40.41839121058978,
+      "lon": -3.6785751055264586,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0913",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6785751055264586,
+        40.41839121058978
+      ]
+    },
+    {
+      "id": "paco_de_lucia",
+      "name": "PACO DE LUCIA",
+      "lat": 40.499654912051675,
+      "lon": -3.709081480557363,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0952",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.709081480557363,
+        40.499654912051675
+      ]
+    },
+    {
+      "id": "valdebernardo",
+      "name": "VALDEBERNARDO",
+      "lat": 40.40004712961799,
+      "lon": -3.6215591598085286,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0919",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6215591598085286,
+        40.40004712961799
+      ]
+    },
+    {
+      "id": "colombia",
+      "name": "COLOMBIA",
+      "lat": 40.45748975041236,
+      "lon": -3.6769390594028932,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0907",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6769390594028932,
+        40.45748975041236
+      ]
+    },
+    {
+      "id": "nu_ez_de_balboa",
+      "name": "NUÑEZ DE BALBOA",
+      "lat": 40.43012982126571,
+      "lon": -3.6793637194556172,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0911",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6793637194556172,
+        40.43012982126571
+      ]
+    },
+    {
+      "id": "plaza_de_castilla",
+      "name": "PLAZA DE CASTILLA",
+      "lat": 40.46689629239304,
+      "lon": -3.6891266532024405,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0904",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6891266532024405,
+        40.46689629239304
+      ]
+    },
+    {
+      "id": "puerta_de_arganda",
+      "name": "PUERTA DE ARGANDA",
+      "lat": 40.40131578216117,
+      "lon": -3.5959753029479633,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0922",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5959753029479633,
+        40.40131578216117
+      ]
+    },
+    {
+      "id": "principe_de_vergara",
+      "name": "PRINCIPE DE VERGARA",
+      "lat": 40.42417595482102,
+      "lon": -3.6802398689995695,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0912",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6802398689995695,
+        40.42417595482102
+      ]
+    },
+    {
+      "id": "rivas_urbanizaciones",
+      "name": "RIVAS URBANIZACIONES",
+      "lat": 40.366771502577514,
+      "lon": -3.5472758067455525,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0924",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5472758067455525,
+        40.366771502577514
+      ]
+    },
+    {
+      "id": "la_poveda",
+      "name": "LA POVEDA",
+      "lat": 40.31901573079284,
+      "lon": -3.477447350588455,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0927",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.477447350588455,
+        40.31901573079284
+      ]
+    },
+    {
+      "id": "arganda_del_rey",
+      "name": "ARGANDA DEL REY",
+      "lat": 40.303669277437,
+      "lon": -3.447518960780649,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0928",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.447518960780649,
+        40.303669277437
+      ]
+    },
+    {
+      "id": "rivas_futura",
+      "name": "RIVAS FUTURA",
+      "lat": 40.34134215405359,
+      "lon": -3.5247890122718806,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0925",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5247890122718806,
+        40.34134215405359
+      ]
+    },
+    {
+      "id": "rivas_vaciamadrid",
+      "name": "RIVAS VACIAMADRID",
+      "lat": 40.32837092189286,
+      "lon": -3.5205975209537232,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0926",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5205975209537232,
+        40.32837092189286
+      ]
+    },
+    {
+      "id": "puerta_de_arganda",
+      "name": "PUERTA DE ARGANDA",
+      "lat": 40.40131578216117,
+      "lon": -3.5959753029479633,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "0922",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.5959753029479633,
+        40.40131578216117
+      ]
+    },
+    {
+      "id": "cuatro_vientos",
+      "name": "CUATRO VIENTOS",
+      "lat": 40.37770688876972,
+      "lon": -3.7915151998735666,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1019",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7915151998735666,
+        40.37770688876972
+      ]
+    },
+    {
+      "id": "colonia_jardin",
+      "name": "COLONIA JARDIN",
+      "lat": 40.396975426434246,
+      "lon": -3.774616256196163,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1016",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.774616256196163,
+        40.396975426434246
+      ]
+    },
+    {
+      "id": "lago",
+      "name": "LAGO",
+      "lat": 40.416414110991504,
+      "lon": -3.7356310593736235,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1013",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7356310593736235,
+        40.416414110991504
+      ]
+    },
+    {
+      "id": "batan",
+      "name": "BATAN",
+      "lat": 40.40786020840237,
+      "lon": -3.7531099371759526,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1014",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7531099371759526,
+        40.40786020840237
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.44658546516346,
+      "lon": -3.6924060916320443,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1007",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6924060916320443,
+        40.44658546516346
+      ]
+    },
+    {
+      "id": "tres_olivos",
+      "name": "TRES OLIVOS",
+      "lat": 40.50120462748204,
+      "lon": -3.6952024504667387,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1051",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6952024504667387,
+        40.50120462748204
+      ]
+    },
+    {
+      "id": "principe_pio",
+      "name": "PRINCIPE PIO",
+      "lat": 40.42103069046502,
+      "lon": -3.7203262700195014,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1012",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7203262700195014,
+        40.42103069046502
+      ]
+    },
+    {
+      "id": "fuencarral",
+      "name": "FUENCARRAL",
+      "lat": 40.495085162407655,
+      "lon": -3.692831231006568,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1001",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.692831231006568,
+        40.495085162407655
+      ]
+    },
+    {
+      "id": "cuzco",
+      "name": "CUZCO",
+      "lat": 40.45842141927867,
+      "lon": -3.689850751213803,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1005",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.689850751213803,
+        40.45842141927867
+      ]
+    },
+    {
+      "id": "santiago_bernabeu",
+      "name": "SANTIAGO BERNABEU",
+      "lat": 40.45158917952577,
+      "lon": -3.6903793467348454,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1006",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6903793467348454,
+        40.45158917952577
+      ]
+    },
+    {
+      "id": "puerta_del_sur",
+      "name": "PUERTA DEL SUR",
+      "lat": 40.3452428742768,
+      "lon": -3.8121107350474532,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1021",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.8121107350474532,
+        40.3452428742768
+      ]
+    },
+    {
+      "id": "joaquin_vilumbrales",
+      "name": "JOAQUIN VILUMBRALES",
+      "lat": 40.349848097734004,
+      "lon": -3.8072012843672822,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1020",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.8072012843672822,
+        40.349848097734004
+      ]
+    },
+    {
+      "id": "aviacion_espa_ola",
+      "name": "AVIACION ESPAÑOLA",
+      "lat": 40.38363943761124,
+      "lon": -3.7839229464393767,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1018",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7839229464393767,
+        40.38363943761124
+      ]
+    },
+    {
+      "id": "casa_de_campo",
+      "name": "CASA DE CAMPO",
+      "lat": 40.40320794801885,
+      "lon": -3.761013281083767,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1015",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.761013281083767,
+        40.40320794801885
+      ]
+    },
+    {
+      "id": "tribunal",
+      "name": "TRIBUNAL",
+      "lat": 40.42599519678041,
+      "lon": -3.7020777488360026,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1010",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7020777488360026,
+        40.42599519678041
+      ]
+    },
+    {
+      "id": "plaza_de_espa_a",
+      "name": "PLAZA DE ESPAÑA",
+      "lat": 40.4240868846098,
+      "lon": -3.7096987115977367,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1011",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7096987115977367,
+        40.4240868846098
+      ]
+    },
+    {
+      "id": "alonso_martinez",
+      "name": "ALONSO MARTINEZ",
+      "lat": 40.42852602883,
+      "lon": -3.6964318860038867,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1009",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6964318860038867,
+        40.42852602883
+      ]
+    },
+    {
+      "id": "plaza_de_castilla",
+      "name": "PLAZA DE CASTILLA",
+      "lat": 40.46689653414191,
+      "lon": -3.6890861043280827,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1004",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6890861043280827,
+        40.46689653414191
+      ]
+    },
+    {
+      "id": "chamartin",
+      "name": "CHAMARTIN",
+      "lat": 40.472103124612666,
+      "lon": -3.6825908805499754,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1003",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6825908805499754,
+        40.472103124612666
+      ]
+    },
+    {
+      "id": "bego_a",
+      "name": "BEGOÑA",
+      "lat": 40.48041293210537,
+      "lon": -3.6858496955790008,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1002",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6858496955790008,
+        40.48041293210537
+      ]
+    },
+    {
+      "id": "gregorio_mara_on",
+      "name": "GREGORIO MARAÑON",
+      "lat": 40.43753407332082,
+      "lon": -3.691267602842976,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1008",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.691267602842976,
+        40.43753407332082
+      ]
+    },
+    {
+      "id": "tres_olivos",
+      "name": "TRES OLIVOS",
+      "lat": 40.50120462748204,
+      "lon": -3.6952024504667387,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1051",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6952024504667387,
+        40.50120462748204
+      ]
+    },
+    {
+      "id": "marques_de_la_valdavia",
+      "name": "MARQUES DE LA VALDAVIA",
+      "lat": 40.54102356213352,
+      "lon": -3.637384941176687,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1057",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.637384941176687,
+        40.54102356213352
+      ]
+    },
+    {
+      "id": "baunatal",
+      "name": "BAUNATAL",
+      "lat": 40.55442320714419,
+      "lon": -3.6351260237120413,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1059",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6351260237120413,
+        40.55442320714419
+      ]
+    },
+    {
+      "id": "las_tablas",
+      "name": "LAS TABLAS",
+      "lat": 40.50833012106391,
+      "lon": -3.6694425832834607,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1053",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6694425832834607,
+        40.50833012106391
+      ]
+    },
+    {
+      "id": "ronda_de_la_comunicacion",
+      "name": "RONDA DE LA COMUNICACION",
+      "lat": 40.51553464717745,
+      "lon": -3.6627651035032445,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1054",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6627651035032445,
+        40.51553464717745
+      ]
+    },
+    {
+      "id": "montecarmelo",
+      "name": "MONTECARMELO",
+      "lat": 40.505252159110974,
+      "lon": -3.6957506950563808,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1052",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6957506950563808,
+        40.505252159110974
+      ]
+    },
+    {
+      "id": "reyes_catolicos",
+      "name": "REYES CATOLICOS",
+      "lat": 40.55037483366552,
+      "lon": -3.6233994104420226,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1060",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6233994104420226,
+        40.55037483366552
+      ]
+    },
+    {
+      "id": "manuel_de_falla",
+      "name": "MANUEL DE FALLA",
+      "lat": 40.55047998089715,
+      "lon": -3.6468794495056858,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1058",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6468794495056858,
+        40.55047998089715
+      ]
+    },
+    {
+      "id": "la_moraleja",
+      "name": "LA MORALEJA",
+      "lat": 40.53195564734653,
+      "lon": -3.635559522713986,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1056",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.635559522713986,
+        40.53195564734653
+      ]
+    },
+    {
+      "id": "la_granja",
+      "name": "LA GRANJA",
+      "lat": 40.52759962236235,
+      "lon": -3.658592087138037,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1055",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.658592087138037,
+        40.52759962236235
+      ]
+    },
+    {
+      "id": "hospital_infanta_sofia",
+      "name": "HOSPITAL INFANTA SOFIA",
+      "lat": 40.559769448196086,
+      "lon": -3.6114547338421925,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1061",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6114547338421925,
+        40.559769448196086
+      ]
+    },
+    {
+      "id": "cuatro_vientos",
+      "name": "CUATRO VIENTOS",
+      "lat": 40.37770688876972,
+      "lon": -3.7915151998735666,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1019",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7915151998735666,
+        40.37770688876972
+      ]
+    },
+    {
+      "id": "colonia_jardin",
+      "name": "COLONIA JARDIN",
+      "lat": 40.396975426434246,
+      "lon": -3.774616256196163,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1016",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.774616256196163,
+        40.396975426434246
+      ]
+    },
+    {
+      "id": "lago",
+      "name": "LAGO",
+      "lat": 40.416414110991504,
+      "lon": -3.7356310593736235,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1013",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7356310593736235,
+        40.416414110991504
+      ]
+    },
+    {
+      "id": "batan",
+      "name": "BATAN",
+      "lat": 40.40786020840237,
+      "lon": -3.7531099371759526,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1014",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7531099371759526,
+        40.40786020840237
+      ]
+    },
+    {
+      "id": "nuevos_ministerios",
+      "name": "NUEVOS MINISTERIOS",
+      "lat": 40.44658546516346,
+      "lon": -3.6924060916320443,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1007",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6924060916320443,
+        40.44658546516346
+      ]
+    },
+    {
+      "id": "tres_olivos",
+      "name": "TRES OLIVOS",
+      "lat": 40.50120462748204,
+      "lon": -3.6952024504667387,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1051",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6952024504667387,
+        40.50120462748204
+      ]
+    },
+    {
+      "id": "principe_pio",
+      "name": "PRINCIPE PIO",
+      "lat": 40.42103069046502,
+      "lon": -3.7203262700195014,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1012",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7203262700195014,
+        40.42103069046502
+      ]
+    },
+    {
+      "id": "fuencarral",
+      "name": "FUENCARRAL",
+      "lat": 40.495085162407655,
+      "lon": -3.692831231006568,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1001",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.692831231006568,
+        40.495085162407655
+      ]
+    },
+    {
+      "id": "cuzco",
+      "name": "CUZCO",
+      "lat": 40.45842141927867,
+      "lon": -3.689850751213803,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1005",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.689850751213803,
+        40.45842141927867
+      ]
+    },
+    {
+      "id": "santiago_bernabeu",
+      "name": "SANTIAGO BERNABEU",
+      "lat": 40.45158917952577,
+      "lon": -3.6903793467348454,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1006",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6903793467348454,
+        40.45158917952577
+      ]
+    },
+    {
+      "id": "puerta_del_sur",
+      "name": "PUERTA DEL SUR",
+      "lat": 40.3452428742768,
+      "lon": -3.8121107350474532,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1021",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.8121107350474532,
+        40.3452428742768
+      ]
+    },
+    {
+      "id": "joaquin_vilumbrales",
+      "name": "JOAQUIN VILUMBRALES",
+      "lat": 40.349848097734004,
+      "lon": -3.8072012843672822,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1020",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.8072012843672822,
+        40.349848097734004
+      ]
+    },
+    {
+      "id": "aviacion_espa_ola",
+      "name": "AVIACION ESPAÑOLA",
+      "lat": 40.38363943761124,
+      "lon": -3.7839229464393767,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1018",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7839229464393767,
+        40.38363943761124
+      ]
+    },
+    {
+      "id": "casa_de_campo",
+      "name": "CASA DE CAMPO",
+      "lat": 40.40320794801885,
+      "lon": -3.761013281083767,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1015",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.761013281083767,
+        40.40320794801885
+      ]
+    },
+    {
+      "id": "tribunal",
+      "name": "TRIBUNAL",
+      "lat": 40.42599519678041,
+      "lon": -3.7020777488360026,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1010",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7020777488360026,
+        40.42599519678041
+      ]
+    },
+    {
+      "id": "plaza_de_espa_a",
+      "name": "PLAZA DE ESPAÑA",
+      "lat": 40.4240868846098,
+      "lon": -3.7096987115977367,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1011",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7096987115977367,
+        40.4240868846098
+      ]
+    },
+    {
+      "id": "alonso_martinez",
+      "name": "ALONSO MARTINEZ",
+      "lat": 40.42852602883,
+      "lon": -3.6964318860038867,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1009",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6964318860038867,
+        40.42852602883
+      ]
+    },
+    {
+      "id": "plaza_de_castilla",
+      "name": "PLAZA DE CASTILLA",
+      "lat": 40.46689653414191,
+      "lon": -3.6890861043280827,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1004",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6890861043280827,
+        40.46689653414191
+      ]
+    },
+    {
+      "id": "chamartin",
+      "name": "CHAMARTIN",
+      "lat": 40.472103124612666,
+      "lon": -3.6825908805499754,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1003",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6825908805499754,
+        40.472103124612666
+      ]
+    },
+    {
+      "id": "bego_a",
+      "name": "BEGOÑA",
+      "lat": 40.48041293210537,
+      "lon": -3.6858496955790008,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1002",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6858496955790008,
+        40.48041293210537
+      ]
+    },
+    {
+      "id": "gregorio_mara_on",
+      "name": "GREGORIO MARAÑON",
+      "lat": 40.43753407332082,
+      "lon": -3.691267602842976,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1008",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.691267602842976,
+        40.43753407332082
+      ]
+    },
+    {
+      "id": "tres_olivos",
+      "name": "TRES OLIVOS",
+      "lat": 40.50120462748204,
+      "lon": -3.6952024504667387,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1051",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6952024504667387,
+        40.50120462748204
+      ]
+    },
+    {
+      "id": "marques_de_la_valdavia",
+      "name": "MARQUES DE LA VALDAVIA",
+      "lat": 40.54102356213352,
+      "lon": -3.637384941176687,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1057",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.637384941176687,
+        40.54102356213352
+      ]
+    },
+    {
+      "id": "baunatal",
+      "name": "BAUNATAL",
+      "lat": 40.55442320714419,
+      "lon": -3.6351260237120413,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1059",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6351260237120413,
+        40.55442320714419
+      ]
+    },
+    {
+      "id": "las_tablas",
+      "name": "LAS TABLAS",
+      "lat": 40.50833012106391,
+      "lon": -3.6694425832834607,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1053",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6694425832834607,
+        40.50833012106391
+      ]
+    },
+    {
+      "id": "ronda_de_la_comunicacion",
+      "name": "RONDA DE LA COMUNICACION",
+      "lat": 40.51553464717745,
+      "lon": -3.6627651035032445,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1054",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6627651035032445,
+        40.51553464717745
+      ]
+    },
+    {
+      "id": "montecarmelo",
+      "name": "MONTECARMELO",
+      "lat": 40.505252159110974,
+      "lon": -3.6957506950563808,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1052",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6957506950563808,
+        40.505252159110974
+      ]
+    },
+    {
+      "id": "reyes_catolicos",
+      "name": "REYES CATOLICOS",
+      "lat": 40.55037483366552,
+      "lon": -3.6233994104420226,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1060",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6233994104420226,
+        40.55037483366552
+      ]
+    },
+    {
+      "id": "manuel_de_falla",
+      "name": "MANUEL DE FALLA",
+      "lat": 40.55047998089715,
+      "lon": -3.6468794495056858,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1058",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6468794495056858,
+        40.55047998089715
+      ]
+    },
+    {
+      "id": "la_moraleja",
+      "name": "LA MORALEJA",
+      "lat": 40.53195564734653,
+      "lon": -3.635559522713986,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1056",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.635559522713986,
+        40.53195564734653
+      ]
+    },
+    {
+      "id": "la_granja",
+      "name": "LA GRANJA",
+      "lat": 40.52759962236235,
+      "lon": -3.658592087138037,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1055",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.658592087138037,
+        40.52759962236235
+      ]
+    },
+    {
+      "id": "hospital_infanta_sofia",
+      "name": "HOSPITAL INFANTA SOFIA",
+      "lat": 40.559769448196086,
+      "lon": -3.6114547338421925,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1061",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.6114547338421925,
+        40.559769448196086
+      ]
+    },
+    {
+      "id": "carabanchel_alto",
+      "name": "CARABANCHEL ALTO",
+      "lat": 40.3720024216854,
+      "lon": -3.751906344267269,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1105",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.751906344267269,
+        40.3720024216854
+      ]
+    },
+    {
+      "id": "plaza_eliptica",
+      "name": "PLAZA ELIPTICA",
+      "lat": 40.384600790382066,
+      "lon": -3.718252093606752,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1101",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.718252093606752,
+        40.384600790382066
+      ]
+    },
+    {
+      "id": "la_fortuna",
+      "name": "LA FORTUNA",
+      "lat": 40.357953128926525,
+      "lon": -3.7778258498960042,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1107",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7778258498960042,
+        40.357953128926525
+      ]
+    },
+    {
+      "id": "abrantes",
+      "name": "ABRANTES",
+      "lat": 40.380833614731245,
+      "lon": -3.7279002491217077,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1102",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7279002491217077,
+        40.380833614731245
+      ]
+    },
+    {
+      "id": "pan_bendito",
+      "name": "PAN BENDITO",
+      "lat": 40.37586863665673,
+      "lon": -3.7341688565304656,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1103",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.7341688565304656,
+        40.37586863665673
+      ]
+    },
+    {
+      "id": "san_francisco",
+      "name": "SAN FRANCISCO",
+      "lat": 40.37359884105576,
+      "lon": -3.739102929190019,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1104",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.739102929190019,
+        40.37359884105576
+      ]
+    },
+    {
+      "id": "la_peseta",
+      "name": "LA PESETA",
+      "lat": 40.36422401181158,
+      "lon": -3.756902710588123,
+      "lines": [
+        "unknown"
+      ],
+      "codigo_empresa": "1106",
+      "linea_origen": "unknown",
+      "coordenadas_originales": [
+        -3.756902710588123,
+        40.36422401181158
+      ]
+    }
+  ],
+  "lines": [],
+  "metadata": {
+    "total_stations": 517,
+    "source_file": "static/data/metro_madrid_completo.json.backup"
+  }
+}

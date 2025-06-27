@@ -159,7 +159,7 @@
                     {% else %}
                         {% set logo_path = logo_path + 'linea-' + line.id + '.svg' %}
                     {% endif %}
-                        <a href="{{ url_for('line_detail', line_id=line.id) }}" 
+                        <a href="{{ url_for('line_detail_view', line_id=line.id) }}" 
                            class="line-icon" 
                            data-line-id="{{ line.name }}">
                         <img src="{{ logo_path }}" alt="Línea {{ line.name }}" class="line-logo">
@@ -574,7 +574,7 @@
         // Header con información de la estación
         html += `
             <div class="train-details-header">
-                <h4 <a href="/station/${currentLineId}/${encodeURIComponent(stationId)}" >🚇 ${stationName}</h4>
+                <h4><a href="/station/${currentLineId}/${encodeURIComponent(stationId)}">🚇 ${stationName}</a></h4>
                 <div class="train-header-actions">
                     <span class="action-refresh" title="Recargar tiempos" onclick="refreshTrainTimes('${stationId}', '${stationName}')">🔄</span>
                     <span class="action-favorite ${isFav ? 'active' : ''}" title="${isFav ? 'Eliminar de favoritos' : 'Añadir a favoritos'}" onclick="toggleStationFavorite('${stationId}', '${stationName}', this)">⭐</span>

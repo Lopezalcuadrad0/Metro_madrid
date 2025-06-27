@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const API_URL = {
         stationSchedule: "/api/schedules/station/",
-        status: "/api/status"
+        status: "/api/status",
+        cercaniasLines: "/api/lines/cercanias",
+        cercaniasData: "/api/transport/local/cercanias"
     };
 
     // Colores de las líneas del metro
@@ -204,8 +206,91 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Funcionalidad de favoritos próximamente disponible');
     };
 
+    async function loadCercaniasLines() {
+        try {
+            const response = await fetch(API_URL.cercaniasLines);
+            const data = await response.json();
+
+            if (!response.ok || !data.success) {
+                throw new Error(data.error || 'Error cargando líneas de cercanías');
+            }
+
+            const linesContainer = document.querySelector('.cercanias-lines-container');
+            if (!linesContainer) {
+                console.error('No se encontró el contenedor de líneas de cercanías');
+                return;
+            }
+
+            linesContainer.innerHTML = ''; // Limpiar contenedor
+
+            data.lines.forEach(line => {
+                const lineElement = document.createElement('div');
+                lineElement.className = 'cercanias-line-card';
+                lineElement.style.backgroundColor = line.color;
+                lineElement.style.color = line.text_color;
+
+                lineElement.innerHTML = `
+                    <div class="line-header">
+                        <h3 class="line-number">${line.number}</h3>
+                        <span class="line-name">${line.name}</span>
+                    </div>
+                    <div class="line-info">
+                        <p class="line-description">${line.description}</p>
+                        <div class="line-stats">
+                            <span class="stations-count">🚉 ${line.stations_count} estaciones</span>
+                            <span class="line-length">📏 ${line.length_km} km</span>
+                        </div>
+                    </div>
+                    <div class="line-actions">
+                        <button class="btn-line-info" onclick="showLineDetails('${line.id}')">
+                            Ver detalles
+                        </button>
+                    </div>
+                `;
+
+                linesContainer.appendChild(lineElement);
+            });
+
+            document.getElementById('lines-count').textContent = `${data.total} línea(s) cargada(s)`;
+
+        } catch (error) {
+            console.error('Error cargando líneas de cercanías:', error);
+            const errorElement = document.createElement('div');
+            errorElement.className = 'error-message';
+            errorElement.textContent = 'Error cargando las líneas de cercanías. Por favor, intente más tarde.';
+            document.querySelector('.cercanias-lines-container').appendChild(errorElement);
+        }
+    }
+
+    async function loadCercaniasData() {
+        try {
+            const response = await fetch(API_URL.cercaniasData);
+            const data = await response.json();
+
+            if (!response.ok || !data.success) {
+                throw new Error(data.error || 'Error cargando datos de cercanías');
+            }
+
+            // Procesar los datos recibidos
+            console.log('Datos de cercanías cargados:', data);
+
+            // Aquí puedes agregar la lógica para mostrar los datos en la interfaz
+            // Por ejemplo, actualizar el mapa, mostrar estadísticas, etc.
+
+        } catch (error) {
+            console.error('Error cargando datos de cercanías:', error);
+        }
+    }
+
+    // Función global para mostrar detalles de una línea
+    window.showLineDetails = function(lineId) {
+        window.location.href = `/line/${lineId}`;
+    };
+
     // Iniciar todo
     renderStations();
     setInterval(updateTrainPositions, 15000);
     updateTrainPositions();
+    loadCercaniasLines();
+    loadCercaniasData();
 }); 

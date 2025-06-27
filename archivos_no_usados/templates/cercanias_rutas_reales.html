@@ -1,0 +1,27 @@
+
+<!-- Template actualizado para usar rutas reales de Cercanías -->
+<script>
+// Cargar rutas reales de Cercanías
+fetch('/api/cercanias/rutas-reales')
+    .then(response => response.json())
+    .then(data => {
+        if (data.rutas) {
+            console.log('Rutas reales de Cercanías cargadas:', data.rutas.length);
+            
+            // Agregar rutas reales al mapa
+            data.rutas.forEach(ruta => {
+                if (ruta.coordenadas && ruta.coordenadas.length > 1) {
+                    // Crear línea en el mapa con coordenadas reales
+                    L.polyline(ruta.coordenadas, {
+                        color: ruta.color,
+                        weight: 4,
+                        opacity: 0.8
+                    }).addTo(map).bindPopup(`<b>${ruta.nombre}</b><br>Longitud: ${ruta.longitud_aprox_km} km`);
+                }
+            });
+        }
+    })
+    .catch(error => {
+        console.error('Error cargando rutas reales:', error);
+    });
+</script>

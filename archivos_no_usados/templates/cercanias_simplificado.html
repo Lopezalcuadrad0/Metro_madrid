@@ -1,0 +1,388 @@
+{% extends "base.html" %}
+
+{% block title %}Metro Madrid - Mapa Integrado{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+    #map {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        z-index: 1 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+    
+    .map-controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .control-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    .transport-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: #fff;
+        min-width: 40px;
+        height: 40px;
+        margin: 2px;
+    }
+
+    .transport-button img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    .transport-button.active {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .transport-button.metro {
+        border: 2px solid #0055A4;
+    }
+
+    .transport-button.metro:hover,
+    .transport-button.metro.active {
+        background: #0055A4;
+    }
+
+    .transport-button.metro-ligero {
+        border: 2px solid #70C5E8;
+    }
+
+    .transport-button.metro-ligero:hover,
+    .transport-button.metro-ligero.active {
+        background: #70C5E8;
+    }
+
+    .transport-button.cercanias {
+        margin: 0 10px;
+        font-size: 2rem;
+        border-radius: 8px;
+        padding: 8px 16px;
+        background: #fff;
+        color: #333;
+        border: 2px solid #70C5E8;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: all 0.2s;
+    }
+
+    .transport-button.cercanias.active {
+        background: #70C5E8;
+        color: #fff;
+        border-color: #70C5E8;
+    }
+
+    .transport-button.bicimad {
+        border: 2px solid #00A859;
+        font-size: 20px;
+    }
+
+    .transport-button.bicimad:hover,
+    .transport-button.bicimad.active {
+        background: #00A859;
+        color: white;
+    }
+
+    /* Quitar controles de zoom de Leaflet */
+    .leaflet-control-zoom {
+        display: none !important;
+    }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out {
+        display: none !important;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="map"></div>
+
+<div class="map-controls">
+    <div class="control-group">
+        <button class="transport-button metro active" id="metro-button">
+            <img src="{{ url_for('static', filename='logos/Logomarca_azul.png') }}" alt="Metro">
+        </button>
+        <button class="transport-button metro-ligero active" id="metro-ligero-button">
+            <img src="{{ url_for('static', filename='logos/lineas/_ml.svg') }}" alt="Metro Ligero">
+        </button>
+        <button class="transport-button cercanias" id="cercanias-button">
+            🚂
+        </button>
+        <button class="transport-button bicimad active" onclick="toggleLayer('bicimad')">
+            🚲
+        </button>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    // Variables globales
+    var map;
+    var layers = {};
+
+    // Esperar a que el DOM esté listo
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Inicializando mapa...');
+        
+        // Inicializar el mapa
+        map = L.map('map', {
+            zoomControl: true,
+            zoomAnimation: true
+        }).setView([40.4168, -3.7038], 12);
+
+        // Capas base del mapa
+        const baseLayers = {
+            dark: L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                { attribution: "© CARTO" }
+            ),
+            classic: L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                { attribution: "© CARTO" }
+            ),
+            clear: L.tileLayer(
+                "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+                { attribution: "© OpenStreetMap" }
+            ),
+        };
+
+        // Función para cambiar el estilo del mapa según el tema
+        function updateMapStyle(theme) {
+            if (currentBaseLayer) map.removeLayer(currentBaseLayer);
+
+            // Mapear temas a estilos de mapa
+            const themeToStyle = {
+                light: "classic",    // Tema claro -> Mapa clásico
+                dark: "dark",        // Tema oscuro -> Mapa oscuro
+                nocturno: "dark"     // Tema nocturno -> Mapa oscuro
+            };
+
+            const mapStyle = themeToStyle[theme] || "classic";
+            currentBaseLayer = baseLayers[mapStyle];
+            currentBaseLayer.addTo(map);
+        }
+
+        // Detectar el tema actual al cargar la página
+        const currentTheme = document.documentElement.getAttribute("data-theme") || "light";
+        let currentBaseLayer = baseLayers[
+            currentTheme === "dark" || currentTheme === "nocturno" ? "dark" : "classic"
+        ];
+        currentBaseLayer.addTo(map);
+
+        // Escuchar cambios en el tema global
+        document.addEventListener("themeChanged", function(e) {
+            updateMapStyle(e.detail.theme);
+        });
+
+        // Control de capas de Leaflet
+        const overlayLayers = {};
+        const layerControl = L.control.layers(baseLayers, overlayLayers, {
+            collapsed: false,
+            position: 'topright'
+        }).addTo(map);
+
+        console.log('Mapa inicializado');
+
+        // Inicializar capas principales
+        layers = {
+            bicimad: L.layerGroup().addTo(map)
+        };
+
+        // Cargar datos de Metro con nuevo sistema
+        var metroData = {{ metro_data|tojson|safe }};
+        console.log('Datos de Metro:', metroData);
+        
+        // Esperar a que las funciones de Metro estén disponibles
+        function waitForMetroFunctions() {
+            if (typeof drawMetro === 'function') {
+                console.log('Función drawMetro disponible, dibujando Metro...');
+                drawMetro(metroData);
+                console.log('Metro dibujado correctamente');
+                
+                // Activar automáticamente todas las capas de Metro
+                setTimeout(function() {
+                    if (typeof toggleAllMetro === 'function') {
+                        console.log('Activando todas las capas de Metro...');
+                        toggleAllMetro();
+                    } else {
+                        console.error('Función toggleAllMetro no disponible');
+                    }
+                }, 1000);
+            } else {
+                console.log('Función drawMetro no disponible, esperando...');
+                setTimeout(waitForMetroFunctions, 100);
+            }
+        }
+        
+        // Iniciar la espera
+        waitForMetroFunctions();
+
+        // Cargar datos de Metro Ligero con capas por línea
+        var metroLigeroData = {{ metro_ligero_data|tojson|safe }};
+        console.log('Datos de Metro Ligero:', metroLigeroData);
+        
+        // Esperar a que las funciones de Metro Ligero estén disponibles
+        function waitForMetroLigeroFunctions() {
+            if (typeof drawMetroLigero === 'function') {
+                console.log('Función drawMetroLigero disponible, dibujando Metro Ligero...');
+                drawMetroLigero(metroLigeroData);
+                console.log('Metro Ligero dibujado correctamente');
+                
+                // Activar automáticamente todas las capas de Metro Ligero
+                setTimeout(function() {
+                    if (typeof toggleAllMetroLigero === 'function') {
+                        console.log('Activando todas las capas de Metro Ligero...');
+                        toggleAllMetroLigero();
+                    } else {
+                        console.error('Función toggleAllMetroLigero no disponible');
+                    }
+                }, 1000);
+            } else {
+                console.log('Función drawMetroLigero no disponible, esperando...');
+                setTimeout(waitForMetroLigeroFunctions, 100);
+            }
+        }
+        
+        // Iniciar la espera
+        waitForMetroLigeroFunctions();
+
+        // Cargar datos de BiciMAD
+        var bicimadData = {{ bicimad_data|tojson|safe }};
+        console.log('Datos de BiciMAD:', bicimadData);
+        if (bicimadData && bicimadData.stations) {
+            bicimadData.stations.forEach(function(station) {
+                if (station.lat && station.lon) {
+                    // Determinar el color basado en la disponibilidad
+                    var fillColor;
+                    var statusText;
+                    
+                    if (station.free_bases === 0) {
+                        fillColor = '#8B008B'; // Morado para 0 anclajes
+                        statusText = 'Sin anclajes disponibles';
+                    } else if (station.dock_bikes === 0) {
+                        fillColor = '#FF0000'; // Rojo para 0 bicis
+                        statusText = 'Sin bicicletas disponibles';
+                    } else {
+                        fillColor = '#00A859'; // Verde para estado normal
+                        statusText = 'Operativa';
+                    }
+
+                    var marker = L.circleMarker([station.lat, station.lon], {
+                        radius: 5,
+                        fillColor: fillColor,
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    });
+                    
+                    marker.bindPopup(
+                        '<div class="bicimad-popup">' +
+                        '<strong>' + station.name + '</strong><br>' +
+                        '<span style="color: ' + fillColor + '">● ' + statusText + '</span><br>' +
+                        '🚲 Bicis: ' + station.dock_bikes + '<br>' +
+                        '🅿️ Anclajes libres: ' + station.free_bases + '<br>' +
+                        '📊 Total anclajes: ' + station.total_bases +
+                        '</div>'
+                    );
+                    
+                    marker.addTo(layers.bicimad);
+                }
+            });
+        }
+
+        // Cargar datos de Cercanías
+        var cercaniasData = {{ cercanias_data|tojson|safe }};
+        console.log('Datos de Cercanías:', cercaniasData);
+        
+        // Esperar a que las funciones de Cercanías estén disponibles
+        function waitForCercaniasFunctions() {
+            if (typeof drawCercanias === 'function') {
+                console.log('Función drawCercanias disponible, dibujando Cercanías...');
+                drawCercanias(cercaniasData);
+                console.log('Cercanías dibujadas correctamente');
+            } else {
+                console.log('Función drawCercanias no disponible, esperando...');
+                setTimeout(waitForCercaniasFunctions, 100);
+            }
+        }
+        
+        // Iniciar la espera
+        waitForCercaniasFunctions();
+    });
+
+    // Función para alternar capa de BiciMAD
+    function toggleLayer(layerName) {
+        if (layers[layerName]) {
+            if (map.hasLayer(layers[layerName])) {
+                map.removeLayer(layers[layerName]);
+                document.querySelector('.transport-button.bicimad').classList.remove('active');
+            } else {
+                map.addLayer(layers[layerName]);
+                document.querySelector('.transport-button.bicimad').classList.add('active');
+            }
+        }
+    }
+
+    // Event listeners para botones de transporte
+    document.addEventListener('DOMContentLoaded', function() {
+        // Botón de Metro
+        document.getElementById('metro-button').addEventListener('click', function() {
+            this.classList.toggle('active');
+            if (typeof toggleMetro === 'function') {
+                toggleMetro();
+            }
+        });
+
+        // Botón de Metro Ligero
+        document.getElementById('metro-ligero-button').addEventListener('click', function() {
+            this.classList.toggle('active');
+            if (typeof toggleMetroLigero === 'function') {
+                toggleMetroLigero();
+            }
+        });
+
+        // Botón de Cercanías
+        document.getElementById('cercanias-button').addEventListener('click', function() {
+            this.classList.toggle('active');
+            if (typeof toggleCercanias === 'function') {
+                toggleCercanias();
+            }
+        });
+    });
+</script>
+
+<!-- Scripts de transporte -->
+<script src="{{ url_for('static', filename='js/metro.js') }}"></script>
+<script src="{{ url_for('static', filename='js/metro-ligero.js') }}"></script>
+<script src="{{ url_for('static', filename='js/cercanias.js') }}"></script>
+{% endblock %} 

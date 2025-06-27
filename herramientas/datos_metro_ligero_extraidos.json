@@ -1,0 +1,400 @@
+{
+  "ML1": {
+    "linea": "ML1",
+    "estaciones": [
+      {
+        "id_estacion": "153",
+        "id_modal": "581",
+        "nombre": "Pinar de Chamartín",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/581",
+          "proximos_trenes": "/es/metro_next_trains/modal/581"
+        }
+      },
+      {
+        "id_estacion": "5112",
+        "id_modal": "497",
+        "nombre": "Fuente de la Mora",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/497",
+          "proximos_trenes": "/es/metro_next_trains/modal/497"
+        }
+      },
+      {
+        "id_estacion": "5113",
+        "id_modal": "650",
+        "nombre": "Virgen del Cortijo",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/650",
+          "proximos_trenes": "/es/metro_next_trains/modal/650"
+        }
+      },
+      {
+        "id_estacion": "5114",
+        "id_modal": "422",
+        "nombre": "Antonio Saura",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/422",
+          "proximos_trenes": "/es/metro_next_trains/modal/422"
+        }
+      },
+      {
+        "id_estacion": "5115",
+        "id_modal": "419",
+        "nombre": "Álvarez de Villaamil",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/419",
+          "proximos_trenes": "/es/metro_next_trains/modal/419"
+        }
+      },
+      {
+        "id_estacion": "5116",
+        "id_modal": "448",
+        "nombre": "Blasco Ibáñez",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/448",
+          "proximos_trenes": "/es/metro_next_trains/modal/448"
+        }
+      },
+      {
+        "id_estacion": "5117",
+        "id_modal": "549",
+        "nombre": "María Tudor",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/549",
+          "proximos_trenes": "/es/metro_next_trains/modal/549"
+        }
+      },
+      {
+        "id_estacion": "5118",
+        "id_modal": "570",
+        "nombre": "Palas de Rey",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/570",
+          "proximos_trenes": "/es/metro_next_trains/modal/570"
+        }
+      },
+      {
+        "id_estacion": "1053",
+        "id_modal": "536",
+        "nombre": "Las Tablas",
+        "linea": "ML1",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/536",
+          "proximos_trenes": "/es/metro_next_trains/modal/536"
+        }
+      }
+    ],
+    "total_estaciones": 9
+  },
+  "ML2": {
+    "linea": "ML2",
+    "estaciones": [
+      {
+        "id_estacion": "1016",
+        "id_modal": "468",
+        "nombre": "Colonia Jardín",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/468",
+          "proximos_trenes": "/es/metro_next_trains/modal/468"
+        }
+      },
+      {
+        "id_estacion": "5212",
+        "id_modal": "660",
+        "nombre": "Prado de la Vega",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/660",
+          "proximos_trenes": "/es/metro_next_trains/modal/660"
+        }
+      },
+      {
+        "id_estacion": "5213",
+        "id_modal": "656",
+        "nombre": "Colonia de los Ángeles",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/656",
+          "proximos_trenes": "/es/metro_next_trains/modal/656"
+        }
+      },
+      {
+        "id_estacion": "5214",
+        "id_modal": "661",
+        "nombre": "Prado del Rey",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/661",
+          "proximos_trenes": "/es/metro_next_trains/modal/661"
+        }
+      },
+      {
+        "id_estacion": "5215",
+        "id_modal": "663",
+        "nombre": "Somosaguas Sur",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/663",
+          "proximos_trenes": "/es/metro_next_trains/modal/663"
+        }
+      },
+      {
+        "id_estacion": "5216",
+        "id_modal": "662",
+        "nombre": "Somosaguas Centro",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/662",
+          "proximos_trenes": "/es/metro_next_trains/modal/662"
+        }
+      },
+      {
+        "id_estacion": "5217",
+        "id_modal": "659",
+        "nombre": "Pozuelo Oeste",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/659",
+          "proximos_trenes": "/es/metro_next_trains/modal/659"
+        }
+      },
+      {
+        "id_estacion": "5219",
+        "id_modal": "654",
+        "nombre": "Bélgica",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/654",
+          "proximos_trenes": "/es/metro_next_trains/modal/654"
+        }
+      },
+      {
+        "id_estacion": "5220",
+        "id_modal": "657",
+        "nombre": "Dos Castillas",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/657",
+          "proximos_trenes": "/es/metro_next_trains/modal/657"
+        }
+      },
+      {
+        "id_estacion": "5221",
+        "id_modal": "655",
+        "nombre": "Campus de Somosaguas",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/655",
+          "proximos_trenes": "/es/metro_next_trains/modal/655"
+        }
+      },
+      {
+        "id_estacion": "5222",
+        "id_modal": "652",
+        "nombre": "Avenida de Europa",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/652",
+          "proximos_trenes": "/es/metro_next_trains/modal/652"
+        }
+      },
+      {
+        "id_estacion": "5223",
+        "id_modal": "653",
+        "nombre": "Berna",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/653",
+          "proximos_trenes": "/es/metro_next_trains/modal/653"
+        }
+      },
+      {
+        "id_estacion": "5224",
+        "id_modal": "658",
+        "nombre": "Estación de Aravaca",
+        "linea": "ML2",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/658",
+          "proximos_trenes": "/es/metro_next_trains/modal/658"
+        }
+      }
+    ],
+    "total_estaciones": 13
+  },
+  "ML3": {
+    "linea": "ML3",
+    "estaciones": [
+      {
+        "id_estacion": "1016",
+        "id_modal": "468",
+        "nombre": "Colonia Jardín",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/468",
+          "proximos_trenes": "/es/metro_next_trains/modal/468"
+        }
+      },
+      {
+        "id_estacion": "5312",
+        "id_modal": "666",
+        "nombre": "Ciudad de la Imagen",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/666",
+          "proximos_trenes": "/es/metro_next_trains/modal/666"
+        }
+      },
+      {
+        "id_estacion": "5313",
+        "id_modal": "671",
+        "nombre": "José Isbert",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/671",
+          "proximos_trenes": "/es/metro_next_trains/modal/671"
+        }
+      },
+      {
+        "id_estacion": "5314",
+        "id_modal": "667",
+        "nombre": "Ciudad del Cine",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/667",
+          "proximos_trenes": "/es/metro_next_trains/modal/667"
+        }
+      },
+      {
+        "id_estacion": "5315",
+        "id_modal": "668",
+        "nombre": "Cocheras",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/668",
+          "proximos_trenes": "/es/metro_next_trains/modal/668"
+        }
+      },
+      {
+        "id_estacion": "5316",
+        "id_modal": "676",
+        "nombre": "Retamares",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/676",
+          "proximos_trenes": "/es/metro_next_trains/modal/676"
+        }
+      },
+      {
+        "id_estacion": "5318",
+        "id_modal": "672",
+        "nombre": "Montepríncipe",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/672",
+          "proximos_trenes": "/es/metro_next_trains/modal/672"
+        }
+      },
+      {
+        "id_estacion": "5319",
+        "id_modal": "678",
+        "nombre": "Ventorro del Cano",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/678",
+          "proximos_trenes": "/es/metro_next_trains/modal/678"
+        }
+      },
+      {
+        "id_estacion": "5320",
+        "id_modal": "674",
+        "nombre": "Prado del Espino",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/674",
+          "proximos_trenes": "/es/metro_next_trains/modal/674"
+        }
+      },
+      {
+        "id_estacion": "5322",
+        "id_modal": "665",
+        "nombre": "Cantabria",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/665",
+          "proximos_trenes": "/es/metro_next_trains/modal/665"
+        }
+      },
+      {
+        "id_estacion": "5324",
+        "id_modal": "669",
+        "nombre": "Ferial de Boadilla",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/669",
+          "proximos_trenes": "/es/metro_next_trains/modal/669"
+        }
+      },
+      {
+        "id_estacion": "5325",
+        "id_modal": "664",
+        "nombre": "Boadilla Centro",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/664",
+          "proximos_trenes": "/es/metro_next_trains/modal/664"
+        }
+      },
+      {
+        "id_estacion": "5326",
+        "id_modal": "673",
+        "nombre": "Nuevo Mundo",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/673",
+          "proximos_trenes": "/es/metro_next_trains/modal/673"
+        }
+      },
+      {
+        "id_estacion": "5327",
+        "id_modal": "677",
+        "nombre": "Siglo XXI",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/677",
+          "proximos_trenes": "/es/metro_next_trains/modal/677"
+        }
+      },
+      {
+        "id_estacion": "5328",
+        "id_modal": "670",
+        "nombre": "Infante Don Luís",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/670",
+          "proximos_trenes": "/es/metro_next_trains/modal/670"
+        }
+      },
+      {
+        "id_estacion": "5329",
+        "id_modal": "675",
+        "nombre": "Puerta de Boadilla",
+        "linea": "ML3",
+        "enlaces": {
+          "plano_zonal": "/es/metro_map/modal/675",
+          "proximos_trenes": "/es/metro_next_trains/modal/675"
+        }
+      }
+    ],
+    "total_estaciones": 16
+  }
+}

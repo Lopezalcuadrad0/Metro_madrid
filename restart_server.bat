@@ -1,0 +1,6 @@
+@echo off
+echo Matando procesos Python...
+taskkill /F /IM python.exe
+timeout /T 3
+echo Iniciando servidor...
+start python app_metro_ligero.py
